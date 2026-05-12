@@ -16,11 +16,13 @@
     .dl-progress-bar{height:100%;width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-hover));border-radius:20px;transition:width .3s ease}
     .dl-countdown{font-size:32px;font-weight:800;color:var(--accent);margin:18px 0 6px}
     .dl-hint{font-size:13px;color:#999;margin-bottom:24px}
-    .dl-manual{display:inline-block;padding:14px 36px;background:var(--accent);color:#fff;border-radius:var(--radius);font-weight:700;font-size:15px;text-decoration:none;transition:background .2s}
+    .dl-manual{display:inline-block;padding:14px 36px;background:var(--accent);color:#fff;border-radius:var(--radius);font-weight:700;font-size:15px;text-decoration:none;transition:background .2s;cursor:pointer;border:none}
     .dl-manual:hover{background:var(--accent-hover);color:#fff}
     .dl-back{display:inline-block;margin-top:16px;font-size:14px;color:var(--accent)}
     .dl-success-icon{font-size:48px;color:#2ecc71;margin-bottom:12px}
-    .dl-error-icon{font-size:48px;color:#e74c3c;margin-bottom:12px}
+    .dl-unavailable{background:#fef9e7;border:1px solid #f0e6c0;border-radius:8px;padding:24px;margin:20px auto;max-width:450px}
+    .dl-unavailable h3{color:var(--contrast);font-size:17px;margin-bottom:8px}
+    .dl-unavailable p{font-size:14px;color:var(--contrast-3);margin:0}
   </style>
 </head>
 <body data-page="download" id="top">
@@ -43,7 +45,7 @@
     var container = document.getElementById('dl-content');
 
     if(!book){
-      container.innerHTML = '<div class="dl-error-icon">&#10060;</div><h2 class="dl-title">Book Not Found</h2><p>Sorry, we could not find this book.</p><a href="all-books.html" class="dl-back">&larr; Browse All Books</a>';
+      container.innerHTML = '<h2 class="dl-title">Book Not Found</h2><p>Sorry, we could not find this book.</p><a href="all-books.html" class="dl-back">&larr; Browse All Books</a>';
       return;
     }
 
@@ -64,59 +66,73 @@
     }
 
     var pdfUrl = book.pdf;
-    var directUrl = pdfUrl;
+    var directUrl = null;
     var hasPdf = !!pdfUrl;
 
-    if(pdfUrl && pdfUrl.indexOf('drive.google.com/file/d/') !== -1){
-      var match = pdfUrl.match(/\/d\/([a-zA-Z0-9_-]+)/);
-      if(match) directUrl = 'https://drive.usercontent.google.com/download?id=' + match[1] + '&export=download';
-    }
-
-    if(!hasPdf){
-      directUrl = 'https://www.google.com/search?q=' + encodeURIComponent(book.title + ' PDF free download');
-    }
-
-    container.innerHTML =
-      '<div class="dl-cover" style="background:' + bg + '">' + (book.cover||'Book').toUpperCase() + '</div>' +
-      '<h1 class="dl-title">' + book.title + '</h1>' +
-      '<div class="dl-cat">' + (catLabels.join(' &bull; ') || 'Book') + '</div>' +
-      '<div class="dl-status" id="dl-status">' +
-        '<p id="dl-msg">' + (hasPdf ? 'Preparing your download...' : 'Finding download sources...') + '</p>' +
-        '<div class="dl-progress-wrap"><div class="dl-progress-bar" id="dl-bar"></div></div>' +
-        '<div class="dl-countdown" id="dl-count">5</div>' +
-        '<div class="dl-hint">' + (hasPdf ? 'Your download will begin automatically' : 'We will help you find this PDF') + '</div>' +
-      '</div>' +
-      '<a href="' + directUrl + '" class="dl-manual" id="dl-btn" style="display:none" target="_blank" rel="noopener">&#8595; Download Now</a>' +
-      '<br><a href="book.html?id=' + book.id + '" class="dl-back">&larr; Back to book details</a>';
-
-    var bar = document.getElementById('dl-bar');
-    var countEl = document.getElementById('dl-count');
-    var msgEl = document.getElementById('dl-msg');
-    var btnEl = document.getElementById('dl-btn');
-    var seconds = 5;
-    var elapsed = 0;
-
-    var timer = setInterval(function(){
-      elapsed++;
-      var pct = Math.min((elapsed / seconds) * 100, 100);
-      bar.style.width = pct + '%';
-      countEl.textContent = Math.max(seconds - elapsed, 0);
-
-      if(elapsed >= seconds){
-        clearInterval(timer);
-        msgEl.textContent = hasPdf ? 'Your download has started!' : 'Opening download source...';
-        countEl.innerHTML = '<span style="color:#2ecc71">&#10003;</span>';
-        btnEl.style.display = 'inline-block';
-
-        if(directUrl){
-          var a = document.createElement('a');
-          a.href = directUrl;
-          a.target = '_blank';
-          a.rel = 'noopener';
-          a.click();
-        }
+    if(hasPdf){
+      if(pdfUrl.indexOf('drive.google.com/file/d/') !== -1){
+        var match = pdfUrl.match(/\/d\/([a-zA-Z0-9_-]+)/);
+        if(match) directUrl = 'https://drive.usercontent.google.com/download?id=' + match[1] + '&export=download&confirm=t';
+      } else {
+        directUrl = pdfUrl;
       }
-    }, 1000);
+    }
+
+    if(hasPdf && directUrl){
+      container.innerHTML =
+        '<div class="dl-cover" style="background:' + bg + '">' + (book.cover||'Book').toUpperCase() + '</div>' +
+        '<h1 class="dl-title">' + book.title + '</h1>' +
+        '<div class="dl-cat">' + (catLabels.join(' &bull; ') || 'Book') + '</div>' +
+        '<div class="dl-status" id="dl-status">' +
+          '<p id="dl-msg">Preparing your download...</p>' +
+          '<div class="dl-progress-wrap"><div class="dl-progress-bar" id="dl-bar"></div></div>' +
+          '<div class="dl-countdown" id="dl-count">3</div>' +
+          '<div class="dl-hint">Your download will begin automatically — you will stay on this page</div>' +
+        '</div>' +
+        '<button class="dl-manual" id="dl-btn" style="display:none" onclick="triggerDownload()">&#8595; Download Now</button>' +
+        '<br><a href="book.html?id=' + book.id + '" class="dl-back">&larr; Back to book details</a>';
+
+      var bar = document.getElementById('dl-bar');
+      var countEl = document.getElementById('dl-count');
+      var msgEl = document.getElementById('dl-msg');
+      var btnEl = document.getElementById('dl-btn');
+      var seconds = 3;
+      var elapsed = 0;
+
+      window.triggerDownload = function(){
+        var iframe = document.createElement('iframe');
+        iframe.style.display = 'none';
+        iframe.src = directUrl;
+        document.body.appendChild(iframe);
+
+        msgEl.textContent = 'Download started! Check your browser\u2019s download bar.';
+        countEl.innerHTML = '<span style="color:#2ecc71;font-size:48px">&#10003;</span>';
+        document.querySelector('.dl-hint').textContent = 'If the download didn\u2019t start, click the button below.';
+        btnEl.style.display = 'inline-block';
+      };
+
+      var timer = setInterval(function(){
+        elapsed++;
+        bar.style.width = Math.min((elapsed / seconds) * 100, 100) + '%';
+        countEl.textContent = Math.max(seconds - elapsed, 0);
+
+        if(elapsed >= seconds){
+          clearInterval(timer);
+          window.triggerDownload();
+        }
+      }, 1000);
+
+    } else {
+      container.innerHTML =
+        '<div class="dl-cover" style="background:' + bg + '">' + (book.cover||'Book').toUpperCase() + '</div>' +
+        '<h1 class="dl-title">' + book.title + '</h1>' +
+        '<div class="dl-cat">' + (catLabels.join(' &bull; ') || 'Book') + '</div>' +
+        '<div class="dl-unavailable">' +
+          '<h3>Download Being Prepared</h3>' +
+          '<p>We are currently preparing the PDF download for this book. It will be available shortly. Please check back soon!</p>' +
+        '</div>' +
+        '<br><a href="book.html?id=' + book.id + '" class="dl-back">&larr; Back to book details</a>';
+    }
   })();
   </script>
 </body>

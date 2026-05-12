@@ -4,7 +4,6 @@ const BOOKS = [
   {
     id: "longman-photo-dictionary-american-english",
     slug: "longman-photo-dictionary-of-american-english",
-    pdf: "https://epdf.pub/longman-photo-dictionary-of-american-english.html",
     title: "LONGMAN PHOTO DICTIONARY OF AMERICAN ENGLISH",
     categories: ["english-learning-books", "vocabulary-books"],
     cover: "english",
