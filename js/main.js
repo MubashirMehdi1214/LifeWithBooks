@@ -279,7 +279,10 @@ function initBookDetail() {
 
     <div class="download-block">
       <p style="margin-bottom:16px;font-size:15px;">Click the button below to download your free copy in PDF format.</p>
-      <a class="btn" href="#" onclick="event.preventDefault();alert('Demo download – plug in your real PDF link in books.js');">&#8595; Download PDF</a>
+      ${book.pdf
+        ? '<a class="btn" href="' + escapeHtml(book.pdf) + '" target="_blank" rel="noopener">&#8595; Download PDF</a>'
+        : '<button class="btn" onclick="showDownloadModal()">&#8595; Download PDF</button>'
+      }
     </div>
 
     <div class="copyright-block">
@@ -293,6 +296,41 @@ function initBookDetail() {
     </div>
   `;
 }
+
+/* ---------- Download modal ---------- */
+function showDownloadModal() {
+  var existing = $('#download-modal');
+  if (existing) existing.remove();
+
+  var overlay = document.createElement('div');
+  overlay.id = 'download-modal';
+  overlay.innerHTML = `
+    <div class="modal-backdrop" onclick="closeDownloadModal()"></div>
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeDownloadModal()" aria-label="Close">&times;</button>
+      <div class="modal-icon">&#128218;</div>
+      <h3>Download Coming Soon</h3>
+      <p>We are preparing the PDF download link for this book. It will be available shortly.</p>
+      <p style="margin-top:12px;font-size:13.5px;color:var(--contrast-4);">In the meantime, explore our other free books or check back later.</p>
+      <div style="margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+        <a class="btn" href="all-books.html">Browse All Books</a>
+        <button class="btn outline" onclick="closeDownloadModal()">Close</button>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+  document.body.style.overflow = 'hidden';
+}
+
+function closeDownloadModal() {
+  var modal = $('#download-modal');
+  if (modal) modal.remove();
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeDownloadModal();
+});
 
 /* ---------- Init ---------- */
 document.addEventListener('DOMContentLoaded', () => {
