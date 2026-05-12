@@ -4,6 +4,7 @@ const BOOKS = [
   {
     id: "longman-photo-dictionary-american-english",
     slug: "longman-photo-dictionary-of-american-english",
+    pdf: "https://afaq-lc.com/wp-content/uploads/2021/12/Longman-Photo-Dictionary.pdf",
     title: "LONGMAN PHOTO DICTIONARY OF AMERICAN ENGLISH",
     categories: ["english-learning-books", "vocabulary-books"],
     cover: "english",
@@ -24,6 +25,7 @@ const BOOKS = [
   },
   {
     id: "english-unlimited",
+    pdf: "https://drive.google.com/file/d/1daBCHD03XnqGZrUw3Y8oWmYYDf7LVxL4/view",
     title: "English Unlimited",
     categories: ["english-learning-books"],
     cover: "english",
@@ -42,6 +44,7 @@ const BOOKS = [
   {
     id: "preposition-focus-on-building-mastery",
     slug: "prepositon-focus-on-building-mastery",
+    pdf: "https://drive.google.com/file/d/1dG-FdEB4-Avw0tG_ynVRoSVfiOrMrDsz/view",
     title: "Preposition Focus on Building Mastery",
     categories: ["english-learning-books", "grammar-books"],
     cover: "english",
@@ -60,6 +63,7 @@ const BOOKS = [
   {
     id: "technical-english",
     slug: "technical-english-",
+    pdf: "https://drive.google.com/file/d/1kJsgAcoaSkFCEAg5Te-OazsveXX4X58h/view",
     title: "Technical English",
     categories: ["english-learning-books", "business-books"],
     cover: "english",
@@ -78,6 +82,7 @@ const BOOKS = [
   {
     id: "english-for-meetings-phrases-expressions",
     slug: "2087-english-for-meetings-phrases-expressions-and-one-case-to-be-fluent-in-meetings",
+    pdf: "https://drive.google.com/file/d/1WdcHVE-vN01idAw1uiyY29lmj4weVGdy/view",
     title: "English for Meetings — Phrases, Expressions and One Case to Be Fluent in Meetings",
     categories: ["english-learning-books", "business-books"],
     cover: "business",
@@ -95,6 +100,7 @@ const BOOKS = [
   },
   {
     id: "mcgraw-hill-conversational-american-english",
+    pdf: "https://drive.google.com/file/d/1mq7mIb7JhE47OfogkmVGITg8pScv2Tgo/view",
     title: "McGraw-Hill Conversational American English",
     categories: ["english-learning-books"],
     cover: "english",
@@ -111,6 +117,7 @@ const BOOKS = [
   },
   {
     id: "english-vocabulary-in-use-upper-intermediate",
+    pdf: "https://drive.google.com/file/d/1I9x6n6n6wVPbw1gjxGR8DRkizClxXdfP/view",
     title: "English Vocabulary in Use — Upper Intermediate",
     categories: ["english-learning-books", "vocabulary-books"],
     cover: "vocabulary",
@@ -127,6 +134,7 @@ const BOOKS = [
   },
   {
     id: "practical-english-usage",
+    pdf: "https://drive.google.com/file/d/1R8m9hE7MNfBY73_nKLZe6VH6Ux0CMhSd/view?usp=sharing",
     title: "Practical English Usage",
     categories: ["english-learning-books", "grammar-books"],
     cover: "english",
@@ -144,6 +152,7 @@ const BOOKS = [
   },
   {
     id: "spoken-english-conversation-practice",
+    pdf: "https://drive.google.com/file/d/1yH58as9Y9kbTtsV7ttZCuOfKvynHtQ7c/view?usp=drive_link",
     title: "Spoken English Conversation Practice",
     categories: ["english-learning-books"],
     cover: "english",
@@ -161,6 +170,7 @@ const BOOKS = [
   {
     id: "english-phonetics-and-phonology",
     slug: "english-phonetics-and-phonology-an-introduction-book",
+    pdf: "https://drive.google.com/file/d/1T0DZxPKu-NR7NDXFTx1Zs3DJgTTy-eBy/view",
     title: "English Phonetics and Phonology — An Introduction",
     categories: ["english-learning-books"],
     cover: "english",
@@ -178,6 +188,7 @@ const BOOKS = [
   {
     id: "talk-english-secret-to-speak-english",
     slug: "talk-english-the-secret-to-speak-english",
+    pdf: "https://drive.google.com/file/d/1vVYcE1DC3rD0UpYm3mQ2WOUnK4RyBx27/view",
     title: "Talk English — The Secret to Speak English",
     categories: ["english-learning-books"],
     cover: "english",
@@ -212,6 +223,7 @@ const BOOKS = [
   {
     id: "1500-vocabulary-words-for-speaking-english",
     slug: "1500-vocabulary-words-for-speaking-english-book",
+    pdf: "https://drive.google.com/file/d/1Z_b48Cxo_P81y31p9x5q4BWSvLjMwDxW/view?usp=drive_link",
     title: "1500 Vocabulary Words for Speaking English",
     categories: ["english-learning-books", "vocabulary-books"],
     cover: "vocabulary",
@@ -229,6 +241,7 @@ const BOOKS = [
   {
     id: "how-to-get-really-good-at-english",
     slug: "how-to-get-really-good-at-english-book",
+    pdf: "https://drive.google.com/file/d/155mqZ14ejfsGmVY9U4-3TNt8MPfBnIGE/view?usp=sharing",
     title: "How to Get Really Good at English",
     categories: ["english-learning-books"],
     cover: "english",
@@ -246,6 +259,7 @@ const BOOKS = [
   {
     id: "learn-how-to-speak-english-fluently-7-easy-steps",
     slug: "learn-how-to-speak-english-fluently-english-speaking-mastery-in-7-easy-steps-book",
+    pdf: "https://content.techsipweb.com/Learn%20How%20to%20Speak%20English%20Fluently%20English%20Speaking%20Mastery%20in%207%20Easy%20Steps.pdf",
     title: "Learn How to Speak English Fluently — English Speaking Mastery in 7 Easy Steps",
     categories: ["english-learning-books"],
     cover: "english",
@@ -276,6 +290,7 @@ const BOOKS = [
   },
   {
     id: "fundamentals-of-english-grammar-workbook",
+    pdf: "https://drive.google.com/file/d/1nHPu_wukv9hHSbIBf6MyrPm8z-p21gH5/view?usp=sharing",
     title: "Fundamentals of English Grammar — Workbook",
     categories: ["english-learning-books", "grammar-books"],
     cover: "grammar",
@@ -292,6 +307,7 @@ const BOOKS = [
   },
   {
     id: "english-in-everyday-life",
+    pdf: "https://drive.google.com/file/d/17latFcymITKeP--fbsZwUI-GS1muRdsp/view?usp=share_link",
     title: "English in Everyday Life",
     categories: ["english-learning-books"],
     cover: "english",
@@ -556,6 +572,7 @@ const BOOKS = [
   {
     id: "goethe-zertifikat-c2-grosses-deutsches-sprachdiplom",
     slug: "goethe-zertifikat-pruefung-c2-grosses-deutsches-sprachdiplom-modellsatz",
+    pdf: "https://content.techsipweb.com/Goethe%20Zertifikat%20Pruefung%20C2%20Grosses%20Deutsches%20Sprachdiplom%20Modellsatz.pdf",
     title: "Goethe-Zertifikat C2 — Großes Deutsches Sprachdiplom, Modellsatz",
     categories: ["german-learning-books", "deutsch-books"],
     cover: "german",
@@ -572,6 +589,7 @@ const BOOKS = [
   {
     id: "goethe-zertifikat-c1-ubungssatz-01",
     slug: "goethe-zertifikat-c1-ubungssatz-01-kandidatenblatter-pruferblatter",
+    pdf: "https://content.techsipweb.com/Goethe%20Zertifikat%20C1%20Ubungssatz%2001%20Kandidatenblatter%20Pruferblatter.pdf",
     title: "Goethe-Zertifikat C1 Übungssatz 01 — Kandidatenblätter, Prüferblätter",
     categories: ["german-learning-books", "deutsch-books"],
     cover: "german",
@@ -587,6 +605,7 @@ const BOOKS = [
   },
   {
     id: "goethe-zertifikat-b2-prufungsziele-testbeschreibung",
+    pdf: "https://content.techsipweb.com/Goethe%20Zertifikat%20B2%20Pr%C3%BCfungsziele%20Testbeschreibung.pdf",
     title: "Goethe-Zertifikat B2 — Prüfungsziele, Testbeschreibung",
     categories: ["german-learning-books", "deutsch-books"],
     cover: "german",
@@ -603,6 +622,7 @@ const BOOKS = [
   {
     id: "goethe-zertifikat-b2-ubungssatz-03",
     slug: "goethe-zertifikat-b2-ubungssatz-03-kandidatenblatte-pruferblatter",
+    pdf: "https://drive.google.com/file/d/11VBWM31Zg5G2YUgVxmsWeUMCQut2D1XQ/view?usp=drive_link",
     title: "Goethe-Zertifikat B2 Übungssatz 03 — Kandidaten- und Prüferblätter",
     categories: ["german-learning-books", "deutsch-books"],
     cover: "german",
@@ -619,6 +639,7 @@ const BOOKS = [
   {
     id: "goethe-zertifikat-b1-deutschprufung",
     slug: "goethe-zertifikat-b1-deutschprufung-fur-jugendliche-und-erwachsene",
+    pdf: "https://drive.google.com/file/d/1tsRbPgoOncMcvpncIltN99C7HojilDv1/view?usp=drive_link",
     title: "Goethe-Zertifikat B1 — Deutschprüfung für Jugendliche und Erwachsene",
     categories: ["german-learning-books", "deutsch-books"],
     cover: "german",
@@ -635,6 +656,7 @@ const BOOKS = [
   {
     id: "goethe-zertifikat-b1-ubungssatz-erwachsene",
     slug: "goethe-zertifikat-b1-ubungssatz-erwachsene-kandidatenblatte-pruferblatter",
+    pdf: "https://drive.google.com/file/d/1-MqmVATQYEwYZGEPn8LaXwA6sQA4ZX6l/view?usp=drive_link",
     title: "Goethe-Zertifikat B1 Übungssatz Erwachsene — Kandidaten- und Prüferblätter",
     categories: ["german-learning-books", "deutsch-books"],
     cover: "german",
@@ -651,6 +673,7 @@ const BOOKS = [
   {
     id: "goethe-zertifikat-a2-fit-in-deutsch-2-jugendliche",
     slug: "goethe-zertifikat-a2-fur-jugendliche-fit-in-deutsch-2",
+    pdf: "https://drive.google.com/file/d/1mf1Wpw2FORUJ2Rd2H6xQd5NqIJBWQc3j/view?usp=drive_link",
     title: "Goethe-Zertifikat A2 — Fit in Deutsch 2 für Jugendliche",
     categories: ["german-learning-books", "deutsch-books"],
     cover: "german",
@@ -666,6 +689,7 @@ const BOOKS = [
   },
   {
     id: "goethe-zertifikat-a2-fit-in-deutsch-2",
+    pdf: "https://drive.google.com/file/d/1mRqSwhZdBUKDTExXO90KTZjGTiUBm6g3/view?usp=drive_link",
     title: "Goethe-Zertifikat A2 — Fit in Deutsch 2",
     categories: ["german-learning-books", "deutsch-books"],
     cover: "german",
@@ -698,6 +722,7 @@ const BOOKS = [
   {
     id: "goethe-zertifikat-a1-fit-in-deutsch-1-ubungssatz-01",
     slug: "goethe-zertifikat-a1-fit-in-deutsch-1-ubungssatz-01-kandidatenblatter-pruferblatter",
+    pdf: "https://drive.google.com/file/d/1uJMkbkkRnTPPmfLshBAi-dJZPmfOlZU4/view?usp=drive_link",
     title: "Goethe-Zertifikat A1 — Fit in Deutsch 1 Übungssatz 01",
     categories: ["german-learning-books", "deutsch-books"],
     cover: "german",
