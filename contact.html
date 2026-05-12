@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - LifeWithBooks</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact" id="top">
+
+  <div id="site-header-host"></div>
+
+  <section class="hero" style="padding:60px 20px;">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Questions, suggestions or a copyright claim? We&rsquo;d love to hear from you.</p>
+    </div>
+  </section>
+
+  <main class="page-content">
+    <div class="contact-grid">
+      <form class="contact-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Thanks! We will reply soon.';this.reset();">
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Email address" required>
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Your message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <aside class="contact-info-block">
+        <h3>Get in touch</h3>
+        <p><strong>Phone:</strong> +92 318 0699050</p>
+        <p><strong>Email:</strong> info@lifewithbooks.com</p>
+        <p><strong>Hours:</strong> Mon&ndash;Fri, 9am&ndash;6pm</p>
+        <hr style="margin:18px 0;border:0;border-top:1px solid #ddd;">
+        <h3>Copyright claims</h3>
+        <p>If you believe a book on this site infringes your copyright, please email us with the title and proof of ownership. We respond within 3 working days.</p>
+      </aside>
+    </div>
+  </main>
+
+  <div id="site-footer-host"></div>
+
+  <script src="js/books.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
