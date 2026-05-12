@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download - LifeWithBooks</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .dl-page{max-width:620px;margin:0 auto;padding:60px 20px 80px;text-align:center}
+    .dl-cover{width:180px;height:240px;border-radius:8px;margin:0 auto 28px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.5px}
+    .dl-title{font-size:22px;color:var(--contrast);margin-bottom:8px}
+    .dl-cat{font-size:13px;color:var(--accent);margin-bottom:32px}
+    .dl-status{margin-bottom:28px}
+    .dl-status p{font-size:16px;color:var(--contrast-3);margin-bottom:12px}
+    .dl-progress-wrap{background:#e8e8e8;border-radius:20px;height:12px;overflow:hidden;max-width:400px;margin:0 auto}
+    .dl-progress-bar{height:100%;width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-hover));border-radius:20px;transition:width .3s ease}
+    .dl-countdown{font-size:32px;font-weight:800;color:var(--accent);margin:18px 0 6px}
+    .dl-hint{font-size:13px;color:#999;margin-bottom:24px}
+    .dl-manual{display:inline-block;padding:14px 36px;background:var(--accent);color:#fff;border-radius:var(--radius);font-weight:700;font-size:15px;text-decoration:none;transition:background .2s}
+    .dl-manual:hover{background:var(--accent-hover);color:#fff}
+    .dl-back{display:inline-block;margin-top:16px;font-size:14px;color:var(--accent)}
+    .dl-success-icon{font-size:48px;color:#2ecc71;margin-bottom:12px}
+    .dl-error-icon{font-size:48px;color:#e74c3c;margin-bottom:12px}
+  </style>
+</head>
+<body data-page="download" id="top">
+
+  <div id="site-header-host"></div>
+
+  <div class="dl-page" id="dl-content">
+    <p style="padding:40px 0;color:#999;">Preparing download...</p>
+  </div>
+
+  <div id="site-footer-host"></div>
+
+  <script src="js/books.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+  (function(){
+    var params = new URLSearchParams(window.location.search);
+    var bookId = params.get('id');
+    var book = BOOKS.find(function(b){ return b.id === bookId; });
+    var container = document.getElementById('dl-content');
+
+    if(!book){
+      container.innerHTML = '<div class="dl-error-icon">&#10060;</div><h2 class="dl-title">Book Not Found</h2><p>Sorry, we could not find this book.</p><a href="all-books.html" class="dl-back">&larr; Browse All Books</a>';
+      return;
+    }
+
+    var coverColors = {
+      english:'#1E565C', grammar:'#6b4c3b', vocab:'#2e7d32', ielts:'#c62828',
+      speaking:'#1565c0', writing:'#6a1b9a', kids:'#ef6c00', german:'#333',
+      french:'#1a237e', spanish:'#b71c1c', chinese:'#d84315', japanese:'#4e342e',
+      korean:'#283593', arabic:'#1b5e20', turkish:'#4a148c', general:'#37474f'
+    };
+    var bg = coverColors[book.cover] || '#1E565C';
+
+    var catLabels = [];
+    if(typeof CATEGORIES !== 'undefined'){
+      book.categories.forEach(function(c){
+        var cat = CATEGORIES.find(function(x){ return x.id === c; });
+        if(cat) catLabels.push(cat.label);
+      });
+    }
+
+    var pdfUrl = book.pdf;
+    var directUrl = pdfUrl;
+    var hasPdf = !!pdfUrl;
+
+    if(pdfUrl && pdfUrl.indexOf('drive.google.com/file/d/') !== -1){
+      var match = pdfUrl.match(/\/d\/([a-zA-Z0-9_-]+)/);
+      if(match) directUrl = 'https://drive.usercontent.google.com/download?id=' + match[1] + '&export=download';
+    }
+
+    if(!hasPdf){
+      directUrl = 'https://www.google.com/search?q=' + encodeURIComponent(book.title + ' PDF free download');
+    }
+
+    container.innerHTML =
+      '<div class="dl-cover" style="background:' + bg + '">' + (book.cover||'Book').toUpperCase() + '</div>' +
+      '<h1 class="dl-title">' + book.title + '</h1>' +
+      '<div class="dl-cat">' + (catLabels.join(' &bull; ') || 'Book') + '</div>' +
+      '<div class="dl-status" id="dl-status">' +
+        '<p id="dl-msg">' + (hasPdf ? 'Preparing your download...' : 'Finding download sources...') + '</p>' +
+        '<div class="dl-progress-wrap"><div class="dl-progress-bar" id="dl-bar"></div></div>' +
+        '<div class="dl-countdown" id="dl-count">5</div>' +
+        '<div class="dl-hint">' + (hasPdf ? 'Your download will begin automatically' : 'We will help you find this PDF') + '</div>' +
+      '</div>' +
+      '<a href="' + directUrl + '" class="dl-manual" id="dl-btn" style="display:none" target="_blank" rel="noopener">&#8595; Download Now</a>' +
+      '<br><a href="book.html?id=' + book.id + '" class="dl-back">&larr; Back to book details</a>';
+
+    var bar = document.getElementById('dl-bar');
+    var countEl = document.getElementById('dl-count');
+    var msgEl = document.getElementById('dl-msg');
+    var btnEl = document.getElementById('dl-btn');
+    var seconds = 5;
+    var elapsed = 0;
+
+    var timer = setInterval(function(){
+      elapsed++;
+      var pct = Math.min((elapsed / seconds) * 100, 100);
+      bar.style.width = pct + '%';
+      countEl.textContent = Math.max(seconds - elapsed, 0);
+
+      if(elapsed >= seconds){
+        clearInterval(timer);
+        msgEl.textContent = hasPdf ? 'Your download has started!' : 'Opening download source...';
+        countEl.innerHTML = '<span style="color:#2ecc71">&#10003;</span>';
+        btnEl.style.display = 'inline-block';
+
+        if(directUrl){
+          var a = document.createElement('a');
+          a.href = directUrl;
+          a.target = '_blank';
+          a.rel = 'noopener';
+          a.click();
+        }
+      }
+    }, 1000);
+  })();
+  </script>
+</body>
+</html>
