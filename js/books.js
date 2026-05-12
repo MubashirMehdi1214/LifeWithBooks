@@ -3,6 +3,7 @@ const BOOKS = [
   /* ---------------- English Learning ---------------- */
   {
     id: "longman-photo-dictionary-american-english",
+    slug: "longman-photo-dictionary-of-american-english",
     title: "LONGMAN PHOTO DICTIONARY OF AMERICAN ENGLISH",
     categories: ["english-learning-books", "vocabulary-books"],
     cover: "english",
@@ -40,6 +41,7 @@ const BOOKS = [
   },
   {
     id: "preposition-focus-on-building-mastery",
+    slug: "prepositon-focus-on-building-mastery",
     title: "Preposition Focus on Building Mastery",
     categories: ["english-learning-books", "grammar-books"],
     cover: "english",
@@ -57,6 +59,7 @@ const BOOKS = [
   },
   {
     id: "technical-english",
+    slug: "technical-english-",
     title: "Technical English",
     categories: ["english-learning-books", "business-books"],
     cover: "english",
@@ -74,6 +77,7 @@ const BOOKS = [
   },
   {
     id: "english-for-meetings-phrases-expressions",
+    slug: "2087-english-for-meetings-phrases-expressions-and-one-case-to-be-fluent-in-meetings",
     title: "English for Meetings — Phrases, Expressions and One Case to Be Fluent in Meetings",
     categories: ["english-learning-books", "business-books"],
     cover: "business",
@@ -156,6 +160,7 @@ const BOOKS = [
   },
   {
     id: "english-phonetics-and-phonology",
+    slug: "english-phonetics-and-phonology-an-introduction-book",
     title: "English Phonetics and Phonology — An Introduction",
     categories: ["english-learning-books"],
     cover: "english",
@@ -172,6 +177,7 @@ const BOOKS = [
   },
   {
     id: "talk-english-secret-to-speak-english",
+    slug: "talk-english-the-secret-to-speak-english",
     title: "Talk English — The Secret to Speak English",
     categories: ["english-learning-books"],
     cover: "english",
@@ -189,6 +195,7 @@ const BOOKS = [
   },
   {
     id: "30-topics-for-english-conversation",
+    slug: "30-topics-for-english-conversation-book",
     title: "30 Topics for English Conversation",
     categories: ["english-learning-books"],
     cover: "english",
@@ -204,6 +211,7 @@ const BOOKS = [
   },
   {
     id: "1500-vocabulary-words-for-speaking-english",
+    slug: "1500-vocabulary-words-for-speaking-english-book",
     title: "1500 Vocabulary Words for Speaking English",
     categories: ["english-learning-books", "vocabulary-books"],
     cover: "vocabulary",
@@ -220,6 +228,7 @@ const BOOKS = [
   },
   {
     id: "how-to-get-really-good-at-english",
+    slug: "how-to-get-really-good-at-english-book",
     title: "How to Get Really Good at English",
     categories: ["english-learning-books"],
     cover: "english",
@@ -236,6 +245,7 @@ const BOOKS = [
   },
   {
     id: "learn-how-to-speak-english-fluently-7-easy-steps",
+    slug: "learn-how-to-speak-english-fluently-english-speaking-mastery-in-7-easy-steps-book",
     title: "Learn How to Speak English Fluently — English Speaking Mastery in 7 Easy Steps",
     categories: ["english-learning-books"],
     cover: "english",
@@ -314,6 +324,7 @@ const BOOKS = [
   },
   {
     id: "improve-your-written-english",
+    slug: "improve-your-written-english-master-the-essentials-of-grammar-punctuation-and-spelling-and-write-with-greater-confidence",
     title: "Improve Your Written English",
     categories: ["english-learning-books", "grammar-books"],
     cover: "grammar",
@@ -544,6 +555,7 @@ const BOOKS = [
   /* ---------------- German Learning ---------------- */
   {
     id: "goethe-zertifikat-c2-grosses-deutsches-sprachdiplom",
+    slug: "goethe-zertifikat-pruefung-c2-grosses-deutsches-sprachdiplom-modellsatz",
     title: "Goethe-Zertifikat C2 — Großes Deutsches Sprachdiplom, Modellsatz",
     categories: ["german-learning-books", "deutsch-books"],
     cover: "german",
@@ -559,6 +571,7 @@ const BOOKS = [
   },
   {
     id: "goethe-zertifikat-c1-ubungssatz-01",
+    slug: "goethe-zertifikat-c1-ubungssatz-01-kandidatenblatter-pruferblatter",
     title: "Goethe-Zertifikat C1 Übungssatz 01 — Kandidatenblätter, Prüferblätter",
     categories: ["german-learning-books", "deutsch-books"],
     cover: "german",
@@ -589,6 +602,7 @@ const BOOKS = [
   },
   {
     id: "goethe-zertifikat-b2-ubungssatz-03",
+    slug: "goethe-zertifikat-b2-ubungssatz-03-kandidatenblatte-pruferblatter",
     title: "Goethe-Zertifikat B2 Übungssatz 03 — Kandidaten- und Prüferblätter",
     categories: ["german-learning-books", "deutsch-books"],
     cover: "german",
@@ -604,6 +618,7 @@ const BOOKS = [
   },
   {
     id: "goethe-zertifikat-b1-deutschprufung",
+    slug: "goethe-zertifikat-b1-deutschprufung-fur-jugendliche-und-erwachsene",
     title: "Goethe-Zertifikat B1 — Deutschprüfung für Jugendliche und Erwachsene",
     categories: ["german-learning-books", "deutsch-books"],
     cover: "german",
@@ -619,6 +634,7 @@ const BOOKS = [
   },
   {
     id: "goethe-zertifikat-b1-ubungssatz-erwachsene",
+    slug: "goethe-zertifikat-b1-ubungssatz-erwachsene-kandidatenblatte-pruferblatter",
     title: "Goethe-Zertifikat B1 Übungssatz Erwachsene — Kandidaten- und Prüferblätter",
     categories: ["german-learning-books", "deutsch-books"],
     cover: "german",
@@ -634,6 +650,7 @@ const BOOKS = [
   },
   {
     id: "goethe-zertifikat-a2-fit-in-deutsch-2-jugendliche",
+    slug: "goethe-zertifikat-a2-fur-jugendliche-fit-in-deutsch-2",
     title: "Goethe-Zertifikat A2 — Fit in Deutsch 2 für Jugendliche",
     categories: ["german-learning-books", "deutsch-books"],
     cover: "german",
@@ -664,6 +681,7 @@ const BOOKS = [
   },
   {
     id: "goethe-zertifikat-a1-prufungsziele",
+    slug: "goethe-zertifikat-a1-start-deutsch-1-prufungsziele-testbeschreibung",
     title: "Goethe-Zertifikat A1 — Start Deutsch 1, Prüfungsziele, Testbeschreibung",
     categories: ["german-learning-books", "deutsch-books"],
     cover: "german",
@@ -679,6 +697,7 @@ const BOOKS = [
   },
   {
     id: "goethe-zertifikat-a1-fit-in-deutsch-1-ubungssatz-01",
+    slug: "goethe-zertifikat-a1-fit-in-deutsch-1-ubungssatz-01-kandidatenblatter-pruferblatter",
     title: "Goethe-Zertifikat A1 — Fit in Deutsch 1 Übungssatz 01",
     categories: ["german-learning-books", "deutsch-books"],
     cover: "german",
