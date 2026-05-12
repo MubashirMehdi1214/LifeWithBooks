@@ -250,7 +250,10 @@ function initBookDetail() {
     return c ? '<span class="tag">' + escapeHtml(c.label) + '</span>' : '';
   }).join('');
 
-  const paragraphs = (book.description || []).map(p => '<p>' + escapeHtml(p) + '</p>').join('');
+  const paragraphs = (book.description || []).map(function(p) {
+    if (p.indexOf('## ') === 0) return '<h2>' + escapeHtml(p.slice(3)) + '</h2>';
+    return '<p>' + escapeHtml(p) + '</p>';
+  }).join('');
 
   /* Related: other books in the same primary category */
   const related = BOOKS
