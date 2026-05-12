@@ -282,7 +282,7 @@ function initBookDetail() {
 
     <div class="download-block">
       <p style="margin-bottom:16px;font-size:15px;">Click the button below to download your free copy in PDF format.</p>
-      <a class="btn" href="${book.pdf || ('https://pdf1.dunkinmenu.org/17490/' + (book.slug || book.id) + '/')}" target="_blank" rel="noopener">&#8595; Download PDF</a>
+      <a class="btn" href="${book.pdf || ('https://www.google.com/search?q=' + encodeURIComponent(book.title + ' PDF free download'))}" target="_blank" rel="noopener">&#8595; Download PDF</a>
     </div>
 
     <div class="copyright-block">

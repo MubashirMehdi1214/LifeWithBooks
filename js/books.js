@@ -4,7 +4,7 @@ const BOOKS = [
   {
     id: "longman-photo-dictionary-american-english",
     slug: "longman-photo-dictionary-of-american-english",
-    pdf: "https://afaq-lc.com/wp-content/uploads/2021/12/Longman-Photo-Dictionary.pdf",
+    pdf: "https://epdf.pub/longman-photo-dictionary-of-american-english.html",
     title: "LONGMAN PHOTO DICTIONARY OF AMERICAN ENGLISH",
     categories: ["english-learning-books", "vocabulary-books"],
     cover: "english",
