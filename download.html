@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resource Access Notice | LifeWithBooks</title>
-  <meta name="description" content="Resource access is temporarily disabled while copyright and license verification is in progress. Contact LifeWithBooks for legal source guidance.">
+  <title>Download | LifeWithBooks - Free PDF Ebook Library</title>
+  <meta name="description" content="Download your selected free PDF ebook from LifeWithBooks. Educational content only - we respect copyright and remove disputed material on request.">
   <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="https://lifewithbooks.vercel.app/download.html">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Resource Access Notice | LifeWithBooks">
-  <meta property="og:description" content="Resource access is temporarily disabled while rights verification is in progress.">
+  <meta property="og:title" content="Download | LifeWithBooks">
+  <meta property="og:description" content="Download your selected free PDF ebook from LifeWithBooks.">
   <meta property="og:site_name" content="LifeWithBooks">
   <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -39,7 +39,7 @@
   <div id="site-header-host"></div>
 
   <div class="dl-page" id="dl-content">
-    <p style="padding:40px 0;color:#999;">Checking resource access policy...</p>
+    <p style="padding:40px 0;color:#999;">Preparing download...</p>
   </div>
 
   <div id="site-footer-host"></div>
@@ -74,16 +74,74 @@
       });
     }
 
-    container.innerHTML =
-      '<div class="dl-cover" style="background:' + bg + '">' + (book.cover||'Book').toUpperCase() + '</div>' +
-      '<h1 class="dl-title">' + book.title + '</h1>' +
-      '<div class="dl-cat">' + (catLabels.join(' &bull; ') || 'Book') + '</div>' +
-      '<div class="dl-unavailable">' +
-        '<h3>Direct Downloads Are Disabled</h3>' +
-        '<p>To protect copyright owners and improve compliance, LifeWithBooks has paused direct download links while rights verification is in progress.</p>' +
-      '</div>' +
-      '<a class="dl-manual" href="contact.html">Request Legal Source Guidance</a>' +
-      '<br><a href="book.html?id=' + book.id + '" class="dl-back">&larr; Back to book details</a>';
+    var pdfUrl = book.pdf;
+    var directUrl = null;
+    var hasPdf = !!pdfUrl;
+
+    if(hasPdf){
+      if(pdfUrl.indexOf('drive.google.com/file/d/') !== -1){
+        var match = pdfUrl.match(/\/d\/([a-zA-Z0-9_-]+)/);
+        if(match) directUrl = 'https://drive.usercontent.google.com/download?id=' + match[1] + '&export=download&confirm=t';
+      } else {
+        directUrl = pdfUrl;
+      }
+    }
+
+    if(hasPdf && directUrl){
+      container.innerHTML =
+        '<div class="dl-cover" style="background:' + bg + '">' + (book.cover||'Book').toUpperCase() + '</div>' +
+        '<h1 class="dl-title">' + book.title + '</h1>' +
+        '<div class="dl-cat">' + (catLabels.join(' &bull; ') || 'Book') + '</div>' +
+        '<div class="dl-status" id="dl-status">' +
+          '<p id="dl-msg">Preparing your download...</p>' +
+          '<div class="dl-progress-wrap"><div class="dl-progress-bar" id="dl-bar"></div></div>' +
+          '<div class="dl-countdown" id="dl-count">3</div>' +
+          '<div class="dl-hint">Your download will begin automatically — you will stay on this page</div>' +
+        '</div>' +
+        '<button class="dl-manual" id="dl-btn" style="display:none" onclick="triggerDownload()">&#8595; Download Now</button>' +
+        '<br><a href="book.html?id=' + book.id + '" class="dl-back">&larr; Back to book details</a>';
+
+      var bar = document.getElementById('dl-bar');
+      var countEl = document.getElementById('dl-count');
+      var msgEl = document.getElementById('dl-msg');
+      var btnEl = document.getElementById('dl-btn');
+      var seconds = 3;
+      var elapsed = 0;
+
+      window.triggerDownload = function(){
+        var iframe = document.createElement('iframe');
+        iframe.style.display = 'none';
+        iframe.src = directUrl;
+        document.body.appendChild(iframe);
+
+        msgEl.textContent = 'Download started! Check your browser\u2019s download bar.';
+        countEl.innerHTML = '<span style="color:#2ecc71;font-size:48px">&#10003;</span>';
+        document.querySelector('.dl-hint').textContent = 'If the download didn\u2019t start, click the button below.';
+        btnEl.style.display = 'inline-block';
+      };
+
+      var timer = setInterval(function(){
+        elapsed++;
+        bar.style.width = Math.min((elapsed / seconds) * 100, 100) + '%';
+        countEl.textContent = Math.max(seconds - elapsed, 0);
+
+        if(elapsed >= seconds){
+          clearInterval(timer);
+          window.triggerDownload();
+        }
+      }, 1000);
+
+    } else {
+      container.innerHTML =
+        '<div class="dl-cover" style="background:' + bg + '">' + (book.cover||'Book').toUpperCase() + '</div>' +
+        '<h1 class="dl-title">' + book.title + '</h1>' +
+        '<div class="dl-cat">' + (catLabels.join(' &bull; ') || 'Book') + '</div>' +
+        '<div class="dl-unavailable">' +
+          '<h3>Download Being Prepared</h3>' +
+          '<p>We are currently preparing the PDF download for this book. It will be available shortly. Please check back soon!</p>' +
+        '</div>' +
+        '<br><a href="book.html?id=' + book.id + '" class="dl-back">&larr; Back to book details</a>';
+    }
   })();
   </script>
 </body>
