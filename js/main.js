@@ -1,7 +1,7 @@
 /* LifeWithBooks - shared site behaviour */
 
 const SITE_ORIGIN = 'https://www.lifewithbooks.co';
-const SITE_OG_IMAGE = SITE_ORIGIN + '/og-image.svg';
+const SITE_OG_IMAGE = SITE_ORIGIN + '/og-image.png';
 
 /* ---------- Helpers ---------- */
 function $(sel, ctx) { return (ctx || document).querySelector(sel); }
@@ -63,11 +63,11 @@ function getLocalCoverPath(book) {
 }
 
 function getBookShareImage(book) {
-  return SITE_ORIGIN + '/og/books/' + book.id + '.svg';
+  return SITE_ORIGIN + '/og/books/' + book.id + '.png';
 }
 
 function getCategoryShareImage(slug) {
-  return SITE_ORIGIN + '/og/categories/' + slug + '.svg';
+  return SITE_ORIGIN + '/og/categories/' + slug + '.png';
 }
 
 function getBookCoverImage(book) {
@@ -77,6 +77,30 @@ function getBookCoverImage(book) {
   const driveFileId = getDriveFileId(book.pdf || '');
   if (driveFileId) return `https://drive.google.com/thumbnail?id=${driveFileId}&sz=w1000`;
   return getLocalCoverPath(book);
+}
+
+function isDownloadable(book) {
+  return book && book.access === 'download' && !!book.pdf;
+}
+
+function getLicenseBadge(book) {
+  const map = {
+    'public-domain': { text: 'Public Domain - Free to download', cls: 'lic-public' },
+    'original': { text: 'Original LifeWithBooks Guide', cls: 'lic-original' },
+    'reference': { text: 'Reference - find the official edition', cls: 'lic-reference' }
+  };
+  const info = map[book.license] || map['reference'];
+  return '<span class="license-badge ' + info.cls + '">' + escapeHtml(info.text) + '</span>';
+}
+
+function getOfficialSourceLinks(book) {
+  const q = encodeURIComponent(book.title || '');
+  const openLibrary = 'https://openlibrary.org/search?q=' + q;
+  const googleBooks = 'https://www.google.com/search?tbm=bks&q=' + q;
+  return (
+    '<a class="btn outline" href="' + openLibrary + '" target="_blank" rel="noopener nofollow">Find on Open Library</a>' +
+    '<a class="btn outline" href="' + googleBooks + '" target="_blank" rel="noopener nofollow">Search Google Books</a>'
+  );
 }
 
 /* ---------- Header / footer injection ---------- */
@@ -95,6 +119,7 @@ function injectHeader() {
   const isAll = currentPage === 'all-books';
   const isAbout = currentPage === 'about';
   const isContact = currentPage === 'contact';
+  const isArticles = currentPage === 'articles' || currentPage === 'article';
 
   headerHost.innerHTML = `
     <header class="site-header">
@@ -115,6 +140,7 @@ function injectHeader() {
             <a href="all-books.html">All Books</a>
             <ul>${buildCategoryDropdown()}</ul>
           </li>
+          <li${isArticles ? ' class="active"' : ''}><a href="articles.html">Articles</a></li>
           <li${isAbout ? ' class="active"' : ''}><a href="about.html">About Us</a></li>
           <li${isContact ? ' class="active"' : ''}><a href="contact.html">Contact</a></li>
         </ul>
@@ -146,7 +172,7 @@ function injectFooter() {
       <div class="footer-inner">
         <div>
           <span class="brand-name">Free PDF<br>Books</span>
-          <p>Your gateway to endless stories, knowledge and inspiration. Explore thousands of free ebooks across every genre — from timeless classics to hidden indie gems. No fees, no subscriptions, just instant access to the books you love.</p>
+          <p>Your gateway to stories, knowledge and inspiration. Explore ${(typeof BOOKS !== 'undefined' ? BOOKS.length : '140')}+ free ebooks and original guides — from timeless public-domain classics to practical health and learning resources. No fees, no subscriptions, just instant access to the books you love.</p>
         </div>
         <div>
           <h4>Categories</h4>
@@ -171,6 +197,7 @@ function injectFooter() {
           <h4>Policies</h4>
           <ul>
             <li><a href="about.html">About Us</a></li>
+            <li><a href="articles.html">Articles</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="privacy-policy.html">Privacy Policy</a></li>
             <li><a href="terms.html">Terms &amp; Conditions</a></li>
@@ -464,8 +491,11 @@ function initBookDetail() {
   const primaryCat = book.categories[0] || 'english-learning-books';
   const catObj = CATEGORIES.find(c => c.slug === primaryCat);
 
-  const pageTitle = book.title + ' | Free PDF Download - LifeWithBooks';
-  const pageDesc = (book.excerpt || ('Read about ' + book.title + ' on LifeWithBooks, the free PDF ebook library.')).slice(0, 320);
+  const downloadable = isDownloadable(book);
+  const pageTitle = downloadable
+    ? book.title + ' | Free PDF Download - LifeWithBooks'
+    : book.title + ' | Book Overview - LifeWithBooks';
+  const pageDesc = (book.excerpt || ('Read about ' + book.title + ' on LifeWithBooks, the free ebook library.')).slice(0, 320);
   const pageUrl = SITE_ORIGIN + '/book.html?id=' + encodeURIComponent(book.id);
   const coverImg = getBookCoverImage(book);
   const shareImg = getBookShareImage(book);
@@ -488,7 +518,7 @@ function initBookDetail() {
     "description": pageDesc,
     "inLanguage": "en",
     "bookFormat": "https://schema.org/EBook",
-    "isAccessibleForFree": true,
+    "isAccessibleForFree": downloadable,
     "publisher": {
       "@type": "Organization",
       "name": "LifeWithBooks",
@@ -513,6 +543,26 @@ function initBookDetail() {
     if (p.indexOf('## ') === 0) return '<h2>' + escapeHtml(p.slice(3)) + '</h2>';
     return '<p>' + escapeHtml(p) + '</p>';
   }).join('');
+
+  const whoFor = catObj
+    ? '<h2>Who is this book for?</h2><p>This title is ideal for readers interested in ' +
+      escapeHtml(catObj.label.toLowerCase()) +
+      '. Whether you are a beginner exploring the topic or returning for a refresher, the overview above helps you decide if it is the right fit before you read or obtain a copy.</p>'
+    : '';
+
+  const downloadBlock = downloadable
+    ? `
+    <div class="download-block">
+      ${getLicenseBadge(book)}
+      <p style="margin:14px 0 16px;font-size:15px;">This is a free, legal edition you can download and keep. The download stays on LifeWithBooks.</p>
+      <a class="btn" href="download.html?id=${encodeURIComponent(book.id)}">&#8595; Download Free PDF</a>
+    </div>`
+    : `
+    <div class="download-block summary-block">
+      ${getLicenseBadge(book)}
+      <p style="margin:14px 0 16px;font-size:15px;">We provide a detailed overview of this book for study and reference. To read the full work, please support the author and publisher by getting an official copy.</p>
+      <div class="official-links">${getOfficialSourceLinks(book)}</div>
+    </div>`;
 
   /* Related: other books in the same primary category */
   const related = BOOKS
@@ -547,12 +597,10 @@ function initBookDetail() {
 
     <article class="article">
       ${paragraphs}
+      ${whoFor}
     </article>
 
-    <div class="download-block">
-      <p style="margin-bottom:16px;font-size:15px;">Click the button below to download your free copy in PDF format.</p>
-      <a class="btn" href="download.html?id=${book.id}">&#8595; Download PDF</a>
-    </div>
+    ${downloadBlock}
 
     <div class="copyright-block">
       <h3 style="color:var(--contrast);margin-bottom:10px;font-size:18px;">Copyright Claim</h3>
@@ -567,6 +615,160 @@ function initBookDetail() {
 }
 
 
+/* ---------- Articles (blog) ---------- */
+function articleCardHTML(a) {
+  return `
+    <article class="book-card cover-${escapeHtml(a.cover || 'english')} article-card">
+      <a class="thumb" href="article.html?id=${encodeURIComponent(a.id)}" aria-label="${escapeHtml(a.title)}">
+        <div class="cover">
+          <div class="book"><span class="title-on-cover">${escapeHtml(a.title)}</span><span class="ribbon"></span></div>
+        </div>
+      </a>
+      <div class="info">
+        <h3><a href="article.html?id=${encodeURIComponent(a.id)}">${escapeHtml(a.title)}</a></h3>
+        <p class="article-excerpt">${escapeHtml(a.excerpt || '')}</p>
+        <a class="read-more" href="article.html?id=${encodeURIComponent(a.id)}">Read Article</a>
+      </div>
+    </article>`;
+}
+
+function initArticles() {
+  if (document.body.dataset.page !== 'articles') return;
+  if (typeof ARTICLES === 'undefined') return;
+  const el = $('#articles-grid');
+  if (el) el.innerHTML = ARTICLES.map(articleCardHTML).join('');
+  setShareMeta({
+    title: 'Articles & Reading Guides | LifeWithBooks',
+    description: 'Original reading guides and articles from the LifeWithBooks editorial team.',
+    url: SITE_ORIGIN + '/articles.html',
+    image: SITE_ORIGIN + '/og-image.png'
+  });
+  injectJsonLd('jsonld-articles', {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "LifeWithBooks Articles",
+    "url": SITE_ORIGIN + "/articles.html",
+    "blogPost": ARTICLES.map(a => ({
+      "@type": "BlogPosting",
+      "headline": a.title,
+      "datePublished": a.date,
+      "url": SITE_ORIGIN + "/article.html?id=" + encodeURIComponent(a.id)
+    }))
+  });
+}
+
+function initArticleDetail() {
+  if (document.body.dataset.page !== 'article') return;
+  if (typeof ARTICLES === 'undefined') return;
+  const id = getParam('id');
+  const a = ARTICLES.find(x => x.id === id);
+  const wrap = $('#article-detail');
+  if (!wrap) return;
+  if (!a) {
+    wrap.innerHTML = '<p style="text-align:center;padding:40px 0;">Sorry, this article could not be found. <a href="articles.html">Browse all articles</a>.</p>';
+    return;
+  }
+  const url = SITE_ORIGIN + '/article.html?id=' + encodeURIComponent(a.id);
+  const desc = (a.excerpt || '').slice(0, 320);
+  setShareMeta({ title: a.title + ' | LifeWithBooks', description: desc, url: url, image: SITE_ORIGIN + '/og-image.png' });
+  setMeta('meta[property="og:type"]', 'content', 'article');
+
+  const body = (a.body || []).map(p =>
+    p.indexOf('## ') === 0 ? '<h2>' + escapeHtml(p.slice(3)) + '</h2>' : '<p>' + escapeHtml(p) + '</p>'
+  ).join('');
+  let dateStr = a.date;
+  try { dateStr = new Date(a.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }); } catch (e) {}
+  const others = ARTICLES.filter(x => x.id !== a.id).slice(0, 6);
+  const relatedHTML = others.map(x =>
+    `<li><a href="article.html?id=${encodeURIComponent(x.id)}"><span>${escapeHtml(x.title)}</span><span class="arrow">Read More &raquo;</span></a></li>`
+  ).join('');
+
+  wrap.innerHTML = `
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> &raquo;
+      <a href="articles.html">Articles</a> &raquo;
+      <span>${escapeHtml(a.title)}</span>
+    </div>
+    <h1>${escapeHtml(a.title)}</h1>
+    <div class="meta"><span class="tag">${escapeHtml(dateStr)}</span><span class="tag">${escapeHtml(a.author || 'LifeWithBooks')}</span></div>
+    <article class="article">${body}</article>
+    <div class="download-block">
+      <p style="margin-bottom:14px;">Enjoyed this guide? Explore our free library of public-domain classics and original guides.</p>
+      <a class="btn" href="all-books.html">Browse Free Books</a>
+    </div>
+    <div class="related-posts"><h3>More Articles</h3><ul>${relatedHTML}</ul></div>
+  `;
+
+  injectJsonLd('jsonld-article', {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": a.title,
+    "description": desc,
+    "datePublished": a.date,
+    "author": { "@type": "Organization", "name": a.author || "LifeWithBooks" },
+    "publisher": { "@type": "Organization", "name": "LifeWithBooks", "url": SITE_ORIGIN + "/" },
+    "mainEntityOfPage": url,
+    "image": SITE_ORIGIN + "/og-image.png"
+  });
+  injectJsonLd('jsonld-breadcrumbs', {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE_ORIGIN + "/" },
+      { "@type": "ListItem", "position": 2, "name": "Articles", "item": SITE_ORIGIN + "/articles.html" },
+      { "@type": "ListItem", "position": 3, "name": a.title, "item": url }
+    ]
+  });
+}
+
+/* ---------- Cookie consent + ads readiness ---------- */
+/* To enable Google AdSense after approval:
+   1. Set ADSENSE_CLIENT below to your publisher id, e.g. 'ca-pub-1234567890123456'.
+   2. Paste the same id into ads.txt (replace the placeholder line).
+   Ads only load after the visitor accepts cookies. */
+const ADSENSE_CLIENT = '';
+const COOKIE_KEY = 'lwb_cookie_consent';
+
+function loadAdSense() {
+  if (!ADSENSE_CLIENT) return;
+  if (document.getElementById('lwb-adsense')) return;
+  const s = document.createElement('script');
+  s.id = 'lwb-adsense';
+  s.async = true;
+  s.crossOrigin = 'anonymous';
+  s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + ADSENSE_CLIENT;
+  document.head.appendChild(s);
+}
+
+function injectCookieBanner() {
+  let consent = null;
+  try { consent = localStorage.getItem(COOKIE_KEY); } catch (e) {}
+  if (consent === 'accepted') { loadAdSense(); return; }
+  if (consent === 'declined') return;
+
+  const bar = document.createElement('div');
+  bar.className = 'cookie-banner';
+  bar.setAttribute('role', 'dialog');
+  bar.setAttribute('aria-label', 'Cookie consent');
+  bar.innerHTML =
+    '<p>We use cookies to keep this library free, understand how it is used, and (in future) show relevant ads. See our <a href="cookie-policy.html">Cookie Policy</a>.</p>' +
+    '<div class="cookie-actions">' +
+      '<button type="button" class="cookie-btn decline" id="cookieDecline">Decline</button>' +
+      '<button type="button" class="cookie-btn accept" id="cookieAccept">Accept</button>' +
+    '</div>';
+  document.body.appendChild(bar);
+
+  function close(choice) {
+    try { localStorage.setItem(COOKIE_KEY, choice); } catch (e) {}
+    bar.remove();
+    if (choice === 'accepted') loadAdSense();
+  }
+  const accept = document.getElementById('cookieAccept');
+  const decline = document.getElementById('cookieDecline');
+  accept && accept.addEventListener('click', () => close('accepted'));
+  decline && decline.addEventListener('click', () => close('declined'));
+}
+
 /* ---------- Init ---------- */
 document.addEventListener('DOMContentLoaded', () => {
   injectHeader();
@@ -575,4 +777,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAllBooks();
   initCategory();
   initBookDetail();
+  initArticles();
+  initArticleDetail();
+  injectCookieBanner();
 });

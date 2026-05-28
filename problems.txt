@@ -1,0 +1,139 @@
+Hard (serious — fix before AdSense or you risk rejection / complaints)
+These can block AdSense, cause DMCA takedowns, or hurt your reputation.
+
+#	Issue	Why it matters	What to do
+H1
+~20 language books use Google Drive PDFs (Longman, Cambridge-style titles, etc.)
+Usually still copyrighted. Google and rights holders treat this as unauthorized distribution. Main AdSense risk on your site.
+Remove pdf links OR replace with “summary only” + official buy link (Amazon, publisher). Do not host those PDFs on your domain unless you have permission.
+H2
+69 books show “Download” but have no PDF
+Users click Download → “Being prepared.” Feels broken and low quality for AdSense reviewers.
+Either add legal PDFs only, or hide Download and show “Overview only” / “Coming soon.”
+H3
+Site looks like a download farm (many PDFs, little unique writing)
+AdSense wants original, helpful content, not only file links.
+Add your own articles (how to learn English, book lists, author notes). Aim for real pages reviewers can read.
+H4
+Health books still send users to healthfruitstips.com
+Not copyright theft, but leaves your site and looks like a thin affiliate/download site.
+Host health PDFs on lifewithbooks.co (same as you did for novels) OR remove download and keep summaries only.
+H5
+4 books link to content.techsipweb.com
+Third-party files you don’t control; unknown license. Same risk as random Drive links.
+Remove or replace with your own hosted files or legal sources only.
+H6
+No clear license per book
+Reviewers can’t tell public domain vs risky title.
+Add on each book page: “Public domain” / “Summary only — buy official edition” / “Our original guide.”
+H7
+DMCA / copyright claims
+Even one wrong book can get hosting or domain in trouble.
+Keep DMCA page (you have it). Respond fast. Prevent by cleaning H1 and H5 first.
+H8
+AdSense “low value content”
+Thin book pages = auto rejection.
+Longer unique intros, FAQs, “who is this for,” reading time — written by you, not only copied blurbs.
+Hard summary: Your biggest problem is not Gutenberg novels — it’s Drive + unknown external PDFs + 69 fake download buttons + thin content.
+
+Normal (important — do soon for AdSense and trust)
+Not always instant rejection, but they slow approval and hurt users.
+
+#	Issue	Why it matters	What to do
+N1
+ads.txt is placeholder (pub-XXXXXXXX)
+AdSense won’t verify ads correctly until real publisher ID is there.
+After approval, put your real pub-... ID in ads.txt.
+N2
+No AdSense code on pages yet (likely)
+You can’t earn until tags are added after approval.
+Apply first with clean site; add script only when approved.
+N3
+Google Search Console not set up (if missing)
+Harder to get indexed; AdSense likes indexed sites.
+Add property for https://www.lifewithbooks.co, submit sitemap.xml.
+N4
+Sharing images are SVG
+WhatsApp/Facebook often want PNG/JPG 1200×630; SVG previews may fail.
+Export og-image.png + per-category PNGs; set og:image to PNG URLs.
+N5
+~69 books without covers that look “real”
+Cards may show generic SVG while English books show Drive thumbnails — uneven quality.
+Use local covers-img/ for all, or only list books that have full assets.
+N6
+Mixed brand: LifeWithBooks vs Health Fruits Tips
+Confusing for users and AdSense (“who owns this site?”).
+One brand on all PDFs, footers, health section: LifeWithBooks only.
+N7
+Privacy / ads disclosure
+EU + AdSense need cookie/consent if you use ads.
+Cookie policy exists — add cookie consent banner when you enable AdSense.
+N8
+“Thousands of books” marketing text
+You have ~123 books; overstating hurts trust.
+Change copy to honest count: “120+ curated books” (update as you grow).
+N9
+Sitemap may not list every book URL
+Weaker SEO = slower traffic = harder AdSense.
+Add book.html?id=... URLs to sitemap (script or manual batch).
+N10
+Large PDF repo on GitHub/Vercel
+17+ PDFs = big deploy; slow builds; bandwidth cost.
+OK for now; later use CDN or storage bucket if site grows.
+N11
+Apply to AdSense too early
+Site still has risky downloads when reviewer checks.
+Apply after fixing H1, H2, and adding some original articles (N8).
+Normal summary: Polish trust, SEO, ads setup, and honest messaging — do this in the 2–4 weeks after you clean Hard issues.
+
+Easy (quick wins — low risk, fast to fix)
+#	Issue	Why it matters	What to do
+E1
+Public-domain novels (17 books)
+Already on your domain (pdfs/...) — good for AdSense if rest of site is clean.
+Keep these; optional: add “Public domain” badge on page.
+E2
+Policy pages exist (privacy, terms, DMCA, disclaimer, cookies)
+AdSense requires them.
+Keep links in footer on every page (you already inject footer).
+E3
+Contact + About with real details
+Trust signal for Google.
+Keep phone/email updated; remove old “GBDRYFRUITS” if any left.
+E4
+Custom domain lifewithbooks.co
+Much better than free .vercel.app only.
+Keep apex → www redirect; use www everywhere in canonicals.
+E5
+Category search
+Users can search inside Novels, etc.
+Already added — test on mobile.
+E6
+All Books dropdown scroll
+Was cutting off categories.
+Fixed — retest on phone.
+E7
+Download page stays on site for local PDFs
+Good UX for novels.
+Keep; extend same pattern when you self-host health PDFs.
+E8
+Favicon + basic meta tags
+Small SEO/trust plus.
+Already there; ensure og:image on home uses og-image.svg or PNG.
+E9
+Hard refresh after deploy
+Users see old Gutenberg redirect.
+Tell visitors Ctrl+F5; cache clears in ~24h on CDN.
+E10
+robots.txt + sitemap.xml
+Helps crawling.
+Confirm sitemap.xml is linked in Search Console.
+E11
+Remove broken external health domain if site is down
+Broken download = bad review.
+Check healthfruitstips.com loads; if not, disable those downloads until fixed.
+E12
+Git: don’t commit secrets
+.env in gitignore — good.
+Keep API keys out of repo.
+Easy summary: You already did several of these. Novels on your domain = green light. Focus Easy items while you tackle Hard ones.

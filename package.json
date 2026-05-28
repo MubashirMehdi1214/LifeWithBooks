@@ -5,7 +5,11 @@
   "private": true,
   "scripts": {
     "covers": "node scripts/generate-covers.js",
-    "build-pdfs": "node scripts/build-pdfs.js"
+    "build-pdfs": "node scripts/build-pdfs.js",
+    "build-health-pdfs": "node scripts/build-health-pdfs.js",
+    "classify": "node scripts/classify-books.js",
+    "og": "node scripts/og-rasterize.js",
+    "sitemap": "node scripts/generate-sitemap.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +24,8 @@
   },
   "homepage": "https://github.com/MubashirMehdi1214/LifeWithBooks#readme",
   "devDependencies": {
-    "pdfkit": "^0.18.0"
+    "esbuild": "^0.28.0",
+    "pdfkit": "^0.18.0",
+    "sharp": "^0.34.5"
   }
 }

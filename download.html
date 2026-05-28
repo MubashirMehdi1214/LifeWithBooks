@@ -78,7 +78,25 @@
 
     var pdfUrl = book.pdf;
     var directUrl = null;
-    var hasPdf = !!pdfUrl;
+    var hasPdf = !!pdfUrl && book.access === 'download';
+
+    if(!hasPdf){
+      var q = encodeURIComponent(book.title || '');
+      container.innerHTML =
+        '<div class="dl-cover" style="background:' + bg + '">' + (book.cover||'Book').toUpperCase() + '</div>' +
+        '<h1 class="dl-title">' + book.title + '</h1>' +
+        '<div class="dl-cat">' + (catLabels.join(' &bull; ') || 'Book') + '</div>' +
+        '<div class="dl-unavailable">' +
+          '<h3>Read the official edition</h3>' +
+          '<p>We offer a detailed overview of this book for study and reference. To read the full work, please support the author by getting an official copy.</p>' +
+          '<div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">' +
+            '<a class="dl-manual" href="https://openlibrary.org/search?q=' + q + '" target="_blank" rel="noopener nofollow">Find on Open Library</a>' +
+            '<a class="dl-manual" style="background:#555" href="https://www.google.com/search?tbm=bks&q=' + q + '" target="_blank" rel="noopener nofollow">Search Google Books</a>' +
+          '</div>' +
+        '</div>' +
+        '<br><a href="book.html?id=' + book.id + '" class="dl-back">&larr; Back to book overview</a>';
+      return;
+    }
 
     if(hasPdf){
       if(pdfUrl.indexOf('drive.google.com/file/d/') !== -1){
@@ -120,13 +138,8 @@
           document.body.appendChild(a);
           a.click();
           document.body.removeChild(a);
-        } else if (directUrl.indexOf('healthfruitstips.com') !== -1) {
-          window.location.href = directUrl;
         } else {
-          var iframe = document.createElement('iframe');
-          iframe.style.display = 'none';
-          iframe.src = directUrl;
-          document.body.appendChild(iframe);
+          window.location.href = directUrl;
         }
 
         msgEl.textContent = 'Download started! Check your browser\u2019s download bar.';
