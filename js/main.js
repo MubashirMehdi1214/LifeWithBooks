@@ -40,6 +40,22 @@ function getCoverTheme(book) {
   };
 }
 
+function getDriveFileId(url) {
+  if (!url) return '';
+  const byPath = url.match(/\/d\/([a-zA-Z0-9_-]+)/);
+  if (byPath && byPath[1]) return byPath[1];
+  const byQuery = url.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+  if (byQuery && byQuery[1]) return byQuery[1];
+  return '';
+}
+
+function getBookCoverImage(book) {
+  if (book.coverImage) return book.coverImage;
+  const driveFileId = getDriveFileId(book.pdf || '');
+  if (driveFileId) return `https://drive.google.com/thumbnail?id=${driveFileId}&sz=w1000`;
+  return '';
+}
+
 /* ---------- Header / footer injection ---------- */
 function buildCategoryDropdown() {
   if (typeof CATEGORIES === 'undefined') return '';
@@ -155,14 +171,34 @@ function bookCardHTML(book) {
     : null;
   const coverTheme = getCoverTheme(book);
   const coverStyle = `--cover-start:${coverTheme.start};--cover-end:${coverTheme.end};--cover-angle:${coverTheme.angle};`;
+  const coverImage = getBookCoverImage(book);
+  const fallbackStyle = coverImage ? 'display:none;' : '';
+  const coverVisual = coverImage
+    ? `
+          <img
+            class="cover-image"
+            src="${escapeHtml(coverImage)}"
+            alt="${escapeHtml(book.title)} cover"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+            onerror="this.remove();this.nextElementSibling.style.display='block';"
+          />
+          <div class="book book-fallback" style="${coverStyle}${fallbackStyle}">
+            <span class="title-on-cover">${escapeHtml(book.title)}</span>
+            <span class="ribbon"></span>
+          </div>
+        `
+    : `
+          <div class="book book-fallback" style="${coverStyle}">
+            <span class="title-on-cover">${escapeHtml(book.title)}</span>
+            <span class="ribbon"></span>
+          </div>
+        `;
   return `
     <article class="book-card cover-${escapeHtml(book.cover || 'english')}">
       <a class="thumb" href="book.html?id=${encodeURIComponent(book.id)}" aria-label="${escapeHtml(book.title)}">
         <div class="cover">
-          <div class="book" style="${coverStyle}">
-            <span class="title-on-cover">${escapeHtml(book.title)}</span>
-            <span class="ribbon"></span>
-          </div>
+          ${coverVisual}
         </div>
       </a>
       <div class="info">
