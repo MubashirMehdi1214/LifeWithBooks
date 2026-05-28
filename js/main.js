@@ -97,16 +97,17 @@ function injectFooter() {
         </div>
         <div class="contact-info">
           <h4>Contact us</h4>
-          <p><span class="icon">&#9742;</span> Phone: +92 318 0699050</p>
-          <p><span class="icon">&#9993;</span> info@lifewithbooks.com</p>
-          <p><span class="icon">&#127968;</span> Online Ebook Library</p>
-          <p><span class="icon">&#128205;</span> Worldwide delivery (digital)</p>
+          <p><span class="icon">&#9742;</span> Phone: +92 311 518 9291</p>
+          <p><span class="icon">&#128222;</span> WhatsApp: +92 311 518 9291</p>
+          <p><span class="icon">&#9993;</span> munashirmehdi@mail.com</p>
+          <p><span class="icon">&#127968;</span> GBDRYFRUITS Headquarters</p>
+          <p><span class="icon">&#128205;</span> Karachi, Pakistan 75000</p>
         </div>
         <div>
-          <h4>Get a Free Quote</h4>
+          <h4>Support Hours</h4>
           <div class="quote-box">
-            <span class="phone">+92 318 0699050</span>
-            <p>Get in touch to get a free quote, or for any copyright issue contact us anytime.</p>
+            <span class="phone">+92 311 518 9291</span>
+            <p>Monday - Saturday: 9:00 AM - 7:00 PM. Sunday: 10:00 AM - 6:00 PM.</p>
           </div>
         </div>
       </div>
