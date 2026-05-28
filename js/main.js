@@ -330,7 +330,7 @@ function initCategory() {
   const desc = $('#cat-description');
   const label = cat ? cat.label : 'Category';
   const intro = cat
-    ? 'Browse our latest collection of ' + cat.label.toLowerCase() + ' available to download for free as PDF.'
+    ? 'Browse our latest collection of ' + cat.label.toLowerCase() + ' with curated summaries, learning guidance and legal source recommendations.'
     : 'Browse books by category on LifeWithBooks.';
   if (title) title.textContent = label;
   if (desc) desc.textContent = intro;
@@ -384,7 +384,7 @@ function initBookDetail() {
   const primaryCat = book.categories[0] || 'english-learning-books';
   const catObj = CATEGORIES.find(c => c.slug === primaryCat);
 
-  const pageTitle = book.title + ' | Free PDF Download - LifeWithBooks';
+  const pageTitle = book.title + ' | Book Summary and Learning Guide - LifeWithBooks';
   const pageDesc = (book.excerpt || ('Read about ' + book.title + ' on LifeWithBooks, the free PDF ebook library.')).slice(0, 320);
   const pageUrl = 'https://lifewithbooks.vercel.app/book.html?id=' + encodeURIComponent(book.id);
   const coverImg = getBookCoverImage(book) || 'https://lifewithbooks.vercel.app/favicon.svg';
@@ -411,7 +411,6 @@ function initBookDetail() {
     "description": pageDesc,
     "inLanguage": "en",
     "bookFormat": "https://schema.org/EBook",
-    "isAccessibleForFree": true,
     "publisher": {
       "@type": "Organization",
       "name": "LifeWithBooks",
@@ -463,8 +462,8 @@ function initBookDetail() {
     </article>
 
     <div class="download-block">
-      <p style="margin-bottom:16px;font-size:15px;">Click the button below to download your free copy in PDF format.</p>
-      <a class="btn" href="download.html?id=${book.id}">&#8595; Download PDF</a>
+      <p style="margin-bottom:16px;font-size:15px;">This page provides a curated summary and study guidance. Direct downloads are disabled while rights verification is in progress.</p>
+      <a class="btn" href="contact.html">Request Legal Source Guidance</a>
     </div>
 
     <div class="copyright-block">
