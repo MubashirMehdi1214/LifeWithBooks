@@ -1,5 +1,8 @@
 /* LifeWithBooks - shared site behaviour */
 
+const SITE_ORIGIN = 'https://www.lifewithbooks.co';
+const SITE_OG_IMAGE = SITE_ORIGIN + '/og-image.svg';
+
 /* ---------- Helpers ---------- */
 function $(sel, ctx) { return (ctx || document).querySelector(sel); }
 function $$(sel, ctx) { return Array.from((ctx || document).querySelectorAll(sel)); }
@@ -49,11 +52,23 @@ function getDriveFileId(url) {
   return '';
 }
 
+function getLocalCoverPath(book) {
+  return 'covers/' + book.id + '.svg';
+}
+
+function getBookShareImage(book) {
+  return SITE_ORIGIN + '/og/books/' + book.id + '.svg';
+}
+
+function getCategoryShareImage(slug) {
+  return SITE_ORIGIN + '/og/categories/' + slug + '.svg';
+}
+
 function getBookCoverImage(book) {
   if (book.coverImage) return book.coverImage;
   const driveFileId = getDriveFileId(book.pdf || '');
   if (driveFileId) return `https://drive.google.com/thumbnail?id=${driveFileId}&sz=w1000`;
-  return '';
+  return getLocalCoverPath(book);
 }
 
 /* ---------- Header / footer injection ---------- */
@@ -178,29 +193,26 @@ function injectFooter() {
 
 /* ---------- Card renderer ---------- */
 function bookCardHTML(book) {
-  const cat = book.categories && book.categories[0]
-    ? CATEGORIES.find(c => c.slug === book.categories[0])
-    : null;
-  const coverImage = getBookCoverImage(book);
+  const primarySrc = getBookCoverImage(book);
+  const localFallback = getLocalCoverPath(book);
   const categoryCover = `
-          <div class="book" style="${coverImage ? 'display:none;' : ''}">
+          <div class="book" style="display:none;">
             <span class="title-on-cover">${escapeHtml(book.title)}</span>
             <span class="ribbon"></span>
           </div>
         `;
-  const coverVisual = coverImage
-    ? `
+  const coverVisual = `
           <img
             class="cover-image"
-            src="${escapeHtml(coverImage)}"
+            src="${escapeHtml(primarySrc)}"
             alt="${escapeHtml(book.title)} cover"
             loading="lazy"
             referrerpolicy="no-referrer"
-            onerror="this.style.display='none';if(this.nextElementSibling)this.nextElementSibling.style.display='block';"
+            onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;this.dataset.fallback='';}else{this.style.display='none';if(this.nextElementSibling)this.nextElementSibling.style.display='block';}"
+            ${primarySrc !== localFallback ? 'data-fallback="' + escapeHtml(localFallback) + '"' : ''}
           />
           ${categoryCover}
-        `
-    : categoryCover;
+        `;
   return `
     <article class="book-card cover-${escapeHtml(book.cover || 'english')}">
       <a class="thumb" href="book.html?id=${encodeURIComponent(book.id)}" aria-label="${escapeHtml(book.title)}">
@@ -314,6 +326,27 @@ function setCanonical(url) {
   }
   el.setAttribute('href', url);
 }
+function setShareMeta(opts) {
+  if (opts.title) {
+    document.title = opts.title;
+    setMeta('meta[property="og:title"]', 'content', opts.title);
+    setMeta('meta[name="twitter:title"]', 'content', opts.title);
+  }
+  if (opts.description) {
+    setMeta('meta[name="description"]', 'content', opts.description);
+    setMeta('meta[property="og:description"]', 'content', opts.description);
+    setMeta('meta[name="twitter:description"]', 'content', opts.description);
+  }
+  if (opts.url) {
+    setMeta('meta[property="og:url"]', 'content', opts.url);
+    setCanonical(opts.url);
+  }
+  if (opts.image) {
+    setMeta('meta[property="og:image"]', 'content', opts.image);
+    setMeta('meta[name="twitter:image"]', 'content', opts.image);
+    setMeta('meta[name="twitter:card"]', 'content', 'summary_large_image');
+  }
+}
 function injectJsonLd(id, data) {
   const existing = document.getElementById(id);
   if (existing) existing.remove();
@@ -339,16 +372,52 @@ function initCategory() {
   if (desc) desc.textContent = intro;
 
   const pageTitle = label + ' | LifeWithBooks - Free PDF Ebook Library';
-  const pageUrl = 'https://www.lifewithbooks.co/category.html?cat=' + encodeURIComponent(slug);
-  document.title = pageTitle;
-  setMeta('meta[name="description"]', 'content', intro);
-  setMeta('meta[property="og:title"]', 'content', pageTitle);
-  setMeta('meta[property="og:description"]', 'content', intro);
-  setMeta('meta[property="og:url"]', 'content', pageUrl);
-  setCanonical(pageUrl);
+  const pageUrl = SITE_ORIGIN + '/category.html?cat=' + encodeURIComponent(slug);
+  setShareMeta({
+    title: pageTitle,
+    description: intro,
+    url: pageUrl,
+    image: getCategoryShareImage(slug)
+  });
 
-  const items = BOOKS.filter(b => b.categories.includes(slug));
+  let items = BOOKS.filter(b => b.categories.includes(slug));
+  const q = (getParam('q') || '').toLowerCase().trim();
+  if (q) {
+    items = items.filter(b =>
+      b.title.toLowerCase().includes(q) ||
+      (b.excerpt || '').toLowerCase().includes(q)
+    );
+    const qEl = $('#cat-query-note');
+    if (qEl) qEl.textContent = ' matching "' + q + '"';
+    const input = $('#catSearchInput');
+    if (input) input.value = q;
+  }
   renderBookGrid('#category-grid', items);
+
+  const searchForm = $('#catSearchForm');
+  const searchInput = $('#catSearchInput');
+  function filterCategoryBooks(query) {
+    let filtered = BOOKS.filter(b => b.categories.includes(slug));
+    if (query) {
+      filtered = filtered.filter(b =>
+        b.title.toLowerCase().includes(query) ||
+        (b.excerpt || '').toLowerCase().includes(query)
+      );
+    }
+    renderBookGrid('#category-grid', filtered);
+    const qEl = $('#cat-query-note');
+    if (qEl) qEl.textContent = query ? ' matching "' + query + '"' : '';
+  }
+  searchInput && searchInput.addEventListener('input', () => {
+    filterCategoryBooks(searchInput.value.toLowerCase().trim());
+  });
+  searchForm && searchForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const val = searchInput.value.trim();
+    const params = new URLSearchParams({ cat: slug });
+    if (val) params.set('q', val);
+    window.location.href = 'category.html?' + params.toString();
+  });
 
   injectJsonLd('jsonld-breadcrumbs', {
     "@context": "https://schema.org",
@@ -389,28 +458,25 @@ function initBookDetail() {
 
   const pageTitle = book.title + ' | Free PDF Download - LifeWithBooks';
   const pageDesc = (book.excerpt || ('Read about ' + book.title + ' on LifeWithBooks, the free PDF ebook library.')).slice(0, 320);
-  const pageUrl = 'https://www.lifewithbooks.co/book.html?id=' + encodeURIComponent(book.id);
-  const coverImg = getBookCoverImage(book) || 'https://www.lifewithbooks.co/favicon.svg';
+  const pageUrl = SITE_ORIGIN + '/book.html?id=' + encodeURIComponent(book.id);
+  const coverImg = getBookCoverImage(book);
+  const shareImg = getBookShareImage(book);
+  const localCover = getLocalCoverPath(book);
 
-  document.title = pageTitle;
-  setMeta('meta[name="description"]', 'content', pageDesc);
-  setMeta('meta[property="og:title"]', 'content', pageTitle);
-  setMeta('meta[property="og:description"]', 'content', pageDesc);
-  setMeta('meta[property="og:url"]', 'content', pageUrl);
-  setMeta('meta[property="og:image"]', 'content', coverImg);
+  setShareMeta({
+    title: pageTitle,
+    description: pageDesc,
+    url: pageUrl,
+    image: shareImg
+  });
   setMeta('meta[property="og:type"]', 'content', 'book');
-  setMeta('meta[name="twitter:title"]', 'content', pageTitle);
-  setMeta('meta[name="twitter:description"]', 'content', pageDesc);
-  setMeta('meta[name="twitter:image"]', 'content', coverImg);
-  setMeta('meta[name="twitter:card"]', 'content', 'summary_large_image');
-  setCanonical(pageUrl);
 
   injectJsonLd('jsonld-book', {
     "@context": "https://schema.org",
     "@type": "Book",
     "name": book.title,
     "url": pageUrl,
-    "image": coverImg,
+    "image": shareImg,
     "description": pageDesc,
     "inLanguage": "en",
     "bookFormat": "https://schema.org/EBook",
@@ -457,6 +523,16 @@ function initBookDetail() {
       <a href="category.html?cat=${primaryCat}">${catObj ? escapeHtml(catObj.label) : 'Books'}</a> &raquo;
       <span>${escapeHtml(book.title)}</span>
     </div>
+
+    <img
+      class="book-detail-cover"
+      src="${escapeHtml(coverImg)}"
+      alt="${escapeHtml(book.title)} cover"
+      loading="eager"
+      referrerpolicy="no-referrer"
+      onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;this.dataset.fallback='';}else{this.style.display='none';}"
+      ${coverImg !== localCover ? 'data-fallback="' + escapeHtml(localCover) + '"' : ''}
+    />
 
     <h1>${escapeHtml(book.title)}</h1>
     <div class="meta">${tags}</div>

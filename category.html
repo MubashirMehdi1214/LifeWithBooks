@@ -12,7 +12,9 @@
   <meta property="og:description" content="Browse free PDF ebooks by category on LifeWithBooks.">
   <meta property="og:url" content="https://www.lifewithbooks.co/category.html">
   <meta property="og:site_name" content="LifeWithBooks">
+  <meta property="og:image" content="https://www.lifewithbooks.co/og-image.svg">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.lifewithbooks.co/og-image.svg">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,8 +23,14 @@
   <div id="site-header-host"></div>
 
   <section class="section">
-    <div class="section-title"><h2 id="cat-title">Category</h2></div>
-    <p id="cat-description" style="text-align:center;max-width:680px;margin:-20px auto 36px;color:var(--contrast-3);"></p>
+    <div class="section-title"><h2 id="cat-title">Category<span id="cat-query-note"></span></h2></div>
+    <p id="cat-description" style="text-align:center;max-width:680px;margin:-20px auto 30px;color:var(--contrast-3);"></p>
+
+    <form id="catSearchForm" class="search-box" role="search" style="max-width:520px;margin:0 auto 36px;background:#fff;border-radius:100px;padding:6px;display:flex;align-items:center;box-shadow:var(--shadow);">
+      <input id="catSearchInput" type="search" placeholder="Search in this category..." aria-label="Search category" style="flex:1;border:0;outline:0;background:transparent;padding:12px 18px;font-family:inherit;font-size:15px;">
+      <button type="submit" style="background:var(--accent);color:#fff;border:0;border-radius:100px;padding:12px 26px;font-family:inherit;font-weight:700;cursor:pointer;">Search</button>
+    </form>
+
     <div class="book-grid" id="category-grid"></div>
   </section>
 

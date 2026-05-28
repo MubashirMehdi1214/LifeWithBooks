@@ -441,6 +441,15 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
   margin-bottom: 28px;
 }
 .book-single .breadcrumb a { color: var(--accent); }
+.book-single .book-detail-cover {
+  display: block;
+  width: min(220px, 55%);
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 32px;
+  border-radius: 8px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+}
 .book-single .meta {
   display: flex;
   flex-wrap: wrap;
