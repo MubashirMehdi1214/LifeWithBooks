@@ -110,8 +110,17 @@
       var seconds = 3;
       var elapsed = 0;
 
+      var isLocal = directUrl.indexOf('http') !== 0;
+
       window.triggerDownload = function(){
-        if (directUrl.indexOf('gutenberg.org') !== -1 || directUrl.indexOf('healthfruitstips.com') !== -1) {
+        if (isLocal) {
+          var a = document.createElement('a');
+          a.href = directUrl;
+          a.download = (book.id || 'book') + '.pdf';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        } else if (directUrl.indexOf('healthfruitstips.com') !== -1) {
           window.location.href = directUrl;
         } else {
           var iframe = document.createElement('iframe');

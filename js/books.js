@@ -1459,7 +1459,8 @@ const BOOKS = [
     title: "Pride and Prejudice",
     categories: ["novels", "literature-books"],
     cover: "novel",
-    pdf: "https://www.gutenberg.org/ebooks/1342.pdf.noimages",
+    pdf: "pdfs/pride-and-prejudice.pdf",
+    coverImage: "covers-img/pride-and-prejudice.jpg",
     excerpt: "Jane Austen's beloved novel of manners, marriage and misunderstanding between Elizabeth Bennet and Mr Darcy in Regency England.",
     description: [
       "## A Timeless Romance of Wit and Pride",
@@ -1475,7 +1476,8 @@ const BOOKS = [
     title: "Jane Eyre",
     categories: ["novels", "literature-books"],
     cover: "novel",
-    pdf: "https://www.gutenberg.org/ebooks/1260.pdf.noimages",
+    pdf: "pdfs/jane-eyre.pdf",
+    coverImage: "covers-img/jane-eyre.jpg",
     excerpt: "Charlotte Brontë's powerful story of an orphaned governess who finds love, independence and moral courage at Thornfield Hall.",
     description: [
       "## Gothic Romance and Inner Strength",
@@ -1491,7 +1493,8 @@ const BOOKS = [
     title: "Frankenstein",
     categories: ["novels", "literature-books"],
     cover: "novel",
-    pdf: "https://www.gutenberg.org/ebooks/84.pdf.noimages",
+    pdf: "pdfs/frankenstein.pdf",
+    coverImage: "covers-img/frankenstein.jpg",
     excerpt: "Mary Shelley's groundbreaking science-fiction novel about creation, responsibility and what it means to be human.",
     description: [
       "## The Original Modern Monster Story",
@@ -1507,7 +1510,8 @@ const BOOKS = [
     title: "Dracula",
     categories: ["novels", "literature-books"],
     cover: "novel",
-    pdf: "https://www.gutenberg.org/ebooks/345.pdf.noimages",
+    pdf: "pdfs/dracula.pdf",
+    coverImage: "covers-img/dracula.jpg",
     excerpt: "Bram Stoker's chilling epistolary novel that defined the modern vampire legend and still terrifies readers.",
     description: [
       "## The Novel That Created the Modern Vampire",
@@ -1523,7 +1527,8 @@ const BOOKS = [
     title: "The Picture of Dorian Gray",
     categories: ["novels", "literature-books"],
     cover: "novel",
-    pdf: "https://www.gutenberg.org/ebooks/174.pdf.noimages",
+    pdf: "pdfs/the-picture-of-dorian-gray.pdf",
+    coverImage: "covers-img/the-picture-of-dorian-gray.jpg",
     excerpt: "Oscar Wilde's only novel — a provocative tale of beauty, corruption and a portrait that ages while its subject does not.",
     description: [
       "## Beauty, Decadence and Conscience",
@@ -1539,7 +1544,8 @@ const BOOKS = [
     title: "Little Women",
     categories: ["novels", "literature-books", "kids-learning-books"],
     cover: "novel",
-    pdf: "https://www.gutenberg.org/ebooks/514.pdf.noimages",
+    pdf: "pdfs/little-women.pdf",
+    coverImage: "covers-img/little-women.jpg",
     excerpt: "Louisa May Alcott's warm, enduring story of the four March sisters growing up during the American Civil War era.",
     description: [
       "## A Family Story Readers Treasure",
@@ -1557,7 +1563,8 @@ const BOOKS = [
     title: "The Art of War",
     categories: ["trading-books", "business-books", "self-grooming-books"],
     cover: "trading",
-    pdf: "https://www.gutenberg.org/ebooks/132.pdf.noimages",
+    pdf: "pdfs/the-art-of-war.pdf",
+    coverImage: "covers-img/the-art-of-war.jpg",
     excerpt: "Sun Tzu's ancient strategic classic on planning, competition and decision-making — widely studied by traders, leaders and entrepreneurs.",
     description: [
       "## Strategy for Any Competitive Field",
@@ -1573,7 +1580,8 @@ const BOOKS = [
     title: "Extraordinary Popular Delusions and the Madness of Crowds",
     categories: ["trading-books", "business-books"],
     cover: "trading",
-    pdf: "https://www.gutenberg.org/ebooks/24518.pdf.noimages",
+    pdf: "pdfs/extraordinary-popular-delusions.pdf",
+    coverImage: "covers-img/extraordinary-popular-delusions.jpg",
     excerpt: "Charles Mackay's classic study of market manias, bubbles and crowd psychology — essential reading for anyone interested in trading history.",
     description: [
       "## The Psychology of Bubbles",
@@ -1589,7 +1597,8 @@ const BOOKS = [
     title: "The Prince",
     categories: ["trading-books", "business-books"],
     cover: "trading",
-    pdf: "https://www.gutenberg.org/ebooks/1232.pdf.noimages",
+    pdf: "pdfs/the-prince.pdf",
+    coverImage: "covers-img/the-prince.jpg",
     excerpt: "Niccolò Machiavelli's influential treatise on power, leadership and pragmatic decision-making in competitive environments.",
     description: [
       "## Real-World Power and Influence",
@@ -1605,7 +1614,8 @@ const BOOKS = [
     title: "An Inquiry into the Nature and Causes of the Wealth of Nations (Selection)",
     categories: ["trading-books", "business-books"],
     cover: "business",
-    pdf: "https://www.gutenberg.org/ebooks/3300.pdf.noimages",
+    pdf: "pdfs/wealth-of-nations-abridged-selection.pdf",
+    coverImage: "covers-img/wealth-of-nations-abridged-selection.jpg",
     excerpt: "Adam Smith's foundational work on markets, division of labour, trade and the origins of modern economic thought.",
     description: [
       "## The Birth of Modern Economics",
@@ -1621,7 +1631,8 @@ const BOOKS = [
     title: "Scientific Advertising",
     categories: ["trading-books", "business-books"],
     cover: "business",
-    pdf: "https://www.gutenberg.org/ebooks/42976.pdf.noimages",
+    pdf: "pdfs/scientific-advertising.pdf",
+    coverImage: "covers-img/scientific-advertising.jpg",
     excerpt: "Claude Hopkins' pioneering guide to measurable marketing, testing and persuasion — a business classic in the public domain.",
     description: [
       "## Marketing as a Measurable Science",
@@ -1639,7 +1650,8 @@ const BOOKS = [
     title: "Treasure Island",
     categories: ["adventure-books", "literature-books", "kids-learning-books"],
     cover: "adventure",
-    pdf: "https://www.gutenberg.org/ebooks/120.pdf.noimages",
+    pdf: "pdfs/treasure-island.pdf",
+    coverImage: "covers-img/treasure-island.jpg",
     excerpt: "Robert Louis Stevenson's timeless pirate adventure with Jim Hawkins, Long John Silver and a hunt for buried gold.",
     description: [
       "## The Definitive Pirate Adventure",
@@ -1655,7 +1667,8 @@ const BOOKS = [
     title: "Around the World in Eighty Days",
     categories: ["adventure-books", "literature-books"],
     cover: "adventure",
-    pdf: "https://www.gutenberg.org/ebooks/103.pdf.noimages",
+    pdf: "pdfs/around-the-world-in-eighty-days.pdf",
+    coverImage: "covers-img/around-the-world-in-eighty-days.jpg",
     excerpt: "Jules Verne's globe-trotting race against time with the precise Phileas Fogg and his loyal valet Passepartout.",
     description: [
       "## A Race Across Continents",
@@ -1671,7 +1684,8 @@ const BOOKS = [
     title: "Journey to the Center of the Earth",
     categories: ["adventure-books", "literature-books"],
     cover: "adventure",
-    pdf: "https://www.gutenberg.org/ebooks/188.pdf.noimages",
+    pdf: "pdfs/journey-to-the-center-of-the-earth.pdf",
+    coverImage: "covers-img/journey-to-the-center-of-the-earth.jpg",
     excerpt: "Jules Verne's expedition into the depths of the planet led by Professor Lidenbrock, his nephew Axel and guide Hans.",
     description: [
       "## Science, Wonder and Danger Underground",
@@ -1687,7 +1701,8 @@ const BOOKS = [
     title: "The Call of the Wild",
     categories: ["adventure-books", "literature-books"],
     cover: "adventure",
-    pdf: "https://www.gutenberg.org/ebooks/215.pdf.noimages",
+    pdf: "pdfs/the-call-of-the-wild.pdf",
+    coverImage: "covers-img/the-call-of-the-wild.jpg",
     excerpt: "Jack London's gripping tale of Buck, a domestic dog who answers the wild call of the Yukon during the gold rush.",
     description: [
       "## Survival in the Frozen North",
@@ -1703,7 +1718,8 @@ const BOOKS = [
     title: "King Solomon's Mines",
     categories: ["adventure-books", "literature-books"],
     cover: "adventure",
-    pdf: "https://www.gutenberg.org/ebooks/2166.pdf.noimages",
+    pdf: "pdfs/king-solomons-mines.pdf",
+    coverImage: "covers-img/king-solomons-mines.jpg",
     excerpt: "H. Rider Haggard's African quest for legendary treasure with Allan Quatermain — a template for the lost-world adventure genre.",
     description: [
       "## Treasure, Danger and Exotic Lands",
@@ -1719,7 +1735,8 @@ const BOOKS = [
     title: "The Lost World",
     categories: ["adventure-books", "literature-books"],
     cover: "adventure",
-    pdf: "https://www.gutenberg.org/ebooks/139.pdf.noimages",
+    pdf: "pdfs/the-lost-world.pdf",
+    coverImage: "covers-img/the-lost-world.jpg",
     excerpt: "Arthur Conan Doyle's plateau of prehistoric creatures, led by the formidable Professor Challenger and a team of daring explorers.",
     description: [
       "## Dinosaurs, Discovery and Daring",

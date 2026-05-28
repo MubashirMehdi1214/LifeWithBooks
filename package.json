@@ -1,0 +1,25 @@
+{
+  "name": "lifewithbooks",
+  "version": "1.0.0",
+  "description": "LifeWithBooks - free PDF ebook library (static site)",
+  "private": true,
+  "scripts": {
+    "covers": "node scripts/generate-covers.js",
+    "build-pdfs": "node scripts/build-pdfs.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MubashirMehdi1214/LifeWithBooks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MubashirMehdi1214/LifeWithBooks/issues"
+  },
+  "homepage": "https://github.com/MubashirMehdi1214/LifeWithBooks#readme",
+  "devDependencies": {
+    "pdfkit": "^0.18.0"
+  }
+}
