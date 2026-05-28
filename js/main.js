@@ -336,7 +336,7 @@ function initCategory() {
   if (desc) desc.textContent = intro;
 
   const pageTitle = label + ' | LifeWithBooks - Free PDF Ebook Library';
-  const pageUrl = 'https://lifewithbooks.vercel.app/category.html?cat=' + encodeURIComponent(slug);
+  const pageUrl = 'https://www.lifewithbooks.co/category.html?cat=' + encodeURIComponent(slug);
   document.title = pageTitle;
   setMeta('meta[name="description"]', 'content', intro);
   setMeta('meta[property="og:title"]', 'content', pageTitle);
@@ -351,8 +351,8 @@ function initCategory() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lifewithbooks.vercel.app/" },
-      { "@type": "ListItem", "position": 2, "name": "All Books", "item": "https://lifewithbooks.vercel.app/all-books.html" },
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.lifewithbooks.co/" },
+      { "@type": "ListItem", "position": 2, "name": "All Books", "item": "https://www.lifewithbooks.co/all-books.html" },
       { "@type": "ListItem", "position": 3, "name": label, "item": pageUrl }
     ]
   });
@@ -365,7 +365,7 @@ function initCategory() {
     "hasPart": items.slice(0, 30).map(b => ({
       "@type": "Book",
       "name": b.title,
-      "url": "https://lifewithbooks.vercel.app/book.html?id=" + encodeURIComponent(b.id)
+      "url": "https://www.lifewithbooks.co/book.html?id=" + encodeURIComponent(b.id)
     }))
   });
 }
@@ -386,8 +386,8 @@ function initBookDetail() {
 
   const pageTitle = book.title + ' | Free PDF Download - LifeWithBooks';
   const pageDesc = (book.excerpt || ('Read about ' + book.title + ' on LifeWithBooks, the free PDF ebook library.')).slice(0, 320);
-  const pageUrl = 'https://lifewithbooks.vercel.app/book.html?id=' + encodeURIComponent(book.id);
-  const coverImg = getBookCoverImage(book) || 'https://lifewithbooks.vercel.app/favicon.svg';
+  const pageUrl = 'https://www.lifewithbooks.co/book.html?id=' + encodeURIComponent(book.id);
+  const coverImg = getBookCoverImage(book) || 'https://www.lifewithbooks.co/favicon.svg';
 
   document.title = pageTitle;
   setMeta('meta[name="description"]', 'content', pageDesc);
@@ -415,15 +415,15 @@ function initBookDetail() {
     "publisher": {
       "@type": "Organization",
       "name": "LifeWithBooks",
-      "url": "https://lifewithbooks.vercel.app/"
+      "url": "https://www.lifewithbooks.co/"
     }
   });
   injectJsonLd('jsonld-breadcrumbs', {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lifewithbooks.vercel.app/" },
-      { "@type": "ListItem", "position": 2, "name": catObj ? catObj.label : 'Books', "item": "https://lifewithbooks.vercel.app/category.html?cat=" + encodeURIComponent(primaryCat) },
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.lifewithbooks.co/" },
+      { "@type": "ListItem", "position": 2, "name": catObj ? catObj.label : 'Books', "item": "https://www.lifewithbooks.co/category.html?cat=" + encodeURIComponent(primaryCat) },
       { "@type": "ListItem", "position": 3, "name": book.title, "item": pageUrl }
     ]
   });

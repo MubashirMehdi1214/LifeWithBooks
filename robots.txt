@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /download.html
 
-Sitemap: https://lifewithbooks.vercel.app/sitemap.xml
+Sitemap: https://www.lifewithbooks.co/sitemap.xml
