@@ -140,19 +140,31 @@ function injectFooter() {
           <h4>Contact us</h4>
           <p><span class="icon">&#9742;</span> Phone: +92 311 518 9291</p>
           <p><span class="icon">&#128222;</span> WhatsApp: +92 311 518 9291</p>
-          <p><span class="icon">&#9993;</span> munashirmehdi@mail.com</p>
-          <p><span class="icon">&#127968;</span> GBDRYFRUITS Headquarters</p>
-          <p><span class="icon">&#128205;</span> Karachi, Pakistan 75000</p>
+          <p><span class="icon">&#9993;</span> <a href="mailto:munashirmehdi@mail.com" style="color:inherit;">munashirmehdi@mail.com</a></p>
+          <p><span class="icon">&#127968;</span> LifeWithBooks Editorial Office</p>
+          <p><span class="icon">&#128205;</span> Karachi, Pakistan</p>
         </div>
         <div>
-          <h4>Support Hours</h4>
-          <div class="quote-box">
-            <span class="phone">+92 311 518 9291</span>
-            <p>Monday - Saturday: 9:00 AM - 7:00 PM. Sunday: 10:00 AM - 6:00 PM.</p>
-          </div>
+          <h4>Policies</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="dmca.html">DMCA / Copyright</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-bottom">&copy; ${new Date().getFullYear()} LifeWithBooks &middot; All Rights Reserved</div>
+      <div class="footer-bottom">
+        &copy; ${new Date().getFullYear()} LifeWithBooks &middot; All Rights Reserved &middot;
+        <a href="privacy-policy.html" style="color:inherit;">Privacy</a> &middot;
+        <a href="terms.html" style="color:inherit;">Terms</a> &middot;
+        <a href="dmca.html" style="color:inherit;">DMCA</a> &middot;
+        <a href="disclaimer.html" style="color:inherit;">Disclaimer</a> &middot;
+        <a href="cookie-policy.html" style="color:inherit;">Cookies</a>
+      </div>
     </footer>
     <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</a>
   `;
@@ -279,6 +291,36 @@ function initAllBooks() {
   });
 }
 
+/* ---------- SEO helpers ---------- */
+function setMeta(selector, attr, value) {
+  let el = document.head.querySelector(selector);
+  if (!el) {
+    el = document.createElement('meta');
+    const [key, val] = selector.replace(/[\[\]"']/g, '').split('=');
+    el.setAttribute(key, val);
+    document.head.appendChild(el);
+  }
+  el.setAttribute(attr, value);
+}
+function setCanonical(url) {
+  let el = document.head.querySelector('link[rel="canonical"]');
+  if (!el) {
+    el = document.createElement('link');
+    el.setAttribute('rel', 'canonical');
+    document.head.appendChild(el);
+  }
+  el.setAttribute('href', url);
+}
+function injectJsonLd(id, data) {
+  const existing = document.getElementById(id);
+  if (existing) existing.remove();
+  const s = document.createElement('script');
+  s.type = 'application/ld+json';
+  s.id = id;
+  s.textContent = JSON.stringify(data);
+  document.head.appendChild(s);
+}
+
 /* ---------- Category page ---------- */
 function initCategory() {
   if (document.body.dataset.page !== 'category') return;
@@ -286,13 +328,46 @@ function initCategory() {
   const cat = CATEGORIES.find(c => c.slug === slug);
   const title = $('#cat-title');
   const desc = $('#cat-description');
-  if (title) title.textContent = cat ? cat.label : 'Category';
-  if (desc) desc.textContent = cat
-    ? 'Browse our latest collection of ' + cat.label.toLowerCase() + ' available to download for free.'
-    : '';
-  document.title = (cat ? cat.label : 'Category') + ' - LifeWithBooks';
+  const label = cat ? cat.label : 'Category';
+  const intro = cat
+    ? 'Browse our latest collection of ' + cat.label.toLowerCase() + ' available to download for free as PDF.'
+    : 'Browse books by category on LifeWithBooks.';
+  if (title) title.textContent = label;
+  if (desc) desc.textContent = intro;
+
+  const pageTitle = label + ' | LifeWithBooks - Free PDF Ebook Library';
+  const pageUrl = 'https://lifewithbooks.vercel.app/category.html?cat=' + encodeURIComponent(slug);
+  document.title = pageTitle;
+  setMeta('meta[name="description"]', 'content', intro);
+  setMeta('meta[property="og:title"]', 'content', pageTitle);
+  setMeta('meta[property="og:description"]', 'content', intro);
+  setMeta('meta[property="og:url"]', 'content', pageUrl);
+  setCanonical(pageUrl);
+
   const items = BOOKS.filter(b => b.categories.includes(slug));
   renderBookGrid('#category-grid', items);
+
+  injectJsonLd('jsonld-breadcrumbs', {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lifewithbooks.vercel.app/" },
+      { "@type": "ListItem", "position": 2, "name": "All Books", "item": "https://lifewithbooks.vercel.app/all-books.html" },
+      { "@type": "ListItem", "position": 3, "name": label, "item": pageUrl }
+    ]
+  });
+  injectJsonLd('jsonld-collection', {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": label + ' - LifeWithBooks',
+    "url": pageUrl,
+    "description": intro,
+    "hasPart": items.slice(0, 30).map(b => ({
+      "@type": "Book",
+      "name": b.title,
+      "url": "https://lifewithbooks.vercel.app/book.html?id=" + encodeURIComponent(b.id)
+    }))
+  });
 }
 
 /* ---------- Book detail page ---------- */
@@ -305,10 +380,53 @@ function initBookDetail() {
     wrap.innerHTML = '<p style="text-align:center;padding:40px 0;">Sorry, this book could not be found. <a href="all-books.html">Browse all books</a>.</p>';
     return;
   }
-  document.title = book.title + ' - LifeWithBooks';
 
   const primaryCat = book.categories[0] || 'english-learning-books';
   const catObj = CATEGORIES.find(c => c.slug === primaryCat);
+
+  const pageTitle = book.title + ' | Free PDF Download - LifeWithBooks';
+  const pageDesc = (book.excerpt || ('Read about ' + book.title + ' on LifeWithBooks, the free PDF ebook library.')).slice(0, 320);
+  const pageUrl = 'https://lifewithbooks.vercel.app/book.html?id=' + encodeURIComponent(book.id);
+  const coverImg = getBookCoverImage(book) || 'https://lifewithbooks.vercel.app/favicon.svg';
+
+  document.title = pageTitle;
+  setMeta('meta[name="description"]', 'content', pageDesc);
+  setMeta('meta[property="og:title"]', 'content', pageTitle);
+  setMeta('meta[property="og:description"]', 'content', pageDesc);
+  setMeta('meta[property="og:url"]', 'content', pageUrl);
+  setMeta('meta[property="og:image"]', 'content', coverImg);
+  setMeta('meta[property="og:type"]', 'content', 'book');
+  setMeta('meta[name="twitter:title"]', 'content', pageTitle);
+  setMeta('meta[name="twitter:description"]', 'content', pageDesc);
+  setMeta('meta[name="twitter:image"]', 'content', coverImg);
+  setMeta('meta[name="twitter:card"]', 'content', 'summary_large_image');
+  setCanonical(pageUrl);
+
+  injectJsonLd('jsonld-book', {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": book.title,
+    "url": pageUrl,
+    "image": coverImg,
+    "description": pageDesc,
+    "inLanguage": "en",
+    "bookFormat": "https://schema.org/EBook",
+    "isAccessibleForFree": true,
+    "publisher": {
+      "@type": "Organization",
+      "name": "LifeWithBooks",
+      "url": "https://lifewithbooks.vercel.app/"
+    }
+  });
+  injectJsonLd('jsonld-breadcrumbs', {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lifewithbooks.vercel.app/" },
+      { "@type": "ListItem", "position": 2, "name": catObj ? catObj.label : 'Books', "item": "https://lifewithbooks.vercel.app/category.html?cat=" + encodeURIComponent(primaryCat) },
+      { "@type": "ListItem", "position": 3, "name": book.title, "item": pageUrl }
+    ]
+  });
   const tags = book.categories.map(slug => {
     const c = CATEGORIES.find(x => x.slug === slug);
     return c ? '<span class="tag">' + escapeHtml(c.label) + '</span>' : '';

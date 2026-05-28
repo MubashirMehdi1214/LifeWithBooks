@@ -3,8 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - LifeWithBooks</title>
+  <title>Contact Us | LifeWithBooks - Free PDF Ebook Library</title>
+  <meta name="description" content="Contact LifeWithBooks - send us your questions, suggestions or copyright requests. We respond within 3 working days.">
+  <meta name="keywords" content="contact lifewithbooks, ebook library contact, copyright claim, book recommendations">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://lifewithbooks.vercel.app/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact Us | LifeWithBooks">
+  <meta property="og:description" content="Get in touch with the LifeWithBooks editorial team.">
+  <meta property="og:url" content="https://lifewithbooks.vercel.app/contact.html">
+  <meta property="og:site_name" content="LifeWithBooks">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact LifeWithBooks",
+    "url": "https://lifewithbooks.vercel.app/contact.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "LifeWithBooks",
+      "url": "https://lifewithbooks.vercel.app",
+      "email": "munashirmehdi@mail.com",
+      "telephone": "+92-311-518-9291",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "munashirmehdi@mail.com",
+        "telephone": "+92-311-518-9291",
+        "availableLanguage": ["English", "Urdu"]
+      }
+    }
+  }
+  </script>
 </head>
 <body data-page="contact" id="top">
 
@@ -13,17 +46,19 @@
   <section class="hero" style="padding:60px 20px;">
     <div class="container">
       <h1>Contact Us</h1>
-      <p>Questions, suggestions or a copyright claim? We&rsquo;d love to hear from you.</p>
+      <p>Questions, suggestions, or a copyright claim? We&rsquo;d love to hear from you.</p>
     </div>
   </section>
 
   <main class="page-content">
+    <p style="text-align:center;max-width:680px;margin:0 auto 30px;">We read every message personally. For copyright takedown requests, please follow the steps on our <a href="dmca.html">DMCA / Copyright Policy</a> page so we can act faster.</p>
+
     <div class="contact-grid">
-      <form class="contact-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Thanks! We will reply soon.';this.reset();">
-        <input type="text" placeholder="Your name" required>
-        <input type="email" placeholder="Email address" required>
-        <input type="text" placeholder="Subject">
-        <textarea placeholder="Your message" required></textarea>
+      <form class="contact-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Thanks! We will reply within 1-3 working days.';this.reset();">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Email address" required>
+        <input type="text" name="subject" placeholder="Subject (e.g. book request, feedback, copyright)">
+        <textarea name="message" placeholder="Your message" required></textarea>
         <button type="submit" class="btn">Send Message</button>
       </form>
 
@@ -31,12 +66,15 @@
         <h3>Get in touch</h3>
         <p><strong>Phone:</strong> +92 311 518 9291</p>
         <p><strong>WhatsApp:</strong> +92 311 518 9291</p>
-        <p><strong>Email:</strong> munashirmehdi@mail.com</p>
-        <p><strong>Address:</strong> GBDRYFRUITS Headquarters, 123 Commercial Street, Block A, Karachi, Pakistan 75000</p>
-        <p><strong>Hours:</strong> Monday - Saturday: 9:00 AM - 7:00 PM<br>Sunday: 10:00 AM - 6:00 PM</p>
+        <p><strong>Email:</strong> <a href="mailto:munashirmehdi@mail.com">munashirmehdi@mail.com</a></p>
+        <p><strong>Editorial Office:</strong> Karachi, Pakistan</p>
+        <p><strong>Hours:</strong> Mon &ndash; Sat: 9:00 AM &ndash; 7:00 PM (PKT)<br>Sunday: 10:00 AM &ndash; 6:00 PM</p>
         <hr style="margin:18px 0;border:0;border-top:1px solid #ddd;">
         <h3>Copyright claims</h3>
-        <p>If you believe a book on this site infringes your copyright, please email us with the title and proof of ownership. We respond within 3 working days.</p>
+        <p>If you believe a book on this site infringes your copyright, please follow our <a href="dmca.html">DMCA procedure</a>. We respond to every valid claim within 3 working days.</p>
+        <hr style="margin:18px 0;border:0;border-top:1px solid #ddd;">
+        <h3>Suggest a book</h3>
+        <p>Found a brilliant learning resource we should feature? Send the title and a public link &mdash; if it fits our standards, we&rsquo;ll add it.</p>
       </aside>
     </div>
   </main>

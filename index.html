@@ -3,9 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LifeWithBooks - Free PDF Ebook Library</title>
-  <meta name="description" content="Free PDF ebook library with English, French, German, Spanish learning books, kids books, grammar, vocabulary and more.">
+  <title>LifeWithBooks - Free PDF Ebook Library for Language Learners</title>
+  <meta name="description" content="LifeWithBooks is a curated free PDF ebook library with thousands of books for English, French, German, Spanish and Deutsch learners, plus grammar, vocabulary and kids' education resources.">
+  <meta name="keywords" content="free pdf books, free ebook library, english learning books, french learning books, german learning books, spanish learning books, grammar books, vocabulary books, kids learning, deutsch books, download free pdf">
+  <meta name="author" content="Mubashir Mehdi - LifeWithBooks">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  <link rel="canonical" href="https://lifewithbooks.vercel.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LifeWithBooks - Free PDF Ebook Library">
+  <meta property="og:description" content="Free PDF library for language learners and curious readers. English, French, German, Spanish, grammar, vocabulary and kids' books.">
+  <meta property="og:url" content="https://lifewithbooks.vercel.app/">
+  <meta property="og:site_name" content="LifeWithBooks">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LifeWithBooks - Free PDF Ebook Library">
+  <meta name="twitter:description" content="Free PDF library for language learners and curious readers.">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
   <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "LifeWithBooks",
+    "alternateName": "LifeWithBooks - Free PDF Ebook Library",
+    "url": "https://lifewithbooks.vercel.app/",
+    "description": "Curated free PDF ebook library for language learners and lifelong students.",
+    "inLanguage": "en",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://lifewithbooks.vercel.app/all-books.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LifeWithBooks",
+    "url": "https://lifewithbooks.vercel.app/",
+    "logo": "https://lifewithbooks.vercel.app/favicon.svg",
+    "email": "munashirmehdi@mail.com",
+    "telephone": "+92-311-518-9291",
+    "founder": { "@type": "Person", "name": "Mubashir Mehdi" },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Karachi",
+      "addressCountry": "PK"
+    },
+    "sameAs": []
+  }
+  </script>
 </head>
 <body data-page="home" id="top">
 
@@ -13,17 +69,17 @@
 
   <section class="hero">
     <div class="container">
-      <h1>Welcome to Free Ebook Library</h1>
-      <p>Explore a vast collection of free ebooks and PDF books across multiple categories including self-development, business, technology, novels and more, all available instantly at your fingertips.</p>
+      <h1>Welcome to LifeWithBooks</h1>
+      <p>A free, curated PDF library for language learners and curious readers. Explore thousands of carefully selected books across English, French, German, Spanish and Deutsch &mdash; plus grammar, vocabulary, kids&rsquo; education and self-development. No sign-up, no fees, just instant access to learning.</p>
       <form id="heroSearch" class="search-box" role="search">
-        <input type="search" placeholder="Search books, authors, topics..." aria-label="Search">
+        <input type="search" placeholder="Search books, authors, topics..." aria-label="Search the library">
         <button type="submit">Search</button>
       </form>
     </div>
   </section>
 
   <section class="section">
-    <div class="section-title"><a href="all-books.html">All BOOK&rsquo;s</a></div>
+    <div class="section-title"><a href="all-books.html">Latest Books</a></div>
     <div class="book-grid" id="all-books-grid"></div>
     <div style="text-align:center;margin-top:36px;">
       <a class="btn outline" href="all-books.html">View All Books</a>
@@ -31,6 +87,32 @@
   </section>
 
   <div id="category-sections"></div>
+
+  <section class="section" style="background:var(--base);">
+    <div class="section-title"><h2>Why Readers Trust LifeWithBooks</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;max-width:1100px;margin:0 auto;">
+      <div style="background:#fff;padding:24px;border-radius:8px;text-align:center;">
+        <div style="font-size:36px;margin-bottom:10px;">&#128218;</div>
+        <h3 style="margin-bottom:8px;">Hand-Picked</h3>
+        <p style="font-size:14.5px;">Every title is reviewed by our editorial team before it joins the library.</p>
+      </div>
+      <div style="background:#fff;padding:24px;border-radius:8px;text-align:center;">
+        <div style="font-size:36px;margin-bottom:10px;">&#127757;</div>
+        <h3 style="margin-bottom:8px;">For Every Learner</h3>
+        <p style="font-size:14.5px;">Resources for kids, students, teachers, parents and self-learners worldwide.</p>
+      </div>
+      <div style="background:#fff;padding:24px;border-radius:8px;text-align:center;">
+        <div style="font-size:36px;margin-bottom:10px;">&#9989;</div>
+        <h3 style="margin-bottom:8px;">Respect for Authors</h3>
+        <p style="font-size:14.5px;">We link only to publicly available material and honour every copyright claim.</p>
+      </div>
+      <div style="background:#fff;padding:24px;border-radius:8px;text-align:center;">
+        <div style="font-size:36px;margin-bottom:10px;">&#9889;</div>
+        <h3 style="margin-bottom:8px;">Always Free</h3>
+        <p style="font-size:14.5px;">No sign-up walls, no subscriptions. Just instant access to learning.</p>
+      </div>
+    </div>
+  </section>
 
   <div id="site-footer-host"></div>
 
