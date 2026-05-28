@@ -307,7 +307,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
 .book-card .cover .book {
   width: 70%;
   height: 90%;
-  background: linear-gradient(135deg, var(--accent), #2a747c);
+  background: linear-gradient(var(--cover-angle, 135deg), var(--cover-start, var(--accent)), var(--cover-end, #2a747c));
   border-radius: 4px 8px 8px 4px;
   position: relative;
   transform: rotateY(-12deg);

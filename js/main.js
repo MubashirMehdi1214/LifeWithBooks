@@ -15,6 +15,31 @@ function escapeHtml(s) {
     .replace(/'/g, '&#039;');
 }
 
+function hashString(input) {
+  let hash = 0;
+  for (let i = 0; i < input.length; i += 1) {
+    hash = ((hash << 5) - hash) + input.charCodeAt(i);
+    hash |= 0;
+  }
+  return Math.abs(hash);
+}
+
+function getCoverTheme(book) {
+  const seed = hashString((book.id || '') + '|' + (book.title || ''));
+  const hueA = seed % 360;
+  const hueB = (hueA + 28 + (seed % 48)) % 360;
+  const satA = 58 + (seed % 18);
+  const satB = 50 + ((seed >> 3) % 22);
+  const lightA = 34 + ((seed >> 5) % 10);
+  const lightB = 42 + ((seed >> 7) % 12);
+  const angle = 120 + (seed % 120);
+  return {
+    start: `hsl(${hueA} ${satA}% ${lightA}%)`,
+    end: `hsl(${hueB} ${satB}% ${lightB}%)`,
+    angle: `${angle}deg`
+  };
+}
+
 /* ---------- Header / footer injection ---------- */
 function buildCategoryDropdown() {
   if (typeof CATEGORIES === 'undefined') return '';
@@ -128,11 +153,13 @@ function bookCardHTML(book) {
   const cat = book.categories && book.categories[0]
     ? CATEGORIES.find(c => c.slug === book.categories[0])
     : null;
+  const coverTheme = getCoverTheme(book);
+  const coverStyle = `--cover-start:${coverTheme.start};--cover-end:${coverTheme.end};--cover-angle:${coverTheme.angle};`;
   return `
     <article class="book-card cover-${escapeHtml(book.cover || 'english')}">
       <a class="thumb" href="book.html?id=${encodeURIComponent(book.id)}" aria-label="${escapeHtml(book.title)}">
         <div class="cover">
-          <div class="book">
+          <div class="book" style="${coverStyle}">
             <span class="title-on-cover">${escapeHtml(book.title)}</span>
             <span class="ribbon"></span>
           </div>
