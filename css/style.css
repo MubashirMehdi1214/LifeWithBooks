@@ -133,10 +133,14 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
   position: absolute;
   top: 100%;
   left: 0;
+  display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
   background: var(--base-2);
-  min-width: 240px;
-  max-height: min(70vh, 420px);
+  width: 260px;
+  min-width: 260px;
+  max-height: min(75vh, 460px);
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
@@ -149,6 +153,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
   transform: translateY(6px);
   transition: all .2s ease;
 }
+.main-nav ul li.has-dropdown ul li { width: 100%; }
 .main-nav ul li.has-dropdown:hover > ul,
 .main-nav ul li.has-dropdown:focus-within > ul {
   opacity: 1; visibility: visible; transform: translateY(0);

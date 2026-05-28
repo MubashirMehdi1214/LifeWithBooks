@@ -52,6 +52,12 @@ function getDriveFileId(url) {
   return '';
 }
 
+function getGutenbergId(url) {
+  if (!url || url.indexOf('gutenberg.org') === -1) return '';
+  const m = url.match(/(?:ebooks\/|epub\/|files\/)(\d+)/);
+  return m && m[1] ? m[1] : '';
+}
+
 function getLocalCoverPath(book) {
   return 'covers/' + book.id + '.svg';
 }
@@ -66,6 +72,8 @@ function getCategoryShareImage(slug) {
 
 function getBookCoverImage(book) {
   if (book.coverImage) return book.coverImage;
+  const gutenbergId = getGutenbergId(book.pdf || '');
+  if (gutenbergId) return `https://www.gutenberg.org/cache/epub/${gutenbergId}/pg${gutenbergId}.cover.medium.jpg`;
   const driveFileId = getDriveFileId(book.pdf || '');
   if (driveFileId) return `https://drive.google.com/thumbnail?id=${driveFileId}&sz=w1000`;
   return getLocalCoverPath(book);
