@@ -136,6 +136,10 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
   flex-direction: column;
   background: var(--base-2);
   min-width: 240px;
+  max-height: min(70vh, 420px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
   box-shadow: var(--shadow-hover);
   border-radius: 0 0 var(--radius) var(--radius);
   padding: 8px 0;
@@ -369,6 +373,24 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
 .book-card.cover-self .cover .book { background: linear-gradient(135deg, #aa7619, #dba23a); }
 .book-card.cover-business .cover .book { background: linear-gradient(135deg, #1c2e4a, #2f4a78); }
 .book-card.cover-literature .cover .book { background: linear-gradient(135deg, #7a2424, #b04545); }
+.book-card.cover-health .cover .book { background: linear-gradient(135deg, #0d6b4f, #2ecc71); }
+.book-card.cover-novel .cover .book { background: linear-gradient(135deg, #4a2c6b, #7b52ab); }
+.book-card.cover-trading .cover .book { background: linear-gradient(135deg, #0f4c5c, #1a8a9e); }
+.book-card.cover-adventure .cover .book { background: linear-gradient(135deg, #8b4513, #d2691e); }
+
+.books-panel-scroll {
+  max-height: min(75vh, 920px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 6px;
+  margin: 0 -4px;
+  -webkit-overflow-scrolling: touch;
+}
+.books-panel-scroll::-webkit-scrollbar { width: 8px; }
+.books-panel-scroll::-webkit-scrollbar-thumb {
+  background: rgba(30, 86, 92, 0.35);
+  border-radius: 8px;
+}
 
 .book-card .info {
   padding: 18px 16px 22px;
@@ -772,6 +794,8 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
     padding-left: 16px;
     background: var(--base);
     display: none;
+    max-height: 280px;
+    overflow-y: auto;
   }
   .main-nav ul li.has-dropdown.is-open ul { display: flex; }
   .main-nav ul li.has-dropdown > a::after { float: right; }

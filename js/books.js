@@ -436,8 +436,8 @@ const BOOKS = [
   {
     id: "366-jours-pour-mieux-vous-exprimer-en-francais",
     title: "366 jours pour mieux vous exprimer en français",
-    categories: ["french-learning-books"],
-    cover: "french",
+    categories: ["french-learning-books", "grammar-books"],
+    cover: "grammar",
     excerpt: "One expert tip per day on French grammar, vocabulary, style and common mistakes — a year-long path to more elegant and accurate French.",
     description: [
       "## A Daily Dose of Better French",
@@ -465,8 +465,8 @@ const BOOKS = [
   {
     id: "les-100-fautes-de-francais-les-plus-courantes",
     title: "Les 100 fautes de français les plus courantes — et comment les corriger",
-    categories: ["french-learning-books"],
-    cover: "french",
+    categories: ["french-learning-books", "grammar-books"],
+    cover: "grammar",
     excerpt: "The 100 most common errors in written and spoken French, clearly explained with the correct form, the rule behind it, and practice examples.",
     description: [
       "## The Mistakes Everyone Makes",
@@ -524,8 +524,8 @@ const BOOKS = [
   {
     id: "practice-makes-perfect-french-pronouns-prepositions",
     title: "Practice Makes Perfect — French Pronouns and Prepositions",
-    categories: ["french-learning-books"],
-    cover: "french",
+    categories: ["french-learning-books", "grammar-books"],
+    cover: "grammar",
     excerpt: "Dedicated practice on two of the trickiest areas of French grammar — pronouns (y, en, le, la, les, lui, leur, dont, etc.) and prepositions (à, de, en, dans, pour, par, etc.).",
     description: [
       "## Mastering French Pronouns and Prepositions",
@@ -554,8 +554,8 @@ const BOOKS = [
   {
     id: "letude-pratique-de-la-langue-francaise",
     title: "L'étude pratique de la langue française",
-    categories: ["french-learning-books"],
-    cover: "french",
+    categories: ["french-learning-books", "grammar-books"],
+    cover: "grammar",
     excerpt: "A classic French schoolbook covering grammar, spelling, vocabulary, comprehension and writing for intermediate-level French study.",
     description: [
       "## A Practical French Language Course",
@@ -1453,6 +1453,497 @@ const BOOKS = [
     ]
   },
 
+  /* ---------------- Novels ---------------- */
+  {
+    id: "pride-and-prejudice",
+    title: "Pride and Prejudice",
+    categories: ["novels", "literature-books"],
+    cover: "novel",
+    pdf: "https://www.gutenberg.org/ebooks/1342.pdf.noimages",
+    excerpt: "Jane Austen's beloved novel of manners, marriage and misunderstanding between Elizabeth Bennet and Mr Darcy in Regency England.",
+    description: [
+      "## A Timeless Romance of Wit and Pride",
+      "Pride and Prejudice follows Elizabeth Bennet as she navigates society, family pressure and her evolving relationship with the proud Mr Darcy. Austen's sharp dialogue and social observation make this one of the most widely read novels in English.",
+      "## Why Readers Still Love It",
+      "The book explores reputation, class, integrity and the danger of first impressions. Elizabeth's intelligence and independence continue to inspire readers, while the love story remains satisfying and funny.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition links to a free Project Gutenberg PDF so you can read the complete novel on any device."
+    ]
+  },
+  {
+    id: "jane-eyre",
+    title: "Jane Eyre",
+    categories: ["novels", "literature-books"],
+    cover: "novel",
+    pdf: "https://www.gutenberg.org/ebooks/1260.pdf.noimages",
+    excerpt: "Charlotte Brontë's powerful story of an orphaned governess who finds love, independence and moral courage at Thornfield Hall.",
+    description: [
+      "## Gothic Romance and Inner Strength",
+      "Jane Eyre traces its heroine from a harsh childhood to employment as governess for the brooding Mr Rochester. Mystery, passion and ethical choice drive a plot that helped define the Victorian novel.",
+      "## Themes That Endure",
+      "Brontë writes about social class, religion, female autonomy and the cost of secrecy. Jane's voice is direct, emotional and unforgettable.",
+      "## Download the Full Novel",
+      "Read the complete text as a free PDF through our Project Gutenberg link."
+    ]
+  },
+  {
+    id: "frankenstein",
+    title: "Frankenstein",
+    categories: ["novels", "literature-books"],
+    cover: "novel",
+    pdf: "https://www.gutenberg.org/ebooks/84.pdf.noimages",
+    excerpt: "Mary Shelley's groundbreaking science-fiction novel about creation, responsibility and what it means to be human.",
+    description: [
+      "## The Original Modern Monster Story",
+      "Victor Frankenstein's experiment produces a creature who seeks understanding and revenge. Shelley's novel asks who is more monstrous — the maker or what is made.",
+      "## A Landmark of Literature",
+      "Written when Shelley was still a teenager, Frankenstein combines Gothic atmosphere with philosophical questions about science, ethics and loneliness.",
+      "## Read the Classic Free",
+      "Download the full public-domain novel as a PDF."
+    ]
+  },
+  {
+    id: "dracula",
+    title: "Dracula",
+    categories: ["novels", "literature-books"],
+    cover: "novel",
+    pdf: "https://www.gutenberg.org/ebooks/345.pdf.noimages",
+    excerpt: "Bram Stoker's chilling epistolary novel that defined the modern vampire legend and still terrifies readers.",
+    description: [
+      "## The Novel That Created the Modern Vampire",
+      "Count Dracula travels from Transylvania to England, pursued by Professor Van Helsing and a group determined to stop him. Stoker builds suspense through letters, journals and newspaper clippings.",
+      "## Atmosphere and Dread",
+      "Castle corridors, London fog and relentless pursuit make Dracula a masterclass in Gothic horror.",
+      "## Free PDF Download",
+      "Enjoy the complete novel via our public-domain PDF link."
+    ]
+  },
+  {
+    id: "the-picture-of-dorian-gray",
+    title: "The Picture of Dorian Gray",
+    categories: ["novels", "literature-books"],
+    cover: "novel",
+    pdf: "https://www.gutenberg.org/ebooks/174.pdf.noimages",
+    excerpt: "Oscar Wilde's only novel — a provocative tale of beauty, corruption and a portrait that ages while its subject does not.",
+    description: [
+      "## Beauty, Decadence and Conscience",
+      "Dorian Gray wishes that a painted portrait would bear the marks of his sins while he remains youthful. Wilde's witty, unsettling fable explores art, morality and self-deception.",
+      "## Wilde at His Most Daring",
+      "Famous for its epigrams and social satire, the novel scandalised Victorian readers and remains essential literary reading.",
+      "## Read Online or Download",
+      "Access the full text as a free Project Gutenberg PDF."
+    ]
+  },
+  {
+    id: "little-women",
+    title: "Little Women",
+    categories: ["novels", "literature-books", "kids-learning-books"],
+    cover: "novel",
+    pdf: "https://www.gutenberg.org/ebooks/514.pdf.noimages",
+    excerpt: "Louisa May Alcott's warm, enduring story of the four March sisters growing up during the American Civil War era.",
+    description: [
+      "## A Family Story Readers Treasure",
+      "Meg, Jo, Beth and Amy each pursue dreams, face hardship and learn what matters most. Alcott blends humour, tenderness and moral growth in a novel loved by generations.",
+      "## For Teens and Adults Alike",
+      "Little Women remains one of the most popular coming-of-age novels in English, inspiring countless adaptations.",
+      "## Free Complete Edition",
+      "Download the full novel as a public-domain PDF."
+    ]
+  },
+
+  /* ---------------- Trading Books ---------------- */
+  {
+    id: "the-art-of-war",
+    title: "The Art of War",
+    categories: ["trading-books", "business-books", "self-grooming-books"],
+    cover: "trading",
+    pdf: "https://www.gutenberg.org/ebooks/132.pdf.noimages",
+    excerpt: "Sun Tzu's ancient strategic classic on planning, competition and decision-making — widely studied by traders, leaders and entrepreneurs.",
+    description: [
+      "## Strategy for Any Competitive Field",
+      "The Art of War teaches how to assess opponents, conserve resources, choose timing and win without unnecessary conflict. Its principles apply to markets, negotiations and leadership.",
+      "## Why Traders Read It",
+      "Risk management, patience, deception and preparation mirror challenges faced in trading and investing psychology.",
+      "## Free PDF",
+      "Download this public-domain translation as a PDF."
+    ]
+  },
+  {
+    id: "extraordinary-popular-delusions",
+    title: "Extraordinary Popular Delusions and the Madness of Crowds",
+    categories: ["trading-books", "business-books"],
+    cover: "trading",
+    pdf: "https://www.gutenberg.org/ebooks/24518.pdf.noimages",
+    excerpt: "Charles Mackay's classic study of market manias, bubbles and crowd psychology — essential reading for anyone interested in trading history.",
+    description: [
+      "## The Psychology of Bubbles",
+      "Mackay examines famous episodes such as the South Sea Bubble and tulip mania, showing how crowds abandon reason during speculative frenzies.",
+      "## Still Relevant for Modern Markets",
+      "Traders and investors use this book to understand hype cycles, fear, greed and herd behaviour.",
+      "## Public-Domain Download",
+      "Read the complete work as a free PDF."
+    ]
+  },
+  {
+    id: "the-prince",
+    title: "The Prince",
+    categories: ["trading-books", "business-books"],
+    cover: "trading",
+    pdf: "https://www.gutenberg.org/ebooks/1232.pdf.noimages",
+    excerpt: "Niccolò Machiavelli's influential treatise on power, leadership and pragmatic decision-making in competitive environments.",
+    description: [
+      "## Real-World Power and Influence",
+      "The Prince analyses how leaders gain and maintain authority, manage risk and respond to changing conditions — ideas often applied to business and negotiation.",
+      "## A Foundational Political Text",
+      "Machiavelli's direct style made this one of the most discussed books on leadership ever written.",
+      "## Free PDF Edition",
+      "Download the full public-domain text."
+    ]
+  },
+  {
+    id: "wealth-of-nations-abridged-selection",
+    title: "An Inquiry into the Nature and Causes of the Wealth of Nations (Selection)",
+    categories: ["trading-books", "business-books"],
+    cover: "business",
+    pdf: "https://www.gutenberg.org/ebooks/3300.pdf.noimages",
+    excerpt: "Adam Smith's foundational work on markets, division of labour, trade and the origins of modern economic thought.",
+    description: [
+      "## The Birth of Modern Economics",
+      "Smith explains how specialisation, trade and incentives shape national prosperity. His ideas underpin much of today's discussion about markets and policy.",
+      "## For Business and Trading Readers",
+      "Understanding supply, demand and market structure helps readers think more clearly about commerce and investment.",
+      "## Large Public-Domain Volume",
+      "This PDF contains the full classic text for serious readers."
+    ]
+  },
+  {
+    id: "scientific-advertising",
+    title: "Scientific Advertising",
+    categories: ["trading-books", "business-books"],
+    cover: "business",
+    pdf: "https://www.gutenberg.org/ebooks/42976.pdf.noimages",
+    excerpt: "Claude Hopkins' pioneering guide to measurable marketing, testing and persuasion — a business classic in the public domain.",
+    description: [
+      "## Marketing as a Measurable Science",
+      "Hopkins argues that advertising should be tested, tracked and improved like any business process. His principles influenced direct response and digital marketing.",
+      "## Practical for Entrepreneurs",
+      "Learn how headlines, offers and proof affect results — ideas still used in sales funnels and campaigns.",
+      "## Free Download",
+      "Access this public-domain business title as a PDF."
+    ]
+  },
+
+  /* ---------------- Adventure Books ---------------- */
+  {
+    id: "treasure-island",
+    title: "Treasure Island",
+    categories: ["adventure-books", "literature-books", "kids-learning-books"],
+    cover: "adventure",
+    pdf: "https://www.gutenberg.org/ebooks/120.pdf.noimages",
+    excerpt: "Robert Louis Stevenson's timeless pirate adventure with Jim Hawkins, Long John Silver and a hunt for buried gold.",
+    description: [
+      "## The Definitive Pirate Adventure",
+      "Young Jim Hawkins discovers a treasure map and sails into danger with a crew hiding deadly secrets. Stevenson's pacing and characters set the template for adventure fiction.",
+      "## Perfect for Young and Adult Readers",
+      "Exciting, readable and full of iconic moments — from the Admiral Benbow inn to the island itself.",
+      "## Free PDF",
+      "Download the complete novel from Project Gutenberg."
+    ]
+  },
+  {
+    id: "around-the-world-in-eighty-days",
+    title: "Around the World in Eighty Days",
+    categories: ["adventure-books", "literature-books"],
+    cover: "adventure",
+    pdf: "https://www.gutenberg.org/ebooks/103.pdf.noimages",
+    excerpt: "Jules Verne's globe-trotting race against time with the precise Phileas Fogg and his loyal valet Passepartout.",
+    description: [
+      "## A Race Across Continents",
+      "Fogg wagers he can circle the world in eighty days, facing delays, detectives and spectacular set pieces. Verne blends humour, suspense and travel wonder.",
+      "## A Landmark of Adventure Fiction",
+      "The novel popularised the idea of global travel as thrilling entertainment.",
+      "## Download Free",
+      "Read the full adventure as a public-domain PDF."
+    ]
+  },
+  {
+    id: "journey-to-the-center-of-the-earth",
+    title: "Journey to the Center of the Earth",
+    categories: ["adventure-books", "literature-books"],
+    cover: "adventure",
+    pdf: "https://www.gutenberg.org/ebooks/188.pdf.noimages",
+    excerpt: "Jules Verne's expedition into the depths of the planet led by Professor Lidenbrock, his nephew Axel and guide Hans.",
+    description: [
+      "## Science, Wonder and Danger Underground",
+      "A coded manuscript sends the explorers into Icelandic volcanoes and unknown worlds below the surface. Verne imagines geology, survival and discovery.",
+      "## A Classic for Curious Readers",
+      "One of the most influential adventure novels ever written.",
+      "## Free PDF Edition",
+      "Download the complete Verne novel."
+    ]
+  },
+  {
+    id: "the-call-of-the-wild",
+    title: "The Call of the Wild",
+    categories: ["adventure-books", "literature-books"],
+    cover: "adventure",
+    pdf: "https://www.gutenberg.org/ebooks/215.pdf.noimages",
+    excerpt: "Jack London's gripping tale of Buck, a domestic dog who answers the wild call of the Yukon during the gold rush.",
+    description: [
+      "## Survival in the Frozen North",
+      "Buck is stolen from comfort and thrust into a harsh world of sled teams, cruelty and instinct. London writes with raw energy about nature and freedom.",
+      "## Short, Powerful and Unforgettable",
+      "Ideal for readers who want a fast, intense adventure.",
+      "## Public-Domain PDF",
+      "Download the full novella free."
+    ]
+  },
+  {
+    id: "king-solomons-mines",
+    title: "King Solomon's Mines",
+    categories: ["adventure-books", "literature-books"],
+    cover: "adventure",
+    pdf: "https://www.gutenberg.org/ebooks/2166.pdf.noimages",
+    excerpt: "H. Rider Haggard's African quest for legendary treasure with Allan Quatermain — a template for the lost-world adventure genre.",
+    description: [
+      "## Treasure, Danger and Exotic Lands",
+      "Explorers cross deserts and mountains seeking a fabled diamond mine. Haggard delivers constant peril, courage and spectacle.",
+      "## Birth of the Lost-World Adventure",
+      "Influenced generations of adventure writers and filmmakers.",
+      "## Free Download",
+      "Read the complete novel as a PDF."
+    ]
+  },
+  {
+    id: "the-lost-world",
+    title: "The Lost World",
+    categories: ["adventure-books", "literature-books"],
+    cover: "adventure",
+    pdf: "https://www.gutenberg.org/ebooks/139.pdf.noimages",
+    excerpt: "Arthur Conan Doyle's plateau of prehistoric creatures, led by the formidable Professor Challenger and a team of daring explorers.",
+    description: [
+      "## Dinosaurs, Discovery and Daring",
+      "An expedition reaches an isolated plateau where evolution took a different path. Doyle combines scientific curiosity with pure adventure.",
+      "## From the Creator of Sherlock Holmes",
+      "Shows Doyle's range beyond detective fiction.",
+      "## Free PDF",
+      "Download the full public-domain novel."
+    ]
+  },
+
+  /* ---------------- Health & Wellness (from Health Fruits Tips) ---------------- */
+  {
+    id: "ultimate-fruit-benefits-guide",
+    title: "Ultimate Fruit Benefits Bible",
+    categories: ["health-books"],
+    cover: "health",
+    pdf: "https://healthfruitstips.com/api/guides/ultimate-fruit-benefits-guide",
+    excerpt: "A 29-page practical guide to fruit nutrition, seasonal eating, nutrient tables and smart combinations — free from Health Fruits Tips.",
+    description: [
+      "## Fruit Nutrition Made Practical",
+      "This guide covers 15 fruits with benefits, nutrients, seasonal guidance and storage tips drawn from evidence-based wellness writing.",
+      "## What You Will Learn",
+      "Understand fiber, hydration, micronutrients and how to build colorful fruit habits into everyday meals.",
+      "## Free PDF Download",
+      "Hosted by Health Fruits Tips — download instantly through LifeWithBooks."
+    ]
+  },
+  {
+    id: "30-day-healthy-eating-challenge",
+    title: "30 Day Healthy Eating Challenge",
+    categories: ["health-books", "self-grooming-books"],
+    cover: "health",
+    pdf: "https://healthfruitstips.com/api/guides/30-day-healthy-eating-challenge",
+    excerpt: "A printable 30-day nutrition challenge with daily meal ideas, checklists and habit-building prompts.",
+    description: [
+      "## Build Better Eating Habits Step by Step",
+      "Each day includes practical meals, hydration goals and simple checklists so progress feels achievable.",
+      "## Designed for Real Life",
+      "No extreme dieting — focus on whole foods, consistency and sustainable routines.",
+      "## Free PDF",
+      "Download the full challenge guide at no cost."
+    ]
+  },
+  {
+    id: "home-remedies-handbook",
+    title: "Complete Home Remedies Handbook",
+    categories: ["health-books"],
+    cover: "health",
+    pdf: "https://healthfruitstips.com/api/guides/home-remedies-handbook",
+    excerpt: "Safe, practical natural remedies for common concerns with recipes, safety notes and when to see a doctor.",
+    description: [
+      "## Kitchen-Based Wellness Support",
+      "Learn food-first approaches for mild symptoms using ginger, honey, herbs and other household ingredients.",
+      "## Safety First",
+      "Includes medical disclaimers, dosage guidance and red-flag symptoms that need professional care.",
+      "## Free Handbook PDF",
+      "Instant download via our Health Fruits Tips integration."
+    ]
+  },
+  {
+    id: "immunity-boosting-food-bible",
+    title: "Immunity Boosting Food Bible",
+    categories: ["health-books"],
+    cover: "health",
+    pdf: "https://healthfruitstips.com/api/guides/immunity-boosting-food-bible",
+    excerpt: "Food-first immune support with 15 food profiles, nutrient science, meal plans and smoothie recipes.",
+    description: [
+      "## Support Immunity Through Nutrition",
+      "Covers vitamin C, vitamin D, zinc, protein and omega-3 fats with practical meal ideas.",
+      "## Everyday Foods That Help",
+      "Garlic, ginger, citrus, leafy greens, yogurt and more — explained clearly.",
+      "## Download Free",
+      "Full PDF guide available immediately."
+    ]
+  },
+  {
+    id: "natural-weight-loss-guide",
+    title: "Weight Loss With Natural Foods",
+    categories: ["health-books", "self-grooming-books"],
+    cover: "health",
+    pdf: "https://healthfruitstips.com/api/guides/natural-weight-loss-guide",
+    excerpt: "Sustainable fat-loss strategies using whole foods, meal plans and progress tracking — without extreme dieting.",
+    description: [
+      "## Sustainable Fat Loss",
+      "Focus on satiety, muscle retention and habits you can maintain long term.",
+      "## Meal Plans and Tracking",
+      "Includes kick-start meal ideas and a weekly progress chart template.",
+      "## Free PDF Guide",
+      "Download the complete natural weight loss guide."
+    ]
+  },
+  {
+    id: "complete-vegetable-guide",
+    title: "Complete Vegetable Nutrition Guide",
+    categories: ["health-books"],
+    cover: "health",
+    pdf: "https://healthfruitstips.com/api/guides/complete-vegetable-guide",
+    excerpt: "Evidence-based vegetable handbook with 18 profiles, cooking methods, storage tips and seasonal planning.",
+    description: [
+      "## Why Vegetables Matter",
+      "High nutrient density, fiber and cardiometabolic protection explained in plain language.",
+      "## Raw vs Cooked",
+      "Learn when each preparation method supports absorption and variety.",
+      "## Free Download",
+      "Get the full vegetable guide as a PDF."
+    ]
+  },
+  {
+    id: "vitamins-minerals-complete-guide",
+    title: "Vitamins and Minerals Complete Guide",
+    categories: ["health-books"],
+    cover: "health",
+    pdf: "https://healthfruitstips.com/api/guides/vitamins-minerals-complete-guide",
+    excerpt: "Understand nutrients, deficiency signs, food sources and daily requirements in one reference guide.",
+    description: [
+      "## Nutrients Explained Clearly",
+      "Fat-soluble vs water-soluble vitamins, key minerals and how they work in the body.",
+      "## Spot Deficiencies Early",
+      "Charts link common signs to nutrients and sensible next steps.",
+      "## Free PDF",
+      "Download the complete vitamins and minerals guide."
+    ]
+  },
+  {
+    id: "healthy-smoothie-recipe-book",
+    title: "Healthy Smoothie Recipe Book",
+    categories: ["health-books", "kids-learning-books"],
+    cover: "health",
+    pdf: "https://healthfruitstips.com/api/guides/healthy-smoothie-recipe-book",
+    excerpt: "20 complete smoothie recipes with prep tips, ingredient swaps and nutrition highlights.",
+    description: [
+      "## Smoothies for Every Goal",
+      "Energy, immunity, recovery and family-friendly blends with full recipe cards.",
+      "## Meal Prep Friendly",
+      "Batch prep and substitution charts included.",
+      "## Free Recipe Book PDF",
+      "Download all 20 recipes instantly."
+    ]
+  },
+  {
+    id: "detox-cleanse-complete-guide",
+    title: "Detox and Cleanse Complete Guide",
+    categories: ["health-books"],
+    cover: "health",
+    pdf: "https://healthfruitstips.com/api/guides/detox-cleanse-complete-guide",
+    excerpt: "A science-based, food-first detox framework without extreme starvation methods.",
+    description: [
+      "## What Detox Really Means",
+      "Support liver, kidneys and gut health with realistic food choices — not fad cleanses.",
+      "## Gentle Plans Included",
+      "3-day and 7-day schedules with detox water recipes and safety protocols.",
+      "## Free PDF",
+      "Download the complete detox guide."
+    ]
+  },
+  {
+    id: "anti-inflammatory-food-guide",
+    title: "Complete Anti-Inflammatory Food Guide",
+    categories: ["health-books"],
+    cover: "health",
+    pdf: "https://healthfruitstips.com/api/guides/anti-inflammatory-food-guide",
+    excerpt: "Lower chronic inflammation with practical nutrition choices, meal plans and spice compounds.",
+    description: [
+      "## Food and Inflammation",
+      "Learn which patterns raise or lower inflammatory load over time.",
+      "## Top Anti-Inflammatory Foods",
+      "Turmeric, ginger, fatty fish, berries, leafy greens and more.",
+      "## Free Download",
+      "Get the full anti-inflammatory food guide PDF."
+    ]
+  },
+  {
+    id: "apple-health-benefits-guide",
+    title: "12 Science-Backed Health Benefits of Eating Apples Daily",
+    categories: ["health-books"],
+    cover: "health",
+    pdf: "https://healthfruitstips.com/api/guides/ultimate-fruit-benefits-guide",
+    coverImage: "https://healthfruitstips.com/images/posts/apple-health-benefits.svg",
+    excerpt: "Evidence-based apple nutrition guide covering gut health, heart support, blood sugar balance and practical intake tips.",
+    description: [
+      "## Why Apples Deserve a Daily Spot",
+      "Apples combine fiber, polyphenols and hydration in a convenient, affordable package.",
+      "## What the Research Shows",
+      "Learn how pectin supports gut health and how whole fruit compares to juice.",
+      "## From Health Fruits Tips",
+      "Curated wellness content from the Health Fruits Tips editorial library."
+    ]
+  },
+  {
+    id: "banana-health-benefits-guide",
+    title: "Banana Health Benefits — Energy, Potassium and Digestion",
+    categories: ["health-books"],
+    cover: "health",
+    pdf: "https://healthfruitstips.com/api/guides/ultimate-fruit-benefits-guide",
+    coverImage: "https://healthfruitstips.com/images/posts/banana-health-benefits.svg",
+    excerpt: "How bananas support workouts, electrolyte balance and digestive comfort in everyday diets.",
+    description: [
+      "## A Practical Everyday Superfruit",
+      "Bananas provide potassium, quick energy and prebiotic fiber for many lifestyles.",
+      "## Best Uses and Timing",
+      "Pre-workout fuel, post-exercise recovery and gentle digestion support.",
+      "## Wellness Library Entry",
+      "Based on articles from Health Fruits Tips."
+    ]
+  },
+  {
+    id: "turmeric-health-benefits-guide",
+    title: "Turmeric Health Benefits — Curcumin, Inflammation and Daily Use",
+    categories: ["health-books"],
+    cover: "health",
+    pdf: "https://healthfruitstips.com/api/guides/anti-inflammatory-food-guide",
+    coverImage: "https://healthfruitstips.com/images/posts/turmeric-health-benefits.svg",
+    excerpt: "How to use turmeric safely for inflammation support, immunity and kitchen wellness routines.",
+    description: [
+      "## Curcumin and Everyday Health",
+      "Turmeric is one of the most studied spices for inflammatory pathways and antioxidant support.",
+      "## Preparation Matters",
+      "Pair with black pepper and healthy fats to improve absorption.",
+      "## From Health Fruits Tips",
+      "Educational content for informed food choices — not medical advice."
+    ]
+  },
+
   /* ---------------- Additional cross-listed ---------------- */
   {
     id: "goethe-zertifikat-b1-wortschatz",
@@ -1486,6 +1977,7 @@ const CATEGORIES = [
   { slug: "business-books", label: "Business Books" },
   { slug: "self-grooming-books", label: "Self Grooming Books" },
   { slug: "adventure-books", label: "Adventure Books" },
+  { slug: "health-books", label: "Health & Wellness Books" },
   { slug: "stories-books", label: "Stories Books" }
 ];
 

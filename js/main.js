@@ -181,10 +181,13 @@ function bookCardHTML(book) {
   const cat = book.categories && book.categories[0]
     ? CATEGORIES.find(c => c.slug === book.categories[0])
     : null;
-  const coverTheme = getCoverTheme(book);
-  const coverStyle = `--cover-start:${coverTheme.start};--cover-end:${coverTheme.end};--cover-angle:${coverTheme.angle};`;
   const coverImage = getBookCoverImage(book);
-  const fallbackStyle = coverImage ? 'display:none;' : '';
+  const categoryCover = `
+          <div class="book" style="${coverImage ? 'display:none;' : ''}">
+            <span class="title-on-cover">${escapeHtml(book.title)}</span>
+            <span class="ribbon"></span>
+          </div>
+        `;
   const coverVisual = coverImage
     ? `
           <img
@@ -193,19 +196,11 @@ function bookCardHTML(book) {
             alt="${escapeHtml(book.title)} cover"
             loading="lazy"
             referrerpolicy="no-referrer"
-            onerror="this.remove();this.nextElementSibling.style.display='block';"
+            onerror="this.style.display='none';if(this.nextElementSibling)this.nextElementSibling.style.display='block';"
           />
-          <div class="book book-fallback" style="${coverStyle}${fallbackStyle}">
-            <span class="title-on-cover">${escapeHtml(book.title)}</span>
-            <span class="ribbon"></span>
-          </div>
+          ${categoryCover}
         `
-    : `
-          <div class="book book-fallback" style="${coverStyle}">
-            <span class="title-on-cover">${escapeHtml(book.title)}</span>
-            <span class="ribbon"></span>
-          </div>
-        `;
+    : categoryCover;
   return `
     <article class="book-card cover-${escapeHtml(book.cover || 'english')}">
       <a class="thumb" href="book.html?id=${encodeURIComponent(book.id)}" aria-label="${escapeHtml(book.title)}">
@@ -239,11 +234,19 @@ function initHome() {
     "german-learning-books",
     "spanish-learning-books",
     "deutsch-books",
-    "kids-learning-books"
+    "grammar-books",
+    "kids-learning-books",
+    "health-books",
+    "novels",
+    "trading-books",
+    "adventure-books",
+    "literature-books",
+    "business-books",
+    "self-grooming-books"
   ];
 
-  /* All books */
-  renderBookGrid('#all-books-grid', BOOKS, 24);
+  /* All books — scrollable panel on home */
+  renderBookGrid('#all-books-grid', BOOKS);
 
   /* Per-category sections */
   const host = $('#category-sections');

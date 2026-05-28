@@ -62,14 +62,16 @@
       english:'#1E565C', grammar:'#6b4c3b', vocab:'#2e7d32', ielts:'#c62828',
       speaking:'#1565c0', writing:'#6a1b9a', kids:'#ef6c00', german:'#333',
       french:'#1a237e', spanish:'#b71c1c', chinese:'#d84315', japanese:'#4e342e',
-      korean:'#283593', arabic:'#1b5e20', turkish:'#4a148c', general:'#37474f'
+      korean:'#283593', arabic:'#1b5e20', turkish:'#4a148c', general:'#37474f',
+      health:'#0d6b4f', novel:'#4a2c6b', trading:'#0f4c5c', adventure:'#8b4513',
+      literature:'#7a2424', business:'#1c2e4a', self:'#aa7619', grammar:'#1f6b3a', kids:'#c44b7d'
     };
     var bg = coverColors[book.cover] || '#1E565C';
 
     var catLabels = [];
     if(typeof CATEGORIES !== 'undefined'){
       book.categories.forEach(function(c){
-        var cat = CATEGORIES.find(function(x){ return x.id === c; });
+        var cat = CATEGORIES.find(function(x){ return x.slug === c; });
         if(cat) catLabels.push(cat.label);
       });
     }
@@ -109,10 +111,14 @@
       var elapsed = 0;
 
       window.triggerDownload = function(){
-        var iframe = document.createElement('iframe');
-        iframe.style.display = 'none';
-        iframe.src = directUrl;
-        document.body.appendChild(iframe);
+        if (directUrl.indexOf('gutenberg.org') !== -1 || directUrl.indexOf('healthfruitstips.com') !== -1) {
+          window.location.href = directUrl;
+        } else {
+          var iframe = document.createElement('iframe');
+          iframe.style.display = 'none';
+          iframe.src = directUrl;
+          document.body.appendChild(iframe);
+        }
 
         msgEl.textContent = 'Download started! Check your browser\u2019s download bar.';
         countEl.innerHTML = '<span style="color:#2ecc71;font-size:48px">&#10003;</span>';
