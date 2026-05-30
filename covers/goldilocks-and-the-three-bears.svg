@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#7a2424"/>
-      <stop offset="100%" stop-color="#4f1717"/>
-    </linearGradient>
-    <linearGradient id="spine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="rgba(0,0,0,0.28)"/>
-      <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+    <linearGradient id="paperau8qp6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8dcc8"/>
+      <stop offset="100%" stop-color="#e8dcc8"/>
     </linearGradient>
   </defs>
-  <rect width="300" height="400" fill="url(#bg)"/>
-  <rect x="0" y="0" width="26" height="400" fill="url(#spine)"/>
-  <rect x="20" y="20" width="260" height="360" rx="4" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
-  <rect x="26" y="26" width="248" height="348" rx="2" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-  <text x="150" y="62" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)" letter-spacing="3">LIFEWITHBOOKS</text>
-  <line x1="92" y1="78" x2="208" y2="78" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
-  <text x="150" y="128" text-anchor="middle" font-size="40">&#128220;</text>
-  <text x="150" y="188" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" fill="#ffffff"><tspan x="150" dy="0" text-anchor="middle">Goldilocks and the</tspan><tspan x="150" dy="30" text-anchor="middle">Three Bears</tspan></text>
-  <line x1="110" y1="324" x2="190" y2="324" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
-  <text x="150" y="348" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" fill="rgba(255,255,255,0.9)" letter-spacing="1.5">KIDS LEARNING BOOKS</text>
-  <text x="150" y="368" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="rgba(255,255,255,0.6)" letter-spacing="2">FREE PDF DOWNLOAD</text>
+  <rect width="300" height="400" fill="url(#paperau8qp6)"/>
+  <rect x="0" y="0" width="24" height="400" fill="rgba(0,0,0,0.12)"/>
+  <text x="150" y="44.3" text-anchor="middle" font-family="Georgia, 'Palatino Linotype', serif" font-size="14" font-weight="700" fill="#5c4033"><tspan x="150" dy="0" text-anchor="middle">Goldilocks and</tspan><tspan x="150" dy="15.400000000000002" text-anchor="middle">the Three Bears</tspan></text>
+  <rect x="45" y="72" width="210" height="175" rx="3" fill="#faf6ef" stroke="#5c4033" stroke-width="3"/>
+  <rect x="52" y="79" width="196" height="161" fill="#87ceeb" opacity="0.35"/>
+  
+    <ellipse cx="150" cy="155" rx="70" ry="45" fill="#8B6914" opacity="0.25"/>
+    <circle cx="110" cy="130" r="22" fill="#6d4c2a"/><circle cx="190" cy="130" r="22" fill="#6d4c2a"/>
+    <circle cx="110" cy="125" r="8" fill="#6d4c2a"/><circle cx="190" cy="125" r="8" fill="#6d4c2a"/>
+    <ellipse cx="95" cy="175" rx="22" ry="10" fill="#d4a574"/><ellipse cx="150" cy="178" rx="26" ry="11" fill="#c4956a"/><ellipse cx="205" cy="175" rx="22" ry="10" fill="#e8b88a"/>
+    <text x="95" y="179" text-anchor="middle" font-size="8" fill="#555">hot</text>
+    <text x="150" y="182" text-anchor="middle" font-size="8" fill="#555">just right</text>
+    <text x="205" y="179" text-anchor="middle" font-size="8" fill="#555">cold</text>
+  <text x="150" y="268" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#555">Beloved Fairy Tale</text>
+  <line x1="60" y1="285" x2="240" y2="285" stroke="#5c4033" stroke-width="1" opacity="0.4"/>
+  <text x="150" y="308" text-anchor="middle" font-family="Arial" font-size="9" fill="#666" letter-spacing="2">LIFEWITHBOOKS</text>
+  <text x="150" y="328" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700" fill="#5c4033">KIDS LEARNING BOOKS</text>
+  <text x="150" y="368" text-anchor="middle" font-family="Arial" font-size="9" fill="#888">Free to read on LifeWithBooks</text>
 </svg>

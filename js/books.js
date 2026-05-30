@@ -1022,7 +1022,8 @@ const BOOKS = [
       "Parents can use it for playful revision at home, while teachers can incorporate individual quizzes into classroom activities. The game-like format keeps young children engaged and motivated."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/deutsch-quiz-1-und-2-klasse.svg"
   },
   {
     "id": "kinderleichte-grammatik-die-vier-falle",
@@ -1044,7 +1045,8 @@ const BOOKS = [
       "While designed for German school children, this book has become popular with adult learners of German who appreciate its clear, visual approach to a topic that traditional grammar books often make unnecessarily complicated."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/kinderleichte-grammatik-die-vier-falle.svg"
   },
   {
     "id": "40-grammatiklisten",
@@ -1442,7 +1444,8 @@ const BOOKS = [
       "Designed for children aged 8–12 learning English as a second language, but also useful for younger native speakers building vocabulary. Can be used in the classroom or for home study."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/phrasal-verb-fun.svg"
   },
   {
     "id": "grammar-practice-grades-3-4",
@@ -1462,7 +1465,8 @@ const BOOKS = [
       "Exercises are short enough to complete in 10–15 minutes, making them ideal for daily homework, morning warm-ups, or holiday review. Clear instructions allow children to work independently, freeing parents and teachers from constant explanation."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/grammar-practice-grades-3-4.svg"
   },
   {
     "id": "my-english-book-one",
@@ -1482,7 +1486,8 @@ const BOOKS = [
       "Widely used as a first English textbook in primary schools around the world, the book also works well for parents who want to introduce their young children to English at home."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/my-english-book-one.svg"
   },
   {
     "id": "fairyland-pupil-book-1",
@@ -1502,7 +1507,8 @@ const BOOKS = [
       "The course includes the pupil's book, an activity book for additional practice, a teacher's book with lesson plans, picture flashcards, posters, digital resources and songs. A favourite of primary school English teachers worldwide for its engaging, story-based approach."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/fairyland-pupil-book-1.svg"
   },
   {
     "id": "comprehension-student-book-4-year",
@@ -1520,7 +1526,8 @@ const BOOKS = [
       "By developing listening and comprehension skills early, this book prepares children for the reading demands they will face when they start school. The gentle pace and colourful illustrations keep young children engaged without overwhelming them."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/comprehension-student-book-4-year.svg"
   },
   {
     "id": "complete-book-of-alphabet",
@@ -1539,7 +1546,8 @@ const BOOKS = [
       "Letter knowledge is the single strongest predictor of early reading success. This workbook builds that foundation systematically, making it an excellent resource for parents preparing children for school and for teachers supplementing classroom instruction."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/complete-book-of-alphabet.svg"
   },
   {
     "id": "one-story-a-day",
@@ -1558,7 +1566,8 @@ const BOOKS = [
       "Stories are appropriate for children roughly aged 6–10, though younger children will enjoy having them read aloud and older children may enjoy reading them independently. A wonderful gift that provides a full year of reading material."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/one-story-a-day.svg"
   },
   {
     "id": "initial-sounds-picture-cards",
@@ -1577,7 +1586,8 @@ const BOOKS = [
       "Teachers use them daily in phonics lessons, learning centres and literacy stations. Parents use them for playful learning at home. The printable format means you can make multiple copies for different activities."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/initial-sounds-picture-cards.svg"
   },
   {
     "id": "easy-english-with-games-and-activities-2",
@@ -1596,7 +1606,8 @@ const BOOKS = [
       "The game-based format keeps children motivated and engaged, which leads to better retention than drill-style practice. Suitable for classroom use as supplementary material or for home study."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/easy-english-with-games-and-activities-2.svg"
   },
   {
     "id": "easy-english-with-games-and-activities-1",
@@ -1615,7 +1626,8 @@ const BOOKS = [
       "The absence of traditional tests and exercises creates a positive, low-pressure introduction to English. Children associate the language with fun from the very beginning — an attitude that supports long-term learning motivation."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/easy-english-with-games-and-activities-1.svg"
   },
   {
     "id": "my-first-grammar-3",
@@ -1635,7 +1647,8 @@ const BOOKS = [
       "My First Grammar 3 works alongside any children's English coursebook that does not provide enough grammar practice on its own. It can also be used independently for targeted grammar review."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/my-first-grammar-3.svg"
   },
   {
     "id": "all-in-one-reading-passages",
@@ -1653,7 +1666,8 @@ const BOOKS = [
       "Regular practice with short, varied texts is one of the most effective ways to build reading fluency in children. The diverse topics keep interest high, and the consistent question format builds confidence. Excellent for daily reading practice in school or at home."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/all-in-one-reading-passages.svg"
   },
   {
     "id": "just-for-kids-grammar",
@@ -1672,7 +1686,8 @@ const BOOKS = [
       "The self-contained, clearly-explained format means children can work through pages independently, making it ideal for homework, summer review or homeschooling supplementary material."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/just-for-kids-grammar.svg"
   },
   {
     "id": "alphabet-activities",
@@ -1691,7 +1706,8 @@ const BOOKS = [
       "Teachers can select activities to match their lesson plans, parents can pick activities suited to their child's interests, and tutors can use them to target specific letters a child is struggling with."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/alphabet-activities.svg"
   },
   {
     "id": "beginning-sounds",
@@ -1709,7 +1725,8 @@ const BOOKS = [
       "Each worksheet focuses on one or two target sounds, with clear pictures of familiar objects. Tasks include circling pictures that start with the target sound, writing the beginning letter, matching pictures to letters, and sorting pictures by their beginning sounds. Suitable for kindergarten and first-grade classrooms, phonics tutoring and home practice."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/beginning-sounds.svg"
   },
   {
     "id": "mindfulness-exercises-for-kids",
@@ -1729,7 +1746,8 @@ const BOOKS = [
       "Each exercise includes simple instructions that any adult can follow, suggested ages, estimated time, and tips for making the practice engaging. Exercises can be done one-on-one, in small groups, or with a whole classroom."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/mindfulness-exercises-for-kids.svg"
   },
   {
     "id": "kid-confidence",
@@ -1749,7 +1767,8 @@ const BOOKS = [
       "Each chapter combines research findings with specific strategies parents can use immediately. Real-world examples and dialogue scripts show how to handle common situations — a child who is excluded by friends, a child who gives up easily, a child who constantly compares themselves to others. Written in a warm, relatable tone."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/kid-confidence.svg"
   },
   {
     "id": "junior-maker",
@@ -1768,7 +1787,8 @@ const BOOKS = [
       "Beyond the projects themselves, the book develops creativity, problem-solving, persistence, and the confidence to try things that might not work the first time. These skills are increasingly recognised as essential for success in education and future careers."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/junior-maker.svg"
   },
   {
     "id": "how-to-talk-so-kids-will-listen",
@@ -1788,7 +1808,8 @@ const BOOKS = [
       "Each chapter presents a principle, illustrates it with cartoon strips showing before-and-after dialogues, provides exercises for practice, and includes real stories from parents who have applied the techniques. The format makes the skills concrete and memorable."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/how-to-talk-so-kids-will-listen.svg"
   },
   {
     "id": "how-to-talk-so-kids-can-learn",
@@ -1808,7 +1829,8 @@ const BOOKS = [
       "Written for both parents and teachers, the book includes classroom scenarios and home scenarios, making it relevant for anyone who supports children's learning. Real-life examples and dialogue scripts show the techniques in action."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/how-to-talk-so-kids-can-learn.svg"
   },
   {
     "id": "green-eggs-and-ham",
@@ -1828,7 +1850,8 @@ const BOOKS = [
       "Green Eggs and Ham is used worldwide in homes, schools and libraries as one of the first books children read (or have read to them). Its combination of humour, rhythm, simple vocabulary and gentle message makes it a perfect introduction to the joy of reading."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/green-eggs-and-ham.svg"
   },
   {
     "id": "goldilocks-and-the-three-bears",
@@ -1849,7 +1872,8 @@ const BOOKS = [
       "This edition retells the traditional story in clear, simple language suitable for early readers, with colourful, friendly illustrations. It works for bedtime reading, classroom story time, or independent reading by children who are gaining confidence with longer texts."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/goldilocks-and-the-three-bears.svg"
   },
   {
     "id": "25-wacky-wonderful-stories",
@@ -1870,7 +1894,8 @@ const BOOKS = [
       "Aimed at children roughly aged 9–12, the stories develop vocabulary that stretches beyond everyday words into the richer, more precise vocabulary needed for academic reading and writing. A valuable supplement to any classroom vocabulary programme."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/25-wacky-wonderful-stories.svg"
   },
   {
     "id": "150-totally-terrific-writing-prompts",
@@ -1889,7 +1914,8 @@ const BOOKS = [
       "The most important factor in developing writing ability is regular practice. By providing fresh, engaging prompts daily, this book removes the hardest part of a writing routine — coming up with a topic — and lets children focus on the writing itself."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/150-totally-terrific-writing-prompts.svg"
   },
   {
     "id": "pride-and-prejudice",
@@ -2429,7 +2455,8 @@ const BOOKS = [
       "Download all 20 recipes instantly."
     ],
     "access": "download",
-    "license": "original"
+    "license": "original",
+    "coverImage": "covers/healthy-smoothie-recipe-book.svg"
   },
   {
     "id": "detox-cleanse-complete-guide",
