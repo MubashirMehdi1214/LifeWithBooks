@@ -46,7 +46,8 @@ const BOOKS = [
       "The course includes a comprehensive workbook with additional grammar, vocabulary and skills practice for homework or independent study. Video material brings real-world English into the classroom, and teacher's resources provide photocopiable activities, tests and detailed lesson plans. The self-study pack with DVD-ROM allows learners to review and extend their learning outside class."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=1daBCHD03XnqGZrUw3Y8oWmYYDf7LVxL4&sz=w1000"
   },
   {
     "id": "preposition-focus-on-building-mastery",
@@ -69,7 +70,8 @@ const BOOKS = [
       "Ideal for exam preparation, academic writing improvement, or anyone tired of guessing which preposition to use."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=1dG-FdEB4-Avw0tG_ynVRoSVfiOrMrDsz&sz=w1000"
   },
   {
     "id": "technical-english",
@@ -92,7 +94,8 @@ const BOOKS = [
       "The course places strong emphasis on practical communication: describing components and their functions, explaining sequences and processes, comparing alternatives, writing reports and emails, and giving short presentations to colleagues. These are the exact communication tasks that engineers, technicians and IT professionals face daily in international workplaces."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=1kJsgAcoaSkFCEAg5Te-OazsveXX4X58h&sz=w1000"
   },
   {
     "id": "english-for-meetings-phrases-expressions",
@@ -115,7 +118,8 @@ const BOOKS = [
       "This case study makes the book more than a phrase list — it becomes a simulation of real meeting participation that you can study, practise and adapt to your own workplace."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=1WdcHVE-vN01idAw1uiyY29lmj4weVGdy&sz=w1000"
   },
   {
     "id": "mcgraw-hill-conversational-american-english",
@@ -135,7 +139,8 @@ const BOOKS = [
       "The book is designed for reference and study. You can look up a specific situation when you need it, or read through entire chapters to absorb the patterns. An alphabetical index of all expressions makes it easy to find any phrase. Pronunciation tips throughout help learners with the rhythm, stress and intonation that make spoken American English sound natural rather than bookish."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=1mq7mIb7JhE47OfogkmVGITg8pScv2Tgo&sz=w1000"
   },
   {
     "id": "english-vocabulary-in-use-upper-intermediate",
@@ -156,7 +161,8 @@ const BOOKS = [
       "A complete answer key at the back allows independent learners to check their work immediately. A comprehensive word list and index makes it easy to find where any word is taught. The book works equally well as a classroom resource or a self-study reference, and many teachers assign individual units as targeted homework."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=1I9x6n6n6wVPbw1gjxGR8DRkizClxXdfP&sz=w1000"
   },
   {
     "id": "practical-english-usage",
@@ -178,7 +184,8 @@ const BOOKS = [
       "Michael Swan's explanations avoid unnecessary jargon, focus on what learners actually need to know, and address the real mistakes that students make rather than invented textbook errors. The fourth edition has been thoroughly updated with new corpus-based examples and coverage of current usage trends."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=1R8m9hE7MNfBY73_nKLZe6VH6Ux0CMhSd&sz=w1000"
   },
   {
     "id": "spoken-english-conversation-practice",
@@ -198,7 +205,8 @@ const BOOKS = [
       "Ideal for self-study learners, immigrants settling into English-speaking countries, or anyone preparing for a speaking exam."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=1yH58as9Y9kbTtsV7ttZCuOfKvynHtQ7c&sz=w1000"
   },
   {
     "id": "english-phonetics-and-phonology",
@@ -219,7 +227,8 @@ const BOOKS = [
       "Written for university students of linguistics, English language or TESOL, it is also valuable for language teachers who want to understand the sound system well enough to help their students, and for any serious learner determined to master English pronunciation. The approach is descriptive rather than prescriptive, covering both British (RP) and American (GA) pronunciation with notes on regional variation."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=1T0DZxPKu-NR7NDXFTx1Zs3DJgTTy-eBy&sz=w1000"
   },
   {
     "id": "talk-english-secret-to-speak-english",
@@ -241,7 +250,8 @@ const BOOKS = [
       "The book is short, action-oriented and written in simple English so even intermediate learners can follow it comfortably."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=1vVYcE1DC3rD0UpYm3mQ2WOUnK4RyBx27&sz=w1000"
   },
   {
     "id": "30-topics-for-english-conversation",
@@ -283,7 +293,8 @@ const BOOKS = [
       "A perfect companion for beginner-to-intermediate learners who want to hold everyday conversations without constantly searching for words."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=1Z_b48Cxo_P81y31p9x5q4BWSvLjMwDxW&sz=w1000"
   },
   {
     "id": "how-to-get-really-good-at-english",
@@ -304,7 +315,8 @@ const BOOKS = [
       "Expect practical systems and honest time estimates rather than promises of overnight fluency."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=155mqZ14ejfsGmVY9U4-3TNt8MPfBnIGE&sz=w1000"
   },
   {
     "id": "learn-how-to-speak-english-fluently-7-easy-steps",
@@ -365,7 +377,8 @@ const BOOKS = [
       "A comprehensive answer key allows independent learners to check their own work. The workbook can be used alongside the main textbook in class, assigned as homework, or worked through independently as a grammar refresher course."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=1nHPu_wukv9hHSbIBf6MyrPm8z-p21gH5&sz=w1000"
   },
   {
     "id": "english-in-everyday-life",
@@ -385,7 +398,8 @@ const BOOKS = [
       "The book is written in clear, simple English and designed to build confidence quickly. By the end of each unit, you should be able to handle that situation in real life. An excellent resource for immigrants, international students, expats and frequent travellers."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=17latFcymITKeP--fbsZwUI-GS1muRdsp&sz=w1000"
   },
   {
     "id": "black-book-of-english-vocabulary",
@@ -784,7 +798,8 @@ const BOOKS = [
       "Since the Goethe-Institut releases only a limited number of official practice sets, each one is valuable. Practising with Übungssatz 03 after working through sets 01 and 02 gives candidates exposure to different topics and texts while maintaining familiarity with the consistent task format."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=11VBWM31Zg5G2YUgVxmsWeUMCQut2D1XQ&sz=w1000"
   },
   {
     "id": "goethe-zertifikat-b1-deutschprufung",
@@ -805,7 +820,8 @@ const BOOKS = [
       "Beyond practice tasks, the book offers concrete advice on time management during the exam, how to approach each task type strategically, common pitfalls to avoid, and how to prepare for the Speaking module where many candidates feel most nervous."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=1tsRbPgoOncMcvpncIltN99C7HojilDv1&sz=w1000"
   },
   {
     "id": "goethe-zertifikat-b1-ubungssatz-erwachsene",
@@ -826,7 +842,8 @@ const BOOKS = [
       "Ideally used in the final weeks before the exam, after completing a B1 course. Working through the full set under timed conditions gives candidates confidence, reveals remaining weak areas, and reduces anxiety on exam day."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=1-MqmVATQYEwYZGEPn8LaXwA6sQA4ZX6l&sz=w1000"
   },
   {
     "id": "goethe-zertifikat-a2-fit-in-deutsch-2-jugendliche",
@@ -847,7 +864,8 @@ const BOOKS = [
       "Widely used in schools teaching German as a foreign language, the book also works for home study with parental support. Clear instructions and a friendly layout make it accessible for young learners working independently."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=1mf1Wpw2FORUJ2Rd2H6xQd5NqIJBWQc3j&sz=w1000"
   },
   {
     "id": "goethe-zertifikat-a2-fit-in-deutsch-2",
@@ -867,7 +885,8 @@ const BOOKS = [
       "Successfully passing A2 demonstrates that you can handle simple everyday communication in German. The book also notes what lies ahead at B1 level, helping learners plan their continued study path."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=1mRqSwhZdBUKDTExXO90KTZjGTiUBm6g3&sz=w1000"
   },
   {
     "id": "goethe-zertifikat-a1-prufungsziele",
@@ -909,7 +928,8 @@ const BOOKS = [
       "For young learners especially, familiarity with the exam format significantly reduces anxiety and improves performance. Working through this practice set — ideally under timed conditions — helps students understand what each task requires and builds confidence that they can succeed."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "https://drive.google.com/thumbnail?id=1uJMkbkkRnTPPmfLshBAi-dJZPmfOlZU4&sz=w1000"
   },
   {
     "id": "briefe-schreiben-und-bilder-beschreiben",
