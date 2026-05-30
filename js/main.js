@@ -726,12 +726,12 @@ function initArticleDetail() {
    1. Set ADSENSE_CLIENT below to your publisher id, e.g. 'ca-pub-1234567890123456'.
    2. Paste the same id into ads.txt (replace the placeholder line).
    Ads only load after the visitor accepts cookies. */
-const ADSENSE_CLIENT = '';
+const ADSENSE_CLIENT = 'ca-pub-5913415234423873';
 const COOKIE_KEY = 'lwb_cookie_consent';
 
 function loadAdSense() {
   if (!ADSENSE_CLIENT) return;
-  if (document.getElementById('lwb-adsense')) return;
+  if (document.querySelector('script[src*="adsbygoogle.js"]')) return;
   const s = document.createElement('script');
   s.id = 'lwb-adsense';
   s.async = true;
