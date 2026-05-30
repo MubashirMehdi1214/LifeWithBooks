@@ -1,2 +1,1 @@
-# LifeWithBooks ads.txt
 google.com, pub-5913415234423873, DIRECT, f08c47fec0942fa0
