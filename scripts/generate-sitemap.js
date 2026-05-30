@@ -7,7 +7,11 @@ const ORIGIN = 'https://www.lifewithbooks.co';
 
 const { BOOKS, CATEGORIES } = require(path.join(root, 'js', 'books.js'));
 let ARTICLES = [];
-try { ARTICLES = require(path.join(root, 'js', 'articles.js')).ARTICLES || []; } catch (e) {}
+try {
+  require(path.join(root, 'js', 'articles-more-1.js'));
+  require(path.join(root, 'js', 'articles-more-2.js'));
+  ARTICLES = require(path.join(root, 'js', 'articles.js')).ARTICLES || [];
+} catch (e) {}
 
 const today = new Date().toISOString().slice(0, 10);
 

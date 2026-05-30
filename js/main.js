@@ -636,7 +636,12 @@ function initArticles() {
   if (document.body.dataset.page !== 'articles') return;
   if (typeof ARTICLES === 'undefined') return;
   const el = $('#articles-grid');
-  if (el) el.innerHTML = ARTICLES.map(articleCardHTML).join('');
+  if (el) {
+    const sorted = ARTICLES.slice().sort(function(a, b) {
+      return (b.date || '').localeCompare(a.date || '');
+    });
+    el.innerHTML = sorted.map(articleCardHTML).join('');
+  }
   setShareMeta({
     title: 'Articles & Reading Guides | LifeWithBooks',
     description: 'Original reading guides and articles from the LifeWithBooks editorial team.',

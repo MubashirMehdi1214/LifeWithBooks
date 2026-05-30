@@ -1,5 +1,5 @@
 /* Original LifeWithBooks articles (editorial blog). */
-const ARTICLES = [
+const ARTICLES_CORE = [
   {
     id: "how-to-build-a-daily-reading-habit",
     title: "How to Build a Daily Reading Habit That Actually Sticks",
@@ -159,6 +159,20 @@ const ARTICLES = [
     ]
   }
 ];
+
+function mergeArticles() {
+  var more1 = typeof ARTICLES_MORE_1 !== 'undefined' ? ARTICLES_MORE_1 : [];
+  var more2 = typeof ARTICLES_MORE_2 !== 'undefined' ? ARTICLES_MORE_2 : [];
+  if (!more1.length && !more2.length && typeof module !== 'undefined') {
+    try {
+      more1 = require('./articles-more-1.js').ARTICLES_MORE_1 || [];
+      more2 = require('./articles-more-2.js').ARTICLES_MORE_2 || [];
+    } catch (e) { /* browser bundle */ }
+  }
+  return ARTICLES_CORE.concat(more1, more2);
+}
+
+const ARTICLES = mergeArticles();
 
 if (typeof module !== "undefined") {
   module.exports = { ARTICLES };
