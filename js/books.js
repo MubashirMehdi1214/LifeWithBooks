@@ -541,7 +541,8 @@ const BOOKS = [
       "The expressions are grouped thematically: reactions and emotions, agreeing and disagreeing, describing people, talking about work, food and drink, money, time, weather, and social situations. This organization lets you focus on the expressions most relevant to your daily conversations. An essential step between textbook French and genuine conversational fluency."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/301-expressions-pour-parler-comme-les-francais.svg"
   },
   {
     "id": "366-jours-pour-mieux-vous-exprimer-en-francais",
@@ -561,7 +562,8 @@ const BOOKS = [
       "Read one tip each morning, try to apply it during the day, and review the previous week's tips each Sunday. Over the course of a year, you accumulate 366 concrete improvements to your French. The book works for intermediate through advanced learners and is particularly popular with French professionals, students and expatriates who want to polish their language one step at a time."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/366-jours-pour-mieux-vous-exprimer-en-francais.svg"
   },
   {
     "id": "1600-proverbes-pour-briller",
@@ -579,7 +581,8 @@ const BOOKS = [
       "Beyond language learning, the collection provides a window into French values, humour and worldview. Many proverbs are centuries old and reveal how the French have historically thought about life, relationships and society. Great for advanced learners, translators, writers and anyone who loves the wisdom embedded in language."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/1600-proverbes-pour-briller.svg"
   },
   {
     "id": "les-100-fautes-de-francais-les-plus-courantes",
@@ -599,7 +602,8 @@ const BOOKS = [
       "The book is deliberately short and focused — you can read it in a few sittings and immediately start catching your own errors. It is particularly valuable for learners at the intermediate level and above, French professionals who want to clean up their writing, and anyone preparing for DELF/DALF or other French-language exams."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/les-100-fautes-de-francais-les-plus-courantes.svg"
   },
   {
     "id": "rick-steves-french-italian-german-phrase-book",
@@ -619,7 +623,8 @@ const BOOKS = [
       "The book is designed to fit in a pocket or daypack and be opened quickly when you need it. It also includes cultural tips, Rick Steves' personal recommendations, and hand gestures to know. Perfect for a multi-country European trip where you need basic communication in all three languages."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/rick-steves-french-italian-german-phrase-book.svg"
   },
   {
     "id": "easy-learning-french-conversation",
@@ -637,7 +642,8 @@ const BOOKS = [
       "The book assumes no prior French knowledge and builds gradually, making it accessible to complete beginners while also serving as a useful refresher for rusty intermediate learners heading to France. Its clear, well-organised layout makes it easy to find what you need quickly."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/easy-learning-french-conversation.svg"
   },
   {
     "id": "learn-french-in-a-hurry",
@@ -656,7 +662,8 @@ const BOOKS = [
       "Last-minute travellers heading to France, Quebec or French-speaking Africa, absolute beginners who want to try French before committing to a full course, and professionals who need to pick up basic French quickly for a business trip. The book does not pretend to make you fluent — it gives you enough to be polite, order food, ask directions and handle basic daily interactions."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/learn-french-in-a-hurry.svg"
   },
   {
     "id": "practice-makes-perfect-french-pronouns-prepositions",
@@ -676,7 +683,8 @@ const BOOKS = [
       "Intermediate learners who understand basic French but constantly make pronoun and preposition errors, students preparing for DELF B1/B2 or other exams, and anyone who wants to stop guessing and start using these structures correctly and automatically."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/practice-makes-perfect-french-pronouns-prepositions.svg"
   },
   {
     "id": "apprendre-a-traduire",
@@ -695,7 +703,8 @@ const BOOKS = [
       "Real text excerpts with side-by-side source and target versions demonstrate what good translation looks like and how decisions are made. Exercises ask learners to translate short passages and then compare their work with model translations. An excellent introduction for university students of translation, bilingual professionals and anyone moving from language learning to professional language work."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/apprendre-a-traduire.svg"
   },
   {
     "id": "letude-pratique-de-la-langue-francaise",
@@ -715,7 +724,8 @@ const BOOKS = [
       "While designed for native French school students, the book has become popular with serious intermediate-to-advanced learners of French as a second language. Its systematic, thorough approach provides the kind of structured grammar foundation that many adult French courses skip. Particularly useful for learners preparing for DELF B2 or C1 exams."
     ],
     "access": "summary",
-    "license": "reference"
+    "license": "reference",
+    "coverImage": "covers/letude-pratique-de-la-langue-francaise.svg"
   },
   {
     "id": "goethe-zertifikat-c2-grosses-deutsches-sprachdiplom",

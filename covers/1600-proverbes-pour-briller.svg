@@ -1,24 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#213a8a"/>
-      <stop offset="100%" stop-color="#15265a"/>
+    <linearGradient id="bg15yrk2" x1="0" y1="0" x2="0.85" y2="1">
+      <stop offset="0%" stop-color="#9a7b2f"/>
+      <stop offset="100%" stop-color="#5c4a1a"/>
     </linearGradient>
-    <linearGradient id="spine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="rgba(0,0,0,0.28)"/>
+    <linearGradient id="spine15yrk2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(0,0,0,0.32)"/>
       <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
     </linearGradient>
+    <linearGradient id="shine15yrk2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.08)"/>
+      <stop offset="50%" stop-color="rgba(255,255,255,0)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.05)"/>
+    </linearGradient>
+    <marker id="arrow15yrk2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="rgba(255,255,255,0.6)"/>
+    </marker>
   </defs>
-  <rect width="300" height="400" fill="url(#bg)"/>
-  <rect x="0" y="0" width="26" height="400" fill="url(#spine)"/>
-  <rect x="20" y="20" width="260" height="360" rx="4" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
-  <rect x="26" y="26" width="248" height="348" rx="2" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-  <text x="150" y="62" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-weight="700" fill="rgba(255,255,255,0.85)" letter-spacing="3">LIFEWITHBOOKS</text>
-  <line x1="92" y1="78" x2="208" y2="78" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
-  <text x="150" y="128" text-anchor="middle" font-size="40">&#127467;&#127479;</text>
-  <text x="150" y="158" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" fill="#ffffff"><tspan x="150" dy="0" text-anchor="middle">1600 proverbes</tspan><tspan x="150" dy="30" text-anchor="middle">pour briller et</tspan><tspan x="150" dy="30" text-anchor="middle">s&#39;amuser en</tspan><tspan x="150" dy="30" text-anchor="middle">société</tspan></text>
-  <line x1="110" y1="324" x2="190" y2="324" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
-  <text x="150" y="348" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" fill="rgba(255,255,255,0.9)" letter-spacing="1.5">FRENCH LEARNING BOOKS</text>
-  <text x="150" y="368" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="rgba(255,255,255,0.6)" letter-spacing="2">FREE PDF DOWNLOAD</text>
+  <rect width="300" height="400" fill="url(#bg15yrk2)"/>
+  <rect width="300" height="400" fill="url(#shine15yrk2)"/>
+  <rect x="0" y="0" width="28" height="400" fill="url(#spine15yrk2)"/>
+  <rect x="274" y="0" width="6" height="400" fill="#f4d03f" opacity="0.85"/>
+  <rect x="18" y="18" width="264" height="364" rx="5" fill="none" stroke="rgba(255,255,255,0.28)" stroke-width="1.5"/>
+  
+      <path d="M40 340 Q150 300 260 340" fill="none" stroke="rgba(255,215,120,0.45)" stroke-width="2"/>
+      <circle cx="150" cy="105" r="42" fill="none" stroke="rgba(255,215,120,0.5)" stroke-width="2"/>
+      <text x="150" y="112" text-anchor="middle" font-family="Georgia" font-size="28" fill="rgba(255,215,120,0.85)">"</text>
+  
+  <circle cx="150" cy="108" r="36" fill="rgba(0,0,0,0.2)" stroke="rgba(255,255,255,0.45)" stroke-width="2"/>
+       <text x="150" y="116" text-anchor="middle" font-family="Arial" font-size="20" font-weight="800" fill="#ffffff">1600</text>
+  <text x="150" y="210" text-anchor="middle" font-family="Arial" font-size="42" font-weight="800" fill="rgba(255,255,255,0.92)">1600</text>
+  <text x="150" y="219.44" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" font-weight="700" fill="#ffffff"><tspan x="150" dy="0" text-anchor="middle">1600 proverbes</tspan><tspan x="150" dy="19.040000000000003" text-anchor="middle">pour briller et</tspan><tspan x="150" dy="19.040000000000003" text-anchor="middle">s'amuser en</tspan><tspan x="150" dy="19.040000000000003" text-anchor="middle">société</tspan></text>
+  <text x="150" y="268" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.85)" letter-spacing="1">French Proverbs &amp; Wisdom</text>
+  <line x1="60" y1="290" x2="240" y2="290" stroke="rgba(255,255,255,0.35)" stroke-width="1"/>
+  <text x="150" y="318" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="rgba(255,255,255,0.75)" letter-spacing="2">LIFEWITHBOOKS</text>
+  <text x="150" y="338" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" fill="rgba(255,255,255,0.95)" letter-spacing="1.2">FRENCH LEARNING BOOKS</text>
+  <rect x="115" y="352" width="22" height="14" fill="#0055A4"/>
+  <rect x="137" y="352" width="22" height="14" fill="#ffffff"/>
+  <rect x="159" y="352" width="22" height="14" fill="#EF4135"/>
 </svg>
