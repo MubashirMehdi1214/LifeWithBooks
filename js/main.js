@@ -9,6 +9,35 @@ function $$(sel, ctx) { return Array.from((ctx || document).querySelectorAll(sel
 function getParam(name) {
   return new URLSearchParams(window.location.search).get(name);
 }
+
+/** Site search uses ?q=; accept ?s= for legacy/sitelinks URLs. */
+function getSearchQuery() {
+  return (getParam('q') || getParam('s') || '').trim();
+}
+
+const CATEGORY_SEO = {
+  'vocabulary-books': {
+    heading: 'Free Vocabulary Ebooks',
+    pageTitle: 'Free Vocabulary Ebooks (PDF) | LifeWithBooks',
+    metaDescription:
+      'Browse free vocabulary ebooks and PDF study guides for English learners — visual dictionaries, word lists, and upper-intermediate vocabulary books. Read online on LifeWithBooks.',
+    intro:
+      'Free vocabulary ebooks and PDF resources for English learners: photo dictionaries, core word lists, and vocabulary-in-use style guides. Pick a title to read more or find an official copy.',
+    collectionName: 'Free Vocabulary Ebooks — LifeWithBooks'
+  },
+  'english-learning-books': {
+    pageTitle: 'English Learning Books (Free PDF) | LifeWithBooks',
+    metaDescription:
+      'Free English learning books and PDF guides — grammar, conversation, vocabulary and study resources for beginners to advanced learners.',
+    intro:
+      'English learning books available to browse for free — courses, grammar, conversation practice and study guides for every level.',
+    collectionName: 'English Learning Books — LifeWithBooks'
+  }
+};
+
+function getCategorySeo(slug) {
+  return CATEGORY_SEO[slug] || null;
+}
 function escapeHtml(s) {
   return String(s)
     .replace(/&/g, '&amp;')
@@ -277,11 +306,12 @@ function initHome() {
 
   const featured = [
     "english-learning-books",
+    "vocabulary-books",
+    "grammar-books",
     "french-learning-books",
     "german-learning-books",
     "spanish-learning-books",
     "deutsch-books",
-    "grammar-books",
     "kids-learning-books",
     "health-books",
     "novels",
@@ -322,7 +352,7 @@ function initHome() {
 /* ---------- All books page ---------- */
 function initAllBooks() {
   if (document.body.dataset.page !== 'all-books') return;
-  const q = (getParam('q') || '').toLowerCase().trim();
+  const q = getSearchQuery().toLowerCase();
   let list = BOOKS.slice();
   if (q) {
     list = list.filter(b => b.title.toLowerCase().includes(q) || (b.excerpt || '').toLowerCase().includes(q));
@@ -397,26 +427,32 @@ function initCategory() {
   if (document.body.dataset.page !== 'category') return;
   const slug = getParam('cat') || 'english-learning-books';
   const cat = CATEGORIES.find(c => c.slug === slug);
+  const seo = getCategorySeo(slug);
   const title = $('#cat-title');
   const desc = $('#cat-description');
   const label = cat ? cat.label : 'Category';
-  const intro = cat
-    ? 'Browse our latest collection of ' + cat.label.toLowerCase() + ' available to download for free as PDF.'
-    : 'Browse books by category on LifeWithBooks.';
-  if (title) title.textContent = label;
+  const intro = seo
+    ? seo.intro
+    : cat
+      ? 'Browse our latest collection of ' + cat.label.toLowerCase() + ' available to read for free as PDF or study guides on LifeWithBooks.'
+      : 'Browse books by category on LifeWithBooks.';
+  if (title) title.textContent = seo && seo.heading ? seo.heading : label;
   if (desc) desc.textContent = intro;
 
-  const pageTitle = label + ' | LifeWithBooks - Free PDF Ebook Library';
+  const pageTitle = seo
+    ? seo.pageTitle
+    : label + ' | LifeWithBooks - Free PDF Ebook Library';
+  const metaDesc = seo ? seo.metaDescription : intro;
   const pageUrl = SITE_ORIGIN + '/category.html?cat=' + encodeURIComponent(slug);
   setShareMeta({
     title: pageTitle,
-    description: intro,
+    description: metaDesc,
     url: pageUrl,
     image: getCategoryShareImage(slug)
   });
 
   let items = BOOKS.filter(b => b.categories.includes(slug));
-  const q = (getParam('q') || '').toLowerCase().trim();
+  const q = getSearchQuery().toLowerCase();
   if (q) {
     items = items.filter(b =>
       b.title.toLowerCase().includes(q) ||
@@ -466,9 +502,9 @@ function initCategory() {
   injectJsonLd('jsonld-collection', {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": label + ' - LifeWithBooks',
+    "name": seo ? seo.collectionName : label + ' - LifeWithBooks',
     "url": pageUrl,
-    "description": intro,
+    "description": metaDesc,
     "hasPart": items.slice(0, 30).map(b => ({
       "@type": "Book",
       "name": b.title,
