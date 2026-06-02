@@ -187,6 +187,19 @@ function renderBookPage(book, depth) {
 ` + renderScripts(depth, true);
 }
 
+function categoryBookCard(b, p) {
+  const src = b.coverImage ? p + b.coverImage : p + 'covers/' + b.id + '.svg';
+  const webp = b.coverImage ? src.replace(/\.(jpg|jpeg|png)$/i, '.webp') : null;
+  const fallback = p + 'covers/' + b.id + '.svg';
+  let coverHtml;
+  if (webp) {
+    coverHtml = `<picture><source srcset="${esc(webp)}" type="image/webp"><img class="cover-image" src="${esc(src)}" alt="${esc(b.title)} cover" width="200" height="200" loading="lazy" data-fallback="${esc(fallback)}" onerror="if(this.dataset.fallback&amp;&amp;this.src!==this.dataset.fallback){this.src=this.dataset.fallback}else{this.style.display='none';var n=this.closest('.cover');if(n){var f=n.querySelector('.book');if(f)f.style.display='block'}}"></picture>`;
+  } else {
+    coverHtml = `<img class="cover-image" src="${esc(src)}" alt="${esc(b.title)} cover" width="200" height="200" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none';var n=this.closest('.cover');if(n){var f=n.querySelector('.book');if(f)f.style.display='block'}">`;
+  }
+  return `<article class="book-card cover-${esc(b.cover || 'english')}"><a class="thumb" href="${p}book/${encodeURIComponent(b.id)}.html"><div class="cover">${coverHtml}<div class="book" style="display:none;"><span class="title-on-cover">${esc(b.title)}</span></div></div></a><div class="info"><h3><a href="${p}book/${encodeURIComponent(b.id)}.html">${esc(b.title)}</a></h3><p class="article-excerpt">${esc((b.excerpt || '').slice(0, 100))}</p><a class="read-more" href="${p}book/${encodeURIComponent(b.id)}.html">Read More</a></div></article>`;
+}
+
 function renderCategoryPage(slug, depth) {
   const p = depth === 0 ? '' : '../';
   const seo = CATEGORY_SEO[slug];
@@ -198,9 +211,7 @@ function renderCategoryPage(slug, depth) {
   const intro = seo ? seo.intro : 'Browse free books in ' + cat.label + ' on LifeWithBooks.';
   const heading = seo ? seo.heading : cat.label;
   const items = BOOKS.filter(b => b.categories.includes(slug));
-  const cards = items.map(b =>
-    `<article class="book-card cover-${esc(b.cover || 'english')}"><a class="thumb" href="${p}book/${encodeURIComponent(b.id)}.html"><div class="cover"><div class="book"><span class="title-on-cover">${esc(b.title)}</span></div></div></a><div class="info"><h3><a href="${p}book/${encodeURIComponent(b.id)}.html">${esc(b.title)}</a></h3><p class="article-excerpt">${esc((b.excerpt || '').slice(0, 100))}</p></div></article>`
-  ).join('\n      ');
+  const cards = items.map(b => categoryBookCard(b, p)).join('\n      ');
   const jsonLd = `<script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
@@ -216,7 +227,7 @@ function renderCategoryPage(slug, depth) {
   <section class="section">
     <div class="section-title"><h1>${esc(heading)}</h1></div>
     <p style="text-align:center;max-width:760px;margin:0 auto 30px;">${esc(intro)}</p>
-    <div class="book-grid">${cards || '<p style="text-align:center;">Books coming soon.</p>'}</div>
+    <div class="book-grid" id="category-grid">${cards || '<p style="text-align:center;">Books coming soon.</p>'}</div>
   </section>
   <div id="category-articles"></div>
   <div id="site-footer-host"></div>

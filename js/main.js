@@ -80,6 +80,20 @@ function bindShareCopyButtons(root) {
   });
 }
 
+function coverImgError(img) {
+  if (img.dataset.fallback && img.src !== img.dataset.fallback) {
+    img.src = img.dataset.fallback;
+    img.removeAttribute('data-fallback');
+    return;
+  }
+  img.style.display = 'none';
+  var wrap = img.closest('.cover');
+  if (wrap) {
+    var fb = wrap.querySelector('.book');
+    if (fb) fb.style.display = 'block';
+  }
+}
+
 /* ---------- Helpers ---------- */
 function $(sel, ctx) { return (ctx || document).querySelector(sel); }
 function $$(sel, ctx) { return Array.from((ctx || document).querySelectorAll(sel)); }
@@ -488,7 +502,7 @@ function bookCardHTML(book) {
     height: 200,
     loading: 'lazy',
     referrerpolicy: 'no-referrer',
-    onerror: "if(this.dataset.fallback){this.src=this.dataset.fallback;this.dataset.fallback='';}else{this.style.display='none';if(this.closest('.cover')){var n=this.closest('.cover').querySelector('.book');if(n)n.style.display='block';}}"
+    onerror: 'coverImgError(this)'
   }).replace('<img', primarySrc !== localFallback ? '<img data-fallback="' + escapeHtml(localFallback) + '"' : '<img');
   return `
     <article class="book-card cover-${escapeHtml(book.cover || 'english')}">
@@ -654,10 +668,15 @@ function injectJsonLd(id, data) {
 }
 
 /* ---------- Category page ---------- */
+function categoryGridSelector() {
+  return document.getElementById('category-grid') ? '#category-grid' : 'section.section .book-grid';
+}
+
 function initCategory() {
   if (document.body.dataset.page !== 'category') return;
   const slug = document.body.dataset.cat || getParam('cat') || 'english-learning-books';
   const isStatic = document.body.dataset.seoStatic === 'true';
+  const gridSel = categoryGridSelector();
   const cat = CATEGORIES.find(c => c.slug === slug);
   const seo = getCategorySeo(slug);
   const title = $('#cat-title');
@@ -697,9 +716,7 @@ function initCategory() {
     const input = $('#catSearchInput');
     if (input) input.value = q;
   }
-  if (!isStatic) {
-    renderBookGrid('#category-grid', items);
-  }
+  renderBookGrid(gridSel, items);
 
   const searchForm = $('#catSearchForm');
   const searchInput = $('#catSearchInput');
@@ -711,7 +728,7 @@ function initCategory() {
         (b.excerpt || '').toLowerCase().includes(query)
       );
     }
-    renderBookGrid('#category-grid', filtered);
+    renderBookGrid(gridSel, filtered);
     const qEl = $('#cat-query-note');
     if (qEl) qEl.textContent = query ? ' matching "' + query + '"' : '';
   }
@@ -721,9 +738,13 @@ function initCategory() {
   searchForm && searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const val = searchInput.value.trim();
-    const params = new URLSearchParams({ cat: slug });
-    if (val) params.set('q', val);
-    window.location.href = 'category.html?' + params.toString();
+    if (isStatic) {
+      window.location.href = getCategoryPagePath(slug) + (val ? '?q=' + encodeURIComponent(val) : '');
+    } else {
+      const params = new URLSearchParams({ cat: slug });
+      if (val) params.set('q', val);
+      window.location.href = 'category.html?' + params.toString();
+    }
   });
 
   injectJsonLd('jsonld-breadcrumbs', {
