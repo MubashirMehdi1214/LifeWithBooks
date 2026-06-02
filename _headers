@@ -1,5 +1,4 @@
-/*
-  HTML
+/*.html
   Cache-Control: public, max-age=3600
 
 /book/*
@@ -33,4 +32,7 @@
   Cache-Control: public, max-age=31536000, immutable
 
 /404.html
+  Cache-Control: public, max-age=3600
+
+/
   Cache-Control: public, max-age=3600
