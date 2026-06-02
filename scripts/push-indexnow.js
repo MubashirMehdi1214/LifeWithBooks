@@ -1,4 +1,4 @@
-/* Notify Bing/Yandex of new/updated URLs via IndexNow (run after deploy). */
+/* Notify Bing/Yandex of SEO URLs via IndexNow (batched). */
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
@@ -13,51 +13,68 @@ if (!fs.existsSync(KEY_FILE)) {
   fs.writeFileSync(KEY_FILE, KEY, 'utf8');
 }
 
-function readSitemapUrls() {
-  const xml = fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf8');
-  const urls = [];
-  const re = /<loc>([^<]+)<\/loc>/g;
-  let m;
-  while ((m = re.exec(xml)) !== null) urls.push(m[1]);
-  return urls;
+function collectSeoUrls() {
+  const urls = new Set();
+  const addDir = (dir, prefix) => {
+    const full = path.join(root, dir);
+    if (!fs.existsSync(full)) return;
+    fs.readdirSync(full).filter(f => f.endsWith('.html')).forEach(f => {
+      urls.add(ORIGIN + prefix + f);
+    });
+  };
+  addDir('book', '/book/');
+  addDir('articles', '/articles/');
+  addDir('category', '/category/');
+  urls.add(ORIGIN + '/');
+  urls.add(ORIGIN + '/all-books.html');
+  urls.add(ORIGIN + '/articles.html');
+  return Array.from(urls);
 }
 
-const urlList = readSitemapUrls().slice(0, 200);
-const body = JSON.stringify({
-  host: HOST,
-  key: KEY,
-  keyLocation: ORIGIN + '/' + KEY + '.txt',
-  urlList: urlList
-});
-
-const req = https.request(
-  {
-    hostname: 'api.indexnow.org',
-    path: '/indexnow',
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json; charset=utf-8',
-      'Content-Length': Buffer.byteLength(body)
-    }
-  },
-  (res) => {
-    let data = '';
-    res.on('data', (chunk) => { data += chunk; });
-    res.on('end', () => {
-      console.log('IndexNow response:', res.statusCode, data || '(empty)');
-      if (res.statusCode >= 200 && res.statusCode < 300) {
-        console.log('Submitted', urlList.length, 'URLs');
-      } else {
-        process.exitCode = 1;
-      }
+function postBatch(urlList) {
+  return new Promise((resolve, reject) => {
+    const body = JSON.stringify({
+      host: HOST,
+      key: KEY,
+      keyLocation: ORIGIN + '/' + KEY + '.txt',
+      urlList: urlList
     });
+    const req = https.request(
+      {
+        hostname: 'api.indexnow.org',
+        path: '/indexnow',
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json; charset=utf-8',
+          'Content-Length': Buffer.byteLength(body)
+        }
+      },
+      (res) => {
+        let data = '';
+        res.on('data', (c) => { data += c; });
+        res.on('end', () => resolve({ status: res.statusCode, data, count: urlList.length }));
+      }
+    );
+    req.on('error', reject);
+    req.write(body);
+    req.end();
+  });
+}
+
+(async () => {
+  const all = collectSeoUrls();
+  const batchSize = 10000;
+  let ok = 0;
+  for (let i = 0; i < all.length; i += batchSize) {
+    const batch = all.slice(i, i + batchSize);
+    try {
+      const r = await postBatch(batch);
+      console.log('IndexNow batch', Math.floor(i / batchSize) + 1, ':', r.status, r.count, 'URLs', r.data || '');
+      if (r.status >= 200 && r.status < 300) ok += r.count;
+    } catch (e) {
+      console.error('IndexNow error:', e.message);
+      process.exitCode = 1;
+    }
   }
-);
-
-req.on('error', (err) => {
-  console.error('IndexNow error:', err.message);
-  process.exitCode = 1;
-});
-
-req.write(body);
-req.end();
+  console.log('Submitted', ok, 'of', all.length, 'URLs total');
+})();

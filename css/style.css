@@ -1,6 +1,5 @@
 /* ===== LifeWithBooks - Replica Stylesheet ===== */
-
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Nunito:wght@300;400;500;600;700;800&display=swap');
+/* Fonts loaded async via <head> — Nunito 400/600/700/800 with display=swap */
 
 :root {
   --contrast: #172021;
@@ -26,6 +25,7 @@ body {
   background-color: var(--base-2);
   color: var(--contrast-3);
   font-family: 'Nunito', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-display: swap;
   font-size: 16px;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -313,9 +313,10 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
   justify-content: center;
   perspective: 600px;
 }
-.book-card .cover .cover-image {
+.book-card .cover .cover-image,
+.book-card .cover picture img {
   width: 70%;
-  height: 90%;
+  height: 200px;
   object-fit: cover;
   border-radius: 4px 8px 8px 4px;
   transform: rotateY(-12deg);
@@ -898,3 +899,31 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
   .book-card h3 { font-size: 14px; min-height: 54px; }
   .section { padding: 40px 16px; }
 }
+
+/* ===== Social share ===== */
+.share-buttons { display: flex; flex-wrap: wrap; gap: 10px; margin: 28px 0; }
+.share-buttons a, .share-buttons button {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; padding: 10px 18px; border-radius: 100px;
+  font-weight: 700; font-size: 14px; border: none; cursor: pointer;
+  font-family: inherit; text-decoration: none;
+}
+.share-wa { background: #25D366; color: #fff; }
+.share-fb { background: #1877F2; color: #fff; }
+.share-tw { background: #000; color: #fff; }
+.share-copy { background: var(--base); color: var(--contrast); border: 1px solid #ddd; }
+
+/* ===== Freshness badges ===== */
+.badge-updated, .badge-new {
+  display: inline-block; font-size: 11px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: .04em;
+  padding: 3px 10px; border-radius: 100px; margin-left: 8px; vertical-align: middle;
+}
+.badge-updated { background: #e8f5e9; color: #2e7d32; }
+.badge-new { background: #fff3e0; color: #e65100; }
+
+.recent-updates { max-width: 760px; margin: 0 auto; }
+.recent-updates ul { list-style: none; }
+.recent-updates li { margin: 10px 0; }
+.recent-updates a { font-weight: 600; color: var(--accent); }
+

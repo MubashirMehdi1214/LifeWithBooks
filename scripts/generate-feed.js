@@ -1,4 +1,4 @@
-/* Build feed.xml (RSS 2.0) for articles — helps discovery and syndication. */
+/* Build feed.xml (RSS 2.0) — latest 20 articles. */
 const fs = require('fs');
 const path = require('path');
 
@@ -36,7 +36,7 @@ function toRfc822(dateStr) {
   }
 }
 
-const sorted = ARTICLES.slice().sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+const sorted = ARTICLES.slice().sort((a, b) => (b.date || '').localeCompare(a.date || '')).slice(0, 20);
 const lastBuild = sorted.length ? sorted[0].date : new Date().toISOString().slice(0, 10);
 
 const items = sorted.map((a) => {
@@ -48,6 +48,7 @@ const items = sorted.map((a) => {
     '      <guid isPermaLink="true">' + link + '</guid>\n' +
     '      <pubDate>' + toRfc822(a.date) + '</pubDate>\n' +
     '      <description>' + escapeXml(a.excerpt || '') + '</description>\n' +
+    '      <author>' + escapeXml(a.author || 'Mubashir Mehdi') + '</author>\n' +
     '    </item>'
   );
 });
@@ -56,9 +57,9 @@ const xml =
   '<?xml version="1.0" encoding="UTF-8"?>\n' +
   '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n' +
   '  <channel>\n' +
-  '    <title>LifeWithBooks Articles</title>\n' +
-  '    <link>' + ORIGIN + '/articles.html</link>\n' +
-  '    <description>Free reading guides, book reviews and language learning tips from LifeWithBooks.</description>\n' +
+  '    <title>LifeWithBooks Blog</title>\n' +
+  '    <link>' + ORIGIN + '</link>\n' +
+  '    <description>Free PDF books and reading guides from LifeWithBooks</description>\n' +
   '    <language>en-us</language>\n' +
   '    <lastBuildDate>' + toRfc822(lastBuild) + '</lastBuildDate>\n' +
   '    <atom:link href="' + ORIGIN + '/feed.xml" rel="self" type="application/rss+xml"/>\n' +
@@ -67,4 +68,4 @@ const xml =
   '</rss>\n';
 
 fs.writeFileSync(path.join(root, 'feed.xml'), xml, 'utf8');
-console.log('Feed written:', sorted.length, 'articles');
+console.log('Feed written:', sorted.length, 'articles (latest 20)');

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | LifeWithBooks</title>
+  <meta name="description" content="This page could not be found. Search our free PDF book library — IELTS, CSS PMS, classics, kids books and more.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://www.lifewithbooks.co/404.html">
+  <link rel="alternate" hreflang="en" href="https://www.lifewithbooks.co/">
+  <link rel="alternate" hreflang="x-default" href="https://www.lifewithbooks.co/">
+  <link rel="alternate" type="application/rss+xml" title="LifeWithBooks Articles" href="/feed.xml">
+  <style>
+    :root{--accent:#1E565C;--contrast:#172021;--contrast-3:#666}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Nunito,system-ui,sans-serif;font-size:16px;line-height:1.7;color:var(--contrast-3);padding:40px 20px;max-width:760px;margin:0 auto}
+    h1{color:var(--contrast);font-size:2rem;margin-bottom:12px}
+    .search-box{display:flex;gap:8px;margin:24px 0}
+    .search-box input{flex:1;padding:14px 18px;border:1px solid #ddd;border-radius:100px;font-size:16px;min-height:44px}
+    .search-box button{background:var(--accent);color:#fff;border:none;border-radius:100px;padding:14px 24px;font-weight:700;cursor:pointer;min-height:44px}
+    .cats{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}
+    .cats a{background:#faf0e2;color:var(--accent);padding:10px 18px;border-radius:100px;font-weight:600;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+    ul{list-style:none;margin:16px 0}
+    ul li{margin:8px 0}
+    ul a{color:var(--accent);font-weight:600}
+    .btn{display:inline-block;margin-top:20px;background:var(--accent);color:#fff;padding:14px 28px;border-radius:100px;text-decoration:none;font-weight:700;min-height:44px}
+  </style>
+  <link rel="preload" href="/css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/style.min.css"></noscript>
+</head>
+<body data-page="404" id="top">
+  <h1>Page not found</h1>
+  <p>Sorry, we could not find that page. Search our free PDF library or browse popular categories below.</p>
+  <form class="search-box" action="/all-books.html" method="get" role="search">
+    <input type="search" name="q" placeholder="Search books, authors, topics..." aria-label="Search books">
+    <button type="submit">Search</button>
+  </form>
+  <p><strong>Popular categories</strong></p>
+  <div class="cats">
+    <a href="/category/ielts-preparation.html">IELTS</a>
+    <a href="/category/css-pms-books.html">CSS PMS</a>
+    <a href="/category/matric-fsc-notes.html">Matric FSc</a>
+    <a href="/category/literature-books.html">Classics</a>
+    <a href="/category/kids-learning-books.html">Kids</a>
+    <a href="/category/programming-books.html">Programming</a>
+  </div>
+  <p><strong>Recently added books</strong></p>
+  <ul id="recent-books"></ul>
+  <a class="btn" href="/">Back to homepage</a>
+  <script src="/js/books.min.js" defer></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function(){
+      if(typeof BOOKS==='undefined')return;
+      var recent=BOOKS.slice(-5).reverse();
+      document.getElementById('recent-books').innerHTML=recent.map(function(b){
+        return '<li><a href="/book/'+encodeURIComponent(b.id)+'.html">'+b.title.replace(/</g,'&lt;')+'</a></li>';
+      }).join('');
+    });
+  </script>
+</body>
+</html>

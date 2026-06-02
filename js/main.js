@@ -1,7 +1,7 @@
 /* LifeWithBooks - shared site behaviour */
 
 const SITE_ORIGIN = 'https://www.lifewithbooks.co';
-const SITE_OG_IMAGE = SITE_ORIGIN + '/og-image.png';
+const SITE_OG_IMAGE = SITE_ORIGIN + '/og-home.webp';
 
 function getBookPageUrl(id) {
   return SITE_ORIGIN + '/book/' + encodeURIComponent(id) + '.html';
@@ -23,6 +23,61 @@ function getArticlePagePath(id) {
 }
 function getCategoryPagePath(slug) {
   return pagePrefix() + 'category/' + slug + '.html';
+}
+
+function localWebpPath(src) {
+  if (!src || /^https?:\/\//i.test(src)) return null;
+  if (/\.webp$/i.test(src)) return src;
+  if (/\.(jpg|jpeg|png)$/i.test(src)) return src.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+  return null;
+}
+
+function pictureTag(src, alt, opts) {
+  opts = opts || {};
+  const w = opts.width || 200;
+  const h = opts.height || 200;
+  const loading = opts.loading || 'lazy';
+  const cls = opts.class ? ' class="' + opts.class + '"' : '';
+  const fp = opts.fetchpriority ? ' fetchpriority="' + opts.fetchpriority + '"' : '';
+  const extra = opts.referrerpolicy ? ' referrerpolicy="' + opts.referrerpolicy + '"' : '';
+  const onerr = opts.onerror ? ' onerror="' + opts.onerror + '"' : '';
+  const webp = localWebpPath(src);
+  if (webp && webp !== src) {
+    return '<picture><source srcset="' + escapeHtml(webp) + '" type="image/webp"><img' + cls + ' src="' + escapeHtml(src) + '" alt="' + escapeHtml(alt) + '" width="' + w + '" height="' + h + '" loading="' + loading + '"' + fp + extra + onerr + '></picture>';
+  }
+  return '<img' + cls + ' src="' + escapeHtml(src) + '" alt="' + escapeHtml(alt) + '" width="' + w + '" height="' + h + '" loading="' + loading + '"' + fp + extra + onerr + '>';
+}
+
+function isNewBook(book) {
+  const newCats = ['ielts-preparation', 'css-pms-books', 'matric-fsc-notes', 'islamic-books', 'programming-books', 'o-level-a-level', 'self-development-books'];
+  return book && book.access === 'summary' && (book.categories || []).some(c => newCats.includes(c));
+}
+
+function isRecentlyUpdated(dateStr, days) {
+  if (!dateStr) return false;
+  return (Date.now() - new Date(dateStr).getTime()) < (days || 7) * 86400000;
+}
+
+function shareButtonsHTML(url, title) {
+  const u = encodeURIComponent(url);
+  const t = encodeURIComponent(title);
+  const wa = encodeURIComponent('Check this free guide: ' + title + ' ' + url);
+  return `<div class="share-buttons">
+    <a class="share-wa" href="https://wa.me/?text=${wa}" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="share-fb" href="https://www.facebook.com/sharer/sharer.php?u=${u}" target="_blank" rel="noopener">Facebook</a>
+    <a class="share-tw" href="https://twitter.com/intent/tweet?text=${t}&amp;url=${u}" target="_blank" rel="noopener">X / Twitter</a>
+    <button type="button" class="share-copy" data-share-url="${escapeHtml(url)}">Copy link</button>
+  </div>`;
+}
+
+function bindShareCopyButtons(root) {
+  (root || document).querySelectorAll('[data-share-url]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      navigator.clipboard.writeText(btn.getAttribute('data-share-url'));
+      btn.textContent = 'Copied!';
+      setTimeout(function() { btn.textContent = 'Copy link'; }, 2000);
+    });
+  });
 }
 
 /* ---------- Helpers ---------- */
@@ -254,11 +309,11 @@ function getLocalCoverPath(book) {
 }
 
 function getBookShareImage(book) {
-  return SITE_ORIGIN + '/og/books/' + book.id + '.png';
+  return SITE_ORIGIN + '/og/books/' + book.id + '.webp';
 }
 
 function getCategoryShareImage(slug) {
-  return SITE_ORIGIN + '/og/categories/' + slug + '.png';
+  return SITE_ORIGIN + '/og/categories/' + slug + '.webp';
 }
 
 function getBookCoverImage(book) {
@@ -298,7 +353,7 @@ function getOfficialSourceLinks(book) {
 function buildCategoryDropdown() {
   if (typeof CATEGORIES === 'undefined') return '';
   return CATEGORIES
-    .map(c => `<li><a href="category.html?cat=${encodeURIComponent(c.slug)}">${c.label}</a></li>`)
+    .map(c => `<li><a href="${getCategoryPagePath(c.slug)}">${c.label}</a></li>`)
     .join('');
 }
 
@@ -314,7 +369,7 @@ function injectHeader() {
 
   headerHost.innerHTML = `
     <header class="site-header">
-      <a class="site-logo" href="index.html" aria-label="LifeWithBooks home">
+      <a class="site-logo" href="/" aria-label="LifeWithBooks home">
         <span class="logo-mark">L</span>
         <span class="logo-text">
           <strong>LifeWithBooks</strong>
@@ -326,7 +381,7 @@ function injectHeader() {
       <div class="nav-inner">
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
         <ul>
-          <li${isHome ? ' class="active"' : ''}><a href="index.html">Home</a></li>
+          <li${isHome ? ' class="active"' : ''}><a href="/">Home</a></li>
           <li class="has-dropdown${isAll ? ' active' : ''}">
             <a href="all-books.html">All Books</a>
             <ul>${buildCategoryDropdown()}</ul>
@@ -427,27 +482,24 @@ function bookCardHTML(book) {
             <span class="ribbon"></span>
           </div>
         `;
-  const coverVisual = `
-          <img
-            class="cover-image"
-            src="${escapeHtml(primarySrc)}"
-            alt="${escapeHtml(book.title)} cover"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;this.dataset.fallback='';}else{this.style.display='none';if(this.nextElementSibling)this.nextElementSibling.style.display='block';}"
-            ${primarySrc !== localFallback ? 'data-fallback="' + escapeHtml(localFallback) + '"' : ''}
-          />
-          ${categoryCover}
-        `;
+  const coverVisual = pictureTag(primarySrc, book.title + ' cover', {
+    class: 'cover-image',
+    width: 200,
+    height: 200,
+    loading: 'lazy',
+    referrerpolicy: 'no-referrer',
+    onerror: "if(this.dataset.fallback){this.src=this.dataset.fallback;this.dataset.fallback='';}else{this.style.display='none';if(this.closest('.cover')){var n=this.closest('.cover').querySelector('.book');if(n)n.style.display='block';}}"
+  }).replace('<img', primarySrc !== localFallback ? '<img data-fallback="' + escapeHtml(localFallback) + '"' : '<img');
   return `
     <article class="book-card cover-${escapeHtml(book.cover || 'english')}">
       <a class="thumb" href="${getBookPagePath(book.id)}" aria-label="${escapeHtml(book.title)}">
         <div class="cover">
           ${coverVisual}
+          ${categoryCover}
         </div>
       </a>
       <div class="info">
-        <h3><a href="${getBookPagePath(book.id)}">${escapeHtml(book.title)}</a></h3>
+        <h3><a href="${getBookPagePath(book.id)}">${escapeHtml(book.title)}</a>${isNewBook(book) ? ' <span class="badge-new">New</span>' : ''}</h3>
         <a class="read-more" href="${getBookPagePath(book.id)}">Read More</a>
       </div>
     </article>
@@ -514,6 +566,16 @@ function initHome() {
     const q = $('#heroSearch input').value.trim();
     if (q) window.location.href = 'all-books.html?q=' + encodeURIComponent(q);
   });
+
+  const recentHost = $('#recent-updates');
+  if (recentHost && typeof ARTICLES !== 'undefined') {
+    const recent = ARTICLES.slice()
+      .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+      .slice(0, 3);
+    recentHost.innerHTML = recent.map(a =>
+      `<li><a href="${getArticlePagePath(a.id)}">${escapeHtml(a.title)}</a>${isRecentlyUpdated(a.date, 7) ? ' <span class="badge-updated">Updated</span>' : ''}</li>`
+    ).join('');
+  }
 }
 
 /* ---------- All books page ---------- */
@@ -907,7 +969,7 @@ function initArticles() {
     title: 'Free Reading Guides & Book Articles | LifeWithBooks',
     description: '116+ free reading guides and PDF book articles: IELTS, CSS, Matric, programming, vocabulary tips and classic reviews from LifeWithBooks.',
     url: SITE_ORIGIN + '/articles.html',
-    image: SITE_ORIGIN + '/og-image.png'
+    image: SITE_ORIGIN + '/og-articles.webp'
   });
   injectJsonLd('jsonld-articles', {
     "@context": "https://schema.org",
@@ -937,7 +999,7 @@ function initArticleDetail() {
   }
   const url = isStatic ? getArticlePageUrl(a.id) : SITE_ORIGIN + '/article.html?id=' + encodeURIComponent(a.id);
   const desc = (a.excerpt || '').slice(0, 320);
-  setShareMeta({ title: a.title + ' | LifeWithBooks', description: desc, url: url, image: SITE_ORIGIN + '/og-image.png' });
+  setShareMeta({ title: a.title + ' | LifeWithBooks', description: desc, url: url, image: SITE_ORIGIN + '/og-articles.webp' });
   setMeta('meta[property="og:type"]', 'content', 'article');
   if (isStatic) {
     injectJsonLd('jsonld-article', {
@@ -946,11 +1008,11 @@ function initArticleDetail() {
       "headline": a.title,
       "description": desc,
       "datePublished": a.date,
-      "dateModified": a.date,
+      "dateModified": modified,
       "author": { "@type": "Person", "name": a.author || "Mubashir Mehdi" },
       "publisher": { "@type": "Organization", "name": "LifeWithBooks", "url": SITE_ORIGIN + "/" },
       "mainEntityOfPage": url,
-      "image": SITE_ORIGIN + "/og-image.png"
+      "image": SITE_ORIGIN + "/og-articles.webp"
     });
     injectJsonLd('jsonld-breadcrumbs', {
       "@context": "https://schema.org",
@@ -982,6 +1044,8 @@ function initArticleDetail() {
     return;
   }
 
+  const modified = a.date || new Date().toISOString().slice(0, 10);
+  const updatedLabel = isRecentlyUpdated(a.date, 7) ? ' <span class="badge-updated">Updated</span>' : '';
   const body = (a.body || []).map(p =>
     p.indexOf('## ') === 0 ? '<h2>' + escapeHtml(p.slice(3)) + '</h2>' : '<p>' + escapeHtml(p) + '</p>'
   ).join('');
@@ -1011,8 +1075,9 @@ function initArticleDetail() {
       <a href="articles.html">Articles</a> &raquo;
       <span>${escapeHtml(a.title)}</span>
     </div>
-    <h1>${escapeHtml(a.title)}</h1>
-    <div class="meta"><span class="tag">${escapeHtml(dateStr)}</span><span class="tag">${escapeHtml(a.author || 'LifeWithBooks')}</span></div>
+    <h1>${escapeHtml(a.title)}${updatedLabel}</h1>
+    <div class="meta"><span class="tag">${escapeHtml(dateStr)}</span><span class="tag">Last updated: ${escapeHtml(modified.slice(0, 7))}</span><span class="tag">${escapeHtml(a.author || 'Mubashir Mehdi')}</span></div>
+    ${shareButtonsHTML(url, a.title)}
     <article class="article">${body}</article>
     <div class="download-block">
       <p style="margin-bottom:14px;">Enjoyed this guide? Explore our free library of public-domain classics, vocabulary ebooks and language learning books.</p>
@@ -1032,7 +1097,7 @@ function initArticleDetail() {
     "author": { "@type": "Organization", "name": a.author || "LifeWithBooks" },
     "publisher": { "@type": "Organization", "name": "LifeWithBooks", "url": SITE_ORIGIN + "/" },
     "mainEntityOfPage": url,
-    "image": SITE_ORIGIN + "/og-image.png"
+    "image": SITE_ORIGIN + "/og-articles.webp"
   });
   injectJsonLd('jsonld-breadcrumbs', {
     "@context": "https://schema.org",
@@ -1103,5 +1168,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initBookDetail();
   initArticles();
   initArticleDetail();
-  injectCookieBanner();
+  bindShareCopyButtons();
+  const deferred = () => injectCookieBanner();
+  if (typeof requestIdleCallback === 'function') requestIdleCallback(deferred);
+  else setTimeout(deferred, 100);
 });

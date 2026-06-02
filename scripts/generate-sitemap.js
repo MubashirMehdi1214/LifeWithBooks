@@ -1,4 +1,4 @@
-/* Rebuild sitemap.xml with static SEO pages, categories, books and articles. */
+/* Rebuild sitemap.xml + image sitemap + news sitemap. */
 const fs = require('fs');
 const path = require('path');
 
@@ -75,4 +75,63 @@ const xml =
   '</urlset>\n';
 
 fs.writeFileSync(path.join(root, 'sitemap.xml'), xml, 'utf8');
-console.log('Sitemap written:', parts.length, 'URLs (', BOOKS.length, 'books,', ARTICLES.length, 'articles,', CATEGORIES.length, 'categories ).');
+
+function bookCoverUrl(book) {
+  if (book.coverImage) {
+    const webp = book.coverImage.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+    return ORIGIN + '/' + webp;
+  }
+  return ORIGIN + '/og/books/' + book.id + '.webp';
+}
+
+const imageParts = BOOKS.filter(b => b.access === 'download' || b.coverImage).slice(0, 500).map(b => {
+  const page = ORIGIN + '/book/' + encodeURIComponent(b.id) + '.html';
+  const img = bookCoverUrl(b);
+  return (
+    '  <url>\n' +
+    '    <loc>' + page + '</loc>\n' +
+    '    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n' +
+    '      <image:loc>' + img + '</image:loc>\n' +
+    '      <image:title>' + String(b.title).replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</image:title>\n' +
+    '    </image:image>\n' +
+    '  </url>'
+  );
+});
+
+const imageXml =
+  '<?xml version="1.0" encoding="UTF-8"?>\n' +
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n' +
+  imageParts.join('\n') + '\n' +
+  '</urlset>\n';
+
+fs.writeFileSync(path.join(root, 'sitemap-images.xml'), imageXml, 'utf8');
+
+const recentArticles = ARTICLES.slice().sort((a, b) => (b.date || '').localeCompare(a.date || '')).slice(0, 100);
+const newsParts = recentArticles.map(a => {
+  const loc = ORIGIN + '/articles/' + encodeURIComponent(a.id) + '.html';
+  return (
+    '  <url>\n' +
+    '    <loc>' + loc + '</loc>\n' +
+    '    <news:news xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n' +
+    '      <news:publication>\n' +
+    '        <news:name>LifeWithBooks</news:name>\n' +
+    '        <news:language>en</news:language>\n' +
+    '      </news:publication>\n' +
+    '      <news:publication_date>' + (a.date || today) + '</news:publication_date>\n' +
+    '      <news:title>' + String(a.title).replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</news:title>\n' +
+    '    </news:news>\n' +
+    '  </url>'
+  );
+});
+
+const newsXml =
+  '<?xml version="1.0" encoding="UTF-8"?>\n' +
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n' +
+  newsParts.join('\n') + '\n' +
+  '</urlset>\n';
+
+fs.writeFileSync(path.join(root, 'sitemap-news.xml'), newsXml, 'utf8');
+
+console.log('Sitemap written:', parts.length, 'URLs');
+console.log('Image sitemap:', imageParts.length, 'book covers');
+console.log('News sitemap:', newsParts.length, 'articles');

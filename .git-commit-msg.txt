@@ -1,3 +1,3 @@
-Major SEO upgrade - new books articles and fixes
+PageSpeed and advanced SEO optimization complete
 
-Add 33 category books, 20 SEO articles, static book/category/article pages, article meta tags, sitemap with 387 URLs, and internal linking improvements.
+WebP images, minified CSS/JS, critical CSS, cache headers, 404 page, social sharing, IndexNow batches, image/news sitemaps, and Discover optimizations.

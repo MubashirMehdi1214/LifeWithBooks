@@ -1,9 +1,9 @@
 /* Generate static SEO pages: /book/*.html, /category/*.html, /articles/*.html, js/article-meta.js */
 const fs = require('fs');
 const path = require('path');
+const { renderHead, renderScripts, ORIGIN, esc } = require('./site-head.js');
 
 const root = path.join(__dirname, '..');
-const ORIGIN = 'https://www.lifewithbooks.co';
 const today = new Date().toISOString().slice(0, 10);
 
 const { BOOKS, CATEGORIES } = require(path.join(root, 'js', 'books.js'));
@@ -81,16 +81,19 @@ const CATEGORY_SEO = {
   }
 };
 
-function esc(s) {
-  return String(s)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
-}
-
 function escJson(s) {
   return JSON.stringify(s);
+}
+
+function coverPicture(book, p, eager) {
+  const src = book.coverImage ? p + book.coverImage : p + 'covers/' + book.id + '.svg';
+  const webp = book.coverImage ? src.replace(/\.(jpg|jpeg|png)$/i, '.webp') : null;
+  const loading = eager ? 'eager' : 'lazy';
+  const fp = eager ? ' fetchpriority="high"' : '';
+  if (webp) {
+    return `<picture><source srcset="${esc(webp)}" type="image/webp"><img class="book-detail-cover" src="${esc(src)}" alt="${esc(book.title)} cover" width="280" height="420" loading="${loading}"${fp}></picture>`;
+  }
+  return `<img class="book-detail-cover" src="${esc(src)}" alt="${esc(book.title)} cover" width="280" height="420" loading="${loading}"${fp}>`;
 }
 
 function bookAuthor(book) {
@@ -114,52 +117,6 @@ function bookMetaDesc(book) {
   return d;
 }
 
-function headBlock(opts, depth) {
-  const p = depth === 0 ? '' : '../';
-  return `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V3781QPP7K"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-V3781QPP7K');</script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${esc(opts.title)}</title>
-  <meta name="description" content="${esc(opts.description)}">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <link rel="canonical" href="${esc(opts.canonical)}">
-  <meta property="og:type" content="${esc(opts.ogType || 'website')}">
-  <meta property="og:title" content="${esc(opts.title)}">
-  <meta property="og:description" content="${esc(opts.description)}">
-  <meta property="og:url" content="${esc(opts.canonical)}">
-  <meta property="og:site_name" content="LifeWithBooks">
-  <meta property="og:image" content="${esc(opts.image || ORIGIN + '/og-image.png')}">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="${esc(opts.title)}">
-  <meta name="twitter:description" content="${esc(opts.description)}">
-  <meta name="twitter:image" content="${esc(opts.image || ORIGIN + '/og-image.png')}">
-  <link rel="icon" type="image/svg+xml" href="${p}favicon.svg">
-  <link rel="stylesheet" href="${p}css/style.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5913415234423873" crossorigin="anonymous"></script>
-  ${opts.jsonLd || ''}
-</head>`;
-}
-
-function scriptsBlock(depth, page, extra) {
-  const p = depth === 0 ? '' : '../';
-  return `
-  <script src="${p}js/books.js"></script>
-  <script src="${p}js/articles-more-1.js"></script>
-  <script src="${p}js/articles-more-2.js"></script>
-  <script src="${p}js/articles-more-3.js"></script>
-  <script src="${p}js/articles-more-4.js"></script>
-  <script src="${p}js/articles-more-5.js"></script>
-  <script src="${p}js/articles-more-6.js"></script>
-  <script src="${p}js/articles.js"></script>
-  <script src="${p}js/main.js"></script>
-</body>
-</html>`;
-}
-
 function renderBookPage(book, depth) {
   const p = depth === 0 ? '' : '../';
   const url = ORIGIN + '/book/' + encodeURIComponent(book.id) + '.html';
@@ -169,7 +126,7 @@ function renderBookPage(book, depth) {
   const catUrl = ORIGIN + '/category/' + primaryCat + '.html';
   const author = bookAuthor(book);
   const downloadable = book.access === 'download';
-  const cover = book.coverImage ? p + book.coverImage : p + 'covers/' + book.id + '.svg';
+  const cover = coverPicture(book, p, true);
   const related = BOOKS.filter(b => b.id !== book.id && b.categories.some(c => book.categories.includes(c))).slice(0, 4);
   const descHtml = (book.description || []).map(line => {
     if (line.indexOf('## ') === 0) return '<h2>' + esc(line.slice(3)) + '</h2>';
@@ -207,19 +164,19 @@ function renderBookPage(book, depth) {
     `<li><a href="${encodeURIComponent(b.id)}.html"><span>${esc(b.title)}</span><span class="arrow">View &raquo;</span></a></li>`
   ).join('\n          ');
 
-  return headBlock({
+  return renderHead({
     title: bookMetaTitle(book),
     description: bookMetaDesc(book),
     canonical: url,
     ogType: 'book',
-    image: ORIGIN + '/og/books/' + book.id + '.png',
+    image: ORIGIN + '/og/books/' + book.id + '.webp',
     jsonLd
   }, depth) + `
 <body data-page="book" data-book-id="${esc(book.id)}" data-seo-static="true" data-path-depth="1" id="top">
   <div id="site-header-host"></div>
   <main class="book-single" id="book-detail">
     <div class="breadcrumb"><a href="${p}index.html">Home</a> &raquo; <a href="${p}category/${primaryCat}.html">${esc(catLabel)}</a> &raquo; <span>${esc(book.title)}</span></div>
-    <img class="book-detail-cover" src="${esc(cover)}" alt="${esc(book.title)} cover" loading="lazy" width="280" height="420">
+    ${cover}
     <h1>${esc(book.title)}</h1>
     <div class="meta"><span class="tag">${esc(author)}</span><span class="tag">${downloadable ? 'Free PDF Download' : 'Study Guide'}</span></div>
     <article class="article">${descHtml}${extra}</article>
@@ -227,7 +184,7 @@ function renderBookPage(book, depth) {
     <div class="related-posts"><h3>You Might Also Like</h3><ul>${relatedHtml}</ul></div>
   </main>
   <div id="site-footer-host"></div>
-` + scriptsBlock(depth, 'book');
+` + renderScripts(depth, true);
 }
 
 function renderCategoryPage(slug, depth) {
@@ -253,7 +210,7 @@ function renderCategoryPage(slug, depth) {
     hasPart: items.slice(0, 20).map(b => ({ '@type': 'Book', name: b.title, url: ORIGIN + '/book/' + b.id + '.html' }))
   })}</script>`;
 
-  return headBlock({ title, description: desc, canonical: url, jsonLd }, depth) + `
+  return renderHead({ title, description: desc, canonical: url, image: ORIGIN + '/og/categories/' + slug + '.webp', jsonLd }, depth) + `
 <body data-page="category" data-cat="${esc(slug)}" data-seo-static="true" data-path-depth="1" id="top">
   <div id="site-header-host"></div>
   <section class="section">
@@ -263,7 +220,7 @@ function renderCategoryPage(slug, depth) {
   </section>
   <div id="category-articles"></div>
   <div id="site-footer-host"></div>
-` + scriptsBlock(depth, 'category');
+` + renderScripts(depth, true);
 }
 
 function renderArticlePage(a, depth) {
@@ -276,32 +233,46 @@ function renderArticlePage(a, depth) {
     if (line.indexOf('### ') === 0) return '<h3>' + esc(line.slice(4)) + '</h3>';
     return '<p>' + esc(line) + '</p>';
   }).join('\n      ');
+  const modified = today;
+  const updatedBadge = (Date.now() - new Date(a.date).getTime()) < 7 * 86400000
+    ? ' <span class="badge-updated">Updated</span>' : '';
+  const shareUrl = url;
+  const shareTitle = encodeURIComponent(a.title);
+  const shareLinks = `
+    <div class="share-buttons">
+      <a class="share-wa" href="https://wa.me/?text=${encodeURIComponent('Check this free guide: ' + a.title + ' ' + shareUrl)}" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="share-fb" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}" target="_blank" rel="noopener">Facebook</a>
+      <a class="share-tw" href="https://twitter.com/intent/tweet?text=${shareTitle}&amp;url=${encodeURIComponent(shareUrl)}" target="_blank" rel="noopener">X / Twitter</a>
+      <button type="button" class="share-copy" data-copy="${esc(shareUrl)}">Copy link</button>
+    </div>`;
   const jsonLd = `<script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: a.title,
     description: desc,
     datePublished: a.date,
-    dateModified: a.date,
+    dateModified: modified,
     author: { '@type': 'Person', name: a.author || 'Mubashir Mehdi' },
     publisher: { '@type': 'Organization', name: 'LifeWithBooks', url: ORIGIN + '/' },
     mainEntityOfPage: url,
-    image: ORIGIN + '/og-image.png'
+    image: ORIGIN + '/og-articles.webp'
   })}</script>`;
 
-  return headBlock({ title, description: desc, canonical: url, ogType: 'article', jsonLd }, depth) + `
+  return renderHead({ title, description: desc, canonical: url, ogType: 'article', image: ORIGIN + '/og-articles.webp', jsonLd }, depth) + `
 <body data-page="article" data-article-id="${esc(a.id)}" data-seo-static="true" data-path-depth="1" id="top">
   <div id="site-header-host"></div>
   <main class="book-single">
     <div id="article-detail">
       <div class="breadcrumb"><a href="${p}index.html">Home</a> &raquo; <a href="${p}articles.html">Articles</a> &raquo; <span>${esc(a.title)}</span></div>
-      <h1>${esc(a.title)}</h1>
-      <div class="meta"><span class="tag">${esc(a.date)}</span><span class="tag">${esc(a.author || 'Mubashir Mehdi')}</span></div>
+      <h1>${esc(a.title)}${updatedBadge}</h1>
+      <div class="meta"><span class="tag">${esc(a.date)}</span><span class="tag">Last updated: ${esc(modified.slice(0, 7))}</span><span class="tag">${esc(a.author || 'Mubashir Mehdi')}</span></div>
+      ${shareLinks}
       <article class="article">${body}</article>
     </div>
   </main>
   <div id="site-footer-host"></div>
-` + scriptsBlock(depth, 'article');
+  <script>document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){navigator.clipboard.writeText(b.dataset.copy);b.textContent='Copied!';setTimeout(function(){b.textContent='Copy link';},2000);});});</script>
+` + renderScripts(depth, true);
 }
 
 // Generate
