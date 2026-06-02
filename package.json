@@ -13,6 +13,10 @@
     "feed": "node scripts/generate-feed.js",
     "book-guides": "node scripts/generate-book-guide-articles.js && node scripts/generate-book-guide-articles.js --batch=4 && node scripts/generate-book-guide-articles.js --batch=5",
     "expand-batch3": "node scripts/expand-library-batch-3.js",
+    "add-seo-books": "node scripts/add-seo-category-books.js",
+    "seo-articles": "node scripts/generate-seo-articles-6.js",
+    "seo-pages": "node scripts/generate-seo-pages.js",
+    "seo-build": "npm run add-seo-books && npm run seo-articles && npm run seo-pages && npm run seo",
     "indexnow": "node scripts/push-indexnow.js",
     "seo": "npm run sitemap && npm run feed"
   },

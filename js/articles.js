@@ -195,16 +195,18 @@ function mergeArticles() {
   var more3 = typeof ARTICLES_MORE_3 !== 'undefined' ? ARTICLES_MORE_3 : [];
   var more4 = typeof ARTICLES_MORE_4 !== 'undefined' ? ARTICLES_MORE_4 : [];
   var more5 = typeof ARTICLES_MORE_5 !== 'undefined' ? ARTICLES_MORE_5 : [];
-  if (!more1.length && !more2.length && !more3.length && !more4.length && !more5.length && typeof module !== 'undefined') {
+  var more6 = typeof ARTICLES_MORE_6 !== 'undefined' ? ARTICLES_MORE_6 : [];
+  if (!more1.length && !more2.length && !more3.length && !more4.length && !more5.length && !more6.length && typeof module !== 'undefined') {
     try {
       more1 = require('./articles-more-1.js').ARTICLES_MORE_1 || [];
       more2 = require('./articles-more-2.js').ARTICLES_MORE_2 || [];
       more3 = require('./articles-more-3.js').ARTICLES_MORE_3 || [];
       more4 = require('./articles-more-4.js').ARTICLES_MORE_4 || [];
       more5 = require('./articles-more-5.js').ARTICLES_MORE_5 || [];
+      more6 = require('./articles-more-6.js').ARTICLES_MORE_6 || [];
     } catch (e) { /* browser bundle */ }
   }
-  return ARTICLES_CORE.concat(more1, more2, more3, more4, more5);
+  return ARTICLES_CORE.concat(more1, more2, more3, more4, more5, more6);
 }
 
 const ARTICLES = mergeArticles();

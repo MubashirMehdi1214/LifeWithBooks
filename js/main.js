@@ -3,6 +3,28 @@
 const SITE_ORIGIN = 'https://www.lifewithbooks.co';
 const SITE_OG_IMAGE = SITE_ORIGIN + '/og-image.png';
 
+function getBookPageUrl(id) {
+  return SITE_ORIGIN + '/book/' + encodeURIComponent(id) + '.html';
+}
+function getArticlePageUrl(id) {
+  return SITE_ORIGIN + '/articles/' + encodeURIComponent(id) + '.html';
+}
+function getCategoryPageUrl(slug) {
+  return SITE_ORIGIN + '/category/' + slug + '.html';
+}
+function pagePrefix() {
+  return document.body && document.body.dataset.pathDepth === '1' ? '../' : '';
+}
+function getBookPagePath(id) {
+  return pagePrefix() + 'book/' + encodeURIComponent(id) + '.html';
+}
+function getArticlePagePath(id) {
+  return pagePrefix() + 'articles/' + encodeURIComponent(id) + '.html';
+}
+function getCategoryPagePath(slug) {
+  return pagePrefix() + 'category/' + slug + '.html';
+}
+
 /* ---------- Helpers ---------- */
 function $(sel, ctx) { return (ctx || document).querySelector(sel); }
 function $$(sel, ctx) { return Array.from((ctx || document).querySelectorAll(sel)); }
@@ -32,6 +54,60 @@ const CATEGORY_SEO = {
     intro:
       'English learning books available to browse for free — courses, grammar, conversation practice and study guides for every level.',
     collectionName: 'English Learning Books — LifeWithBooks'
+  },
+  'self-development-books': {
+    pageTitle: 'Free Self Development Books PDF | LifeWithBooks',
+    metaDescription: 'Free self development books PDF — classic motivation, Stoicism and personal growth on LifeWithBooks.',
+    intro: 'Browse free self development books and guides on LifeWithBooks.',
+    collectionName: 'Self Development Books — LifeWithBooks'
+  },
+  'ielts-preparation': {
+    heading: 'Free IELTS Preparation Books',
+    pageTitle: 'Free IELTS Preparation Books PDF | Practice Tests | LifeWithBooks',
+    metaDescription: 'Free IELTS preparation books and PDF study guides — Academic practice tests, Writing, Speaking, vocabulary and Listening on LifeWithBooks.',
+    intro: 'Prepare for IELTS Academic with free reference guides on LifeWithBooks — practice strategies, writing frameworks, speaking topics and vocabulary builders.',
+    collectionName: 'IELTS Preparation — LifeWithBooks'
+  },
+  'css-pms-books': {
+    heading: 'CSS & PMS Exam Books',
+    pageTitle: 'Free CSS PMS Exam Books PDF | Past Papers | LifeWithBooks',
+    metaDescription: 'Free CSS and PMS exam preparation guides for Pakistani students on LifeWithBooks.',
+    intro: 'CSS and PMS candidates can browse free study guides covering English essay, precis, current affairs and general knowledge.',
+    collectionName: 'CSS PMS Books — LifeWithBooks'
+  },
+  'matric-fsc-notes': {
+    heading: 'Matric & FSc Notes',
+    pageTitle: 'Free Matric FSc Notes PDF | Study Guides | LifeWithBooks',
+    metaDescription: 'Free Matric and FSc notes PDF guides for Pakistani students on LifeWithBooks.',
+    intro: 'Matric and FSc study guides for English, Physics, Chemistry, Biology and Mathematics.',
+    collectionName: 'Matric FSc Notes — LifeWithBooks'
+  },
+  'islamic-books': {
+    heading: 'Free Islamic Books',
+    pageTitle: 'Free Islamic Books PDF | Download | LifeWithBooks',
+    metaDescription: 'Free Islamic books and study guides PDF on LifeWithBooks.',
+    intro: 'Browse Islamic book guides — Seerah, Arabic, history and Quran translation resources.',
+    collectionName: 'Islamic Books — LifeWithBooks'
+  },
+  'programming-books': {
+    heading: 'Free Programming Books',
+    pageTitle: 'Free Programming Books PDF | Python HTML JavaScript | LifeWithBooks',
+    metaDescription: 'Free programming beginner guides — Python, HTML, CSS, JavaScript, Git and SQL on LifeWithBooks.',
+    intro: 'Learn programming with free guides on Python, web development, JavaScript, Git and SQL.',
+    collectionName: 'Programming Books — LifeWithBooks'
+  },
+  'o-level-a-level': {
+    heading: 'O Level & A Level',
+    pageTitle: 'Free O Level A Level Study Materials PDF | LifeWithBooks',
+    metaDescription: 'Free O Level and A Level study guides PDF on LifeWithBooks.',
+    intro: 'Cambridge O Level, A Level and IGCSE revision guides and exam preparation.',
+    collectionName: 'O Level A Level — LifeWithBooks'
+  },
+  'kids-learning-books': {
+    pageTitle: 'Free Kids Learning Books PDF | Educational | LifeWithBooks',
+    metaDescription: 'Free kids learning books PDF — classics and educational reads for children on LifeWithBooks.',
+    intro: 'Free kids learning books and classic stories for family reading.',
+    collectionName: 'Kids Learning Books — LifeWithBooks'
   }
 };
 
@@ -365,14 +441,14 @@ function bookCardHTML(book) {
         `;
   return `
     <article class="book-card cover-${escapeHtml(book.cover || 'english')}">
-      <a class="thumb" href="book.html?id=${encodeURIComponent(book.id)}" aria-label="${escapeHtml(book.title)}">
+      <a class="thumb" href="${getBookPagePath(book.id)}" aria-label="${escapeHtml(book.title)}">
         <div class="cover">
           ${coverVisual}
         </div>
       </a>
       <div class="info">
-        <h3><a href="book.html?id=${encodeURIComponent(book.id)}">${escapeHtml(book.title)}</a></h3>
-        <a class="read-more" href="book.html?id=${encodeURIComponent(book.id)}">Read More</a>
+        <h3><a href="${getBookPagePath(book.id)}">${escapeHtml(book.title)}</a></h3>
+        <a class="read-more" href="${getBookPagePath(book.id)}">Read More</a>
       </div>
     </article>
   `;
@@ -391,19 +467,24 @@ function initHome() {
   if (document.body.dataset.page !== 'home') return;
 
   const featured = [
+    "ielts-preparation",
+    "css-pms-books",
+    "matric-fsc-notes",
+    "islamic-books",
+    "programming-books",
+    "kids-learning-books",
     "english-learning-books",
     "vocabulary-books",
     "grammar-books",
+    "o-level-a-level",
+    "self-development-books",
     "french-learning-books",
     "german-learning-books",
     "spanish-learning-books",
-    "deutsch-books",
-    "kids-learning-books",
     "health-books",
     "novels",
-    "trading-books",
-    "adventure-books",
     "literature-books",
+    "adventure-books",
     "business-books",
     "self-grooming-books"
   ];
@@ -420,7 +501,7 @@ function initHome() {
       if (!items.length) return '';
       return `
         <section class="section">
-          <div class="section-title"><a href="category.html?cat=${slug}">${cat.label}</a></div>
+          <div class="section-title"><a href="${getCategoryPagePath(slug)}">${cat.label}</a></div>
           <div class="book-grid">${items.map(bookCardHTML).join('')}</div>
         </section>
       `;
@@ -513,7 +594,8 @@ function injectJsonLd(id, data) {
 /* ---------- Category page ---------- */
 function initCategory() {
   if (document.body.dataset.page !== 'category') return;
-  const slug = getParam('cat') || 'english-learning-books';
+  const slug = document.body.dataset.cat || getParam('cat') || 'english-learning-books';
+  const isStatic = document.body.dataset.seoStatic === 'true';
   const cat = CATEGORIES.find(c => c.slug === slug);
   const seo = getCategorySeo(slug);
   const title = $('#cat-title');
@@ -531,7 +613,7 @@ function initCategory() {
     ? seo.pageTitle
     : label + ' | LifeWithBooks - Free PDF Ebook Library';
   const metaDesc = seo ? seo.metaDescription : intro;
-  const pageUrl = SITE_ORIGIN + '/category.html?cat=' + encodeURIComponent(slug);
+  const pageUrl = isStatic ? getCategoryPageUrl(slug) : SITE_ORIGIN + '/category.html?cat=' + encodeURIComponent(slug);
   setShareMeta({
     title: pageTitle,
     description: metaDesc,
@@ -553,7 +635,9 @@ function initCategory() {
     const input = $('#catSearchInput');
     if (input) input.value = q;
   }
-  renderBookGrid('#category-grid', items);
+  if (!isStatic) {
+    renderBookGrid('#category-grid', items);
+  }
 
   const searchForm = $('#catSearchForm');
   const searchInput = $('#catSearchInput');
@@ -598,7 +682,7 @@ function initCategory() {
     "hasPart": items.slice(0, 30).map(b => ({
       "@type": "Book",
       "name": b.title,
-      "url": "https://www.lifewithbooks.co/book.html?id=" + encodeURIComponent(b.id)
+      "url": getBookPageUrl(b.id)
     }))
   });
 
@@ -606,7 +690,7 @@ function initCategory() {
   const articlesHost = $('#category-articles');
   if (articlesHost && relatedArticles.length) {
     const links = relatedArticles.map(a =>
-      `<li><a href="article.html?id=${encodeURIComponent(a.id)}"><span>${escapeHtml(a.title)}</span><span class="arrow">Read More &raquo;</span></a></li>`
+      `<li><a href="${getArticlePagePath(a.id)}"><span>${escapeHtml(a.title)}</span><span class="arrow">Read More &raquo;</span></a></li>`
     ).join('');
     articlesHost.innerHTML = `
       <section class="section" style="padding-top:0;">
@@ -622,11 +706,30 @@ function initCategory() {
 /* ---------- Book detail page ---------- */
 function initBookDetail() {
   if (document.body.dataset.page !== 'book') return;
-  const id = getParam('id');
+  const id = document.body.dataset.bookId || getParam('id');
+  const isStatic = document.body.dataset.seoStatic === 'true';
   const book = BOOKS.find(b => b.id === id);
   const wrap = $('#book-detail');
   if (!book) {
-    wrap.innerHTML = '<p style="text-align:center;padding:40px 0;">Sorry, this book could not be found. <a href="all-books.html">Browse all books</a>.</p>';
+    if (wrap) wrap.innerHTML = '<p style="text-align:center;padding:40px 0;">Sorry, this book could not be found. <a href="all-books.html">Browse all books</a>.</p>';
+    return;
+  }
+  if (isStatic) {
+    if (typeof ARTICLES !== 'undefined' && wrap) {
+      const relatedArticles = getRelatedArticlesForBook(book, 3);
+      const guideArticle = getArticlesList().find(a => a.id === 'free-' + book.id + '-pdf-guide');
+      if (relatedArticles.length || guideArticle) {
+        const extra = document.createElement('div');
+        extra.className = 'related-posts';
+        extra.style.marginTop = '36px';
+        extra.innerHTML = '<h3>Related Reading Guides</h3>' +
+          (guideArticle ? `<p style="margin:20px 0 0;"><a href="${getArticlePagePath(guideArticle.id)}"><strong>Free ${escapeHtml(book.title)} PDF Guide</strong> — reading tips and download help &raquo;</a></p>` : '') +
+          (relatedArticles.length ? `<ul>${relatedArticles.map(a =>
+            `<li><a href="${getArticlePagePath(a.id)}"><span>${escapeHtml(a.title)}</span><span class="arrow">Read More &raquo;</span></a></li>`
+          ).join('')}</ul>` : '');
+        wrap.appendChild(extra);
+      }
+    }
     return;
   }
 
@@ -638,7 +741,7 @@ function initBookDetail() {
     ? book.title + ' | Free PDF Download - LifeWithBooks'
     : book.title + ' | Book Overview - LifeWithBooks';
   const pageDesc = (book.excerpt || ('Read about ' + book.title + ' on LifeWithBooks, the free ebook library.')).slice(0, 320);
-  const pageUrl = SITE_ORIGIN + '/book.html?id=' + encodeURIComponent(book.id);
+  const pageUrl = getBookPageUrl(book.id);
   const coverImg = getBookCoverImage(book);
   const shareImg = getBookShareImage(book);
   const localCover = getLocalCoverPath(book);
@@ -672,7 +775,7 @@ function initBookDetail() {
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.lifewithbooks.co/" },
-      { "@type": "ListItem", "position": 2, "name": catObj ? catObj.label : 'Books', "item": "https://www.lifewithbooks.co/category.html?cat=" + encodeURIComponent(primaryCat) },
+      { "@type": "ListItem", "position": 2, "name": catObj ? catObj.label : 'Books', "item": getCategoryPageUrl(primaryCat) },
       { "@type": "ListItem", "position": 3, "name": book.title, "item": pageUrl }
     ]
   });
@@ -711,7 +814,7 @@ function initBookDetail() {
     .filter(b => b.id !== book.id && b.categories.includes(primaryCat))
     .slice(0, 30);
   const relatedHTML = related.map(b => `
-    <li><a href="book.html?id=${encodeURIComponent(b.id)}">
+    <li><a href="${getBookPagePath(b.id)}">
       <span>${escapeHtml(b.title)}</span>
       <span class="arrow">Read More &raquo;</span>
     </a></li>
@@ -720,14 +823,14 @@ function initBookDetail() {
   const relatedArticles = getRelatedArticlesForBook(book, 3);
   const guideArticle = getArticlesList().find(a => a.id === 'free-' + book.id + '-pdf-guide');
   const guideLink = guideArticle
-    ? `<p style="margin:20px 0 0;"><a href="article.html?id=${encodeURIComponent(guideArticle.id)}"><strong>Free ${escapeHtml(book.title)} PDF Guide</strong> — reading tips and download help &raquo;</a></p>`
+    ? `<p style="margin:20px 0 0;"><a href="${getArticlePagePath(guideArticle.id)}"><strong>Free ${escapeHtml(book.title)} PDF Guide</strong> — reading tips and download help &raquo;</a></p>`
     : '';
   const guidesHTML = relatedArticles.length || guideArticle
     ? `<div class="related-posts" style="margin-top:36px;">
         <h3>Related Reading Guides</h3>
         ${guideLink}
         ${relatedArticles.length ? `<ul>${relatedArticles.map(a =>
-          `<li><a href="article.html?id=${encodeURIComponent(a.id)}"><span>${escapeHtml(a.title)}</span><span class="arrow">Read More &raquo;</span></a></li>`
+          `<li><a href="${getArticlePagePath(a.id)}"><span>${escapeHtml(a.title)}</span><span class="arrow">Read More &raquo;</span></a></li>`
         ).join('')}</ul>` : ''}
       </div>`
     : '';
@@ -777,15 +880,15 @@ function initBookDetail() {
 function articleCardHTML(a) {
   return `
     <article class="book-card cover-${escapeHtml(a.cover || 'english')} article-card">
-      <a class="thumb" href="article.html?id=${encodeURIComponent(a.id)}" aria-label="${escapeHtml(a.title)}">
+      <a class="thumb" href="${getArticlePagePath(a.id)}" aria-label="${escapeHtml(a.title)}">
         <div class="cover">
           <div class="book"><span class="title-on-cover">${escapeHtml(a.title)}</span><span class="ribbon"></span></div>
         </div>
       </a>
       <div class="info">
-        <h3><a href="article.html?id=${encodeURIComponent(a.id)}">${escapeHtml(a.title)}</a></h3>
+        <h3><a href="${getArticlePagePath(a.id)}">${escapeHtml(a.title)}</a></h3>
         <p class="article-excerpt">${escapeHtml(a.excerpt || '')}</p>
-        <a class="read-more" href="article.html?id=${encodeURIComponent(a.id)}">Read Article</a>
+        <a class="read-more" href="${getArticlePagePath(a.id)}">Read Article</a>
       </div>
     </article>`;
 }
@@ -802,7 +905,7 @@ function initArticles() {
   }
   setShareMeta({
     title: 'Free Reading Guides & Book Articles | LifeWithBooks',
-    description: '96+ free reading guides and PDF book articles: vocabulary tips, English learning, classic reviews and legal download guides from LifeWithBooks.',
+    description: '116+ free reading guides and PDF book articles: IELTS, CSS, Matric, programming, vocabulary tips and classic reviews from LifeWithBooks.',
     url: SITE_ORIGIN + '/articles.html',
     image: SITE_ORIGIN + '/og-image.png'
   });
@@ -815,7 +918,7 @@ function initArticles() {
       "@type": "BlogPosting",
       "headline": a.title,
       "datePublished": a.date,
-      "url": SITE_ORIGIN + "/article.html?id=" + encodeURIComponent(a.id)
+      "url": getArticlePageUrl(a.id)
     }))
   });
 }
@@ -823,7 +926,8 @@ function initArticles() {
 function initArticleDetail() {
   if (document.body.dataset.page !== 'article') return;
   if (typeof ARTICLES === 'undefined') return;
-  const id = getParam('id');
+  const id = document.body.dataset.articleId || getParam('id');
+  const isStatic = document.body.dataset.seoStatic === 'true';
   const a = ARTICLES.find(x => x.id === id);
   const wrap = $('#article-detail');
   if (!wrap) return;
@@ -831,10 +935,52 @@ function initArticleDetail() {
     wrap.innerHTML = '<p style="text-align:center;padding:40px 0;">Sorry, this article could not be found. <a href="articles.html">Browse all articles</a>.</p>';
     return;
   }
-  const url = SITE_ORIGIN + '/article.html?id=' + encodeURIComponent(a.id);
+  const url = isStatic ? getArticlePageUrl(a.id) : SITE_ORIGIN + '/article.html?id=' + encodeURIComponent(a.id);
   const desc = (a.excerpt || '').slice(0, 320);
   setShareMeta({ title: a.title + ' | LifeWithBooks', description: desc, url: url, image: SITE_ORIGIN + '/og-image.png' });
   setMeta('meta[property="og:type"]', 'content', 'article');
+  if (isStatic) {
+    injectJsonLd('jsonld-article', {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": a.title,
+      "description": desc,
+      "datePublished": a.date,
+      "dateModified": a.date,
+      "author": { "@type": "Person", "name": a.author || "Mubashir Mehdi" },
+      "publisher": { "@type": "Organization", "name": "LifeWithBooks", "url": SITE_ORIGIN + "/" },
+      "mainEntityOfPage": url,
+      "image": SITE_ORIGIN + "/og-image.png"
+    });
+    injectJsonLd('jsonld-breadcrumbs', {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE_ORIGIN + "/" },
+        { "@type": "ListItem", "position": 2, "name": "Articles", "item": SITE_ORIGIN + "/articles.html" },
+        { "@type": "ListItem", "position": 3, "name": a.title, "item": url }
+      ]
+    });
+    const catSlug = getArticleCategorySlug(a);
+    const catObj = catSlug ? CATEGORIES.find(c => c.slug === catSlug) : null;
+    const relatedBooks = getRelatedBooksForArticle(a, 4);
+    const others = ARTICLES.filter(x => x.id !== a.id).slice(0, 4);
+    if (relatedBooks.length || others.length) {
+      const extra = document.createElement('div');
+      extra.innerHTML = (relatedBooks.length
+        ? `<div class="related-posts" style="margin-top:36px;"><h3>Free Books in This Topic</h3><ul>${relatedBooks.map(b =>
+            `<li><a href="${getBookPagePath(b.id)}"><span>${escapeHtml(b.title)}</span><span class="arrow">View Book &raquo;</span></a></li>`
+          ).join('')}</ul>${catObj ? `<p style="margin-top:16px;"><a href="${getCategoryPagePath(catSlug)}">Browse all ${escapeHtml(catObj.label.toLowerCase())} &raquo;</a></p>` : ''}</div>`
+        : '') +
+        (others.length
+          ? `<div class="related-posts"><h3>You Might Also Like</h3><ul>${others.map(x =>
+              `<li><a href="${getArticlePagePath(x.id)}"><span>${escapeHtml(x.title)}</span><span class="arrow">Read More &raquo;</span></a></li>`
+            ).join('')}</ul></div>`
+          : '');
+      wrap.appendChild(extra);
+    }
+    return;
+  }
 
   const body = (a.body || []).map(p =>
     p.indexOf('## ') === 0 ? '<h2>' + escapeHtml(p.slice(3)) + '</h2>' : '<p>' + escapeHtml(p) + '</p>'
@@ -843,7 +989,7 @@ function initArticleDetail() {
   try { dateStr = new Date(a.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }); } catch (e) {}
   const others = ARTICLES.filter(x => x.id !== a.id).slice(0, 6);
   const relatedHTML = others.map(x =>
-    `<li><a href="article.html?id=${encodeURIComponent(x.id)}"><span>${escapeHtml(x.title)}</span><span class="arrow">Read More &raquo;</span></a></li>`
+    `<li><a href="${getArticlePagePath(x.id)}"><span>${escapeHtml(x.title)}</span><span class="arrow">Read More &raquo;</span></a></li>`
   ).join('');
 
   const catSlug = getArticleCategorySlug(a);
@@ -853,9 +999,9 @@ function initArticleDetail() {
     ? `<div class="related-posts" style="margin-top:36px;">
         <h3>Free Books in This Topic</h3>
         <ul>${relatedBooks.map(b =>
-          `<li><a href="book.html?id=${encodeURIComponent(b.id)}"><span>${escapeHtml(b.title)}</span><span class="arrow">View Book &raquo;</span></a></li>`
+          `<li><a href="${getBookPagePath(b.id)}"><span>${escapeHtml(b.title)}</span><span class="arrow">View Book &raquo;</span></a></li>`
         ).join('')}</ul>
-        ${catObj ? `<p style="margin-top:16px;"><a href="category.html?cat=${encodeURIComponent(catSlug)}">Browse all ${escapeHtml(catObj.label.toLowerCase())} &raquo;</a></p>` : ''}
+        ${catObj ? `<p style="margin-top:16px;"><a href="${getCategoryPagePath(catSlug)}">Browse all ${escapeHtml(catObj.label.toLowerCase())} &raquo;</a></p>` : ''}
       </div>`
     : '';
 
@@ -871,7 +1017,7 @@ function initArticleDetail() {
     <div class="download-block">
       <p style="margin-bottom:14px;">Enjoyed this guide? Explore our free library of public-domain classics, vocabulary ebooks and language learning books.</p>
       <a class="btn" href="all-books.html">Browse Free PDF Books</a>
-      ${catObj ? `<a class="btn outline" style="margin-left:10px;" href="category.html?cat=${encodeURIComponent(catSlug)}">${escapeHtml(catObj.label)}</a>` : ''}
+      ${catObj ? `<a class="btn outline" style="margin-left:10px;" href="${getCategoryPagePath(catSlug)}">${escapeHtml(catObj.label)}</a>` : ''}
     </div>
     ${booksHTML}
     <div class="related-posts"><h3>More Articles</h3><ul>${relatedHTML}</ul></div>

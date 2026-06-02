@@ -67,1899 +67,2259 @@
     <priority>0.50</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/category.html?cat=english-learning-books</loc>
+    <loc>https://www.lifewithbooks.co/category/english-learning-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/category.html?cat=novels</loc>
+    <loc>https://www.lifewithbooks.co/category/novels.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/category.html?cat=trading-books</loc>
+    <loc>https://www.lifewithbooks.co/category/trading-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/category.html?cat=french-learning-books</loc>
+    <loc>https://www.lifewithbooks.co/category/french-learning-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/category.html?cat=german-learning-books</loc>
+    <loc>https://www.lifewithbooks.co/category/german-learning-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/category.html?cat=spanish-learning-books</loc>
+    <loc>https://www.lifewithbooks.co/category/spanish-learning-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/category.html?cat=deutsch-books</loc>
+    <loc>https://www.lifewithbooks.co/category/deutsch-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/category.html?cat=vocabulary-books</loc>
+    <loc>https://www.lifewithbooks.co/category/vocabulary-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/category.html?cat=grammar-books</loc>
+    <loc>https://www.lifewithbooks.co/category/grammar-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/category.html?cat=kids-learning-books</loc>
+    <loc>https://www.lifewithbooks.co/category/kids-learning-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/category.html?cat=literature-books</loc>
+    <loc>https://www.lifewithbooks.co/category/literature-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/category.html?cat=business-books</loc>
+    <loc>https://www.lifewithbooks.co/category/business-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/category.html?cat=self-grooming-books</loc>
+    <loc>https://www.lifewithbooks.co/category/self-grooming-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/category.html?cat=adventure-books</loc>
+    <loc>https://www.lifewithbooks.co/category/adventure-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/category.html?cat=health-books</loc>
+    <loc>https://www.lifewithbooks.co/category/health-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/category.html?cat=stories-books</loc>
+    <loc>https://www.lifewithbooks.co/category/stories-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=longman-photo-dictionary-american-english</loc>
+    <loc>https://www.lifewithbooks.co/category/ielts-preparation.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=english-unlimited</loc>
+    <loc>https://www.lifewithbooks.co/category/css-pms-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=preposition-focus-on-building-mastery</loc>
+    <loc>https://www.lifewithbooks.co/category/matric-fsc-notes.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=technical-english</loc>
+    <loc>https://www.lifewithbooks.co/category/islamic-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=english-for-meetings-phrases-expressions</loc>
+    <loc>https://www.lifewithbooks.co/category/programming-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=mcgraw-hill-conversational-american-english</loc>
+    <loc>https://www.lifewithbooks.co/category/self-development-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=english-vocabulary-in-use-upper-intermediate</loc>
+    <loc>https://www.lifewithbooks.co/category/o-level-a-level.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=practical-english-usage</loc>
+    <loc>https://www.lifewithbooks.co/book/longman-photo-dictionary-american-english.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=spoken-english-conversation-practice</loc>
+    <loc>https://www.lifewithbooks.co/book/english-unlimited.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=english-phonetics-and-phonology</loc>
+    <loc>https://www.lifewithbooks.co/book/preposition-focus-on-building-mastery.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=talk-english-secret-to-speak-english</loc>
+    <loc>https://www.lifewithbooks.co/book/technical-english.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=30-topics-for-english-conversation</loc>
+    <loc>https://www.lifewithbooks.co/book/english-for-meetings-phrases-expressions.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=1500-vocabulary-words-for-speaking-english</loc>
+    <loc>https://www.lifewithbooks.co/book/mcgraw-hill-conversational-american-english.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=how-to-get-really-good-at-english</loc>
+    <loc>https://www.lifewithbooks.co/book/english-vocabulary-in-use-upper-intermediate.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=learn-how-to-speak-english-fluently-7-easy-steps</loc>
+    <loc>https://www.lifewithbooks.co/book/practical-english-usage.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=macmillan-english-grammar-in-context-intermediate-1</loc>
+    <loc>https://www.lifewithbooks.co/book/spoken-english-conversation-practice.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=fundamentals-of-english-grammar-workbook</loc>
+    <loc>https://www.lifewithbooks.co/book/english-phonetics-and-phonology.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=english-in-everyday-life</loc>
+    <loc>https://www.lifewithbooks.co/book/talk-english-secret-to-speak-english.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=black-book-of-english-vocabulary</loc>
+    <loc>https://www.lifewithbooks.co/book/30-topics-for-english-conversation.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=improve-your-written-english</loc>
+    <loc>https://www.lifewithbooks.co/book/1500-vocabulary-words-for-speaking-english.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=best-english-grammar-book</loc>
+    <loc>https://www.lifewithbooks.co/book/how-to-get-really-good-at-english.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=why-has-nobody-told-me-this-before</loc>
+    <loc>https://www.lifewithbooks.co/book/learn-how-to-speak-english-fluently-7-easy-steps.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-power-of-your-subconscious-mind</loc>
+    <loc>https://www.lifewithbooks.co/book/macmillan-english-grammar-in-context-intermediate-1.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=surrounded-by-idiots</loc>
+    <loc>https://www.lifewithbooks.co/book/fundamentals-of-english-grammar-workbook.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=301-expressions-pour-parler-comme-les-francais</loc>
+    <loc>https://www.lifewithbooks.co/book/english-in-everyday-life.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=366-jours-pour-mieux-vous-exprimer-en-francais</loc>
+    <loc>https://www.lifewithbooks.co/book/black-book-of-english-vocabulary.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=1600-proverbes-pour-briller</loc>
+    <loc>https://www.lifewithbooks.co/book/improve-your-written-english.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=les-100-fautes-de-francais-les-plus-courantes</loc>
+    <loc>https://www.lifewithbooks.co/book/best-english-grammar-book.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=rick-steves-french-italian-german-phrase-book</loc>
+    <loc>https://www.lifewithbooks.co/book/why-has-nobody-told-me-this-before.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=easy-learning-french-conversation</loc>
+    <loc>https://www.lifewithbooks.co/book/the-power-of-your-subconscious-mind.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=learn-french-in-a-hurry</loc>
+    <loc>https://www.lifewithbooks.co/book/surrounded-by-idiots.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=practice-makes-perfect-french-pronouns-prepositions</loc>
+    <loc>https://www.lifewithbooks.co/book/301-expressions-pour-parler-comme-les-francais.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=apprendre-a-traduire</loc>
+    <loc>https://www.lifewithbooks.co/book/366-jours-pour-mieux-vous-exprimer-en-francais.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=letude-pratique-de-la-langue-francaise</loc>
+    <loc>https://www.lifewithbooks.co/book/1600-proverbes-pour-briller.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=goethe-zertifikat-c2-grosses-deutsches-sprachdiplom</loc>
+    <loc>https://www.lifewithbooks.co/book/les-100-fautes-de-francais-les-plus-courantes.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=goethe-zertifikat-c1-ubungssatz-01</loc>
+    <loc>https://www.lifewithbooks.co/book/rick-steves-french-italian-german-phrase-book.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=goethe-zertifikat-b2-prufungsziele-testbeschreibung</loc>
+    <loc>https://www.lifewithbooks.co/book/easy-learning-french-conversation.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=goethe-zertifikat-b2-ubungssatz-03</loc>
+    <loc>https://www.lifewithbooks.co/book/learn-french-in-a-hurry.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=goethe-zertifikat-b1-deutschprufung</loc>
+    <loc>https://www.lifewithbooks.co/book/practice-makes-perfect-french-pronouns-prepositions.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=goethe-zertifikat-b1-ubungssatz-erwachsene</loc>
+    <loc>https://www.lifewithbooks.co/book/apprendre-a-traduire.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=goethe-zertifikat-a2-fit-in-deutsch-2-jugendliche</loc>
+    <loc>https://www.lifewithbooks.co/book/letude-pratique-de-la-langue-francaise.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=goethe-zertifikat-a2-fit-in-deutsch-2</loc>
+    <loc>https://www.lifewithbooks.co/book/goethe-zertifikat-c2-grosses-deutsches-sprachdiplom.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=goethe-zertifikat-a1-prufungsziele</loc>
+    <loc>https://www.lifewithbooks.co/book/goethe-zertifikat-c1-ubungssatz-01.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=goethe-zertifikat-a1-fit-in-deutsch-1-ubungssatz-01</loc>
+    <loc>https://www.lifewithbooks.co/book/goethe-zertifikat-b2-prufungsziele-testbeschreibung.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=briefe-schreiben-und-bilder-beschreiben</loc>
+    <loc>https://www.lifewithbooks.co/book/goethe-zertifikat-b2-ubungssatz-03.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=worterbuch-der-lebensmittel</loc>
+    <loc>https://www.lifewithbooks.co/book/goethe-zertifikat-b1-deutschprufung.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=deutsch-intensiv-wortschatz-c1</loc>
+    <loc>https://www.lifewithbooks.co/book/goethe-zertifikat-b1-ubungssatz-erwachsene.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=deutsch-quiz-1-und-2-klasse</loc>
+    <loc>https://www.lifewithbooks.co/book/goethe-zertifikat-a2-fit-in-deutsch-2-jugendliche.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=kinderleichte-grammatik-die-vier-falle</loc>
+    <loc>https://www.lifewithbooks.co/book/goethe-zertifikat-a2-fit-in-deutsch-2.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=40-grammatiklisten</loc>
+    <loc>https://www.lifewithbooks.co/book/goethe-zertifikat-a1-prufungsziele.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=grammatik-konversation-1-arbeitsblatter</loc>
+    <loc>https://www.lifewithbooks.co/book/goethe-zertifikat-a1-fit-in-deutsch-1-ubungssatz-01.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=deutsche-grammatik-de-gruyter-lexikon</loc>
+    <loc>https://www.lifewithbooks.co/book/briefe-schreiben-und-bilder-beschreiben.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=learn-dutch-in-7-days</loc>
+    <loc>https://www.lifewithbooks.co/book/worterbuch-der-lebensmittel.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=teachers-grammar-book-james-williams</loc>
+    <loc>https://www.lifewithbooks.co/book/deutsch-intensiv-wortschatz-c1.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=learn-german-fast-48-hours</loc>
+    <loc>https://www.lifewithbooks.co/book/deutsch-quiz-1-und-2-klasse.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=so-gehts-zu-b2</loc>
+    <loc>https://www.lifewithbooks.co/book/kinderleichte-grammatik-die-vier-falle.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=decoding-digital-leadership</loc>
+    <loc>https://www.lifewithbooks.co/book/40-grammatiklisten.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=public-leadership</loc>
+    <loc>https://www.lifewithbooks.co/book/grammatik-konversation-1-arbeitsblatter.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=101-conversations-in-mexican-spanish</loc>
+    <loc>https://www.lifewithbooks.co/book/deutsche-grammatik-de-gruyter-lexikon.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=collins-easy-learning-complete-spanish</loc>
+    <loc>https://www.lifewithbooks.co/book/learn-dutch-in-7-days.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=learn-how-to-speak-spanish-in-30-days</loc>
+    <loc>https://www.lifewithbooks.co/book/teachers-grammar-book-james-williams.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=spanish-language-3-in-1-bundle</loc>
+    <loc>https://www.lifewithbooks.co/book/learn-german-fast-48-hours.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=aprende-ingles-de-una-vez-por-todas</loc>
+    <loc>https://www.lifewithbooks.co/book/so-gehts-zu-b2.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=aprender-ingles-los-tiempos-verbales</loc>
+    <loc>https://www.lifewithbooks.co/book/decoding-digital-leadership.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=curso-completo-de-ingles</loc>
+    <loc>https://www.lifewithbooks.co/book/public-leadership.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=500-frases-en-ingles-realmente-utiles</loc>
+    <loc>https://www.lifewithbooks.co/book/101-conversations-in-mexican-spanish.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=digalo-correctamente-en-ingles</loc>
+    <loc>https://www.lifewithbooks.co/book/collins-easy-learning-complete-spanish.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=gramatica-inglesa-sanchez-benedito</loc>
+    <loc>https://www.lifewithbooks.co/book/learn-how-to-speak-spanish-in-30-days.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=phrasal-verb-fun</loc>
+    <loc>https://www.lifewithbooks.co/book/spanish-language-3-in-1-bundle.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=grammar-practice-grades-3-4</loc>
+    <loc>https://www.lifewithbooks.co/book/aprende-ingles-de-una-vez-por-todas.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=my-english-book-one</loc>
+    <loc>https://www.lifewithbooks.co/book/aprender-ingles-los-tiempos-verbales.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=fairyland-pupil-book-1</loc>
+    <loc>https://www.lifewithbooks.co/book/curso-completo-de-ingles.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=comprehension-student-book-4-year</loc>
+    <loc>https://www.lifewithbooks.co/book/500-frases-en-ingles-realmente-utiles.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=complete-book-of-alphabet</loc>
+    <loc>https://www.lifewithbooks.co/book/digalo-correctamente-en-ingles.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=one-story-a-day</loc>
+    <loc>https://www.lifewithbooks.co/book/gramatica-inglesa-sanchez-benedito.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=initial-sounds-picture-cards</loc>
+    <loc>https://www.lifewithbooks.co/book/phrasal-verb-fun.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=easy-english-with-games-and-activities-2</loc>
+    <loc>https://www.lifewithbooks.co/book/grammar-practice-grades-3-4.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=easy-english-with-games-and-activities-1</loc>
+    <loc>https://www.lifewithbooks.co/book/my-english-book-one.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=my-first-grammar-3</loc>
+    <loc>https://www.lifewithbooks.co/book/fairyland-pupil-book-1.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=all-in-one-reading-passages</loc>
+    <loc>https://www.lifewithbooks.co/book/comprehension-student-book-4-year.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=just-for-kids-grammar</loc>
+    <loc>https://www.lifewithbooks.co/book/complete-book-of-alphabet.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=alphabet-activities</loc>
+    <loc>https://www.lifewithbooks.co/book/one-story-a-day.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=beginning-sounds</loc>
+    <loc>https://www.lifewithbooks.co/book/initial-sounds-picture-cards.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=mindfulness-exercises-for-kids</loc>
+    <loc>https://www.lifewithbooks.co/book/easy-english-with-games-and-activities-2.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=kid-confidence</loc>
+    <loc>https://www.lifewithbooks.co/book/easy-english-with-games-and-activities-1.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=junior-maker</loc>
+    <loc>https://www.lifewithbooks.co/book/my-first-grammar-3.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=how-to-talk-so-kids-will-listen</loc>
+    <loc>https://www.lifewithbooks.co/book/all-in-one-reading-passages.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=how-to-talk-so-kids-can-learn</loc>
+    <loc>https://www.lifewithbooks.co/book/just-for-kids-grammar.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=green-eggs-and-ham</loc>
+    <loc>https://www.lifewithbooks.co/book/alphabet-activities.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=goldilocks-and-the-three-bears</loc>
+    <loc>https://www.lifewithbooks.co/book/beginning-sounds.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=25-wacky-wonderful-stories</loc>
+    <loc>https://www.lifewithbooks.co/book/mindfulness-exercises-for-kids.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=150-totally-terrific-writing-prompts</loc>
+    <loc>https://www.lifewithbooks.co/book/kid-confidence.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=pride-and-prejudice</loc>
+    <loc>https://www.lifewithbooks.co/book/junior-maker.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=jane-eyre</loc>
+    <loc>https://www.lifewithbooks.co/book/how-to-talk-so-kids-will-listen.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=frankenstein</loc>
+    <loc>https://www.lifewithbooks.co/book/how-to-talk-so-kids-can-learn.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=dracula</loc>
+    <loc>https://www.lifewithbooks.co/book/green-eggs-and-ham.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-picture-of-dorian-gray</loc>
+    <loc>https://www.lifewithbooks.co/book/goldilocks-and-the-three-bears.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=little-women</loc>
+    <loc>https://www.lifewithbooks.co/book/25-wacky-wonderful-stories.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-art-of-war</loc>
+    <loc>https://www.lifewithbooks.co/book/150-totally-terrific-writing-prompts.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=extraordinary-popular-delusions</loc>
+    <loc>https://www.lifewithbooks.co/book/pride-and-prejudice.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-prince</loc>
+    <loc>https://www.lifewithbooks.co/book/jane-eyre.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=wealth-of-nations-abridged-selection</loc>
+    <loc>https://www.lifewithbooks.co/book/frankenstein.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=scientific-advertising</loc>
+    <loc>https://www.lifewithbooks.co/book/dracula.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=treasure-island</loc>
+    <loc>https://www.lifewithbooks.co/book/the-picture-of-dorian-gray.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=around-the-world-in-eighty-days</loc>
+    <loc>https://www.lifewithbooks.co/book/little-women.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=journey-to-the-center-of-the-earth</loc>
+    <loc>https://www.lifewithbooks.co/book/the-art-of-war.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-call-of-the-wild</loc>
+    <loc>https://www.lifewithbooks.co/book/extraordinary-popular-delusions.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=king-solomons-mines</loc>
+    <loc>https://www.lifewithbooks.co/book/the-prince.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-lost-world</loc>
+    <loc>https://www.lifewithbooks.co/book/wealth-of-nations-abridged-selection.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=ultimate-fruit-benefits-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/scientific-advertising.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=30-day-healthy-eating-challenge</loc>
+    <loc>https://www.lifewithbooks.co/book/treasure-island.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=home-remedies-handbook</loc>
+    <loc>https://www.lifewithbooks.co/book/around-the-world-in-eighty-days.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=immunity-boosting-food-bible</loc>
+    <loc>https://www.lifewithbooks.co/book/journey-to-the-center-of-the-earth.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=natural-weight-loss-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/the-call-of-the-wild.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=complete-vegetable-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/king-solomons-mines.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=vitamins-minerals-complete-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/the-lost-world.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=healthy-smoothie-recipe-book</loc>
+    <loc>https://www.lifewithbooks.co/book/ultimate-fruit-benefits-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=detox-cleanse-complete-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/30-day-healthy-eating-challenge.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=anti-inflammatory-food-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/home-remedies-handbook.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=apple-health-benefits-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/immunity-boosting-food-bible.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=banana-health-benefits-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/natural-weight-loss-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=turmeric-health-benefits-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/complete-vegetable-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=goethe-zertifikat-b1-wortschatz</loc>
+    <loc>https://www.lifewithbooks.co/book/vitamins-minerals-complete-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-adventures-of-sherlock-holmes</loc>
+    <loc>https://www.lifewithbooks.co/book/healthy-smoothie-recipe-book.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=a-tale-of-two-cities</loc>
+    <loc>https://www.lifewithbooks.co/book/detox-cleanse-complete-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=great-expectations</loc>
+    <loc>https://www.lifewithbooks.co/book/anti-inflammatory-food-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-adventures-of-tom-sawyer</loc>
+    <loc>https://www.lifewithbooks.co/book/apple-health-benefits-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=adventures-of-huckleberry-finn</loc>
+    <loc>https://www.lifewithbooks.co/book/banana-health-benefits-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-scarlet-letter</loc>
+    <loc>https://www.lifewithbooks.co/book/turmeric-health-benefits-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=wuthering-heights</loc>
+    <loc>https://www.lifewithbooks.co/book/goethe-zertifikat-b1-wortschatz.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=alices-adventures-in-wonderland</loc>
+    <loc>https://www.lifewithbooks.co/book/the-adventures-of-sherlock-holmes.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-wonderful-wizard-of-oz</loc>
+    <loc>https://www.lifewithbooks.co/book/a-tale-of-two-cities.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=peter-pan</loc>
+    <loc>https://www.lifewithbooks.co/book/great-expectations.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-jungle-book</loc>
+    <loc>https://www.lifewithbooks.co/book/the-adventures-of-tom-sawyer.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=moby-dick</loc>
+    <loc>https://www.lifewithbooks.co/book/adventures-of-huckleberry-finn.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-time-machine</loc>
+    <loc>https://www.lifewithbooks.co/book/the-scarlet-letter.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-war-of-the-worlds</loc>
+    <loc>https://www.lifewithbooks.co/book/wuthering-heights.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-strange-case-of-dr-jekyll-and-mr-hyde</loc>
+    <loc>https://www.lifewithbooks.co/book/alices-adventures-in-wonderland.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=heart-of-darkness</loc>
+    <loc>https://www.lifewithbooks.co/book/the-wonderful-wizard-of-oz.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-count-of-monte-cristo</loc>
+    <loc>https://www.lifewithbooks.co/book/peter-pan.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=gullivers-travels</loc>
+    <loc>https://www.lifewithbooks.co/book/the-jungle-book.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=robinson-crusoe</loc>
+    <loc>https://www.lifewithbooks.co/book/moby-dick.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=anne-of-green-gables</loc>
+    <loc>https://www.lifewithbooks.co/book/the-time-machine.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-secret-garden</loc>
+    <loc>https://www.lifewithbooks.co/book/the-war-of-the-worlds.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=grimms-fairy-tales</loc>
+    <loc>https://www.lifewithbooks.co/book/the-strange-case-of-dr-jekyll-and-mr-hyde.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=aesops-fables</loc>
+    <loc>https://www.lifewithbooks.co/book/heart-of-darkness.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=as-a-man-thinketh</loc>
+    <loc>https://www.lifewithbooks.co/book/the-count-of-monte-cristo.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=self-help-samuel-smiles</loc>
+    <loc>https://www.lifewithbooks.co/book/gullivers-travels.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=autobiography-of-benjamin-franklin</loc>
+    <loc>https://www.lifewithbooks.co/book/robinson-crusoe.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=emma</loc>
+    <loc>https://www.lifewithbooks.co/book/anne-of-green-gables.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=sense-and-sensibility</loc>
+    <loc>https://www.lifewithbooks.co/book/the-secret-garden.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=persuasion</loc>
+    <loc>https://www.lifewithbooks.co/book/grimms-fairy-tales.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=northanger-abbey</loc>
+    <loc>https://www.lifewithbooks.co/book/aesops-fables.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=oliver-twist</loc>
+    <loc>https://www.lifewithbooks.co/book/as-a-man-thinketh.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=a-christmas-carol</loc>
+    <loc>https://www.lifewithbooks.co/book/self-help-samuel-smiles.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=silas-marner</loc>
+    <loc>https://www.lifewithbooks.co/book/autobiography-of-benjamin-franklin.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=far-from-the-madding-crowd</loc>
+    <loc>https://www.lifewithbooks.co/book/emma.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=twenty-thousand-leagues-under-the-sea</loc>
+    <loc>https://www.lifewithbooks.co/book/sense-and-sensibility.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-mysterious-island</loc>
+    <loc>https://www.lifewithbooks.co/book/persuasion.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-hound-of-the-baskervilles</loc>
+    <loc>https://www.lifewithbooks.co/book/northanger-abbey.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=a-study-in-scarlet</loc>
+    <loc>https://www.lifewithbooks.co/book/oliver-twist.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-invisible-man</loc>
+    <loc>https://www.lifewithbooks.co/book/a-christmas-carol.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-island-of-doctor-moreau</loc>
+    <loc>https://www.lifewithbooks.co/book/silas-marner.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=ivanhoe</loc>
+    <loc>https://www.lifewithbooks.co/book/far-from-the-madding-crowd.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-three-musketeers</loc>
+    <loc>https://www.lifewithbooks.co/book/twenty-thousand-leagues-under-the-sea.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-man-in-the-iron-mask</loc>
+    <loc>https://www.lifewithbooks.co/book/the-mysterious-island.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=crime-and-punishment</loc>
+    <loc>https://www.lifewithbooks.co/book/the-hound-of-the-baskervilles.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-metamorphosis</loc>
+    <loc>https://www.lifewithbooks.co/book/a-study-in-scarlet.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=candide</loc>
+    <loc>https://www.lifewithbooks.co/book/the-invisible-man.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=meditations</loc>
+    <loc>https://www.lifewithbooks.co/book/the-island-of-doctor-moreau.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=walden</loc>
+    <loc>https://www.lifewithbooks.co/book/ivanhoe.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=narrative-of-the-life-of-frederick-douglass</loc>
+    <loc>https://www.lifewithbooks.co/book/the-three-musketeers.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-importance-of-being-earnest</loc>
+    <loc>https://www.lifewithbooks.co/book/the-man-in-the-iron-mask.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-wind-in-the-willows</loc>
+    <loc>https://www.lifewithbooks.co/book/crime-and-punishment.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=black-beauty</loc>
+    <loc>https://www.lifewithbooks.co/book/the-metamorphosis.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-happy-prince-and-other-tales</loc>
+    <loc>https://www.lifewithbooks.co/book/candide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-great-gatsby</loc>
+    <loc>https://www.lifewithbooks.co/book/meditations.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-jungle</loc>
+    <loc>https://www.lifewithbooks.co/book/walden.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=common-sense</loc>
+    <loc>https://www.lifewithbooks.co/book/narrative-of-the-life-of-frederick-douglass.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=les-miserables</loc>
+    <loc>https://www.lifewithbooks.co/book/the-importance-of-being-earnest.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=don-quixote</loc>
+    <loc>https://www.lifewithbooks.co/book/the-wind-in-the-willows.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=war-and-peace</loc>
+    <loc>https://www.lifewithbooks.co/book/black-beauty.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=anne-of-avonlea</loc>
+    <loc>https://www.lifewithbooks.co/book/the-happy-prince-and-other-tales.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=anne-of-the-island</loc>
+    <loc>https://www.lifewithbooks.co/book/the-great-gatsby.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-sign-of-the-four</loc>
+    <loc>https://www.lifewithbooks.co/book/the-jungle.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-valley-of-fear</loc>
+    <loc>https://www.lifewithbooks.co/book/common-sense.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-return-of-sherlock-holmes</loc>
+    <loc>https://www.lifewithbooks.co/book/les-miserables.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-memoirs-of-sherlock-holmes</loc>
+    <loc>https://www.lifewithbooks.co/book/don-quixote.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=his-last-bow</loc>
+    <loc>https://www.lifewithbooks.co/book/war-and-peace.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-hunchback-of-notre-dame</loc>
+    <loc>https://www.lifewithbooks.co/book/anne-of-avonlea.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=anna-karenina</loc>
+    <loc>https://www.lifewithbooks.co/book/anne-of-the-island.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-brothers-karamazov</loc>
+    <loc>https://www.lifewithbooks.co/book/the-sign-of-the-four.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-odyssey</loc>
+    <loc>https://www.lifewithbooks.co/book/the-valley-of-fear.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=paradise-lost</loc>
+    <loc>https://www.lifewithbooks.co/book/the-return-of-sherlock-holmes.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-last-of-the-mohicans</loc>
+    <loc>https://www.lifewithbooks.co/book/the-memoirs-of-sherlock-holmes.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=kidnapped</loc>
+    <loc>https://www.lifewithbooks.co/book/his-last-bow.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-prince-and-the-pauper</loc>
+    <loc>https://www.lifewithbooks.co/book/the-hunchback-of-notre-dame.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=heidi</loc>
+    <loc>https://www.lifewithbooks.co/book/anna-karenina.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-adventures-of-pinocchio</loc>
+    <loc>https://www.lifewithbooks.co/book/the-brothers-karamazov.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-idiot</loc>
+    <loc>https://www.lifewithbooks.co/book/the-odyssey.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-mayor-of-casterbridge</loc>
+    <loc>https://www.lifewithbooks.co/book/paradise-lost.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-house-of-the-seven-gables</loc>
+    <loc>https://www.lifewithbooks.co/book/the-last-of-the-mohicans.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-turn-of-the-screw</loc>
+    <loc>https://www.lifewithbooks.co/book/kidnapped.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/book.html?id=the-awakening</loc>
+    <loc>https://www.lifewithbooks.co/book/the-prince-and-the-pauper.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=how-to-build-a-daily-reading-habit</loc>
+    <loc>https://www.lifewithbooks.co/book/heidi.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=what-is-public-domain-and-why-it-matters</loc>
+    <loc>https://www.lifewithbooks.co/book/the-adventures-of-pinocchio.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=learn-a-language-with-free-books</loc>
+    <loc>https://www.lifewithbooks.co/book/the-idiot.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=best-free-classic-novels-to-start-with</loc>
+    <loc>https://www.lifewithbooks.co/book/the-mayor-of-casterbridge.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=how-to-read-pdfs-effectively-for-study</loc>
+    <loc>https://www.lifewithbooks.co/book/the-house-of-the-seven-gables.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=fiction-versus-nonfiction-balanced-reading</loc>
+    <loc>https://www.lifewithbooks.co/book/the-turn-of-the-screw.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=pride-and-prejudice-book-review</loc>
+    <loc>https://www.lifewithbooks.co/book/the-awakening.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=jane-eyre-review-modern-readers</loc>
+    <loc>https://www.lifewithbooks.co/book/ielts-academic-practice-tests-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=treasure-island-review-adventure-lovers</loc>
+    <loc>https://www.lifewithbooks.co/book/ielts-writing-task-1-and-2-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=frankenstein-review-beyond-the-movies</loc>
+    <loc>https://www.lifewithbooks.co/book/ielts-speaking-practice-question-bank.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=great-expectations-book-review</loc>
+    <loc>https://www.lifewithbooks.co/book/ielts-vocabulary-builder-3000-words.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=learn-french-with-free-books</loc>
+    <loc>https://www.lifewithbooks.co/book/ielts-listening-practice-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=learn-german-through-reading-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/css-english-essay-writing-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=spanish-reading-plan-for-beginners</loc>
+    <loc>https://www.lifewithbooks.co/book/css-current-affairs-preparation.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=build-english-vocabulary-through-reading</loc>
+    <loc>https://www.lifewithbooks.co/book/css-general-knowledge-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=sq3r-method-for-better-reading</loc>
+    <loc>https://www.lifewithbooks.co/book/pms-punjab-exam-preparation.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=how-to-read-difficult-books</loc>
+    <loc>https://www.lifewithbooks.co/book/css-english-precis-writing-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=deep-reading-vs-skimming</loc>
+    <loc>https://www.lifewithbooks.co/book/matric-english-grammar-complete.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=english-beginners-first-30-days</loc>
+    <loc>https://www.lifewithbooks.co/book/fsc-physics-short-questions.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=essential-english-grammar-self-study</loc>
+    <loc>https://www.lifewithbooks.co/book/matric-biology-notes-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=english-daily-15-minute-routine</loc>
+    <loc>https://www.lifewithbooks.co/book/fsc-chemistry-important-questions.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=improve-english-by-reading-aloud</loc>
+    <loc>https://www.lifewithbooks.co/book/matric-mathematics-solved-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=where-to-find-free-books-legally</loc>
+    <loc>https://www.lifewithbooks.co/book/the-sealed-nectar-prophet-biography.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=best-free-books-for-students</loc>
+    <loc>https://www.lifewithbooks.co/book/islam-the-natural-way.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=building-a-free-digital-library</loc>
+    <loc>https://www.lifewithbooks.co/book/arabic-for-beginners-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=sherlock-holmes-reading-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/islamic-history-timeline.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-dracula-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/quran-translation-guide-english.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-picture-of-dorian-gray-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/python-programming-beginner-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-little-women-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/html-css-web-design-basics.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-a-tale-of-two-cities-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/javascript-fundamentals-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-adventures-of-tom-sawyer-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/git-version-control-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-adventures-of-huckleberry-finn-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/sql-database-beginner-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-around-the-world-in-eighty-days-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/o-level-english-language-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-call-of-the-wild-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/a-level-biology-study-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-alices-adventures-in-wonderland-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/o-level-mathematics-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-time-machine-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/cambridge-igcse-preparation.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-wuthering-heights-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/a-level-psychology-notes.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-moby-dick-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/acres-of-diamonds.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-scarlet-letter-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/the-science-of-getting-rich.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-adventures-of-sherlock-holmes-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/book/self-reliance-ralph-emerson.html</loc>
     <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-strange-case-of-dr-jekyll-and-mr-hyde-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/how-to-build-a-daily-reading-habit.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-emma-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/what-is-public-domain-and-why-it-matters.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-sense-and-sensibility-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/learn-a-language-with-free-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-persuasion-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/best-free-classic-novels-to-start-with.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-northanger-abbey-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/how-to-read-pdfs-effectively-for-study.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-oliver-twist-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/fiction-versus-nonfiction-balanced-reading.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-a-christmas-carol-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/pride-and-prejudice-book-review.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-silas-marner-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/jane-eyre-review-modern-readers.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-far-from-the-madding-crowd-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/treasure-island-review-adventure-lovers.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-twenty-thousand-leagues-under-the-sea-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/frankenstein-review-beyond-the-movies.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-mysterious-island-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/great-expectations-book-review.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-hound-of-the-baskervilles-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/learn-french-with-free-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-a-study-in-scarlet-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/learn-german-through-reading-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-invisible-man-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/spanish-reading-plan-for-beginners.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-island-of-doctor-moreau-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/build-english-vocabulary-through-reading.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-ivanhoe-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/sq3r-method-for-better-reading.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-three-musketeers-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/how-to-read-difficult-books.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-man-in-the-iron-mask-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/deep-reading-vs-skimming.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-crime-and-punishment-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/english-beginners-first-30-days.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-metamorphosis-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/essential-english-grammar-self-study.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-candide-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/english-daily-15-minute-routine.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-meditations-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/improve-english-by-reading-aloud.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-walden-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/where-to-find-free-books-legally.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-narrative-of-the-life-of-frederick-douglass-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/best-free-books-for-students.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-importance-of-being-earnest-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/building-a-free-digital-library.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-wind-in-the-willows-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/sherlock-holmes-reading-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-black-beauty-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-dracula-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-happy-prince-and-other-tales-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-the-picture-of-dorian-gray-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-great-gatsby-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-little-women-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-jungle-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-a-tale-of-two-cities-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-common-sense-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-the-adventures-of-tom-sawyer-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-les-miserables-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-adventures-of-huckleberry-finn-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-don-quixote-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-around-the-world-in-eighty-days-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-war-and-peace-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-the-call-of-the-wild-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-anne-of-avonlea-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-alices-adventures-in-wonderland-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-anne-of-the-island-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-the-time-machine-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-sign-of-the-four-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-wuthering-heights-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-valley-of-fear-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-moby-dick-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-return-of-sherlock-holmes-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-the-scarlet-letter-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-memoirs-of-sherlock-holmes-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-the-adventures-of-sherlock-holmes-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-his-last-bow-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-the-strange-case-of-dr-jekyll-and-mr-hyde-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-hunchback-of-notre-dame-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-emma-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-anna-karenina-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-sense-and-sensibility-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-brothers-karamazov-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-persuasion-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-odyssey-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-northanger-abbey-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-paradise-lost-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-oliver-twist-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-last-of-the-mohicans-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-a-christmas-carol-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-kidnapped-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-silas-marner-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-prince-and-the-pauper-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-far-from-the-madding-crowd-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-heidi-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-twenty-thousand-leagues-under-the-sea-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-adventures-of-pinocchio-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-the-mysterious-island-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-idiot-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-the-hound-of-the-baskervilles-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-mayor-of-casterbridge-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-a-study-in-scarlet-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-house-of-the-seven-gables-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-the-invisible-man-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-turn-of-the-screw-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-the-island-of-doctor-moreau-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/article.html?id=free-the-awakening-pdf-guide</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-ivanhoe-pdf-guide.html</loc>
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-three-musketeers-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-man-in-the-iron-mask-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-crime-and-punishment-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-metamorphosis-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-candide-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-meditations-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-walden-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-narrative-of-the-life-of-frederick-douglass-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-importance-of-being-earnest-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-wind-in-the-willows-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-black-beauty-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-happy-prince-and-other-tales-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-great-gatsby-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-jungle-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-common-sense-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-les-miserables-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-don-quixote-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-war-and-peace-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-anne-of-avonlea-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-anne-of-the-island-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-sign-of-the-four-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-valley-of-fear-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-return-of-sherlock-holmes-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-memoirs-of-sherlock-holmes-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-his-last-bow-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-hunchback-of-notre-dame-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-anna-karenina-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-brothers-karamazov-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-odyssey-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-paradise-lost-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-last-of-the-mohicans-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-kidnapped-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-prince-and-the-pauper-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-heidi-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-adventures-of-pinocchio-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-idiot-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-mayor-of-casterbridge-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-house-of-the-seven-gables-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-turn-of-the-screw-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-the-awakening-pdf-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/how-to-prepare-for-ielts-using-free-pdf-books.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/complete-css-exam-preparation-guide-pakistan.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/best-free-books-for-matric-students-pakistan.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-islamic-books-pdf-download-complete-list.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/learn-python-free-pdf-books-beginners-2026.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/best-free-kids-learning-books-pdf-parents.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/o-level-a-level-free-study-materials-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/free-self-development-books-pdf-changed-lives.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/public-domain-books-complete-guide-download.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/best-free-english-grammar-books-pakistani-students.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/how-to-download-free-books-legally-guide-2026.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/aesops-fables-complete-guide-kids-parents.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/best-classic-novels-english-learners-free-pdf.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/fsc-notes-free-pdf-download-subject-guide.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/ielts-vs-toefl-comparison-guide-2026.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/how-to-improve-english-speaking-using-books.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/best-free-arabic-learning-books-beginners.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/grimms-fairy-tales-complete-guide-parents.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/best-programming-books-beginners-free-pdf-2026.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/how-to-use-free-pdf-books-pass-exams.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
   </url>
 </urlset>

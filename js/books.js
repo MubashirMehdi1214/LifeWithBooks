@@ -4383,6 +4383,674 @@ const BOOKS = [
     "access": "download",
     "license": "public-domain",
     "coverImage": "covers-img/the-awakening.jpg"
+  },
+  {
+    "id": "ielts-academic-practice-tests-guide",
+    "title": "IELTS Academic Practice Tests Guide",
+    "categories": [
+      "ielts-preparation",
+      "english-learning-books"
+    ],
+    "cover": "english",
+    "excerpt": "Original LifeWithBooks guide to IELTS Academic format, scoring bands, and how to prepare with practice tests and official resources.",
+    "description": [
+      "## About This Guide",
+      "This guide explains the four IELTS Academic modules — Listening, Reading, Writing and Speaking — with timing, question types and band descriptors in plain language. It helps candidates understand what examiners assess and how to structure a realistic study plan using free and official materials.",
+      "## Who It Is For",
+      "International students, professionals and migrants preparing for IELTS Academic who want a clear roadmap before buying courses or books.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": "https://www.ielts.org/"
+  },
+  {
+    "id": "ielts-writing-task-1-and-2-guide",
+    "title": "IELTS Writing Task 1 and 2 Complete Guide",
+    "categories": [
+      "ielts-preparation"
+    ],
+    "cover": "english",
+    "excerpt": "Task-by-task IELTS Writing strategies for Academic Task 1 graphs and Task 2 essays — structure, vocabulary and timing.",
+    "description": [
+      "## About This Guide",
+      "Covers how to describe charts, maps and processes in Task 1 and how to plan, argue and revise Task 2 essays. Includes paragraph templates, common band-limiting mistakes and a weekly writing practice schedule.",
+      "## Who It Is For",
+      "Candidates who lose marks on structure, word count or unclear overview sentences in IELTS Writing.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": "https://www.ielts.org/"
+  },
+  {
+    "id": "ielts-speaking-practice-question-bank",
+    "title": "IELTS Speaking Practice Question Bank",
+    "categories": [
+      "ielts-preparation"
+    ],
+    "cover": "english",
+    "excerpt": "Topic-based IELTS Speaking Part 1, 2 and 3 practice themes with sample follow-up questions and fluency tips.",
+    "description": [
+      "## About This Guide",
+      "Organises high-frequency speaking topics — work, study, hometown, hobbies, technology — with cue-card style prompts and follow-up questions similar to real interviews. Emphasises extending answers without memorising scripts.",
+      "## Who It Is For",
+      "Learners who need daily speaking practice but lack a partner or structured question list.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": "https://www.ielts.org/"
+  },
+  {
+    "id": "ielts-vocabulary-builder-3000-words",
+    "title": "IELTS Vocabulary Builder 3000 Words",
+    "categories": [
+      "ielts-preparation",
+      "vocabulary-books"
+    ],
+    "cover": "vocabulary",
+    "excerpt": "Thematic IELTS vocabulary framework covering academic word lists, collocations and topic-based study methods.",
+    "description": [
+      "## About This Guide",
+      "Groups essential Academic Word List themes with collocations, example sentences and spaced-review tips. Focuses on productive vocabulary you can use in Writing and Speaking, not isolated word lists.",
+      "## Who It Is For",
+      "Intermediate and upper-intermediate learners targeting band 6.5+ who need systematic vocabulary growth.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": "https://www.ielts.org/"
+  },
+  {
+    "id": "ielts-listening-practice-guide",
+    "title": "IELTS Listening Practice Guide",
+    "categories": [
+      "ielts-preparation"
+    ],
+    "cover": "english",
+    "excerpt": "How to train for IELTS Listening accents, distractors, spelling and section-by-section timing.",
+    "description": [
+      "## About This Guide",
+      "Explains each of the four listening sections, common trap answers, note-taking shorthand and how to build ear training with podcasts, lectures and official practice tests.",
+      "## Who It Is For",
+      "Candidates who miss answers because of accent variety, fast speech or losing focus mid-section.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": "https://www.ielts.org/"
+  },
+  {
+    "id": "css-english-essay-writing-guide",
+    "title": "CSS English Essay Writing Guide",
+    "categories": [
+      "css-pms-books"
+    ],
+    "cover": "english",
+    "excerpt": "Essay planning, outlines and argument structure for CSS English Paper — tailored for Pakistani competitive exams.",
+    "description": [
+      "## About This Guide",
+      "Covers selecting topics, thesis statements, paragraph unity, quotations and conclusion strategies expected in CSS English Essay. Includes outline templates and time management for the three-hour paper.",
+      "## Who It Is For",
+      "CSS aspirants preparing English Essay and needing a repeatable writing method under exam pressure.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "css-current-affairs-preparation",
+    "title": "CSS Current Affairs Preparation",
+    "categories": [
+      "css-pms-books"
+    ],
+    "cover": "business",
+    "excerpt": "How to build a CSS Current Affairs notebook — sources, themes and answer-writing for Pakistan and world affairs.",
+    "description": [
+      "## About This Guide",
+      "Maps recurring CSS themes: foreign policy, economy, climate, technology and governance. Shows how to convert news into exam-ready paragraphs with facts, analysis and Pakistan-specific angles.",
+      "## Who It Is For",
+      "CSS and PMS candidates who feel overwhelmed by daily news and need a filter for exam relevance.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "css-general-knowledge-guide",
+    "title": "CSS General Knowledge Guide",
+    "categories": [
+      "css-pms-books"
+    ],
+    "cover": "business",
+    "excerpt": "Structured CSS GK topics — history, geography, science and Pakistan studies revision framework.",
+    "description": [
+      "## About This Guide",
+      "Organises high-yield GK areas tested in competitive exams: Islamic history, world geography, basic science, international organisations and Pakistan constitutional milestones.",
+      "## Who It Is For",
+      "Students beginning CSS preparation who need a syllabus-aligned GK checklist.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "pms-punjab-exam-preparation",
+    "title": "PMS Punjab Exam Preparation",
+    "categories": [
+      "css-pms-books"
+    ],
+    "cover": "business",
+    "excerpt": "Overview of PMS Punjab exam stages, subjects and study planning for provincial management service candidates.",
+    "description": [
+      "## About This Guide",
+      "Explains written papers, interview expectations and how PMS differs from CSS. Offers a monthly study calendar balancing English, GK and optional subjects.",
+      "## Who It Is For",
+      "Punjab PMS applicants planning their first attempt or improving after a near miss.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "css-english-precis-writing-guide",
+    "title": "CSS English Precis Writing Guide",
+    "categories": [
+      "css-pms-books"
+    ],
+    "cover": "english",
+    "excerpt": "Precis and comprehension techniques for CSS — title writing, compression ratios and clarity.",
+    "description": [
+      "## About This Guide",
+      "Teaches how to identify core ideas, remove examples and repetition, and write a title that captures the passage argument. Includes practice workflow and common marking deductions.",
+      "## Who It Is For",
+      "CSS candidates who lose marks on Precis length, title accuracy or distorted meaning.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "matric-english-grammar-complete",
+    "title": "Matric English Grammar Complete",
+    "categories": [
+      "matric-fsc-notes",
+      "grammar-books"
+    ],
+    "cover": "grammar",
+    "excerpt": "Matric English grammar topics — tenses, voice, narration, prepositions and essay basics for Pakistani boards.",
+    "description": [
+      "## About This Guide",
+      "Reviews board-exam grammar with simple rules, examples and short drills aligned to Matric English papers. Links grammar to composition and comprehension marks.",
+      "## Who It Is For",
+      "Matric students in Punjab and other boards preparing English Paper grammar sections.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "fsc-physics-short-questions",
+    "title": "FSc Physics Short Questions",
+    "categories": [
+      "matric-fsc-notes"
+    ],
+    "cover": "kids",
+    "excerpt": "FSc Part 1 and 2 Physics short-question revision themes — definitions, laws and numerical tips.",
+    "description": [
+      "## About This Guide",
+      "Summarises chapter-wise short questions commonly tested in Pakistani intermediate Physics: mechanics, waves, electricity and modern physics foundations.",
+      "## Who It Is For",
+      "FSc students doing last-month revision or building daily short-answer practice.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "matric-biology-notes-guide",
+    "title": "Matric Biology Notes Guide",
+    "categories": [
+      "matric-fsc-notes",
+      "kids-learning-books"
+    ],
+    "cover": "kids",
+    "excerpt": "Matric Biology study framework — cell biology, human systems and diagram-based revision.",
+    "description": [
+      "## About This Guide",
+      "Organises Matric Biology into digestible units with mnemonic tips for labels, processes and definitions frequently asked in board exams.",
+      "## Who It Is For",
+      "Matric science students who need structured notes before practical and theory papers.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "fsc-chemistry-important-questions",
+    "title": "FSc Chemistry Important Questions",
+    "categories": [
+      "matric-fsc-notes"
+    ],
+    "cover": "kids",
+    "excerpt": "High-frequency FSc Chemistry questions — organic, inorganic and physical chemistry revision.",
+    "description": [
+      "## About This Guide",
+      "Highlights reaction mechanisms, periodic trends and numerical problem types common in intermediate Chemistry papers across Pakistani boards.",
+      "## Who It Is For",
+      "FSc Part 1 and 2 students prioritising repeated past-paper question styles.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "matric-mathematics-solved-guide",
+    "title": "Matric Mathematics Solved Guide",
+    "categories": [
+      "matric-fsc-notes"
+    ],
+    "cover": "kids",
+    "excerpt": "Matric Math exam preparation — algebra, geometry and word-problem strategies with worked examples.",
+    "description": [
+      "## About This Guide",
+      "Breaks down Matric Mathematics into skill areas: factorisation, trigonometry intro, geometry proofs and past-paper time management.",
+      "## Who It Is For",
+      "Matric students aiming to improve step-marking and reduce careless errors in Math papers.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "the-sealed-nectar-prophet-biography",
+    "title": "The Sealed Nectar — Prophet Biography",
+    "categories": [
+      "islamic-books"
+    ],
+    "cover": "literature",
+    "excerpt": "Overview of the Sealed Nectar (Ar-Raheeq Al-Makhtum) — the life of Prophet Muhammad (PBUH) for English readers.",
+    "description": [
+      "## About This Guide",
+      "Introduces the structure, historical context and themes of this widely read Prophetic biography. Guides readers toward authorised English translations and print editions from reputable Islamic publishers.",
+      "## Who It Is For",
+      "Muslim and non-Muslim readers seeking a trustworthy introduction to Seerah literature in English.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": "https://quran.com/"
+  },
+  {
+    "id": "islam-the-natural-way",
+    "title": "Islam The Natural Way",
+    "categories": [
+      "islamic-books"
+    ],
+    "cover": "literature",
+    "excerpt": "Introduction to core Islamic beliefs, worship and character — study guide and reading overview.",
+    "description": [
+      "## About This Guide",
+      "Summarises pillars of faith, prayer, fasting and ethical living in accessible language for new Muslims and students of comparative religion.",
+      "## Who It Is For",
+      "Readers beginning Islamic studies who want a structured overview before deeper texts.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "arabic-for-beginners-guide",
+    "title": "Arabic for Beginners Guide",
+    "categories": [
+      "islamic-books",
+      "english-learning-books"
+    ],
+    "cover": "english",
+    "excerpt": "Modern Standard Arabic basics for Quran and daily phrases — alphabet, grammar and study plan.",
+    "description": [
+      "## About This Guide",
+      "Covers Arabic letters, short vowels, core vocabulary and simple sentence patterns with a 30-day study rhythm suitable for self-learners.",
+      "## Who It Is For",
+      "English speakers learning Arabic for Quran understanding or travel and conversation basics.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "islamic-history-timeline",
+    "title": "Islamic History Timeline",
+    "categories": [
+      "islamic-books"
+    ],
+    "cover": "literature",
+    "excerpt": "Major events in Islamic history from the Prophetic era to the modern period — revision timeline.",
+    "description": [
+      "## About This Guide",
+      "Presents a chronological framework: Khulafa Rashidun, Umayyads, Abbasids, Ottoman period and key reform movements, with study tips for exams and general knowledge.",
+      "## Who It Is For",
+      "Students, CSS candidates and curious readers who need history in chronological order.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "quran-translation-guide-english",
+    "title": "Quran Translation Guide English",
+    "categories": [
+      "islamic-books"
+    ],
+    "cover": "literature",
+    "excerpt": "How to choose and study an English Quran translation — tafsir basics and respectful reading.",
+    "description": [
+      "## About This Guide",
+      "Compares types of translations (literal vs interpretive), recommends starting with short surahs and pairing reading with reputable tafsir introductions.",
+      "## Who It Is For",
+      "English-speaking Muslims and researchers beginning Quranic study.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": "https://quran.com/"
+  },
+  {
+    "id": "python-programming-beginner-guide",
+    "title": "Python Programming Beginner Guide",
+    "categories": [
+      "programming-books"
+    ],
+    "cover": "business",
+    "excerpt": "Learn Python from zero — variables, loops, functions and projects with links to official documentation.",
+    "description": [
+      "## About This Guide",
+      "A practical first course outline: installing Python, writing scripts, debugging errors and building mini-projects. Points to the official Python tutorial for depth.",
+      "## Who It Is For",
+      "Absolute beginners who want a free roadmap before paid bootcamps.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": "https://docs.python.org/3/"
+  },
+  {
+    "id": "html-css-web-design-basics",
+    "title": "HTML CSS Web Design Basics",
+    "categories": [
+      "programming-books"
+    ],
+    "cover": "business",
+    "excerpt": "Build your first website with HTML5 semantics and modern CSS layout — flexbox, grids and responsive design.",
+    "description": [
+      "## About This Guide",
+      "Walks through page structure, typography, colours and mobile-friendly layouts with a simple portfolio project checklist.",
+      "## Who It Is For",
+      "Students and hobbyists starting web development without prior coding experience.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "javascript-fundamentals-guide",
+    "title": "JavaScript Fundamentals Guide",
+    "categories": [
+      "programming-books"
+    ],
+    "cover": "business",
+    "excerpt": "JavaScript basics for the web — DOM, events, fetch API and beginner project ideas.",
+    "description": [
+      "## About This Guide",
+      "Explains variables, functions, arrays and DOM manipulation, then introduces async concepts for interactive pages.",
+      "## Who It Is For",
+      "Learners who know HTML/CSS and want to add interactivity to static sites.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "git-version-control-guide",
+    "title": "Git Version Control Guide",
+    "categories": [
+      "programming-books"
+    ],
+    "cover": "business",
+    "excerpt": "Git and GitHub essentials — commits, branches, pull requests and collaboration workflow.",
+    "description": [
+      "## About This Guide",
+      "Teaches daily Git commands, branching strategy for solo projects and how open-source collaboration works on GitHub.",
+      "## Who It Is For",
+      "Developers and students who need Git for school projects or first jobs.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "sql-database-beginner-guide",
+    "title": "SQL Database Beginner Guide",
+    "categories": [
+      "programming-books"
+    ],
+    "cover": "business",
+    "excerpt": "SQL SELECT, JOIN, INSERT and database design basics for analysts and developers.",
+    "description": [
+      "## About This Guide",
+      "Introduces relational tables, primary keys, simple queries and how databases power apps and reports.",
+      "## Who It Is For",
+      "Programmers and data-curious learners starting with SQLite or MySQL.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "o-level-english-language-guide",
+    "title": "O Level English Language Guide",
+    "categories": [
+      "o-level-a-level",
+      "english-learning-books"
+    ],
+    "cover": "english",
+    "excerpt": "Cambridge O Level English Language skills — reading, writing, summary and directed writing.",
+    "description": [
+      "## About This Guide",
+      "Maps paper components, mark schemes and revision tactics for O Level English with past-paper practice routines.",
+      "## Who It Is For",
+      "O Level candidates and teachers in Pakistan and international schools.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": "https://www.cambridgeinternational.org/"
+  },
+  {
+    "id": "a-level-biology-study-guide",
+    "title": "A Level Biology Study Guide",
+    "categories": [
+      "o-level-a-level"
+    ],
+    "cover": "health",
+    "excerpt": "A Level Biology revision framework — cells, genetics, ecology and exam technique.",
+    "description": [
+      "## About This Guide",
+      "Organises syllabus topics into review cycles with emphasis on diagrams, definitions and long-answer structure.",
+      "## Who It Is For",
+      "A Level Biology students preparing for Cambridge or equivalent boards.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": "https://www.cambridgeinternational.org/"
+  },
+  {
+    "id": "o-level-mathematics-guide",
+    "title": "O Level Mathematics Guide",
+    "categories": [
+      "o-level-a-level"
+    ],
+    "cover": "kids",
+    "excerpt": "O Level Math topic checklist — algebra, geometry, trigonometry and statistics revision.",
+    "description": [
+      "## About This Guide",
+      "Breaks the syllabus into weekly revision blocks with calculator and non-calculator paper tips.",
+      "## Who It Is For",
+      "O Level Math students building confidence before mocks and final exams.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": "https://www.cambridgeinternational.org/"
+  },
+  {
+    "id": "cambridge-igcse-preparation",
+    "title": "Cambridge IGCSE Preparation",
+    "categories": [
+      "o-level-a-level"
+    ],
+    "cover": "english",
+    "excerpt": "IGCSE study planning — subject selection, revision timetables and resource strategy.",
+    "description": [
+      "## About This Guide",
+      "Helps students balance multiple IGCSE subjects, use past papers effectively and manage stress during the exam season.",
+      "## Who It Is For",
+      "IGCSE students and parents planning a two-year preparation path.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": "https://www.cambridgeinternational.org/"
+  },
+  {
+    "id": "a-level-psychology-notes",
+    "title": "A Level Psychology Notes",
+    "categories": [
+      "o-level-a-level"
+    ],
+    "cover": "self",
+    "excerpt": "A Level Psychology core studies overview — research methods, approaches and evaluation frameworks.",
+    "description": [
+      "## About This Guide",
+      "Summarises key studies, ethics and how to write evaluation paragraphs that earn AO marks.",
+      "## Who It Is For",
+      "A Level Psychology students who need structured notes before exams.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": "https://www.cambridgeinternational.org/"
+  },
+  {
+    "id": "acres-of-diamonds",
+    "title": "Acres of Diamonds",
+    "categories": [
+      "self-development-books",
+      "self-grooming-books"
+    ],
+    "cover": "self",
+    "excerpt": "Russell Conwell's classic lecture on finding opportunity where you already are — public-domain wisdom.",
+    "description": [
+      "## About This Guide",
+      "Argues that wealth and success often lie in your own community and talents, not distant places. A motivational cornerstone of American self-help.",
+      "## Who It Is For",
+      "Readers interested in classic motivation and entrepreneurship thinking.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "the-science-of-getting-rich",
+    "title": "The Science of Getting Rich",
+    "categories": [
+      "self-development-books"
+    ],
+    "cover": "self",
+    "excerpt": "Wallace Wattles' 1910 prosperity classic — mindset, gratitude and purposeful action.",
+    "description": [
+      "## About This Guide",
+      "Presents a philosophy of creative thinking, efficient action and gratitude as foundations for financial and personal growth.",
+      "## Who It Is For",
+      "Self-development readers exploring early 20th-century prosperity literature.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
+  },
+  {
+    "id": "self-reliance-ralph-emerson",
+    "title": "Self Reliance — Ralph Emerson",
+    "categories": [
+      "self-development-books",
+      "literature-books"
+    ],
+    "cover": "self",
+    "excerpt": "Emerson's essential essay on independent thought, trust and nonconformity.",
+    "description": [
+      "## About This Guide",
+      "A foundational American essay urging readers to trust inner conviction over social conformity — concise and quotable.",
+      "## Who It Is For",
+      "Students of American literature and readers seeking philosophical encouragement.",
+      "## How to Use This Resource",
+      "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
+    ],
+    "access": "summary",
+    "license": "reference",
+    "officialUrl": ""
   }
 ];
 
@@ -4450,6 +5118,34 @@ const CATEGORIES = [
   {
     "slug": "stories-books",
     "label": "Stories Books"
+  },
+  {
+    "slug": "ielts-preparation",
+    "label": "IELTS Preparation"
+  },
+  {
+    "slug": "css-pms-books",
+    "label": "CSS PMS Pakistan"
+  },
+  {
+    "slug": "matric-fsc-notes",
+    "label": "Matric FSc Notes"
+  },
+  {
+    "slug": "islamic-books",
+    "label": "Islamic Books"
+  },
+  {
+    "slug": "programming-books",
+    "label": "Programming Books"
+  },
+  {
+    "slug": "self-development-books",
+    "label": "Self Development Books"
+  },
+  {
+    "slug": "o-level-a-level",
+    "label": "O Level A Level"
   }
 ];
 

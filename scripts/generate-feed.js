@@ -12,6 +12,7 @@ try {
   require(path.join(root, 'js', 'articles-more-3.js'));
   require(path.join(root, 'js', 'articles-more-4.js'));
   require(path.join(root, 'js', 'articles-more-5.js'));
+  try { require(path.join(root, 'js', 'articles-more-6.js')); } catch (e) {}
   ARTICLES = require(path.join(root, 'js', 'articles.js')).ARTICLES || [];
 } catch (e) {
   console.error('Could not load articles:', e.message);
@@ -39,7 +40,7 @@ const sorted = ARTICLES.slice().sort((a, b) => (b.date || '').localeCompare(a.da
 const lastBuild = sorted.length ? sorted[0].date : new Date().toISOString().slice(0, 10);
 
 const items = sorted.map((a) => {
-  const link = ORIGIN + '/article.html?id=' + encodeURIComponent(a.id);
+  const link = ORIGIN + '/articles/' + encodeURIComponent(a.id) + '.html';
   return (
     '    <item>\n' +
     '      <title>' + escapeXml(a.title) + '</title>\n' +

@@ -23,7 +23,31 @@
   <meta property="og:site_name" content="LifeWithBooks">
   <meta property="og:image" content="https://www.lifewithbooks.co/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Article | LifeWithBooks">
+  <meta name="twitter:description" content="Original reading guides from LifeWithBooks.">
   <meta name="twitter:image" content="https://www.lifewithbooks.co/og-image.png">
+  <script src="js/article-meta.js"></script>
+  <script>
+  (function(){
+    var m=/[?&]id=([^&]+)/.exec(location.search);
+    if(!m||typeof ARTICLE_META==='undefined')return;
+    var id=decodeURIComponent(m[1]);
+    var a=ARTICLE_META[id];
+    if(!a)return;
+    var t=a.title+' | LifeWithBooks';
+    var d=a.excerpt||'';
+    var u='https://www.lifewithbooks.co/article.html?id='+encodeURIComponent(id);
+    document.title=t;
+    function set(sel,attr,val){var el=document.querySelector(sel);if(el)el.setAttribute(attr,val);}
+    set('meta[name="description"]','content',d);
+    set('link[rel="canonical"]','href',u);
+    set('meta[property="og:title"]','content',t);
+    set('meta[property="og:description"]','content',d);
+    set('meta[property="og:url"]','content',u);
+    set('meta[name="twitter:title"]','content',t);
+    set('meta[name="twitter:description"]','content',d);
+  })();
+  </script>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="css/style.css">
   <!-- Google AdSense (site verification + ads) -->
@@ -47,6 +71,7 @@
   <script src="js/articles-more-3.js"></script>
   <script src="js/articles-more-4.js"></script>
   <script src="js/articles-more-5.js"></script>
+  <script src="js/articles-more-6.js"></script>
   <script src="js/articles.js"></script>
   <script src="js/main.js"></script>
 </body>

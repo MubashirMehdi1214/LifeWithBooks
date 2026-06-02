@@ -1,5 +1,3 @@
-Add 20 original 800+ word articles to the editorial blog section.
+Major SEO upgrade - new books articles and fixes
 
-Topics include classic book reviews, language learning guides, reading
-study methods, English for beginners, and free books guides. Dates spread
-March–May 2026. Sitemap updated to 26 articles.
+Add 33 category books, 20 SEO articles, static book/category/article pages, article meta tags, sitemap with 387 URLs, and internal linking improvements.
