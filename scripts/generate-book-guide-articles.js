@@ -4,7 +4,7 @@ const path = require('path');
 
 const { BOOKS } = require(path.join(__dirname, '..', 'js', 'books.js'));
 
-const GUIDE_IDS = [
+const BATCH3_IDS = [
   'dracula',
   'the-picture-of-dorian-gray',
   'little-women',
@@ -22,7 +22,34 @@ const GUIDE_IDS = [
   'the-strange-case-of-dr-jekyll-and-mr-hyde'
 ];
 
-const DATES = [
+const BATCH4_IDS = [
+  'emma', 'sense-and-sensibility', 'persuasion', 'northanger-abbey', 'oliver-twist',
+  'a-christmas-carol', 'silas-marner', 'far-from-the-madding-crowd',
+  'twenty-thousand-leagues-under-the-sea', 'the-mysterious-island',
+  'the-hound-of-the-baskervilles', 'a-study-in-scarlet', 'the-invisible-man',
+  'the-island-of-doctor-moreau', 'ivanhoe', 'the-three-musketeers',
+  'the-man-in-the-iron-mask', 'crime-and-punishment', 'the-metamorphosis', 'candide',
+  'meditations', 'walden', 'narrative-of-the-life-of-frederick-douglass',
+  'the-importance-of-being-earnest', 'the-wind-in-the-willows', 'black-beauty',
+  'the-happy-prince-and-other-tales', 'the-great-gatsby', 'the-jungle', 'common-sense'
+];
+
+const batchArg = process.argv.find(a => a.startsWith('--batch='));
+const batch = batchArg ? batchArg.split('=')[1] : '3';
+const GUIDE_IDS = batch === '4' ? BATCH4_IDS : BATCH3_IDS;
+const OUT_VAR = batch === '4' ? 'ARTICLES_MORE_4' : 'ARTICLES_MORE_3';
+const OUT_FILE = batch === '4' ? 'articles-more-4.js' : 'articles-more-3.js';
+
+const DATES = batch === '4'
+  ? [
+    '2026-06-19', '2026-06-20', '2026-06-21', '2026-06-22', '2026-06-23',
+    '2026-06-24', '2026-06-25', '2026-06-26', '2026-06-27', '2026-06-28',
+    '2026-06-29', '2026-06-30', '2026-07-01', '2026-07-02', '2026-07-03',
+    '2026-07-04', '2026-07-05', '2026-07-06', '2026-07-07', '2026-07-08',
+    '2026-07-09', '2026-07-10', '2026-07-11', '2026-07-12', '2026-07-13',
+    '2026-07-14', '2026-07-15', '2026-07-16', '2026-07-17', '2026-07-18'
+  ]
+  : [
   '2026-05-20', '2026-05-22', '2026-05-24', '2026-05-26', '2026-05-28',
   '2026-05-30', '2026-06-01', '2026-06-03', '2026-06-05', '2026-06-07',
   '2026-06-09', '2026-06-11', '2026-06-13', '2026-06-15', '2026-06-17'
@@ -148,8 +175,49 @@ const EXTRA = {
     readTime: '2–3 hours',
     audience: 'busy readers, horror fans and students who need a manageable classic in one sitting',
     tips: 'You likely know the twist already — read for Stevenson\'s language about temptation and respectability. The book is shorter than most film adaptations suggest.'
-  }
+  },
+  emma: { author: 'Jane Austen', year: '1815', hook: 'a comedy of matchmaking and self-knowledge', readTime: '10–12 hours', audience: 'fans of witty romance, Austen readers and anyone who enjoys social comedy with heart', tips: 'Emma is not always likeable — that is intentional. Notice how Austen lets her heroine learn without losing her spark.' },
+  'sense-and-sensibility': { author: 'Jane Austen', year: '1811', hook: 'Austen\'s first published novel of two sisters and contrasting temperaments', readTime: '9–11 hours', audience: 'romance readers, Austen beginners and students of Regency fiction', tips: 'Track how Elinor and Marianne each grow toward balance — the title is the whole theme.' },
+  persuasion: { author: 'Jane Austen', year: '1817', hook: 'Austen\'s mature second-chance romance', readTime: '7–9 hours', audience: 'readers who love quiet, emotional love stories with depth', tips: 'Save the letter chapter for when you can read it without interruptions — it earns its reputation.' },
+  'northanger-abbey': { author: 'Jane Austen', year: '1817', hook: 'a playful satire of Gothic fiction', readTime: '6–8 hours', audience: 'Austen fans, Gothic readers and students exploring genre parody', tips: 'Knowing a little about Gothic tropes helps, but the comedy lands even if you do not.' },
+  'oliver-twist': { author: 'Charles Dickens', year: '1838', hook: 'Dickens\'s famous orphan tale of poverty and survival', readTime: '10–14 hours', audience: 'historical fiction readers, Dickens fans and students of Victorian social reform', tips: 'If the London slang slows you down, keep reading — Dickens rewards persistence with unforgettable scenes.' },
+  'a-christmas-carol': { author: 'Charles Dickens', year: '1843', hook: 'the definitive Christmas redemption story', readTime: '2–3 hours', audience: 'everyone — families, students and holiday readers', tips: 'Ideal for one or two sittings in December (or any month you need a reminder about generosity).' },
+  'silas-marner': { author: 'George Eliot', year: '1861', hook: 'a compact novel about exile, gold and redemption', readTime: '6–8 hours', audience: 'readers who want moral depth without an epic length', tips: 'Notice how the village itself becomes a character — community is the hidden subject.' },
+  'far-from-the-madding-crowd': { author: 'Thomas Hardy', year: '1874', hook: 'Hardy\'s novel of independence, pride and rural life', readTime: '10–12 hours', audience: 'literary romance readers and fans of strong female protagonists', tips: 'Hardy\'s landscape descriptions reward slow reading — picture the Wessex countryside as you go.' },
+  'twenty-thousand-leagues-under-the-sea': { author: 'Jules Verne', year: '1870', hook: 'the underwater adventure that defined science fiction', readTime: '10–12 hours', audience: 'adventure and sci-fi fans of all ages', tips: 'Some catalogues of marine life read like a textbook — skim when needed and enjoy the wonder.' },
+  'the-mysterious-island': { author: 'Jules Verne', year: '1874', hook: 'castaway survival powered by science and teamwork', readTime: '12–15 hours', audience: 'Verne fans, survival-story readers and STEM-curious teens', tips: 'Treat each problem the castaways solve as a mini episode — great for serial reading.' },
+  'the-hound-of-the-baskervilles': { author: 'Arthur Conan Doyle', year: '1902', hook: 'Holmes\'s most atmospheric novel-length case', readTime: '5–7 hours', audience: 'mystery lovers and anyone new to Sherlock Holmes', tips: 'Read at night if you can — the moor setting is half the scare.' },
+  'a-study-in-scarlet': { author: 'Arthur Conan Doyle', year: '1887', hook: 'the first Sherlock Holmes novel', readTime: '4–6 hours', audience: 'detective fiction fans and Holmes newcomers', tips: 'The middle section jumps to America — stay with it; the payoff reconnects brilliantly.' },
+  'the-invisible-man': { author: 'H.G. Wells', year: '1897', hook: 'science fiction about power without accountability', readTime: '4–5 hours', audience: 'sci-fi readers and fans of psychological thrillers', tips: 'Watch how Griffin\'s invisibility mirrors isolation — the theme is social as much as scientific.' },
+  'the-island-of-doctor-moreau': { author: 'H.G. Wells', year: '1896', hook: 'a dark fable of science crossing moral lines', readTime: '4–5 hours', audience: 'horror, sci-fi and ethics-minded readers', tips: 'Short and unsettling — read in one sitting for maximum effect.' },
+  ivanhoe: { author: 'Walter Scott', year: '1819', hook: 'knights, tournaments and Saxon–Norman conflict', readTime: '12–15 hours', audience: 'historical adventure fans and medieval fiction lovers', tips: 'Keep a simple list of major knights and nobles — Scott assumes you enjoy the tapestry.' },
+  'the-three-musketeers': { author: 'Alexandre Dumas', year: '1844', hook: 'the ultimate swashbuckling adventure', readTime: '15–20 hours', audience: 'adventure readers who love friendship, wit and swordplay', tips: 'Read in long chapters — Dumas builds momentum and pays off in bursts.' },
+  'the-man-in-the-iron-mask': { author: 'Alexandre Dumas', year: '1847', hook: 'the Musketeers\' epic finale of loyalty and intrigue', readTime: '12–16 hours', audience: 'fans of The Three Musketeers and historical adventure', tips: 'Finish the Musketeers trilogy in order if you can — emotional weight accumulates.' },
+  'crime-and-punishment': { author: 'Fyodor Dostoevsky', year: '1866', hook: 'a psychological masterpiece of guilt and conscience', readTime: '15–18 hours', audience: 'serious literary readers ready for depth and intensity', tips: 'Read when you can focus — this is not a background listen. Short daily sessions still work well.' },
+  'the-metamorphosis': { author: 'Franz Kafka', year: '1915', hook: 'the surreal novella that changed modern fiction', readTime: '2–3 hours', audience: 'modern literature students and readers who enjoy strange, symbolic fiction', tips: 'Accept the premise quickly and read for family dynamics — the bug is only half the story.' },
+  candide: { author: 'Voltaire', year: '1759', hook: 'satirical adventure mocking blind optimism', readTime: '3–4 hours', audience: 'philosophy-curious readers and fans of sharp humour', tips: 'Each chapter is brief — perfect for commute reading with a notebook for quotable lines.' },
+  meditations: { author: 'Marcus Aurelius', year: 'c. 170 AD', hook: 'Stoic wisdom from a Roman emperor\'s private journal', readTime: '4–6 hours', audience: 'self-improvement readers, leaders and philosophy beginners', tips: 'Read one short section per morning — this book is designed for revisiting, not rushing.' },
+  walden: { author: 'Henry David Thoreau', year: '1854', hook: 'classic reflection on simple living and nature', readTime: '8–10 hours', audience: 'minimalists, nature lovers and American literature readers', tips: 'Some chapters are denser than others — skim the logistics, slow down for the philosophy.' },
+  'narrative-of-the-life-of-frederick-douglass': { author: 'Frederick Douglass', year: '1845', hook: 'a foundational American autobiography of freedom and literacy', readTime: '3–4 hours', audience: 'history students, educators and every serious American reader', tips: 'Read the passages on learning to read slowly — they are the moral core of the book.' },
+  'the-importance-of-being-earnest': { author: 'Oscar Wilde', year: '1895', hook: 'Wilde\'s funniest comedy of manners', readTime: '2–3 hours', audience: 'play lovers, comedy fans and Wilde enthusiasts', tips: 'Read aloud with a friend if possible — the dialogue is the whole pleasure.' },
+  'the-wind-in-the-willows': { author: 'Kenneth Grahame', year: '1908', hook: 'gentle riverbank adventures with Mole, Rat and Toad', readTime: '5–7 hours', audience: 'families, bedtime readers and Anglophile fiction fans', tips: 'Perfect before sleep — let the river scenes slow your breathing.' },
+  'black-beauty': { author: 'Anna Sewell', year: '1877', hook: 'the classic horse story about kindness and cruelty', readTime: '4–6 hours', audience: 'children, animal lovers and Victorian fiction readers', tips: 'Short chapters make this ideal for reading aloud one chapter per night.' },
+  'the-happy-prince-and-other-tales': { author: 'Oscar Wilde', year: '1888', hook: 'bittersweet fairy tales for children and adults', readTime: '1–2 hours', audience: 'families and readers who love lyrical, moral stories', tips: 'Keep tissues nearby — Wilde\'s tenderness cuts deep.' },
+  'the-great-gatsby': { author: 'F. Scott Fitzgerald', year: '1925', hook: 'the Jazz Age tragedy of ambition and illusion', readTime: '4–6 hours', audience: 'American literature students and fans of lyrical, tragic romance', tips: 'Track motifs of green light, eyes and water — Fitzgerald layers symbols without hiding the plot.' },
+  'the-jungle': { author: 'Upton Sinclair', year: '1906', hook: 'muckraking fiction that exposed industrial exploitation', readTime: '10–12 hours', audience: 'history readers, social justice students and gritty realism fans', tips: 'The early packinghouse chapters are intense — take breaks, but do not skip them.' },
+  'common-sense': { author: 'Thomas Paine', year: '1776', hook: 'the pamphlet that helped shape American independence', readTime: '1–2 hours', audience: 'history buffs, civics students and concise nonfiction lovers', tips: 'Read in one sitting with a highlighter — Paine writes to persuade quickly.' }
 };
+
+function defaultMeta(book) {
+  return {
+    author: 'a classic author',
+    year: 'the public-domain era',
+    hook: 'a beloved work of world literature',
+    readTime: 'several hours depending on pace',
+    audience: 'readers of classic literature, students and anyone building a free digital library',
+    tips: 'Read in short daily sessions and use your PDF reader\'s search and bookmark tools for easy navigation.'
+  };
+}
 
 function slugId(bookId) {
   return 'free-' + bookId + '-pdf-guide';
@@ -191,7 +259,7 @@ function buildBody(book, meta) {
 const articles = GUIDE_IDS.map((id, i) => {
   const book = BOOKS.find(b => b.id === id);
   if (!book) throw new Error('Book not found: ' + id);
-  const meta = EXTRA[id];
+  const meta = EXTRA[id] || defaultMeta(book);
   const title = 'Free ' + book.title + ' PDF Guide: Download the Full Book Legally';
   return {
     id: slugId(id),
@@ -208,8 +276,8 @@ function jsString(s) {
   return JSON.stringify(s);
 }
 
-let out = '/* SEO articles — Free [Book Title] PDF guides (batch 3). Auto-generated; edit scripts/generate-book-guide-articles.js to rebuild. */\n';
-out += 'const ARTICLES_MORE_3 = [\n';
+let out = '/* SEO articles — Free [Book Title] PDF guides (batch ' + batch + '). Auto-generated; edit scripts/generate-book-guide-articles.js to rebuild. */\n';
+out += 'const ' + OUT_VAR + ' = [\n';
 articles.forEach((a, idx) => {
   out += '  {\n';
   out += '    id: ' + jsString(a.id) + ',\n';
@@ -227,9 +295,9 @@ articles.forEach((a, idx) => {
 });
 out += '];\n\n';
 out += 'if (typeof module !== "undefined") {\n';
-out += '  module.exports = { ARTICLES_MORE_3 };\n';
+out += '  module.exports = { ' + OUT_VAR + ' };\n';
 out += '}\n';
 
-const dest = path.join(__dirname, '..', 'js', 'articles-more-3.js');
+const dest = path.join(__dirname, '..', 'js', OUT_FILE);
 fs.writeFileSync(dest, out, 'utf8');
 console.log('Written', articles.length, 'book PDF guide articles to', dest);

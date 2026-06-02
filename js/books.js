@@ -3163,6 +3163,673 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "public-domain"
+  },
+  {
+    "id": "emma",
+    "title": "Emma",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "novel",
+    "pdf": "pdfs/emma.pdf",
+    "excerpt": "Jane Austen's comedy of matchmaking, misread signals and self-discovery in Regency England.",
+    "description": [
+      "## About the Book",
+      "Emma Woodhouse is clever, wealthy and convinced she understands everyone's romantic prospects — except her own. Austen's novel is a sharp, funny study of social blindness and growth.",
+      "## Why Read It",
+      "One of Austen's most beloved books, full of wit, misunderstanding and one of literature's most satisfying character arcs.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/emma.jpg"
+  },
+  {
+    "id": "sense-and-sensibility",
+    "title": "Sense and Sensibility",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "novel",
+    "pdf": "pdfs/sense-and-sensibility.pdf",
+    "excerpt": "The Dashwood sisters navigate love, loss and society in Jane Austen's first published novel.",
+    "description": [
+      "## About the Book",
+      "After their father's death, Elinor and Marianne Dashwood must rely on relatives and their own judgment as they fall in love in a world that offers women little security.",
+      "## Why Read It",
+      "Austen contrasts reason and emotion with humour and depth, setting the template for her later masterpieces.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain"
+  },
+  {
+    "id": "persuasion",
+    "title": "Persuasion",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "novel",
+    "pdf": "pdfs/persuasion.pdf",
+    "excerpt": "Austen's mature novel of second chances, regret and quiet devotion between Anne Elliot and Captain Wentworth.",
+    "description": [
+      "## About the Book",
+      "Years after being persuaded to reject the man she loved, Anne Elliot meets Captain Wentworth again — wiser, sadder and still unmistakably drawn to him.",
+      "## Why Read It",
+      "Often called Austen's most emotional novel, it rewards patient readers with one of the greatest love letters in fiction.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/persuasion.jpg"
+  },
+  {
+    "id": "northanger-abbey",
+    "title": "Northanger Abbey",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "novel",
+    "pdf": "pdfs/northanger-abbey.pdf",
+    "excerpt": "Austen's playful satire of Gothic novels and youthful imagination.",
+    "description": [
+      "## About the Book",
+      "Catherine Morland visits Bath and an old abbey, where her love of sensational fiction leads her to suspect dark secrets that prove mostly ordinary.",
+      "## Why Read It",
+      "Short, funny and self-aware — an ideal Austen starting point for readers new to the classics.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/northanger-abbey.jpg"
+  },
+  {
+    "id": "oliver-twist",
+    "title": "Oliver Twist",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/oliver-twist.pdf",
+    "excerpt": "Dickens's orphan hero fights poverty, crime and cruelty in Victorian London.",
+    "description": [
+      "## About the Book",
+      "Oliver Twist escapes the workhouse only to fall among thieves led by Fagin, while secrets about his birth slowly emerge.",
+      "## Why Read It",
+      "A landmark social novel that still moves readers with its energy, outrage and unforgettable characters.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/oliver-twist.jpg"
+  },
+  {
+    "id": "a-christmas-carol",
+    "title": "A Christmas Carol",
+    "categories": [
+      "novels",
+      "literature-books",
+      "stories-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/a-christmas-carol.pdf",
+    "excerpt": "Dickens's beloved ghost story of Scrooge, redemption and the spirit of Christmas.",
+    "description": [
+      "## About the Book",
+      "Ebenezer Scrooge is visited by three spirits who show him his past, present and future, forcing a miser to confront the life he has wasted.",
+      "## Why Read It",
+      "Short enough to read in one evening and powerful enough to revisit every year — the definitive holiday classic.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/a-christmas-carol.jpg"
+  },
+  {
+    "id": "silas-marner",
+    "title": "Silas Marner",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/silas-marner.pdf",
+    "excerpt": "George Eliot's tale of exile, hoarded gold and unexpected redemption in a rural village.",
+    "description": [
+      "## About the Book",
+      "Wrongly accused and isolated, the weaver Silas Marner lives only for his gold until a child's arrival transforms his world.",
+      "## Why Read It",
+      "A compact, deeply human novel about community, trust and what money cannot buy.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/silas-marner.jpg"
+  },
+  {
+    "id": "far-from-the-madding-crowd",
+    "title": "Far from the Madding Crowd",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/far-from-the-madding-crowd.pdf",
+    "excerpt": "Hardy's novel of independent Bathsheba Everdene and the three men who love her.",
+    "description": [
+      "## About the Book",
+      "In rural Wessex, Bathsheba inherits a farm and must navigate pride, passion and the consequences of her choices.",
+      "## Why Read It",
+      "Hardy combines landscape, drama and psychological realism in one of his most accessible masterpieces.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/far-from-the-madding-crowd.jpg"
+  },
+  {
+    "id": "twenty-thousand-leagues-under-the-sea",
+    "title": "Twenty Thousand Leagues Under the Sea",
+    "categories": [
+      "novels",
+      "adventure-books",
+      "literature-books"
+    ],
+    "cover": "adventure",
+    "pdf": "pdfs/twenty-thousand-leagues-under-the-sea.pdf",
+    "excerpt": "Verne's underwater epic aboard Captain Nemo's submarine, the Nautilus.",
+    "description": [
+      "## About the Book",
+      "Professor Aronnax joins an expedition that becomes captivity aboard a advanced submarine, touring oceans and witnessing wonders and danger.",
+      "## Why Read It",
+      "One of the most influential adventure novels ever written, still thrilling for readers of every age.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain"
+  },
+  {
+    "id": "the-mysterious-island",
+    "title": "The Mysterious Island",
+    "categories": [
+      "novels",
+      "adventure-books",
+      "literature-books"
+    ],
+    "cover": "adventure",
+    "pdf": "pdfs/the-mysterious-island.pdf",
+    "excerpt": "Castaways use science and courage to survive on a remote island in Verne's gripping sequel world.",
+    "description": [
+      "## About the Book",
+      "During the American Civil War, five prisoners escape by balloon and crash on an uncharted island where survival depends on ingenuity.",
+      "## Why Read It",
+      "A celebration of problem-solving, teamwork and wonder — Verne at his most optimistic.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-mysterious-island.jpg"
+  },
+  {
+    "id": "the-hound-of-the-baskervilles",
+    "title": "The Hound of the Baskervilles",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "novel",
+    "pdf": "pdfs/the-hound-of-the-baskervilles.pdf",
+    "excerpt": "Sherlock Holmes investigates a legendary curse on the moors in Doyle's most famous novel-length case.",
+    "description": [
+      "## About the Book",
+      "Sir Charles Baskerville dies mysteriously on Dartmoor, and Holmes and Watson unravel a plot where legend masks murder.",
+      "## Why Read It",
+      "The perfect Holmes entry point: atmospheric, tightly plotted and impossible to put down.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-hound-of-the-baskervilles.jpg"
+  },
+  {
+    "id": "a-study-in-scarlet",
+    "title": "A Study in Scarlet",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "novel",
+    "pdf": "pdfs/a-study-in-scarlet.pdf",
+    "excerpt": "The first Sherlock Holmes novel — the meeting of Holmes and Watson and a case spanning London and America.",
+    "description": [
+      "## About the Book",
+      "Dr Watson returns from war and meets the eccentric Sherlock Holmes, who pulls him into a baffling murder investigation.",
+      "## Why Read It",
+      "Where the world's greatest detective partnership begins — essential for mystery fans.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/a-study-in-scarlet.jpg"
+  },
+  {
+    "id": "the-invisible-man",
+    "title": "The Invisible Man",
+    "categories": [
+      "novels",
+      "adventure-books",
+      "literature-books"
+    ],
+    "cover": "adventure",
+    "pdf": "pdfs/the-invisible-man.pdf",
+    "excerpt": "H.G. Wells's science-fiction thriller about power, secrecy and a man who cannot be seen.",
+    "description": [
+      "## About the Book",
+      "Griffin discovers how to make himself invisible, but the gift quickly becomes a weapon that isolates and corrupts him.",
+      "## Why Read It",
+      "A fast, unsettling classic that asks what happens when science removes accountability.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-invisible-man.jpg"
+  },
+  {
+    "id": "the-island-of-doctor-moreau",
+    "title": "The Island of Doctor Moreau",
+    "categories": [
+      "novels",
+      "adventure-books",
+      "literature-books"
+    ],
+    "cover": "adventure",
+    "pdf": "pdfs/the-island-of-doctor-moreau.pdf",
+    "excerpt": "Wells's dark fable of a scientist who reshapes animals into human-like creatures.",
+    "description": [
+      "## About the Book",
+      "Shipwrecked Edward Prendick reaches an island where Doctor Moreau performs horrific experiments in the name of science.",
+      "## Why Read It",
+      "Short, provocative and still relevant to debates about ethics, biology and what makes us human.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-island-of-doctor-moreau.jpg"
+  },
+  {
+    "id": "ivanhoe",
+    "title": "Ivanhoe",
+    "categories": [
+      "novels",
+      "adventure-books",
+      "literature-books"
+    ],
+    "cover": "adventure",
+    "pdf": "pdfs/ivanhoe.pdf",
+    "excerpt": "Scott's knights, tournaments and Saxon–Norman conflict in medieval England.",
+    "description": [
+      "## About the Book",
+      "The disinherited knight Ivanhoe returns in disguise to fight for honour, love and Richard the Lionheart's England.",
+      "## Why Read It",
+      "The template for historical adventure — jousts, outlaws, castles and romance in one sweeping story.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/ivanhoe.jpg"
+  },
+  {
+    "id": "the-three-musketeers",
+    "title": "The Three Musketeers",
+    "categories": [
+      "novels",
+      "adventure-books",
+      "literature-books"
+    ],
+    "cover": "adventure",
+    "pdf": "pdfs/the-three-musketeers.pdf",
+    "excerpt": "Dumas's swashbuckling epic of d'Artagnan, Athos, Porthos and Aramis in seventeenth-century France.",
+    "description": [
+      "## About the Book",
+      "Young d'Artagnan arrives in Paris, befriends three musketeers and is drawn into court intrigue, duels and dangerous loyalty.",
+      "## Why Read It",
+      "Perhaps the greatest adventure novel ever written — witty, relentless and endlessly quotable.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-three-musketeers.jpg"
+  },
+  {
+    "id": "the-man-in-the-iron-mask",
+    "title": "The Man in the Iron Mask",
+    "categories": [
+      "novels",
+      "adventure-books",
+      "literature-books"
+    ],
+    "cover": "adventure",
+    "pdf": "pdfs/the-man-in-the-iron-mask.pdf",
+    "excerpt": "Dumas's prison mystery and royal intrigue — the final Musketeers saga.",
+    "description": [
+      "## About the Book",
+      "The ageing musketeers confront a state secret: a masked prisoner whose identity threatens the throne of France.",
+      "## Why Read It",
+      "For readers who loved The Three Musketeers and want the epic conclusion.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-man-in-the-iron-mask.jpg"
+  },
+  {
+    "id": "crime-and-punishment",
+    "title": "Crime and Punishment",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/crime-and-punishment.pdf",
+    "excerpt": "Dostoevsky's psychological masterpiece of guilt, poverty and moral torment in St Petersburg.",
+    "description": [
+      "## About the Book",
+      "Rodion Raskolnikov commits murder believing he is above ordinary morality, then slowly unravels under conscience and suspicion.",
+      "## Why Read It",
+      "One of the deepest novels ever written about the mind under pressure — challenging and unforgettable.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/crime-and-punishment.jpg"
+  },
+  {
+    "id": "the-metamorphosis",
+    "title": "The Metamorphosis",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/the-metamorphosis.pdf",
+    "excerpt": "Kafka's surreal novella of Gregor Samsa, who wakes transformed and is slowly abandoned by his family.",
+    "description": [
+      "## About the Book",
+      "Gregor Samsa wakes to find himself changed into a giant insect, and the story follows his isolation in painfully ordinary detail.",
+      "## Why Read It",
+      "A modern classic you can read in one sitting — strange, sad and endlessly discussed.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-metamorphosis.jpg"
+  },
+  {
+    "id": "candide",
+    "title": "Candide",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/candide.pdf",
+    "excerpt": "Voltaire's satirical adventure mocking optimism, war and pretension.",
+    "description": [
+      "## About the Book",
+      "Candide and his companions suffer every disaster imaginable while clinging to the philosophy that we live in the best of all possible worlds.",
+      "## Why Read It",
+      "Short, sharp and hilarious — philosophy as a page-turning romp.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/candide.jpg"
+  },
+  {
+    "id": "meditations",
+    "title": "Meditations",
+    "categories": [
+      "self-grooming-books",
+      "business-books"
+    ],
+    "cover": "self",
+    "pdf": "pdfs/meditations.pdf",
+    "excerpt": "Marcus Aurelius's Stoic reflections on duty, mortality and self-control — still read by leaders today.",
+    "description": [
+      "## About the Book",
+      "The Roman emperor wrote these private notes on how to live with integrity amid chaos, loss and power.",
+      "## Why Read It",
+      "One of the most practical ancient texts for modern stress, ambition and resilience.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/meditations.jpg"
+  },
+  {
+    "id": "walden",
+    "title": "Walden",
+    "categories": [
+      "self-grooming-books",
+      "literature-books"
+    ],
+    "cover": "self",
+    "pdf": "pdfs/walden.pdf",
+    "excerpt": "Thoreau's classic account of simple living, nature and deliberate choice at Walden Pond.",
+    "description": [
+      "## About the Book",
+      "Henry David Thoreau records two years of life in a cabin, reflecting on society, solitude, work and what humans truly need.",
+      "## Why Read It",
+      "Foundational reading for minimalism, environmental thought and anyone questioning the pace of modern life.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain"
+  },
+  {
+    "id": "narrative-of-the-life-of-frederick-douglass",
+    "title": "Narrative of the Life of Frederick Douglass",
+    "categories": [
+      "literature-books",
+      "self-grooming-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/narrative-of-the-life-of-frederick-douglass.pdf",
+    "excerpt": "Douglass's powerful autobiography of slavery, literacy and the fight for freedom.",
+    "description": [
+      "## About the Book",
+      "Frederick Douglass recounts his childhood in bondage, his path to reading and writing, and his escape to become a leading abolitionist voice.",
+      "## Why Read It",
+      "Essential American reading — clear, courageous and historically indispensable.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/narrative-of-the-life-of-frederick-douglass.jpg"
+  },
+  {
+    "id": "the-importance-of-being-earnest",
+    "title": "The Importance of Being Earnest",
+    "categories": [
+      "literature-books",
+      "stories-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/the-importance-of-being-earnest.pdf",
+    "excerpt": "Oscar Wilde's brilliant comedy of mistaken identity, buns and Victorian absurdity.",
+    "description": [
+      "## About the Book",
+      "Two gentlemen invent false personas named Ernest to escape social obligations, unleashing a perfectly constructed comic chaos.",
+      "## Why Read It",
+      "Wilde's funniest play in prose form — endlessly quotable and light as air.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-importance-of-being-earnest.jpg"
+  },
+  {
+    "id": "the-wind-in-the-willows",
+    "title": "The Wind in the Willows",
+    "categories": [
+      "kids-learning-books",
+      "stories-books",
+      "literature-books"
+    ],
+    "cover": "kids",
+    "pdf": "pdfs/the-wind-in-the-willows.pdf",
+    "excerpt": "Mole, Rat, Toad and Badger along the riverbank in Grahame's gentle English classic.",
+    "description": [
+      "## About the Book",
+      "Animal friends share picnics, adventures and loyalty beside the river, led by the impulsive, lovable Toad.",
+      "## Why Read It",
+      "A comforting, witty book for children and adults who miss the idea of home and friendship.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-wind-in-the-willows.jpg"
+  },
+  {
+    "id": "black-beauty",
+    "title": "Black Beauty",
+    "categories": [
+      "kids-learning-books",
+      "stories-books"
+    ],
+    "cover": "kids",
+    "pdf": "pdfs/black-beauty.pdf",
+    "excerpt": "The autobiography of a horse — a Victorian classic about kindness and cruelty.",
+    "description": [
+      "## About the Book",
+      "Black Beauty recounts life from a peaceful meadow through harsh masters and hard work, asking for compassion toward animals.",
+      "## Why Read It",
+      "One of the most influential children's books ever written — short chapters and strong moral clarity.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/black-beauty.jpg"
+  },
+  {
+    "id": "the-happy-prince-and-other-tales",
+    "title": "The Happy Prince and Other Tales",
+    "categories": [
+      "kids-learning-books",
+      "stories-books",
+      "literature-books"
+    ],
+    "cover": "kids",
+    "pdf": "pdfs/the-happy-prince-and-other-tales.pdf",
+    "excerpt": "Oscar Wilde's fairy tales of sacrifice, compassion and bittersweet beauty.",
+    "description": [
+      "## About the Book",
+      "Stories including The Happy Prince and The Selfish Giant blend fantasy with moral insight in Wilde's lyrical prose.",
+      "## Why Read It",
+      "Perfect for family reading — short, memorable and emotionally rich.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-happy-prince-and-other-tales.jpg"
+  },
+  {
+    "id": "the-great-gatsby",
+    "title": "The Great Gatsby",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/the-great-gatsby.pdf",
+    "excerpt": "Fitzgerald's Jazz Age tragedy of ambition, wealth and the green light on Long Island.",
+    "description": [
+      "## About the Book",
+      "Nick Carraway observes his mysterious neighbour Jay Gatsby, whose fortune and obsession collide with old money and doomed love.",
+      "## Why Read It",
+      "A slim, dazzling American classic whose themes of aspiration and illusion feel permanent.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-great-gatsby.jpg"
+  },
+  {
+    "id": "the-jungle",
+    "title": "The Jungle",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/the-jungle.pdf",
+    "excerpt": "Sinclair's muckraking novel exposing labour exploitation in Chicago's meatpacking industry.",
+    "description": [
+      "## About the Book",
+      "Lithuanian immigrant Jurgis Rudkus arrives in America seeking prosperity and instead confronts brutal working conditions and corruption.",
+      "## Why Read It",
+      "Historically important and still gripping as a story of survival against institutional cruelty.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-jungle.jpg"
+  },
+  {
+    "id": "common-sense",
+    "title": "Common Sense",
+    "categories": [
+      "business-books",
+      "self-grooming-books"
+    ],
+    "cover": "business",
+    "pdf": "pdfs/common-sense.pdf",
+    "excerpt": "Thomas Paine's revolutionary pamphlet that helped shape American independence.",
+    "description": [
+      "## About the Book",
+      "Paine argues plainly why colonies should break from Britain, making political ideas accessible to ordinary readers.",
+      "## Why Read It",
+      "Short, forceful and foundational — history you can read in an afternoon.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/common-sense.jpg"
   }
 ];
 

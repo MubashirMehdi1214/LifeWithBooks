@@ -11,6 +11,7 @@ try {
   require(path.join(root, 'js', 'articles-more-1.js'));
   require(path.join(root, 'js', 'articles-more-2.js'));
   require(path.join(root, 'js', 'articles-more-3.js'));
+  require(path.join(root, 'js', 'articles-more-4.js'));
   ARTICLES = require(path.join(root, 'js', 'articles.js')).ARTICLES || [];
 } catch (e) {}
 
