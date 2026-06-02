@@ -133,8 +133,8 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"></noscript>
   <link rel="preload" as="image" href="/og-home.webp" fetchpriority="high">
-  <style>/* Critical above-the-fold CSS (~4kb) — header, nav, hero, book grid shell */
-:root{--contrast:#172021;--contrast-3:#666;--contrast-4:#a3a791;--base:#faf0e2;--base-2:#fff;--accent:#1E565C;--accent-hover:#2a747c;--shadow:0 2px 14px rgba(23,32,33,.08);--shadow-hover:0 8px 24px rgba(23,32,33,.15);--radius:6px;--max-width:1200px}
+  <style>/* Critical above-the-fold CSS — header, nav, hero-home shell */
+:root{--contrast:#172021;--contrast-3:#666;--base:#faf0e2;--base-2:#fff;--accent:#1E565C;--accent-hover:#2a747c;--shadow:0 2px 14px rgba(23,32,33,.08);--radius:6px;--max-width:1200px;--primary-dark:#0d3b2e;--primary-mid:#1a5c42;--accent-green:#16a34a;--text-dark:#1f2937}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:#fff;color:var(--contrast-3);font-family:Nunito,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
@@ -151,23 +151,16 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
 .main-nav ul{display:flex;list-style:none;gap:0;align-items:center}
 .main-nav ul li a{display:block;color:#fff;padding:14px 18px;font-weight:600;font-size:15px}
 .menu-toggle{display:none;background:none;border:none;color:#fff;font-size:24px;cursor:pointer;padding:12px}
-.hero{background:linear-gradient(135deg,var(--base) 0%,#fff 60%);padding:80px 20px;text-align:center}
-.hero h1{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:16px;color:var(--contrast)}
-.hero p{max-width:680px;margin:0 auto 28px;font-size:17px;color:var(--contrast-3)}
-.hero .search-box{display:flex;max-width:560px;margin:0 auto;background:#fff;border-radius:100px;padding:6px 6px 6px 24px;box-shadow:var(--shadow-hover)}
-.hero .search-box input{flex:1;border:none;outline:none;font-size:16px;font-family:inherit;background:transparent;padding:12px 0}
-.hero .search-box button{background:var(--accent);color:#fff;border:none;border-radius:100px;padding:12px 28px;font-weight:700;font-size:15px;cursor:pointer;min-height:44px}
-.section{padding:60px 20px;max-width:var(--max-width);margin:0 auto}
-.section-title{text-align:center;margin-bottom:36px}
-.section-title h1,.section-title h2,.section-title a{font-size:clamp(1.4rem,3vw,1.9rem);color:var(--contrast)}
-.book-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 20px}
-.book-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
-.book-card a.thumb{display:block;position:relative;background:linear-gradient(135deg,#f6e9d0,#fff);padding:26px 18px;aspect-ratio:3/4;overflow:hidden;min-height:200px}
-.book-card .cover{position:absolute;inset:26px 18px;display:flex;align-items:center;justify-content:center}
-.book-card .cover .cover-image,.book-card .cover picture img{width:70%;height:200px;object-fit:cover;border-radius:4px 8px 8px 4px;transform:rotateY(-12deg);box-shadow:-6px 8px 20px rgba(23,32,33,.25);background:#f5f5f5}
-.book-single{max-width:860px;margin:0 auto;padding:60px 20px}
-.btn{display:inline-block;background:var(--accent);color:#fff;padding:14px 28px;border-radius:100px;font-weight:700;font-size:15px;min-height:44px;line-height:1.2}
-@media(max-width:768px){.menu-toggle{display:block}.main-nav ul{display:none}.book-grid{grid-template-columns:repeat(2,1fr)}.hero{padding:60px 20px}}
+.hero-home{background:linear-gradient(135deg,var(--primary-dark),var(--primary-mid));padding:80px 20px;color:#fff;position:relative;overflow:hidden}
+.hero-home__inner{max-width:var(--max-width);margin:0 auto;display:grid;grid-template-columns:1fr 340px;gap:48px;align-items:center}
+.hero-home h1{font-family:Nunito,sans-serif;font-weight:800;font-size:clamp(2rem,5vw,3.25rem);line-height:1.08;margin-bottom:16px;color:#fff}
+.hero-home__line{display:block}
+.hero-home__line--accent{color:#a7f3d0}
+.hero-home__search{display:flex;max-width:560px;background:#fff;border-radius:12px;padding:8px;box-shadow:0 12px 40px rgba(0,0,0,.2);margin-bottom:18px}
+.hero-home__search input{flex:1;border:0;outline:0;padding:14px 18px;font-size:16px;min-height:44px}
+.hero-home__search button{background:var(--accent-green);color:#fff;border:0;border-radius:8px;padding:14px 32px;font-weight:800;min-height:44px;cursor:pointer}
+.btn{display:inline-block;padding:14px 28px;border-radius:100px;font-weight:700;font-size:15px;min-height:44px;line-height:1.2}
+@media(max-width:768px){.menu-toggle{display:block}.main-nav ul{display:none}.hero-home{padding:40px 20px}.hero-home__inner{grid-template-columns:1fr;text-align:center}.hero-home__search{flex-direction:column;padding:12px;margin:0 auto 18px}.hero-home__search button{width:100%}}
 </style>
   <link rel="preload" href="/css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="/css/style.min.css"></noscript>
@@ -177,84 +170,152 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
 
   <div id="site-header-host"></div>
 
-  <section class="hero">
-    <div class="container">
-      <h1>Free PDF Books Library 2026 &mdash; 237+ Books Available</h1>
-      <p><strong>LifeWithBooks</strong> is a free PDF library for learners and readers. Browse <strong>237+</strong> books &mdash; IELTS, CSS PMS, Matric FSc, Islamic books, programming, <a href="category/vocabulary-books.html" style="color:inherit;text-decoration:underline;">vocabulary ebooks</a>, classics and kids&rsquo; books. Legal downloads, no sign-up.</p>
-      <form id="heroSearch" class="search-box" role="search">
-        <input type="search" placeholder="Search books, authors, topics..." aria-label="Search the library">
-        <button type="submit">Search</button>
+  <section class="hero-home">
+    <div class="hero-home__pattern" aria-hidden="true"></div>
+    <div class="hero-home__inner">
+      <div class="hero-home__content">
+        <h1>
+          <span class="hero-home__line">200+ Free PDF Books.</span>
+          <span class="hero-home__line hero-home__line--accent">Download Instantly.</span>
+        </h1>
+        <p class="hero-home__sub">Classics, IELTS prep, CSS exam, kids learning and more. No signup.</p>
+        <form id="heroSearch" class="hero-home__search" role="search">
+          <input type="search" placeholder="Search books, authors, topics..." aria-label="Search the library">
+          <button type="submit">Search</button>
+        </form>
+        <div class="hero-home__pills">
+          <span class="hero-home__pills-label">Popular:</span>
+          <a href="category/ielts-preparation.html">IELTS</a>
+          <a href="category/css-pms-books.html">CSS PMS</a>
+          <a href="category/literature-books.html">Classics</a>
+          <a href="category/kids-learning-books.html">Kids</a>
+          <a href="category/programming-books.html">Programming</a>
+          <a href="category/islamic-books.html">Islamic</a>
+        </div>
+        <div class="hero-home__cta">
+          <a class="btn btn-primary" href="all-books.html">Browse All Books &rarr;</a>
+          <a class="btn btn-outline-light" href="articles.html">View Reading Guides</a>
+        </div>
+      </div>
+      <div class="hero-home__visual" id="hero-book-stack" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="stats-bar" id="stats-bar" aria-label="Library statistics">
+    <div class="stats-bar__inner">
+      <div class="stat-item">
+        <span class="stat-item__icon" aria-hidden="true">&#128218;</span>
+        <span class="stat-item__num" data-target="200" data-suffix="+">0</span>
+        <span class="stat-item__label">Free Books</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-item__icon" aria-hidden="true">&#128214;</span>
+        <span class="stat-item__num" data-target="116" data-suffix="+">0</span>
+        <span class="stat-item__label">Reading Guides</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-item__icon" aria-hidden="true">&#9989;</span>
+        <span class="stat-item__num" data-target="100" data-suffix="%">0</span>
+        <span class="stat-item__label">Free Forever</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-item__icon" aria-hidden="true">&#128275;</span>
+        <span class="stat-item__num" data-target="0" data-suffix="">0</span>
+        <span class="stat-item__label">Signup Required</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section home-categories">
+    <div class="home-section__head">
+      <h2>Browse by Category</h2>
+      <p>Find exactly what you need</p>
+    </div>
+    <div class="category-grid" id="home-category-grid"></div>
+  </section>
+
+  <section class="home-section home-trending">
+    <div class="home-section__head">
+      <h2>Most Downloaded Books</h2>
+      <p>Start reading today</p>
+    </div>
+    <div class="trending-grid" id="home-trending-grid"></div>
+    <div class="home-section__action">
+      <a class="btn btn-primary" href="all-books.html">View All 200+ Books &rarr;</a>
+    </div>
+  </section>
+
+  <section class="home-section home-trust">
+    <div class="home-section__head">
+      <h2>Why LifeWithBooks</h2>
+      <p>Trusted by learners worldwide</p>
+    </div>
+    <div class="trust-grid">
+      <article class="trust-card">
+        <span class="trust-card__icon" aria-hidden="true">&#128218;</span>
+        <h3>Hand-Picked</h3>
+        <p>Every title is reviewed by our editorial team before it joins the library.</p>
+      </article>
+      <article class="trust-card">
+        <span class="trust-card__icon" aria-hidden="true">&#127757;</span>
+        <h3>Worldwide Access</h3>
+        <p>Used by readers in 50+ countries — free PDFs on any device, anywhere.</p>
+      </article>
+      <article class="trust-card">
+        <span class="trust-card__icon" aria-hidden="true">&#9989;</span>
+        <h3>Respect for Authors</h3>
+        <p>We link only to publicly available material and honour every copyright claim.</p>
+      </article>
+      <article class="trust-card">
+        <span class="trust-card__icon" aria-hidden="true">&#9889;</span>
+        <h3>Always Free</h3>
+        <p>No sign-up walls, no subscriptions. Just instant access to learning.</p>
+      </article>
+      <article class="trust-card">
+        <span class="trust-card__icon" aria-hidden="true">&#127891;</span>
+        <h3>For Every Learner</h3>
+        <p>Resources for kids, students, teachers, parents and self-learners worldwide.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="home-section home-articles">
+    <div class="home-section__head">
+      <h2>Latest Reading Guides</h2>
+      <p>Expert tips for better learning</p>
+    </div>
+    <div class="article-feature-grid" id="home-articles-grid"></div>
+    <div class="home-section__action">
+      <a class="btn btn-primary" href="articles.html">View All 116 Guides &rarr;</a>
+    </div>
+  </section>
+
+  <section class="home-newsletter">
+    <div class="home-newsletter__inner">
+      <div class="home-newsletter__copy">
+        <h2>Get New Books Every Week</h2>
+        <p>Join 5,000+ readers. Free books and guides in your inbox.</p>
+        <ul>
+          <li>&#9989; New books added weekly</li>
+          <li>&#9989; Free study guides</li>
+          <li>&#9989; No spam ever</li>
+        </ul>
+      </div>
+      <form class="home-newsletter__form" id="newsletterForm">
+        <label class="visually-hidden" for="newsletterEmail">Email address</label>
+        <input type="email" id="newsletterEmail" name="email" placeholder="Your email address" required autocomplete="email">
+        <button type="submit" class="btn btn-accent">Subscribe Free</button>
+        <p class="home-newsletter__privacy">We respect your privacy. Unsubscribe anytime.</p>
       </form>
     </div>
   </section>
 
-  <section class="section recent-updates" style="padding-top:0;">
-    <div class="section-title"><h2>Recently Updated Guides</h2></div>
-    <ul id="recent-updates"></ul>
-  </section>
-
-  <section class="section" style="padding-top:0;">
-    <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:900px;margin:0 auto 28px;">
-      <a class="btn outline" href="all-books.html">All free PDF books</a>
-      <a class="btn outline" href="category/ielts-preparation.html">IELTS preparation</a>
-      <a class="btn outline" href="category/css-pms-books.html">CSS PMS books</a>
-      <a class="btn outline" href="category/matric-fsc-notes.html">Matric FSc notes</a>
-      <a class="btn outline" href="category/islamic-books.html">Islamic books</a>
-      <a class="btn outline" href="category/programming-books.html">Programming</a>
-      <a class="btn outline" href="category/kids-learning-books.html">Kids learning</a>
-      <a class="btn outline" href="articles.html">Reading guides</a>
+  <section class="home-section home-recent">
+    <div class="home-section__head">
+      <h2>Recently Added</h2>
+      <p>Fresh titles in the library</p>
     </div>
-  </section>
-
-  <section class="section" style="padding-top:0;">
-    <div class="section-title"><a href="articles.html">Popular Reading Guides</a></div>
-    <div class="related-posts" style="max-width:760px;margin:0 auto;">
-      <ul>
-        <li><a href="articles/how-to-prepare-for-ielts-using-free-pdf-books.html"><span>How to Prepare for IELTS Using Free PDF Books</span><span class="arrow">Read More &raquo;</span></a></li>
-        <li><a href="articles/complete-css-exam-preparation-guide-pakistan.html"><span>Complete CSS Exam Preparation Guide for Pakistani Students</span><span class="arrow">Read More &raquo;</span></a></li>
-        <li><a href="articles/learn-python-free-pdf-books-beginners-2026.html"><span>Learn Python Free PDF Books for Beginners 2026</span><span class="arrow">Read More &raquo;</span></a></li>
-        <li><a href="articles/free-islamic-books-pdf-download-complete-list.html"><span>Free Islamic Books PDF Download Complete List</span><span class="arrow">Read More &raquo;</span></a></li>
-        <li><a href="articles/build-english-vocabulary-through-reading.html"><span>How to Build English Vocabulary Through Reading</span><span class="arrow">Read More &raquo;</span></a></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-title"><a href="all-books.html">Latest Books</a></div>
-    <div class="books-panel-scroll" aria-label="Scrollable book list">
-      <div class="book-grid" id="all-books-grid"></div>
-    </div>
-    <div style="text-align:center;margin-top:36px;">
-      <a class="btn outline" href="all-books.html">View All Books</a>
-    </div>
-  </section>
-
-  <div id="category-sections"></div>
-
-  <section class="section" style="background:var(--base);">
-    <div class="section-title"><h2>Why Readers Trust LifeWithBooks</h2></div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;max-width:1100px;margin:0 auto;">
-      <div style="background:#fff;padding:24px;border-radius:8px;text-align:center;">
-        <div style="font-size:36px;margin-bottom:10px;">&#128218;</div>
-        <h3 style="margin-bottom:8px;">Hand-Picked</h3>
-        <p style="font-size:14.5px;">Every title is reviewed by our editorial team before it joins the library.</p>
-      </div>
-      <div style="background:#fff;padding:24px;border-radius:8px;text-align:center;">
-        <div style="font-size:36px;margin-bottom:10px;">&#127757;</div>
-        <h3 style="margin-bottom:8px;">For Every Learner</h3>
-        <p style="font-size:14.5px;">Resources for kids, students, teachers, parents and self-learners worldwide.</p>
-      </div>
-      <div style="background:#fff;padding:24px;border-radius:8px;text-align:center;">
-        <div style="font-size:36px;margin-bottom:10px;">&#9989;</div>
-        <h3 style="margin-bottom:8px;">Respect for Authors</h3>
-        <p style="font-size:14.5px;">We link only to publicly available material and honour every copyright claim.</p>
-      </div>
-      <div style="background:#fff;padding:24px;border-radius:8px;text-align:center;">
-        <div style="font-size:36px;margin-bottom:10px;">&#9889;</div>
-        <h3 style="margin-bottom:8px;">Always Free</h3>
-        <p style="font-size:14.5px;">No sign-up walls, no subscriptions. Just instant access to learning.</p>
-      </div>
-    </div>
+    <div class="recent-scroll" id="home-recent-grid"></div>
   </section>
 
   <div id="site-footer-host"></div>

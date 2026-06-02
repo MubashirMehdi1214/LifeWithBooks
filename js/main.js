@@ -528,51 +528,264 @@ function renderBookGrid(containerSel, books, limit) {
     '<p style="grid-column:1/-1;text-align:center;color:#999;">No books found.</p>';
 }
 
+function findBookById(id) {
+  return BOOKS.find(function(b) { return b.id === id; });
+}
+
+function getBookAuthor(book) {
+  if (book.author) return book.author;
+  const ex = book.excerpt || '';
+  const byMatch = ex.match(/\bby\s+([A-Z][A-Za-z\s.'-]+)/);
+  if (byMatch) return byMatch[1].trim();
+  const fromMatch = ex.match(/\bfrom\s+([A-Z][A-Za-z\s.'-]+)/);
+  if (fromMatch) return fromMatch[1].trim();
+  if (book.license === 'public-domain') return 'Public Domain';
+  return 'LifeWithBooks';
+}
+
+function estimateReadTime(article) {
+  let words = 0;
+  if (article.body && article.body.length) {
+    words = article.body.join(' ').split(/\s+/).length;
+  } else if (article.excerpt) {
+    words = article.excerpt.split(/\s+/).length * 8;
+  }
+  return Math.max(3, Math.round(words / 200)) + ' min read';
+}
+
+const HOME_CATEGORY_META = [
+  { slug: 'ielts-preparation', label: 'IELTS Preparation', icon: '\uD83C\uDF93', gradient: 'cat-blue' },
+  { slug: 'css-pms-books', label: 'CSS PMS Exam', icon: '\uD83D\uDCDD', gradient: 'cat-purple' },
+  { slug: 'literature-books', label: 'Classic Novels', icon: '\uD83D\uDCD5', gradient: 'cat-red' },
+  { slug: 'kids-learning-books', label: 'Kids Learning', icon: '\uD83E\uDDD2', gradient: 'cat-yellow' },
+  { slug: 'matric-fsc-notes', label: 'Matric FSc Notes', icon: '\uD83D\uDD2C', gradient: 'cat-green' },
+  { slug: 'islamic-books', label: 'Islamic Books', icon: '\u262A\uFE0F', gradient: 'cat-teal' },
+  { slug: 'programming-books', label: 'Programming', icon: '\uD83D\uDCBB', gradient: 'cat-dark' },
+  { slug: 'self-development-books', label: 'Self Development', icon: '\uD83C\uDF1F', gradient: 'cat-orange' }
+];
+
+const CATEGORY_PILL_MAP = {
+  'ielts-preparation': 'cat-pill-blue',
+  'css-pms-books': 'cat-pill-purple',
+  'literature-books': 'cat-pill-red',
+  'novels': 'cat-pill-red',
+  'kids-learning-books': 'cat-pill-yellow',
+  'matric-fsc-notes': 'cat-pill-green',
+  'islamic-books': 'cat-pill-teal',
+  'programming-books': 'cat-pill-dark',
+  'self-development-books': 'cat-pill-orange',
+  'english-learning-books': 'cat-pill-blue'
+};
+
+const TRENDING_BOOK_IDS = [
+  'pride-and-prejudice',
+  'the-adventures-of-sherlock-holmes',
+  'ielts-academic-practice-tests-guide',
+  'css-english-essay-writing-guide',
+  'aesops-fables',
+  'python-programming-beginner-guide'
+];
+
+const FEATURED_ARTICLE_IDS = [
+  'how-to-prepare-for-ielts-using-free-pdf-books',
+  'complete-css-exam-preparation-guide-pakistan',
+  'best-free-books-for-matric-students-pakistan'
+];
+
+const HERO_STACK_IDS = ['pride-and-prejudice', 'ielts-academic-practice-tests-guide', 'python-programming-beginner-guide'];
+
+function categoryLabelForBook(book) {
+  const slug = (book.categories && book.categories[0]) || '';
+  const cat = CATEGORIES.find(function(c) { return c.slug === slug; });
+  return cat ? cat.label : 'Books';
+}
+
+function categoryPillClass(slug) {
+  return CATEGORY_PILL_MAP[slug] || 'cat-pill-teal';
+}
+
+function trendingBookCardHTML(book) {
+  const catSlug = (book.categories && book.categories[0]) || '';
+  const coverSrc = getBookCoverImage(book);
+  const localFallback = getLocalCoverPath(book);
+  const author = getBookAuthor(book);
+  const pillClass = categoryPillClass(catSlug);
+  const coverBlock = coverSrc
+    ? '<img src="' + escapeHtml(coverSrc) + '" alt="' + escapeHtml(book.title) + ' cover" width="120" height="180" loading="lazy" referrerpolicy="no-referrer" onerror="coverImgError(this)"' + (coverSrc !== localFallback ? ' data-fallback="' + escapeHtml(localFallback) + '"' : '') + '>'
+    : '<div class="cover-fallback cover-' + escapeHtml(book.cover || 'english') + '">' + escapeHtml(book.title.slice(0, 24)) + '</div>';
+  return `
+    <article class="trending-card">
+      <div class="trending-card__cover">
+        <span class="trending-card__badge">Free</span>
+        ${coverBlock}
+      </div>
+      <div class="trending-card__body">
+        <h3><a href="${getBookPagePath(book.id)}">${escapeHtml(book.title)}</a></h3>
+        <p class="trending-card__author">${escapeHtml(author)}</p>
+        <span class="trending-card__cat ${pillClass}">${escapeHtml(categoryLabelForBook(book))}</span>
+        <a class="trending-card__link" href="${getBookPagePath(book.id)}">Download Free &rarr;</a>
+      </div>
+    </article>`;
+}
+
+function homeCategoryCardHTML(meta) {
+  const count = BOOKS.filter(function(b) { return b.categories.includes(meta.slug); }).length;
+  return `
+    <a class="category-card ${meta.gradient}" href="${getCategoryPagePath(meta.slug)}">
+      <span class="category-card__icon" aria-hidden="true">${meta.icon}</span>
+      <span class="category-card__name">${escapeHtml(meta.label)}</span>
+      <span class="category-card__count">${count} book${count === 1 ? '' : 's'}</span>
+      <span class="category-card__arrow" aria-hidden="true">&rarr;</span>
+    </a>`;
+}
+
+function homeArticleCardHTML(a) {
+  const catSlug = ARTICLE_COVER_CATEGORIES[a.cover || 'english'] || 'english-learning-books';
+  const cat = CATEGORIES.find(function(c) { return c.slug === catSlug; });
+  const pillClass = categoryPillClass(catSlug);
+  return `
+    <article class="home-article-card">
+      <span class="home-article-card__badge ${pillClass}">${escapeHtml(cat ? cat.label : 'Guide')}</span>
+      <h3><a href="${getArticlePagePath(a.id)}">${escapeHtml(a.title)}</a></h3>
+      <p class="home-article-card__excerpt">${escapeHtml(a.excerpt || '')}</p>
+      <p class="home-article-card__meta">${escapeHtml(a.author || 'Mubashir Mehdi')} &middot; ${escapeHtml(estimateReadTime(a))}</p>
+      <a class="home-article-card__link" href="${getArticlePagePath(a.id)}">Read Guide &rarr;</a>
+    </article>`;
+}
+
+function recentBookCardHTML(book) {
+  const coverSrc = getBookCoverImage(book);
+  const localFallback = getLocalCoverPath(book);
+  const imgTag = coverSrc
+    ? '<img src="' + escapeHtml(coverSrc) + '" alt="" width="80" height="120" loading="lazy" referrerpolicy="no-referrer" onerror="coverImgError(this)"' + (coverSrc !== localFallback ? ' data-fallback="' + escapeHtml(localFallback) + '"' : '') + '>'
+    : '';
+  return `
+    <article class="recent-card">
+      <div class="recent-card__cover">
+        <span class="recent-card__new">New</span>
+        ${imgTag}
+      </div>
+      <div class="recent-card__body">
+        <h3><a href="${getBookPagePath(book.id)}">${escapeHtml(book.title)}</a></h3>
+      </div>
+    </article>`;
+}
+
+function renderHeroBookStack() {
+  const host = $('#hero-book-stack');
+  if (!host) return;
+  const books = HERO_STACK_IDS.map(findBookById).filter(Boolean);
+  host.innerHTML = '<div class="hero-book-stack">' + books.map(function(book, i) {
+    const src = getBookCoverImage(book);
+    return '<div class="hero-book-stack__item" style="z-index:' + (i + 1) + '"><img src="' + escapeHtml(src) + '" alt="" width="160" height="240" loading="eager" fetchpriority="' + (i === 1 ? 'high' : 'auto') + '" referrerpolicy="no-referrer"></div>';
+  }).join('') + '</div>';
+}
+
+function initStatsCounter() {
+  const bar = $('#stats-bar');
+  if (!bar) return;
+  const nums = bar.querySelectorAll('.stat-item__num');
+  if (typeof BOOKS !== 'undefined') {
+    const bookStat = nums[0];
+    if (bookStat) {
+      const total = BOOKS.length;
+      bookStat.dataset.target = total >= 200 ? '200' : String(total);
+      bookStat.dataset.suffix = total >= 200 ? '+' : '';
+    }
+  }
+  if (typeof ARTICLES !== 'undefined') {
+    const artStat = nums[1];
+    if (artStat) {
+      const total = ARTICLES.length;
+      artStat.dataset.target = total >= 116 ? '116' : String(total);
+      artStat.dataset.suffix = total >= 116 ? '+' : '';
+    }
+  }
+  let started = false;
+  function animateValue(el) {
+    const target = parseInt(el.dataset.target, 10) || 0;
+    const suffix = el.dataset.suffix || '';
+    const duration = 1200;
+    const start = performance.now();
+    function tick(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(target * eased) + suffix;
+      if (progress < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  function run() {
+    if (started) return;
+    started = true;
+    nums.forEach(animateValue);
+  }
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(function(entries) {
+      if (entries.some(function(e) { return e.isIntersecting; })) {
+        run();
+        obs.disconnect();
+      }
+    }, { threshold: 0.3 });
+    obs.observe(bar);
+  } else {
+    run();
+  }
+}
+
+function initNewsletterForm() {
+  const form = $('#newsletterForm');
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const emailEl = $('#newsletterEmail');
+    const email = emailEl ? emailEl.value.trim() : '';
+    if (!email) return;
+    const btn = form.querySelector('button[type="submit"]');
+    const original = btn.textContent;
+    btn.textContent = 'Subscribed!';
+    btn.disabled = true;
+    form.reset();
+    setTimeout(function() {
+      btn.textContent = original;
+      btn.disabled = false;
+    }, 3000);
+  });
+}
+
 /* ---------- Home page ---------- */
 function initHome() {
   if (document.body.dataset.page !== 'home') return;
 
-  const featured = [
-    "ielts-preparation",
-    "css-pms-books",
-    "matric-fsc-notes",
-    "islamic-books",
-    "programming-books",
-    "kids-learning-books",
-    "english-learning-books",
-    "vocabulary-books",
-    "grammar-books",
-    "o-level-a-level",
-    "self-development-books",
-    "french-learning-books",
-    "german-learning-books",
-    "spanish-learning-books",
-    "health-books",
-    "novels",
-    "literature-books",
-    "adventure-books",
-    "business-books",
-    "self-grooming-books"
-  ];
+  renderHeroBookStack();
 
-  /* All books — scrollable panel on home */
-  renderBookGrid('#all-books-grid', BOOKS);
-
-  /* Per-category sections */
-  const host = $('#category-sections');
-  if (host) {
-    host.innerHTML = featured.map(slug => {
-      const cat = CATEGORIES.find(c => c.slug === slug);
-      const items = BOOKS.filter(b => b.categories.includes(slug)).slice(0, 24);
-      if (!items.length) return '';
-      return `
-        <section class="section">
-          <div class="section-title"><a href="${getCategoryPagePath(slug)}">${cat.label}</a></div>
-          <div class="book-grid">${items.map(bookCardHTML).join('')}</div>
-        </section>
-      `;
-    }).join('');
+  const catGrid = $('#home-category-grid');
+  if (catGrid) {
+    catGrid.innerHTML = HOME_CATEGORY_META.map(homeCategoryCardHTML).join('');
   }
+
+  const trendingGrid = $('#home-trending-grid');
+  if (trendingGrid) {
+    const trending = TRENDING_BOOK_IDS.map(findBookById).filter(Boolean);
+    trendingGrid.innerHTML = trending.map(trendingBookCardHTML).join('');
+  }
+
+  const articlesGrid = $('#home-articles-grid');
+  if (articlesGrid && typeof ARTICLES !== 'undefined') {
+    const featured = FEATURED_ARTICLE_IDS.map(function(id) {
+      return ARTICLES.find(function(a) { return a.id === id; });
+    }).filter(Boolean);
+    articlesGrid.innerHTML = featured.map(homeArticleCardHTML).join('');
+  }
+
+  const recentGrid = $('#home-recent-grid');
+  if (recentGrid) {
+    const recent = BOOKS.slice(-4).reverse();
+    recentGrid.innerHTML = recent.map(recentBookCardHTML).join('');
+  }
+
+  initStatsCounter();
+  initNewsletterForm();
 
   const searchForm = $('#heroSearch');
   searchForm && searchForm.addEventListener('submit', (e) => {
@@ -580,16 +793,6 @@ function initHome() {
     const q = $('#heroSearch input').value.trim();
     if (q) window.location.href = 'all-books.html?q=' + encodeURIComponent(q);
   });
-
-  const recentHost = $('#recent-updates');
-  if (recentHost && typeof ARTICLES !== 'undefined') {
-    const recent = ARTICLES.slice()
-      .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
-      .slice(0, 3);
-    recentHost.innerHTML = recent.map(a =>
-      `<li><a href="${getArticlePagePath(a.id)}">${escapeHtml(a.title)}</a>${isRecentlyUpdated(a.date, 7) ? ' <span class="badge-updated">Updated</span>' : ''}</li>`
-    ).join('');
-  }
 }
 
 /* ---------- All books page ---------- */
