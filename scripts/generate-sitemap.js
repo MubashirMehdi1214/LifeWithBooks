@@ -10,6 +10,7 @@ let ARTICLES = [];
 try {
   require(path.join(root, 'js', 'articles-more-1.js'));
   require(path.join(root, 'js', 'articles-more-2.js'));
+  require(path.join(root, 'js', 'articles-more-3.js'));
   ARTICLES = require(path.join(root, 'js', 'articles.js')).ARTICLES || [];
 } catch (e) {}
 
@@ -19,6 +20,7 @@ const staticPages = [
   ['/', 'daily', '1.00'],
   ['/all-books.html', 'daily', '0.90'],
   ['/articles.html', 'weekly', '0.80'],
+  ['/feed.xml', 'weekly', '0.50'],
   ['/about.html', 'monthly', '0.70'],
   ['/contact.html', 'monthly', '0.70'],
   ['/privacy-policy.html', 'yearly', '0.50'],

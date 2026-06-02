@@ -21,6 +21,14 @@ const ARTICLES_CORE = [
       "Reading should not feel like homework. If a book bores you after fifty pages, you are allowed to put it down and pick another. There is no prize for finishing something you dislike, and forcing yourself through dull pages is the fastest way to kill the habit. Free libraries make this painless: you can sample widely without spending a penny.",
       "## What to Read First",
       "If you are rebuilding the habit, start with momentum-friendly books: short classics, gripping adventures, or fast-paced mysteries. Titles like The Adventures of Sherlock Holmes, Treasure Island, or The Strange Case of Dr Jekyll and Mr Hyde are short, exciting, and freely available in the public domain. Save the long, dense works for once your daily rhythm is secure.",
+      "LifeWithBooks hosts dozens of these titles as free PDFs — browse our adventure and literature categories and download one tonight. Having the book already on your device removes the friction of 'finding something to read' on tired days.",
+      "## Protect the Habit on Bad Days",
+      "Travel, illness, and family emergencies will interrupt even disciplined readers. Plan for this in advance: keep a very short backup book on your phone — a novella or story collection — for days when you cannot manage your usual session. Reading one page still counts. The goal is never perfection; it is returning the next day without shame.",
+      "If you miss a day, do not 'catch up' with a guilt-driven binge. Simply restart with your two-page minimum tomorrow. Binge reading after a break often feels like punishment, which your brain will learn to avoid. Gentle restart beats heroic recovery every time.",
+      "## Paper, E-ink or PDF?",
+      "The best format is the one you will actually use. Paper books offer tactile pleasure and fewer notifications. E-ink devices reduce eye strain for long sessions. PDFs on a phone are unbeatable for portability — you always have a library in your pocket. Many LifeWithBooks titles are available as free PDF downloads you can open in any reader app. Experiment for one week with each format and notice which one you reach for without thinking.",
+      "## Common Mistakes That Break Reading Streaks",
+      "Setting a page goal that depends on mood rather than a fixed cue. Waiting for 'free time' instead of attaching reading to a daily anchor. Choosing a book you feel you should read instead of one you want to read. Checking your phone between chapters. Abandoning a streak after one missed day instead of restarting small. Fix any one of these and your completion rate will jump.",
       "## The Long Game",
       "Two pages a day is roughly seven hundred pages a year - two or three full books - from a habit that costs almost nothing. Stack a few good years and you become, quietly, a well-read person. The secret was never reading fast or reading a lot in one sitting. It was simply showing up, every day, for a few unremarkable minutes."
     ]
@@ -44,6 +52,13 @@ const ARTICLES_CORE = [
       "It is important to keep the distinction clear. A novel from 1890 is almost certainly free to share. A textbook or bestseller from last year is not - it is protected by copyright, and downloading an unauthorised copy is both illegal and unfair to the author. Responsible free libraries focus on public-domain works and original content, and they point you toward official sources for anything still under copyright.",
       "## How We Handle It at LifeWithBooks",
       "On this site, every book we host for direct download is either a public-domain classic or original material we created ourselves. For copyrighted titles, we provide a helpful overview and then link you to legitimate places to find an official copy. That way you get genuinely useful information while authors and publishers are respected.",
+      "## How to Verify a Book Is Public Domain",
+      "When in doubt, check the publication date and the author’s death date — copyright terms depend on when the work was created and where you live. Reputable sources like Project Gutenberg, Internet Archive and university libraries only distribute texts they have verified. LifeWithBooks follows the same principle: our downloadable classics are titles whose copyright has clearly expired.",
+      "Be cautious with random PDF sites that offer recent bestsellers for free. If a book is still sold in bookshops, it is almost certainly not public domain. When a site hosts everything without distinction, that is a red flag for piracy rather than legitimate sharing.",
+      "## Public Domain Around the World",
+      "Copyright law varies by country. A book that is free in the United States may still be protected elsewhere, and vice versa. Most major public-domain libraries focus on U.S. law because Project Gutenberg is American, but readers in the UK, EU, Pakistan and other regions should be aware that terms differ. For personal reading, public-domain classics are widely accessible; for republication or commercial use, check local rules.",
+      "## Where to Find Public-Domain Books Online",
+      "Beyond LifeWithBooks, excellent legal sources include Project Gutenberg, Standard Ebooks, Internet Archive and many national library digitisation projects. Each has strengths: Gutenberg for sheer volume, Standard Ebooks for polished formatting, Internet Archive for scans of rare editions. LifeWithBooks curates a friendly browsing experience with categories for language learning, kids, classics and health — so you can discover titles without searching blindly.",
       "## Start Exploring",
       "The best way to appreciate the public domain is to use it. Pick a classic you have always meant to read, download it, and enjoy the fact that a work which shaped literature is now sitting on your device, entirely free and entirely legal. It is one of the quiet miracles of the modern internet."
     ]
@@ -69,6 +84,10 @@ const ARTICLES_CORE = [
       "For every study session, jot down five to ten useful words or phrases - not fifty. Review them the next day, then a few days later. This spaced repetition, even done with pen and paper, dramatically improves retention. Quality and review beat quantity every time.",
       "## Make It Daily and Make It Enjoyable",
       "Fifteen focused minutes a day will take you further than a three-hour binge once a week. Choose topics you actually like - cooking, sport, travel, history - so that study feels like curiosity rather than obligation. Motivation follows enjoyment, and enjoyment comes from reading about things you care about.",
+      "## A Simple Weekly Schedule",
+      "Monday and Wednesday: grammar or vocabulary exercises from a free workbook. Tuesday and Thursday: read five pages of a graded story or children's classic in your target language. Friday: listen to a chapter of the same text while following along. Saturday: review your notebook without adding new words. Sunday: rest or read purely for pleasure in your native language to avoid burnout. This rhythm balances input, output and recovery.",
+      "## Free Resources on LifeWithBooks",
+      "Our library includes English, French, German and Spanish learning books — grammar guides, vocabulary lists, conversation phrasebooks and exam preparation material. Many are reference summaries that point you to official editions; our public-domain classics work beautifully as reading practice once you pass beginner level. Start with vocabulary and grammar categories, then graduate to short novels like The Call of the Wild or Alice's Adventures in Wonderland.",
       "## Be Patient With Yourself",
       "Progress in a language is uneven. There will be plateaus where you feel stuck, followed by sudden leaps. Trust the process, keep your daily habit small and consistent, and lean on the huge pool of free material available to you. Months of steady, enjoyable practice will quietly turn into fluency."
     ]
@@ -102,6 +121,10 @@ const ARTICLES_CORE = [
       "Warm, funny and heart-melting, Montgomery's story of an irrepressible orphan is comfort reading at its finest.",
       "## 10. Around the World in Eighty Days",
       "Jules Verne's globe-trotting race against time is pure entertainment - a brisk, optimistic adventure that still feels fresh.",
+      "## Why These Ten Work for Beginners",
+      "Each title on this list shares three qualities: a clear plot you can follow, chapters that reward you quickly, and language that is accessible without being simplistic. They are also short to medium in length — none require the commitment of War and Peace on your first attempt. Several are available as free PDF downloads on LifeWithBooks, so you can start immediately without buying a stack of paperbacks.",
+      "## Match the Book to Your Mood",
+      "Want humour and romance? Start with Pride and Prejudice. Want suspense in small doses? Try Sherlock Holmes. Want pure adventure? Treasure Island or Around the World in Eighty Days. Want something eerie but short? Dr Jekyll and Mr Hyde. There is no single 'best' first classic — there is only the one you will actually open tonight.",
       "## How to Begin",
       "Pick whichever title sparks your curiosity, download it for free, and read just a few pages tonight. The beauty of free classics is that there is no cost to experimenting. Start one, and if it does not grab you, move to the next - the whole library is open."
     ]
@@ -129,6 +152,10 @@ const ARTICLES_CORE = [
       "One advantage PDFs have over paper is full-text search. When revising, you can instantly jump to any term. Bookmark key pages as you go so that your document becomes a personalised reference you can navigate in seconds.",
       "## Space Out Your Review",
       "Reading something once rarely sticks. Revisit your highlights and summaries the next day, then again a week later. These short, spaced reviews take only minutes but multiply how much you retain. Self-learning is less about reading more and more about reviewing smartly.",
+      "## Recommended PDF Reader Apps",
+      "On desktop, Adobe Acrobat Reader, Sumatra PDF and browser built-in viewers all work well. On mobile, try Google Play Books, Apple Books, or dedicated apps like Xodo and Moon+ Reader that support highlights and bookmarks. Choose one app and stick with it so your annotations stay in one place. Enable dark mode for evening study if bright white pages tire your eyes.",
+      "## Studying Language and Textbooks in PDF",
+      "Language learners benefit enormously from searchable PDFs — look up a word instantly instead of flipping pages. Grammar books and vocabulary lists on LifeWithBooks are ideal for this workflow. Copy example sentences into your notebook, then cover the translation and test yourself. For long classics, read one paragraph per line of dialogue aloud to connect spelling with pronunciation.",
       "## Make It a System",
       "Combine these habits - preview, question, read, highlight, summarise, review - into a repeatable routine, and any free PDF becomes a serious learning tool. The information was always free; these techniques are what turn it into knowledge."
     ]
@@ -154,6 +181,8 @@ const ARTICLES_CORE = [
       "The public domain is rich in both categories. For fiction, you have the great novels of Austen, Dickens and Verne. For non-fiction, you can read foundational works like The Art of War, As a Man Thinketh, or The Autobiography of Benjamin Franklin - all free, all timeless. You can build a complete, balanced library without spending anything.",
       "## Follow Your Curiosity",
       "There is no perfect ratio. Some seasons of life call for more practical reading; others for escape and story. The goal is simply not to get stuck in one mode forever. Pay attention to what you are neglecting, and lean gently in that direction.",
+      "## Sample Monthly Reading Plan",
+      "Week one: a practical non-fiction title from our health or business categories. Week two: a short classic novel such as The Time Machine or The Call of the Wild. Week three: return to non-fiction — a language learning or grammar guide if you are studying English. Week four: a longer novel you have been postponing, reading in daily twenty-minute sessions. Adjust the ratio to your goals, but keep both modes alive each month.",
       "## The Well-Rounded Reader",
       "A balanced reading diet builds a more complete mind: knowledgeable but imaginative, practical but empathetic. Mix your shelves, trust your curiosity, and let fiction and fact sharpen each other. That blend is what turns a reader into a thinker."
     ]
@@ -163,13 +192,15 @@ const ARTICLES_CORE = [
 function mergeArticles() {
   var more1 = typeof ARTICLES_MORE_1 !== 'undefined' ? ARTICLES_MORE_1 : [];
   var more2 = typeof ARTICLES_MORE_2 !== 'undefined' ? ARTICLES_MORE_2 : [];
-  if (!more1.length && !more2.length && typeof module !== 'undefined') {
+  var more3 = typeof ARTICLES_MORE_3 !== 'undefined' ? ARTICLES_MORE_3 : [];
+  if (!more1.length && !more2.length && !more3.length && typeof module !== 'undefined') {
     try {
       more1 = require('./articles-more-1.js').ARTICLES_MORE_1 || [];
       more2 = require('./articles-more-2.js').ARTICLES_MORE_2 || [];
+      more3 = require('./articles-more-3.js').ARTICLES_MORE_3 || [];
     } catch (e) { /* browser bundle */ }
   }
-  return ARTICLES_CORE.concat(more1, more2);
+  return ARTICLES_CORE.concat(more1, more2, more3);
 }
 
 const ARTICLES = mergeArticles();

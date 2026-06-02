@@ -38,6 +38,92 @@ const CATEGORY_SEO = {
 function getCategorySeo(slug) {
   return CATEGORY_SEO[slug] || null;
 }
+
+const ARTICLE_COVER_CATEGORIES = {
+  english: 'english-learning-books',
+  vocabulary: 'vocabulary-books',
+  french: 'french-learning-books',
+  german: 'german-learning-books',
+  spanish: 'spanish-learning-books',
+  kids: 'kids-learning-books',
+  literature: 'literature-books',
+  novel: 'novels',
+  adventure: 'adventure-books',
+  grammar: 'grammar-books',
+  health: 'health-books',
+  self: 'self-grooming-books',
+  business: 'business-books',
+  trading: 'trading-books'
+};
+
+const ARTICLE_CATEGORY_LINKS = {
+  'build-english-vocabulary-through-reading': 'vocabulary-books',
+  'learn-a-language-with-free-books': 'english-learning-books',
+  'learn-french-with-free-books': 'french-learning-books',
+  'learn-german-through-reading-guide': 'german-learning-books',
+  'spanish-reading-plan-for-beginners': 'spanish-learning-books',
+  'english-beginners-first-30-days': 'english-learning-books',
+  'essential-english-grammar-self-study': 'grammar-books',
+  'where-to-find-free-books-legally': 'literature-books',
+  'what-is-public-domain-and-why-it-matters': 'literature-books'
+};
+
+function getArticleCategorySlug(article) {
+  if (!article) return '';
+  if (ARTICLE_CATEGORY_LINKS[article.id]) return ARTICLE_CATEGORY_LINKS[article.id];
+  if (article.cover && ARTICLE_COVER_CATEGORIES[article.cover]) return ARTICLE_COVER_CATEGORIES[article.cover];
+  return '';
+}
+
+function getArticlesList() {
+  return typeof ARTICLES !== 'undefined' && Array.isArray(ARTICLES) ? ARTICLES : [];
+}
+
+function getRelatedBooksForArticle(article, limit) {
+  const cat = getArticleCategorySlug(article);
+  if (!cat) return [];
+  return BOOKS.filter(b => b.categories.includes(cat)).slice(0, limit || 4);
+}
+
+function getRelatedArticlesForCategory(slug, limit) {
+  const list = getArticlesList();
+  if (!list.length) return [];
+  const matched = list.filter(a => getArticleCategorySlug(a) === slug);
+  return (matched.length ? matched : list).slice(0, limit || 4);
+}
+
+function getRelatedArticlesForBook(book, limit) {
+  const list = getArticlesList();
+  if (!list.length || !book) return [];
+  const cats = book.categories || [];
+  const matched = list.filter(a => {
+    const slug = getArticleCategorySlug(a);
+    return slug && cats.includes(slug);
+  });
+  return (matched.length ? matched : list).slice(0, limit || 3);
+}
+
+function isJunkSearchQuery(q) {
+  if (!q) return false;
+  const lower = q.toLowerCase();
+  return (
+    lower.includes('search_term_string') ||
+    lower.includes('search_form_string') ||
+    lower.includes('{') ||
+    lower.includes('}')
+  );
+}
+
+function applySearchQuerySeo(basePath, query) {
+  const canonical = SITE_ORIGIN + basePath;
+  if (query) {
+    setMeta('meta[name="robots"]', 'content', 'noindex, follow');
+  }
+  setCanonical(canonical);
+  if (query && isJunkSearchQuery(query)) {
+    document.title = 'Search | LifeWithBooks';
+  }
+}
 function escapeHtml(s) {
   return String(s)
     .replace(/&/g, '&amp;')
@@ -352,7 +438,9 @@ function initHome() {
 /* ---------- All books page ---------- */
 function initAllBooks() {
   if (document.body.dataset.page !== 'all-books') return;
-  const q = getSearchQuery().toLowerCase();
+  const rawQ = getSearchQuery();
+  applySearchQuerySeo('/all-books.html', rawQ);
+  const q = rawQ.toLowerCase();
   let list = BOOKS.slice();
   if (q) {
     list = list.filter(b => b.title.toLowerCase().includes(q) || (b.excerpt || '').toLowerCase().includes(q));
@@ -452,7 +540,9 @@ function initCategory() {
   });
 
   let items = BOOKS.filter(b => b.categories.includes(slug));
-  const q = getSearchQuery().toLowerCase();
+  const rawQ = getSearchQuery();
+  applySearchQuerySeo('/category.html?cat=' + encodeURIComponent(slug), rawQ);
+  const q = rawQ.toLowerCase();
   if (q) {
     items = items.filter(b =>
       b.title.toLowerCase().includes(q) ||
@@ -511,6 +601,22 @@ function initCategory() {
       "url": "https://www.lifewithbooks.co/book.html?id=" + encodeURIComponent(b.id)
     }))
   });
+
+  const relatedArticles = getRelatedArticlesForCategory(slug, 4);
+  const articlesHost = $('#category-articles');
+  if (articlesHost && relatedArticles.length) {
+    const links = relatedArticles.map(a =>
+      `<li><a href="article.html?id=${encodeURIComponent(a.id)}"><span>${escapeHtml(a.title)}</span><span class="arrow">Read More &raquo;</span></a></li>`
+    ).join('');
+    articlesHost.innerHTML = `
+      <section class="section" style="padding-top:0;">
+        <div class="related-posts" style="max-width:760px;margin:0 auto;">
+          <h3>Related Reading Guides</h3>
+          <ul>${links}</ul>
+          <p style="margin-top:16px;"><a href="articles.html">View all articles &raquo;</a></p>
+        </div>
+      </section>`;
+  }
 }
 
 /* ---------- Book detail page ---------- */
@@ -611,6 +717,21 @@ function initBookDetail() {
     </a></li>
   `).join('');
 
+  const relatedArticles = getRelatedArticlesForBook(book, 3);
+  const guideArticle = getArticlesList().find(a => a.id === 'free-' + book.id + '-pdf-guide');
+  const guideLink = guideArticle
+    ? `<p style="margin:20px 0 0;"><a href="article.html?id=${encodeURIComponent(guideArticle.id)}"><strong>Free ${escapeHtml(book.title)} PDF Guide</strong> — reading tips and download help &raquo;</a></p>`
+    : '';
+  const guidesHTML = relatedArticles.length || guideArticle
+    ? `<div class="related-posts" style="margin-top:36px;">
+        <h3>Related Reading Guides</h3>
+        ${guideLink}
+        ${relatedArticles.length ? `<ul>${relatedArticles.map(a =>
+          `<li><a href="article.html?id=${encodeURIComponent(a.id)}"><span>${escapeHtml(a.title)}</span><span class="arrow">Read More &raquo;</span></a></li>`
+        ).join('')}</ul>` : ''}
+      </div>`
+    : '';
+
   wrap.innerHTML = `
     <div class="breadcrumb">
       <a href="index.html">Home</a> &raquo;
@@ -647,6 +768,7 @@ function initBookDetail() {
       <h3>Related Books</h3>
       <ul>${relatedHTML}</ul>
     </div>
+    ${guidesHTML}
   `;
 }
 
@@ -679,8 +801,8 @@ function initArticles() {
     el.innerHTML = sorted.map(articleCardHTML).join('');
   }
   setShareMeta({
-    title: 'Articles & Reading Guides | LifeWithBooks',
-    description: 'Original reading guides and articles from the LifeWithBooks editorial team.',
+    title: 'Free Reading Guides & Book Articles | LifeWithBooks',
+    description: '41+ free reading guides and PDF book articles: vocabulary tips, English learning, classic reviews and legal download guides from LifeWithBooks.',
     url: SITE_ORIGIN + '/articles.html',
     image: SITE_ORIGIN + '/og-image.png'
   });
@@ -724,6 +846,19 @@ function initArticleDetail() {
     `<li><a href="article.html?id=${encodeURIComponent(x.id)}"><span>${escapeHtml(x.title)}</span><span class="arrow">Read More &raquo;</span></a></li>`
   ).join('');
 
+  const catSlug = getArticleCategorySlug(a);
+  const catObj = catSlug ? CATEGORIES.find(c => c.slug === catSlug) : null;
+  const relatedBooks = getRelatedBooksForArticle(a, 4);
+  const booksHTML = relatedBooks.length
+    ? `<div class="related-posts" style="margin-top:36px;">
+        <h3>Free Books in This Topic</h3>
+        <ul>${relatedBooks.map(b =>
+          `<li><a href="book.html?id=${encodeURIComponent(b.id)}"><span>${escapeHtml(b.title)}</span><span class="arrow">View Book &raquo;</span></a></li>`
+        ).join('')}</ul>
+        ${catObj ? `<p style="margin-top:16px;"><a href="category.html?cat=${encodeURIComponent(catSlug)}">Browse all ${escapeHtml(catObj.label.toLowerCase())} &raquo;</a></p>` : ''}
+      </div>`
+    : '';
+
   wrap.innerHTML = `
     <div class="breadcrumb">
       <a href="index.html">Home</a> &raquo;
@@ -734,9 +869,11 @@ function initArticleDetail() {
     <div class="meta"><span class="tag">${escapeHtml(dateStr)}</span><span class="tag">${escapeHtml(a.author || 'LifeWithBooks')}</span></div>
     <article class="article">${body}</article>
     <div class="download-block">
-      <p style="margin-bottom:14px;">Enjoyed this guide? Explore our free library of public-domain classics and original guides.</p>
-      <a class="btn" href="all-books.html">Browse Free Books</a>
+      <p style="margin-bottom:14px;">Enjoyed this guide? Explore our free library of public-domain classics, vocabulary ebooks and language learning books.</p>
+      <a class="btn" href="all-books.html">Browse Free PDF Books</a>
+      ${catObj ? `<a class="btn outline" style="margin-left:10px;" href="category.html?cat=${encodeURIComponent(catSlug)}">${escapeHtml(catObj.label)}</a>` : ''}
     </div>
+    ${booksHTML}
     <div class="related-posts"><h3>More Articles</h3><ul>${relatedHTML}</ul></div>
   `;
 

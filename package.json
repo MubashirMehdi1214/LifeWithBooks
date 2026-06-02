@@ -9,7 +9,11 @@
     "build-health-pdfs": "node scripts/build-health-pdfs.js",
     "classify": "node scripts/classify-books.js",
     "og": "node scripts/og-rasterize.js",
-    "sitemap": "node scripts/generate-sitemap.js"
+    "sitemap": "node scripts/generate-sitemap.js",
+    "feed": "node scripts/generate-feed.js",
+    "book-guides": "node scripts/generate-book-guide-articles.js",
+    "indexnow": "node scripts/push-indexnow.js",
+    "seo": "npm run sitemap && npm run feed"
   },
   "repository": {
     "type": "git",
