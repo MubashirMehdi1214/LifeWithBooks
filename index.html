@@ -23,7 +23,7 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Free PDF Books &amp; Ebook Library | LifeWithBooks">
-  <meta property="og:description" content="149+ free PDF books and ebooks — classics, language learning, vocabulary ebooks and kids' books. Legal downloads at LifeWithBooks.">
+  <meta property="og:description" content="237+ free PDF books and ebooks — IELTS, CSS PMS, classics, kids learning, programming and more. Legal free downloads at LifeWithBooks.">
   <meta property="og:url" content="https://www.lifewithbooks.co/">
   <meta property="og:site_name" content="LifeWithBooks">
   <meta property="og:locale" content="en_US">
@@ -183,7 +183,7 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
           <input type="search" placeholder="Search books, authors, topics..." aria-label="Search the library">
           <button type="submit">Search</button>
         </form>
-        <div class="hero-home__pills">
+        <div class="hero-home__pills popular-pills">
           <span class="hero-home__pills-label">Popular:</span>
           <a href="category/ielts-preparation.html">IELTS</a>
           <a href="category/css-pms-books.html">CSS PMS</a>
@@ -197,7 +197,13 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
           <a class="btn btn-outline-light" href="articles.html">View Reading Guides</a>
         </div>
       </div>
-      <div class="hero-home__visual" id="hero-book-stack" aria-hidden="true"></div>
+      <div class="hero-home__visual" aria-hidden="true">
+        <div class="book-stack">
+          <div class="book-stack__book book-stack__book--3"></div>
+          <div class="book-stack__book book-stack__book--2"></div>
+          <div class="book-stack__book book-stack__book--1"></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -205,22 +211,22 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
     <div class="stats-bar__inner">
       <div class="stat-item">
         <span class="stat-item__icon" aria-hidden="true">&#128218;</span>
-        <span class="stat-item__num" data-target="200" data-suffix="+">0</span>
+        <span class="stat-item__num" data-target="200" data-suffix="+" data-final="200+">200+</span>
         <span class="stat-item__label">Free Books</span>
       </div>
       <div class="stat-item">
         <span class="stat-item__icon" aria-hidden="true">&#128214;</span>
-        <span class="stat-item__num" data-target="116" data-suffix="+">0</span>
+        <span class="stat-item__num" data-target="116" data-suffix="+" data-final="116+">116+</span>
         <span class="stat-item__label">Reading Guides</span>
       </div>
       <div class="stat-item">
         <span class="stat-item__icon" aria-hidden="true">&#9989;</span>
-        <span class="stat-item__num" data-target="100" data-suffix="%">0</span>
+        <span class="stat-item__num" data-target="100" data-suffix="%" data-final="100%">100%</span>
         <span class="stat-item__label">Free Forever</span>
       </div>
       <div class="stat-item">
         <span class="stat-item__icon" aria-hidden="true">&#128275;</span>
-        <span class="stat-item__num" data-target="0" data-suffix="">0</span>
+        <span class="stat-item__num stat-item__num--text" data-final="Zero">Zero</span>
         <span class="stat-item__label">Signup Required</span>
       </div>
     </div>
@@ -231,7 +237,64 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
       <h2>Browse by Category</h2>
       <p>Find exactly what you need</p>
     </div>
-    <div class="category-grid" id="home-category-grid"></div>
+    <div class="category-grid">
+      <a href="category/ielts-preparation.html" class="category-grid__link">
+        <div class="category-card blue">
+          <span class="icon" aria-hidden="true">&#127891;</span>
+          <h3>IELTS Preparation</h3>
+          <p>5 books</p>
+        </div>
+      </a>
+      <a href="category/css-pms-books.html" class="category-grid__link">
+        <div class="category-card purple">
+          <span class="icon" aria-hidden="true">&#128221;</span>
+          <h3>CSS PMS Exam</h3>
+          <p>5 books</p>
+        </div>
+      </a>
+      <a href="category/literature-books.html" class="category-grid__link">
+        <div class="category-card red">
+          <span class="icon" aria-hidden="true">&#128213;</span>
+          <h3>Classic Novels</h3>
+          <p>15 books</p>
+        </div>
+      </a>
+      <a href="category/kids-learning-books.html" class="category-grid__link">
+        <div class="category-card yellow">
+          <span class="icon" aria-hidden="true">&#129490;</span>
+          <h3>Kids Learning</h3>
+          <p>5 books</p>
+        </div>
+      </a>
+      <a href="category/matric-fsc-notes.html" class="category-grid__link">
+        <div class="category-card green">
+          <span class="icon" aria-hidden="true">&#128300;</span>
+          <h3>Matric FSc Notes</h3>
+          <p>5 books</p>
+        </div>
+      </a>
+      <a href="category/islamic-books.html" class="category-grid__link">
+        <div class="category-card teal">
+          <span class="icon" aria-hidden="true">&#9774;&#65039;</span>
+          <h3>Islamic Books</h3>
+          <p>5 books</p>
+        </div>
+      </a>
+      <a href="category/programming-books.html" class="category-grid__link">
+        <div class="category-card dark">
+          <span class="icon" aria-hidden="true">&#128187;</span>
+          <h3>Programming</h3>
+          <p>5 books</p>
+        </div>
+      </a>
+      <a href="category/self-development-books.html" class="category-grid__link">
+        <div class="category-card orange">
+          <span class="icon" aria-hidden="true">&#127775;</span>
+          <h3>Self Development</h3>
+          <p>5 books</p>
+        </div>
+      </a>
+    </div>
   </section>
 
   <section class="home-section home-trending">
@@ -239,7 +302,83 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
       <h2>Most Downloaded Books</h2>
       <p>Start reading today</p>
     </div>
-    <div class="trending-grid" id="home-trending-grid"></div>
+    <div class="trending-grid">
+      <article class="trending-card trending-card--red">
+        <div class="trending-card__cover">
+          <span class="trending-card__badge">Free</span>
+          <picture>
+            <source srcset="covers-img/pride-and-prejudice.webp" type="image/webp">
+            <img src="covers-img/pride-and-prejudice.jpg" alt="Pride and Prejudice cover" width="120" height="180" loading="lazy">
+          </picture>
+        </div>
+        <div class="trending-card__body">
+          <h3><a href="book/pride-and-prejudice.html">Pride and Prejudice</a></h3>
+          <p class="trending-card__author">Jane Austen</p>
+          <span class="trending-card__cat cat-pill-red">Classic Novels</span>
+          <a class="trending-card__link" href="book/pride-and-prejudice.html">Download Free &rarr;</a>
+        </div>
+      </article>
+      <article class="trending-card trending-card--red">
+        <div class="trending-card__cover">
+          <span class="trending-card__badge">Free</span>
+          <div class="cover-fallback cover-novel">SH</div>
+        </div>
+        <div class="trending-card__body">
+          <h3><a href="book/the-adventures-of-sherlock-holmes.html">Sherlock Holmes Collection</a></h3>
+          <p class="trending-card__author">Arthur Conan Doyle</p>
+          <span class="trending-card__cat cat-pill-red">Classic Novels</span>
+          <a class="trending-card__link" href="book/the-adventures-of-sherlock-holmes.html">Download Free &rarr;</a>
+        </div>
+      </article>
+      <article class="trending-card trending-card--blue">
+        <div class="trending-card__cover">
+          <span class="trending-card__badge">Free</span>
+          <div class="cover-fallback cover-english">IELTS</div>
+        </div>
+        <div class="trending-card__body">
+          <h3><a href="book/ielts-academic-practice-tests-guide.html">IELTS Practice Guide</a></h3>
+          <p class="trending-card__author">LifeWithBooks Team</p>
+          <span class="trending-card__cat cat-pill-blue">IELTS Prep</span>
+          <a class="trending-card__link" href="book/ielts-academic-practice-tests-guide.html">Download Free &rarr;</a>
+        </div>
+      </article>
+      <article class="trending-card trending-card--purple">
+        <div class="trending-card__cover">
+          <span class="trending-card__badge">Free</span>
+          <div class="cover-fallback cover-english">CSS</div>
+        </div>
+        <div class="trending-card__body">
+          <h3><a href="book/css-english-essay-writing-guide.html">CSS English Essay Guide</a></h3>
+          <p class="trending-card__author">LifeWithBooks Team</p>
+          <span class="trending-card__cat cat-pill-purple">CSS PMS</span>
+          <a class="trending-card__link" href="book/css-english-essay-writing-guide.html">Download Free &rarr;</a>
+        </div>
+      </article>
+      <article class="trending-card trending-card--yellow">
+        <div class="trending-card__cover">
+          <span class="trending-card__badge">Free</span>
+          <div class="cover-fallback cover-vocabulary">AF</div>
+        </div>
+        <div class="trending-card__body">
+          <h3><a href="book/aesops-fables.html">Aesop&rsquo;s Fables Complete</a></h3>
+          <p class="trending-card__author">Aesop</p>
+          <span class="trending-card__cat cat-pill-yellow">Kids Learning</span>
+          <a class="trending-card__link" href="book/aesops-fables.html">Download Free &rarr;</a>
+        </div>
+      </article>
+      <article class="trending-card trending-card--dark">
+        <div class="trending-card__cover">
+          <span class="trending-card__badge">Free</span>
+          <div class="cover-fallback cover-business">Py</div>
+        </div>
+        <div class="trending-card__body">
+          <h3><a href="book/python-programming-beginner-guide.html">Python Beginner Guide</a></h3>
+          <p class="trending-card__author">LifeWithBooks Team</p>
+          <span class="trending-card__cat cat-pill-dark">Programming</span>
+          <a class="trending-card__link" href="book/python-programming-beginner-guide.html">Download Free &rarr;</a>
+        </div>
+      </article>
+    </div>
     <div class="home-section__action">
       <a class="btn btn-primary" href="all-books.html">View All 200+ Books &rarr;</a>
     </div>

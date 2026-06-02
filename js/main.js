@@ -685,52 +685,82 @@ function initStatsCounter() {
   const bar = $('#stats-bar');
   if (!bar) return;
   const nums = bar.querySelectorAll('.stat-item__num');
-  if (typeof BOOKS !== 'undefined') {
-    const bookStat = nums[0];
-    if (bookStat) {
-      const total = BOOKS.length;
-      bookStat.dataset.target = total >= 200 ? '200' : String(total);
-      bookStat.dataset.suffix = total >= 200 ? '+' : '';
-    }
+  let animated = false;
+  let completed = false;
+
+  function setFinalValues() {
+    nums.forEach(function(el) {
+      if (el.dataset.final) {
+        el.textContent = el.dataset.final;
+      } else {
+        const target = parseInt(el.dataset.target, 10) || 0;
+        const suffix = el.dataset.suffix || '';
+        el.textContent = target + suffix;
+      }
+    });
+    completed = true;
   }
-  if (typeof ARTICLES !== 'undefined') {
-    const artStat = nums[1];
-    if (artStat) {
-      const total = ARTICLES.length;
-      artStat.dataset.target = total >= 116 ? '116' : String(total);
-      artStat.dataset.suffix = total >= 116 ? '+' : '';
+
+  function animateValue(el, onDone) {
+    if (el.classList.contains('stat-item__num--text')) {
+      el.textContent = el.dataset.final || 'Zero';
+      if (onDone) onDone();
+      return;
     }
-  }
-  let started = false;
-  function animateValue(el) {
     const target = parseInt(el.dataset.target, 10) || 0;
     const suffix = el.dataset.suffix || '';
     const duration = 1200;
     const start = performance.now();
+    el.textContent = suffix === '%' ? '0%' : '0';
     function tick(now) {
       const progress = Math.min((now - start) / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3);
-      el.textContent = Math.round(target * eased) + suffix;
-      if (progress < 1) requestAnimationFrame(tick);
+      const current = Math.round(target * eased);
+      el.textContent = current + suffix;
+      if (progress < 1) {
+        requestAnimationFrame(tick);
+      } else if (onDone) {
+        onDone();
+      }
     }
     requestAnimationFrame(tick);
   }
-  function run() {
-    if (started) return;
-    started = true;
-    nums.forEach(animateValue);
+
+  function runAnimation() {
+    if (animated) return;
+    animated = true;
+    let done = 0;
+    const total = nums.length;
+    nums.forEach(function(el) {
+      if (el.classList.contains('stat-item__num--text')) {
+        el.textContent = el.dataset.final || 'Zero';
+        done++;
+        if (done >= total) completed = true;
+        return;
+      }
+      el.textContent = el.dataset.suffix === '%' ? '0%' : '0';
+      animateValue(el, function() {
+        done++;
+        if (done >= total) completed = true;
+      });
+    });
   }
+
   if ('IntersectionObserver' in window) {
     const obs = new IntersectionObserver(function(entries) {
       if (entries.some(function(e) { return e.isIntersecting; })) {
-        run();
+        runAnimation();
         obs.disconnect();
       }
-    }, { threshold: 0.3 });
+    }, { threshold: 0.1 });
     obs.observe(bar);
-  } else {
-    run();
   }
+
+  runAnimation();
+
+  setTimeout(function() {
+    if (!completed) setFinalValues();
+  }, 3000);
 }
 
 function initNewsletterForm() {
@@ -757,19 +787,6 @@ function initNewsletterForm() {
 function initHome() {
   if (document.body.dataset.page !== 'home') return;
 
-  renderHeroBookStack();
-
-  const catGrid = $('#home-category-grid');
-  if (catGrid) {
-    catGrid.innerHTML = HOME_CATEGORY_META.map(homeCategoryCardHTML).join('');
-  }
-
-  const trendingGrid = $('#home-trending-grid');
-  if (trendingGrid) {
-    const trending = TRENDING_BOOK_IDS.map(findBookById).filter(Boolean);
-    trendingGrid.innerHTML = trending.map(trendingBookCardHTML).join('');
-  }
-
   const articlesGrid = $('#home-articles-grid');
   if (articlesGrid && typeof ARTICLES !== 'undefined') {
     const featured = FEATURED_ARTICLE_IDS.map(function(id) {
@@ -779,7 +796,7 @@ function initHome() {
   }
 
   const recentGrid = $('#home-recent-grid');
-  if (recentGrid) {
+  if (recentGrid && typeof BOOKS !== 'undefined') {
     const recent = BOOKS.slice(-4).reverse();
     recentGrid.innerHTML = recent.map(recentBookCardHTML).join('');
   }
