@@ -34,13 +34,31 @@ const BATCH4_IDS = [
   'the-happy-prince-and-other-tales', 'the-great-gatsby', 'the-jungle', 'common-sense'
 ];
 
+const BATCH5_IDS = [
+  'les-miserables', 'don-quixote', 'war-and-peace', 'anne-of-avonlea', 'anne-of-the-island',
+  'the-sign-of-the-four', 'the-valley-of-fear', 'the-return-of-sherlock-holmes',
+  'the-memoirs-of-sherlock-holmes', 'his-last-bow', 'the-hunchback-of-notre-dame',
+  'anna-karenina', 'the-brothers-karamazov', 'the-odyssey', 'paradise-lost',
+  'the-last-of-the-mohicans', 'kidnapped', 'the-prince-and-the-pauper', 'heidi',
+  'the-adventures-of-pinocchio', 'the-idiot', 'the-mayor-of-casterbridge',
+  'the-house-of-the-seven-gables', 'the-turn-of-the-screw', 'the-awakening'
+];
+
 const batchArg = process.argv.find(a => a.startsWith('--batch='));
 const batch = batchArg ? batchArg.split('=')[1] : '3';
-const GUIDE_IDS = batch === '4' ? BATCH4_IDS : BATCH3_IDS;
-const OUT_VAR = batch === '4' ? 'ARTICLES_MORE_4' : 'ARTICLES_MORE_3';
-const OUT_FILE = batch === '4' ? 'articles-more-4.js' : 'articles-more-3.js';
+const GUIDE_IDS = batch === '5' ? BATCH5_IDS : batch === '4' ? BATCH4_IDS : BATCH3_IDS;
+const OUT_VAR = batch === '5' ? 'ARTICLES_MORE_5' : batch === '4' ? 'ARTICLES_MORE_4' : 'ARTICLES_MORE_3';
+const OUT_FILE = batch === '5' ? 'articles-more-5.js' : batch === '4' ? 'articles-more-4.js' : 'articles-more-3.js';
 
-const DATES = batch === '4'
+const DATES = batch === '5'
+  ? [
+    '2026-07-19', '2026-07-20', '2026-07-21', '2026-07-22', '2026-07-23',
+    '2026-07-24', '2026-07-25', '2026-07-26', '2026-07-27', '2026-07-28',
+    '2026-07-29', '2026-07-30', '2026-07-31', '2026-08-01', '2026-08-02',
+    '2026-08-03', '2026-08-04', '2026-08-05', '2026-08-06', '2026-08-07',
+    '2026-08-08', '2026-08-09', '2026-08-10', '2026-08-11', '2026-08-12'
+  ]
+  : batch === '4'
   ? [
     '2026-06-19', '2026-06-20', '2026-06-21', '2026-06-22', '2026-06-23',
     '2026-06-24', '2026-06-25', '2026-06-26', '2026-06-27', '2026-06-28',
@@ -205,7 +223,32 @@ const EXTRA = {
   'the-happy-prince-and-other-tales': { author: 'Oscar Wilde', year: '1888', hook: 'bittersweet fairy tales for children and adults', readTime: '1–2 hours', audience: 'families and readers who love lyrical, moral stories', tips: 'Keep tissues nearby — Wilde\'s tenderness cuts deep.' },
   'the-great-gatsby': { author: 'F. Scott Fitzgerald', year: '1925', hook: 'the Jazz Age tragedy of ambition and illusion', readTime: '4–6 hours', audience: 'American literature students and fans of lyrical, tragic romance', tips: 'Track motifs of green light, eyes and water — Fitzgerald layers symbols without hiding the plot.' },
   'the-jungle': { author: 'Upton Sinclair', year: '1906', hook: 'muckraking fiction that exposed industrial exploitation', readTime: '10–12 hours', audience: 'history readers, social justice students and gritty realism fans', tips: 'The early packinghouse chapters are intense — take breaks, but do not skip them.' },
-  'common-sense': { author: 'Thomas Paine', year: '1776', hook: 'the pamphlet that helped shape American independence', readTime: '1–2 hours', audience: 'history buffs, civics students and concise nonfiction lovers', tips: 'Read in one sitting with a highlighter — Paine writes to persuade quickly.' }
+  'common-sense': { author: 'Thomas Paine', year: '1776', hook: 'the pamphlet that helped shape American independence', readTime: '1–2 hours', audience: 'history buffs, civics students and concise nonfiction lovers', tips: 'Read in one sitting with a highlighter — Paine writes to persuade quickly.' },
+  'les-miserables': { author: 'Victor Hugo', year: '1862', hook: 'one of the greatest novels of redemption ever written', readTime: '30–40 hours', audience: 'serious literary readers ready for an epic', tips: 'Treat it like a miniseries — read one book (section) per week and track the main families on a note card.' },
+  'don-quixote': { author: 'Miguel de Cervantes', year: '1605', hook: 'the novel that invented modern fiction', readTime: '25–35 hours', audience: 'classic literature fans and lovers of comedy with depth', tips: 'Alternate between Quixote\'s madness and Sancho\'s plain speech — the contrast is the comedy.' },
+  'war-and-peace': { author: 'Leo Tolstoy', year: '1869', hook: 'the supreme epic of private life under history', readTime: '35–45 hours', audience: 'ambitious readers and students of Russian literature', tips: 'Do not skip the essay chapters entirely — skim first, reread later once you know the characters.' },
+  'anne-of-avonlea': { author: 'L.M. Montgomery', year: '1909', hook: 'Anne\'s warm, funny path into teaching and adulthood', readTime: '6–8 hours', audience: 'fans of Anne of Green Gables and gentle coming-of-age fiction', tips: 'Read after Green Gables for the full emotional payoff.' },
+  'anne-of-the-island': { author: 'L.M. Montgomery', year: '1915', hook: 'Anne at college and the long question of who to marry', readTime: '7–9 hours', audience: 'Anne series readers and romance fans', tips: 'Keep tissues nearby for the letters and reunions — Montgomery earns every tear.' },
+  'the-sign-of-the-four': { author: 'Arthur Conan Doyle', year: '1890', hook: 'Holmes at his most exotic and energetic', readTime: '4–5 hours', audience: 'mystery lovers and Sherlock Holmes completists', tips: 'Read after A Study in Scarlet to meet Watson and Holmes in order.' },
+  'the-valley-of-fear': { author: 'Arthur Conan Doyle', year: '1915', hook: 'Holmes versus a secret society across two continents', readTime: '5–6 hours', audience: 'detective fiction fans who enjoy longer plots', tips: 'The American backstory is a novella inside the novel — read it as a separate act.' },
+  'the-return-of-sherlock-holmes': { author: 'Arthur Conan Doyle', year: '1905', hook: 'Holmes returns with thirteen new cases', readTime: '6–8 hours', audience: 'Sherlock fans after The Memoirs', tips: 'Start with The Empty House — it explains the gap after Reichenbach.' },
+  'the-memoirs-of-sherlock-holmes': { author: 'Arthur Conan Doyle', year: '1894', hook: 'eleven cases culminating at Reichenbach Falls', readTime: '6–8 hours', audience: 'essential reading for Holmes canon fans', tips: 'Save The Final Problem for when you can read the next collection soon after.' },
+  'his-last-bow': { author: 'Arthur Conan Doyle', year: '1917', hook: 'Holmes in wartime espionage and late-career cases', readTime: '4–6 hours', audience: 'readers who have finished the main Holmes collections', tips: 'The title story is best read knowing the characters\' full history.' },
+  'the-hunchback-of-notre-dame': { author: 'Victor Hugo', year: '1831', hook: 'Gothic Paris and the bell-ringer of Notre-Dame', readTime: '12–16 hours', audience: 'Gothic romance readers and Hugo fans after Les Miserables', tips: 'Some architecture chapters are dense — skim on first read if needed.' },
+  'anna-karenina': { author: 'Leo Tolstoy', year: '1877', hook: 'passion, society and the search for an honest life', readTime: '25–30 hours', audience: 'literary fiction readers ready for depth', tips: 'Track both Anna and Levin plotlines — the novel needs both threads.' },
+  'the-brothers-karamazov': { author: 'Fyodor Dostoevsky', year: '1880', hook: 'faith, doubt and murder in a Russian family', readTime: '25–30 hours', audience: 'serious readers of philosophy and drama', tips: 'The Grand Inquisitor chapter is famous — read slowly; it is the book\'s philosophical core.' },
+  'the-odyssey': { author: 'Homer', year: 'c. 8th century BC', hook: 'the original epic journey home', readTime: '12–15 hours', audience: 'mythology fans, students and adventure readers', tips: 'Keep a list of gods and hosts Odysseus meets — repetition is part of the oral style.' },
+  'paradise-lost': { author: 'John Milton', year: '1667', hook: 'the great English epic of the Fall', readTime: '10–14 hours', audience: 'poetry lovers and theology-curious readers', tips: 'Read aloud for the rhythm — Milton\'s blank verse opens up when spoken.' },
+  'the-last-of-the-mohicans': { author: 'James Fenimore Cooper', year: '1826', hook: 'the classic American frontier adventure', readTime: '10–12 hours', audience: 'historical adventure fans', tips: 'Cooper\'s prose is formal — persist through the first chapters.' },
+  kidnapped: { author: 'Robert Louis Stevenson', year: '1886', hook: 'Scottish adventure after Treasure Island', readTime: '6–8 hours', audience: 'adventure readers and Stevenson fans', tips: 'The friendship between David and Alan Breck is the heart — watch how trust builds.' },
+  'the-prince-and-the-pauper': { author: 'Mark Twain', year: '1881', hook: 'Twain\'s Tudor swap of prince and beggar boy', readTime: '5–7 hours', audience: 'young readers and Twain fans', tips: 'Great read-aloud for families — short chapters and clear moral stakes.' },
+  heidi: { author: 'Johanna Spyri', year: '1881', hook: 'Alpine warmth and healing in a children\'s classic', readTime: '5–7 hours', audience: 'families and readers who love wholesome fiction', tips: 'Perfect bedtime reading — gentle chapters and uplifting tone.' },
+  'the-adventures-of-pinocchio': { author: 'Carlo Collodi', year: '1883', hook: 'the original puppet who wants to be real', readTime: '4–6 hours', audience: 'children and adults who enjoy fairy tales with bite', tips: 'Do not expect the Disney version — Collodi is sharper and funnier.' },
+  'the-idiot': { author: 'Fyodor Dostoevsky', year: '1869', hook: 'innocence tested in corrupt society', readTime: '18–22 hours', audience: 'Dostoevsky readers after Crime and Punishment', tips: 'Prince Myshkin is not foolish — read for how others misread his kindness.' },
+  'the-mayor-of-casterbridge': { author: 'Thomas Hardy', year: '1886', hook: 'Hardy\'s tragedy of pride and past sins', readTime: '10–12 hours', audience: 'Hardy fans and literary tragedy readers', tips: 'Note how Henchard\'s character is both sympathetic and self-destructive.' },
+  'the-house-of-the-seven-gables': { author: 'Nathaniel Hawthorne', year: '1851', hook: 'American Gothic in a cursed New England house', readTime: '8–10 hours', audience: 'Gothic and American literature readers', tips: 'Pair with The Scarlet Letter — Hawthorne explores guilt from another angle.' },
+  'the-turn-of-the-screw': { author: 'Henry James', year: '1898', hook: 'the perfect ambiguous ghost novella', readTime: '2–3 hours', audience: 'horror fans who prefer psychological dread', tips: 'Decide for yourself what is real — James never confirms the ghosts.' },
+  'the-awakening': { author: 'Kate Chopin', year: '1899', hook: 'a landmark novel of a woman\'s self-discovery', readTime: '4–6 hours', audience: 'American literature students and feminist fiction readers', tips: 'Short enough for one weekend — notice how the sea scenes mirror Edna\'s freedom.' }
 };
 
 function defaultMeta(book) {

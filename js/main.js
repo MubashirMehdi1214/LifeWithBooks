@@ -802,7 +802,7 @@ function initArticles() {
   }
   setShareMeta({
     title: 'Free Reading Guides & Book Articles | LifeWithBooks',
-    description: '71+ free reading guides and PDF book articles: vocabulary tips, English learning, classic reviews and legal download guides from LifeWithBooks.',
+    description: '96+ free reading guides and PDF book articles: vocabulary tips, English learning, classic reviews and legal download guides from LifeWithBooks.',
     url: SITE_ORIGIN + '/articles.html',
     image: SITE_ORIGIN + '/og-image.png'
   });

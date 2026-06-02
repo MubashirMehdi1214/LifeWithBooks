@@ -11,8 +11,8 @@
     "og": "node scripts/og-rasterize.js",
     "sitemap": "node scripts/generate-sitemap.js",
     "feed": "node scripts/generate-feed.js",
-    "book-guides": "node scripts/generate-book-guide-articles.js && node scripts/generate-book-guide-articles.js --batch=4",
-    "expand-batch2": "node scripts/expand-library-batch-2.js",
+    "book-guides": "node scripts/generate-book-guide-articles.js && node scripts/generate-book-guide-articles.js --batch=4 && node scripts/generate-book-guide-articles.js --batch=5",
+    "expand-batch3": "node scripts/expand-library-batch-3.js",
     "indexnow": "node scripts/push-indexnow.js",
     "seo": "npm run sitemap && npm run feed"
   },

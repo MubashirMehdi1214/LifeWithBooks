@@ -3830,6 +3830,559 @@ const BOOKS = [
     "access": "download",
     "license": "public-domain",
     "coverImage": "covers-img/common-sense.jpg"
+  },
+  {
+    "id": "les-miserables",
+    "title": "Les Miserables",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/les-miserables.pdf",
+    "excerpt": "Victor Hugo's sweeping epic of justice, mercy and redemption in nineteenth-century France.",
+    "description": [
+      "## About the Book",
+      "Jean Valjean, hunted for stealing a loaf of bread, rebuilds his life while Paris seethes with revolution. Hugo weaves dozens of unforgettable characters into a story of law, grace and human dignity.",
+      "## Why Read It",
+      "One of the greatest novels ever written — vast, compassionate and impossible to forget once you begin.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain"
+  },
+  {
+    "id": "don-quixote",
+    "title": "Don Quixote",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/don-quixote.pdf",
+    "excerpt": "Cervantes's comic masterpiece of a knight, his squire and impossible dreams.",
+    "description": [
+      "## About the Book",
+      "Alonso Quixano reads too many romances and sets out as Don Quixote to revive chivalry, with Sancho Panza at his side through windmills, inns and hard-won wisdom.",
+      "## Why Read It",
+      "Often called the first modern novel — hilarious, tender and endlessly influential.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain"
+  },
+  {
+    "id": "war-and-peace",
+    "title": "War and Peace",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/war-and-peace.pdf",
+    "excerpt": "Tolstoy's monumental novel of love, fate and Napoleon's invasion of Russia.",
+    "description": [
+      "## About the Book",
+      "Aristocratic families in Moscow and Petersburg live through war, peace and spiritual searching as history crashes into private life.",
+      "## Why Read It",
+      "The supreme achievement of realist fiction — challenging in length, unmatched in scope and humanity.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain"
+  },
+  {
+    "id": "anne-of-avonlea",
+    "title": "Anne of Avonlea",
+    "categories": [
+      "novels",
+      "kids-learning-books",
+      "literature-books"
+    ],
+    "cover": "kids",
+    "pdf": "pdfs/anne-of-avonlea.pdf",
+    "excerpt": "Anne Shirley becomes a teacher and grows up in Montgomery's beloved sequel.",
+    "description": [
+      "## About the Book",
+      "Now a young woman, Anne takes a schoolroom, cares for twins and navigates friendship, romance and the scrapes only she could cause.",
+      "## Why Read It",
+      "Warm, funny and full of heart — a comfort read for every generation.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/anne-of-avonlea.jpg"
+  },
+  {
+    "id": "anne-of-the-island",
+    "title": "Anne of the Island",
+    "categories": [
+      "novels",
+      "kids-learning-books",
+      "literature-books"
+    ],
+    "cover": "kids",
+    "pdf": "pdfs/anne-of-the-island.pdf",
+    "excerpt": "Anne leaves Prince Edward Island for college and new love in the third Anne book.",
+    "description": [
+      "## About the Book",
+      "At Redmond College, Anne discovers independence, ambition and the complicated question of who she will marry.",
+      "## Why Read It",
+      "Perfect for readers who grew up with Anne of Green Gables and want to follow her into adulthood.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/anne-of-the-island.jpg"
+  },
+  {
+    "id": "the-sign-of-the-four",
+    "title": "The Sign of the Four",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "novel",
+    "pdf": "pdfs/the-sign-of-the-four.pdf",
+    "excerpt": "Sherlock Holmes investigates treasure, betrayal and murder in colonial London.",
+    "description": [
+      "## About the Book",
+      "Mary Morstan hires Holmes to explain mysterious pearls and a father's disappearance, leading to a chase involving the Agra treasure.",
+      "## Why Read It",
+      "A tight, exotic Holmes adventure — essential for detective fiction fans.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-sign-of-the-four.jpg"
+  },
+  {
+    "id": "the-valley-of-fear",
+    "title": "The Valley of Fear",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "novel",
+    "pdf": "pdfs/the-valley-of-fear.pdf",
+    "excerpt": "Holmes unravels a coded warning and a secret society in the Pennsylvania coalfields.",
+    "description": [
+      "## About the Book",
+      "A murder in Sussex connects to a hidden past in America, testing Holmes against an enemy as organized as Moriarty's web.",
+      "## Why Read It",
+      "Doyle's final Holmes novel blends mystery with American frontier drama.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-valley-of-fear.jpg"
+  },
+  {
+    "id": "the-return-of-sherlock-holmes",
+    "title": "The Return of Sherlock Holmes",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "novel",
+    "pdf": "pdfs/the-return-of-sherlock-holmes.pdf",
+    "excerpt": "Thirteen stories marking Holmes's return after Reichenbach Falls.",
+    "description": [
+      "## About the Book",
+      "Holmes reappears to solve cases from blackmail to stolen plans, proving his methods still unmatched.",
+      "## Why Read It",
+      "The collection that brought Holmes back — includes classics like \"The Adventure of the Empty House\".",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-return-of-sherlock-holmes.jpg"
+  },
+  {
+    "id": "the-memoirs-of-sherlock-holmes",
+    "title": "The Memoirs of Sherlock Holmes",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "novel",
+    "pdf": "pdfs/the-memoirs-of-sherlock-holmes.pdf",
+    "excerpt": "Eleven Holmes stories including the confrontation with Professor Moriarty.",
+    "description": [
+      "## About the Book",
+      "Watson records some of Holmes's most famous cases, culminating in the struggle at Reichenbach Falls.",
+      "## Why Read It",
+      "Home to \"The Final Problem\" — a cornerstone of detective literature.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-memoirs-of-sherlock-holmes.jpg"
+  },
+  {
+    "id": "his-last-bow",
+    "title": "His Last Bow",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "novel",
+    "pdf": "pdfs/his-last-bow.pdf",
+    "excerpt": "Holmes and Watson's wartime espionage caper and other late cases.",
+    "description": [
+      "## About the Book",
+      "The title story sends an ageing Holmes into secret service on the eve of the First World War.",
+      "## Why Read It",
+      "A mature, atmospheric collection for readers who know the earlier canon.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/his-last-bow.jpg"
+  },
+  {
+    "id": "the-hunchback-of-notre-dame",
+    "title": "The Hunchback of Notre-Dame",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/the-hunchback-of-notre-dame.pdf",
+    "excerpt": "Hugo's Gothic tale of Quasimodo, Esmeralda and medieval Paris.",
+    "description": [
+      "## About the Book",
+      "In the shadow of Notre-Dame, outcasts and rulers collide in a tragedy of beauty, cruelty and fate.",
+      "## Why Read It",
+      "Vivid setting, fierce emotion and one of literature's most famous cathedrals.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-hunchback-of-notre-dame.jpg"
+  },
+  {
+    "id": "anna-karenina",
+    "title": "Anna Karenina",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/anna-karenina.pdf",
+    "excerpt": "Tolstoy's novel of passion, society and the search for an honest life.",
+    "description": [
+      "## About the Book",
+      "Anna's affair with Count Vronsky unfolds alongside Levin's quest for meaning in work, family and faith.",
+      "## Why Read It",
+      "Widely ranked among the greatest novels — psychologically deep and beautifully observed.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/anna-karenina.jpg"
+  },
+  {
+    "id": "the-brothers-karamazov",
+    "title": "The Brothers Karamazov",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/the-brothers-karamazov.pdf",
+    "excerpt": "Dostoevsky's final novel of faith, doubt and a murder that divides a family.",
+    "description": [
+      "## About the Book",
+      "Three brothers — Dmitri, Ivan and Alyosha — orbit their corrupt father until violence forces a reckoning with guilt and God.",
+      "## Why Read It",
+      "A towering work of philosophy and drama that rewards serious readers.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain"
+  },
+  {
+    "id": "the-odyssey",
+    "title": "The Odyssey",
+    "categories": [
+      "novels",
+      "literature-books",
+      "adventure-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/the-odyssey.pdf",
+    "excerpt": "Homer's epic of Odysseus's ten-year journey home after the Trojan War.",
+    "description": [
+      "## About the Book",
+      "Monsters, gods and temptations delay Odysseus while Penelope holds off suitors in Ithaca.",
+      "## Why Read It",
+      "The foundation of Western adventure storytelling — still thrilling after three millennia.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-odyssey.jpg"
+  },
+  {
+    "id": "paradise-lost",
+    "title": "Paradise Lost",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/paradise-lost.pdf",
+    "excerpt": "Milton's epic poem of the Fall, Satan and the loss of Eden.",
+    "description": [
+      "## About the Book",
+      "In blank verse of astonishing power, Milton retells Genesis with cosmic scope and unsettling sympathy for the rebel angel.",
+      "## Why Read It",
+      "Essential English poetry — challenging but endlessly quoted and debated.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/paradise-lost.jpg"
+  },
+  {
+    "id": "the-last-of-the-mohicans",
+    "title": "The Last of the Mohicans",
+    "categories": [
+      "novels",
+      "adventure-books",
+      "literature-books"
+    ],
+    "cover": "adventure",
+    "pdf": "pdfs/the-last-of-the-mohicans.pdf",
+    "excerpt": "Cooper's frontier adventure during the French and Indian War.",
+    "description": [
+      "## About the Book",
+      "Hawkeye and his companions protect Cora and Alice Munro through wilderness battles and ambush.",
+      "## Why Read It",
+      "The classic American frontier romance — action, loyalty and vivid landscape.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-last-of-the-mohicans.jpg"
+  },
+  {
+    "id": "kidnapped",
+    "title": "Kidnapped",
+    "categories": [
+      "novels",
+      "adventure-books",
+      "literature-books"
+    ],
+    "cover": "adventure",
+    "pdf": "pdfs/kidnapped.pdf",
+    "excerpt": "Stevenson's Scottish adventure of shipwreck, betrayal and Jacobite intrigue.",
+    "description": [
+      "## About the Book",
+      "Young David Balfour is kidnapped and thrown into a world of clan feuds, with Alan Breck as his daring ally.",
+      "## Why Read It",
+      "Fast, witty and perfect for readers who loved Treasure Island.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/kidnapped.jpg"
+  },
+  {
+    "id": "the-prince-and-the-pauper",
+    "title": "The Prince and the Pauper",
+    "categories": [
+      "novels",
+      "kids-learning-books",
+      "literature-books"
+    ],
+    "cover": "kids",
+    "pdf": "pdfs/the-prince-and-the-pauper.pdf",
+    "excerpt": "Twain's tale of two boys who swap places in Tudor England.",
+    "description": [
+      "## About the Book",
+      "Prince Edward and Tom Canty trade lives, exposing injustice and kindness in court and slum alike.",
+      "## Why Read It",
+      "A fun, moral adventure that introduces Twain's humour to younger readers.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-prince-and-the-pauper.jpg"
+  },
+  {
+    "id": "heidi",
+    "title": "Heidi",
+    "categories": [
+      "kids-learning-books",
+      "stories-books",
+      "literature-books"
+    ],
+    "cover": "kids",
+    "pdf": "pdfs/heidi.pdf",
+    "excerpt": "Spyri's Alpine story of an orphan girl who heals hearts in the mountains.",
+    "description": [
+      "## About the Book",
+      "Heidi brings joy to her grandfather's hut, then faces loneliness in the city before finding her way home.",
+      "## Why Read It",
+      "Gentle, wholesome and beloved worldwide — ideal family reading.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/heidi.jpg"
+  },
+  {
+    "id": "the-adventures-of-pinocchio",
+    "title": "The Adventures of Pinocchio",
+    "categories": [
+      "kids-learning-books",
+      "stories-books"
+    ],
+    "cover": "kids",
+    "pdf": "pdfs/the-adventures-of-pinocchio.pdf",
+    "excerpt": "Collodi's original puppet who longs to become a real boy.",
+    "description": [
+      "## About the Book",
+      "Pinocchio's nose grows, he escapes a whale and learns hard lessons about truth and responsibility.",
+      "## Why Read It",
+      "Darker and richer than many adaptations — a true fairy-tale classic.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-adventures-of-pinocchio.jpg"
+  },
+  {
+    "id": "the-idiot",
+    "title": "The Idiot",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/the-idiot.pdf",
+    "excerpt": "Dostoevsky's novel of Prince Myshkin, innocence and a destructive love triangle.",
+    "description": [
+      "## About the Book",
+      "Returning from a Swiss clinic, the gentle Prince Myshkin enters Petersburg society and is torn between two women.",
+      "## Why Read It",
+      "A study of goodness under pressure — strange, moving and uniquely Dostoevsky.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-idiot.jpg"
+  },
+  {
+    "id": "the-mayor-of-casterbridge",
+    "title": "The Mayor of Casterbridge",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/the-mayor-of-casterbridge.pdf",
+    "excerpt": "Hardy's tragedy of a man who sells his wife and cannot escape the past.",
+    "description": [
+      "## About the Book",
+      "Michael Henchard rises to become mayor of Casterbridge, but old sins and fierce pride destroy what he builds.",
+      "## Why Read It",
+      "Hardy at his most dramatic — fate, character and rural England in one gripping arc.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-mayor-of-casterbridge.jpg"
+  },
+  {
+    "id": "the-house-of-the-seven-gables",
+    "title": "The House of the Seven Gables",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/the-house-of-the-seven-gables.pdf",
+    "excerpt": "Hawthorne's Gothic romance of a cursed New England family.",
+    "description": [
+      "## About the Book",
+      "Generations of the Pyncheon family are haunted by guilt and a gloomy mansion until love and honesty offer release.",
+      "## Why Read It",
+      "Atmospheric American Gothic with Hawthorne's moral depth.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-house-of-the-seven-gables.jpg"
+  },
+  {
+    "id": "the-turn-of-the-screw",
+    "title": "The Turn of the Screw",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "novel",
+    "pdf": "pdfs/the-turn-of-the-screw.pdf",
+    "excerpt": "James's unsettling novella of a governess, two children and possible ghosts.",
+    "description": [
+      "## About the Book",
+      "A young governess at a remote estate becomes convinced that sinister figures threaten her charges.",
+      "## Why Read It",
+      "Short, chilling and endlessly debated — the perfect literary ghost story.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-turn-of-the-screw.jpg"
+  },
+  {
+    "id": "the-awakening",
+    "title": "The Awakening",
+    "categories": [
+      "novels",
+      "literature-books"
+    ],
+    "cover": "literature",
+    "pdf": "pdfs/the-awakening.pdf",
+    "excerpt": "Chopin's novel of Edna Pontellier and the cost of self-discovery.",
+    "description": [
+      "## About the Book",
+      "In Creole Louisiana, Edna questions marriage, motherhood and the life expected of a respectable woman.",
+      "## Why Read It",
+      "A landmark of early feminist fiction — quiet, bold and still provocative.",
+      "## Free Public-Domain Edition",
+      "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
+    ],
+    "access": "download",
+    "license": "public-domain",
+    "coverImage": "covers-img/the-awakening.jpg"
   }
 ];
 
