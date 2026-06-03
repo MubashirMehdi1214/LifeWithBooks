@@ -1307,10 +1307,10 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
   z-index: 2;
 }
 .book-middle .book-cover {
-  background: linear-gradient(135deg, #880e4f, #c2185b);
+  background: linear-gradient(135deg, #b91c1c, #dc2626);
 }
 .book-middle .book-spine {
-  background: #4a0726;
+  background: #7f1d1d;
 }
 .book-front {
   transform: rotate(2deg);
@@ -1440,6 +1440,107 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
 .category-card.teal { background: linear-gradient(135deg, #0d9488, #0f766e); }
 .category-card.dark { background: linear-gradient(135deg, #1f2937, #111827); }
 .category-card.orange { background: linear-gradient(135deg, #ea580c, #c2410c); }
+.category-card.amber { background: linear-gradient(135deg, #b45309, #92400e); }
+
+.global-readers {
+  background: linear-gradient(180deg, #f8faf9 0%, #fff 100%);
+  padding: 36px 20px;
+  border-bottom: 1px solid #eee;
+}
+.global-readers__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+.global-readers__title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 14px;
+}
+.global-readers__flags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 14px;
+  font-size: 1.75rem;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.global-readers__note {
+  font-size: 14px;
+  color: var(--contrast-3);
+  font-weight: 600;
+}
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.language-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px 16px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #eee;
+}
+.language-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+.language-card--soon {
+  opacity: 0.75;
+  cursor: default;
+  background: #f9fafb;
+}
+.language-card__flag { font-size: 2rem; margin-bottom: 8px; }
+.language-card__name { font-weight: 800; color: var(--text-dark); font-size: 16px; }
+.language-card__count { font-size: 13px; color: var(--contrast-3); margin-top: 4px; font-weight: 600; }
+
+.pakistan-study-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 60px 20px 80px;
+  border-top: 1px solid #eee;
+}
+.pakistan-study-section h2 {
+  text-align: center;
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  margin-bottom: 8px;
+  color: var(--text-dark);
+}
+.pakistan-study-section > p {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 32px;
+  color: var(--contrast-3);
+}
+.pakistan-study-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+}
+.pakistan-study-links a {
+  display: inline-block;
+  padding: 10px 18px;
+  background: var(--base);
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--accent);
+}
+
+.trending-card--orange { border-top-color: #ea580c; }
 
 .trending-grid {
   display: grid;
@@ -1474,13 +1575,20 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
   justify-content: center;
   min-height: 220px;
 }
-.trending-card__cover img {
+.trending-card__cover img,
+.trending-card__cover picture img {
   width: 120px;
   height: auto;
+  max-height: 200px;
   aspect-ratio: 2 / 3;
   object-fit: cover;
   border-radius: 4px 8px 8px 4px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  display: block;
+}
+.trending-card__cover picture {
+  display: block;
+  line-height: 0;
 }
 .trending-cover-branded {
   width: 120px;
@@ -1826,6 +1934,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
   .hero-home__search { flex-direction: column; border-radius: 12px; padding: 12px; }
   .hero-home__search button { width: 100%; }
   .trending-grid { grid-template-columns: 1fr; }
+  .language-grid { grid-template-columns: repeat(2, 1fr); }
   .article-feature-grid { grid-template-columns: 1fr; }
   .recent-scroll {
     display: flex;
@@ -1843,6 +1952,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
 }
 
 @media (max-width: 480px) {
+  .language-grid { grid-template-columns: 1fr; }
   .category-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .category-grid .category-card { padding: 20px 16px; min-height: 140px; }
   .category-grid .category-card .icon { font-size: 2rem; }

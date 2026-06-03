@@ -93,6 +93,21 @@ function coverImgError(img) {
   if (img.dataset.fallback && img.src !== img.dataset.fallback) {
     img.src = img.dataset.fallback;
     img.removeAttribute('data-fallback');
+    img.style.display = '';
+    return;
+  }
+  const pic = img.closest('picture');
+  if (pic) {
+    const jpg = (img.getAttribute('src') || '').replace(/\.webp(\?|$)/i, '.jpg$1');
+    if (jpg && jpg !== img.src) {
+      pic.querySelectorAll('source').forEach(function(s) { s.remove(); });
+      img.src = jpg;
+      img.style.display = '';
+      return;
+    }
+  }
+  if (img.closest('.trending-card__cover, .book-cover-section, #cover-container')) {
+    img.style.display = '';
     return;
   }
   img.style.display = 'none';
@@ -467,13 +482,20 @@ function generateCanvasCover(book) {
 function setupBookCoverFallbacks(img, book) {
   if (!img || img.dataset.coverBound === '1') return;
   img.dataset.coverBound = '1';
-  const primaryUrl = getBookCoverUrl(book);
+  const localCover = book.coverImage && !/^https?:\/\//i.test(book.coverImage)
+    ? resolveAssetPath(book.coverImage)
+    : '';
+  const primaryUrl = localCover || getBookCoverUrl(book);
   let step = 0;
   img.onerror = function() {
     step += 1;
-    if (step === 1) {
-      const m = primaryUrl.replace('-L.jpg', '-M.jpg');
-      if (img.src !== m) {
+    if (step === 1 && localCover && img.src !== localCover) {
+      img.src = localCover;
+      return;
+    }
+    if (step === 1 && /openlibrary\.org/i.test(img.src)) {
+      const m = img.src.replace('-L.jpg', '-M.jpg');
+      if (m !== img.src) {
         img.src = m;
         return;
       }
@@ -525,13 +547,28 @@ function initBookDetailCoverEnhance(book) {
     section.appendChild(container);
     container.appendChild(parent);
   }
+  const existingCanvas = container.querySelector('canvas.book-cover-canvas');
+  if (existingCanvas) existingCanvas.remove();
+  img.style.display = '';
   img.src = normalizeBrokenCoverSrc(img.src);
-  const primary = getBookCoverUrl(book);
-  const isSvg = /\.svg(\?|$)/i.test(img.src);
-  const isBroken = !img.src || img.src.indexOf('../http') !== -1;
-  if (isBroken || isSvg) {
-    img.style.display = '';
-    img.src = primary;
+  const localCover = book.coverImage && !/^https?:\/\//i.test(book.coverImage)
+    ? resolveAssetPath(book.coverImage)
+    : '';
+  const isBroken = !img.src || img.src.indexOf('../http') !== -1 || /\.svg(\?|$)/i.test(img.src);
+  if (localCover) {
+    img.src = localCover;
+    img.onerror = function() {
+      const jpg = localCover.replace(/\.webp(\?|$)/i, '.jpg$1');
+      if (jpg !== localCover && img.src !== jpg) {
+        const pic = img.closest('picture');
+        if (pic) pic.querySelectorAll('source').forEach(function(s) { s.remove(); });
+        img.src = jpg;
+      }
+    };
+    return;
+  }
+  if (isBroken) {
+    img.src = getBookCoverImage(book);
   }
   setupBookCoverFallbacks(img, book);
 }
@@ -772,15 +809,26 @@ function estimateReadTime(article) {
 }
 
 const HOME_CATEGORY_META = [
-  { slug: 'ielts-preparation', label: 'IELTS Preparation', icon: '\uD83C\uDF93', gradient: 'cat-blue' },
-  { slug: 'css-pms-books', label: 'CSS PMS Exam', icon: '\uD83D\uDCDD', gradient: 'cat-purple' },
-  { slug: 'literature-books', label: 'Classic Novels', icon: '\uD83D\uDCD5', gradient: 'cat-red' },
-  { slug: 'kids-learning-books', label: 'Kids Learning', icon: '\uD83E\uDDD2', gradient: 'cat-yellow' },
-  { slug: 'matric-fsc-notes', label: 'Matric FSc Notes', icon: '\uD83D\uDD2C', gradient: 'cat-green' },
-  { slug: 'islamic-books', label: 'Islamic Books', icon: '\u262A\uFE0F', gradient: 'cat-teal' },
-  { slug: 'programming-books', label: 'Programming', icon: '\uD83D\uDCBB', gradient: 'cat-dark' },
-  { slug: 'self-development-books', label: 'Self Development', icon: '\uD83C\uDF1F', gradient: 'cat-orange' }
+  { slug: 'literature-books', slugs: ['literature-books', 'novels'], label: 'Classic Literature', desc: 'Timeless novels everyone should read', icon: '\uD83D\uDCDA', gradient: 'red' },
+  { slug: 'english-learning-books', label: 'English Learning', desc: 'Master English at any level', icon: '\uD83C\uDDEC\uD83C\uDDE7', gradient: 'blue' },
+  { slug: 'self-development-books', label: 'Self Development', desc: 'Grow personally and professionally', icon: '\uD83C\uDF1F', gradient: 'orange' },
+  { slug: 'kids-learning-books', label: 'Kids and Young Readers', desc: 'Fun learning for children', icon: '\uD83C\uDF08', gradient: 'yellow' },
+  { slug: 'french-learning-books', slugs: ['french-learning-books', 'german-learning-books', 'spanish-learning-books', 'deutsch-books'], label: 'Language Learning', desc: 'French, German, Spanish and more', icon: '\uD83D\uDDE3\uFE0F', gradient: 'purple' },
+  { slug: 'programming-books', label: 'Science and Technology', desc: 'Programming, science and tech guides', icon: '\uD83D\uDD2C', gradient: 'dark' },
+  { slug: 'health-books', label: 'Health and Wellness', desc: 'Natural health and wellness guides', icon: '\uD83D\uDCAA', gradient: 'green' },
+  { slug: 'islamic-books', label: 'History and Culture', desc: 'World history and cultural studies', icon: '\uD83C\uDFDB\uFE0F', gradient: 'amber' }
 ];
+
+const HOME_LANGUAGE_META = [
+  { label: 'English', flag: '\uD83C\uDDEC\uD83C\uDDE7', slug: 'english-learning-books', extraSlugs: ['literature-books', 'novels', 'grammar-books', 'vocabulary-books'] },
+  { label: 'French', flag: '\uD83C\uDDEB\uD83C\uDDF7', slug: 'french-learning-books' },
+  { label: 'German', flag: '\uD83C\uDDE9\uD83C\uDDEA', slug: 'german-learning-books' },
+  { label: 'Spanish', flag: '\uD83C\uDDEA\uD83C\uDDF8', slug: 'spanish-learning-books' },
+  { label: 'Arabic', flag: '\uD83C\uDDF8\uD83C\uDDE6', slug: 'islamic-books', bookIds: ['arabic-for-beginners-guide'] },
+  { label: 'More coming soon', flag: '\uD83C\uDF0D', slug: '', comingSoon: true }
+];
+
+const PAKISTAN_STUDY_CATEGORIES = ['ielts-preparation', 'css-pms-books', 'matric-fsc-notes'];
 
 const CATEGORY_PILL_MAP = {
   'ielts-preparation': 'cat-pill-blue',
@@ -798,19 +846,26 @@ const CATEGORY_PILL_MAP = {
 const TRENDING_BOOK_IDS = [
   'pride-and-prejudice',
   'the-adventures-of-sherlock-holmes',
-  'ielts-academic-practice-tests-guide',
-  'css-english-essay-writing-guide',
+  'alices-adventures-in-wonderland',
   'aesops-fables',
-  'python-programming-beginner-guide'
+  'as-a-man-thinketh',
+  'best-english-grammar-book'
 ];
+
+const TRENDING_CARD_THEME = {
+  'pride-and-prejudice': 'red',
+  'the-adventures-of-sherlock-holmes': 'red',
+  'alices-adventures-in-wonderland': 'yellow',
+  'aesops-fables': 'yellow',
+  'as-a-man-thinketh': 'orange',
+  'best-english-grammar-book': 'blue'
+};
 
 const FEATURED_ARTICLE_IDS = [
-  'how-to-prepare-for-ielts-using-free-pdf-books',
-  'complete-css-exam-preparation-guide-pakistan',
-  'best-free-books-for-matric-students-pakistan'
+  'best-free-classic-novels-to-start-with',
+  'learn-a-language-with-free-books',
+  'how-to-build-a-daily-reading-habit'
 ];
-
-const HERO_STACK_IDS = ['pride-and-prejudice', 'ielts-academic-practice-tests-guide', 'python-programming-beginner-guide'];
 
 function categoryLabelForBook(book) {
   const slug = (book.categories && book.categories[0]) || '';
@@ -822,38 +877,96 @@ function categoryPillClass(slug) {
   return CATEGORY_PILL_MAP[slug] || 'cat-pill-teal';
 }
 
+function trendingCoverHTML(book) {
+  const localJpg = book.coverImage && !/^https?:\/\//i.test(book.coverImage)
+    ? resolveAssetPath(book.coverImage)
+    : '';
+  const localWebp = localJpg && /\.(jpg|jpeg|png)$/i.test(localJpg)
+    ? localJpg.replace(/\.(jpg|jpeg|png)$/i, '.webp')
+    : '';
+  const remoteSrc = getBookCoverImage(book);
+  const localFallback = getLocalCoverPath(book);
+  const imgSrc = localJpg || remoteSrc;
+  const err = ' onerror="coverImgError(this)"';
+  const fb = imgSrc !== localFallback ? ' data-fallback="' + escapeHtml(localFallback) + '"' : '';
+  const img = '<img src="' + escapeHtml(imgSrc) + '" alt="' + escapeHtml(book.title) + ' cover" width="120" height="180" loading="lazy" referrerpolicy="no-referrer"' + err + fb + '>';
+  if (localJpg && localWebp) {
+    return '<picture>' + (localWebp ? '<source srcset="' + escapeHtml(localWebp) + '" type="image/webp">' : '') + img + '</picture>';
+  }
+  return img;
+}
+
 function trendingBookCardHTML(book) {
   const catSlug = (book.categories && book.categories[0]) || '';
-  const coverSrc = getBookCoverImage(book);
-  const localFallback = getLocalCoverPath(book);
   const author = getBookAuthor(book);
   const pillClass = categoryPillClass(catSlug);
-  const coverBlock = coverSrc
-    ? '<img src="' + escapeHtml(coverSrc) + '" alt="' + escapeHtml(book.title) + ' cover" width="120" height="180" loading="lazy" referrerpolicy="no-referrer" onerror="coverImgError(this)"' + (coverSrc !== localFallback ? ' data-fallback="' + escapeHtml(localFallback) + '"' : '') + '>'
-    : '<div class="cover-fallback cover-' + escapeHtml(book.cover || 'english') + '">' + escapeHtml(book.title.slice(0, 24)) + '</div>';
+  const theme = TRENDING_CARD_THEME[book.id] || 'teal';
+  const badge = book.pdfDirect ? 'Free PDF' : 'Free';
+  const meta = book.pdfDirect && book.pageCount
+    ? 'LifeWithBooks · ' + book.pageCount + ' pages'
+    : author;
+  const dlHref = book.pdfDirect && book.pdf
+    ? (book.pdf.indexOf('/') === 0 ? book.pdf : '/' + String(book.pdf).replace(/^public\//, ''))
+    : getBookPagePath(book.id);
   return `
-    <article class="trending-card">
+    <article class="trending-card trending-card--${theme}">
       <div class="trending-card__cover">
-        <span class="trending-card__badge">Free</span>
-        ${coverBlock}
+        <span class="trending-card__badge">${badge}</span>
+        ${trendingCoverHTML(book)}
       </div>
       <div class="trending-card__body">
         <h3><a href="${getBookPagePath(book.id)}">${escapeHtml(book.title)}</a></h3>
-        <p class="trending-card__author">${escapeHtml(author)}</p>
+        <p class="trending-card__author">${escapeHtml(meta)}</p>
         <span class="trending-card__cat ${pillClass}">${escapeHtml(categoryLabelForBook(book))}</span>
-        <a class="trending-card__link" href="${getBookPagePath(book.id)}">Download Free &rarr;</a>
+        <a class="trending-card__link" href="${escapeHtml(dlHref)}">Download Free &rarr;</a>
       </div>
     </article>`;
 }
 
+function countBooksInCategorySlugs(slugs) {
+  const set = {};
+  BOOKS.forEach(function(b) {
+    (b.categories || []).forEach(function(c) {
+      if (slugs.includes(c)) set[b.id] = true;
+    });
+  });
+  return Object.keys(set).length;
+}
+
 function homeCategoryCardHTML(meta) {
-  const count = BOOKS.filter(function(b) { return b.categories.includes(meta.slug); }).length;
+  const slugs = meta.slugs || [meta.slug];
+  const count = countBooksInCategorySlugs(slugs);
+  const desc = meta.desc || '';
   return `
-    <a class="category-card ${meta.gradient}" href="${getCategoryPagePath(meta.slug)}">
-      <span class="category-card__icon" aria-hidden="true">${meta.icon}</span>
-      <span class="category-card__name">${escapeHtml(meta.label)}</span>
-      <span class="category-card__count">${count} book${count === 1 ? '' : 's'}</span>
-      <span class="category-card__arrow" aria-hidden="true">&rarr;</span>
+    <a class="category-grid__link" href="${getCategoryPagePath(meta.slug)}">
+      <div class="category-card ${meta.gradient}">
+        <span class="icon" aria-hidden="true">${meta.icon}</span>
+        <h3>${escapeHtml(meta.label)}</h3>
+        <p>${escapeHtml(desc)} &middot; ${count}+ books</p>
+      </div>
+    </a>`;
+}
+
+function homeLanguageCardHTML(meta) {
+  if (meta.comingSoon) {
+    return `
+      <div class="language-card language-card--soon">
+        <span class="language-card__flag" aria-hidden="true">${meta.flag}</span>
+        <span class="language-card__name">${escapeHtml(meta.label)}</span>
+      </div>`;
+  }
+  let count = 0;
+  if (meta.bookIds) {
+    count = meta.bookIds.length;
+  } else {
+    const slugs = [meta.slug].concat(meta.extraSlugs || []);
+    count = countBooksInCategorySlugs(slugs);
+  }
+  return `
+    <a class="language-card" href="${getCategoryPagePath(meta.slug)}">
+      <span class="language-card__flag" aria-hidden="true">${meta.flag}</span>
+      <span class="language-card__name">${escapeHtml(meta.label)}</span>
+      <span class="language-card__count">${count}+ books</span>
     </a>`;
 }
 
@@ -1019,6 +1132,22 @@ function initHome() {
     recentGrid.innerHTML = recent.map(recentBookCardHTML).join('');
   }
 
+  const categoryGrid = $('#home-category-grid');
+  if (categoryGrid && typeof BOOKS !== 'undefined') {
+    categoryGrid.innerHTML = HOME_CATEGORY_META.map(homeCategoryCardHTML).join('');
+  }
+
+  const languageGrid = $('#home-language-grid');
+  if (languageGrid) {
+    languageGrid.innerHTML = HOME_LANGUAGE_META.map(homeLanguageCardHTML).join('');
+  }
+
+  const trendingGrid = $('.trending-grid');
+  if (trendingGrid && typeof BOOKS !== 'undefined') {
+    const trending = TRENDING_BOOK_IDS.map(findBookById).filter(Boolean);
+    trendingGrid.innerHTML = trending.map(trendingBookCardHTML).join('');
+  }
+
   initStatsCounter();
   initNewsletterForm();
 
@@ -1045,6 +1174,11 @@ function initAllBooks() {
     if (input) input.value = q;
   }
   renderBookGrid('#all-books-grid', list);
+
+  const pakistanBooks = BOOKS.filter(function(b) {
+    return (b.categories || []).some(function(c) { return PAKISTAN_STUDY_CATEGORIES.includes(c); });
+  });
+  renderBookGrid('#pakistan-study-grid', pakistanBooks);
 
   const searchForm = $('#searchForm');
   searchForm && searchForm.addEventListener('submit', (e) => {

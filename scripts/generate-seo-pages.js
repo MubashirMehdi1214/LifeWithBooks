@@ -107,7 +107,11 @@ function coverPicture(book, p, eager) {
     : null;
   const loading = eager ? 'eager' : 'lazy';
   const fp = eager ? ' fetchpriority="high"' : '';
-  const imgAttrs = `id="book-cover-img" class="book-cover-img book-detail-cover" src="${esc(src)}" alt="${esc(book.title)} cover" width="280" height="420" loading="${loading}" referrerpolicy="no-referrer"${fp}`;
+  const jpgOnly = webp ? src : null;
+  const onerr = webp && jpgOnly
+    ? ` onerror="this.onerror=null;var p=this.closest('picture');if(p){p.querySelectorAll('source').forEach(function(s){s.remove();});}this.src='${esc(jpgOnly)}';"`
+    : '';
+  const imgAttrs = `id="book-cover-img" class="book-cover-img book-detail-cover" src="${esc(src)}" alt="${esc(book.title)} cover" width="280" height="420" loading="${loading}" referrerpolicy="no-referrer"${fp}${onerr}`;
   if (webp) {
     return `<div class="book-cover-section"><div id="cover-container" class="cover-container"><picture><source srcset="${esc(webp)}" type="image/webp"><img ${imgAttrs}></picture></div></div>`;
   }

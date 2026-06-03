@@ -6,6 +6,7 @@
   "scripts": {
     "covers": "node scripts/generate-covers.js",
     "fetch-covers": "node scripts/fetch-placeholder-covers.js",
+    "guide-covers": "node scripts/generate-branded-guide-covers.js",
     "build-pdfs": "node scripts/build-pdfs.js",
     "build-health-pdfs": "node scripts/build-health-pdfs.js",
     "build-ielts-content": "node scripts/build-ielts-guide-content.js",

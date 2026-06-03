@@ -39,7 +39,8 @@ function getAuthor(book) {
   return 'LifeWithBooks';
 }
 
-function hasRealCoverFile(book) {
+function hasRealCoverFile(book, force) {
+  if (force) return false;
   const img = book.coverImage;
   if (!img) return false;
   if (/\.svg$/i.test(img)) return false;
@@ -181,8 +182,8 @@ function updateBooksJs(bookId, coverPath) {
   fs.writeFileSync(booksPath, text, 'utf8');
 }
 
-async function resolveCover(book) {
-  if (hasRealCoverFile(book)) {
+async function resolveCover(book, force) {
+  if (hasRealCoverFile(book, force)) {
     console.log('SKIP (real cover exists):', book.id);
     return book.coverImage;
   }
@@ -203,13 +204,14 @@ async function resolveCover(book) {
 }
 
 (async function main() {
+  const force = process.argv.includes('--force');
   for (const id of TARGET_IDS) {
     const book = BOOKS.find((b) => b.id === id);
     if (!book) {
       console.warn('Book not found:', id);
       continue;
     }
-    await resolveCover(book);
+    await resolveCover(book, force);
   }
   console.log('Done.');
 })();
