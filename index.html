@@ -185,12 +185,12 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
         </form>
         <div class="hero-home__pills popular-pills">
           <span class="hero-home__pills-label">Popular:</span>
-          <a href="category/ielts-preparation.html">IELTS</a>
-          <a href="category/css-pms-books.html">CSS PMS</a>
-          <a href="category/literature-books.html">Classics</a>
-          <a href="category/kids-learning-books.html">Kids</a>
-          <a href="category/programming-books.html">Programming</a>
-          <a href="category/islamic-books.html">Islamic</a>
+          <a class="popular-pill" href="category/ielts-preparation.html">IELTS</a>
+          <a class="popular-pill" href="category/css-pms-books.html">CSS PMS</a>
+          <a class="popular-pill" href="category/literature-books.html">Classics</a>
+          <a class="popular-pill" href="category/kids-learning-books.html">Kids</a>
+          <a class="popular-pill" href="category/programming-books.html">Programming</a>
+          <a class="popular-pill" href="category/islamic-books.html">Islamic</a>
         </div>
         <div class="hero-home__cta">
           <a class="btn btn-primary" href="all-books.html">Browse All Books &rarr;</a>
@@ -198,10 +198,34 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
         </div>
       </div>
       <div class="hero-home__visual" aria-hidden="true">
-        <div class="book-stack">
-          <div class="book-stack__book book-stack__book--3"></div>
-          <div class="book-stack__book book-stack__book--2"></div>
-          <div class="book-stack__book book-stack__book--1"></div>
+        <div class="hero-book-stack">
+          <div class="hero-book book-back">
+            <div class="book-cover">
+              <div class="book-spine"></div>
+              <div class="book-face">
+                <div class="book-title-hero">Pride &amp;<br>Prejudice</div>
+                <div class="book-author-hero">Jane Austen</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-book book-middle">
+            <div class="book-cover">
+              <div class="book-spine"></div>
+              <div class="book-face">
+                <div class="book-title-hero">Learn<br>English</div>
+                <div class="book-author-hero">Free Guide</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-book book-front">
+            <div class="book-cover">
+              <div class="book-spine"></div>
+              <div class="book-face">
+                <div class="book-title-hero">IELTS<br>Prep</div>
+                <div class="book-author-hero">Complete Guide</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -306,10 +330,7 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
       <article class="trending-card trending-card--red">
         <div class="trending-card__cover">
           <span class="trending-card__badge">Free</span>
-          <picture>
-            <source srcset="covers-img/pride-and-prejudice.webp" type="image/webp">
-            <img src="covers-img/pride-and-prejudice.jpg" alt="Pride and Prejudice cover" width="120" height="180" loading="lazy">
-          </picture>
+          <img src="https://covers.openlibrary.org/b/isbn/9780141439518-M.jpg" alt="Pride and Prejudice cover" width="120" height="180" loading="lazy" referrerpolicy="no-referrer" onerror="if(!this.dataset.step){this.dataset.step='1';this.src='https://covers.openlibrary.org/b/title/Pride+and+Prejudice-M.jpg'}else{this.onerror=null;this.src='covers-img/pride-and-prejudice.jpg'}">
         </div>
         <div class="trending-card__body">
           <h3><a href="book/pride-and-prejudice.html">Pride and Prejudice</a></h3>
@@ -321,10 +342,7 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
       <article class="trending-card trending-card--red">
         <div class="trending-card__cover">
           <span class="trending-card__badge">Free</span>
-          <picture>
-            <source srcset="covers-img/the-adventures-of-sherlock-holmes.webp" type="image/webp">
-            <img src="covers-img/the-adventures-of-sherlock-holmes.jpg" alt="The Adventures of Sherlock Holmes cover" width="120" height="180" loading="lazy">
-          </picture>
+          <img src="https://covers.openlibrary.org/b/title/Adventures+of+Sherlock+Holmes-M.jpg" alt="Sherlock Holmes cover" width="120" height="180" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='covers-img/the-adventures-of-sherlock-holmes.jpg'">
         </div>
         <div class="trending-card__body">
           <h3><a href="book/the-adventures-of-sherlock-holmes.html">Sherlock Holmes Collection</a></h3>
@@ -336,10 +354,11 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
       <article class="trending-card trending-card--blue">
         <div class="trending-card__cover">
           <span class="trending-card__badge">Free</span>
-          <picture>
-            <source srcset="covers-img/ielts-academic-practice-tests-guide.webp" type="image/webp">
-            <img src="covers-img/ielts-academic-practice-tests-guide.jpg" alt="IELTS Academic Practice Tests Guide cover" width="120" height="180" loading="lazy">
-          </picture>
+          <div class="trending-cover-branded trending-cover-ielts" aria-hidden="true">
+            <span class="trending-cover-branded__title">IELTS</span>
+            <span class="trending-cover-branded__subtitle">Practice Guide</span>
+            <span class="trending-cover-branded__brand">LifeWithBooks</span>
+          </div>
         </div>
         <div class="trending-card__body">
           <h3><a href="book/ielts-academic-practice-tests-guide.html">IELTS Practice Guide</a></h3>
@@ -351,10 +370,11 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
       <article class="trending-card trending-card--purple">
         <div class="trending-card__cover">
           <span class="trending-card__badge">Free</span>
-          <picture>
-            <source srcset="covers-img/css-english-essay-writing-guide.webp" type="image/webp">
-            <img src="covers-img/css-english-essay-writing-guide.jpg" alt="CSS English Essay Writing Guide cover" width="120" height="180" loading="lazy">
-          </picture>
+          <div class="trending-cover-branded trending-cover-css" aria-hidden="true">
+            <span class="trending-cover-branded__title">CSS PMS</span>
+            <span class="trending-cover-branded__subtitle">Essay Guide</span>
+            <span class="trending-cover-branded__brand">LifeWithBooks</span>
+          </div>
         </div>
         <div class="trending-card__body">
           <h3><a href="book/css-english-essay-writing-guide.html">CSS English Essay Guide</a></h3>
@@ -366,10 +386,7 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
       <article class="trending-card trending-card--yellow">
         <div class="trending-card__cover">
           <span class="trending-card__badge">Free</span>
-          <picture>
-            <source srcset="covers-img/aesops-fables.webp" type="image/webp">
-            <img src="covers-img/aesops-fables.jpg" alt="Aesop's Fables cover" width="120" height="180" loading="lazy">
-          </picture>
+          <img src="https://covers.openlibrary.org/b/title/Aesops+Fables-M.jpg" alt="Aesop's Fables cover" width="120" height="180" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='covers-img/aesops-fables.jpg'">
         </div>
         <div class="trending-card__body">
           <h3><a href="book/aesops-fables.html">Aesop&rsquo;s Fables Complete</a></h3>
@@ -381,10 +398,12 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
       <article class="trending-card trending-card--dark">
         <div class="trending-card__cover">
           <span class="trending-card__badge">Free</span>
-          <picture>
-            <source srcset="covers-img/python-programming-beginner-guide.webp" type="image/webp">
-            <img src="covers-img/python-programming-beginner-guide.jpg" alt="Python Programming Beginner Guide cover" width="120" height="180" loading="lazy">
-          </picture>
+          <div class="trending-cover-branded trending-cover-python" aria-hidden="true">
+            <span class="trending-cover-branded__icon" aria-hidden="true">&#128013;</span>
+            <span class="trending-cover-branded__title">Python</span>
+            <span class="trending-cover-branded__subtitle">Beginner Guide</span>
+            <span class="trending-cover-branded__brand">LifeWithBooks</span>
+          </div>
         </div>
         <div class="trending-card__body">
           <h3><a href="book/python-programming-beginner-guide.html">Python Beginner Guide</a></h3>
