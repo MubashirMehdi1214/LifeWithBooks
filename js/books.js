@@ -30,7 +30,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "covers-img/longman-photo-dictionary-american-english.jpg"
+    "coverImage": "https://drive.google.com/thumbnail?id=1daBCHD03XnqGZrUw3Y8oWmYYDf7LVxL4&sz=w1000"
   },
   {
     "id": "english-unlimited",
@@ -42,7 +42,7 @@ const BOOKS = [
     "cover": "english",
     "pdf": "downloads/english-unlimited.pdf",
     "pdfDirect": true,
-    "pageCount": 9,
+    "pageCount": 8,
     "excerpt": "Original LifeWithBooks guide — A six-level communicative English course from Cambridge designed for real-world international communication at every CEFR level.",
     "description": [
       "## A Course Built for Real Communication",
@@ -56,7 +56,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "covers-img/english-unlimited.jpg"
+    "coverImage": "https://drive.google.com/thumbnail?id=1daBCHD03XnqGZrUw3Y8oWmYYDf7LVxL4&sz=w1000"
   },
   {
     "id": "preposition-focus-on-building-mastery",
@@ -70,7 +70,7 @@ const BOOKS = [
     "cover": "english",
     "pdf": "downloads/preposition-focus-on-building-mastery.pdf",
     "pdfDirect": true,
-    "pageCount": 10,
+    "pageCount": 9,
     "excerpt": "Original LifeWithBooks guide — A focused workbook that systematically teaches English prepositions through clear rules, hundreds of examples and graded practice exercises.",
     "description": [
       "## Why Prepositions Are So Difficult",
@@ -84,7 +84,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "covers-img/preposition-focus-on-building-mastery.jpg"
+    "coverImage": "https://drive.google.com/thumbnail?id=1dG-FdEB4-Avw0tG_ynVRoSVfiOrMrDsz&sz=w1000"
   },
   {
     "id": "technical-english",
@@ -98,7 +98,7 @@ const BOOKS = [
     "cover": "english",
     "pdf": "downloads/technical-english.pdf",
     "pdfDirect": true,
-    "pageCount": 10,
+    "pageCount": 9,
     "excerpt": "Original LifeWithBooks guide — A multi-level course building the specialised English vocabulary and communication skills needed in engineering, IT and technical workplaces.",
     "description": [
       "## English for the Technical Workplace",
@@ -112,7 +112,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "covers-img/technical-english.jpg"
+    "coverImage": "https://drive.google.com/thumbnail?id=1kJsgAcoaSkFCEAg5Te-OazsveXX4X58h&sz=w1000"
   },
   {
     "id": "english-for-meetings-phrases-expressions",
@@ -126,7 +126,7 @@ const BOOKS = [
     "cover": "business",
     "pdf": "downloads/english-for-meetings-phrases-expressions.pdf",
     "pdfDirect": true,
-    "pageCount": 11,
+    "pageCount": 10,
     "excerpt": "Original LifeWithBooks guide — A practical phrase book containing ready-to-use expressions for every stage of an English-language business meeting.",
     "description": [
       "## The Challenge of Meeting English",
@@ -140,7 +140,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "covers-img/english-for-meetings-phrases-expressions.jpg"
+    "coverImage": "https://drive.google.com/thumbnail?id=1WdcHVE-vN01idAw1uiyY29lmj4weVGdy&sz=w1000"
   },
   {
     "id": "mcgraw-hill-conversational-american-english",
@@ -165,7 +165,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "covers-img/mcgraw-hill-conversational-american-english.jpg"
+    "coverImage": "https://drive.google.com/thumbnail?id=1mq7mIb7JhE47OfogkmVGITg8pScv2Tgo&sz=w1000"
   },
   {
     "id": "english-vocabulary-in-use-upper-intermediate",
@@ -178,7 +178,7 @@ const BOOKS = [
     "cover": "vocabulary",
     "pdf": "downloads/english-vocabulary-in-use-upper-intermediate.pdf",
     "pdfDirect": true,
-    "pageCount": 12,
+    "pageCount": 11,
     "excerpt": "Original LifeWithBooks guide — 100 two-page units of upper-intermediate vocabulary from Cambridge, with clear explanations on the left and immediate practice on the right.",
     "description": [
       "## The Proven Left-Right Format",
@@ -191,7 +191,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "covers-img/english-vocabulary-in-use-upper-intermediate.jpg"
+    "coverImage": "https://drive.google.com/thumbnail?id=1I9x6n6n6wVPbw1gjxGR8DRkizClxXdfP&sz=w1000"
   },
   {
     "id": "practical-english-usage",
@@ -204,7 +204,7 @@ const BOOKS = [
     "cover": "english",
     "pdf": "downloads/practical-english-usage.pdf",
     "pdfDirect": true,
-    "pageCount": 12,
+    "pageCount": 11,
     "excerpt": "Original LifeWithBooks guide — Michael Swan's authoritative A–Z reference covering over 600 points of English grammar, vocabulary and usage that cause difficulty for learners and teachers.",
     "description": [
       "## The Go-To Grammar Reference",
@@ -218,7 +218,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "covers-img/practical-english-usage.jpg"
+    "coverImage": "https://drive.google.com/thumbnail?id=1R8m9hE7MNfBY73_nKLZe6VH6Ux0CMhSd&sz=w1000"
   },
   {
     "id": "spoken-english-conversation-practice",
@@ -230,7 +230,7 @@ const BOOKS = [
     "cover": "english",
     "pdf": "downloads/spoken-english-conversation-practice.pdf",
     "pdfDirect": true,
-    "pageCount": 15,
+    "pageCount": 14,
     "excerpt": "Original LifeWithBooks guide — Structured daily conversation material for learners who can read and write English but struggle to speak fluently and confidently.",
     "description": [
       "## Breaking the Speaking Barrier",
@@ -243,7 +243,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "covers-img/spoken-english-conversation-practice.jpg"
+    "coverImage": "https://drive.google.com/thumbnail?id=1yH58as9Y9kbTtsV7ttZCuOfKvynHtQ7c&sz=w1000"
   },
   {
     "id": "english-phonetics-and-phonology",
@@ -256,7 +256,7 @@ const BOOKS = [
     "cover": "english",
     "pdf": "downloads/english-phonetics-and-phonology.pdf",
     "pdfDirect": true,
-    "pageCount": 16,
+    "pageCount": 15,
     "excerpt": "Original LifeWithBooks guide — A clear academic introduction to the sound system of English: vowels, consonants, stress, rhythm, intonation and connected speech.",
     "description": [
       "## Understanding How English Sounds Work",
@@ -269,7 +269,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "covers-img/english-phonetics-and-phonology.jpg"
+    "coverImage": "https://drive.google.com/thumbnail?id=1T0DZxPKu-NR7NDXFTx1Zs3DJgTTy-eBy&sz=w1000"
   },
   {
     "id": "talk-english-secret-to-speak-english",
@@ -282,7 +282,7 @@ const BOOKS = [
     "cover": "english",
     "pdf": "downloads/talk-english-secret-to-speak-english.pdf",
     "pdfDirect": true,
-    "pageCount": 16,
+    "pageCount": 15,
     "excerpt": "Original LifeWithBooks guide — A motivational and practical method for shy or stuck learners who want to finally break through and start speaking English with confidence.",
     "description": [
       "## Why Most Learners Stay Silent",
@@ -296,7 +296,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "covers-img/talk-english-secret-to-speak-english.jpg"
+    "coverImage": "https://drive.google.com/thumbnail?id=1vVYcE1DC3rD0UpYm3mQ2WOUnK4RyBx27&sz=w1000"
   },
   {
     "id": "30-topics-for-english-conversation",
@@ -309,7 +309,7 @@ const BOOKS = [
     "cover": "english",
     "pdf": "downloads/30-topics-for-english-conversation.pdf",
     "pdfDirect": true,
-    "pageCount": 15,
+    "pageCount": 14,
     "excerpt": "Original LifeWithBooks conversation guide — 30 speaking topics with questions, vocabulary and sample answers. Free PDF by Mubashir Mehdi.",
     "blurb": "An original conversation guide for English learners: thirty everyday topics with warm-up questions, key phrases, and sample answers for fluent practice. Written for LifeWithBooks by Mubashir Mehdi.",
     "description": [
@@ -375,7 +375,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "covers-img/how-to-get-really-good-at-english.jpg"
+    "coverImage": "https://drive.google.com/thumbnail?id=155mqZ14ejfsGmVY9U4-3TNt8MPfBnIGE&sz=w1000"
   },
   {
     "id": "learn-how-to-speak-english-fluently-7-easy-steps",
@@ -400,7 +400,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "covers-img/learn-how-to-speak-english-fluently-7-easy-steps.jpg"
+    "coverImage": "https://drive.google.com/thumbnail?id=1nHPu_wukv9hHSbIBf6MyrPm8z-p21gH5&sz=w1000"
   },
   {
     "id": "macmillan-english-grammar-in-context-intermediate-1",
@@ -425,7 +425,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "covers-img/macmillan-english-grammar-in-context-intermediate-1.jpg"
+    "coverImage": "https://drive.google.com/thumbnail?id=1nHPu_wukv9hHSbIBf6MyrPm8z-p21gH5&sz=w1000"
   },
   {
     "id": "fundamentals-of-english-grammar-workbook",
@@ -451,7 +451,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "covers-img/fundamentals-of-english-grammar-workbook.jpg"
+    "coverImage": "https://drive.google.com/thumbnail?id=1nHPu_wukv9hHSbIBf6MyrPm8z-p21gH5&sz=w1000"
   },
   {
     "id": "english-in-everyday-life",
@@ -476,7 +476,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "covers-img/english-in-everyday-life.jpg"
+    "coverImage": "https://drive.google.com/thumbnail?id=17latFcymITKeP--fbsZwUI-GS1muRdsp&sz=w1000"
   },
   {
     "id": "black-book-of-english-vocabulary",

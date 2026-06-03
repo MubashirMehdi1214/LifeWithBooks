@@ -35,6 +35,7 @@ class LifeWithBooksGuidePdf {
     this.coverLines = options.coverLines || [];
     this.introParagraphs = options.introParagraphs || [];
     this.disclaimer = options.disclaimer || '';
+    this.appendixOnly = options.appendixOnly || false;
     this.doc = new jsPDF({ unit: 'mm', format: 'a4', compress: true });
     this.y = MT;
     this.section = 'Introduction';
@@ -239,7 +240,7 @@ class LifeWithBooksGuidePdf {
     const title = sanitize(this.meta.title);
     for (let i = 1; i <= total; i++) {
       this.doc.setPage(i);
-      if (i === 1) continue;
+      if (!this.appendixOnly && i === 1) continue;
       this.doc.setDrawColor(200, 200, 195);
       this.doc.line(ML, FOOTER_Y - 5, PAGE_W - MR, FOOTER_Y - 5);
       this.doc.setFont('helvetica', 'normal');
@@ -260,11 +261,22 @@ class LifeWithBooksGuidePdf {
   }
 
   run() {
-    this.buildCover();
-    this.buildTocPlaceholder();
-    this.buildIntro();
+    if (this.appendixOnly) {
+      this.drawRunningHeader();
+      this.introParagraphs.forEach((item, idx) => {
+        this.tocPageMap.push({ title: item.heading, page: this.doc.getNumberOfPages(), level: 1 });
+        this.section = item.heading;
+        this.writeHeading(item.heading, 2);
+        this.writeParagraph(item.text);
+        if (idx === 0) this.y += 2;
+      });
+    } else {
+      this.buildCover();
+      this.buildTocPlaceholder();
+      this.buildIntro();
+    }
     this.buildBlocks();
-    this.renderToc(this.tocPageMap);
+    if (!this.appendixOnly) this.renderToc(this.tocPageMap);
     this.addDisclaimer();
     this.applyFooters();
     fs.mkdirSync(path.dirname(this.outFile), { recursive: true });

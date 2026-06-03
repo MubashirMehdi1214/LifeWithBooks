@@ -98,7 +98,7 @@ async function generateCover(book, pageCount) {
   await sharp(buf).webp({ quality: 85 }).toFile(webp);
 }
 
-function patchBookBlock(src, bookId, pageCount) {
+function patchBookBlock(src, bookId, pageCount, setCover) {
   const re = new RegExp(
     '("id":\\s*"' + bookId.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '"[\\s\\S]*?)(\\n  \\})',
     'm'
@@ -131,10 +131,12 @@ function patchBookBlock(src, bookId, pageCount) {
     block = block.replace(/"pdfDirect":\s*true/, '"pdfDirect": true,\n    "pageCount": ' + pageCount);
   }
   const coverImg = '"coverImage": "covers-img/' + bookId + '.jpg"';
-  if (/"coverImage":/.test(block)) {
-    block = block.replace(/"coverImage":\s*"[^"]*"/, coverImg);
-  } else {
-    block = block.replace(/"license":\s*"original"/, '"license": "original",\n    ' + coverImg);
+  if (setCover) {
+    if (/"coverImage":/.test(block)) {
+      block = block.replace(/"coverImage":\s*"[^"]*"/, coverImg);
+    } else {
+      block = block.replace(/"license":\s*"original"/, '"license": "original",\n    ' + coverImg);
+    }
   }
   if (!/"blurb":/.test(block) && /"excerpt":\s*"([^"]*)"/.test(block)) {
     block = block.replace(/"excerpt":\s*"([^"]*)"/, (full, ex) => {
@@ -179,8 +181,14 @@ function patchBookBlock(src, bookId, pageCount) {
     const dest = path.join(DOWNLOADS, id + '.pdf');
     fs.copyFileSync(from, dest);
     const pages = pdfPageCount(dest);
-    await generateCover(book, pages);
-    src = patchBookBlock(src, id, pages);
+    if (!/"coverImage":/.test(
+      src.match(new RegExp('"id":\\s*"' + id.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '"[\\s\\S]*?\\n  \\}'))?.[0] || ''
+    )) {
+      await generateCover(book, pages);
+      src = patchBookBlock(src, id, pages, true);
+    } else {
+      src = patchBookBlock(src, id, pages, false);
+    }
     results.push({ id, title: book.title, pages, file: srcFile });
     console.log('OK', id, '←', srcFile, '(' + pages + ' pages)');
   }

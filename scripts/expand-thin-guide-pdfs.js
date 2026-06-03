@@ -82,6 +82,7 @@ let booksJs = fs.readFileSync(booksPath, 'utf8');
       },
       blocks: appendixForBook(book),
       outFile: appendixFile,
+      appendixOnly: true,
       introParagraphs: [
         {
           heading: 'How to Use This Appendix',
