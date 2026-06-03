@@ -43,7 +43,7 @@ async function saveCover(book) {
   const pdfRel = book.pdf && book.pdf.replace(/^\//, '');
   const pdfPath = pdfRel ? path.join(root, pdfRel) : null;
 
-  if (pdfPath && fs.existsSync(pdfPath)) {
+  if (pdfPath && fs.existsSync(pdfPath) && !process.env.COVER_FROM_DRIVE_ONLY) {
     extractPdfCover(pdfPath, jpg);
     console.log('PDF cover:', book.id);
   } else if (book.coverImage && book.coverImage.includes('drive.google')) {
