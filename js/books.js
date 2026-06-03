@@ -30,7 +30,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "https://drive.google.com/thumbnail?id=1daBCHD03XnqGZrUw3Y8oWmYYDf7LVxL4&sz=w1000"
+    "coverImage": "covers-img/longman-photo-dictionary-american-english.jpg"
   },
   {
     "id": "english-unlimited",
@@ -400,7 +400,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "https://drive.google.com/thumbnail?id=1nHPu_wukv9hHSbIBf6MyrPm8z-p21gH5&sz=w1000"
+    "coverImage": "covers-img/learn-how-to-speak-english-fluently-7-easy-steps.jpg"
   },
   {
     "id": "macmillan-english-grammar-in-context-intermediate-1",
@@ -425,7 +425,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "https://drive.google.com/thumbnail?id=1nHPu_wukv9hHSbIBf6MyrPm8z-p21gH5&sz=w1000"
+    "coverImage": "covers-img/macmillan-english-grammar-in-context-intermediate-1.jpg"
   },
   {
     "id": "fundamentals-of-english-grammar-workbook",
@@ -451,7 +451,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "https://drive.google.com/thumbnail?id=1nHPu_wukv9hHSbIBf6MyrPm8z-p21gH5&sz=w1000"
+    "coverImage": "covers-img/fundamentals-of-english-grammar-workbook.jpg"
   },
   {
     "id": "english-in-everyday-life",
