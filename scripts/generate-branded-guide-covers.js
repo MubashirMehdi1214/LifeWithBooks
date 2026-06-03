@@ -53,6 +53,15 @@ const GUIDES = {
     badge: 'FREE PDF',
     footer: 'Mubashir Mehdi · 15 pages',
     accent: '#ffeb3b'
+  },
+  '30-topics-for-english-conversation': {
+    gradient: ['#0d47a1', '#1565c0', '#1976d2'],
+    kicker: 'CONVERSATION',
+    headline: '30 Topics',
+    sub: 'English Speaking',
+    badge: 'FREE PDF',
+    footer: 'Mubashir Mehdi · 9 pages',
+    accent: '#80cbc4'
   }
 };
 

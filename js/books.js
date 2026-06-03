@@ -257,21 +257,27 @@ const BOOKS = [
     "id": "30-topics-for-english-conversation",
     "slug": "30-topics-for-english-conversation-book",
     "title": "30 Topics for English Conversation",
+    "author": "Mubashir Mehdi",
     "categories": [
       "english-learning-books"
     ],
     "cover": "english",
-    "excerpt": "Thirty ready-to-use everyday conversation topics with warm-up questions, key vocabulary, sample answers and discussion prompts.",
+    "pdf": "downloads/30-topics-for-english-conversation.pdf",
+    "pdfDirect": true,
+    "pageCount": 9,
+    "excerpt": "Original LifeWithBooks conversation guide — 30 speaking topics with questions, vocabulary and sample answers. Free PDF by Mubashir Mehdi.",
+    "blurb": "An original conversation guide for English learners: thirty everyday topics with warm-up questions, key phrases, and sample answers for fluent practice. Written for LifeWithBooks by Mubashir Mehdi.",
     "description": [
-      "## Ready-Made Conversation Material",
-      "30 Topics for English Conversation provides exactly what the title promises: thirty complete conversation topics, each with everything you need for a productive speaking session. Topics include family and relationships, food and cooking, music and entertainment, dreams and goals, technology and social media, money and work, travel and holidays, health and fitness, education, the environment, fashion, sports, childhood memories, pets and animals, and more.",
-      "## What Each Topic Contains",
-      "Every topic is structured the same way for easy use: warm-up questions to get the conversation started, a list of key vocabulary and useful expressions related to the topic, sample answers showing natural ways to respond to common questions, follow-up discussion prompts that go deeper into the topic, and sometimes a short reading passage to spark further discussion.",
+      "## About This Guide",
+      "This is an **original LifeWithBooks conversation guide** written by Mubashir Mehdi. It is not affiliated with any publisher. Each topic includes questions and language you can use in real speaking practice.",
+      "## What You Get",
+      "Thirty practical conversation themes — family, work, travel, technology, health, hobbies, and more — with vocabulary and example responses.",
       "## How to Use It",
-      "The book works in multiple settings: one-on-one with a tutor or language partner, in a small conversation group or speaking club, or even alone — you can answer the questions out loud and compare your responses with the sample answers. Many English teachers use it as a ready-made conversation class resource."
+      "Download the PDF, pick one topic per day, answer the questions aloud, and compare with the sample answers. Ideal for self-study, tutors, or speaking clubs."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/30-topics-for-english-conversation.jpg"
   },
   {
     "id": "1500-vocabulary-words-for-speaking-english",
