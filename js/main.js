@@ -15,6 +15,15 @@ function getCategoryPageUrl(slug) {
 function pagePrefix() {
   return document.body && document.body.dataset.pathDepth === '1' ? '../' : '';
 }
+/** Prefix relative asset paths (covers/, covers-img/) for pages in subfolders. */
+function resolveAssetPath(path) {
+  if (!path) return path;
+  if (/^https?:\/\//i.test(path) || /^data:/i.test(path)) return path;
+  if (path.charAt(0) === '/') return path;
+  const prefix = pagePrefix();
+  if (prefix && path.indexOf(prefix) !== 0) return prefix + path.replace(/^\.\//, '');
+  return path;
+}
 function getBookPagePath(id) {
   return pagePrefix() + 'book/' + encodeURIComponent(id) + '.html';
 }
@@ -319,7 +328,7 @@ function getGutenbergId(url) {
 }
 
 function getLocalCoverPath(book) {
-  return 'covers/' + book.id + '.svg';
+  return resolveAssetPath('covers/' + book.id + '.svg');
 }
 
 function getBookShareImage(book) {
@@ -331,7 +340,7 @@ function getCategoryShareImage(slug) {
 }
 
 function getBookCoverImage(book) {
-  if (book.coverImage) return book.coverImage;
+  if (book.coverImage) return resolveAssetPath(book.coverImage);
   const gutenbergId = getGutenbergId(book.pdf || '');
   if (gutenbergId) return `https://www.gutenberg.org/cache/epub/${gutenbergId}/pg${gutenbergId}.cover.medium.jpg`;
   const driveFileId = getDriveFileId(book.pdf || '');
