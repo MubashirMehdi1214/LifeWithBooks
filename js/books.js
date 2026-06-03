@@ -4403,7 +4403,8 @@ const BOOKS = [
     ],
     "access": "summary",
     "license": "reference",
-    "officialUrl": "https://www.ielts.org/"
+    "officialUrl": "https://www.ielts.org/",
+    "coverImage": "covers-img/ielts-academic-practice-tests-guide.jpg"
   },
   {
     "id": "ielts-writing-task-1-and-2-guide",
@@ -4504,7 +4505,8 @@ const BOOKS = [
     ],
     "access": "summary",
     "license": "reference",
-    "officialUrl": ""
+    "officialUrl": "",
+    "coverImage": "covers-img/css-english-essay-writing-guide.jpg"
   },
   {
     "id": "css-current-affairs-preparation",
@@ -4807,7 +4809,8 @@ const BOOKS = [
     ],
     "access": "summary",
     "license": "reference",
-    "officialUrl": "https://docs.python.org/3/"
+    "officialUrl": "https://docs.python.org/3/",
+    "coverImage": "covers-img/python-programming-beginner-guide.jpg"
   },
   {
     "id": "html-css-web-design-basics",

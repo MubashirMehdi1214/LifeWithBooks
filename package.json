@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "covers": "node scripts/generate-covers.js",
+    "fetch-covers": "node scripts/fetch-placeholder-covers.js",
     "build-pdfs": "node scripts/build-pdfs.js",
     "build-health-pdfs": "node scripts/build-health-pdfs.js",
     "classify": "node scripts/classify-books.js",
