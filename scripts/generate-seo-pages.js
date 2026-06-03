@@ -135,6 +135,23 @@ function bookMetaDesc(book) {
   return d;
 }
 
+function sortCategoryBooks(items) {
+  const rank = (b) => (b.pdfDirect ? 0 : b.access === 'download' && b.license === 'original' ? 1 : b.access === 'download' ? 2 : 3);
+  return items.slice().sort((a, b) => rank(a) - rank(b) || a.title.localeCompare(b.title));
+}
+
+function fullGuideBannerHtml(book, p) {
+  if (!book.fullGuideId) return '';
+  const full = BOOKS.find((b) => b.id === book.fullGuideId);
+  if (!full) return '';
+  const bookUrl = p + 'book/' + encodeURIComponent(full.id) + '.html';
+  const pdfUrl = full.pdfDirect && full.pdf ? pdfPublicPath(full) : '';
+  const pdfBtn = pdfUrl
+    ? ` <a class="btn" href="${esc(pdfUrl)}" download="${esc(full.id)}.pdf">&#8595; Download PDF${full.pageCount ? ' (' + full.pageCount + ' pages)' : ''}</a>`
+    : '';
+  return `<div class="book-full-guide-banner"><p><strong>Want the full book?</strong> This page is a short overview. Open our complete original guide with free PDF download:</p><p style="margin-top:12px;"><a class="btn" href="${esc(bookUrl)}">${esc(full.title)}</a>${pdfBtn}</p></div>`;
+}
+
 function renderBookPage(book, depth) {
   const p = depth === 0 ? '' : '../';
   const url = ORIGIN + '/book/' + encodeURIComponent(book.id) + '.html';
@@ -216,6 +233,7 @@ function renderBookPage(book, depth) {
     <h1>${esc(book.title)}</h1>
     <div class="meta"><span class="tag">${esc(author)}</span>${originalBadge}${pageTag}<span class="tag">${downloadable ? 'Free PDF Download' : 'Study Guide'}</span></div>
     ${leadHtml}
+    ${fullGuideBannerHtml(book, p)}
     <article class="article">${descHtml}${extra}</article>
     ${download}
     <div class="related-posts"><h3>You Might Also Like</h3><ul>${relatedHtml}</ul></div>
@@ -246,7 +264,9 @@ function categoryBookCard(b, p) {
   } else {
     coverHtml = `<img class="cover-image" src="${esc(src)}" alt="${esc(b.title)} cover" width="200" height="200" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none';var n=this.closest('.cover');if(n){var f=n.querySelector('.book');if(f)f.style.display='block'}">`;
   }
-  return `<article class="book-card cover-${esc(b.cover || 'english')}"><a class="thumb" href="${p}book/${encodeURIComponent(b.id)}.html"><div class="cover">${coverHtml}<div class="book" style="display:none;"><span class="title-on-cover">${esc(b.title)}</span></div></div></a><div class="info"><h3><a href="${p}book/${encodeURIComponent(b.id)}.html">${esc(b.title)}</a></h3><p class="article-excerpt">${esc((b.excerpt || '').slice(0, 100))}</p><a class="read-more" href="${p}book/${encodeURIComponent(b.id)}.html">Read More</a></div></article>`;
+  const pdfBadge = b.pdfDirect ? '<span class="book-card__pdf-badge">Free PDF</span>' : '';
+  const readLabel = b.pdfDirect ? 'Download Free' : 'Read More';
+  return `<article class="book-card cover-${esc(b.cover || 'english')}"><a class="thumb" href="${p}book/${encodeURIComponent(b.id)}.html"><div class="cover">${pdfBadge}${coverHtml}<div class="book" style="display:none;"><span class="title-on-cover">${esc(b.title)}</span></div></div></a><div class="info"><h3><a href="${p}book/${encodeURIComponent(b.id)}.html">${esc(b.title)}</a></h3><p class="article-excerpt">${esc((b.excerpt || '').slice(0, 100))}</p><a class="read-more" href="${p}book/${encodeURIComponent(b.id)}.html">${readLabel}</a></div></article>`;
 }
 
 function renderCategoryPage(slug, depth) {
@@ -259,7 +279,7 @@ function renderCategoryPage(slug, depth) {
   const desc = seo ? seo.metaDescription : 'Browse ' + cat.label + ' on LifeWithBooks.';
   const intro = seo ? seo.intro : 'Browse free books in ' + cat.label + ' on LifeWithBooks.';
   const heading = seo ? seo.heading : cat.label;
-  const items = BOOKS.filter(b => b.categories.includes(slug));
+  const items = sortCategoryBooks(BOOKS.filter(b => b.categories.includes(slug)));
   const cards = items.map(b => categoryBookCard(b, p)).join('\n      ');
   const jsonLd = `<script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org',

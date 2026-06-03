@@ -683,6 +683,25 @@ function injectFooter() {
   }, { passive: true });
 }
 
+function sortBooksForDisplay(books) {
+  const rank = (b) => (b.pdfDirect ? 0 : b.access === 'download' && b.license === 'original' ? 1 : b.access === 'download' ? 2 : 3);
+  return books.slice().sort((a, b) => rank(a) - rank(b) || a.title.localeCompare(b.title));
+}
+
+function fullGuideBannerHTML(book) {
+  if (!book || !book.fullGuideId) return '';
+  const full = BOOKS.find((b) => b.id === book.fullGuideId);
+  if (!full) return '';
+  const bookUrl = getBookPagePath(full.id);
+  const pdfHref = full.pdfDirect && full.pdf
+    ? (full.pdf.indexOf('/') === 0 ? full.pdf : '/' + String(full.pdf).replace(/^public\//, ''))
+    : '';
+  const pdfBtn = pdfHref
+    ? ` <a class="btn" href="${escapeHtml(pdfHref)}" download="${escapeHtml(full.id)}.pdf">&#8595; Download PDF${full.pageCount ? ' (' + full.pageCount + ' pages)' : ''}</a>`
+    : '';
+  return `<div class="book-full-guide-banner"><p><strong>Want the full book?</strong> This page is a short overview. Open our complete original guide with free PDF download:</p><p style="margin-top:12px;"><a class="btn" href="${escapeHtml(bookUrl)}">${escapeHtml(full.title)}</a>${pdfBtn}</p></div>`;
+}
+
 /* ---------- Card renderer ---------- */
 function bookCardHTML(book) {
   const primarySrc = getBookCoverImage(book);
@@ -693,6 +712,7 @@ function bookCardHTML(book) {
             <span class="ribbon"></span>
           </div>
         `;
+  const pdfBadge = book.pdfDirect ? '<span class="book-card__pdf-badge">Free PDF</span>' : '';
   const coverVisual = pictureTag(primarySrc, book.title + ' cover', {
     class: 'cover-image',
     width: 200,
@@ -705,13 +725,14 @@ function bookCardHTML(book) {
     <article class="book-card cover-${escapeHtml(book.cover || 'english')}">
       <a class="thumb" href="${getBookPagePath(book.id)}" aria-label="${escapeHtml(book.title)}">
         <div class="cover">
+          ${pdfBadge}
           ${coverVisual}
           ${categoryCover}
         </div>
       </a>
       <div class="info">
         <h3><a href="${getBookPagePath(book.id)}">${escapeHtml(book.title)}</a>${isNewBook(book) ? ' <span class="badge-new">New</span>' : ''}</h3>
-        <a class="read-more" href="${getBookPagePath(book.id)}">Read More</a>
+        <a class="read-more" href="${getBookPagePath(book.id)}">${book.pdfDirect ? 'Download Free' : 'Read More'}</a>
       </div>
     </article>
   `;
@@ -1133,7 +1154,7 @@ function initCategory() {
     const input = $('#catSearchInput');
     if (input) input.value = q;
   }
-  renderBookGrid(gridSel, items);
+  renderBookGrid(gridSel, sortBooksForDisplay(items));
 
   const searchForm = $('#catSearchForm');
   const searchInput = $('#catSearchInput');
@@ -1371,7 +1392,9 @@ function initBookDetail() {
     </div>
 
     <h1>${escapeHtml(book.title)}</h1>
-    <div class="meta">${tags}</div>
+    <div class="meta">${tags}${book.license === 'original' ? '<span class="tag tag-original">ORIGINAL GUIDE</span>' : ''}${book.pageCount ? '<span class="tag">' + escapeHtml(String(book.pageCount)) + ' pages</span>' : ''}</div>
+
+    ${fullGuideBannerHTML(book)}
 
     <article class="article">
       ${paragraphs}

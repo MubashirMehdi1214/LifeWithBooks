@@ -534,6 +534,41 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
   font-size: 13px;
   color: var(--contrast-3);
 }
+.book-full-guide-banner {
+  background: linear-gradient(135deg, #fff8e8 0%, #f5faf8 100%);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  margin-bottom: 28px;
+}
+.book-full-guide-banner p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--contrast);
+}
+.book-full-guide-banner .btn {
+  margin-right: 10px;
+  margin-top: 4px;
+}
+.book-card .thumb {
+  position: relative;
+}
+.book-card__pdf-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  background: var(--accent);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 4px 10px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
 .book-single .article p {
   margin-bottom: 18px;
   font-size: 16.5px;

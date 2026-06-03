@@ -4807,6 +4807,7 @@ const BOOKS = [
   },
   {
     "id": "ielts-academic-practice-tests-guide",
+    "fullGuideId": "ielts-complete-preparation-guide",
     "title": "IELTS Academic Practice Tests Guide",
     "categories": [
       "ielts-preparation",
@@ -4829,6 +4830,7 @@ const BOOKS = [
   },
   {
     "id": "ielts-writing-task-1-and-2-guide",
+    "fullGuideId": "ielts-complete-preparation-guide",
     "title": "IELTS Writing Task 1 and 2 Complete Guide",
     "categories": [
       "ielts-preparation"
@@ -4849,6 +4851,7 @@ const BOOKS = [
   },
   {
     "id": "ielts-speaking-practice-question-bank",
+    "fullGuideId": "ielts-complete-preparation-guide",
     "title": "IELTS Speaking Practice Question Bank",
     "categories": [
       "ielts-preparation"
@@ -4869,6 +4872,7 @@ const BOOKS = [
   },
   {
     "id": "ielts-vocabulary-builder-3000-words",
+    "fullGuideId": "ielts-complete-preparation-guide",
     "title": "IELTS Vocabulary Builder 3000 Words",
     "categories": [
       "ielts-preparation",
@@ -4890,6 +4894,7 @@ const BOOKS = [
   },
   {
     "id": "ielts-listening-practice-guide",
+    "fullGuideId": "ielts-complete-preparation-guide",
     "title": "IELTS Listening Practice Guide",
     "categories": [
       "ielts-preparation"
@@ -5228,6 +5233,7 @@ const BOOKS = [
   },
   {
     "id": "css-english-essay-writing-guide",
+    "fullGuideId": "css-pms-english-essay-guide",
     "title": "CSS English Essay Writing Guide",
     "categories": [
       "css-pms-books"
