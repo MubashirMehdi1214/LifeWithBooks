@@ -42,7 +42,7 @@ const BOOKS = [
     "cover": "english",
     "pdf": "downloads/english-unlimited.pdf",
     "pdfDirect": true,
-    "pageCount": 4,
+    "pageCount": 9,
     "excerpt": "Original LifeWithBooks guide — A six-level communicative English course from Cambridge designed for real-world international communication at every CEFR level.",
     "description": [
       "## A Course Built for Real Communication",
@@ -70,7 +70,7 @@ const BOOKS = [
     "cover": "english",
     "pdf": "downloads/preposition-focus-on-building-mastery.pdf",
     "pdfDirect": true,
-    "pageCount": 4,
+    "pageCount": 10,
     "excerpt": "Original LifeWithBooks guide — A focused workbook that systematically teaches English prepositions through clear rules, hundreds of examples and graded practice exercises.",
     "description": [
       "## Why Prepositions Are So Difficult",
@@ -98,7 +98,7 @@ const BOOKS = [
     "cover": "english",
     "pdf": "downloads/technical-english.pdf",
     "pdfDirect": true,
-    "pageCount": 3,
+    "pageCount": 10,
     "excerpt": "Original LifeWithBooks guide — A multi-level course building the specialised English vocabulary and communication skills needed in engineering, IT and technical workplaces.",
     "description": [
       "## English for the Technical Workplace",
@@ -126,7 +126,7 @@ const BOOKS = [
     "cover": "business",
     "pdf": "downloads/english-for-meetings-phrases-expressions.pdf",
     "pdfDirect": true,
-    "pageCount": 4,
+    "pageCount": 11,
     "excerpt": "Original LifeWithBooks guide — A practical phrase book containing ready-to-use expressions for every stage of an English-language business meeting.",
     "description": [
       "## The Challenge of Meeting English",
@@ -152,7 +152,7 @@ const BOOKS = [
     "cover": "english",
     "pdf": "downloads/mcgraw-hill-conversational-american-english.pdf",
     "pdfDirect": true,
-    "pageCount": 3,
+    "pageCount": 9,
     "excerpt": "Original LifeWithBooks guide — Over 3,000 idiomatic expressions and conversational patterns used in everyday American English, organized by real-life situations.",
     "description": [
       "## Speaking Like Americans Actually Speak",
@@ -178,7 +178,7 @@ const BOOKS = [
     "cover": "vocabulary",
     "pdf": "downloads/english-vocabulary-in-use-upper-intermediate.pdf",
     "pdfDirect": true,
-    "pageCount": 6,
+    "pageCount": 12,
     "excerpt": "Original LifeWithBooks guide — 100 two-page units of upper-intermediate vocabulary from Cambridge, with clear explanations on the left and immediate practice on the right.",
     "description": [
       "## The Proven Left-Right Format",
@@ -204,7 +204,7 @@ const BOOKS = [
     "cover": "english",
     "pdf": "downloads/practical-english-usage.pdf",
     "pdfDirect": true,
-    "pageCount": 6,
+    "pageCount": 12,
     "excerpt": "Original LifeWithBooks guide — Michael Swan's authoritative A–Z reference covering over 600 points of English grammar, vocabulary and usage that cause difficulty for learners and teachers.",
     "description": [
       "## The Go-To Grammar Reference",
@@ -230,7 +230,7 @@ const BOOKS = [
     "cover": "english",
     "pdf": "downloads/spoken-english-conversation-practice.pdf",
     "pdfDirect": true,
-    "pageCount": 9,
+    "pageCount": 15,
     "excerpt": "Original LifeWithBooks guide — Structured daily conversation material for learners who can read and write English but struggle to speak fluently and confidently.",
     "description": [
       "## Breaking the Speaking Barrier",
@@ -256,7 +256,7 @@ const BOOKS = [
     "cover": "english",
     "pdf": "downloads/english-phonetics-and-phonology.pdf",
     "pdfDirect": true,
-    "pageCount": 11,
+    "pageCount": 16,
     "excerpt": "Original LifeWithBooks guide — A clear academic introduction to the sound system of English: vowels, consonants, stress, rhythm, intonation and connected speech.",
     "description": [
       "## Understanding How English Sounds Work",
@@ -282,7 +282,7 @@ const BOOKS = [
     "cover": "english",
     "pdf": "downloads/talk-english-secret-to-speak-english.pdf",
     "pdfDirect": true,
-    "pageCount": 10,
+    "pageCount": 16,
     "excerpt": "Original LifeWithBooks guide — A motivational and practical method for shy or stuck learners who want to finally break through and start speaking English with confidence.",
     "description": [
       "## Why Most Learners Stay Silent",
@@ -309,7 +309,7 @@ const BOOKS = [
     "cover": "english",
     "pdf": "downloads/30-topics-for-english-conversation.pdf",
     "pdfDirect": true,
-    "pageCount": 9,
+    "pageCount": 15,
     "excerpt": "Original LifeWithBooks conversation guide — 30 speaking topics with questions, vocabulary and sample answers. Free PDF by Mubashir Mehdi.",
     "blurb": "An original conversation guide for English learners: thirty everyday topics with warm-up questions, key phrases, and sample answers for fluent practice. Written for LifeWithBooks by Mubashir Mehdi.",
     "description": [
@@ -455,12 +455,16 @@ const BOOKS = [
   },
   {
     "id": "english-in-everyday-life",
+    "author": "Mubashir Mehdi",
     "title": "English in Everyday Life",
     "categories": [
       "english-learning-books"
     ],
     "cover": "english",
-    "excerpt": "Practical, functional English for real daily situations — at the supermarket, the airport, the bank, the doctor, at work and with new friends.",
+    "pdf": "downloads/english-in-everyday-life.pdf",
+    "pdfDirect": true,
+    "pageCount": 33,
+    "excerpt": "Original LifeWithBooks guide — Practical, functional English for real daily situations — at the supermarket, the airport, the bank, the doctor, at work and with new friends.",
     "description": [
       "## English for Real Life, Not Exams",
       "English in Everyday Life is designed for learners who need to use English outside the classroom immediately — whether they are travelling, living abroad, or working in an English-speaking environment. Each unit centres on a real situation you will actually face.",
@@ -470,9 +474,9 @@ const BOOKS = [
       "## Practical and Confidence-Building",
       "The book is written in clear, simple English and designed to build confidence quickly. By the end of each unit, you should be able to handle that situation in real life. An excellent resource for immigrants, international students, expats and frequent travellers."
     ],
-    "access": "summary",
-    "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=17latFcymITKeP--fbsZwUI-GS1muRdsp&sz=w1000"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/english-in-everyday-life.jpg"
   },
   {
     "id": "black-book-of-english-vocabulary",

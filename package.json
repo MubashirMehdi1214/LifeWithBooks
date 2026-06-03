@@ -9,6 +9,7 @@
     "guide-covers": "node scripts/generate-branded-guide-covers.js",
     "books-without-pdf": "node scripts/generate-books-without-pdf-list.js",
     "import-pdfspart2": "node scripts/import-pdfspart2-guides.js",
+    "expand-thin-pdfs": "node scripts/expand-thin-guide-pdfs.js",
     "build-pdfs": "node scripts/build-pdfs.js",
     "build-health-pdfs": "node scripts/build-health-pdfs.js",
     "build-ielts-content": "node scripts/build-ielts-guide-content.js",
@@ -47,6 +48,7 @@
   "devDependencies": {
     "esbuild": "^0.28.0",
     "jspdf": "^4.2.1",
+    "pdf-lib": "^1.17.1",
     "pdfkit": "^0.18.0",
     "sharp": "^0.34.5"
   }
