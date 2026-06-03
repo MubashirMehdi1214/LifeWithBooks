@@ -44,6 +44,15 @@ const GUIDES = {
     footer: 'LifeWithBooks Team',
     accent: '#ffd54f',
     icon: '🐍'
+  },
+  '1500-vocabulary-words-for-speaking-english': {
+    gradient: ['#b71c1c', '#c62828', '#e53935'],
+    kicker: 'VOCABULARY',
+    headline: '1500 Words',
+    sub: 'Speaking English',
+    badge: 'FREE PDF',
+    footer: 'Mubashir Mehdi · 15 pages',
+    accent: '#ffeb3b'
   }
 };
 

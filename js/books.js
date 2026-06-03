@@ -277,24 +277,28 @@ const BOOKS = [
     "id": "1500-vocabulary-words-for-speaking-english",
     "slug": "1500-vocabulary-words-for-speaking-english-book",
     "title": "1500 Vocabulary Words for Speaking English",
+    "author": "Mubashir Mehdi",
     "categories": [
       "english-learning-books",
       "vocabulary-books"
     ],
     "cover": "vocabulary",
-    "excerpt": "The 1,500 highest-frequency English words for everyday conversation, organized by topic with definitions, example sentences and pronunciation tips.",
+    "pdf": "downloads/1500-vocabulary-words-for-speaking-english.pdf",
+    "pdfDirect": true,
+    "pageCount": 15,
+    "excerpt": "Original LifeWithBooks vocabulary guide — 1,500 high-frequency words with meanings and conversational examples. Free PDF by Mubashir Mehdi.",
+    "blurb": "An original vocabulary guide for English learners: thematic word lists, clear definitions, and natural example sentences for everyday and professional speaking. Written for LifeWithBooks by Mubashir Mehdi.",
     "description": [
-      "## The Core Words You Actually Need",
-      "Research shows that the most frequent 1,500–2,000 words account for roughly 85 percent of everyday spoken English. This book identifies and teaches those essential words so learners can maximise their conversational ability with a focused vocabulary set.",
-      "## Organized by Everyday Topics",
-      "Words are grouped into topics that mirror daily life: people and relationships, the body and health, home and household, food and drink, clothing, daily routines, work and jobs, school and education, transport, shopping, feelings and emotions, weather and nature, time and numbers. Within each topic, words are presented with a clear definition, one or two natural example sentences, and notes on pronunciation and common collocations.",
-      "## Built for Speaking, Not Just Reading",
-      "Unlike many vocabulary books that focus on reading comprehension, this one is designed specifically for speaking. Each section includes speaking prompts that encourage you to use the new words in sentences and short responses immediately. The goal is active production — getting words from your passive knowledge into your active speaking vocabulary.",
-      "A perfect companion for beginner-to-intermediate learners who want to hold everyday conversations without constantly searching for words."
+      "## About This Guide",
+      "This is an **original LifeWithBooks vocabulary guide** written by Mubashir Mehdi. It is not affiliated with any publisher or third-party book. Words are grouped into practical themes with definitions and conversational examples you can use in daily speech.",
+      "## What You Get",
+      "High-frequency vocabulary for speaking English fluently: emotion and personality words, idioms, phrasal verbs, transition phrases, and more — with example sentences for each entry.",
+      "## How to Use It",
+      "Download the free PDF, study one theme per day, and practise saying the example sentences aloud. Combine with our classic novels and conversation guides for reading and listening practice."
     ],
-    "access": "summary",
-    "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=1Z_b48Cxo_P81y31p9x5q4BWSvLjMwDxW&sz=w1000"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/1500-vocabulary-words-for-speaking-english.jpg"
   },
   {
     "id": "how-to-get-really-good-at-english",
