@@ -14,6 +14,8 @@ const { BOOKS } = require(path.join(root, 'js', 'books.js'));
 
 const TARGET_IDS = [
   'ielts-academic-practice-tests-guide',
+  'ielts-complete-preparation-guide',
+  'css-pms-english-essay-guide',
   'css-english-essay-writing-guide',
   'python-programming-beginner-guide'
 ];

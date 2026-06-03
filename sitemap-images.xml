@@ -1169,4 +1169,39 @@
       <image:title>The Awakening</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/book/ielts-complete-preparation-guide.html</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.lifewithbooks.co/covers-img/ielts-complete-preparation-guide.webp</image:loc>
+      <image:title>IELTS Complete Preparation Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/book/ielts-academic-practice-tests-guide.html</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.lifewithbooks.co/covers-img/ielts-academic-practice-tests-guide.webp</image:loc>
+      <image:title>IELTS Academic Practice Tests Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/book/css-pms-english-essay-guide.html</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.lifewithbooks.co/covers-img/css-pms-english-essay-guide.webp</image:loc>
+      <image:title>CSS PMS English Essay Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/book/css-english-essay-writing-guide.html</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.lifewithbooks.co/covers-img/css-english-essay-writing-guide.webp</image:loc>
+      <image:title>CSS English Essay Writing Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/book/python-programming-beginner-guide.html</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.lifewithbooks.co/covers-img/python-programming-beginner-guide.webp</image:loc>
+      <image:title>Python Programming Beginner Guide</image:title>
+    </image:image>
+  </url>
 </urlset>

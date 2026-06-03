@@ -8,6 +8,12 @@
     "fetch-covers": "node scripts/fetch-placeholder-covers.js",
     "build-pdfs": "node scripts/build-pdfs.js",
     "build-health-pdfs": "node scripts/build-health-pdfs.js",
+    "build-ielts-content": "node scripts/build-ielts-guide-content.js",
+    "build-ielts-guide": "npm run build-ielts-content && node scripts/register-ielts-complete-guide.js && node scripts/build-ielts-complete-guide-jspdf.js",
+    "build-ielts-pdf": "node scripts/build-ielts-complete-guide-jspdf.js",
+    "build-css-content": "node scripts/build-css-guide-content.js",
+    "build-css-pdf": "node scripts/build-css-pms-guide-jspdf.js",
+    "build-css-guide": "npm run build-css-content && node scripts/register-css-pms-guide.js && npm run build-css-pdf",
     "classify": "node scripts/classify-books.js",
     "og": "node scripts/og-rasterize.js",
     "sitemap": "node scripts/generate-sitemap.js",
@@ -37,6 +43,7 @@
   "homepage": "https://github.com/MubashirMehdi1214/LifeWithBooks#readme",
   "devDependencies": {
     "esbuild": "^0.28.0",
+    "jspdf": "^4.2.1",
     "pdfkit": "^0.18.0",
     "sharp": "^0.34.5"
   }

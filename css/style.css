@@ -511,6 +511,29 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
   font-size: 12px;
   font-weight: 600;
 }
+.book-single .meta .tag-original {
+  background: var(--accent);
+  color: #fff;
+  letter-spacing: 0.04em;
+}
+.book-single .book-lead {
+  background: linear-gradient(135deg, #e8f4f1 0%, #f8faf9 100%);
+  border-left: 4px solid var(--accent);
+  padding: 20px 24px;
+  border-radius: var(--radius);
+  margin-bottom: 28px;
+}
+.book-single .book-lead p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--contrast);
+}
+.book-single .download-block .download-meta {
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: var(--contrast-3);
+}
 .book-single .article p {
   margin-bottom: 18px;
   font-size: 16.5px;

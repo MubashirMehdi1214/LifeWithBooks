@@ -173,9 +173,27 @@ function renderBookPage(book, depth) {
     ]
   })}</script>`;
 
+  const downloadNote = book.license === 'original'
+    ? 'Original LifeWithBooks guide — free PDF you can keep and share.'
+    : 'This is a free, legal public-domain edition.';
+  const pdfHref = book.pdfDirect && book.pdf
+    ? p + book.pdf
+    : p + 'download.html?id=' + encodeURIComponent(book.id);
+  const downloadBtn = book.pdfDirect && book.pdf
+    ? `<a class="btn" href="${esc(pdfHref)}" download="${esc(book.id)}.pdf">&#8595; Download Free PDF</a>`
+    : `<a class="btn" href="${esc(pdfHref)}">&#8595; Download Free PDF</a>`;
   const download = downloadable
-    ? `<div class="download-block"><p>This is a free, legal public-domain edition.</p><a class="btn" href="${p}download.html?id=${encodeURIComponent(book.id)}">&#8595; Download Free PDF</a></div>`
+    ? `<div class="download-block"><p>${downloadNote}</p>${downloadBtn}<p class="download-meta">${book.pageCount ? esc(String(book.pageCount)) + '-page PDF' : 'PDF'} &middot; Instant download</p></div>`
     : `<div class="download-block summary-block"><p>Reference overview — see official sources for the full work where applicable.</p></div>`;
+  const originalBadge = book.license === 'original'
+    ? '<span class="tag tag-original">ORIGINAL GUIDE</span>'
+    : '';
+  const pageTag = book.pageCount
+    ? '<span class="tag">' + esc(String(book.pageCount)) + ' pages</span>'
+    : '';
+  const leadHtml = book.blurb
+    ? '<div class="book-lead"><p>' + esc(book.blurb) + '</p></div>'
+    : '';
 
   const relatedHtml = related.map(b =>
     `<li><a href="${encodeURIComponent(b.id)}.html"><span>${esc(b.title)}</span><span class="arrow">View &raquo;</span></a></li>`
@@ -195,7 +213,8 @@ function renderBookPage(book, depth) {
     <div class="breadcrumb"><a href="${p}index.html">Home</a> &raquo; <a href="${p}category/${primaryCat}.html">${esc(catLabel)}</a> &raquo; <span>${esc(book.title)}</span></div>
     ${cover}
     <h1>${esc(book.title)}</h1>
-    <div class="meta"><span class="tag">${esc(author)}</span><span class="tag">${downloadable ? 'Free PDF Download' : 'Study Guide'}</span></div>
+    <div class="meta"><span class="tag">${esc(author)}</span>${originalBadge}${pageTag}<span class="tag">${downloadable ? 'Free PDF Download' : 'Study Guide'}</span></div>
+    ${leadHtml}
     <article class="article">${descHtml}${extra}</article>
     ${download}
     <div class="related-posts"><h3>You Might Also Like</h3><ul>${relatedHtml}</ul></div>
