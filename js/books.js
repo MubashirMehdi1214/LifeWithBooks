@@ -4,13 +4,17 @@ const BOOKS = [
   {
     "id": "longman-photo-dictionary-american-english",
     "slug": "longman-photo-dictionary-of-american-english",
+    "author": "Mubashir Mehdi",
     "title": "LONGMAN PHOTO DICTIONARY OF AMERICAN ENGLISH",
     "categories": [
       "english-learning-books",
       "vocabulary-books"
     ],
     "cover": "english",
-    "excerpt": "Over 2,500 American English words taught through vivid, real-life photographs organized into thematic chapters for visual learners.",
+    "pdf": "downloads/longman-photo-dictionary-american-english.pdf",
+    "pdfDirect": true,
+    "pageCount": 44,
+    "excerpt": "Original LifeWithBooks guide — Over 2,500 American English words taught through vivid, real-life photographs organized into thematic chapters for visual learners.",
     "description": [
       "## The Power of Photographic Learning",
       "Visual learning has long been recognized as one of the most effective pathways to vocabulary acquisition. The Longman Photo Dictionary of American English uses authentic, high-quality photographs depicting real-life situations and objects to teach over 2,500 essential words. Unlike traditional illustrated dictionaries that rely on drawings, this resource uses actual photographs that provide immediate, realistic connections between words and their meanings — connections that are more durable than those formed through translation alone.",
@@ -24,17 +28,22 @@ const BOOKS = [
       "## For All Learner Levels",
       "The visual, contextual approach makes this dictionary accessible for absolute beginners building foundational vocabulary, while its depth offers advanced learners exposure to nuanced American English expressions. For students preparing for life in the United States, it builds the practical vocabulary essential for navigating campus life, housing, transportation and community engagement. Available as a downloadable PDF for instant access across all devices."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/longman-photo-dictionary-american-english.jpg"
   },
   {
     "id": "english-unlimited",
+    "author": "Mubashir Mehdi",
     "title": "English Unlimited",
     "categories": [
       "english-learning-books"
     ],
     "cover": "english",
-    "excerpt": "A six-level communicative English course from Cambridge designed for real-world international communication at every CEFR level.",
+    "pdf": "downloads/english-unlimited.pdf",
+    "pdfDirect": true,
+    "pageCount": 4,
+    "excerpt": "Original LifeWithBooks guide — A six-level communicative English course from Cambridge designed for real-world international communication at every CEFR level.",
     "description": [
       "## A Course Built for Real Communication",
       "English Unlimited is a six-level adult English course developed by Cambridge University Press. Unlike courses that focus primarily on grammar drills, English Unlimited is built around practical, real-world communication goals. Every lesson connects language to a genuine communicative purpose — ordering at a restaurant, negotiating at work, discussing news, or navigating social situations.",
@@ -45,20 +54,24 @@ const BOOKS = [
       "## Self-Study and Classroom Materials",
       "The course includes a comprehensive workbook with additional grammar, vocabulary and skills practice for homework or independent study. Video material brings real-world English into the classroom, and teacher's resources provide photocopiable activities, tests and detailed lesson plans. The self-study pack with DVD-ROM allows learners to review and extend their learning outside class."
     ],
-    "access": "summary",
-    "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=1daBCHD03XnqGZrUw3Y8oWmYYDf7LVxL4&sz=w1000"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/english-unlimited.jpg"
   },
   {
     "id": "preposition-focus-on-building-mastery",
     "slug": "prepositon-focus-on-building-mastery",
+    "author": "Mubashir Mehdi",
     "title": "Preposition Focus on Building Mastery",
     "categories": [
       "english-learning-books",
       "grammar-books"
     ],
     "cover": "english",
-    "excerpt": "A focused workbook that systematically teaches English prepositions through clear rules, hundreds of examples and graded practice exercises.",
+    "pdf": "downloads/preposition-focus-on-building-mastery.pdf",
+    "pdfDirect": true,
+    "pageCount": 4,
+    "excerpt": "Original LifeWithBooks guide — A focused workbook that systematically teaches English prepositions through clear rules, hundreds of examples and graded practice exercises.",
     "description": [
       "## Why Prepositions Are So Difficult",
       "Prepositions are widely considered one of the most challenging aspects of English grammar. Unlike nouns or verbs, prepositions often seem arbitrary — why do we say 'interested in' but 'excited about'? Why 'on Monday' but 'at night'? This book addresses that challenge head-on by organizing prepositions into logical categories and providing the patterns and rules that actually exist beneath the apparent chaos.",
@@ -69,20 +82,24 @@ const BOOKS = [
       "Every exercise comes with a detailed answer key, making the book fully suitable for self-study. Learners can work through it chapter by chapter for a complete course, or dip into specific sections to target their weak areas. The progressive difficulty within each chapter means both intermediate and upper-intermediate learners will find it useful.",
       "Ideal for exam preparation, academic writing improvement, or anyone tired of guessing which preposition to use."
     ],
-    "access": "summary",
-    "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=1dG-FdEB4-Avw0tG_ynVRoSVfiOrMrDsz&sz=w1000"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/preposition-focus-on-building-mastery.jpg"
   },
   {
     "id": "technical-english",
     "slug": "technical-english-",
+    "author": "Mubashir Mehdi",
     "title": "Technical English",
     "categories": [
       "english-learning-books",
       "business-books"
     ],
     "cover": "english",
-    "excerpt": "A multi-level course building the specialised English vocabulary and communication skills needed in engineering, IT and technical workplaces.",
+    "pdf": "downloads/technical-english.pdf",
+    "pdfDirect": true,
+    "pageCount": 3,
+    "excerpt": "Original LifeWithBooks guide — A multi-level course building the specialised English vocabulary and communication skills needed in engineering, IT and technical workplaces.",
     "description": [
       "## English for the Technical Workplace",
       "Technical English is a four-level course designed for students and professionals working in engineering, manufacturing, electronics, mechanics, construction and information technology. Published by Pearson, it bridges the gap between general English courses and the specialised language demands of technical careers.",
@@ -93,20 +110,24 @@ const BOOKS = [
       "## Practical Communication Focus",
       "The course places strong emphasis on practical communication: describing components and their functions, explaining sequences and processes, comparing alternatives, writing reports and emails, and giving short presentations to colleagues. These are the exact communication tasks that engineers, technicians and IT professionals face daily in international workplaces."
     ],
-    "access": "summary",
-    "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=1kJsgAcoaSkFCEAg5Te-OazsveXX4X58h&sz=w1000"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/technical-english.jpg"
   },
   {
     "id": "english-for-meetings-phrases-expressions",
     "slug": "2087-english-for-meetings-phrases-expressions-and-one-case-to-be-fluent-in-meetings",
+    "author": "Mubashir Mehdi",
     "title": "English for Meetings — Phrases, Expressions and One Case to Be Fluent in Meetings",
     "categories": [
       "english-learning-books",
       "business-books"
     ],
     "cover": "business",
-    "excerpt": "A practical phrase book containing ready-to-use expressions for every stage of an English-language business meeting.",
+    "pdf": "downloads/english-for-meetings-phrases-expressions.pdf",
+    "pdfDirect": true,
+    "pageCount": 4,
+    "excerpt": "Original LifeWithBooks guide — A practical phrase book containing ready-to-use expressions for every stage of an English-language business meeting.",
     "description": [
       "## The Challenge of Meeting English",
       "Business meetings in English can be stressful even for fluent speakers. The language moves fast, multiple people compete for the floor, and there is an unwritten set of phrases that native speakers use to open discussions, express opinions, agree, disagree, interrupt politely, redirect the conversation and summarise decisions. This book gives you exactly those phrases.",
@@ -117,18 +138,22 @@ const BOOKS = [
       "The final section presents a complete business case study — a realistic scenario involving product development meetings across multiple sessions. You follow the case from the initial brainstorming meeting through progress updates, problem-solving discussions and the final decision meeting, seeing all the expressions from earlier chapters working together in an extended context.",
       "This case study makes the book more than a phrase list — it becomes a simulation of real meeting participation that you can study, practise and adapt to your own workplace."
     ],
-    "access": "summary",
-    "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=1WdcHVE-vN01idAw1uiyY29lmj4weVGdy&sz=w1000"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/english-for-meetings-phrases-expressions.jpg"
   },
   {
     "id": "mcgraw-hill-conversational-american-english",
+    "author": "Mubashir Mehdi",
     "title": "McGraw-Hill Conversational American English",
     "categories": [
       "english-learning-books"
     ],
     "cover": "english",
-    "excerpt": "Over 3,000 idiomatic expressions and conversational patterns used in everyday American English, organized by real-life situations.",
+    "pdf": "downloads/mcgraw-hill-conversational-american-english.pdf",
+    "pdfDirect": true,
+    "pageCount": 3,
+    "excerpt": "Original LifeWithBooks guide — Over 3,000 idiomatic expressions and conversational patterns used in everyday American English, organized by real-life situations.",
     "description": [
       "## Speaking Like Americans Actually Speak",
       "McGraw-Hill's Conversational American English focuses on the spoken language that Americans actually use in daily life — the contractions, reductions, idioms, slang and small-talk patterns that textbooks often skip. It contains over 3,000 expressions organized into more than 100 everyday situations.",
@@ -138,19 +163,23 @@ const BOOKS = [
       "## Building Natural Fluency",
       "The book is designed for reference and study. You can look up a specific situation when you need it, or read through entire chapters to absorb the patterns. An alphabetical index of all expressions makes it easy to find any phrase. Pronunciation tips throughout help learners with the rhythm, stress and intonation that make spoken American English sound natural rather than bookish."
     ],
-    "access": "summary",
-    "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=1mq7mIb7JhE47OfogkmVGITg8pScv2Tgo&sz=w1000"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/mcgraw-hill-conversational-american-english.jpg"
   },
   {
     "id": "english-vocabulary-in-use-upper-intermediate",
+    "author": "Mubashir Mehdi",
     "title": "English Vocabulary in Use — Upper Intermediate",
     "categories": [
       "english-learning-books",
       "vocabulary-books"
     ],
     "cover": "vocabulary",
-    "excerpt": "100 two-page units of upper-intermediate vocabulary from Cambridge, with clear explanations on the left and immediate practice on the right.",
+    "pdf": "downloads/english-vocabulary-in-use-upper-intermediate.pdf",
+    "pdfDirect": true,
+    "pageCount": 6,
+    "excerpt": "Original LifeWithBooks guide — 100 two-page units of upper-intermediate vocabulary from Cambridge, with clear explanations on the left and immediate practice on the right.",
     "description": [
       "## The Proven Left-Right Format",
       "English Vocabulary in Use Upper-Intermediate is part of the bestselling vocabulary series from Cambridge University Press. It follows the proven two-page unit format: the left page presents and explains new vocabulary with definitions, examples and usage notes, while the right page provides exercises for immediate practice. This design makes it perfect for focused 20–30 minute study sessions.",
@@ -160,19 +189,23 @@ const BOOKS = [
       "## Self-Study With Full Answer Key",
       "A complete answer key at the back allows independent learners to check their work immediately. A comprehensive word list and index makes it easy to find where any word is taught. The book works equally well as a classroom resource or a self-study reference, and many teachers assign individual units as targeted homework."
     ],
-    "access": "summary",
-    "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=1I9x6n6n6wVPbw1gjxGR8DRkizClxXdfP&sz=w1000"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/english-vocabulary-in-use-upper-intermediate.jpg"
   },
   {
     "id": "practical-english-usage",
+    "author": "Mubashir Mehdi",
     "title": "Practical English Usage",
     "categories": [
       "english-learning-books",
       "grammar-books"
     ],
     "cover": "english",
-    "excerpt": "Michael Swan's authoritative A–Z reference covering over 600 points of English grammar, vocabulary and usage that cause difficulty for learners and teachers.",
+    "pdf": "downloads/practical-english-usage.pdf",
+    "pdfDirect": true,
+    "pageCount": 6,
+    "excerpt": "Original LifeWithBooks guide — Michael Swan's authoritative A–Z reference covering over 600 points of English grammar, vocabulary and usage that cause difficulty for learners and teachers.",
     "description": [
       "## The Go-To Grammar Reference",
       "Practical English Usage by Michael Swan, published by Oxford University Press, is one of the most widely used grammar and usage references in the English-teaching world. Now in its fourth edition, it covers over 600 points of grammar, vocabulary and pronunciation that cause difficulty for learners of English — and for their teachers.",
@@ -183,18 +216,22 @@ const BOOKS = [
       "The book is used in teacher training programmes, university linguistics courses and translation departments around the world. It strikes a unique balance — linguistically accurate enough for professionals, yet clearly written enough for advanced learners to use independently.",
       "Michael Swan's explanations avoid unnecessary jargon, focus on what learners actually need to know, and address the real mistakes that students make rather than invented textbook errors. The fourth edition has been thoroughly updated with new corpus-based examples and coverage of current usage trends."
     ],
-    "access": "summary",
-    "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=1R8m9hE7MNfBY73_nKLZe6VH6Ux0CMhSd&sz=w1000"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/practical-english-usage.jpg"
   },
   {
     "id": "spoken-english-conversation-practice",
+    "author": "Mubashir Mehdi",
     "title": "Spoken English Conversation Practice",
     "categories": [
       "english-learning-books"
     ],
     "cover": "english",
-    "excerpt": "Structured daily conversation material for learners who can read and write English but struggle to speak fluently and confidently.",
+    "pdf": "downloads/spoken-english-conversation-practice.pdf",
+    "pdfDirect": true,
+    "pageCount": 9,
+    "excerpt": "Original LifeWithBooks guide — Structured daily conversation material for learners who can read and write English but struggle to speak fluently and confidently.",
     "description": [
       "## Breaking the Speaking Barrier",
       "Many English learners reach a level where they can read articles, understand videos and write emails — but freeze when it is time to speak. Spoken English Conversation Practice addresses this common problem with structured speaking material for everyday situations.",
@@ -204,19 +241,23 @@ const BOOKS = [
       "The book includes specific techniques for practising alone: reading dialogues aloud, recording yourself and comparing with models, substitution drills where you change details while keeping the pattern, and shadowing exercises where you speak along with a recording. These techniques help build the automatic recall and mouth-muscle memory that fluent speaking requires.",
       "Ideal for self-study learners, immigrants settling into English-speaking countries, or anyone preparing for a speaking exam."
     ],
-    "access": "summary",
-    "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=1yH58as9Y9kbTtsV7ttZCuOfKvynHtQ7c&sz=w1000"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/spoken-english-conversation-practice.jpg"
   },
   {
     "id": "english-phonetics-and-phonology",
     "slug": "english-phonetics-and-phonology-an-introduction-book",
+    "author": "Mubashir Mehdi",
     "title": "English Phonetics and Phonology — An Introduction",
     "categories": [
       "english-learning-books"
     ],
     "cover": "english",
-    "excerpt": "A clear academic introduction to the sound system of English: vowels, consonants, stress, rhythm, intonation and connected speech.",
+    "pdf": "downloads/english-phonetics-and-phonology.pdf",
+    "pdfDirect": true,
+    "pageCount": 11,
+    "excerpt": "Original LifeWithBooks guide — A clear academic introduction to the sound system of English: vowels, consonants, stress, rhythm, intonation and connected speech.",
     "description": [
       "## Understanding How English Sounds Work",
       "This textbook provides a clear, systematic introduction to the phonetics and phonology of English. It covers the physical production of speech sounds (articulatory phonetics), the sound system and patterns of English (phonology), and the ways sounds change in connected speech.",
@@ -226,19 +267,23 @@ const BOOKS = [
       "## Who This Book Is For",
       "Written for university students of linguistics, English language or TESOL, it is also valuable for language teachers who want to understand the sound system well enough to help their students, and for any serious learner determined to master English pronunciation. The approach is descriptive rather than prescriptive, covering both British (RP) and American (GA) pronunciation with notes on regional variation."
     ],
-    "access": "summary",
-    "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=1T0DZxPKu-NR7NDXFTx1Zs3DJgTTy-eBy&sz=w1000"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/english-phonetics-and-phonology.jpg"
   },
   {
     "id": "talk-english-secret-to-speak-english",
     "slug": "talk-english-the-secret-to-speak-english",
+    "author": "Mubashir Mehdi",
     "title": "Talk English — The Secret to Speak English",
     "categories": [
       "english-learning-books"
     ],
     "cover": "english",
-    "excerpt": "A motivational and practical method for shy or stuck learners who want to finally break through and start speaking English with confidence.",
+    "pdf": "downloads/talk-english-secret-to-speak-english.pdf",
+    "pdfDirect": true,
+    "pageCount": 10,
+    "excerpt": "Original LifeWithBooks guide — A motivational and practical method for shy or stuck learners who want to finally break through and start speaking English with confidence.",
     "description": [
       "## Why Most Learners Stay Silent",
       "Talk English starts by explaining why so many learners study English for years but never achieve speaking fluency. The problem, the author argues, is not lack of knowledge but lack of a speaking system. Most courses teach grammar and vocabulary without building the habits and confidence needed for real-time conversation.",
@@ -249,9 +294,9 @@ const BOOKS = [
       "Several chapters deal specifically with the psychology of speaking: how to handle the fear of making mistakes, how to stop translating in your head, how to build a 'speaking habit loop', and how to measure your progress. Real success stories from learners who used the method provide motivation.",
       "The book is short, action-oriented and written in simple English so even intermediate learners can follow it comfortably."
     ],
-    "access": "summary",
-    "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=1vVYcE1DC3rD0UpYm3mQ2WOUnK4RyBx27&sz=w1000"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/talk-english-secret-to-speak-english.jpg"
   },
   {
     "id": "30-topics-for-english-conversation",
@@ -309,12 +354,16 @@ const BOOKS = [
   {
     "id": "how-to-get-really-good-at-english",
     "slug": "how-to-get-really-good-at-english-book",
+    "author": "Mubashir Mehdi",
     "title": "How to Get Really Good at English",
     "categories": [
       "english-learning-books"
     ],
     "cover": "english",
-    "excerpt": "A no-nonsense guide to effective English study habits, input choices and practice routines for learners who want to reach a genuinely high level.",
+    "pdf": "downloads/how-to-get-really-good-at-english.pdf",
+    "pdfDirect": true,
+    "pageCount": 16,
+    "excerpt": "Original LifeWithBooks guide — A no-nonsense guide to effective English study habits, input choices and practice routines for learners who want to reach a genuinely high level.",
     "description": [
       "## Honest Advice for Serious Learners",
       "How to Get Really Good at English is written for learners who are past the beginner stage and serious about reaching a high level of fluency. It cuts through marketing hype and gives honest, practical advice about what actually works in language learning — backed by research and real experience.",
@@ -324,19 +373,23 @@ const BOOKS = [
       "Rather than vague advice, the book provides concrete weekly study plans showing exactly how to divide your available time across different activities. There are plans for learners with 30 minutes a day, one hour a day, and two hours a day, each designed to balance input, output and review.",
       "Expect practical systems and honest time estimates rather than promises of overnight fluency."
     ],
-    "access": "summary",
-    "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=155mqZ14ejfsGmVY9U4-3TNt8MPfBnIGE&sz=w1000"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/how-to-get-really-good-at-english.jpg"
   },
   {
     "id": "learn-how-to-speak-english-fluently-7-easy-steps",
     "slug": "learn-how-to-speak-english-fluently-english-speaking-mastery-in-7-easy-steps-book",
+    "author": "Mubashir Mehdi",
     "title": "Learn How to Speak English Fluently — English Speaking Mastery in 7 Easy Steps",
     "categories": [
       "english-learning-books"
     ],
     "cover": "english",
-    "excerpt": "A seven-step method that takes intermediate English learners from hesitant speech to fluent, confident conversation.",
+    "pdf": "downloads/learn-how-to-speak-english-fluently-7-easy-steps.pdf",
+    "pdfDirect": true,
+    "pageCount": 15,
+    "excerpt": "Original LifeWithBooks guide — A seven-step method that takes intermediate English learners from hesitant speech to fluent, confident conversation.",
     "description": [
       "## Seven Steps from Hesitation to Fluency",
       "This book breaks the journey to English fluency into seven clear, sequential steps. Each step builds on the previous one, creating a practical pathway that intermediate learners can follow to overcome the plateau that keeps many students stuck between 'understanding English' and 'speaking English fluently'.",
@@ -345,18 +398,23 @@ const BOOKS = [
       "## Action-Oriented and Practical",
       "Each step has a clear goal, a set of daily exercises with specific time commitments, and a self-assessment checklist so you always know whether you are ready to move to the next step. The book also includes motivational sections addressing common frustrations like forgetting words mid-sentence, struggling with certain sounds, and feeling embarrassed about your accent."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/learn-how-to-speak-english-fluently-7-easy-steps.jpg"
   },
   {
     "id": "macmillan-english-grammar-in-context-intermediate-1",
+    "author": "Mubashir Mehdi",
     "title": "Macmillan English Grammar in Context — Intermediate (1)",
     "categories": [
       "english-learning-books",
       "grammar-books"
     ],
     "cover": "grammar",
-    "excerpt": "Intermediate English grammar taught through engaging real-world contexts including science, history, nature and the arts — not dry isolated examples.",
+    "pdf": "downloads/macmillan-english-grammar-in-context-intermediate-1.pdf",
+    "pdfDirect": true,
+    "pageCount": 15,
+    "excerpt": "Original LifeWithBooks guide — Intermediate English grammar taught through engaging real-world contexts including science, history, nature and the arts — not dry isolated examples.",
     "description": [
       "## Grammar Through Real Content",
       "Macmillan English Grammar in Context takes a distinctive approach: instead of teaching grammar through invented textbook sentences, it presents each structure within engaging texts about real-world topics — science, history, geography, nature, the arts, technology and culture. This means you learn grammar while also learning interesting content.",
@@ -365,18 +423,23 @@ const BOOKS = [
       "## Review and Self-Assessment",
       "Regular review sections test multiple grammar points together, helping learners consolidate what they have learned. A complete answer key and grammar reference section at the back support self-study. The book is widely used in international schools, language institutes and by independent learners preparing for Cambridge or IELTS exams."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/macmillan-english-grammar-in-context-intermediate-1.jpg"
   },
   {
     "id": "fundamentals-of-english-grammar-workbook",
+    "author": "Mubashir Mehdi",
     "title": "Fundamentals of English Grammar — Workbook",
     "categories": [
       "english-learning-books",
       "grammar-books"
     ],
     "cover": "grammar",
-    "excerpt": "The companion workbook to Betty Azar's classic grammar series, providing extensive independent practice on all major intermediate-level grammar points.",
+    "pdf": "downloads/fundamentals-of-english-grammar-workbook.pdf",
+    "pdfDirect": true,
+    "pageCount": 15,
+    "excerpt": "Original LifeWithBooks guide — The companion workbook to Betty Azar's classic grammar series, providing extensive independent practice on all major intermediate-level grammar points.",
     "description": [
       "## Extra Practice for Every Grammar Point",
       "The Fundamentals of English Grammar Workbook is the companion practice book to the well-known Azar-Hagen grammar series. It provides extensive additional exercises for every grammar chapter in the main textbook, giving learners the repetition and variety they need to truly internalise grammar rules.",
@@ -386,9 +449,9 @@ const BOOKS = [
       "## Self-Study With Answer Key",
       "A comprehensive answer key allows independent learners to check their own work. The workbook can be used alongside the main textbook in class, assigned as homework, or worked through independently as a grammar refresher course."
     ],
-    "access": "summary",
-    "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=1nHPu_wukv9hHSbIBf6MyrPm8z-p21gH5&sz=w1000"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/fundamentals-of-english-grammar-workbook.jpg"
   },
   {
     "id": "english-in-everyday-life",
