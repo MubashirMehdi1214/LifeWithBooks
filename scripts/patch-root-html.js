@@ -39,8 +39,9 @@ function patchFile(file, opts) {
     html = html.replace(/<link rel="canonical" href="[^"]*">/, `<link rel="canonical" href="${opts.canonical}">`);
   }
   if (opts.ogImage) {
-    html = html.replace(/og-image\.png/g, opts.ogImage.replace(/^.*\//, '').includes('webp') ? opts.ogImage : 'og-home.webp');
-    html = html.replace(/content="https:\/\/www\.lifewithbooks\.co\/og-image\.png"/g, `content="${opts.ogImage}"`);
+    const og = /^https?:\/\//i.test(opts.ogImage) ? opts.ogImage : ORIGIN + opts.ogImage;
+    html = html.replace(/(<meta property="og:image" content=")[^"]*(")/g, `$1${og}$2`);
+    html = html.replace(/(<meta name="twitter:image" content=")[^"]*(")/g, `$1${og}$2`);
   }
   fs.writeFileSync(fp, html, 'utf8');
   console.log('Patched', file);

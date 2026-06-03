@@ -1,100 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://www.lifewithbooks.co/book/longman-photo-dictionary-american-english.html</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.lifewithbooks.co/covers-img/longman-photo-dictionary-american-english.webp</image:loc>
+      <image:title>LONGMAN PHOTO DICTIONARY OF AMERICAN ENGLISH</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://www.lifewithbooks.co/book/english-unlimited.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=1daBCHD03XnqGZrUw3Y8oWmYYDf7LVxL4&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/og/books/english-unlimited.webp</image:loc>
       <image:title>English Unlimited</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.lifewithbooks.co/book/preposition-focus-on-building-mastery.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=1dG-FdEB4-Avw0tG_ynVRoSVfiOrMrDsz&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/og/books/preposition-focus-on-building-mastery.webp</image:loc>
       <image:title>Preposition Focus on Building Mastery</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.lifewithbooks.co/book/technical-english.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=1kJsgAcoaSkFCEAg5Te-OazsveXX4X58h&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/og/books/technical-english.webp</image:loc>
       <image:title>Technical English</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.lifewithbooks.co/book/english-for-meetings-phrases-expressions.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=1WdcHVE-vN01idAw1uiyY29lmj4weVGdy&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/og/books/english-for-meetings-phrases-expressions.webp</image:loc>
       <image:title>English for Meetings — Phrases, Expressions and One Case to Be Fluent in Meetings</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.lifewithbooks.co/book/mcgraw-hill-conversational-american-english.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=1mq7mIb7JhE47OfogkmVGITg8pScv2Tgo&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/og/books/mcgraw-hill-conversational-american-english.webp</image:loc>
       <image:title>McGraw-Hill Conversational American English</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.lifewithbooks.co/book/english-vocabulary-in-use-upper-intermediate.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=1I9x6n6n6wVPbw1gjxGR8DRkizClxXdfP&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/og/books/english-vocabulary-in-use-upper-intermediate.webp</image:loc>
       <image:title>English Vocabulary in Use — Upper Intermediate</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.lifewithbooks.co/book/practical-english-usage.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=1R8m9hE7MNfBY73_nKLZe6VH6Ux0CMhSd&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/og/books/practical-english-usage.webp</image:loc>
       <image:title>Practical English Usage</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.lifewithbooks.co/book/spoken-english-conversation-practice.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=1yH58as9Y9kbTtsV7ttZCuOfKvynHtQ7c&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/og/books/spoken-english-conversation-practice.webp</image:loc>
       <image:title>Spoken English Conversation Practice</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.lifewithbooks.co/book/english-phonetics-and-phonology.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=1T0DZxPKu-NR7NDXFTx1Zs3DJgTTy-eBy&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/og/books/english-phonetics-and-phonology.webp</image:loc>
       <image:title>English Phonetics and Phonology — An Introduction</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.lifewithbooks.co/book/talk-english-secret-to-speak-english.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=1vVYcE1DC3rD0UpYm3mQ2WOUnK4RyBx27&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/og/books/talk-english-secret-to-speak-english.webp</image:loc>
       <image:title>Talk English — The Secret to Speak English</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/book/30-topics-for-english-conversation.html</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.lifewithbooks.co/covers-img/30-topics-for-english-conversation.webp</image:loc>
+      <image:title>30 Topics for English Conversation</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.lifewithbooks.co/book/1500-vocabulary-words-for-speaking-english.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=1Z_b48Cxo_P81y31p9x5q4BWSvLjMwDxW&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/covers-img/1500-vocabulary-words-for-speaking-english.webp</image:loc>
       <image:title>1500 Vocabulary Words for Speaking English</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.lifewithbooks.co/book/how-to-get-really-good-at-english.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=155mqZ14ejfsGmVY9U4-3TNt8MPfBnIGE&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/og/books/how-to-get-really-good-at-english.webp</image:loc>
       <image:title>How to Get Really Good at English</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/book/learn-how-to-speak-english-fluently-7-easy-steps.html</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.lifewithbooks.co/covers-img/learn-how-to-speak-english-fluently-7-easy-steps.webp</image:loc>
+      <image:title>Learn How to Speak English Fluently — English Speaking Mastery in 7 Easy Steps</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/book/macmillan-english-grammar-in-context-intermediate-1.html</loc>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.lifewithbooks.co/covers-img/macmillan-english-grammar-in-context-intermediate-1.webp</image:loc>
+      <image:title>Macmillan English Grammar in Context — Intermediate (1)</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.lifewithbooks.co/book/fundamentals-of-english-grammar-workbook.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=1nHPu_wukv9hHSbIBf6MyrPm8z-p21gH5&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/covers-img/fundamentals-of-english-grammar-workbook.webp</image:loc>
       <image:title>Fundamentals of English Grammar — Workbook</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.lifewithbooks.co/book/english-in-everyday-life.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=17latFcymITKeP--fbsZwUI-GS1muRdsp&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/og/books/english-in-everyday-life.webp</image:loc>
       <image:title>English in Everyday Life</image:title>
     </image:image>
   </url>
@@ -171,42 +199,42 @@
   <url>
     <loc>https://www.lifewithbooks.co/book/goethe-zertifikat-b2-ubungssatz-03.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=11VBWM31Zg5G2YUgVxmsWeUMCQut2D1XQ&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/og/books/goethe-zertifikat-b2-ubungssatz-03.webp</image:loc>
       <image:title>Goethe-Zertifikat B2 Übungssatz 03 — Kandidaten- und Prüferblätter</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.lifewithbooks.co/book/goethe-zertifikat-b1-deutschprufung.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=1tsRbPgoOncMcvpncIltN99C7HojilDv1&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/og/books/goethe-zertifikat-b1-deutschprufung.webp</image:loc>
       <image:title>Goethe-Zertifikat B1 — Deutschprüfung für Jugendliche und Erwachsene</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.lifewithbooks.co/book/goethe-zertifikat-b1-ubungssatz-erwachsene.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=1-MqmVATQYEwYZGEPn8LaXwA6sQA4ZX6l&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/og/books/goethe-zertifikat-b1-ubungssatz-erwachsene.webp</image:loc>
       <image:title>Goethe-Zertifikat B1 Übungssatz Erwachsene — Kandidaten- und Prüferblätter</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.lifewithbooks.co/book/goethe-zertifikat-a2-fit-in-deutsch-2-jugendliche.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=1mf1Wpw2FORUJ2Rd2H6xQd5NqIJBWQc3j&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/og/books/goethe-zertifikat-a2-fit-in-deutsch-2-jugendliche.webp</image:loc>
       <image:title>Goethe-Zertifikat A2 — Fit in Deutsch 2 für Jugendliche</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.lifewithbooks.co/book/goethe-zertifikat-a2-fit-in-deutsch-2.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=1mRqSwhZdBUKDTExXO90KTZjGTiUBm6g3&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/og/books/goethe-zertifikat-a2-fit-in-deutsch-2.webp</image:loc>
       <image:title>Goethe-Zertifikat A2 — Fit in Deutsch 2</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://www.lifewithbooks.co/book/goethe-zertifikat-a1-fit-in-deutsch-1-ubungssatz-01.html</loc>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://www.lifewithbooks.co/https://drive.google.com/thumbnail?id=1uJMkbkkRnTPPmfLshBAi-dJZPmfOlZU4&sz=w1000</image:loc>
+      <image:loc>https://www.lifewithbooks.co/og/books/goethe-zertifikat-a1-fit-in-deutsch-1-ubungssatz-01.webp</image:loc>
       <image:title>Goethe-Zertifikat A1 — Fit in Deutsch 1 Übungssatz 01</image:title>
     </image:image>
   </url>

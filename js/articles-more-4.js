@@ -29,7 +29,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy Emma, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Emma PDF",
       "Ready to start reading? Visit our Emma book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=emma — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/emma.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -61,7 +61,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy Sense and Sensibility, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Sense and Sensibility PDF",
       "Ready to start reading? Visit our Sense and Sensibility book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=sense-and-sensibility — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/sense-and-sensibility.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -93,7 +93,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy Persuasion, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Persuasion PDF",
       "Ready to start reading? Visit our Persuasion book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=persuasion — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/persuasion.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -125,7 +125,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy Northanger Abbey, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Northanger Abbey PDF",
       "Ready to start reading? Visit our Northanger Abbey book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=northanger-abbey — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/northanger-abbey.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -157,7 +157,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy Oliver Twist, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Oliver Twist PDF",
       "Ready to start reading? Visit our Oliver Twist book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=oliver-twist — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/oliver-twist.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -189,7 +189,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy A Christmas Carol, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free A Christmas Carol PDF",
       "Ready to start reading? Visit our A Christmas Carol book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=a-christmas-carol — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/a-christmas-carol.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -221,7 +221,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy Silas Marner, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Silas Marner PDF",
       "Ready to start reading? Visit our Silas Marner book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=silas-marner — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/silas-marner.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -253,7 +253,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy Far from the Madding Crowd, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Far from the Madding Crowd PDF",
       "Ready to start reading? Visit our Far from the Madding Crowd book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=far-from-the-madding-crowd — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/far-from-the-madding-crowd.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -285,7 +285,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy Twenty Thousand Leagues Under the Sea, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Twenty Thousand Leagues Under the Sea PDF",
       "Ready to start reading? Visit our Twenty Thousand Leagues Under the Sea book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=twenty-thousand-leagues-under-the-sea — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/twenty-thousand-leagues-under-the-sea.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -317,7 +317,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy The Mysterious Island, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Mysterious Island PDF",
       "Ready to start reading? Visit our The Mysterious Island book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-mysterious-island — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-mysterious-island.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -349,7 +349,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy The Hound of the Baskervilles, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Hound of the Baskervilles PDF",
       "Ready to start reading? Visit our The Hound of the Baskervilles book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-hound-of-the-baskervilles — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-hound-of-the-baskervilles.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -381,7 +381,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy A Study in Scarlet, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free A Study in Scarlet PDF",
       "Ready to start reading? Visit our A Study in Scarlet book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=a-study-in-scarlet — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/a-study-in-scarlet.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -413,7 +413,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy The Invisible Man, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Invisible Man PDF",
       "Ready to start reading? Visit our The Invisible Man book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-invisible-man — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-invisible-man.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -445,7 +445,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy The Island of Doctor Moreau, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Island of Doctor Moreau PDF",
       "Ready to start reading? Visit our The Island of Doctor Moreau book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-island-of-doctor-moreau — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-island-of-doctor-moreau.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -477,7 +477,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy Ivanhoe, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Ivanhoe PDF",
       "Ready to start reading? Visit our Ivanhoe book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=ivanhoe — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/ivanhoe.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -509,7 +509,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy The Three Musketeers, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Three Musketeers PDF",
       "Ready to start reading? Visit our The Three Musketeers book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-three-musketeers — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-three-musketeers.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -541,7 +541,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy The Man in the Iron Mask, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Man in the Iron Mask PDF",
       "Ready to start reading? Visit our The Man in the Iron Mask book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-man-in-the-iron-mask — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-man-in-the-iron-mask.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -573,7 +573,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy Crime and Punishment, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Crime and Punishment PDF",
       "Ready to start reading? Visit our Crime and Punishment book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=crime-and-punishment — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/crime-and-punishment.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -605,7 +605,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy The Metamorphosis, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Metamorphosis PDF",
       "Ready to start reading? Visit our The Metamorphosis book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-metamorphosis — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-metamorphosis.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -637,7 +637,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy Candide, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Candide PDF",
       "Ready to start reading? Visit our Candide book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=candide — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/candide.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -669,7 +669,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy Meditations, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Meditations PDF",
       "Ready to start reading? Visit our Meditations book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=meditations — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/meditations.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -701,7 +701,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy Walden, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Walden PDF",
       "Ready to start reading? Visit our Walden book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=walden — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/walden.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -733,7 +733,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy Narrative of the Life of Frederick Douglass, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Narrative of the Life of Frederick Douglass PDF",
       "Ready to start reading? Visit our Narrative of the Life of Frederick Douglass book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=narrative-of-the-life-of-frederick-douglass — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/narrative-of-the-life-of-frederick-douglass.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -765,7 +765,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy The Importance of Being Earnest, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Importance of Being Earnest PDF",
       "Ready to start reading? Visit our The Importance of Being Earnest book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-importance-of-being-earnest — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-importance-of-being-earnest.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -797,7 +797,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy The Wind in the Willows, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Wind in the Willows PDF",
       "Ready to start reading? Visit our The Wind in the Willows book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-wind-in-the-willows — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-wind-in-the-willows.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -829,7 +829,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy Black Beauty, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Black Beauty PDF",
       "Ready to start reading? Visit our Black Beauty book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=black-beauty — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/black-beauty.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -861,7 +861,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy The Happy Prince and Other Tales, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Happy Prince and Other Tales PDF",
       "Ready to start reading? Visit our The Happy Prince and Other Tales book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-happy-prince-and-other-tales — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-happy-prince-and-other-tales.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -893,7 +893,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy The Great Gatsby, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Great Gatsby PDF",
       "Ready to start reading? Visit our The Great Gatsby book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-great-gatsby — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-great-gatsby.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -925,7 +925,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy The Jungle, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Jungle PDF",
       "Ready to start reading? Visit our The Jungle book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-jungle — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-jungle.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -957,7 +957,7 @@ const ARTICLES_MORE_4 = [
       "If you enjoy Common Sense, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Common Sense PDF",
       "Ready to start reading? Visit our Common Sense book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=common-sense — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/common-sense.html — free, legal, and ready in seconds.",
     ]
   }
 ];

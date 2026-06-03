@@ -29,7 +29,7 @@ const ARTICLES_MORE_3 = [
       "If you enjoy Dracula, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Dracula PDF",
       "Ready to start reading? Visit our Dracula book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=dracula — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/dracula.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -61,7 +61,7 @@ const ARTICLES_MORE_3 = [
       "If you enjoy The Picture of Dorian Gray, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Picture of Dorian Gray PDF",
       "Ready to start reading? Visit our The Picture of Dorian Gray book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-picture-of-dorian-gray — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-picture-of-dorian-gray.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -93,7 +93,7 @@ const ARTICLES_MORE_3 = [
       "If you enjoy Little Women, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Little Women PDF",
       "Ready to start reading? Visit our Little Women book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=little-women — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/little-women.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -125,7 +125,7 @@ const ARTICLES_MORE_3 = [
       "If you enjoy A Tale of Two Cities, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free A Tale of Two Cities PDF",
       "Ready to start reading? Visit our A Tale of Two Cities book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=a-tale-of-two-cities — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/a-tale-of-two-cities.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -157,7 +157,7 @@ const ARTICLES_MORE_3 = [
       "If you enjoy The Adventures of Tom Sawyer, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Adventures of Tom Sawyer PDF",
       "Ready to start reading? Visit our The Adventures of Tom Sawyer book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-adventures-of-tom-sawyer — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-adventures-of-tom-sawyer.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -189,7 +189,7 @@ const ARTICLES_MORE_3 = [
       "If you enjoy Adventures of Huckleberry Finn, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Adventures of Huckleberry Finn PDF",
       "Ready to start reading? Visit our Adventures of Huckleberry Finn book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=adventures-of-huckleberry-finn — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/adventures-of-huckleberry-finn.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -221,7 +221,7 @@ const ARTICLES_MORE_3 = [
       "If you enjoy Around the World in Eighty Days, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Around the World in Eighty Days PDF",
       "Ready to start reading? Visit our Around the World in Eighty Days book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=around-the-world-in-eighty-days — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/around-the-world-in-eighty-days.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -253,7 +253,7 @@ const ARTICLES_MORE_3 = [
       "If you enjoy The Call of the Wild, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Call of the Wild PDF",
       "Ready to start reading? Visit our The Call of the Wild book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-call-of-the-wild — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-call-of-the-wild.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -285,7 +285,7 @@ const ARTICLES_MORE_3 = [
       "If you enjoy Alice's Adventures in Wonderland, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Alice's Adventures in Wonderland PDF",
       "Ready to start reading? Visit our Alice's Adventures in Wonderland book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=alices-adventures-in-wonderland — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/alices-adventures-in-wonderland.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -317,7 +317,7 @@ const ARTICLES_MORE_3 = [
       "If you enjoy The Time Machine, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Time Machine PDF",
       "Ready to start reading? Visit our The Time Machine book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-time-machine — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-time-machine.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -349,7 +349,7 @@ const ARTICLES_MORE_3 = [
       "If you enjoy Wuthering Heights, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Wuthering Heights PDF",
       "Ready to start reading? Visit our Wuthering Heights book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=wuthering-heights — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/wuthering-heights.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -381,7 +381,7 @@ const ARTICLES_MORE_3 = [
       "If you enjoy Moby-Dick, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free Moby-Dick PDF",
       "Ready to start reading? Visit our Moby-Dick book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=moby-dick — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/moby-dick.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -413,7 +413,7 @@ const ARTICLES_MORE_3 = [
       "If you enjoy The Scarlet Letter, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Scarlet Letter PDF",
       "Ready to start reading? Visit our The Scarlet Letter book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-scarlet-letter — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-scarlet-letter.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -445,7 +445,7 @@ const ARTICLES_MORE_3 = [
       "If you enjoy The Adventures of Sherlock Holmes, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Adventures of Sherlock Holmes PDF",
       "Ready to start reading? Visit our The Adventures of Sherlock Holmes book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-adventures-of-sherlock-holmes — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-adventures-of-sherlock-holmes.html — free, legal, and ready in seconds.",
     ]
   },
   {
@@ -477,7 +477,7 @@ const ARTICLES_MORE_3 = [
       "If you enjoy The Strange Case of Dr Jekyll and Mr Hyde, browse our literature and adventure categories for more free PDF classics — from Dickens and Austen to Verne and Doyle. Building a personal digital library costs nothing when you stick to public-domain titles.",
       "## Download Your Free The Strange Case of Dr Jekyll and Mr Hyde PDF",
       "Ready to start reading? Visit our The Strange Case of Dr Jekyll and Mr Hyde book page on LifeWithBooks, tap Download Free PDF, and save the file to your device. You can also read the full description, explore related books, and open our reading guides for tips on getting more from every page.",
-      "Start here: book.html?id=the-strange-case-of-dr-jekyll-and-mr-hyde — free, legal, and ready in seconds.",
+      "Start here: https://www.lifewithbooks.co/book/the-strange-case-of-dr-jekyll-and-mr-hyde.html — free, legal, and ready in seconds.",
     ]
   }
 ];

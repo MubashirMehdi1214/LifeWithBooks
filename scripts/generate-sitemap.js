@@ -77,8 +77,8 @@ const xml =
 fs.writeFileSync(path.join(root, 'sitemap.xml'), xml, 'utf8');
 
 function bookCoverUrl(book) {
-  if (book.coverImage) {
-    const webp = book.coverImage.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+  if (book.coverImage && !/^https?:\/\//i.test(book.coverImage)) {
+    const webp = book.coverImage.replace(/\.(jpg|jpeg|png)$/i, '.webp').replace(/^\//, '');
     return ORIGIN + '/' + webp;
   }
   return ORIGIN + '/og/books/' + book.id + '.webp';

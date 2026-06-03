@@ -271,7 +271,7 @@ function coverFor(book) {
 }
 
 function buildBody(book, meta) {
-  const bookUrl = 'book.html?id=' + encodeURIComponent(book.id);
+  const bookUrl = 'https://www.lifewithbooks.co/book/' + encodeURIComponent(book.id) + '.html';
   const title = book.title;
   return [
     'Looking for a free ' + title + ' PDF? You are in the right place. ' + title + ' by ' + meta.author + ' (' + meta.year + ') is a public-domain classic, which means you can download and read the complete text legally at no cost. LifeWithBooks hosts a clean PDF edition you can save to your phone, tablet or computer — no sign-up, no subscription, and no pirated scans from unknown sources.',

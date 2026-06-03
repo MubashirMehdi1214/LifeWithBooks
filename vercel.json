@@ -11,6 +11,18 @@
       "permanent": true
     },
     {
+      "source": "/book.html",
+      "has": [{ "type": "query", "key": "id", "value": "(?<id>[^&]+)" }],
+      "destination": "/book/:id.html",
+      "permanent": true
+    },
+    {
+      "source": "/category.html",
+      "has": [{ "type": "query", "key": "cat", "value": "(?<cat>[^&]+)" }],
+      "destination": "/category/:cat.html",
+      "permanent": true
+    },
+    {
       "source": "/public/downloads/:file",
       "destination": "/downloads/:file",
       "permanent": true
