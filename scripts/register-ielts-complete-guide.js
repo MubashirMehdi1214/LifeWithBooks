@@ -12,7 +12,7 @@ const entry = {
   title: IELTS_GUIDE_META.title,
   categories: ['ielts-preparation', 'english-learning-books'],
   cover: 'english',
-  pdf: 'public/downloads/ielts-complete-preparation-guide.pdf',
+  pdf: 'downloads/ielts-complete-preparation-guide.pdf',
   pdfDirect: true,
   pageCount: 0,
   blurb: 'Complete preparation for IELTS Academic and General Training (2024–2026 format). Eight chapters cover all four skills with Pakistan-focused advice, examiner-annotated Writing samples, a timed Reading practice passage, 300 thematic vocabulary entries, and a realistic 30-day schedule for busy students.',

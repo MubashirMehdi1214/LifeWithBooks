@@ -4392,7 +4392,7 @@ const BOOKS = [
       "english-learning-books"
     ],
     "cover": "english",
-    "pdf": "public/downloads/ielts-complete-preparation-guide.pdf",
+    "pdf": "downloads/ielts-complete-preparation-guide.pdf",
     "pdfDirect": true,
     "pageCount": 23,
     "excerpt": "Original 8-chapter IELTS guide — Band 7–8 essays, 300 topic words, practice passage, 30-day plan. Free PDF download.",
@@ -4916,7 +4916,7 @@ const BOOKS = [
       "english-learning-books"
     ],
     "cover": "english",
-    "pdf": "public/downloads/css-pms-english-essay-guide.pdf",
+    "pdf": "downloads/css-pms-english-essay-guide.pdf",
     "pdfDirect": true,
     "pageCount": 30,
     "excerpt": "Original CSS/PMS English Essay guide: examiner marking, TEEL structure, ten 850-word Pakistan essays, 200 exam terms, precis practice, and 30-day schedule. Free PDF.",

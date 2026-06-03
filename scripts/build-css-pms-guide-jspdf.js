@@ -4,7 +4,7 @@ const { LifeWithBooksGuidePdf } = require('./lib/lifewithbooks-guide-pdf');
 const { CSS_GUIDE_META, CSS_GUIDE_BLOCKS } = require('../content/css-pms-english-essay-guide.js');
 
 const root = path.join(__dirname, '..');
-const OUT = path.join(root, 'public', 'downloads', 'css-pms-english-essay-guide.pdf');
+const OUT = path.join(root, 'downloads', 'css-pms-english-essay-guide.pdf');
 const META = path.join(root, 'content', 'css-pdf-meta.json');
 
 const builder = new LifeWithBooksGuidePdf({

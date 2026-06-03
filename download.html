@@ -162,8 +162,10 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
       if(pdfUrl.indexOf('drive.google.com/file/d/') !== -1){
         var match = pdfUrl.match(/\/d\/([a-zA-Z0-9_-]+)/);
         if(match) directUrl = 'https://drive.usercontent.google.com/download?id=' + match[1] + '&export=download&confirm=t';
-      } else {
+      } else if (pdfUrl.indexOf('/') === 0) {
         directUrl = pdfUrl;
+      } else {
+        directUrl = '/' + String(pdfUrl).replace(/^public\//, '');
       }
     }
 
@@ -188,7 +190,7 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
       var seconds = 3;
       var elapsed = 0;
 
-      var isLocal = directUrl.indexOf('http') !== 0;
+      var isLocal = directUrl.indexOf('http') !== 0 && directUrl.indexOf('//') !== 0;
 
       window.triggerDownload = function(){
         if (isLocal) {

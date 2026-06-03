@@ -1297,8 +1297,19 @@ function initBookDetail() {
       '. Whether you are a beginner exploring the topic or returning for a refresher, the overview above helps you decide if it is the right fit before you read or obtain a copy.</p>'
     : '';
 
+  const pdfDirectHref = book.pdfDirect && book.pdf
+    ? (book.pdf.indexOf('/') === 0 ? book.pdf : '/' + String(book.pdf).replace(/^public\//, ''))
+    : '';
   const downloadBlock = downloadable
-    ? `
+    ? book.pdfDirect && pdfDirectHref
+      ? `
+    <div class="download-block">
+      ${getLicenseBadge(book)}
+      <p style="margin:14px 0 16px;font-size:15px;">Original LifeWithBooks guide — free PDF you can keep and share.</p>
+      <a class="btn" href="${escapeHtml(pdfDirectHref)}" download="${escapeHtml(book.id)}.pdf">&#8595; Download Free PDF</a>
+      ${book.pageCount ? `<p class="download-meta" style="margin:14px 0 0;font-size:13px;color:var(--contrast-3);">${escapeHtml(String(book.pageCount))}-page PDF &middot; Instant download</p>` : ''}
+    </div>`
+      : `
     <div class="download-block">
       ${getLicenseBadge(book)}
       <p style="margin:14px 0 16px;font-size:15px;">This is a free, legal edition you can download and keep. The download stays on LifeWithBooks.</p>

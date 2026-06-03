@@ -7,6 +7,7 @@ const root = path.join(__dirname, '..');
 const today = new Date().toISOString().slice(0, 10);
 
 const { BOOKS, CATEGORIES } = require(path.join(root, 'js', 'books.js'));
+const { pdfPublicPath } = require('./pdf-download-path');
 let ARTICLES = [];
 try {
   require(path.join(root, 'js', 'articles-more-1.js'));
@@ -177,7 +178,7 @@ function renderBookPage(book, depth) {
     ? 'Original LifeWithBooks guide — free PDF you can keep and share.'
     : 'This is a free, legal public-domain edition.';
   const pdfHref = book.pdfDirect && book.pdf
-    ? p + book.pdf
+    ? pdfPublicPath(book)
     : p + 'download.html?id=' + encodeURIComponent(book.id);
   const downloadBtn = book.pdfDirect && book.pdf
     ? `<a class="btn" href="${esc(pdfHref)}" download="${esc(book.id)}.pdf">&#8595; Download Free PDF</a>`

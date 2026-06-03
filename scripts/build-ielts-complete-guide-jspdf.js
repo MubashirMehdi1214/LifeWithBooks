@@ -1,6 +1,6 @@
 /**
  * Build IELTS Complete Preparation Guide PDF with jsPDF.
- * Output: public/downloads/ielts-complete-preparation-guide.pdf
+ * Output: downloads/ielts-complete-preparation-guide.pdf
  */
 const fs = require('fs');
 const path = require('path');
@@ -8,7 +8,7 @@ const { jsPDF } = require('jspdf');
 const { IELTS_GUIDE_META, IELTS_GUIDE_BLOCKS } = require(path.join(__dirname, '../content/ielts-complete-preparation-guide.js'));
 
 const root = path.join(__dirname, '..');
-const OUT_DIR = path.join(root, 'public', 'downloads');
+const OUT_DIR = path.join(root, 'downloads');
 const OUT_FILE = path.join(OUT_DIR, 'ielts-complete-preparation-guide.pdf');
 const META_FILE = path.join(root, 'content', 'ielts-pdf-meta.json');
 
@@ -311,12 +311,12 @@ function updateBooksMeta(pageCount) {
   let src = fs.readFileSync(booksPath, 'utf8');
   src = src.replace(
     /"id": "ielts-complete-preparation-guide"([\s\S]*?)"pdf": "[^"]*"/,
-    `"id": "ielts-complete-preparation-guide"$1"pdf": "public/downloads/ielts-complete-preparation-guide.pdf"`
+    `"id": "ielts-complete-preparation-guide"$1"pdf": "downloads/ielts-complete-preparation-guide.pdf"`
   );
   if (!src.includes('"pdfDirect"')) {
     src = src.replace(
-      /"pdf": "public\/downloads\/ielts-complete-preparation-guide\.pdf"/,
-      '"pdf": "public/downloads/ielts-complete-preparation-guide.pdf",\n    "pdfDirect": true,\n    "pageCount": ' + pageCount
+      /"pdf": "(?:public\/)?downloads\/ielts-complete-preparation-guide\.pdf"/,
+      '"pdf": "downloads/ielts-complete-preparation-guide.pdf",\n    "pdfDirect": true,\n    "pageCount": ' + pageCount
     );
   } else {
     src = src.replace(/"pageCount": \d+/, '"pageCount": ' + pageCount);

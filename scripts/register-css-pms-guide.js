@@ -10,7 +10,7 @@ const entry = {
   title: CSS_GUIDE_META.title,
   categories: ['css-pms-books', 'english-learning-books'],
   cover: 'english',
-  pdf: 'public/downloads/css-pms-english-essay-guide.pdf',
+  pdf: 'downloads/css-pms-english-essay-guide.pdf',
   pdfDirect: true,
   pageCount: 0,
   excerpt: CSS_GUIDE_META.excerpt,
