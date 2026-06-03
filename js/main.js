@@ -340,12 +340,200 @@ function getCategoryShareImage(slug) {
 }
 
 function getBookCoverImage(book) {
-  if (book.coverImage) return resolveAssetPath(book.coverImage);
+  if (book.coverImage) {
+    const img = book.coverImage;
+    if (/^https?:\/\//i.test(img)) return img;
+    return resolveAssetPath(img);
+  }
   const gutenbergId = getGutenbergId(book.pdf || '');
   if (gutenbergId) return `https://www.gutenberg.org/cache/epub/${gutenbergId}/pg${gutenbergId}.cover.medium.jpg`;
   const driveFileId = getDriveFileId(book.pdf || '');
   if (driveFileId) return `https://drive.google.com/thumbnail?id=${driveFileId}&sz=w1000`;
   return getLocalCoverPath(book);
+}
+
+function normalizeBrokenCoverSrc(src) {
+  if (!src) return src;
+  return String(src).replace(/^\.\.\/(https?:\/\/)/i, '$1');
+}
+
+function getBookCoverUrl(book) {
+  if (book.coverUrl && /^https?:\/\//i.test(book.coverUrl)) return book.coverUrl;
+  const stored = getBookCoverImage(book);
+  if (stored && /^https?:\/\//i.test(stored)) return stored;
+  if (stored && !/\.svg(\?|$)/i.test(stored)) return stored;
+  if (book.isbn) {
+    return 'https://covers.openlibrary.org/b/isbn/' + encodeURIComponent(String(book.isbn).replace(/[^\dX]/gi, '')) + '-L.jpg';
+  }
+  const title = encodeURIComponent(
+    (book.title || '').replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim()
+  );
+  return 'https://covers.openlibrary.org/b/title/' + title + '-L.jpg';
+}
+
+function getCategoryColorsForCover(book) {
+  const slug = (book.categories && book.categories[0]) || '';
+  const cat = CATEGORIES.find(function(c) { return c.slug === slug; });
+  const label = cat ? cat.label : '';
+  const map = {
+    'Novels': { top: '#7b1c1c', bottom: '#b71c1c', spine: '#4a0808' },
+    'Literature Books': { top: '#7b1c1c', bottom: '#b71c1c', spine: '#4a0808' },
+    'IELTS Preparation': { top: '#0d47a1', bottom: '#1976d2', spine: '#082d6e' },
+    'CSS PMS Pakistan': { top: '#1a237e', bottom: '#3949ab', spine: '#0d1642' },
+    'Kids Learning Books': { top: '#e65100', bottom: '#ff8f00', spine: '#bf360c' },
+    'Programming Books': { top: '#1a1a2e', bottom: '#16213e', spine: '#0f0f1a' },
+    'Islamic Books': { top: '#004d40', bottom: '#00796b', spine: '#00251a' },
+    'Self Development Books': { top: '#4a148c', bottom: '#7b1fa2', spine: '#2a0854' },
+    'Matric FSc Notes': { top: '#1b5e20', bottom: '#388e3c', spine: '#0a2e0d' },
+    'English Learning Books': { top: '#006064', bottom: '#0097a7', spine: '#003840' }
+  };
+  return map[label] || { top: '#1a4731', bottom: '#2d6a4f', spine: '#0d2e1c' };
+}
+
+function generateCanvasCover(book) {
+  const container = document.getElementById('cover-container');
+  if (!container) return;
+  const existing = container.querySelector('canvas.book-cover-canvas');
+  if (existing) return;
+  const img = document.getElementById('book-cover-img');
+  if (img) img.style.display = 'none';
+  const colors = getCategoryColorsForCover(book);
+  const canvas = document.createElement('canvas');
+  canvas.width = 300;
+  canvas.height = 420;
+  canvas.className = 'book-cover-canvas';
+  canvas.setAttribute('role', 'img');
+  canvas.setAttribute('aria-label', book.title + ' cover');
+  const ctx = canvas.getContext('2d');
+  const grad = ctx.createLinearGradient(0, 0, 300, 420);
+  grad.addColorStop(0, colors.top);
+  grad.addColorStop(1, colors.bottom);
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, 300, 420);
+  ctx.fillStyle = colors.spine;
+  ctx.fillRect(0, 0, 30, 420);
+  ctx.fillStyle = 'rgba(255,255,255,0.15)';
+  ctx.fillRect(30, 0, 270, 70);
+  ctx.fillStyle = 'rgba(255,255,255,0.9)';
+  ctx.font = 'bold 16px Arial, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText('LifeWithBooks', 165, 42);
+  ctx.strokeStyle = 'rgba(255,255,255,0.3)';
+  ctx.beginPath();
+  ctx.moveTo(50, 80);
+  ctx.lineTo(280, 80);
+  ctx.stroke();
+  const words = (book.title || '').split(/\s+/);
+  const lines = [];
+  let line = '';
+  ctx.font = 'bold 26px Arial, sans-serif';
+  words.forEach(function(word) {
+    const test = line ? line + ' ' + word : word;
+    if (ctx.measureText(test).width > 220 && line) {
+      lines.push(line);
+      line = word;
+    } else {
+      line = test;
+    }
+  });
+  if (line) lines.push(line);
+  const lineHeight = 34;
+  let y = (420 - lines.length * lineHeight) / 2;
+  ctx.fillStyle = '#fff';
+  lines.forEach(function(l) {
+    ctx.fillText(l, 165, y);
+    y += lineHeight;
+  });
+  const author = getBookAuthor(book);
+  if (author) {
+    ctx.fillStyle = 'rgba(255,255,255,0.75)';
+    ctx.font = '16px Arial, sans-serif';
+    ctx.fillText(author.slice(0, 36), 165, y + 8);
+  }
+  ctx.fillStyle = '#16a34a';
+  if (ctx.roundRect) {
+    ctx.beginPath();
+    ctx.roundRect(100, 370, 100, 32, 16);
+    ctx.fill();
+  } else {
+    ctx.fillRect(100, 370, 100, 32);
+  }
+  ctx.fillStyle = '#fff';
+  ctx.font = 'bold 16px Arial, sans-serif';
+  ctx.fillText('FREE', 150, 392);
+  container.appendChild(canvas);
+}
+
+function setupBookCoverFallbacks(img, book) {
+  if (!img || img.dataset.coverBound === '1') return;
+  img.dataset.coverBound = '1';
+  const primaryUrl = getBookCoverUrl(book);
+  let step = 0;
+  img.onerror = function() {
+    step += 1;
+    if (step === 1) {
+      const m = primaryUrl.replace('-L.jpg', '-M.jpg');
+      if (img.src !== m) {
+        img.src = m;
+        return;
+      }
+    }
+    if (step === 2) {
+      fetch('https://www.googleapis.com/books/v1/volumes?q=intitle:' + encodeURIComponent(book.title) + '&maxResults=1')
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          const thumb = data.items && data.items[0] && data.items[0].volumeInfo &&
+            data.items[0].volumeInfo.imageLinks &&
+            data.items[0].volumeInfo.imageLinks.thumbnail;
+          if (thumb) {
+            img.style.display = '';
+            img.src = thumb.replace(/^http:/, 'https:').replace(/zoom=1/, 'zoom=2');
+            return;
+          }
+          generateCanvasCover(book);
+        })
+        .catch(function() { generateCanvasCover(book); });
+      return;
+    }
+    generateCanvasCover(book);
+  };
+}
+
+function initBookDetailCoverEnhance(book) {
+  if (!book) return;
+  const wrap = $('#book-detail');
+  if (!wrap) return;
+  let img = document.getElementById('book-cover-img');
+  if (!img) {
+    const picImg = wrap.querySelector('picture img.book-detail-cover, img.book-detail-cover');
+    if (picImg) {
+      img = picImg;
+      img.id = 'book-cover-img';
+      if (!img.classList.contains('book-cover-img')) img.classList.add('book-cover-img');
+    }
+  }
+  if (!img) return;
+  let container = document.getElementById('cover-container');
+  if (!container) {
+    container = document.createElement('div');
+    container.id = 'cover-container';
+    container.className = 'cover-container';
+    const section = document.createElement('div');
+    section.className = 'book-cover-section';
+    const parent = img.closest('picture') || img;
+    parent.parentNode.insertBefore(section, parent);
+    section.appendChild(container);
+    container.appendChild(parent);
+  }
+  img.src = normalizeBrokenCoverSrc(img.src);
+  const primary = getBookCoverUrl(book);
+  const isSvg = /\.svg(\?|$)/i.test(img.src);
+  const isBroken = !img.src || img.src.indexOf('../http') !== -1;
+  if (isBroken || isSvg) {
+    img.style.display = '';
+    img.src = primary;
+  }
+  setupBookCoverFallbacks(img, book);
 }
 
 function isDownloadable(book) {
@@ -1026,6 +1214,8 @@ function initBookDetail() {
     if (wrap) wrap.innerHTML = '<p style="text-align:center;padding:40px 0;">Sorry, this book could not be found. <a href="all-books.html">Browse all books</a>.</p>';
     return;
   }
+  initBookDetailCoverEnhance(book);
+
   if (isStatic) {
     if (typeof ARTICLES !== 'undefined' && wrap) {
       const relatedArticles = getRelatedArticlesForBook(book, 3);
@@ -1154,15 +1344,20 @@ function initBookDetail() {
       <span>${escapeHtml(book.title)}</span>
     </div>
 
-    <img
-      class="book-detail-cover"
-      src="${escapeHtml(coverImg)}"
-      alt="${escapeHtml(book.title)} cover"
-      loading="eager"
-      referrerpolicy="no-referrer"
-      onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;this.dataset.fallback='';}else{this.style.display='none';}"
-      ${coverImg !== localCover ? 'data-fallback="' + escapeHtml(localCover) + '"' : ''}
-    />
+    <div class="book-cover-section">
+      <div id="cover-container" class="cover-container">
+        <img
+          id="book-cover-img"
+          class="book-cover-img book-detail-cover"
+          src="${escapeHtml(getBookCoverUrl(book))}"
+          alt="${escapeHtml(book.title)} cover"
+          width="280"
+          height="420"
+          loading="eager"
+          referrerpolicy="no-referrer"
+        />
+      </div>
+    </div>
 
     <h1>${escapeHtml(book.title)}</h1>
     <div class="meta">${tags}</div>
@@ -1185,6 +1380,7 @@ function initBookDetail() {
     </div>
     ${guidesHTML}
   `;
+  initBookDetailCoverEnhance(book);
 }
 
 

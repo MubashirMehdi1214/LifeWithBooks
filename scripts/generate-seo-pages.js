@@ -85,15 +85,32 @@ function escJson(s) {
   return JSON.stringify(s);
 }
 
+function bookCoverSrc(book, p) {
+  if (book.coverImage) {
+    if (/^https?:\/\//i.test(book.coverImage)) return book.coverImage;
+    return p + book.coverImage;
+  }
+  const pdf = book.pdf || '';
+  const gid = (pdf.match(/gutenberg\.org\/(?:ebooks|files)\/(\d+)/) || pdf.match(/gutenberg\.org\/cache\/epub\/(\d+)/) || [])[1];
+  if (gid) return 'https://www.gutenberg.org/cache/epub/' + gid + '/pg' + gid + '.cover.medium.jpg';
+  const did = (pdf.match(/drive\.google\.com\/file\/d\/([^/]+)/) || pdf.match(/[?&]id=([^&]+)/) || [])[1];
+  if (did) return 'https://drive.google.com/thumbnail?id=' + did + '&sz=w1000';
+  return p + 'covers/' + book.id + '.svg';
+}
+
 function coverPicture(book, p, eager) {
-  const src = book.coverImage ? p + book.coverImage : p + 'covers/' + book.id + '.svg';
-  const webp = book.coverImage ? src.replace(/\.(jpg|jpeg|png)$/i, '.webp') : null;
+  const src = bookCoverSrc(book, p);
+  const isRemote = /^https?:\/\//i.test(src);
+  const webp = !isRemote && book.coverImage && /\.(jpg|jpeg|png)$/i.test(src)
+    ? src.replace(/\.(jpg|jpeg|png)$/i, '.webp')
+    : null;
   const loading = eager ? 'eager' : 'lazy';
   const fp = eager ? ' fetchpriority="high"' : '';
+  const imgAttrs = `id="book-cover-img" class="book-cover-img book-detail-cover" src="${esc(src)}" alt="${esc(book.title)} cover" width="280" height="420" loading="${loading}" referrerpolicy="no-referrer"${fp}`;
   if (webp) {
-    return `<picture><source srcset="${esc(webp)}" type="image/webp"><img class="book-detail-cover" src="${esc(src)}" alt="${esc(book.title)} cover" width="280" height="420" loading="${loading}"${fp}></picture>`;
+    return `<div class="book-cover-section"><div id="cover-container" class="cover-container"><picture><source srcset="${esc(webp)}" type="image/webp"><img ${imgAttrs}></picture></div></div>`;
   }
-  return `<img class="book-detail-cover" src="${esc(src)}" alt="${esc(book.title)} cover" width="280" height="420" loading="${loading}"${fp}>`;
+  return `<div class="book-cover-section"><div id="cover-container" class="cover-container"><img ${imgAttrs}></div></div>`;
 }
 
 function bookAuthor(book) {
@@ -190,7 +207,8 @@ function renderBookPage(book, depth) {
 function categoryBookCard(b, p) {
   function coverSrc(book) {
     if (book.coverImage) {
-      return /^https?:\/\//i.test(book.coverImage) ? book.coverImage : p + book.coverImage;
+      if (/^https?:\/\//i.test(book.coverImage)) return book.coverImage;
+      return p + book.coverImage;
     }
     const pdf = book.pdf || '';
     const gid = (pdf.match(/gutenberg\.org\/(?:ebooks|files)\/(\d+)/) || pdf.match(/gutenberg\.org\/cache\/epub\/(\d+)/) || [])[1];

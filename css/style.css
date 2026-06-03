@@ -469,14 +469,32 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
   margin-bottom: 28px;
 }
 .book-single .breadcrumb a { color: var(--accent); }
-.book-single .book-detail-cover {
+.book-cover-section {
+  margin-bottom: 8px;
+}
+.book-single .cover-container {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto 30px;
+}
+.book-single .book-cover-img,
+.book-single .book-detail-cover,
+.book-single .book-cover-canvas {
   display: block;
-  width: min(220px, 55%);
-  max-width: 100%;
+  width: 100%;
+  max-width: 280px;
   height: auto;
-  margin: 0 auto 32px;
-  border-radius: 8px;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  min-height: 300px;
+  margin: 0 auto;
+  border-radius: 4px 12px 12px 4px;
+  box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.25), -2px 0 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  background: #e5e7eb;
+}
+.book-single picture .book-cover-img,
+.book-single picture .book-detail-cover {
+  width: 100%;
+  max-width: 280px;
 }
 .book-single .meta {
   display: flex;
