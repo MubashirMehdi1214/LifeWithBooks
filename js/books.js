@@ -56,7 +56,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "https://drive.google.com/thumbnail?id=1daBCHD03XnqGZrUw3Y8oWmYYDf7LVxL4&sz=w1000"
+    "coverImage": "covers-img/english-unlimited.jpg"
   },
   {
     "id": "preposition-focus-on-building-mastery",
@@ -84,7 +84,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "https://drive.google.com/thumbnail?id=1dG-FdEB4-Avw0tG_ynVRoSVfiOrMrDsz&sz=w1000"
+    "coverImage": "covers-img/preposition-focus-on-building-mastery.jpg"
   },
   {
     "id": "technical-english",
@@ -112,7 +112,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "https://drive.google.com/thumbnail?id=1kJsgAcoaSkFCEAg5Te-OazsveXX4X58h&sz=w1000"
+    "coverImage": "covers-img/technical-english.jpg"
   },
   {
     "id": "english-for-meetings-phrases-expressions",
@@ -140,7 +140,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "https://drive.google.com/thumbnail?id=1WdcHVE-vN01idAw1uiyY29lmj4weVGdy&sz=w1000"
+    "coverImage": "covers-img/english-for-meetings-phrases-expressions.jpg"
   },
   {
     "id": "mcgraw-hill-conversational-american-english",
@@ -165,7 +165,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "https://drive.google.com/thumbnail?id=1mq7mIb7JhE47OfogkmVGITg8pScv2Tgo&sz=w1000"
+    "coverImage": "covers-img/mcgraw-hill-conversational-american-english.jpg"
   },
   {
     "id": "english-vocabulary-in-use-upper-intermediate",
@@ -191,7 +191,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "https://drive.google.com/thumbnail?id=1I9x6n6n6wVPbw1gjxGR8DRkizClxXdfP&sz=w1000"
+    "coverImage": "covers-img/english-vocabulary-in-use-upper-intermediate.jpg"
   },
   {
     "id": "practical-english-usage",
@@ -218,7 +218,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "https://drive.google.com/thumbnail?id=1R8m9hE7MNfBY73_nKLZe6VH6Ux0CMhSd&sz=w1000"
+    "coverImage": "covers-img/practical-english-usage.jpg"
   },
   {
     "id": "spoken-english-conversation-practice",
@@ -243,7 +243,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "https://drive.google.com/thumbnail?id=1yH58as9Y9kbTtsV7ttZCuOfKvynHtQ7c&sz=w1000"
+    "coverImage": "covers-img/spoken-english-conversation-practice.jpg"
   },
   {
     "id": "english-phonetics-and-phonology",
@@ -269,7 +269,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "https://drive.google.com/thumbnail?id=1T0DZxPKu-NR7NDXFTx1Zs3DJgTTy-eBy&sz=w1000"
+    "coverImage": "covers-img/english-phonetics-and-phonology.jpg"
   },
   {
     "id": "talk-english-secret-to-speak-english",
@@ -296,7 +296,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "https://drive.google.com/thumbnail?id=1vVYcE1DC3rD0UpYm3mQ2WOUnK4RyBx27&sz=w1000"
+    "coverImage": "covers-img/talk-english-secret-to-speak-english.jpg"
   },
   {
     "id": "30-topics-for-english-conversation",
@@ -375,7 +375,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "https://drive.google.com/thumbnail?id=155mqZ14ejfsGmVY9U4-3TNt8MPfBnIGE&sz=w1000"
+    "coverImage": "covers-img/how-to-get-really-good-at-english.jpg"
   },
   {
     "id": "learn-how-to-speak-english-fluently-7-easy-steps",
@@ -476,7 +476,7 @@ const BOOKS = [
     ],
     "access": "download",
     "license": "original",
-    "coverImage": "https://drive.google.com/thumbnail?id=17latFcymITKeP--fbsZwUI-GS1muRdsp&sz=w1000"
+    "coverImage": "covers-img/english-in-everyday-life.jpg"
   },
   {
     "id": "black-book-of-english-vocabulary",
@@ -886,7 +886,7 @@ const BOOKS = [
     ],
     "access": "summary",
     "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=11VBWM31Zg5G2YUgVxmsWeUMCQut2D1XQ&sz=w1000"
+    "coverImage": "covers-img/goethe-zertifikat-b2-ubungssatz-03.jpg"
   },
   {
     "id": "goethe-zertifikat-b1-deutschprufung",
@@ -908,7 +908,7 @@ const BOOKS = [
     ],
     "access": "summary",
     "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=1tsRbPgoOncMcvpncIltN99C7HojilDv1&sz=w1000"
+    "coverImage": "covers-img/goethe-zertifikat-b1-deutschprufung.jpg"
   },
   {
     "id": "goethe-zertifikat-b1-ubungssatz-erwachsene",
@@ -930,7 +930,7 @@ const BOOKS = [
     ],
     "access": "summary",
     "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=1-MqmVATQYEwYZGEPn8LaXwA6sQA4ZX6l&sz=w1000"
+    "coverImage": "covers-img/goethe-zertifikat-b1-ubungssatz-erwachsene.jpg"
   },
   {
     "id": "goethe-zertifikat-a2-fit-in-deutsch-2-jugendliche",
@@ -952,7 +952,7 @@ const BOOKS = [
     ],
     "access": "summary",
     "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=1mf1Wpw2FORUJ2Rd2H6xQd5NqIJBWQc3j&sz=w1000"
+    "coverImage": "covers-img/goethe-zertifikat-a2-fit-in-deutsch-2-jugendliche.jpg"
   },
   {
     "id": "goethe-zertifikat-a2-fit-in-deutsch-2",
@@ -973,7 +973,7 @@ const BOOKS = [
     ],
     "access": "summary",
     "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=1mRqSwhZdBUKDTExXO90KTZjGTiUBm6g3&sz=w1000"
+    "coverImage": "covers-img/goethe-zertifikat-a2-fit-in-deutsch-2.jpg"
   },
   {
     "id": "goethe-zertifikat-a1-prufungsziele",
@@ -1016,7 +1016,7 @@ const BOOKS = [
     ],
     "access": "summary",
     "license": "reference",
-    "coverImage": "https://drive.google.com/thumbnail?id=1uJMkbkkRnTPPmfLshBAi-dJZPmfOlZU4&sz=w1000"
+    "coverImage": "covers-img/goethe-zertifikat-a1-fit-in-deutsch-1-ubungssatz-01.jpg"
   },
   {
     "id": "briefe-schreiben-und-bilder-beschreiben",

@@ -10,6 +10,7 @@
     "books-without-pdf": "node scripts/generate-books-without-pdf-list.js",
     "import-pdfspart2": "node scripts/import-pdfspart2-guides.js",
     "expand-thin-pdfs": "node scripts/expand-thin-guide-pdfs.js",
+    "migrate-drive-covers": "node scripts/migrate-drive-covers-to-local.js",
     "build-pdfs": "node scripts/build-pdfs.js",
     "build-health-pdfs": "node scripts/build-health-pdfs.js",
     "build-ielts-content": "node scripts/build-ielts-guide-content.js",
