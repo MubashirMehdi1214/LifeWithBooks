@@ -104,10 +104,14 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
 
   <div id="site-footer-host"></div>
 
-  <script src="js/books.min.js" defer></script>
+  <script src="js/books.min.js"></script>
   <script src="js/main.min.js" defer></script>
   <script>
-  (function(){
+  (function runWhenReady(){
+    if (typeof BOOKS === 'undefined') {
+      setTimeout(runWhenReady, 40);
+      return;
+    }
     var params = new URLSearchParams(window.location.search);
     var bookId = params.get('id');
     var book = BOOKS.find(function(b){ return b.id === bookId; });
@@ -154,7 +158,7 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
             '<a class="dl-manual" style="background:#555" href="https://www.google.com/search?tbm=bks&q=' + q + '" target="_blank" rel="noopener nofollow">Search Google Books</a>' +
           '</div>' +
         '</div>' +
-        '<br><a href="book.html?id=' + book.id + '" class="dl-back">&larr; Back to book overview</a>';
+        '<br><a href="book/' + encodeURIComponent(book.id) + '.html" class="dl-back">&larr; Back to book overview</a>';
       return;
     }
 
@@ -181,7 +185,7 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
           '<div class="dl-hint">Your download will begin automatically — you will stay on this page</div>' +
         '</div>' +
         '<button class="dl-manual" id="dl-btn" style="display:none" onclick="triggerDownload()">&#8595; Download Now</button>' +
-        '<br><a href="book.html?id=' + book.id + '" class="dl-back">&larr; Back to book details</a>';
+        '<br><a href="book/' + encodeURIComponent(book.id) + '.html" class="dl-back">&larr; Back to book details</a>';
 
       var bar = document.getElementById('dl-bar');
       var countEl = document.getElementById('dl-count');
@@ -230,7 +234,7 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
           '<h3>Download Being Prepared</h3>' +
           '<p>We are currently preparing the PDF download for this book. It will be available shortly. Please check back soon!</p>' +
         '</div>' +
-        '<br><a href="book.html?id=' + book.id + '" class="dl-back">&larr; Back to book details</a>';
+        '<br><a href="book/' + encodeURIComponent(book.id) + '.html" class="dl-back">&larr; Back to book details</a>';
     }
   })();
   </script>
