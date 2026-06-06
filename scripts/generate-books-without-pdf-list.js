@@ -6,15 +6,31 @@ const fs = require('fs');
 const path = require('path');
 
 const root = path.join(__dirname, '..');
+const PART2 = path.join(root, 'pdfs', 'pdfspart2');
 const { BOOKS } = require(path.join(root, 'js', 'books.js'));
 
+function norm(s) {
+  return String(s).toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+
+function hasPart2Pdf(bookId) {
+  if (!fs.existsSync(PART2)) return false;
+  const target = norm(bookId);
+  return fs.readdirSync(PART2).some((f) => {
+    if (!/\.pdf$/i.test(f)) return false;
+    const base = f.replace(/\.pdf$/i, '').replace(/^pdfs_pdfspart2_/i, '');
+    return norm(base) === target;
+  });
+}
+
 function hasSitePdf(book) {
-  if (!book.pdfDirect || !book.pdf) return false;
-  const p = (book.pdf || '').replace(/^\//, '');
-  if (/^https?:\/\//i.test(p)) return true;
-  if (/^downloads\//i.test(p)) return fs.existsSync(path.join(root, p));
-  if (/^pdfs\//i.test(p)) return fs.existsSync(path.join(root, p));
-  return false;
+  if (book.pdfDirect && book.pdf) {
+    const p = (book.pdf || '').replace(/^\//, '');
+    if (/^https?:\/\//i.test(p)) return true;
+    if (/^downloads\//i.test(p) && fs.existsSync(path.join(root, p))) return true;
+    if (/^pdfs\//i.test(p) && fs.existsSync(path.join(root, p))) return true;
+  }
+  return hasPart2Pdf(book.id);
 }
 
 function stripMd(text) {
