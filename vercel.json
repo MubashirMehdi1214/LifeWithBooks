@@ -26,6 +26,21 @@
       "source": "/public/downloads/:file",
       "destination": "/downloads/:file",
       "permanent": true
+    },
+    {
+      "source": "/book/20000-leagues-under-the-sea.html",
+      "destination": "/book/twenty-thousand-leagues-under-the-sea.html",
+      "permanent": true
+    },
+    {
+      "source": "/book/journey-to-center-of-earth.html",
+      "destination": "/book/journey-to-the-center-of-the-earth.html",
+      "permanent": true
+    },
+    {
+      "source": "/book/around-the-world-in-80-days.html",
+      "destination": "/book/around-the-world-in-eighty-days.html",
+      "permanent": true
     }
   ],
   "headers": [

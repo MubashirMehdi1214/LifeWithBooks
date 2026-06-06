@@ -40,7 +40,8 @@ const ARTICLES = [
     excerpt: 'IELTS preparation free PDF books and guides — build a study plan with LifeWithBooks reference resources for Academic Listening, Reading, Writing and Speaking.',
     body: [
       'If you are searching for IELTS preparation free resources, you are not alone. Thousands of students every month look for affordable ways to reach band 7 or higher without expensive coaching centres. Free PDF study guides will not replace official IELTS practice tests, but they can organise your revision, explain question types and help you use your time wisely before exam day.',
-      'This guide shows how to combine LifeWithBooks reference summaries with official IELTS materials for a complete, budget-friendly preparation path.',
+      'This guide shows how to combine LifeWithBooks reference summaries with official IELTS materials for a complete, budget-friendly preparation path. If you are wondering how to prepare for IELTS with books, start with our free IELTS preparation guide PDF free download — the IELTS Complete Preparation Guide — and pair it with our IELTS 3000 words PDF vocabulary builder for band 7+ results.',
+      book('ielts-complete-preparation-guide', 'IELTS Complete Preparation Guide'),
       '## Why IELTS Preparation Free Resources Matter',
       'IELTS fees, course subscriptions and travel costs add up quickly. Free PDF guides reduce the guesswork: they tell you what each module tests, how timing works and which skills to drill daily. Used correctly, IELTS preparation free materials let you spend money only on what you truly need — usually authentic practice tests and one speaking partner or tutor.',
       'LifeWithBooks publishes original reference summaries for IELTS Academic. These are not pirated Cambridge books; they are editorial overviews that point you toward legitimate official resources while giving you frameworks you can start using tonight.',
@@ -864,7 +865,7 @@ const ARTICLES = [
 
 // Convert markdown-style book links to plain text for body (browser renders via article HTML)
 ARTICLES.forEach(a => {
-  a.body = a.body.map(p => p.replace(/\[([^\]]+)\]\(\/book\/([^)]+)\)/g, '$1 (see book/$2.html on LifeWithBooks)'));
+  a.body = a.body.map(p => p.replace(/\[([^\]]+)\]\(\/book\/([^)]+)\)/g, '$1 (see book/$2 on LifeWithBooks)'));
 });
 
 const out =

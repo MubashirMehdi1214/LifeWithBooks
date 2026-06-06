@@ -2476,6 +2476,7 @@ const BOOKS = [
   {
     "id": "around-the-world-in-eighty-days",
     "title": "Around the World in Eighty Days",
+    "author": "Jules Verne",
     "categories": [
       "adventure-books",
       "literature-books"
@@ -2498,6 +2499,7 @@ const BOOKS = [
   {
     "id": "journey-to-the-center-of-the-earth",
     "title": "Journey to the Center of the Earth",
+    "author": "Jules Verne",
     "categories": [
       "adventure-books",
       "literature-books"
@@ -3631,7 +3633,8 @@ const BOOKS = [
   },
   {
     "id": "twenty-thousand-leagues-under-the-sea",
-    "title": "Twenty Thousand Leagues Under the Sea",
+    "title": "20,000 Leagues Under the Sea",
+    "author": "Jules Verne",
     "categories": [
       "novels",
       "adventure-books",
@@ -3639,6 +3642,7 @@ const BOOKS = [
     ],
     "cover": "adventure",
     "pdf": "pdfs/twenty-thousand-leagues-under-the-sea.pdf",
+    "pdfDirect": true,
     "excerpt": "Verne's underwater epic aboard Captain Nemo's submarine, the Nautilus.",
     "description": [
       "## About the Book",
@@ -3649,11 +3653,13 @@ const BOOKS = [
       "This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device."
     ],
     "access": "download",
-    "license": "public-domain"
+    "license": "public-domain",
+    "coverImage": "covers-img/twenty-thousand-leagues-under-the-sea.jpg"
   },
   {
     "id": "the-mysterious-island",
     "title": "The Mysterious Island",
+    "author": "Jules Verne",
     "categories": [
       "novels",
       "adventure-books",

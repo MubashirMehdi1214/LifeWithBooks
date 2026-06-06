@@ -85,7 +85,7 @@ const CATEGORY_SEO = {
     metaDescription: 'German learning books PDF — Goethe exam guides, Deutsch Intensiv Wortschatz, grammar and vocabulary for A1–C1 learners on LifeWithBooks.',
     intro: 'Learn German with free German learning books on LifeWithBooks — Goethe-Zertifikat preparation, Deutsch Intensiv Wortschatz vocabulary guides, grammar references and conversation practice for every level from A1 to C2.',
     heading: 'German Learning Books',
-    extraIntro: '<p style="text-align:center;max-width:760px;margin:0 auto 30px;">Popular resources include <a href="../book/deutsch-intensiv-wortschatz-c1.html">Deutsch Intensiv Wortschatz C1</a>, Goethe B1 vocabulary, grammar lists and letter-writing practice — all browsable free on LifeWithBooks.</p>'
+    extraIntro: '<p style="text-align:center;max-width:760px;margin:0 auto 30px;">Popular resources include <a href="../book/so-gehts-zu-b2.html">So geht\'s zu B2</a>, <a href="../book/deutsch-intensiv-wortschatz-c1.html">Deutsch Intensiv Wortschatz C1</a>, Goethe B1 vocabulary, grammar lists and letter-writing practice — all browsable free on LifeWithBooks.</p>'
   },
   'deutsch-books': {
     pageTitle: 'Deutsch Books PDF | German Language Learning | LifeWithBooks',
@@ -99,6 +99,12 @@ const CATEGORY_SEO = {
     metaDescription: 'Free O Level and A Level study guides PDF — Cambridge English, Math, Biology, Psychology and IGCSE preparation on LifeWithBooks.',
     intro: 'Cambridge O Level, A Level and IGCSE students can browse free revision guides on LifeWithBooks covering English Language, Mathematics, Biology, Psychology and exam planning strategies.',
     heading: 'O Level & A Level'
+  },
+  'adventure-books': {
+    pageTitle: 'Free Adventure Books PDF | Jules Verne & Classics | LifeWithBooks',
+    metaDescription: 'Free adventure books PDF — 20,000 Leagues Under the Sea, Treasure Island, Around the World in 80 Days and classic novels. Instant download.',
+    intro: 'Download free adventure books PDF — Jules Verne, Robert Louis Stevenson, Alexandre Dumas and more public-domain classics. Captain Nemo, pirates, and globe-trotting heroes await.',
+    heading: 'Free Adventure Books PDF'
   }
 };
 
@@ -106,11 +112,58 @@ const BOOK_SEO = {
   '30-topics-for-english-conversation': {
     pageTitle: '30 Topics for English Conversation PDF | Free Download | LifeWithBooks',
     h1: '30 Topics for English Conversation - Free PDF Guide',
-    metaDescription: 'Download 30 Topics for English Conversation PDF completely free. Perfect for IELTS speaking practice and everyday conversation. No signup at lifewithbooks.co',
-    extraHtml: '<p>Looking for a <strong>30 topics for English conversation PDF</strong>? You can download this LifeWithBooks guide instantly — no signup required. The <strong>30 topics for English conversation PDF</strong> covers everyday themes with vocabulary and sample answers for confident speaking.</p><p>Whether you need conversation practice for class, tutoring, or self-study, this free <strong>30 topics for English conversation PDF</strong> gives you ready-made discussion prompts you can use today.</p>',
+    metaDescription: 'Download 30 Topics for English Conversation PDF free. Essential topics for IELTS speaking, job interviews and everyday English. No signup required.',
+    extraHtml: '<p>This free <strong>30 topics for English conversation PDF</strong> guide covers 30 essential themes for English conversation practice — perfect for IELTS speaking preparation, job interviews, and everyday English. Download free with no signup required.</p><p>Looking for a <strong>30 topics for English conversation PDF</strong>? Each topic includes warm-up questions, key vocabulary and sample answers so you can practise speaking confidently every day.</p>',
+    relatedIds: ['ielts-complete-preparation-guide', 'spoken-english-conversation-practice', '1500-vocabulary-words-for-speaking-english'],
     faq: [
       { q: 'Is 30 Topics for English Conversation available as PDF?', a: 'Yes — download the 30 Topics for English Conversation PDF free at lifewithbooks.co with one click. No signup needed.' },
       { q: 'Is this book good for IELTS speaking?', a: 'Yes — the guide covers common IELTS speaking topics with questions, vocabulary and sample answers ideal for band 6+ practice.' }
+    ]
+  },
+  'twenty-thousand-leagues-under-the-sea': {
+    pageTitle: '20,000 Leagues Under the Sea Free PDF | Jules Verne | LifeWithBooks',
+    h1: '20,000 Leagues Under the Sea by Jules Verne - Free PDF Download',
+    metaDescription: 'Download 20,000 Leagues Under the Sea by Jules Verne completely free. Classic adventure novel featuring Captain Nemo. No signup required. Instant PDF download.',
+    extraHtml: '<p>Download the <strong>20000 leagues under the sea PDF</strong> free — Jules Verne\'s 1870 masterpiece aboard Captain Nemo\'s submarine Nautilus. This <strong>20000 leagues under the sea free download</strong> is a complete public-domain edition you can keep forever.</p><p>Searching for <strong>Captain Nemo PDF</strong> or <strong>Jules Verne PDF free</strong>? This LifeWithBooks edition includes the full novel — one of the most downloaded adventure classics on our site.</p>',
+    relatedIds: ['journey-to-the-center-of-the-earth', 'around-the-world-in-eighty-days', 'the-mysterious-island', 'treasure-island'],
+    faq: [
+      { q: 'Is 20,000 Leagues Under the Sea available as a free PDF?', a: 'Yes — download the complete Jules Verne novel free at lifewithbooks.co. No signup required.' },
+      { q: 'Who is Captain Nemo?', a: 'Captain Nemo is the mysterious commander of the submarine Nautilus in this classic Jules Verne adventure novel.' }
+    ]
+  },
+  'journey-to-the-center-of-the-earth': {
+    pageTitle: 'Journey to the Center of the Earth PDF Free | Jules Verne | LifeWithBooks',
+    h1: 'Journey to the Center of the Earth — Free PDF by Jules Verne',
+    metaDescription: 'Download Journey to the Center of the Earth by Jules Verne free PDF. Classic underground adventure novel. Public domain — instant download.',
+    extraHtml: '<p>Free <strong>Jules Verne PDF</strong> — Journey to the Center of the Earth follows Professor Lidenbrock into volcanic depths. Download this public-domain adventure classic alongside our other Verne titles.</p>'
+  },
+  'around-the-world-in-eighty-days': {
+    pageTitle: 'Around the World in 80 Days PDF Free | Jules Verne | LifeWithBooks',
+    h1: 'Around the World in Eighty Days — Free PDF Download',
+    metaDescription: 'Download Around the World in 80 Days by Jules Verne free PDF. Phileas Fogg\'s globe-trotting race against time. Free public-domain download.',
+    extraHtml: '<p>Download <strong>Around the World in 80 Days</strong> as a free Jules Verne PDF — the adventure that defined globe-trotting fiction for generations of readers.</p>'
+  },
+  'the-mysterious-island': {
+    pageTitle: 'The Mysterious Island PDF Free | Jules Verne | LifeWithBooks',
+    h1: 'The Mysterious Island by Jules Verne — Free PDF',
+    metaDescription: 'Download The Mysterious Island by Jules Verne free PDF. Castaway survival adventure — sequel to 20,000 Leagues. Public domain download.',
+    extraHtml: '<p>Another essential <strong>Jules Verne PDF free</strong> download — The Mysterious Island connects to Captain Nemo\'s world in this gripping castaway adventure.</p>'
+  },
+  'treasure-island': {
+    pageTitle: 'Treasure Island PDF Free Download | Robert Louis Stevenson | LifeWithBooks',
+    h1: 'Treasure Island — Free PDF Download',
+    metaDescription: 'Download Treasure Island by Robert Louis Stevenson free PDF. Classic pirate adventure with Long John Silver. Instant public-domain download.',
+    extraHtml: '<p>One of the most searched <strong>adventure book PDF</strong> titles — Treasure Island is free to download with pirates, buried gold and Jim Hawkins.</p>'
+  },
+  'ielts-complete-preparation-guide': {
+    pageTitle: 'IELTS Preparation Guide PDF Free | 3000 Words | LifeWithBooks',
+    h1: 'IELTS Complete Preparation Guide — Free PDF Download',
+    metaDescription: 'Free IELTS preparation guide PDF — how to prepare for IELTS with books, 3000 vocabulary words, Writing, Speaking and 30-day study plan. Download free.',
+    extraHtml: '<p>Looking for an <strong>IELTS PDF</strong> or <strong>how to prepare for IELTS with books</strong>? This original LifeWithBooks guide covers all four skills with 300 thematic vocabulary entries — your complete <strong>IELTS preparation guide PDF free</strong> download.</p><p>Includes <strong>IELTS 3000 words PDF</strong> vocabulary themes, band 7+ Writing samples, Reading practice and a realistic 30-day schedule for busy students.</p>',
+    relatedIds: ['ielts-vocabulary-builder-3000-words', '30-topics-for-english-conversation', 'spoken-english-conversation-practice'],
+    faq: [
+      { q: 'Where can I find IELTS 3000 words PDF?', a: 'Download our free IELTS Complete Preparation Guide at lifewithbooks.co — it includes 300 essential thematic vocabulary entries plus a link to our IELTS 3000 Words vocabulary builder.' },
+      { q: 'How to prepare for IELTS with books?', a: 'Start with this free IELTS preparation guide PDF, then add official Cambridge practice tests. Our guide explains all four modules and includes a 30-day study plan.' }
     ]
   },
   'ielts-vocabulary-builder-3000-words': {
@@ -119,11 +172,29 @@ const BOOK_SEO = {
     metaDescription: 'Download our IELTS 3000 words PDF study guide free. Thematic vocabulary for Academic IELTS Writing and Speaking — band 6.5+ word lists on LifeWithBooks.',
     extraHtml: '<p>Searching for an <strong>IELTS 3000 words PDF</strong>? This LifeWithBooks vocabulary builder groups essential Academic Word List themes with collocations and review tips. Use this <strong>IELTS 3000 words PDF</strong> overview to plan systematic vocabulary growth for your exam.</p>'
   },
+  'so-gehts-zu-b2': {
+    pageTitle: 'So geht\'s zu B2 PDF Free | German B2 Exam Guide | LifeWithBooks',
+    h1: 'So geht\'s zu B2 — Free German B2 Übungsbuch PDF',
+    metaDescription: 'So geht\'s zu B2 free PDF — German B2 exam preparation Übungsbuch. Grammar, vocabulary and practice for Goethe B2 on LifeWithBooks.',
+    extraHtml: '<p>Searching for <strong>so geht\'s zu B2</strong> or <strong>So gehts zu B2</strong>? Download this German B2 practice workbook free — ideal alongside Goethe-Zertifikat B2 preparation materials on LifeWithBooks.</p>'
+  },
   'deutsch-intensiv-wortschatz-c1': {
-    pageTitle: 'Deutsch Intensiv Wortschatz C1 | German Vocabulary Guide | LifeWithBooks',
+    pageTitle: 'Deutsch Intensiv Wortschatz C1 PDF | German Vocabulary | LifeWithBooks',
     h1: 'Deutsch Intensiv Wortschatz — Advanced German C1 Vocabulary',
-    metaDescription: 'Deutsch Intensiv Wortschatz C1 vocabulary guide — intensive German word training for advanced learners, collocations and exam themes on LifeWithBooks.',
-    extraHtml: '<p><strong>Deutsch Intensiv Wortschatz</strong> is one of the most searched German vocabulary resources for C1 learners. This LifeWithBooks overview explains how thematic word sets, collocations and productive exercises in <strong>Deutsch Intensiv Wortschatz</strong> support advanced German study and Goethe C1 exam preparation.</p>'
+    metaDescription: 'Deutsch Intensiv Wortschatz C1 PDF — intensive German vocabulary for advanced learners. Free download on LifeWithBooks.',
+    extraHtml: '<p><strong>Deutsch Intensiv Wortschatz</strong> is one of the most searched German vocabulary resources for C1 learners. Download the free PDF with thematic word sets, collocations and productive exercises for Goethe C1 exam preparation.</p>'
+  }
+};
+
+const ARTICLE_SEO = {
+  'how-to-prepare-for-ielts-using-free-pdf-books': {
+    pageTitle: 'How to Prepare for IELTS Using Free PDF Books | LifeWithBooks',
+    metaDescription: 'How to prepare for IELTS with books — free IELTS PDF guides, 3000 words vocabulary and 8-week study plan. Download free at lifewithbooks.co.',
+    extraHtml: '<p>Wondering <strong>how to prepare for IELTS with books</strong> on a budget? This guide shows you how to combine free <strong>IELTS PDF</strong> resources with official practice tests for band 7+ results.</p>',
+    faq: [
+      { q: 'Where can I find IELTS 3000 words PDF?', a: 'Download our free IELTS vocabulary guide with 3000 essential words at lifewithbooks.co/book/ielts-vocabulary-builder-3000-words.html — or get the full IELTS Complete Preparation Guide with vocabulary built in.' },
+      { q: 'Can I pass IELTS with only free PDF books?', a: 'Free guides help you plan and understand the test, but you should also complete official practice tests under timed conditions before booking your exam.' }
+    ]
   }
 };
 
@@ -240,7 +311,12 @@ function renderBookPage(book, depth) {
   const author = bookAuthor(book);
   const downloadable = book.access === 'download';
   const cover = coverPicture(book, p, true);
-  const related = BOOKS.filter(b => b.id !== book.id && b.categories.some(c => book.categories.includes(c))).slice(0, 4);
+  const related = (seo.relatedIds || [])
+    .map((id) => BOOKS.find((b) => b.id === id))
+    .filter(Boolean)
+    .concat(BOOKS.filter((b) => b.id !== book.id && b.categories.some((c) => book.categories.includes(c))))
+    .filter((b, i, arr) => arr.findIndex((x) => x.id === b.id) === i)
+    .slice(0, 4);
   const descHtml = (book.description || []).map(line => {
     if (line.indexOf('## ') === 0) return '<h2>' + esc(line.slice(3)) + '</h2>';
     return '<p>' + esc(line) + '</p>';
@@ -387,11 +463,19 @@ function renderCategoryPage(slug, depth) {
 ` + renderScripts(depth, true);
 }
 
+function getArticleSeo(article) {
+  return ARTICLE_SEO[article.id] || {};
+}
+
 function renderArticlePage(a, depth) {
   const p = depth === 0 ? '' : '../';
   const url = ORIGIN + '/articles/' + encodeURIComponent(a.id) + '.html';
-  const title = a.title + ' | LifeWithBooks';
-  const desc = (a.excerpt || '').slice(0, 160);
+  const seo = getArticleSeo(a);
+  const title = seo.pageTitle || a.title + ' | LifeWithBooks';
+  const desc = seo.metaDescription || (a.excerpt || '').slice(0, 160);
+  const extraSeoHtml = seo.extraHtml || '';
+  const faqHtml = renderFaqHtml(seo.faq);
+  const faqSchema = renderFaqSchema(seo.faq);
   const body = (a.body || []).map(line => {
     if (line.indexOf('## ') === 0) return '<h2>' + esc(line.slice(3)) + '</h2>';
     if (line.indexOf('### ') === 0) return '<h3>' + esc(line.slice(4)) + '</h3>';
@@ -420,7 +504,7 @@ function renderArticlePage(a, depth) {
     publisher: { '@type': 'Organization', name: 'LifeWithBooks', url: ORIGIN + '/' },
     mainEntityOfPage: url,
     image: ORIGIN + '/og-articles.webp'
-  })}</script>`;
+  })}</script>${faqSchema}`;
 
   return renderHead({ title, description: desc, canonical: url, ogType: 'article', image: ORIGIN + '/og-articles.webp', jsonLd }, depth) + `
 <body data-page="article" data-article-id="${esc(a.id)}" data-seo-static="true" data-path-depth="1" id="top">
@@ -431,7 +515,8 @@ function renderArticlePage(a, depth) {
       <h1>${esc(a.title)}${updatedBadge}</h1>
       <div class="meta"><span class="tag">${esc(a.date)}</span><span class="tag">Last updated: ${esc(modified.slice(0, 7))}</span><span class="tag">${esc(a.author || 'Mubashir Mehdi')}</span></div>
       ${shareLinks}
-      <article class="article">${body}</article>
+      <article class="article">${extraSeoHtml}${body}</article>
+      ${faqHtml}
     </div>
   </main>
   <div id="site-footer-host"></div>
