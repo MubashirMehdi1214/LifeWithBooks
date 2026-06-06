@@ -1,7 +1,7 @@
 BOOKS WITHOUT PDF — TITLES + WHAT TO WRITE IN EACH BOOK
 For Gemini: author Mubashir Mehdi, LifeWithBooks, original guide (not a copy of any publisher book).
 Save each PDF as: pdfs/pdfspart2/{book-id}.pdf
-Total: 56 books
+Total: 167 books
 
 --------------------------------------------------------------------------------
 1. Black Book of English Vocabulary
@@ -424,7 +424,329 @@ Total: 56 books
    important factor in developing wri...
 
 --------------------------------------------------------------------------------
-29. Goethe-Zertifikat B1 — Wortschatz (Deutschprüfung)
+29. Pride and Prejudice
+   book-id: pride-and-prejudice
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Jane Austen's beloved novel of manners, marriage and misunderstanding between Elizabeth Bennet and Mr Darcy in
+   Regency England. A Timeless Romance of Wit and Pride Pride and Prejudice follows Elizabeth Bennet as she
+   navigates society, family pressure and her evolving relationship with the proud Mr Darcy. Austen's sharp
+   dialogue and social observation make this one of the most widely read novels in English. Why Readers Still
+   Love It The book explores reputation, class, integrity and the danger of first impressions. Elizabeth's
+   intelligence and independence continue to inspire readers, while the love story remains satisfying and funny.
+   Free Public-Domain Edition This LifeWithBooks edition links to a free Project Gutenberg PDF so you can read
+   the complete novel on any device.
+
+--------------------------------------------------------------------------------
+30. Jane Eyre
+   book-id: jane-eyre
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Charlotte Brontë's powerful story of an orphaned governess who finds love, independence and moral courage at
+   Thornfield Hall. Gothic Romance and Inner Strength Jane Eyre traces its heroine from a harsh childhood to
+   employment as governess for the brooding Mr Rochester. Mystery, passion and ethical choice drive a plot that
+   helped define the Victorian novel. Themes That Endure Brontë writes about social class, religion, female
+   autonomy and the cost of secrecy. Jane's voice is direct, emotional and unforgettable. Download the Full Novel
+   Read the complete text as a free PDF through our Project Gutenberg link.
+
+--------------------------------------------------------------------------------
+31. Frankenstein
+   book-id: frankenstein
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Mary Shelley's groundbreaking science-fiction novel about creation, responsibility and what it means to be
+   human. The Original Modern Monster Story Victor Frankenstein's experiment produces a creature who seeks
+   understanding and revenge. Shelley's novel asks who is more monstrous — the maker or what is made. A Landmark
+   of Literature Written when Shelley was still a teenager, Frankenstein combines Gothic atmosphere with
+   philosophical questions about science, ethics and loneliness. Read the Classic Free Download the full
+   public-domain novel as a PDF.
+
+--------------------------------------------------------------------------------
+32. Dracula
+   book-id: dracula
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Bram Stoker's chilling epistolary novel that defined the modern vampire legend and still terrifies readers.
+   The Novel That Created the Modern Vampire Count Dracula travels from Transylvania to England, pursued by
+   Professor Van Helsing and a group determined to stop him. Stoker builds suspense through letters, journals and
+   newspaper clippings. Atmosphere and Dread Castle corridors, London fog and relentless pursuit make Dracula a
+   masterclass in Gothic horror. Free PDF Download Enjoy the complete novel via our public-domain PDF link.
+
+--------------------------------------------------------------------------------
+33. The Picture of Dorian Gray
+   book-id: the-picture-of-dorian-gray
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Oscar Wilde's only novel — a provocative tale of beauty, corruption and a portrait that ages while its subject
+   does not. Beauty, Decadence and Conscience Dorian Gray wishes that a painted portrait would bear the marks of
+   his sins while he remains youthful. Wilde's witty, unsettling fable explores art, morality and self-deception.
+   Wilde at His Most Daring Famous for its epigrams and social satire, the novel scandalised Victorian readers
+   and remains essential literary reading. Read Online or Download Access the full text as a free Project
+   Gutenberg PDF.
+
+--------------------------------------------------------------------------------
+34. Little Women
+   book-id: little-women
+   category: novels, literature-books, kids-learning-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Louisa May Alcott's warm, enduring story of the four March sisters growing up during the American Civil War
+   era. A Family Story Readers Treasure Meg, Jo, Beth and Amy each pursue dreams, face hardship and learn what
+   matters most. Alcott blends humour, tenderness and moral growth in a novel loved by generations. For Teens and
+   Adults Alike Little Women remains one of the most popular coming-of-age novels in English, inspiring countless
+   adaptations. Free Complete Edition Download the full novel as a public-domain PDF.
+
+--------------------------------------------------------------------------------
+35. The Art of War
+   book-id: the-art-of-war
+   category: trading-books, business-books, self-grooming-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Sun Tzu's ancient strategic classic on planning, competition and decision-making — widely studied by traders,
+   leaders and entrepreneurs. Strategy for Any Competitive Field The Art of War teaches how to assess opponents,
+   conserve resources, choose timing and win without unnecessary conflict. Its principles apply to markets,
+   negotiations and leadership. Why Traders Read It Risk management, patience, deception and preparation mirror
+   challenges faced in trading and investing psychology. Free PDF Download this public-domain translation as a
+   PDF.
+
+--------------------------------------------------------------------------------
+36. Extraordinary Popular Delusions and the Madness of Crowds
+   book-id: extraordinary-popular-delusions
+   category: trading-books, business-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Charles Mackay's classic study of market manias, bubbles and crowd psychology — essential reading for anyone
+   interested in trading history. The Psychology of Bubbles Mackay examines famous episodes such as the South Sea
+   Bubble and tulip mania, showing how crowds abandon reason during speculative frenzies. Still Relevant for
+   Modern Markets Traders and investors use this book to understand hype cycles, fear, greed and herd behaviour.
+   Public-Domain Download Read the complete work as a free PDF.
+
+--------------------------------------------------------------------------------
+37. The Prince
+   book-id: the-prince
+   category: trading-books, business-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Niccolò Machiavelli's influential treatise on power, leadership and pragmatic decision-making in competitive
+   environments. Real-World Power and Influence The Prince analyses how leaders gain and maintain authority,
+   manage risk and respond to changing conditions — ideas often applied to business and negotiation. A
+   Foundational Political Text Machiavelli's direct style made this one of the most discussed books on leadership
+   ever written. Free PDF Edition Download the full public-domain text.
+
+--------------------------------------------------------------------------------
+38. An Inquiry into the Nature and Causes of the Wealth of Nations (Selection)
+   book-id: wealth-of-nations-abridged-selection
+   category: trading-books, business-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Adam Smith's foundational work on markets, division of labour, trade and the origins of modern economic
+   thought. The Birth of Modern Economics Smith explains how specialisation, trade and incentives shape national
+   prosperity. His ideas underpin much of today's discussion about markets and policy. For Business and Trading
+   Readers Understanding supply, demand and market structure helps readers think more clearly about commerce and
+   investment. Large Public-Domain Volume This PDF contains the full classic text for serious readers.
+
+--------------------------------------------------------------------------------
+39. Scientific Advertising
+   book-id: scientific-advertising
+   category: trading-books, business-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Claude Hopkins' pioneering guide to measurable marketing, testing and persuasion — a business classic in the
+   public domain. Marketing as a Measurable Science Hopkins argues that advertising should be tested, tracked and
+   improved like any business process. His principles influenced direct response and digital marketing. Practical
+   for Entrepreneurs Learn how headlines, offers and proof affect results — ideas still used in sales funnels and
+   campaigns. Free Download Access this public-domain business title as a PDF.
+
+--------------------------------------------------------------------------------
+40. Treasure Island
+   book-id: treasure-island
+   category: adventure-books, literature-books, kids-learning-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Robert Louis Stevenson's timeless pirate adventure with Jim Hawkins, Long John Silver and a hunt for buried
+   gold. The Definitive Pirate Adventure Young Jim Hawkins discovers a treasure map and sails into danger with a
+   crew hiding deadly secrets. Stevenson's pacing and characters set the template for adventure fiction. Perfect
+   for Young and Adult Readers Exciting, readable and full of iconic moments — from the Admiral Benbow inn to the
+   island itself. Free PDF Download the complete novel from Project Gutenberg.
+
+--------------------------------------------------------------------------------
+41. Around the World in Eighty Days
+   book-id: around-the-world-in-eighty-days
+   category: adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Jules Verne's globe-trotting race against time with the precise Phileas Fogg and his loyal valet Passepartout.
+   A Race Across Continents Fogg wagers he can circle the world in eighty days, facing delays, detectives and
+   spectacular set pieces. Verne blends humour, suspense and travel wonder. A Landmark of Adventure Fiction The
+   novel popularised the idea of global travel as thrilling entertainment. Download Free Read the full adventure
+   as a public-domain PDF.
+
+--------------------------------------------------------------------------------
+42. Journey to the Center of the Earth
+   book-id: journey-to-the-center-of-the-earth
+   category: adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Jules Verne's expedition into the depths of the planet led by Professor Lidenbrock, his nephew Axel and guide
+   Hans. Science, Wonder and Danger Underground A coded manuscript sends the explorers into Icelandic volcanoes
+   and unknown worlds below the surface. Verne imagines geology, survival and discovery. A Classic for Curious
+   Readers One of the most influential adventure novels ever written. Free PDF Edition Download the complete
+   Verne novel.
+
+--------------------------------------------------------------------------------
+43. The Call of the Wild
+   book-id: the-call-of-the-wild
+   category: adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Jack London's gripping tale of Buck, a domestic dog who answers the wild call of the Yukon during the gold
+   rush. Survival in the Frozen North Buck is stolen from comfort and thrust into a harsh world of sled teams,
+   cruelty and instinct. London writes with raw energy about nature and freedom. Short, Powerful and
+   Unforgettable Ideal for readers who want a fast, intense adventure. Public-Domain PDF Download the full
+   novella free.
+
+--------------------------------------------------------------------------------
+44. King Solomon's Mines
+   book-id: king-solomons-mines
+   category: adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   H. Rider Haggard's African quest for legendary treasure with Allan Quatermain — a template for the lost-world
+   adventure genre. Treasure, Danger and Exotic Lands Explorers cross deserts and mountains seeking a fabled
+   diamond mine. Haggard delivers constant peril, courage and spectacle. Birth of the Lost-World Adventure
+   Influenced generations of adventure writers and filmmakers. Free Download Read the complete novel as a PDF.
+
+--------------------------------------------------------------------------------
+45. The Lost World
+   book-id: the-lost-world
+   category: adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Arthur Conan Doyle's plateau of prehistoric creatures, led by the formidable Professor Challenger and a team
+   of daring explorers. Dinosaurs, Discovery and Daring An expedition reaches an isolated plateau where evolution
+   took a different path. Doyle combines scientific curiosity with pure adventure. From the Creator of Sherlock
+   Holmes Shows Doyle's range beyond detective fiction. Free PDF Download the full public-domain novel.
+
+--------------------------------------------------------------------------------
+46. Ultimate Fruit Benefits Bible
+   book-id: ultimate-fruit-benefits-guide
+   category: health-books
+   WHAT TO INCLUDE IN THIS PDF:
+   A 29-page practical guide to fruit nutrition, seasonal eating, nutrient tables and smart combinations — free
+   from LifeWithBooks. Fruit Nutrition Made Practical This guide covers 15 fruits with benefits, nutrients,
+   seasonal guidance and storage tips drawn from evidence-based wellness writing. What You Will Learn Understand
+   fiber, hydration, micronutrients and how to build colorful fruit habits into everyday meals. Free PDF Download
+   Hosted by LifeWithBooks — download instantly through LifeWithBooks.
+
+--------------------------------------------------------------------------------
+47. 30 Day Healthy Eating Challenge
+   book-id: 30-day-healthy-eating-challenge
+   category: health-books, self-grooming-books
+   WHAT TO INCLUDE IN THIS PDF:
+   A printable 30-day nutrition challenge with daily meal ideas, checklists and habit-building prompts. Build
+   Better Eating Habits Step by Step Each day includes practical meals, hydration goals and simple checklists so
+   progress feels achievable. Designed for Real Life No extreme dieting — focus on whole foods, consistency and
+   sustainable routines. Free PDF Download the full challenge guide at no cost.
+
+--------------------------------------------------------------------------------
+48. Complete Home Remedies Handbook
+   book-id: home-remedies-handbook
+   category: health-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Safe, practical natural remedies for common concerns with recipes, safety notes and when to see a doctor.
+   Kitchen-Based Wellness Support Learn food-first approaches for mild symptoms using ginger, honey, herbs and
+   other household ingredients. Safety First Includes medical disclaimers, dosage guidance and red-flag symptoms
+   that need professional care. Free Handbook PDF Instant download via our LifeWithBooks integration.
+
+--------------------------------------------------------------------------------
+49. Immunity Boosting Food Bible
+   book-id: immunity-boosting-food-bible
+   category: health-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Food-first immune support with 15 food profiles, nutrient science, meal plans and smoothie recipes. Support
+   Immunity Through Nutrition Covers vitamin C, vitamin D, zinc, protein and omega-3 fats with practical meal
+   ideas. Everyday Foods That Help Garlic, ginger, citrus, leafy greens, yogurt and more — explained clearly.
+   Download Free Full PDF guide available immediately.
+
+--------------------------------------------------------------------------------
+50. Weight Loss With Natural Foods
+   book-id: natural-weight-loss-guide
+   category: health-books, self-grooming-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Sustainable fat-loss strategies using whole foods, meal plans and progress tracking — without extreme dieting.
+   Sustainable Fat Loss Focus on satiety, muscle retention and habits you can maintain long term. Meal Plans and
+   Tracking Includes kick-start meal ideas and a weekly progress chart template. Free PDF Guide Download the
+   complete natural weight loss guide.
+
+--------------------------------------------------------------------------------
+51. Complete Vegetable Nutrition Guide
+   book-id: complete-vegetable-guide
+   category: health-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Evidence-based vegetable handbook with 18 profiles, cooking methods, storage tips and seasonal planning. Why
+   Vegetables Matter High nutrient density, fiber and cardiometabolic protection explained in plain language. Raw
+   vs Cooked Learn when each preparation method supports absorption and variety. Free Download Get the full
+   vegetable guide as a PDF.
+
+--------------------------------------------------------------------------------
+52. Vitamins and Minerals Complete Guide
+   book-id: vitamins-minerals-complete-guide
+   category: health-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Understand nutrients, deficiency signs, food sources and daily requirements in one reference guide. Nutrients
+   Explained Clearly Fat-soluble vs water-soluble vitamins, key minerals and how they work in the body. Spot
+   Deficiencies Early Charts link common signs to nutrients and sensible next steps. Free PDF Download the
+   complete vitamins and minerals guide.
+
+--------------------------------------------------------------------------------
+53. Healthy Smoothie Recipe Book
+   book-id: healthy-smoothie-recipe-book
+   category: health-books, kids-learning-books
+   WHAT TO INCLUDE IN THIS PDF:
+   20 complete smoothie recipes with prep tips, ingredient swaps and nutrition highlights. Smoothies for Every
+   Goal Energy, immunity, recovery and family-friendly blends with full recipe cards. Meal Prep Friendly Batch
+   prep and substitution charts included. Free Recipe Book PDF Download all 20 recipes instantly.
+
+--------------------------------------------------------------------------------
+54. Detox and Cleanse Complete Guide
+   book-id: detox-cleanse-complete-guide
+   category: health-books
+   WHAT TO INCLUDE IN THIS PDF:
+   A science-based, food-first detox framework without extreme starvation methods. What Detox Really Means
+   Support liver, kidneys and gut health with realistic food choices — not fad cleanses. Gentle Plans Included
+   3-day and 7-day schedules with detox water recipes and safety protocols. Free PDF Download the complete detox
+   guide.
+
+--------------------------------------------------------------------------------
+55. Complete Anti-Inflammatory Food Guide
+   book-id: anti-inflammatory-food-guide
+   category: health-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Lower chronic inflammation with practical nutrition choices, meal plans and spice compounds. Food and
+   Inflammation Learn which patterns raise or lower inflammatory load over time. Top Anti-Inflammatory Foods
+   Turmeric, ginger, fatty fish, berries, leafy greens and more. Free Download Get the full anti-inflammatory
+   food guide PDF.
+
+--------------------------------------------------------------------------------
+56. 12 Science-Backed Health Benefits of Eating Apples Daily
+   book-id: apple-health-benefits-guide
+   category: health-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Evidence-based apple nutrition guide covering gut health, heart support, blood sugar balance and practical
+   intake tips. Why Apples Deserve a Daily Spot Apples combine fiber, polyphenols and hydration in a convenient,
+   affordable package. What the Research Shows Learn how pectin supports gut health and how whole fruit compares
+   to juice. From LifeWithBooks Curated wellness content from the LifeWithBooks editorial library.
+
+--------------------------------------------------------------------------------
+57. Banana Health Benefits — Energy, Potassium and Digestion
+   book-id: banana-health-benefits-guide
+   category: health-books
+   WHAT TO INCLUDE IN THIS PDF:
+   How bananas support workouts, electrolyte balance and digestive comfort in everyday diets. A Practical
+   Everyday Superfruit Bananas provide potassium, quick energy and prebiotic fiber for many lifestyles. Best Uses
+   and Timing Pre-workout fuel, post-exercise recovery and gentle digestion support. Wellness Library Entry Based
+   on articles from LifeWithBooks.
+
+--------------------------------------------------------------------------------
+58. Turmeric Health Benefits — Curcumin, Inflammation and Daily Use
+   book-id: turmeric-health-benefits-guide
+   category: health-books
+   WHAT TO INCLUDE IN THIS PDF:
+   How to use turmeric safely for inflammation support, immunity and kitchen wellness routines. Curcumin and
+   Everyday Health Turmeric is one of the most studied spices for inflammatory pathways and antioxidant support.
+   Preparation Matters Pair with black pepper and healthy fats to improve absorption. From LifeWithBooks
+   Educational content for informed food choices — not medical advice.
+
+--------------------------------------------------------------------------------
+59. Goethe-Zertifikat B1 — Wortschatz (Deutschprüfung)
    book-id: goethe-zertifikat-b1-wortschatz
    category: german-learning-books, deutsch-books, vocabulary-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -439,7 +761,917 @@ Total: 56 books
    Essential for Exam Preparatio...
 
 --------------------------------------------------------------------------------
-30. IELTS Academic Practice Tests Guide
+60. The Adventures of Sherlock Holmes
+   book-id: the-adventures-of-sherlock-holmes
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Twelve classic detective stories featuring Sherlock Holmes and Dr Watson, from Arthur Conan Doyle. About the
+   Book This collection gathers twelve of the earliest and most celebrated Sherlock Holmes short stories, in
+   which the brilliant detective and his loyal companion Dr Watson unravel baffling mysteries through observation
+   and deduction. Why Read It Doyle invented the template for modern detective fiction here. Each self-contained
+   case is a satisfying puzzle, and Holmes remains one of literature's most magnetic characters. Free
+   Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the
+   complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+61. A Tale of Two Cities
+   book-id: a-tale-of-two-cities
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Dickens's sweeping novel of love and sacrifice set in London and Paris during the French Revolution. About the
+   Book Set against the turmoil of the French Revolution, this novel follows characters in London and Paris whose
+   lives become entangled in resurrection, revenge and self-sacrifice. Why Read It With one of the most famous
+   openings and endings in English literature, it pairs gripping historical drama with unforgettable themes of
+   redemption. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep,
+   prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+62. Great Expectations
+   book-id: great-expectations
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   The coming-of-age story of the orphan Pip, his mysterious fortune and the lessons of ambition. About the Book
+   Great Expectations traces the life of the orphan Pip from a humble childhood to unexpected wealth, exploring
+   class, guilt, loyalty and the gap between appearance and worth. Why Read It Dickens combines vivid characters
+   such as Miss Havisham and the convict Magwitch with a moving study of what it really means to become a
+   gentleman. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep,
+   prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+63. The Adventures of Tom Sawyer
+   book-id: the-adventures-of-tom-sawyer
+   category: novels, kids-learning-books, adventure-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Mark Twain's timeless tale of boyhood mischief, treasure and adventure along the Mississippi. About the Book
+   Tom Sawyer is a mischievous boy growing up beside the Mississippi River, whose escapades include whitewashing
+   fences, hunting for treasure and witnessing a crime. Why Read It Twain captures the freedom and imagination of
+   childhood with humour and warmth, making this a favourite for readers of every age. Free Public-Domain Edition
+   This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete
+   public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+64. Adventures of Huckleberry Finn
+   book-id: adventures-of-huckleberry-finn
+   category: novels, literature-books, adventure-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Huck Finn and the runaway Jim journey down the Mississippi in Twain's great American novel. About the Book
+   Huckleberry Finn escapes his old life and rafts down the Mississippi with Jim, a man fleeing slavery, in a
+   journey that questions the conscience of a nation. Why Read It Often called the great American novel, it
+   blends adventure, satire and a powerful moral awakening told in Huck's unforgettable voice. Free Public-Domain
+   Edition This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete
+   public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+65. The Scarlet Letter
+   book-id: the-scarlet-letter
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Hawthorne's study of sin, guilt and judgement in Puritan New England. About the Book In Puritan Boston, Hester
+   Prynne is forced to wear a scarlet "A" for adultery while refusing to name the father, in a tale of public
+   shame and private conscience. Why Read It A foundational American novel that examines hypocrisy, dignity and
+   resilience with haunting psychological depth. Free Public-Domain Edition This LifeWithBooks edition is a
+   branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any
+   device.
+
+--------------------------------------------------------------------------------
+66. Wuthering Heights
+   book-id: wuthering-heights
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Emily Bronte's stormy tale of passion and revenge on the Yorkshire moors. About the Book The intense,
+   destructive love between Heathcliff and Catherine plays out across two generations on the wild Yorkshire
+   moors. Why Read It Bronte's only novel is a fierce, atmospheric masterpiece of obsession that broke the
+   conventions of its time. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can
+   download and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+67. Alice's Adventures in Wonderland
+   book-id: alices-adventures-in-wonderland
+   category: novels, kids-learning-books, stories-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Lewis Carroll's whimsical journey down the rabbit hole into a world of nonsense and wonder. About the Book
+   Alice follows a waistcoat-wearing White Rabbit into a surreal world of talking creatures, riddles and
+   impossible logic. Why Read It A joyful, inventive classic whose wordplay and imagination have delighted
+   children and adults for over 150 years. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF
+   you can download and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+68. The Wonderful Wizard of Oz
+   book-id: the-wonderful-wizard-of-oz
+   category: novels, kids-learning-books, stories-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Dorothy and her friends follow the yellow brick road in Baum's beloved American fairy tale. About the Book A
+   cyclone sweeps Dorothy to the magical land of Oz, where she journeys to the Emerald City with a Scarecrow, a
+   Tin Woodman and a Cowardly Lion. Why Read It A warm, imaginative adventure about friendship, courage and
+   finding that what you seek is often already within you. Free Public-Domain Edition This LifeWithBooks edition
+   is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it
+   on any device.
+
+--------------------------------------------------------------------------------
+69. Peter Pan
+   book-id: peter-pan
+   category: novels, kids-learning-books, adventure-books
+   WHAT TO INCLUDE IN THIS PDF:
+   The boy who never grows up takes the Darling children to Neverland in J.M. Barrie's classic. About the Book
+   Peter Pan whisks Wendy, John and Michael off to Neverland, a world of pirates, fairies and the fearsome
+   Captain Hook. Why Read It A magical celebration of childhood and imagination that has enchanted generations of
+   readers. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep,
+   prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+70. The Jungle Book
+   book-id: the-jungle-book
+   category: novels, kids-learning-books, adventure-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Kipling's stories of Mowgli the man-cub raised by wolves in the Indian jungle. About the Book A collection of
+   tales centred on Mowgli, a boy raised by wolves and taught the law of the jungle by Baloo the bear and
+   Bagheera the panther. Why Read It Vivid, wise and adventurous, these stories about belonging and the natural
+   world remain enduringly popular. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you
+   can download and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+71. Moby-Dick
+   book-id: moby-dick
+   category: novels, literature-books, adventure-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Captain Ahab's obsessive hunt for the great white whale in Melville's epic sea novel. About the Book Aboard
+   the whaling ship Pequod, the sailor Ishmael witnesses Captain Ahab's monomaniacal pursuit of the white whale
+   that maimed him. Why Read It A towering work of American literature that blends thrilling adventure with
+   profound meditations on obsession, nature and fate. Free Public-Domain Edition This LifeWithBooks edition is a
+   branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any
+   device.
+
+--------------------------------------------------------------------------------
+72. The Time Machine
+   book-id: the-time-machine
+   category: novels, adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   H.G. Wells's pioneering science-fiction journey into the distant future of humanity. About the Book A
+   Victorian inventor travels far into the future and discovers the gentle Eloi and the sinister Morlocks, a
+   vision of where society might be heading. Why Read It One of the first and most influential science-fiction
+   novels, packed with ideas that still feel strikingly modern. Free Public-Domain Edition This LifeWithBooks
+   edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can
+   read it on any device.
+
+--------------------------------------------------------------------------------
+73. The War of the Worlds
+   book-id: the-war-of-the-worlds
+   category: novels, adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Wells's gripping account of a Martian invasion of Earth. About the Book When cylinders fall from Mars and
+   unleash deadly war machines, an ordinary narrator struggles to survive the collapse of civilisation. Why Read
+   It A tense, visionary alien-invasion story that defined a genre and still resonates as a study of human
+   fragility. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep,
+   prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+74. The Strange Case of Dr Jekyll and Mr Hyde
+   book-id: the-strange-case-of-dr-jekyll-and-mr-hyde
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Stevenson's chilling tale of a respectable doctor and his monstrous alter ego. About the Book A lawyer
+   investigates the disturbing connection between the kindly Dr Jekyll and the violent Mr Hyde, uncovering a dark
+   experiment of the divided self. Why Read It A taut, unsettling classic whose central idea has become a
+   permanent part of our language and imagination. Free Public-Domain Edition This LifeWithBooks edition is a
+   branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any
+   device.
+
+--------------------------------------------------------------------------------
+75. Heart of Darkness
+   book-id: heart-of-darkness
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Conrad's haunting voyage up the Congo River and into the depths of the human soul. About the Book The sailor
+   Marlow recounts his journey up the Congo in search of the enigmatic ivory trader Kurtz, confronting the
+   brutality of colonialism. Why Read It A short but profound novel whose imagery and moral questions have
+   influenced writers and filmmakers for over a century. Free Public-Domain Edition This LifeWithBooks edition is
+   a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on
+   any device.
+
+--------------------------------------------------------------------------------
+76. The Count of Monte Cristo
+   book-id: the-count-of-monte-cristo
+   category: novels, adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Dumas's sweeping epic of wrongful imprisonment, hidden treasure and elaborate revenge. About the Book Edmond
+   Dantes is betrayed and imprisoned, escapes, discovers a fortune and returns as the mysterious Count of Monte
+   Cristo to repay his enemies. Why Read It A thrilling, page-turning adventure of justice and redemption that
+   remains one of the most satisfying revenge stories ever written. Free Public-Domain Edition This LifeWithBooks
+   edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can
+   read it on any device.
+
+--------------------------------------------------------------------------------
+77. Gulliver's Travels
+   book-id: gullivers-travels
+   category: novels, adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Swift's satirical voyages to lands of tiny people, giants and talking horses. About the Book Lemuel Gulliver's
+   four voyages take him to Lilliput, Brobdingnag and stranger places still, each a sharp satire of human nature
+   and politics. Why Read It Both a fantastical adventure and a witty critique of society, it can be enjoyed as
+   pure story or biting commentary. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you
+   can download and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+78. Robinson Crusoe
+   book-id: robinson-crusoe
+   category: novels, adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Defoe's classic tale of a castaway surviving alone on a desert island. About the Book Shipwrecked and alone,
+   Robinson Crusoe builds a life on a remote island over many years, learning self-reliance and reflecting on
+   fortune and faith. Why Read It Often called the first English novel, it is the original survival story and a
+   gripping study of ingenuity and endurance. Free Public-Domain Edition This LifeWithBooks edition is a branded
+   PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+79. Anne of Green Gables
+   book-id: anne-of-green-gables
+   category: novels, kids-learning-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   The spirited orphan Anne Shirley transforms life at Green Gables in Montgomery's beloved novel. About the Book
+   Talkative, imaginative Anne is mistakenly sent to an elderly brother and sister, and quickly wins hearts on
+   Prince Edward Island. Why Read It A heart-warming, funny and tender story about belonging, imagination and
+   growing up that readers return to again and again. Free Public-Domain Edition This LifeWithBooks edition is a
+   branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any
+   device.
+
+--------------------------------------------------------------------------------
+80. The Secret Garden
+   book-id: the-secret-garden
+   category: novels, kids-learning-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   A lonely girl discovers a hidden garden and new life in Burnett's gentle classic. About the Book Orphaned Mary
+   Lennox is sent to a gloomy Yorkshire manor, where she uncovers a locked garden that brings healing to everyone
+   around it. Why Read It A tender story about renewal, friendship and the restorative power of nature, loved by
+   children and adults alike. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can
+   download and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+81. Grimms' Fairy Tales
+   book-id: grimms-fairy-tales
+   category: stories-books, kids-learning-books
+   WHAT TO INCLUDE IN THIS PDF:
+   The original collection of timeless fairy tales gathered by the Brothers Grimm. About the Book This collection
+   brings together the classic tales of the Brothers Grimm, including Cinderella, Hansel and Gretel, Rapunzel and
+   many more. Why Read It These foundational stories have shaped storytelling worldwide and remain magical, moral
+   and endlessly retellable. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can
+   download and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+82. Aesop's Fables
+   book-id: aesops-fables
+   category: stories-books, kids-learning-books, self-grooming-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Short, wise fables with timeless moral lessons attributed to Aesop. About the Book A collection of brief
+   fables, each ending in a moral, featuring clever animals such as the tortoise and the hare and the fox and the
+   grapes. Why Read It Perfect for quick reading and reflection, these fables teach lasting lessons about
+   character, patience and wisdom. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can
+   download and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+83. As a Man Thinketh
+   book-id: as-a-man-thinketh
+   category: self-grooming-books, business-books
+   WHAT TO INCLUDE IN THIS PDF:
+   James Allen's classic on how thought shapes character, circumstance and success. About the Book This short,
+   influential essay argues that our thoughts shape our character, our circumstances and ultimately our destiny.
+   Why Read It A foundational self-development text, concise and quotable, that has inspired generations of
+   readers seeking personal growth. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you
+   can download and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+84. Self-Help
+   book-id: self-help-samuel-smiles
+   category: self-grooming-books, business-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Samuel Smiles's Victorian classic on character, perseverance and self-improvement. About the Book Through
+   real-life examples of inventors, artists and entrepreneurs, Smiles argues that diligence, character and
+   perseverance are the true engines of success. Why Read It The book that popularised the term "self-help", full
+   of motivating examples of what determination can achieve. Free Public-Domain Edition This LifeWithBooks
+   edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can
+   read it on any device.
+
+--------------------------------------------------------------------------------
+85. The Autobiography of Benjamin Franklin
+   book-id: autobiography-of-benjamin-franklin
+   category: business-books, self-grooming-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Franklin's own account of his rise through industry, virtue and lifelong self-improvement. About the Book One
+   of the Founding Fathers recounts his journey from humble beginnings to international renown, including his
+   famous plan for cultivating thirteen virtues. Why Read It A practical, inspiring memoir on discipline,
+   frugality and continuous self-improvement that reads like timeless personal-development advice. Free
+   Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the
+   complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+86. Emma
+   book-id: emma
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Jane Austen's comedy of matchmaking, misread signals and self-discovery in Regency England. About the Book
+   Emma Woodhouse is clever, wealthy and convinced she understands everyone's romantic prospects — except her
+   own. Austen's novel is a sharp, funny study of social blindness and growth. Why Read It One of Austen's most
+   beloved books, full of wit, misunderstanding and one of literature's most satisfying character arcs. Free
+   Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the
+   complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+87. Sense and Sensibility
+   book-id: sense-and-sensibility
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   The Dashwood sisters navigate love, loss and society in Jane Austen's first published novel. About the Book
+   After their father's death, Elinor and Marianne Dashwood must rely on relatives and their own judgment as they
+   fall in love in a world that offers women little security. Why Read It Austen contrasts reason and emotion
+   with humour and depth, setting the template for her later masterpieces. Free Public-Domain Edition This
+   LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain
+   text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+88. Persuasion
+   book-id: persuasion
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Austen's mature novel of second chances, regret and quiet devotion between Anne Elliot and Captain Wentworth.
+   About the Book Years after being persuaded to reject the man she loved, Anne Elliot meets Captain Wentworth
+   again — wiser, sadder and still unmistakably drawn to him. Why Read It Often called Austen's most emotional
+   novel, it rewards patient readers with one of the greatest love letters in fiction. Free Public-Domain Edition
+   This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete
+   public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+89. Northanger Abbey
+   book-id: northanger-abbey
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Austen's playful satire of Gothic novels and youthful imagination. About the Book Catherine Morland visits
+   Bath and an old abbey, where her love of sensational fiction leads her to suspect dark secrets that prove
+   mostly ordinary. Why Read It Short, funny and self-aware — an ideal Austen starting point for readers new to
+   the classics. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and
+   keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+90. Oliver Twist
+   book-id: oliver-twist
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Dickens's orphan hero fights poverty, crime and cruelty in Victorian London. About the Book Oliver Twist
+   escapes the workhouse only to fall among thieves led by Fagin, while secrets about his birth slowly emerge.
+   Why Read It A landmark social novel that still moves readers with its energy, outrage and unforgettable
+   characters. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep,
+   prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+91. A Christmas Carol
+   book-id: a-christmas-carol
+   category: novels, literature-books, stories-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Dickens's beloved ghost story of Scrooge, redemption and the spirit of Christmas. About the Book Ebenezer
+   Scrooge is visited by three spirits who show him his past, present and future, forcing a miser to confront the
+   life he has wasted. Why Read It Short enough to read in one evening and powerful enough to revisit every year
+   — the definitive holiday classic. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you
+   can download and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+92. Silas Marner
+   book-id: silas-marner
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   George Eliot's tale of exile, hoarded gold and unexpected redemption in a rural village. About the Book
+   Wrongly accused and isolated, the weaver Silas Marner lives only for his gold until a child's arrival
+   transforms his world. Why Read It A compact, deeply human novel about community, trust and what money cannot
+   buy. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep,
+   prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+93. Far from the Madding Crowd
+   book-id: far-from-the-madding-crowd
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Hardy's novel of independent Bathsheba Everdene and the three men who love her. About the Book In rural
+   Wessex, Bathsheba inherits a farm and must navigate pride, passion and the consequences of her choices. Why
+   Read It Hardy combines landscape, drama and psychological realism in one of his most accessible masterpieces.
+   Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep, prepared
+   from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+94. Twenty Thousand Leagues Under the Sea
+   book-id: twenty-thousand-leagues-under-the-sea
+   category: novels, adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Verne's underwater epic aboard Captain Nemo's submarine, the Nautilus. About the Book Professor Aronnax joins
+   an expedition that becomes captivity aboard a advanced submarine, touring oceans and witnessing wonders and
+   danger. Why Read It One of the most influential adventure novels ever written, still thrilling for readers of
+   every age. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep,
+   prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+95. The Mysterious Island
+   book-id: the-mysterious-island
+   category: novels, adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Castaways use science and courage to survive on a remote island in Verne's gripping sequel world. About the
+   Book During the American Civil War, five prisoners escape by balloon and crash on an uncharted island where
+   survival depends on ingenuity. Why Read It A celebration of problem-solving, teamwork and wonder — Verne at
+   his most optimistic. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download
+   and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+96. The Hound of the Baskervilles
+   book-id: the-hound-of-the-baskervilles
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Sherlock Holmes investigates a legendary curse on the moors in Doyle's most famous novel-length case. About
+   the Book Sir Charles Baskerville dies mysteriously on Dartmoor, and Holmes and Watson unravel a plot where
+   legend masks murder. Why Read It The perfect Holmes entry point: atmospheric, tightly plotted and impossible
+   to put down. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep,
+   prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+97. A Study in Scarlet
+   book-id: a-study-in-scarlet
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   The first Sherlock Holmes novel — the meeting of Holmes and Watson and a case spanning London and America.
+   About the Book Dr Watson returns from war and meets the eccentric Sherlock Holmes, who pulls him into a
+   baffling murder investigation. Why Read It Where the world's greatest detective partnership begins — essential
+   for mystery fans. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and
+   keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+98. The Invisible Man
+   book-id: the-invisible-man
+   category: novels, adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   H.G. Wells's science-fiction thriller about power, secrecy and a man who cannot be seen. About the Book
+   Griffin discovers how to make himself invisible, but the gift quickly becomes a weapon that isolates and
+   corrupts him. Why Read It A fast, unsettling classic that asks what happens when science removes
+   accountability. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and
+   keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+99. The Island of Doctor Moreau
+   book-id: the-island-of-doctor-moreau
+   category: novels, adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Wells's dark fable of a scientist who reshapes animals into human-like creatures. About the Book Shipwrecked
+   Edward Prendick reaches an island where Doctor Moreau performs horrific experiments in the name of science.
+   Why Read It Short, provocative and still relevant to debates about ethics, biology and what makes us human.
+   Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep, prepared
+   from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+100. Ivanhoe
+   book-id: ivanhoe
+   category: novels, adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Scott's knights, tournaments and Saxon–Norman conflict in medieval England. About the Book The disinherited
+   knight Ivanhoe returns in disguise to fight for honour, love and Richard the Lionheart's England. Why Read It
+   The template for historical adventure — jousts, outlaws, castles and romance in one sweeping story. Free
+   Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the
+   complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+101. The Three Musketeers
+   book-id: the-three-musketeers
+   category: novels, adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Dumas's swashbuckling epic of d'Artagnan, Athos, Porthos and Aramis in seventeenth-century France. About the
+   Book Young d'Artagnan arrives in Paris, befriends three musketeers and is drawn into court intrigue, duels and
+   dangerous loyalty. Why Read It Perhaps the greatest adventure novel ever written — witty, relentless and
+   endlessly quotable. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download
+   and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+102. The Man in the Iron Mask
+   book-id: the-man-in-the-iron-mask
+   category: novels, adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Dumas's prison mystery and royal intrigue — the final Musketeers saga. About the Book The ageing musketeers
+   confront a state secret: a masked prisoner whose identity threatens the throne of France. Why Read It For
+   readers who loved The Three Musketeers and want the epic conclusion. Free Public-Domain Edition This
+   LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain
+   text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+103. Crime and Punishment
+   book-id: crime-and-punishment
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Dostoevsky's psychological masterpiece of guilt, poverty and moral torment in St Petersburg. About the Book
+   Rodion Raskolnikov commits murder believing he is above ordinary morality, then slowly unravels under
+   conscience and suspicion. Why Read It One of the deepest novels ever written about the mind under pressure —
+   challenging and unforgettable. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can
+   download and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+104. The Metamorphosis
+   book-id: the-metamorphosis
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Kafka's surreal novella of Gregor Samsa, who wakes transformed and is slowly abandoned by his family. About
+   the Book Gregor Samsa wakes to find himself changed into a giant insect, and the story follows his isolation
+   in painfully ordinary detail. Why Read It A modern classic you can read in one sitting — strange, sad and
+   endlessly discussed. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download
+   and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+105. Candide
+   book-id: candide
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Voltaire's satirical adventure mocking optimism, war and pretension. About the Book Candide and his companions
+   suffer every disaster imaginable while clinging to the philosophy that we live in the best of all possible
+   worlds. Why Read It Short, sharp and hilarious — philosophy as a page-turning romp. Free Public-Domain Edition
+   This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete
+   public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+106. Meditations
+   book-id: meditations
+   category: self-grooming-books, business-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Marcus Aurelius's Stoic reflections on duty, mortality and self-control — still read by leaders today. About
+   the Book The Roman emperor wrote these private notes on how to live with integrity amid chaos, loss and power.
+   Why Read It One of the most practical ancient texts for modern stress, ambition and resilience. Free
+   Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the
+   complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+107. Walden
+   book-id: walden
+   category: self-grooming-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Thoreau's classic account of simple living, nature and deliberate choice at Walden Pond. About the Book Henry
+   David Thoreau records two years of life in a cabin, reflecting on society, solitude, work and what humans
+   truly need. Why Read It Foundational reading for minimalism, environmental thought and anyone questioning the
+   pace of modern life. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download
+   and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+108. Narrative of the Life of Frederick Douglass
+   book-id: narrative-of-the-life-of-frederick-douglass
+   category: literature-books, self-grooming-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Douglass's powerful autobiography of slavery, literacy and the fight for freedom. About the Book Frederick
+   Douglass recounts his childhood in bondage, his path to reading and writing, and his escape to become a
+   leading abolitionist voice. Why Read It Essential American reading — clear, courageous and historically
+   indispensable. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and
+   keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+109. The Importance of Being Earnest
+   book-id: the-importance-of-being-earnest
+   category: literature-books, stories-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Oscar Wilde's brilliant comedy of mistaken identity, buns and Victorian absurdity. About the Book Two
+   gentlemen invent false personas named Ernest to escape social obligations, unleashing a perfectly constructed
+   comic chaos. Why Read It Wilde's funniest play in prose form — endlessly quotable and light as air. Free
+   Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the
+   complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+110. The Wind in the Willows
+   book-id: the-wind-in-the-willows
+   category: kids-learning-books, stories-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Mole, Rat, Toad and Badger along the riverbank in Grahame's gentle English classic. About the Book Animal
+   friends share picnics, adventures and loyalty beside the river, led by the impulsive, lovable Toad. Why Read
+   It A comforting, witty book for children and adults who miss the idea of home and friendship. Free
+   Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the
+   complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+111. Black Beauty
+   book-id: black-beauty
+   category: kids-learning-books, stories-books
+   WHAT TO INCLUDE IN THIS PDF:
+   The autobiography of a horse — a Victorian classic about kindness and cruelty. About the Book Black Beauty
+   recounts life from a peaceful meadow through harsh masters and hard work, asking for compassion toward
+   animals. Why Read It One of the most influential children's books ever written — short chapters and strong
+   moral clarity. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and
+   keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+112. The Happy Prince and Other Tales
+   book-id: the-happy-prince-and-other-tales
+   category: kids-learning-books, stories-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Oscar Wilde's fairy tales of sacrifice, compassion and bittersweet beauty. About the Book Stories including
+   The Happy Prince and The Selfish Giant blend fantasy with moral insight in Wilde's lyrical prose. Why Read It
+   Perfect for family reading — short, memorable and emotionally rich. Free Public-Domain Edition This
+   LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain
+   text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+113. The Great Gatsby
+   book-id: the-great-gatsby
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Fitzgerald's Jazz Age tragedy of ambition, wealth and the green light on Long Island. About the Book Nick
+   Carraway observes his mysterious neighbour Jay Gatsby, whose fortune and obsession collide with old money and
+   doomed love. Why Read It A slim, dazzling American classic whose themes of aspiration and illusion feel
+   permanent. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep,
+   prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+114. The Jungle
+   book-id: the-jungle
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Sinclair's muckraking novel exposing labour exploitation in Chicago's meatpacking industry. About the Book
+   Lithuanian immigrant Jurgis Rudkus arrives in America seeking prosperity and instead confronts brutal working
+   conditions and corruption. Why Read It Historically important and still gripping as a story of survival
+   against institutional cruelty. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can
+   download and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+115. Common Sense
+   book-id: common-sense
+   category: business-books, self-grooming-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Thomas Paine's revolutionary pamphlet that helped shape American independence. About the Book Paine argues
+   plainly why colonies should break from Britain, making political ideas accessible to ordinary readers. Why
+   Read It Short, forceful and foundational — history you can read in an afternoon. Free Public-Domain Edition
+   This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete
+   public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+116. Les Miserables
+   book-id: les-miserables
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Victor Hugo's sweeping epic of justice, mercy and redemption in nineteenth-century France. About the Book Jean
+   Valjean, hunted for stealing a loaf of bread, rebuilds his life while Paris seethes with revolution. Hugo
+   weaves dozens of unforgettable characters into a story of law, grace and human dignity. Why Read It One of the
+   greatest novels ever written — vast, compassionate and impossible to forget once you begin. Free Public-Domain
+   Edition This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete
+   public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+117. Don Quixote
+   book-id: don-quixote
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Cervantes's comic masterpiece of a knight, his squire and impossible dreams. About the Book Alonso Quixano
+   reads too many romances and sets out as Don Quixote to revive chivalry, with Sancho Panza at his side through
+   windmills, inns and hard-won wisdom. Why Read It Often called the first modern novel — hilarious, tender and
+   endlessly influential. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download
+   and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+118. War and Peace
+   book-id: war-and-peace
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Tolstoy's monumental novel of love, fate and Napoleon's invasion of Russia. About the Book Aristocratic
+   families in Moscow and Petersburg live through war, peace and spiritual searching as history crashes into
+   private life. Why Read It The supreme achievement of realist fiction — challenging in length, unmatched in
+   scope and humanity. Free Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download
+   and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+119. Anne of Avonlea
+   book-id: anne-of-avonlea
+   category: novels, kids-learning-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Anne Shirley becomes a teacher and grows up in Montgomery's beloved sequel. About the Book Now a young woman,
+   Anne takes a schoolroom, cares for twins and navigates friendship, romance and the scrapes only she could
+   cause. Why Read It Warm, funny and full of heart — a comfort read for every generation. Free Public-Domain
+   Edition This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete
+   public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+120. Anne of the Island
+   book-id: anne-of-the-island
+   category: novels, kids-learning-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Anne leaves Prince Edward Island for college and new love in the third Anne book. About the Book At Redmond
+   College, Anne discovers independence, ambition and the complicated question of who she will marry. Why Read It
+   Perfect for readers who grew up with Anne of Green Gables and want to follow her into adulthood. Free
+   Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the
+   complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+121. The Sign of the Four
+   book-id: the-sign-of-the-four
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Sherlock Holmes investigates treasure, betrayal and murder in colonial London. About the Book Mary Morstan
+   hires Holmes to explain mysterious pearls and a father's disappearance, leading to a chase involving the Agra
+   treasure. Why Read It A tight, exotic Holmes adventure — essential for detective fiction fans. Free
+   Public-Domain Edition This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the
+   complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+122. The Valley of Fear
+   book-id: the-valley-of-fear
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Holmes unravels a coded warning and a secret society in the Pennsylvania coalfields. About the Book A murder
+   in Sussex connects to a hidden past in America, testing Holmes against an enemy as organized as Moriarty's
+   web. Why Read It Doyle's final Holmes novel blends mystery with American frontier drama. Free Public-Domain
+   Edition This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete
+   public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+123. The Return of Sherlock Holmes
+   book-id: the-return-of-sherlock-holmes
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Thirteen stories marking Holmes's return after Reichenbach Falls. About the Book Holmes reappears to solve
+   cases from blackmail to stolen plans, proving his methods still unmatched. Why Read It The collection that
+   brought Holmes back — includes classics like "The Adventure of the Empty House". Free Public-Domain Edition
+   This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete
+   public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+124. The Memoirs of Sherlock Holmes
+   book-id: the-memoirs-of-sherlock-holmes
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Eleven Holmes stories including the confrontation with Professor Moriarty. About the Book Watson records some
+   of Holmes's most famous cases, culminating in the struggle at Reichenbach Falls. Why Read It Home to "The
+   Final Problem" — a cornerstone of detective literature. Free Public-Domain Edition This LifeWithBooks edition
+   is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it
+   on any device.
+
+--------------------------------------------------------------------------------
+125. His Last Bow
+   book-id: his-last-bow
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Holmes and Watson's wartime espionage caper and other late cases. About the Book The title story sends an
+   ageing Holmes into secret service on the eve of the First World War. Why Read It A mature, atmospheric
+   collection for readers who know the earlier canon. Free Public-Domain Edition This LifeWithBooks edition is a
+   branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any
+   device.
+
+--------------------------------------------------------------------------------
+126. The Hunchback of Notre-Dame
+   book-id: the-hunchback-of-notre-dame
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Hugo's Gothic tale of Quasimodo, Esmeralda and medieval Paris. About the Book In the shadow of Notre-Dame,
+   outcasts and rulers collide in a tragedy of beauty, cruelty and fate. Why Read It Vivid setting, fierce
+   emotion and one of literature's most famous cathedrals. Free Public-Domain Edition This LifeWithBooks edition
+   is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it
+   on any device.
+
+--------------------------------------------------------------------------------
+127. Anna Karenina
+   book-id: anna-karenina
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Tolstoy's novel of passion, society and the search for an honest life. About the Book Anna's affair with Count
+   Vronsky unfolds alongside Levin's quest for meaning in work, family and faith. Why Read It Widely ranked among
+   the greatest novels — psychologically deep and beautifully observed. Free Public-Domain Edition This
+   LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain
+   text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+128. The Brothers Karamazov
+   book-id: the-brothers-karamazov
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Dostoevsky's final novel of faith, doubt and a murder that divides a family. About the Book Three brothers —
+   Dmitri, Ivan and Alyosha — orbit their corrupt father until violence forces a reckoning with guilt and God.
+   Why Read It A towering work of philosophy and drama that rewards serious readers. Free Public-Domain Edition
+   This LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete
+   public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+129. The Odyssey
+   book-id: the-odyssey
+   category: novels, literature-books, adventure-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Homer's epic of Odysseus's ten-year journey home after the Trojan War. About the Book Monsters, gods and
+   temptations delay Odysseus while Penelope holds off suitors in Ithaca. Why Read It The foundation of Western
+   adventure storytelling — still thrilling after three millennia. Free Public-Domain Edition This LifeWithBooks
+   edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can
+   read it on any device.
+
+--------------------------------------------------------------------------------
+130. Paradise Lost
+   book-id: paradise-lost
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Milton's epic poem of the Fall, Satan and the loss of Eden. About the Book In blank verse of astonishing
+   power, Milton retells Genesis with cosmic scope and unsettling sympathy for the rebel angel. Why Read It
+   Essential English poetry — challenging but endlessly quoted and debated. Free Public-Domain Edition This
+   LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain
+   text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+131. The Last of the Mohicans
+   book-id: the-last-of-the-mohicans
+   category: novels, adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Cooper's frontier adventure during the French and Indian War. About the Book Hawkeye and his companions
+   protect Cora and Alice Munro through wilderness battles and ambush. Why Read It The classic American frontier
+   romance — action, loyalty and vivid landscape. Free Public-Domain Edition This LifeWithBooks edition is a
+   branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any
+   device.
+
+--------------------------------------------------------------------------------
+132. Kidnapped
+   book-id: kidnapped
+   category: novels, adventure-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Stevenson's Scottish adventure of shipwreck, betrayal and Jacobite intrigue. About the Book Young David
+   Balfour is kidnapped and thrown into a world of clan feuds, with Alan Breck as his daring ally. Why Read It
+   Fast, witty and perfect for readers who loved Treasure Island. Free Public-Domain Edition This LifeWithBooks
+   edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can
+   read it on any device.
+
+--------------------------------------------------------------------------------
+133. The Prince and the Pauper
+   book-id: the-prince-and-the-pauper
+   category: novels, kids-learning-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Twain's tale of two boys who swap places in Tudor England. About the Book Prince Edward and Tom Canty trade
+   lives, exposing injustice and kindness in court and slum alike. Why Read It A fun, moral adventure that
+   introduces Twain's humour to younger readers. Free Public-Domain Edition This LifeWithBooks edition is a
+   branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any
+   device.
+
+--------------------------------------------------------------------------------
+134. Heidi
+   book-id: heidi
+   category: kids-learning-books, stories-books, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Spyri's Alpine story of an orphan girl who heals hearts in the mountains. About the Book Heidi brings joy to
+   her grandfather's hut, then faces loneliness in the city before finding her way home. Why Read It Gentle,
+   wholesome and beloved worldwide — ideal family reading. Free Public-Domain Edition This LifeWithBooks edition
+   is a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it
+   on any device.
+
+--------------------------------------------------------------------------------
+135. The Adventures of Pinocchio
+   book-id: the-adventures-of-pinocchio
+   category: kids-learning-books, stories-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Collodi's original puppet who longs to become a real boy. About the Book Pinocchio's nose grows, he escapes a
+   whale and learns hard lessons about truth and responsibility. Why Read It Darker and richer than many
+   adaptations — a true fairy-tale classic. Free Public-Domain Edition This LifeWithBooks edition is a branded
+   PDF you can download and keep, prepared from the complete public-domain text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+136. The Idiot
+   book-id: the-idiot
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Dostoevsky's novel of Prince Myshkin, innocence and a destructive love triangle. About the Book Returning from
+   a Swiss clinic, the gentle Prince Myshkin enters Petersburg society and is torn between two women. Why Read It
+   A study of goodness under pressure — strange, moving and uniquely Dostoevsky. Free Public-Domain Edition This
+   LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain
+   text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+137. The Mayor of Casterbridge
+   book-id: the-mayor-of-casterbridge
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Hardy's tragedy of a man who sells his wife and cannot escape the past. About the Book Michael Henchard rises
+   to become mayor of Casterbridge, but old sins and fierce pride destroy what he builds. Why Read It Hardy at
+   his most dramatic — fate, character and rural England in one gripping arc. Free Public-Domain Edition This
+   LifeWithBooks edition is a branded PDF you can download and keep, prepared from the complete public-domain
+   text so you can read it on any device.
+
+--------------------------------------------------------------------------------
+138. The House of the Seven Gables
+   book-id: the-house-of-the-seven-gables
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Hawthorne's Gothic romance of a cursed New England family. About the Book Generations of the Pyncheon family
+   are haunted by guilt and a gloomy mansion until love and honesty offer release. Why Read It Atmospheric
+   American Gothic with Hawthorne's moral depth. Free Public-Domain Edition This LifeWithBooks edition is a
+   branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on any
+   device.
+
+--------------------------------------------------------------------------------
+139. The Turn of the Screw
+   book-id: the-turn-of-the-screw
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   James's unsettling novella of a governess, two children and possible ghosts. About the Book A young governess
+   at a remote estate becomes convinced that sinister figures threaten her charges. Why Read It Short, chilling
+   and endlessly debated — the perfect literary ghost story. Free Public-Domain Edition This LifeWithBooks
+   edition is a branded PDF you can download and keep, prepared from the complete public-domain text so you can
+   read it on any device.
+
+--------------------------------------------------------------------------------
+140. The Awakening
+   book-id: the-awakening
+   category: novels, literature-books
+   WHAT TO INCLUDE IN THIS PDF:
+   Chopin's novel of Edna Pontellier and the cost of self-discovery. About the Book In Creole Louisiana, Edna
+   questions marriage, motherhood and the life expected of a respectable woman. Why Read It A landmark of early
+   feminist fiction — quiet, bold and still provocative. Free Public-Domain Edition This LifeWithBooks edition is
+   a branded PDF you can download and keep, prepared from the complete public-domain text so you can read it on
+   any device.
+
+--------------------------------------------------------------------------------
+141. IELTS Academic Practice Tests Guide
    book-id: ielts-academic-practice-tests-guide
    category: ielts-preparation, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -453,7 +1685,7 @@ Total: 56 books
    bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-31. IELTS Writing Task 1 and 2 Complete Guide
+142. IELTS Writing Task 1 and 2 Complete Guide
    book-id: ielts-writing-task-1-and-2-guide
    category: ielts-preparation
    WHAT TO INCLUDE IN THIS PDF:
@@ -465,7 +1697,7 @@ Total: 56 books
    obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-32. IELTS Speaking Practice Question Bank
+143. IELTS Speaking Practice Question Bank
    book-id: ielts-speaking-practice-question-bank
    category: ielts-preparation
    WHAT TO INCLUDE IN THIS PDF:
@@ -477,7 +1709,7 @@ Total: 56 books
    obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-33. IELTS Vocabulary Builder 3000 Words
+144. IELTS Vocabulary Builder 3000 Words
    book-id: ielts-vocabulary-builder-3000-words
    category: ielts-preparation, vocabulary-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -489,7 +1721,7 @@ Total: 56 books
    official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-34. IELTS Listening Practice Guide
+145. IELTS Listening Practice Guide
    book-id: ielts-listening-practice-guide
    category: ielts-preparation
    WHAT TO INCLUDE IN THIS PDF:
@@ -501,7 +1733,7 @@ Total: 56 books
    bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-35. CSS English Essay Writing Guide
+146. CSS English Essay Writing Guide
    book-id: css-english-essay-writing-guide
    category: css-pms-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -513,7 +1745,7 @@ Total: 56 books
    materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-36. CSS Current Affairs Preparation
+147. CSS Current Affairs Preparation
    book-id: css-current-affairs-preparation
    category: css-pms-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -525,7 +1757,7 @@ Total: 56 books
    materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-37. CSS General Knowledge Guide
+148. CSS General Knowledge Guide
    book-id: css-general-knowledge-guide
    category: css-pms-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -537,7 +1769,7 @@ Total: 56 books
    complete preparation.
 
 --------------------------------------------------------------------------------
-38. PMS Punjab Exam Preparation
+149. PMS Punjab Exam Preparation
    book-id: pms-punjab-exam-preparation
    category: css-pms-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -549,7 +1781,7 @@ Total: 56 books
    complete preparation.
 
 --------------------------------------------------------------------------------
-39. CSS English Precis Writing Guide
+150. CSS English Precis Writing Guide
    book-id: css-english-precis-writing-guide
    category: css-pms-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -561,7 +1793,7 @@ Total: 56 books
    bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-40. Matric English Grammar Complete
+151. Matric English Grammar Complete
    book-id: matric-english-grammar-complete
    category: matric-fsc-notes, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -573,7 +1805,7 @@ Total: 56 books
    complete preparation.
 
 --------------------------------------------------------------------------------
-41. FSc Physics Short Questions
+152. FSc Physics Short Questions
    book-id: fsc-physics-short-questions
    category: matric-fsc-notes
    WHAT TO INCLUDE IN THIS PDF:
@@ -584,7 +1816,7 @@ Total: 56 books
    study, then obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-42. Matric Biology Notes Guide
+153. Matric Biology Notes Guide
    book-id: matric-biology-notes-guide
    category: matric-fsc-notes, kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -595,7 +1827,7 @@ Total: 56 books
    obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-43. FSc Chemistry Important Questions
+154. FSc Chemistry Important Questions
    book-id: fsc-chemistry-important-questions
    category: matric-fsc-notes
    WHAT TO INCLUDE IN THIS PDF:
@@ -606,7 +1838,7 @@ Total: 56 books
    official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-44. Matric Mathematics Solved Guide
+155. Matric Mathematics Solved Guide
    book-id: matric-mathematics-solved-guide
    category: matric-fsc-notes
    WHAT TO INCLUDE IN THIS PDF:
@@ -617,7 +1849,7 @@ Total: 56 books
    obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-45. The Sealed Nectar — Prophet Biography
+156. The Sealed Nectar — Prophet Biography
    book-id: the-sealed-nectar-prophet-biography
    category: islamic-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -629,7 +1861,7 @@ Total: 56 books
    obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-46. Islam The Natural Way
+157. Islam The Natural Way
    book-id: islam-the-natural-way
    category: islamic-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -640,7 +1872,7 @@ Total: 56 books
    then obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-47. Arabic for Beginners Guide
+158. Arabic for Beginners Guide
    book-id: arabic-for-beginners-guide
    category: islamic-books, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -651,7 +1883,7 @@ Total: 56 books
    obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-48. Islamic History Timeline
+159. Islamic History Timeline
    book-id: islamic-history-timeline
    category: islamic-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -663,7 +1895,7 @@ Total: 56 books
    preparation.
 
 --------------------------------------------------------------------------------
-49. Quran Translation Guide English
+160. Quran Translation Guide English
    book-id: quran-translation-guide-english
    category: islamic-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -674,7 +1906,7 @@ Total: 56 books
    official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-50. Python Programming Beginner Guide
+161. Python Programming Beginner Guide
    book-id: python-programming-beginner-guide
    category: programming-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -685,7 +1917,7 @@ Total: 56 books
    study, then obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-51. HTML CSS Web Design Basics
+162. HTML CSS Web Design Basics
    book-id: html-css-web-design-basics
    category: programming-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -696,7 +1928,7 @@ Total: 56 books
    official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-52. JavaScript Fundamentals Guide
+163. JavaScript Fundamentals Guide
    book-id: javascript-fundamentals-guide
    category: programming-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -707,7 +1939,7 @@ Total: 56 books
    exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-53. Git Version Control Guide
+164. Git Version Control Guide
    book-id: git-version-control-guide
    category: programming-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -718,7 +1950,7 @@ Total: 56 books
    publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-54. SQL Database Beginner Guide
+165. SQL Database Beginner Guide
    book-id: sql-database-beginner-guide
    category: programming-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -729,7 +1961,7 @@ Total: 56 books
    bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-55. O Level English Language Guide
+166. O Level English Language Guide
    book-id: o-level-english-language-guide
    category: o-level-a-level, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -740,7 +1972,7 @@ Total: 56 books
    publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-56. A Level Biology Study Guide
+167. A Level Biology Study Guide
    book-id: a-level-biology-study-guide
    category: o-level-a-level
    WHAT TO INCLUDE IN THIS PDF:

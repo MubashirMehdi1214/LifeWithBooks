@@ -66,6 +66,44 @@ function findSourcePdf(bookId, files) {
   return files.find((f) => norm(pdfBookId(f)) === target);
 }
 
+function resolvePdfBookId(filename, books) {
+  if (PDF_FILENAME_ALIASES[filename]) return PDF_FILENAME_ALIASES[filename];
+  const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const base = filename.replace(/\.pdf$/i, '').replace(/^pdfs_pdfspart2_/i, '');
+  const book = books.find((b) => norm(b.id) === norm(base));
+  return book ? book.id : null;
+}
+
+function normalizeAllPdfs(books) {
+  const renamed = [];
+  for (const f of listPart2Pdfs()) {
+    const bookId = resolvePdfBookId(f, books);
+    if (!bookId) continue;
+    const to = bookId + '.pdf';
+    if (f === to) continue;
+    const from = path.join(PART2, f);
+    const dest = path.join(PART2, to);
+    if (fs.existsSync(dest) && path.resolve(from) !== path.resolve(dest)) {
+      console.warn('Skip normalize — target exists:', to, '(removing duplicate', f + ')');
+      fs.unlinkSync(from);
+      continue;
+    }
+    fs.renameSync(from, dest);
+    renamed.push({ from: f, to });
+    console.log('Normalized', f, '→', to);
+  }
+  return renamed;
+}
+
+function parseTxtBookIds() {
+  const txt = fs.readFileSync(path.join(PART2, 'BOOKS-WITHOUT-PDF.txt'), 'utf8');
+  const ids = [];
+  const re = /book-id:\s+(\S+)/g;
+  let m;
+  while ((m = re.exec(txt))) ids.push(m[1]);
+  return [...new Set(ids)];
+}
+
 function renameAliasedPdfs() {
   const renamed = [];
   for (const f of listPart2Pdfs()) {
@@ -233,11 +271,15 @@ function patchBookBlock(src, bookId, pageCount, setCover) {
     renameAliasedPdfs();
   }
 
-  let ids = process.argv.slice(2).filter((a) => !a.startsWith('--'));
-  if (FIRST_N) ids = parseFirstNIds(FIRST_N);
-
   delete require.cache[require.resolve(booksPath)];
   let { BOOKS } = require(booksPath);
+
+  if (process.argv.includes('--normalize-all')) {
+    normalizeAllPdfs(BOOKS);
+  }
+
+  let ids = process.argv.slice(2).filter((a) => !a.startsWith('--'));
+  if (FIRST_N) ids = parseFirstNIds(FIRST_N);
 
   if (process.argv.includes('--all')) {
     const files = listPart2Pdfs();
@@ -245,9 +287,27 @@ function patchBookBlock(src, bookId, pageCount, setCover) {
     console.log('Auto-detected', ids.length, 'importable PDFs in pdfspart2/');
   }
 
+  if (process.argv.includes('--from-txt')) {
+    const files = listPart2Pdfs();
+    const txtIds = parseTxtBookIds();
+    const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const hasPdf = (id) => files.some((f) => norm(resolvePdfBookId(f, BOOKS) || '') === norm(id));
+    const linked = (id) => {
+      const b = BOOKS.find((x) => x.id === id);
+      return b && b.pdfDirect && b.pdf && b.access === 'download'
+        && fs.existsSync(path.join(root, b.pdf.replace(/^\//, '')));
+    };
+    ids = txtIds.filter((id) => hasPdf(id) && !linked(id));
+    console.log('From BOOKS-WITHOUT-PDF.txt:', ids.length, 'unlinked books with PDFs');
+  }
+
   if (!ids.length) {
-    console.error('Usage: node scripts/import-pdfspart2-guides.js --rename-prefix --all');
-    console.error('       node scripts/import-pdfspart2-guides.js --first 15');
+    if (process.argv.includes('--from-txt') || process.argv.includes('--normalize-all')) {
+      console.log('Nothing left to import — all available PDFs are already linked.');
+      return;
+    }
+    console.error('Usage: node scripts/import-pdfspart2-guides.js --normalize-all --all');
+    console.error('       node scripts/import-pdfspart2-guides.js --from-txt');
     console.error('       node scripts/import-pdfspart2-guides.js book-id ...');
     process.exit(1);
   }

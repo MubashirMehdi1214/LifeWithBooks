@@ -9,8 +9,9 @@ const root = path.join(__dirname, '..');
 const { BOOKS } = require(path.join(root, 'js', 'books.js'));
 
 function hasSitePdf(book) {
-  if (book.pdfDirect && book.pdf) return true;
+  if (!book.pdfDirect || !book.pdf) return false;
   const p = (book.pdf || '').replace(/^\//, '');
+  if (/^https?:\/\//i.test(p)) return true;
   if (/^downloads\//i.test(p)) return fs.existsSync(path.join(root, p));
   if (/^pdfs\//i.test(p)) return fs.existsSync(path.join(root, p));
   return false;
