@@ -28,7 +28,8 @@ const MAP = {
   'journey-to-the-center-of-the-earth': 188,
   'the-call-of-the-wild': 215,
   'king-solomons-mines': 2166,
-  'the-lost-world': 139
+  'the-lost-world': 139,
+  'twenty-thousand-leagues-under-the-sea': 164
 };
 
 function download(url, dest, redirects) {

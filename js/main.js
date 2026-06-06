@@ -360,6 +360,9 @@ function getBookCoverImage(book) {
     if (/^https?:\/\//i.test(img)) return img;
     return resolveAssetPath(img);
   }
+  if (book.gutenbergId) {
+    return `https://www.gutenberg.org/cache/epub/${book.gutenbergId}/pg${book.gutenbergId}.cover.medium.jpg`;
+  }
   const gutenbergId = getGutenbergId(book.pdf || '');
   if (gutenbergId) return `https://www.gutenberg.org/cache/epub/${gutenbergId}/pg${gutenbergId}.cover.medium.jpg`;
   const driveFileId = getDriveFileId(book.pdf || '');

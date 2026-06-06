@@ -173,15 +173,15 @@ const BOOK_SEO = {
     extraHtml: '<p>Searching for an <strong>IELTS 3000 words PDF</strong>? This LifeWithBooks vocabulary builder groups essential Academic Word List themes with collocations and review tips. Use this <strong>IELTS 3000 words PDF</strong> overview to plan systematic vocabulary growth for your exam.</p>'
   },
   'so-gehts-zu-b2': {
-    pageTitle: 'So geht\'s zu B2 PDF Free | German B2 Exam Guide | LifeWithBooks',
-    h1: 'So geht\'s zu B2 — Free German B2 Übungsbuch PDF',
-    metaDescription: 'So geht\'s zu B2 free PDF — German B2 exam preparation Übungsbuch. Grammar, vocabulary and practice for Goethe B2 on LifeWithBooks.',
+    pageTitle: 'So geht\'s zu B2 PDF Kostenlos | Goethe B2 Übungsbuch | LifeWithBooks',
+    h1: 'So geht\'s zu B2 — Kostenloses PDF für Goethe B2',
+    metaDescription: 'So geht\'s zu B2 PDF kostenlos herunterladen — German B2 exam Übungsbuch. Grammar, Wortschatz and Goethe-Zertifikat B2 practice on LifeWithBooks.',
     extraHtml: '<p>Searching for <strong>so geht\'s zu B2</strong> or <strong>So gehts zu B2</strong>? Download this German B2 practice workbook free — ideal alongside Goethe-Zertifikat B2 preparation materials on LifeWithBooks.</p>'
   },
   'deutsch-intensiv-wortschatz-c1': {
-    pageTitle: 'Deutsch Intensiv Wortschatz C1 PDF | German Vocabulary | LifeWithBooks',
-    h1: 'Deutsch Intensiv Wortschatz — Advanced German C1 Vocabulary',
-    metaDescription: 'Deutsch Intensiv Wortschatz C1 PDF — intensive German vocabulary for advanced learners. Free download on LifeWithBooks.',
+    pageTitle: 'Deutsch Intensiv Wortschatz C1 PDF Kostenlos | Goethe C1 | LifeWithBooks',
+    h1: 'Deutsch Intensiv Wortschatz C1 — Kostenloses PDF',
+    metaDescription: 'Deutsch Intensiv Wortschatz C1 PDF kostenlos — intensive German vocabulary for Goethe C1. Free PDF download on LifeWithBooks.',
     extraHtml: '<p><strong>Deutsch Intensiv Wortschatz</strong> is one of the most searched German vocabulary resources for C1 learners. Download the free PDF with thematic word sets, collocations and productive exercises for Goethe C1 exam preparation.</p>'
   }
 };
@@ -227,14 +227,22 @@ function escJson(s) {
   return JSON.stringify(s);
 }
 
-function bookCoverSrc(book, p) {
-  if (book.coverImage) {
-    if (/^https?:\/\//i.test(book.coverImage)) return book.coverImage;
-    return p + book.coverImage;
-  }
+function resolveGutenbergId(book) {
+  if (book.gutenbergId) return String(book.gutenbergId);
   const pdf = book.pdf || '';
-  const gid = (pdf.match(/gutenberg\.org\/(?:ebooks|files)\/(\d+)/) || pdf.match(/gutenberg\.org\/cache\/epub\/(\d+)/) || [])[1];
+  return (pdf.match(/gutenberg\.org\/(?:ebooks|files)\/(\d+)/) || pdf.match(/gutenberg\.org\/cache\/epub\/(\d+)/) || [])[1] || '';
+}
+
+function bookCoverSrc(book, p) {
+  if (book.coverImage && !/^https?:\/\//i.test(book.coverImage)) {
+    const rel = book.coverImage.replace(/^\//, '');
+    if (fs.existsSync(path.join(root, rel))) return p + book.coverImage;
+  } else if (book.coverImage && /^https?:\/\//i.test(book.coverImage)) {
+    return book.coverImage;
+  }
+  const gid = resolveGutenbergId(book);
   if (gid) return 'https://www.gutenberg.org/cache/epub/' + gid + '/pg' + gid + '.cover.medium.jpg';
+  const pdf = book.pdf || '';
   const did = (pdf.match(/drive\.google\.com\/file\/d\/([^/]+)/) || pdf.match(/[?&]id=([^&]+)/) || [])[1];
   if (did) return 'https://drive.google.com/thumbnail?id=' + did + '&sz=w1000';
   return p + 'covers/' + book.id + '.svg';
@@ -402,13 +410,15 @@ function renderBookPage(book, depth) {
 
 function categoryBookCard(b, p) {
   function coverSrc(book) {
-    if (book.coverImage) {
-      if (/^https?:\/\//i.test(book.coverImage)) return book.coverImage;
-      return p + book.coverImage;
+    if (book.coverImage && !/^https?:\/\//i.test(book.coverImage)) {
+      const rel = book.coverImage.replace(/^\//, '');
+      if (fs.existsSync(path.join(root, rel))) return p + book.coverImage;
+    } else if (book.coverImage && /^https?:\/\//i.test(book.coverImage)) {
+      return book.coverImage;
     }
-    const pdf = book.pdf || '';
-    const gid = (pdf.match(/gutenberg\.org\/(?:ebooks|files)\/(\d+)/) || pdf.match(/gutenberg\.org\/cache\/epub\/(\d+)/) || [])[1];
+    const gid = resolveGutenbergId(book);
     if (gid) return 'https://www.gutenberg.org/cache/epub/' + gid + '/pg' + gid + '.cover.medium.jpg';
+    const pdf = book.pdf || '';
     const did = (pdf.match(/drive\.google\.com\/file\/d\/([^/]+)/) || pdf.match(/[?&]id=([^&]+)/) || [])[1];
     if (did) return 'https://drive.google.com/thumbnail?id=' + did + '&sz=w1000';
     return p + 'covers/' + book.id + '.svg';

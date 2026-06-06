@@ -3635,6 +3635,7 @@ const BOOKS = [
     "id": "twenty-thousand-leagues-under-the-sea",
     "title": "20,000 Leagues Under the Sea",
     "author": "Jules Verne",
+    "gutenbergId": 164,
     "categories": [
       "novels",
       "adventure-books",

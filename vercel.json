@@ -41,6 +41,16 @@
       "source": "/book/around-the-world-in-80-days.html",
       "destination": "/book/around-the-world-in-eighty-days.html",
       "permanent": true
+    },
+    {
+      "source": "/books/:path(.*)",
+      "destination": "/book/:path",
+      "permanent": true
+    },
+    {
+      "source": "/book/so-geht-es-zu-b2.html",
+      "destination": "/book/so-gehts-zu-b2.html",
+      "permanent": true
     }
   ],
   "headers": [
