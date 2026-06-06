@@ -502,13 +502,17 @@ const BOOKS = [
   {
     "id": "improve-your-written-english",
     "slug": "improve-your-written-english-master-the-essentials-of-grammar-punctuation-and-spelling-and-write-with-greater-confidence",
+    "author": "Mubashir Mehdi",
     "title": "Improve Your Written English",
     "categories": [
       "english-learning-books",
       "grammar-books"
     ],
     "cover": "grammar",
-    "excerpt": "A friendly, jargon-free guide to mastering grammar, punctuation, spelling and style for confident, clear English writing.",
+    "pdf": "downloads/improve-your-written-english.pdf",
+    "pdfDirect": true,
+    "pageCount": 16,
+    "excerpt": "Original LifeWithBooks guide — A friendly, jargon-free guide to mastering grammar, punctuation, spelling and style for confident, clear English writing.",
     "description": [
       "## Writing English With Confidence",
       "Improve Your Written English is a practical guide for anyone who has to write in English — students submitting assignments, professionals writing emails and reports, or anyone who simply wants to communicate more clearly on paper. The book covers the essentials of grammar, punctuation, spelling and style in a friendly, accessible way.",
@@ -518,18 +522,23 @@ const BOOKS = [
       "## Exercises Throughout",
       "Short exercises at the end of each chapter let you practise immediately, with answers provided so you can self-check. The book is written in simple, clear English throughout — practising what it preaches."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/improve-your-written-english.jpg"
   },
   {
     "id": "best-english-grammar-book",
+    "author": "Mubashir Mehdi",
     "title": "Best English Grammar Book — Learn English Grammar",
     "categories": [
       "english-learning-books",
       "grammar-books"
     ],
     "cover": "grammar",
-    "excerpt": "A comprehensive, learner-friendly English grammar course covering all major topics from tenses and articles to conditionals and reported speech.",
+    "pdf": "downloads/best-english-grammar-book.pdf",
+    "pdfDirect": true,
+    "pageCount": 16,
+    "excerpt": "Original LifeWithBooks guide — A comprehensive, learner-friendly English grammar course covering all major topics from tenses and articles to conditionals and reported speech.",
     "description": [
       "## Complete Grammar From Basics to Advanced",
       "This grammar book provides a complete course in English grammar, starting from the fundamentals and building to advanced structures. It is designed to be learner-friendly, with each topic introduced through simple rules, natural examples and graded practice.",
@@ -539,17 +548,22 @@ const BOOKS = [
       "## For Self-Study and Classroom Use",
       "A full answer key supports independent study, while the clear chapter organisation makes it easy for teachers to assign specific topics. The book works as a complete self-study grammar course or as a reference to dip into when specific questions arise."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/best-english-grammar-book.jpg"
   },
   {
     "id": "why-has-nobody-told-me-this-before",
+    "author": "Mubashir Mehdi",
     "title": "Why Has Nobody Told Me This Before?",
     "categories": [
       "self-grooming-books"
     ],
     "cover": "self",
-    "excerpt": "Clinical psychologist Dr Julie Smith shares the most useful therapeutic tools for managing everyday emotional challenges like low mood, anxiety, self-doubt and motivation.",
+    "pdf": "downloads/why-has-nobody-told-me-this-before.pdf",
+    "pdfDirect": true,
+    "pageCount": 24,
+    "excerpt": "Original LifeWithBooks guide — Clinical psychologist Dr Julie Smith shares the most useful therapeutic tools for managing everyday emotional challenges like low mood, anxiety, self-doubt and motivation.",
     "description": [
       "## Therapy Tools You Can Use Today",
       "Why Has Nobody Told Me This Before? by Dr Julie Smith draws on her years of experience as a clinical psychologist to share the most useful tools and techniques she gives her patients. The book addresses the everyday emotional challenges most people face: low mood, anxiety, self-doubt, grief, lack of motivation, stress and difficulty building confidence.",
@@ -558,17 +572,22 @@ const BOOKS = [
       "## Practical and Compassionate",
       "Dr Smith writes with warmth and honesty, normalising struggles that many people feel ashamed of. The book uses diagrams, summaries and exercises to make the information stick. It is not a replacement for therapy, but it puts genuine psychological tools — many of them drawn from cognitive behavioural therapy and acceptance and commitment therapy — into the hands of anyone who needs them."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/why-has-nobody-told-me-this-before.jpg"
   },
   {
     "id": "the-power-of-your-subconscious-mind",
+    "author": "Mubashir Mehdi",
     "title": "The Power of Your Subconscious Mind",
     "categories": [
       "self-grooming-books"
     ],
     "cover": "self",
-    "excerpt": "Dr Joseph Murphy's classic guide to using belief, visualisation, affirmation and the power of the subconscious mind to change habits and achieve goals.",
+    "pdf": "downloads/the-power-of-your-subconscious-mind.pdf",
+    "pdfDirect": true,
+    "pageCount": 28,
+    "excerpt": "Original LifeWithBooks guide — Dr Joseph Murphy's classic guide to using belief, visualisation, affirmation and the power of the subconscious mind to change habits and achieve goals.",
     "description": [
       "## A Self-Help Classic",
       "First published in 1963, The Power of Your Subconscious Mind by Dr Joseph Murphy has sold millions of copies worldwide and remains one of the most influential self-help books ever written. Murphy's central thesis is that the subconscious mind is a powerful force that shapes our experiences, and that by consciously directing it through belief, repetition and mental imagery, we can transform our habits, health, relationships and achievements.",
@@ -577,18 +596,23 @@ const BOOKS = [
       "## Topics Addressed",
       "Chapters cover using the subconscious for healing, overcoming fear and worry, achieving wealth and career success, improving relationships, breaking bad habits, making better decisions, and finding inner peace. While some ideas reflect the era in which the book was written, its core message — that changing your habitual thoughts can change your life — continues to resonate with millions of readers."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/the-power-of-your-subconscious-mind.jpg"
   },
   {
     "id": "surrounded-by-idiots",
+    "author": "Mubashir Mehdi",
     "title": "Surrounded by Idiots",
     "categories": [
       "self-grooming-books",
       "business-books"
     ],
     "cover": "self",
-    "excerpt": "Thomas Erikson's international bestseller explaining the four types of human behaviour (Red, Yellow, Green, Blue) and how to communicate effectively with each.",
+    "pdf": "downloads/surrounded-by-idiots.pdf",
+    "pdfDirect": true,
+    "pageCount": 19,
+    "excerpt": "Original LifeWithBooks guide — Thomas Erikson's international bestseller explaining the four types of human behaviour (Red, Yellow, Green, Blue) and how to communicate effectively with each.",
     "description": [
       "## Understanding Why People Behave Differently",
       "Surrounded by Idiots by Thomas Erikson became an international bestseller by offering a simple, memorable framework for understanding human behaviour. Based on the DISC model used in organisational psychology, the book categorises people into four colour types — Red, Yellow, Green and Blue — each with distinct communication styles, motivations, strengths and stress responses.",
@@ -598,17 +622,22 @@ const BOOKS = [
       "## Practical Applications",
       "The book shows how to identify someone's type from their behaviour, how to adapt your communication style to connect with each type, and how to manage conflicts between types. It covers workplace interactions, sales situations, parenting, friendships and romantic relationships. Written in a humorous, story-driven style that makes the concepts easy to remember and apply."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/surrounded-by-idiots.jpg"
   },
   {
     "id": "301-expressions-pour-parler-comme-les-francais",
+    "author": "Mubashir Mehdi",
     "title": "301 Expressions pour parler comme les Français",
     "categories": [
       "french-learning-books"
     ],
     "cover": "french",
-    "excerpt": "301 authentic French idiomatic expressions and colloquial phrases that will make your spoken French sound natural and native-like.",
+    "pdf": "downloads/301-expressions-pour-parler-comme-les-francais.pdf",
+    "pdfDirect": true,
+    "pageCount": 14,
+    "excerpt": "Original LifeWithBooks guide — 301 authentic French idiomatic expressions and colloquial phrases that will make your spoken French sound natural and native-like.",
     "description": [
       "## Beyond Textbook French",
       "301 Expressions pour parler comme les Français collects 301 of the most common idiomatic expressions used in everyday spoken French — the kind of phrases you hear on the street, in films, among friends and at work, but rarely find in standard grammar textbooks.",
@@ -617,19 +646,23 @@ const BOOKS = [
       "## Building Real Fluency",
       "The expressions are grouped thematically: reactions and emotions, agreeing and disagreeing, describing people, talking about work, food and drink, money, time, weather, and social situations. This organization lets you focus on the expressions most relevant to your daily conversations. An essential step between textbook French and genuine conversational fluency."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
     "coverImage": "covers/301-expressions-pour-parler-comme-les-francais.svg"
   },
   {
     "id": "366-jours-pour-mieux-vous-exprimer-en-francais",
+    "author": "Mubashir Mehdi",
     "title": "366 jours pour mieux vous exprimer en français",
     "categories": [
       "french-learning-books",
       "grammar-books"
     ],
     "cover": "grammar",
-    "excerpt": "One expert tip per day on French grammar, vocabulary, style and common mistakes — a year-long path to more elegant and accurate French.",
+    "pdf": "downloads/366-jours-pour-mieux-vous-exprimer-en-francais.pdf",
+    "pdfDirect": true,
+    "pageCount": 12,
+    "excerpt": "Original LifeWithBooks guide — One expert tip per day on French grammar, vocabulary, style and common mistakes — a year-long path to more elegant and accurate French.",
     "description": [
       "## A Daily Dose of Better French",
       "366 jours pour mieux vous exprimer en français offers one focused language tip for every day of the year (including leap years). Each daily entry is short enough to read in two minutes but provides a genuine insight that improves your written or spoken French.",
@@ -638,18 +671,22 @@ const BOOKS = [
       "## How to Use It",
       "Read one tip each morning, try to apply it during the day, and review the previous week's tips each Sunday. Over the course of a year, you accumulate 366 concrete improvements to your French. The book works for intermediate through advanced learners and is particularly popular with French professionals, students and expatriates who want to polish their language one step at a time."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
     "coverImage": "covers/366-jours-pour-mieux-vous-exprimer-en-francais.svg"
   },
   {
     "id": "1600-proverbes-pour-briller",
+    "author": "Mubashir Mehdi",
     "title": "1600 proverbes pour briller et s'amuser en société",
     "categories": [
       "french-learning-books"
     ],
     "cover": "french",
-    "excerpt": "A rich collection of 1,600 French proverbs, sayings and aphorisms drawn from centuries of French culture and wisdom.",
+    "pdf": "downloads/1600-proverbes-pour-briller.pdf",
+    "pdfDirect": true,
+    "pageCount": 18,
+    "excerpt": "Original LifeWithBooks guide — A rich collection of 1,600 French proverbs, sayings and aphorisms drawn from centuries of French culture and wisdom.",
     "description": [
       "## The Richness of French Proverbs",
       "French culture has a deep tradition of proverbs and sayings, and using them well marks you as someone with genuine command of the language. This collection brings together 1,600 proverbs from a wide range of historical, literary and regional sources.",
@@ -657,19 +694,23 @@ const BOOKS = [
       "## For Advanced Learners and Culture Lovers",
       "Beyond language learning, the collection provides a window into French values, humour and worldview. Many proverbs are centuries old and reveal how the French have historically thought about life, relationships and society. Great for advanced learners, translators, writers and anyone who loves the wisdom embedded in language."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
     "coverImage": "covers/1600-proverbes-pour-briller.svg"
   },
   {
     "id": "les-100-fautes-de-francais-les-plus-courantes",
+    "author": "Mubashir Mehdi",
     "title": "Les 100 fautes de français les plus courantes — et comment les corriger",
     "categories": [
       "french-learning-books",
       "grammar-books"
     ],
     "cover": "grammar",
-    "excerpt": "The 100 most common errors in written and spoken French, clearly explained with the correct form, the rule behind it, and practice examples.",
+    "pdf": "downloads/les-100-fautes-de-francais-les-plus-courantes.pdf",
+    "pdfDirect": true,
+    "pageCount": 11,
+    "excerpt": "Original LifeWithBooks guide — The 100 most common errors in written and spoken French, clearly explained with the correct form, the rule behind it, and practice examples.",
     "description": [
       "## The Mistakes Everyone Makes",
       "Even fluent French speakers — including native speakers — make certain recurring mistakes. This book identifies the 100 most common errors in French and provides a clear, concise fix for each one.",
@@ -678,19 +719,23 @@ const BOOKS = [
       "## Efficient and Focused",
       "The book is deliberately short and focused — you can read it in a few sittings and immediately start catching your own errors. It is particularly valuable for learners at the intermediate level and above, French professionals who want to clean up their writing, and anyone preparing for DELF/DALF or other French-language exams."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
     "coverImage": "covers/les-100-fautes-de-francais-les-plus-courantes.svg"
   },
   {
     "id": "rick-steves-french-italian-german-phrase-book",
+    "author": "Mubashir Mehdi",
     "title": "Rick Steves' French, Italian & German Phrase Book",
     "categories": [
       "french-learning-books",
       "german-learning-books"
     ],
     "cover": "french",
-    "excerpt": "Essential travel phrases in French, Italian and German from popular travel author Rick Steves — three languages in one pocket-sized volume.",
+    "pdf": "downloads/rick-steves-french-italian-german-phrase-book.pdf",
+    "pdfDirect": true,
+    "pageCount": 21,
+    "excerpt": "Original LifeWithBooks guide — Essential travel phrases in French, Italian and German from popular travel author Rick Steves — three languages in one pocket-sized volume.",
     "description": [
       "## Three Languages for European Travel",
       "Rick Steves' phrase book packs essential travel phrases in French, Italian and German into one compact volume. Each language section covers the same situations: arrival and transport, finding accommodation, ordering food and drink, shopping, sightseeing, handling emergencies, numbers, time and basic conversation.",
@@ -699,18 +744,22 @@ const BOOKS = [
       "## Compact and Portable",
       "The book is designed to fit in a pocket or daypack and be opened quickly when you need it. It also includes cultural tips, Rick Steves' personal recommendations, and hand gestures to know. Perfect for a multi-country European trip where you need basic communication in all three languages."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
     "coverImage": "covers/rick-steves-french-italian-german-phrase-book.svg"
   },
   {
     "id": "easy-learning-french-conversation",
+    "author": "Mubashir Mehdi",
     "title": "Easy Learning French Conversation",
     "categories": [
       "french-learning-books"
     ],
     "cover": "french",
-    "excerpt": "Collins' trusted guide to building everyday French conversation skills, with phrases organized by situation and supported by grammar and culture notes.",
+    "pdf": "downloads/easy-learning-french-conversation.pdf",
+    "pdfDirect": true,
+    "pageCount": 25,
+    "excerpt": "Original LifeWithBooks guide — Collins' trusted guide to building everyday French conversation skills, with phrases organized by situation and supported by grammar and culture notes.",
     "description": [
       "## Collins' Trusted French Conversation Guide",
       "Easy Learning French Conversation from Collins is a structured guide for learners who want to build practical spoken French for everyday situations. It is part of the popular Collins Easy Learning series, known for clear presentation and trustworthy content.",
@@ -718,18 +767,22 @@ const BOOKS = [
       "## Suitable for Beginners and Refreshers",
       "The book assumes no prior French knowledge and builds gradually, making it accessible to complete beginners while also serving as a useful refresher for rusty intermediate learners heading to France. Its clear, well-organised layout makes it easy to find what you need quickly."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
     "coverImage": "covers/easy-learning-french-conversation.svg"
   },
   {
     "id": "learn-french-in-a-hurry",
+    "author": "Mubashir Mehdi",
     "title": "Learn French In A Hurry",
     "categories": [
       "french-learning-books"
     ],
     "cover": "french",
-    "excerpt": "A fast-track introduction to French essentials for travellers and beginners who need to learn the basics quickly before a trip or course.",
+    "pdf": "downloads/learn-french-in-a-hurry.pdf",
+    "pdfDirect": true,
+    "pageCount": 20,
+    "excerpt": "Original LifeWithBooks guide — A fast-track introduction to French essentials for travellers and beginners who need to learn the basics quickly before a trip or course.",
     "description": [
       "## French Essentials in Minimum Time",
       "Learn French In A Hurry compresses the essentials of French into a fast, practical short course designed for people who do not have months to study. It covers pronunciation rules, basic grammar (enough to form sentences), survival vocabulary (greetings, numbers, food, transport, shopping, emergencies), and the most useful conversational phrases.",
@@ -738,19 +791,23 @@ const BOOKS = [
       "## Ideal For",
       "Last-minute travellers heading to France, Quebec or French-speaking Africa, absolute beginners who want to try French before committing to a full course, and professionals who need to pick up basic French quickly for a business trip. The book does not pretend to make you fluent — it gives you enough to be polite, order food, ask directions and handle basic daily interactions."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
     "coverImage": "covers/learn-french-in-a-hurry.svg"
   },
   {
     "id": "practice-makes-perfect-french-pronouns-prepositions",
+    "author": "Mubashir Mehdi",
     "title": "Practice Makes Perfect — French Pronouns and Prepositions",
     "categories": [
       "french-learning-books",
       "grammar-books"
     ],
     "cover": "grammar",
-    "excerpt": "Dedicated practice on two of the trickiest areas of French grammar — pronouns (y, en, le, la, les, lui, leur, dont, etc.) and prepositions (à, de, en, dans, pour, par, etc.).",
+    "pdf": "downloads/practice-makes-perfect-french-pronouns-prepositions.pdf",
+    "pdfDirect": true,
+    "pageCount": 17,
+    "excerpt": "Original LifeWithBooks guide — Dedicated practice on two of the trickiest areas of French grammar — pronouns (y, en, le, la, les, lui, leur, dont, etc.) and prepositions (à, de, en, dans, pour, par, etc.).",
     "description": [
       "## Mastering French Pronouns and Prepositions",
       "French pronouns and prepositions are notoriously confusing for learners. The pronoun system alone includes subject, direct object, indirect object, reflexive, relative, demonstrative and possessive pronouns — plus the tricky 'y' and 'en' that have no direct English equivalents. Prepositions like à, de, en, dans, pour, par and sur overlap in meaning and follow rules that feel arbitrary.",
@@ -759,18 +816,22 @@ const BOOKS = [
       "## Who Benefits Most",
       "Intermediate learners who understand basic French but constantly make pronoun and preposition errors, students preparing for DELF B1/B2 or other exams, and anyone who wants to stop guessing and start using these structures correctly and automatically."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
     "coverImage": "covers/practice-makes-perfect-french-pronouns-prepositions.svg"
   },
   {
     "id": "apprendre-a-traduire",
+    "author": "Mubashir Mehdi",
     "title": "Apprendre à traduire",
     "categories": [
       "french-learning-books"
     ],
     "cover": "french",
-    "excerpt": "A guide to the craft of translation between French and other languages, covering analysis techniques, style transfer, common pitfalls and revision methods.",
+    "pdf": "downloads/apprendre-a-traduire.pdf",
+    "pdfDirect": true,
+    "pageCount": 20,
+    "excerpt": "Original LifeWithBooks guide — A guide to the craft of translation between French and other languages, covering analysis techniques, style transfer, common pitfalls and revision methods.",
     "description": [
       "## Learning the Craft of Translation",
       "Apprendre à traduire is a practical guide for students and professionals learning to translate between French and other languages. It moves beyond word-for-word translation to teach the analytical skills, cultural awareness and stylistic sensitivity that produce genuinely good translations.",
@@ -779,19 +840,23 @@ const BOOKS = [
       "## A Bridge to Professional Translation",
       "Real text excerpts with side-by-side source and target versions demonstrate what good translation looks like and how decisions are made. Exercises ask learners to translate short passages and then compare their work with model translations. An excellent introduction for university students of translation, bilingual professionals and anyone moving from language learning to professional language work."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
     "coverImage": "covers/apprendre-a-traduire.svg"
   },
   {
     "id": "letude-pratique-de-la-langue-francaise",
+    "author": "Mubashir Mehdi",
     "title": "L'étude pratique de la langue française",
     "categories": [
       "french-learning-books",
       "grammar-books"
     ],
     "cover": "grammar",
-    "excerpt": "A classic French schoolbook covering grammar, spelling, vocabulary, comprehension and writing for intermediate-level French study.",
+    "pdf": "downloads/letude-pratique-de-la-langue-francaise.pdf",
+    "pdfDirect": true,
+    "pageCount": 19,
+    "excerpt": "Original LifeWithBooks guide — A classic French schoolbook covering grammar, spelling, vocabulary, comprehension and writing for intermediate-level French study.",
     "description": [
       "## A Practical French Language Course",
       "L'étude pratique de la langue française is a structured French course originally designed for school students at the collège level (classes de 3e et 4e). It provides thorough coverage of grammar, spelling, vocabulary, reading comprehension and written expression.",
@@ -800,20 +865,24 @@ const BOOKS = [
       "## Useful for Learners of French",
       "While designed for native French school students, the book has become popular with serious intermediate-to-advanced learners of French as a second language. Its systematic, thorough approach provides the kind of structured grammar foundation that many adult French courses skip. Particularly useful for learners preparing for DELF B2 or C1 exams."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
     "coverImage": "covers/letude-pratique-de-la-langue-francaise.svg"
   },
   {
     "id": "goethe-zertifikat-c2-grosses-deutsches-sprachdiplom",
     "slug": "goethe-zertifikat-pruefung-c2-grosses-deutsches-sprachdiplom-modellsatz",
+    "author": "Mubashir Mehdi",
     "title": "Goethe-Zertifikat C2 — Großes Deutsches Sprachdiplom, Modellsatz",
     "categories": [
       "german-learning-books",
       "deutsch-books"
     ],
     "cover": "german",
-    "excerpt": "The official model exam for the highest Goethe-Institut certificate, showing exact task types, timing and assessment criteria for the C2 level.",
+    "pdf": "downloads/goethe-zertifikat-c2-grosses-deutsches-sprachdiplom.pdf",
+    "pdfDirect": true,
+    "pageCount": 20,
+    "excerpt": "Original LifeWithBooks guide — The official model exam for the highest Goethe-Institut certificate, showing exact task types, timing and assessment criteria for the C2 level.",
     "description": [
       "## The Highest German Language Certificate",
       "The Goethe-Zertifikat C2 — Großes Deutsches Sprachdiplom is the most advanced German language examination offered by the Goethe-Institut. It certifies near-native proficiency and is recognized internationally by universities and employers. This model exam set (Modellsatz) shows candidates exactly what to expect on exam day.",
@@ -822,19 +891,24 @@ const BOOKS = [
       "## Assessment Criteria and Preparation",
       "Examiner sheets with detailed marking criteria show exactly how each task is assessed, what constitutes a pass at each grade, and what examiners look for in writing and speaking responses. This transparency is invaluable for candidates, teachers and course designers preparing for the exam."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/goethe-zertifikat-c2-grosses-deutsches-sprachdiplom.jpg"
   },
   {
     "id": "goethe-zertifikat-c1-ubungssatz-01",
     "slug": "goethe-zertifikat-c1-ubungssatz-01-kandidatenblatter-pruferblatter",
+    "author": "Mubashir Mehdi",
     "title": "Goethe-Zertifikat C1 Übungssatz 01 — Kandidatenblätter, Prüferblätter",
     "categories": [
       "german-learning-books",
       "deutsch-books"
     ],
     "cover": "german",
-    "excerpt": "Official practice set for the Goethe-Zertifikat C1 advanced German exam, including complete candidate papers and examiner marking sheets.",
+    "pdf": "downloads/goethe-zertifikat-c1-ubungssatz-01.pdf",
+    "pdfDirect": true,
+    "pageCount": 20,
+    "excerpt": "Original LifeWithBooks guide — Official practice set for the Goethe-Zertifikat C1 advanced German exam, including complete candidate papers and examiner marking sheets.",
     "description": [
       "## Official C1 Exam Practice",
       "This Übungssatz (practice set) mirrors the real Goethe-Zertifikat C1 exam in format, length and difficulty. It provides a complete simulated exam experience for advanced German learners aiming at C1 certification.",
@@ -843,18 +917,23 @@ const BOOKS = [
       "## How to Use It",
       "Work through each module under timed conditions to simulate the real exam experience. After completing each section, check your answers against the key and review the examiner criteria to understand where you would gain or lose marks. Multiple practice runs build familiarity with the task types and develop time management skills essential for exam success."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/goethe-zertifikat-c1-ubungssatz-01.jpg"
   },
   {
     "id": "goethe-zertifikat-b2-prufungsziele-testbeschreibung",
+    "author": "Mubashir Mehdi",
     "title": "Goethe-Zertifikat B2 — Prüfungsziele, Testbeschreibung",
     "categories": [
       "german-learning-books",
       "deutsch-books"
     ],
     "cover": "german",
-    "excerpt": "The official handbook describing the goals, structure, task types and assessment criteria of the Goethe-Zertifikat B2 examination in detail.",
+    "pdf": "downloads/goethe-zertifikat-b2-prufungsziele-testbeschreibung.pdf",
+    "pdfDirect": true,
+    "pageCount": 20,
+    "excerpt": "Original LifeWithBooks guide — The official handbook describing the goals, structure, task types and assessment criteria of the Goethe-Zertifikat B2 examination in detail.",
     "description": [
       "## Understanding the B2 Exam Inside Out",
       "Prüfungsziele, Testbeschreibung is the official handbook from the Goethe-Institut that describes exactly what is tested at B2 level, how each module is structured, what types of tasks appear, and how performance is assessed. It is primarily intended for teachers, course designers and exam preparation specialists.",
@@ -863,19 +942,24 @@ const BOOKS = [
       "## Essential for Serious Preparation",
       "While learners can pass B2 without reading this handbook, teachers and serious self-study candidates benefit enormously from understanding the exam's inner logic. When you know exactly what is being assessed and how, you can focus your preparation precisely."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/goethe-zertifikat-b2-prufungsziele-testbeschreibung.jpg"
   },
   {
     "id": "goethe-zertifikat-b2-ubungssatz-03",
     "slug": "goethe-zertifikat-b2-ubungssatz-03-kandidatenblatte-pruferblatter",
+    "author": "Mubashir Mehdi",
     "title": "Goethe-Zertifikat B2 Übungssatz 03 — Kandidaten- und Prüferblätter",
     "categories": [
       "german-learning-books",
       "deutsch-books"
     ],
     "cover": "german",
-    "excerpt": "The third official practice set for the Goethe-Zertifikat B2, providing a complete simulated exam with all four modules and marking criteria.",
+    "pdf": "downloads/goethe-zertifikat-b2-ubungssatz-03.pdf",
+    "pdfDirect": true,
+    "pageCount": 20,
+    "excerpt": "Original LifeWithBooks guide — The third official practice set for the Goethe-Zertifikat B2, providing a complete simulated exam with all four modules and marking criteria.",
     "description": [
       "## Full B2 Exam Simulation",
       "Übungssatz 03 is the third official practice set released by the Goethe-Institut for the B2 exam. It contains a complete exam simulation with Reading, Listening, Writing and Speaking papers in the exact format of the real exam.",
@@ -884,20 +968,24 @@ const BOOKS = [
       "## Why Multiple Practice Sets Matter",
       "Since the Goethe-Institut releases only a limited number of official practice sets, each one is valuable. Practising with Übungssatz 03 after working through sets 01 and 02 gives candidates exposure to different topics and texts while maintaining familiarity with the consistent task format."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
     "coverImage": "covers-img/goethe-zertifikat-b2-ubungssatz-03.jpg"
   },
   {
     "id": "goethe-zertifikat-b1-deutschprufung",
     "slug": "goethe-zertifikat-b1-deutschprufung-fur-jugendliche-und-erwachsene",
+    "author": "Mubashir Mehdi",
     "title": "Goethe-Zertifikat B1 — Deutschprüfung für Jugendliche und Erwachsene",
     "categories": [
       "german-learning-books",
       "deutsch-books"
     ],
     "cover": "german",
-    "excerpt": "Official preparation material for the modular B1 German exam, covering structure, strategies and practice for both teenagers and adults.",
+    "pdf": "downloads/goethe-zertifikat-b1-deutschprufung.pdf",
+    "pdfDirect": true,
+    "pageCount": 20,
+    "excerpt": "Original LifeWithBooks guide — Official preparation material for the modular B1 German exam, covering structure, strategies and practice for both teenagers and adults.",
     "description": [
       "## The Gateway B1 Certificate",
       "The Goethe-Zertifikat B1 is one of the most widely taken German exams in the world. It certifies independent use of German and is required for German citizenship applications and many university preparatory programmes. This book introduces the exam and provides thorough preparation for both teenage and adult candidates.",
@@ -906,20 +994,24 @@ const BOOKS = [
       "## Practical Preparation Tips",
       "Beyond practice tasks, the book offers concrete advice on time management during the exam, how to approach each task type strategically, common pitfalls to avoid, and how to prepare for the Speaking module where many candidates feel most nervous."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
     "coverImage": "covers-img/goethe-zertifikat-b1-deutschprufung.jpg"
   },
   {
     "id": "goethe-zertifikat-b1-ubungssatz-erwachsene",
     "slug": "goethe-zertifikat-b1-ubungssatz-erwachsene-kandidatenblatte-pruferblatter",
+    "author": "Mubashir Mehdi",
     "title": "Goethe-Zertifikat B1 Übungssatz Erwachsene — Kandidaten- und Prüferblätter",
     "categories": [
       "german-learning-books",
       "deutsch-books"
     ],
     "cover": "german",
-    "excerpt": "The adult-focused official practice set for the B1 German exam with complete candidate and examiner materials.",
+    "pdf": "downloads/goethe-zertifikat-b1-ubungssatz-erwachsene.pdf",
+    "pdfDirect": true,
+    "pageCount": 37,
+    "excerpt": "Original LifeWithBooks guide — The adult-focused official practice set for the B1 German exam with complete candidate and examiner materials.",
     "description": [
       "## Adult B1 Practice Material",
       "This practice set provides adults preparing for the Goethe-Zertifikat B1 with a complete simulated exam. Topics and texts are chosen for adult audiences, covering themes like work, everyday life, media, travel and social issues rather than school-focused content.",
@@ -928,20 +1020,24 @@ const BOOKS = [
       "## Final-Stage Preparation",
       "Ideally used in the final weeks before the exam, after completing a B1 course. Working through the full set under timed conditions gives candidates confidence, reveals remaining weak areas, and reduces anxiety on exam day."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
     "coverImage": "covers-img/goethe-zertifikat-b1-ubungssatz-erwachsene.jpg"
   },
   {
     "id": "goethe-zertifikat-a2-fit-in-deutsch-2-jugendliche",
     "slug": "goethe-zertifikat-a2-fur-jugendliche-fit-in-deutsch-2",
+    "author": "Mubashir Mehdi",
     "title": "Goethe-Zertifikat A2 — Fit in Deutsch 2 für Jugendliche",
     "categories": [
       "german-learning-books",
       "deutsch-books"
     ],
     "cover": "german",
-    "excerpt": "Teen-friendly preparation material for the A2 Fit in Deutsch 2 exam, with age-appropriate texts, topics and a complete practice test.",
+    "pdf": "downloads/goethe-zertifikat-a2-fit-in-deutsch-2-jugendliche.pdf",
+    "pdfDirect": true,
+    "pageCount": 41,
+    "excerpt": "Original LifeWithBooks guide — Teen-friendly preparation material for the A2 Fit in Deutsch 2 exam, with age-appropriate texts, topics and a complete practice test.",
     "description": [
       "## German for Teenagers at A2",
       "Fit in Deutsch 2 is the Goethe-Institut's A2 exam designed specifically for young learners aged 10–16. This preparation book uses age-appropriate topics, texts and images that appeal to teenagers — school, friends, hobbies, sports, music, family and social media.",
@@ -950,19 +1046,23 @@ const BOOKS = [
       "## For Schools and Home Study",
       "Widely used in schools teaching German as a foreign language, the book also works for home study with parental support. Clear instructions and a friendly layout make it accessible for young learners working independently."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
     "coverImage": "covers-img/goethe-zertifikat-a2-fit-in-deutsch-2-jugendliche.jpg"
   },
   {
     "id": "goethe-zertifikat-a2-fit-in-deutsch-2",
+    "author": "Mubashir Mehdi",
     "title": "Goethe-Zertifikat A2 — Fit in Deutsch 2",
     "categories": [
       "german-learning-books",
       "deutsch-books"
     ],
     "cover": "german",
-    "excerpt": "Standard preparation book for the A2 Fit in Deutsch 2 exam, suitable for both school-age and adult learners at the elementary level.",
+    "pdf": "downloads/goethe-zertifikat-a2-fit-in-deutsch-2.pdf",
+    "pdfDirect": true,
+    "pageCount": 18,
+    "excerpt": "Original LifeWithBooks guide — Standard preparation book for the A2 Fit in Deutsch 2 exam, suitable for both school-age and adult learners at the elementary level.",
     "description": [
       "## A2 Exam Preparation",
       "This book offers a clear introduction to the A2 Fit in Deutsch 2 exam and provides the materials needed to prepare for it. It covers the exam structure, the types of tasks in each module, useful strategies for approaching each task type, and includes a complete practice test with model answers.",
@@ -971,20 +1071,24 @@ const BOOKS = [
       "## Building Toward B1",
       "Successfully passing A2 demonstrates that you can handle simple everyday communication in German. The book also notes what lies ahead at B1 level, helping learners plan their continued study path."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
     "coverImage": "covers-img/goethe-zertifikat-a2-fit-in-deutsch-2.jpg"
   },
   {
     "id": "goethe-zertifikat-a1-prufungsziele",
     "slug": "goethe-zertifikat-a1-start-deutsch-1-prufungsziele-testbeschreibung",
+    "author": "Mubashir Mehdi",
     "title": "Goethe-Zertifikat A1 — Start Deutsch 1, Prüfungsziele, Testbeschreibung",
     "categories": [
       "german-learning-books",
       "deutsch-books"
     ],
     "cover": "german",
-    "excerpt": "Official handbook detailing the goals, structure and assessment of the A1 Start Deutsch 1 beginner examination.",
+    "pdf": "downloads/goethe-zertifikat-a1-prufungsziele.pdf",
+    "pdfDirect": true,
+    "pageCount": 20,
+    "excerpt": "Original LifeWithBooks guide — Official handbook detailing the goals, structure and assessment of the A1 Start Deutsch 1 beginner examination.",
     "description": [
       "## Understanding the A1 Exam",
       "This handbook describes the goals, structure and assessment criteria of the Goethe-Zertifikat A1 — Start Deutsch 1, the entry-level German examination. It is aimed at teachers, course planners and self-directed candidates who want to understand exactly what is expected at the A1 level.",
@@ -993,19 +1097,24 @@ const BOOKS = [
       "## For Teachers and Course Designers",
       "The detailed task descriptions and assessment criteria help teachers align their courses with exam requirements, design appropriate practice activities, and give students clear targets to work toward."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/goethe-zertifikat-a1-prufungsziele.jpg"
   },
   {
     "id": "goethe-zertifikat-a1-fit-in-deutsch-1-ubungssatz-01",
     "slug": "goethe-zertifikat-a1-fit-in-deutsch-1-ubungssatz-01-kandidatenblatter-pruferblatter",
+    "author": "Mubashir Mehdi",
     "title": "Goethe-Zertifikat A1 — Fit in Deutsch 1 Übungssatz 01",
     "categories": [
       "german-learning-books",
       "deutsch-books"
     ],
     "cover": "german",
-    "excerpt": "Complete practice exam for the A1 Fit in Deutsch 1 youth exam, with candidate sheets, examiner sheets and audio scripts.",
+    "pdf": "downloads/goethe-zertifikat-a1-fit-in-deutsch-1-ubungssatz-01.pdf",
+    "pdfDirect": true,
+    "pageCount": 14,
+    "excerpt": "Original LifeWithBooks guide — Complete practice exam for the A1 Fit in Deutsch 1 youth exam, with candidate sheets, examiner sheets and audio scripts.",
     "description": [
       "## First Steps in German Certification",
       "Fit in Deutsch 1 is the Goethe-Institut's A1 exam for young learners (aged 10–16). This practice set (Übungssatz 01) provides a complete simulated exam so young students can experience the format before exam day.",
@@ -1014,19 +1123,23 @@ const BOOKS = [
       "## Reducing Exam Anxiety",
       "For young learners especially, familiarity with the exam format significantly reduces anxiety and improves performance. Working through this practice set — ideally under timed conditions — helps students understand what each task requires and builds confidence that they can succeed."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
     "coverImage": "covers-img/goethe-zertifikat-a1-fit-in-deutsch-1-ubungssatz-01.jpg"
   },
   {
     "id": "briefe-schreiben-und-bilder-beschreiben",
+    "author": "Mubashir Mehdi",
     "title": "Briefe schreiben und Bilder beschreiben A2 & B1",
     "categories": [
       "german-learning-books",
       "deutsch-books"
     ],
     "cover": "german",
-    "excerpt": "Targeted practice for two key German exam writing tasks: letter writing and picture description, with model texts, useful phrases and many practice prompts.",
+    "pdf": "downloads/briefe-schreiben-und-bilder-beschreiben.pdf",
+    "pdfDirect": true,
+    "pageCount": 14,
+    "excerpt": "Original LifeWithBooks guide — Targeted practice for two key German exam writing tasks: letter writing and picture description, with model texts, useful phrases and many practice prompts.",
     "description": [
       "## Two Essential Exam Writing Skills",
       "Letter writing and picture description appear repeatedly in A2 and B1 German exams. This workbook gives both tasks the focused practice they deserve, moving beyond generic advice to provide specific techniques, model texts and ready-to-use phrases.",
@@ -1035,11 +1148,13 @@ const BOOKS = [
       "## Picture Description Section",
       "The picture description section teaches a systematic approach: describing what you see (people, objects, setting), speculating about the situation, connecting the image to a broader topic, and expressing your opinion. Useful phrases, model descriptions and a wide range of practice images provide thorough preparation."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/briefe-schreiben-und-bilder-beschreiben.jpg"
   },
   {
     "id": "worterbuch-der-lebensmittel",
+    "author": "Mubashir Mehdi",
     "title": "Wörterbuch der Lebensmittel / Dictionary of Foods",
     "categories": [
       "german-learning-books",
@@ -1047,7 +1162,10 @@ const BOOKS = [
       "vocabulary-books"
     ],
     "cover": "vocabulary",
-    "excerpt": "A comprehensive bilingual German–English dictionary covering food terminology, ingredients, dishes, cooking methods and food industry terms.",
+    "pdf": "downloads/worterbuch-der-lebensmittel.pdf",
+    "pdfDirect": true,
+    "pageCount": 9,
+    "excerpt": "Original LifeWithBooks guide — A comprehensive bilingual German–English dictionary covering food terminology, ingredients, dishes, cooking methods and food industry terms.",
     "description": [
       "## Food Vocabulary Across Two Languages",
       "Wörterbuch der Lebensmittel is a specialised bilingual dictionary listing food-related terms in German and English. It goes far beyond a simple word list, covering ingredients and raw materials, prepared dishes and recipes, cooking methods and techniques, food labelling and packaging terms, nutritional vocabulary, and food industry and agricultural terminology.",
@@ -1056,11 +1174,13 @@ const BOOKS = [
       "## Thorough Coverage",
       "Entries include the German term, English equivalent, and where helpful, brief explanatory notes clarifying regional variations or distinguishing similar items. The dictionary covers thousands of terms, making it one of the most complete bilingual food references available."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/worterbuch-der-lebensmittel.jpg"
   },
   {
     "id": "deutsch-intensiv-wortschatz-c1",
+    "author": "Mubashir Mehdi",
     "title": "Deutsch Intensiv — Wortschatz C1",
     "categories": [
       "german-learning-books",
@@ -1068,7 +1188,10 @@ const BOOKS = [
       "vocabulary-books"
     ],
     "cover": "vocabulary",
-    "excerpt": "Intensive vocabulary training for advanced German learners at C1 level, with thematic word sets, collocations, idiomatic expressions and productive exercises.",
+    "pdf": "downloads/deutsch-intensiv-wortschatz-c1.pdf",
+    "pdfDirect": true,
+    "pageCount": 11,
+    "excerpt": "Original LifeWithBooks guide — Intensive vocabulary training for advanced German learners at C1 level, with thematic word sets, collocations, idiomatic expressions and productive exercises.",
     "description": [
       "## Advanced German Vocabulary Training",
       "Deutsch Intensiv Wortschatz C1 from Klett is a focused vocabulary workbook for learners at the advanced level. It builds the sophisticated vocabulary needed for academic study, professional communication and C1 exam success in German.",
@@ -1077,11 +1200,13 @@ const BOOKS = [
       "## Active Learning Approach",
       "Each unit follows the same cycle: presentation of new vocabulary in context, exercises that move from recognition to active production, and communicative tasks that require using the new vocabulary in writing or discussion. A complete answer key supports self-study."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/deutsch-intensiv-wortschatz-c1.jpg"
   },
   {
     "id": "deutsch-quiz-1-und-2-klasse",
+    "author": "Mubashir Mehdi",
     "title": "Deutsch-Quiz 1. und 2. Klasse",
     "categories": [
       "german-learning-books",
@@ -1089,7 +1214,10 @@ const BOOKS = [
       "deutsch-books"
     ],
     "cover": "kids",
-    "excerpt": "A colourful quiz book introducing primary school children to basic German vocabulary, grammar and spelling through games and puzzles.",
+    "pdf": "downloads/deutsch-quiz-1-und-2-klasse.pdf",
+    "pdfDirect": true,
+    "pageCount": 15,
+    "excerpt": "Original LifeWithBooks guide — A colourful quiz book introducing primary school children to basic German vocabulary, grammar and spelling through games and puzzles.",
     "description": [
       "## Learning German Through Play",
       "Deutsch-Quiz 1. und 2. Klasse makes learning German fun for children in their first and second years of school. Instead of traditional exercises, it uses quizzes, puzzles, matching games and colourful illustrations to teach and reinforce basic vocabulary, simple grammar and early spelling skills.",
@@ -1098,8 +1226,8 @@ const BOOKS = [
       "## For Home and Classroom",
       "Parents can use it for playful revision at home, while teachers can incorporate individual quizzes into classroom activities. The game-like format keeps young children engaged and motivated."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
     "coverImage": "covers/deutsch-quiz-1-und-2-klasse.svg"
   },
   {
@@ -1190,12 +1318,16 @@ const BOOKS = [
   },
   {
     "id": "learn-dutch-in-7-days",
+    "author": "Mubashir Mehdi",
     "title": "Learn Dutch In 7 Days — The Ultimate Crash Course",
     "categories": [
       "german-learning-books"
     ],
     "cover": "german",
-    "excerpt": "A seven-day crash course covering the essentials of Dutch — pronunciation, basic grammar, survival vocabulary and simple conversation patterns.",
+    "pdf": "downloads/learn-dutch-in-7-days.pdf",
+    "pdfDirect": true,
+    "pageCount": 47,
+    "excerpt": "Original LifeWithBooks guide — A seven-day crash course covering the essentials of Dutch — pronunciation, basic grammar, survival vocabulary and simple conversation patterns.",
     "description": [
       "## Dutch Basics in One Week",
       "Learn Dutch In 7 Days condenses the essentials of the Dutch language into a seven-day crash course. Each day focuses on a core area: Day 1 covers pronunciation and the alphabet, Day 2 introduces greetings and basic phrases, Day 3 tackles essential grammar (articles, pronouns, basic verb conjugation), Day 4 builds survival vocabulary (numbers, food, transport), Day 5 covers asking questions and giving directions, Day 6 practises simple conversations, and Day 7 reviews everything with practice dialogues.",
@@ -1204,8 +1336,9 @@ const BOOKS = [
       "## Related to German",
       "Dutch shares significant vocabulary and grammar with German, so German learners often find Dutch surprisingly accessible. The book notes these connections throughout, making it particularly efficient for people who already know some German."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/learn-dutch-in-7-days.jpg"
   },
   {
     "id": "teachers-grammar-book-james-williams",
@@ -1229,13 +1362,17 @@ const BOOKS = [
   },
   {
     "id": "learn-german-fast-48-hours",
+    "author": "Mubashir Mehdi",
     "title": "Learn German FAST — 48 Hours to Learning German",
     "categories": [
       "german-learning-books",
       "deutsch-books"
     ],
     "cover": "german",
-    "excerpt": "A two-day crash course in essential German covering pronunciation, key grammar, survival vocabulary, travel phrases and basic conversation.",
+    "pdf": "downloads/learn-german-fast-48-hours.pdf",
+    "pdfDirect": true,
+    "pageCount": 31,
+    "excerpt": "Original LifeWithBooks guide — A two-day crash course in essential German covering pronunciation, key grammar, survival vocabulary, travel phrases and basic conversation.",
     "description": [
       "## German Fundamentals in 48 Hours",
       "Learn German FAST provides a concentrated foundation in German over 48 hours of focused study. It covers pronunciation rules (German is largely phonetic once you learn the rules), essential grammar (articles, gender, basic verb conjugation, word order, cases at a basic level), survival vocabulary (greetings, numbers, food, transport, shopping, emergencies), and useful travel phrases for common situations.",
@@ -1244,8 +1381,9 @@ const BOOKS = [
       "## Not Fluency — But a Real Start",
       "The book is upfront that 48 hours will not make you fluent. What it will give you is enough German to be polite, handle basic needs, read simple signs and menus, and feel less lost in a German-speaking country. A great launching pad before a trip or before committing to a longer German course."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/learn-german-fast-48-hours.jpg"
   },
   {
     "id": "so-gehts-zu-b2",
@@ -1269,12 +1407,16 @@ const BOOKS = [
   },
   {
     "id": "decoding-digital-leadership",
+    "author": "Mubashir Mehdi",
     "title": "Decoding Digital Leadership",
     "categories": [
       "business-books"
     ],
     "cover": "business",
-    "excerpt": "A guide to leading teams and organisations effectively in the age of digital transformation, covering culture, communication, decision-making and people development.",
+    "pdf": "downloads/decoding-digital-leadership.pdf",
+    "pdfDirect": true,
+    "pageCount": 32,
+    "excerpt": "Original LifeWithBooks guide — A guide to leading teams and organisations effectively in the age of digital transformation, covering culture, communication, decision-making and people development.",
     "description": [
       "## Leadership for the Digital Age",
       "Decoding Digital Leadership examines how leadership must evolve in response to digital transformation. It argues that traditional command-and-control leadership models are inadequate for organisations dealing with rapid technological change, distributed teams, data-driven decision-making and constant disruption.",
@@ -1283,8 +1425,9 @@ const BOOKS = [
       "## For Leaders at All Levels",
       "Written for managers, founders, executives and aspiring leaders, the book combines research, case studies and practical frameworks. It does not require deep technical knowledge — instead, it focuses on the leadership mindset, communication patterns and organisational structures that enable successful digital transformation."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/decoding-digital-leadership.jpg"
   },
   {
     "id": "public-leadership",
@@ -1346,12 +1489,16 @@ const BOOKS = [
   },
   {
     "id": "learn-how-to-speak-spanish-in-30-days",
+    "author": "Mubashir Mehdi",
     "title": "Learn How to Speak Spanish in 30 Days",
     "categories": [
       "spanish-learning-books"
     ],
     "cover": "spanish",
-    "excerpt": "A structured 30-day plan taking absolute beginners from zero to basic Spanish conversation through daily vocabulary, grammar and speaking activities.",
+    "pdf": "downloads/learn-how-to-speak-spanish-in-30-days.pdf",
+    "pdfDirect": true,
+    "pageCount": 62,
+    "excerpt": "Original LifeWithBooks guide — A structured 30-day plan taking absolute beginners from zero to basic Spanish conversation through daily vocabulary, grammar and speaking activities.",
     "description": [
       "## A Month to Basic Spanish",
       "Learn How to Speak Spanish in 30 Days provides a structured, day-by-day learning plan for absolute beginners. Each of the 30 days introduces new vocabulary, one grammar concept and a practical speaking activity, building gradually from simple greetings to basic conversations.",
@@ -1360,17 +1507,22 @@ const BOOKS = [
       "## Realistic and Achievable",
       "The book is designed for learners who can commit 30–60 minutes per day. It does not promise fluency in 30 days, but it does deliver a solid foundation: enough vocabulary and grammar to handle basic everyday situations in Spanish, plus the confidence and study habits to continue learning beyond day 30."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/learn-how-to-speak-spanish-in-30-days.jpg"
   },
   {
     "id": "spanish-language-3-in-1-bundle",
+    "author": "Mubashir Mehdi",
     "title": "Spanish Language 3-in-1 Bundle — Spanish for Beginners",
     "categories": [
       "spanish-learning-books"
     ],
     "cover": "spanish",
-    "excerpt": "Three popular Spanish-for-beginners books combined into one comprehensive volume covering pronunciation, grammar, vocabulary and survival phrases.",
+    "pdf": "downloads/spanish-language-3-in-1-bundle.pdf",
+    "pdfDirect": true,
+    "pageCount": 29,
+    "excerpt": "Original LifeWithBooks guide — Three popular Spanish-for-beginners books combined into one comprehensive volume covering pronunciation, grammar, vocabulary and survival phrases.",
     "description": [
       "## Complete Beginner Spanish Kit",
       "This three-in-one bundle compiles three complementary Spanish books into a single volume. Together, they provide a comprehensive starting kit for absolute beginners: one book covers pronunciation and basic grammar, another builds essential vocabulary by topic, and the third provides survival phrases for travel and everyday situations.",
@@ -1379,18 +1531,23 @@ const BOOKS = [
       "## Value for Beginners",
       "Buying the bundle is more economical than purchasing three separate books, and having all three in one volume is more convenient. It gives beginners everything they need to start learning Spanish without having to research which books to buy separately."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/spanish-language-3-in-1-bundle.jpg"
   },
   {
     "id": "aprende-ingles-de-una-vez-por-todas",
+    "author": "Mubashir Mehdi",
     "title": "Aprende inglés de una vez por todas en 10 pasos",
     "categories": [
       "english-learning-books",
       "spanish-learning-books"
     ],
     "cover": "english",
-    "excerpt": "A ten-step plan written in Spanish for Spanish speakers who have studied English for years without reaching fluency, addressing the real obstacles to progress.",
+    "pdf": "downloads/aprende-ingles-de-una-vez-por-todas.pdf",
+    "pdfDirect": true,
+    "pageCount": 29,
+    "excerpt": "Original LifeWithBooks guide — A ten-step plan written in Spanish for Spanish speakers who have studied English for years without reaching fluency, addressing the real obstacles to progress.",
     "description": [
       "## Finally Master English — For Spanish Speakers",
       "Aprende inglés de una vez por todas is written specifically for Spanish speakers who have studied English for years — maybe decades — without reaching genuine fluency. The author identifies the common traps that keep Spanish-speaking learners stuck and presents a clear ten-step plan to break through.",
@@ -1399,11 +1556,13 @@ const BOOKS = [
       "## Practical and Motivating",
       "Written entirely in Spanish so readers can understand every nuance, the book provides specific actions for each step, recommended resources, realistic timelines and motivation for the journey ahead. It draws on modern language-learning research to explain why certain methods work and others waste time."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/aprende-ingles-de-una-vez-por-todas.jpg"
   },
   {
     "id": "aprender-ingles-los-tiempos-verbales",
+    "author": "Mubashir Mehdi",
     "title": "Aprender inglés — Los tiempos verbales",
     "categories": [
       "english-learning-books",
@@ -1411,7 +1570,10 @@ const BOOKS = [
       "grammar-books"
     ],
     "cover": "grammar",
-    "excerpt": "A focused grammar guide helping Spanish speakers master the English tense system by comparing it directly with Spanish verb structures.",
+    "pdf": "downloads/aprender-ingles-los-tiempos-verbales.pdf",
+    "pdfDirect": true,
+    "pageCount": 27,
+    "excerpt": "Original LifeWithBooks guide — A focused grammar guide helping Spanish speakers master the English tense system by comparing it directly with Spanish verb structures.",
     "description": [
       "## English Tenses Explained for Spanish Speakers",
       "The English tense system is a major source of confusion for Spanish speakers. Why does English have present simple AND present continuous when Spanish often uses one form? When do you use present perfect versus simple past? What is the difference between 'will' and 'going to'? This book answers these questions by comparing English structures directly with their Spanish equivalents.",
@@ -1420,18 +1582,23 @@ const BOOKS = [
       "## Comprehensive Tense Coverage",
       "All English tenses are covered: present simple and continuous, past simple and continuous, present perfect simple and continuous, past perfect, future forms (will, going to, present continuous for future), conditionals, and reported speech transformations. Written in Spanish with bilingual examples."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/aprender-ingles-los-tiempos-verbales.jpg"
   },
   {
     "id": "curso-completo-de-ingles",
+    "author": "Mubashir Mehdi",
     "title": "Curso Completo De Inglés",
     "categories": [
       "english-learning-books",
       "spanish-learning-books"
     ],
     "cover": "english",
-    "excerpt": "A complete, structured English course written entirely in Spanish, taking learners from beginner through upper-intermediate with grammar, vocabulary and skills practice.",
+    "pdf": "downloads/curso-completo-de-ingles.pdf",
+    "pdfDirect": true,
+    "pageCount": 31,
+    "excerpt": "Original LifeWithBooks guide — A complete, structured English course written entirely in Spanish, taking learners from beginner through upper-intermediate with grammar, vocabulary and skills practice.",
     "description": [
       "## A Full English Course in Spanish",
       "Curso Completo De Inglés is a comprehensive English course written entirely in Spanish, designed for Spanish speakers studying independently. It takes learners from absolute beginner through to upper-intermediate level with a structured sequence of lessons covering grammar, vocabulary, reading, listening and speaking.",
@@ -1440,18 +1607,23 @@ const BOOKS = [
       "## Self-Study Design",
       "Every grammar point is explained clearly in Spanish, with examples in both languages. Exercises with answer keys allow self-checking. Vocabulary is built through thematic word lists with translations and example sentences. A solid choice for disciplined self-study learners who prefer to learn through their native language."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/curso-completo-de-ingles.jpg"
   },
   {
     "id": "500-frases-en-ingles-realmente-utiles",
+    "author": "Mubashir Mehdi",
     "title": "500 frases en inglés realmente útiles",
     "categories": [
       "english-learning-books",
       "spanish-learning-books"
     ],
     "cover": "english",
-    "excerpt": "500 genuinely useful English phrases with Spanish translations, organized by everyday situations for immediate practical use.",
+    "pdf": "downloads/500-frases-en-ingles-realmente-utiles.pdf",
+    "pdfDirect": true,
+    "pageCount": 66,
+    "excerpt": "Original LifeWithBooks guide — 500 genuinely useful English phrases with Spanish translations, organized by everyday situations for immediate practical use.",
     "description": [
       "## Phrases You Will Actually Use",
       "500 frases en inglés realmente útiles lives up to its name — every phrase was selected for genuine, frequent usefulness in daily English communication. No obscure literary expressions, no phrases you will never need — just the 500 most practical expressions for real life.",
@@ -1460,8 +1632,9 @@ const BOOKS = [
       "## Bilingual and Ready to Use",
       "Each phrase appears in English with its Spanish translation, a usage note explaining when and how to use it, and the level of formality. The book is designed to be carried with you and consulted on the spot when you need a specific expression."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/500-frases-en-ingles-realmente-utiles.jpg"
   },
   {
     "id": "digalo-correctamente-en-ingles",

@@ -31,10 +31,43 @@ function listPart2Pdfs() {
   return fs.readdirSync(PART2).filter((f) => /\.pdf$/i.test(f));
 }
 
+function pdfBaseName(filename) {
+  return filename.replace(/\.pdf$/i, '').replace(/^pdfs_pdfspart2_/i, '');
+}
+
 function findSourcePdf(bookId, files) {
   const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
   const target = norm(bookId);
-  return files.find((f) => norm(f.replace(/\.pdf$/i, '')) === target);
+  return files.find((f) => norm(pdfBaseName(f)) === target);
+}
+
+function renamePrefixedPdfs() {
+  const renamed = [];
+  for (const f of listPart2Pdfs()) {
+    if (!/^pdfs_pdfspart2_/i.test(f)) continue;
+    const to = pdfBaseName(f) + '.pdf';
+    const from = path.join(PART2, f);
+    const dest = path.join(PART2, to);
+    if (fs.existsSync(dest) && path.resolve(from) !== path.resolve(dest)) {
+      console.warn('Skip rename — target exists:', to);
+      continue;
+    }
+    fs.renameSync(from, dest);
+    renamed.push({ from: f, to });
+    console.log('Renamed', f, '→', to);
+  }
+  return renamed;
+}
+
+function allImportableIds(files, books) {
+  const ids = [];
+  for (const f of files) {
+    const base = pdfBaseName(f);
+    const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const book = books.find((b) => norm(b.id) === norm(base));
+    if (book) ids.push(book.id);
+  }
+  return [...new Set(ids)];
 }
 
 function pdfPageCount(filePath) {
@@ -150,14 +183,26 @@ function patchBookBlock(src, bookId, pageCount, setCover) {
 }
 
 (async function main() {
-  delete require.cache[require.resolve(booksPath)];
-  let { BOOKS } = require(booksPath);
+  if (process.argv.includes('--rename-prefix')) {
+    renamePrefixedPdfs();
+  }
 
   let ids = process.argv.slice(2).filter((a) => !a.startsWith('--'));
   if (FIRST_N) ids = parseFirstNIds(FIRST_N);
 
+  delete require.cache[require.resolve(booksPath)];
+  let { BOOKS } = require(booksPath);
+
+  if (process.argv.includes('--all')) {
+    const files = listPart2Pdfs();
+    ids = allImportableIds(files, BOOKS);
+    console.log('Auto-detected', ids.length, 'importable PDFs in pdfspart2/');
+  }
+
   if (!ids.length) {
-    console.error('Usage: node scripts/import-pdfspart2-guides.js --first 15');
+    console.error('Usage: node scripts/import-pdfspart2-guides.js --rename-prefix --all');
+    console.error('       node scripts/import-pdfspart2-guides.js --first 15');
+    console.error('       node scripts/import-pdfspart2-guides.js book-id ...');
     process.exit(1);
   }
 

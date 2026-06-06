@@ -1,250 +1,10 @@
 BOOKS WITHOUT PDF — TITLES + WHAT TO WRITE IN EACH BOOK
 For Gemini: author Mubashir Mehdi, LifeWithBooks, original guide (not a copy of any publisher book).
 Save each PDF as: pdfs/pdfspart2/{book-id}.pdf
-Total: 124 books
+Total: 70 books
 
 --------------------------------------------------------------------------------
-1. LONGMAN PHOTO DICTIONARY OF AMERICAN ENGLISH
-   book-id: longman-photo-dictionary-american-english
-   category: english-learning-books, vocabulary-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Over 2,500 American English words taught through vivid, real-life photographs organized into thematic chapters
-   for visual learners. The Power of Photographic Learning Visual learning has long been recognized as one of the
-   most effective pathways to vocabulary acquisition. The Longman Photo Dictionary of American English uses
-   authentic, high-quality photographs depicting real-life situations and objects to teach over 2,500 essential
-   words. Unlike traditional illustrated dictionaries that rely on drawings, this resource uses actual
-   photographs that provide immediate, realistic connections between words and their meanings — connections that
-   are more durable than those formed through translation alone. Photographs capture nuance that illustrations
-   often miss: the texture of materials, the context of usage, the relationship between objects, and the cultural
-   settings in which words naturall...
-
---------------------------------------------------------------------------------
-2. English Unlimited
-   book-id: english-unlimited
-   category: english-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A six-level communicative English course from Cambridge designed for real-world international communication at
-   every CEFR level. A Course Built for Real Communication English Unlimited is a six-level adult English course
-   developed by Cambridge University Press. Unlike courses that focus primarily on grammar drills, English
-   Unlimited is built around practical, real-world communication goals. Every lesson connects language to a
-   genuine communicative purpose — ordering at a restaurant, negotiating at work, discussing news, or navigating
-   social situations. The course covers CEFR levels from Starter (A1) through to Advanced (C1), with each level
-   designed to take approximately 60–90 hours of classroom instruction plus self-study time. What Each Unit
-   Covers Each unit is organized around a communicative topic and integrates all four language skills: listening,
-   speaking, reading and writing. G...
-
---------------------------------------------------------------------------------
-3. Preposition Focus on Building Mastery
-   book-id: preposition-focus-on-building-mastery
-   category: english-learning-books, grammar-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A focused workbook that systematically teaches English prepositions through clear rules, hundreds of examples
-   and graded practice exercises. Why Prepositions Are So Difficult Prepositions are widely considered one of the
-   most challenging aspects of English grammar. Unlike nouns or verbs, prepositions often seem arbitrary — why do
-   we say 'interested in' but 'excited about'? Why 'on Monday' but 'at night'? This book addresses that challenge
-   head-on by organizing prepositions into logical categories and providing the patterns and rules that actually
-   exist beneath the apparent chaos. Structured Approach to Mastery The book divides prepositions into clear
-   groups: prepositions of time (at, on, in, by, during, for, since, until), prepositions of place and position
-   (at, on, in, above, below, between, among, behind), prepositions of movement and direction (to, from, into,
-   out of, through, acro...
-
---------------------------------------------------------------------------------
-4. Technical English
-   book-id: technical-english
-   category: english-learning-books, business-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A multi-level course building the specialised English vocabulary and communication skills needed in
-   engineering, IT and technical workplaces. English for the Technical Workplace Technical English is a
-   four-level course designed for students and professionals working in engineering, manufacturing, electronics,
-   mechanics, construction and information technology. Published by Pearson, it bridges the gap between general
-   English courses and the specialised language demands of technical careers. Each level corresponds roughly to a
-   CEFR band: Level 1 covers A2–B1, Level 2 covers B1, Level 3 covers B1–B2, and Level 4 covers B2. This means
-   learners can enter at their current proficiency and progress systematically. Core Content and Skills Units are
-   organized around technical topics such as materials and components, tools and equipment, processes and
-   procedures, measurements, safety, quality co...
-
---------------------------------------------------------------------------------
-5. English for Meetings — Phrases, Expressions and One Case to Be Fluent in Meetings
-   book-id: english-for-meetings-phrases-expressions
-   category: english-learning-books, business-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A practical phrase book containing ready-to-use expressions for every stage of an English-language business
-   meeting. The Challenge of Meeting English Business meetings in English can be stressful even for fluent
-   speakers. The language moves fast, multiple people compete for the floor, and there is an unwritten set of
-   phrases that native speakers use to open discussions, express opinions, agree, disagree, interrupt politely,
-   redirect the conversation and summarise decisions. This book gives you exactly those phrases. Phrases
-   Organized by Function The book groups its expressions by meeting function: opening and welcoming, setting the
-   agenda, presenting information, asking for opinions, agreeing and supporting, disagreeing diplomatically,
-   interrupting and taking the floor, clarifying and checking understanding, making suggestions, postponing
-   decisions, summarising and closing. Each secti...
-
---------------------------------------------------------------------------------
-6. McGraw-Hill Conversational American English
-   book-id: mcgraw-hill-conversational-american-english
-   category: english-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Over 3,000 idiomatic expressions and conversational patterns used in everyday American English, organized by
-   real-life situations. Speaking Like Americans Actually Speak McGraw-Hill's Conversational American English
-   focuses on the spoken language that Americans actually use in daily life — the contractions, reductions,
-   idioms, slang and small-talk patterns that textbooks often skip. It contains over 3,000 expressions organized
-   into more than 100 everyday situations. Organized by Real Situations Chapters cover situations like greeting
-   people and saying goodbye, making introductions, talking on the phone, accepting and declining invitations,
-   discussing the weather, eating out, shopping, visiting the doctor, talking about work, expressing feelings and
-   opinions, handling emergencies, and dozens more. Within each situation, expressions are grouped by
-   communication function — so under 'Eati...
-
---------------------------------------------------------------------------------
-7. English Vocabulary in Use — Upper Intermediate
-   book-id: english-vocabulary-in-use-upper-intermediate
-   category: english-learning-books, vocabulary-books
-   WHAT TO INCLUDE IN THIS PDF:
-   100 two-page units of upper-intermediate vocabulary from Cambridge, with clear explanations on the left and
-   immediate practice on the right. The Proven Left-Right Format English Vocabulary in Use Upper-Intermediate is
-   part of the bestselling vocabulary series from Cambridge University Press. It follows the proven two-page unit
-   format: the left page presents and explains new vocabulary with definitions, examples and usage notes, while
-   the right page provides exercises for immediate practice. This design makes it perfect for focused 20–30
-   minute study sessions. 100 Units Covering Essential Topics The book contains 100 units organized into thematic
-   and linguistic groups. Early units cover word formation (prefixes, suffixes, compounding, conversion),
-   collocations, phrasal verbs and idiomatic expressions. Later units tackle topic-based vocabulary for work and
-   employment, education, science...
-
---------------------------------------------------------------------------------
-8. Practical English Usage
-   book-id: practical-english-usage
-   category: english-learning-books, grammar-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Michael Swan's authoritative A–Z reference covering over 600 points of English grammar, vocabulary and usage
-   that cause difficulty for learners and teachers. The Go-To Grammar Reference Practical English Usage by
-   Michael Swan, published by Oxford University Press, is one of the most widely used grammar and usage
-   references in the English-teaching world. Now in its fourth edition, it covers over 600 points of grammar,
-   vocabulary and pronunciation that cause difficulty for learners of English — and for their teachers. How the
-   Book Is Organized Entries are arranged alphabetically for quick reference. Each entry focuses on a specific
-   problem area — from articles and tenses to easily confused words, spelling rules and punctuation. Entries are
-   short, clearly written and packed with natural example sentences that show how the language actually works in
-   practice. A detailed table of contents ...
-
---------------------------------------------------------------------------------
-9. Spoken English Conversation Practice
-   book-id: spoken-english-conversation-practice
-   category: english-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Structured daily conversation material for learners who can read and write English but struggle to speak
-   fluently and confidently. Breaking the Speaking Barrier Many English learners reach a level where they can
-   read articles, understand videos and write emails — but freeze when it is time to speak. Spoken English
-   Conversation Practice addresses this common problem with structured speaking material for everyday situations.
-   Daily Conversation Topics Each chapter centres on a real-life topic: greetings and introductions, family life,
-   food and cooking, shopping and money, health and the body, work and jobs, travel and transport, hobbies,
-   weather, asking for directions, making phone calls, discussing news and more. Within each topic, the book
-   provides natural dialogues between two or three speakers, key vocabulary and phrases with pronunciation
-   guides, and speaking tasks you can do alone ...
-
---------------------------------------------------------------------------------
-10. English Phonetics and Phonology — An Introduction
-   book-id: english-phonetics-and-phonology
-   category: english-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A clear academic introduction to the sound system of English: vowels, consonants, stress, rhythm, intonation
-   and connected speech. Understanding How English Sounds Work This textbook provides a clear, systematic
-   introduction to the phonetics and phonology of English. It covers the physical production of speech sounds
-   (articulatory phonetics), the sound system and patterns of English (phonology), and the ways sounds change in
-   connected speech. Topics Covered The book begins with the organs of speech and how sounds are produced, then
-   moves through English consonants (plosives, fricatives, affricates, nasals, approximants) and vowels
-   (monophthongs and diphthongs) with full IPA transcription. Later chapters cover syllable structure, word
-   stress patterns and rules, sentence stress and rhythm, weak forms and reductions, assimilation, elision,
-   linking, and intonation patterns and their meani...
-
---------------------------------------------------------------------------------
-11. Talk English — The Secret to Speak English
-   book-id: talk-english-secret-to-speak-english
-   category: english-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A motivational and practical method for shy or stuck learners who want to finally break through and start
-   speaking English with confidence. Why Most Learners Stay Silent Talk English starts by explaining why so many
-   learners study English for years but never achieve speaking fluency. The problem, the author argues, is not
-   lack of knowledge but lack of a speaking system. Most courses teach grammar and vocabulary without building
-   the habits and confidence needed for real-time conversation. The Method The book presents a step-by-step
-   method: start with massive listening input, move to shadowing and imitation, build a core set of
-   high-frequency sentence patterns, practise speaking alone every day using specific techniques, then gradually
-   move into real conversations with growing confidence. Each step has clear instructions, a daily time
-   commitment (starting with just 15–30 minutes), and a...
-
---------------------------------------------------------------------------------
-12. How to Get Really Good at English
-   book-id: how-to-get-really-good-at-english
-   category: english-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A no-nonsense guide to effective English study habits, input choices and practice routines for learners who
-   want to reach a genuinely high level. Honest Advice for Serious Learners How to Get Really Good at English is
-   written for learners who are past the beginner stage and serious about reaching a high level of fluency. It
-   cuts through marketing hype and gives honest, practical advice about what actually works in language learning
-   — backed by research and real experience. Study Strategies That Work The book covers choosing the right input
-   (podcasts, audiobooks, TV series, news, books), building an effective daily study routine, how to use spaced
-   repetition for vocabulary, the role of grammar study at different stages, how to improve speaking through
-   shadowing and conversation practice, writing practice for fluency, and how to use modern tools like language
-   exchanges, apps and AI tuto...
-
---------------------------------------------------------------------------------
-13. Learn How to Speak English Fluently — English Speaking Mastery in 7 Easy Steps
-   book-id: learn-how-to-speak-english-fluently-7-easy-steps
-   category: english-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A seven-step method that takes intermediate English learners from hesitant speech to fluent, confident
-   conversation. Seven Steps from Hesitation to Fluency This book breaks the journey to English fluency into
-   seven clear, sequential steps. Each step builds on the previous one, creating a practical pathway that
-   intermediate learners can follow to overcome the plateau that keeps many students stuck between 'understanding
-   English' and 'speaking English fluently'. The Seven Steps Step 1 focuses on building a massive listening habit
-   — immersing yourself in English audio every day. Step 2 introduces shadowing and imitation to train your
-   pronunciation and speaking speed. Step 3 teaches you to think in English by building mental habits. Step 4
-   develops your core sentence patterns through pattern practice. Step 5 moves into real conversation practice
-   with specific techniques. Step 6 addresses ...
-
---------------------------------------------------------------------------------
-14. Macmillan English Grammar in Context — Intermediate (1)
-   book-id: macmillan-english-grammar-in-context-intermediate-1
-   category: english-learning-books, grammar-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Intermediate English grammar taught through engaging real-world contexts including science, history, nature
-   and the arts — not dry isolated examples. Grammar Through Real Content Macmillan English Grammar in Context
-   takes a distinctive approach: instead of teaching grammar through invented textbook sentences, it presents
-   each structure within engaging texts about real-world topics — science, history, geography, nature, the arts,
-   technology and culture. This means you learn grammar while also learning interesting content. Unit Structure
-   Each unit targets a specific grammar point (present tenses, past tenses, articles, comparatives, conditionals,
-   modals, passive voice, relative clauses, reported speech and more). The unit opens with an authentic reading
-   text where the target structure appears naturally. Explanation boxes highlight the rules, and then a series of
-   graded exercises practis...
-
---------------------------------------------------------------------------------
-15. Fundamentals of English Grammar — Workbook
-   book-id: fundamentals-of-english-grammar-workbook
-   category: english-learning-books, grammar-books
-   WHAT TO INCLUDE IN THIS PDF:
-   The companion workbook to Betty Azar's classic grammar series, providing extensive independent practice on all
-   major intermediate-level grammar points. Extra Practice for Every Grammar Point The Fundamentals of English
-   Grammar Workbook is the companion practice book to the well-known Azar-Hagen grammar series. It provides
-   extensive additional exercises for every grammar chapter in the main textbook, giving learners the repetition
-   and variety they need to truly internalise grammar rules. Exercise Types Exercises include fill-in-the-blank,
-   sentence completion, error correction, sentence combining, rewriting and editing tasks. The difficulty
-   progresses within each chapter from controlled practice (where the focus is purely on form) to more
-   communicative exercises (where learners must think about both meaning and grammar simultaneously). Many
-   exercises use connected paragraphs and short t...
-
---------------------------------------------------------------------------------
-16. English in Everyday Life
-   book-id: english-in-everyday-life
-   category: english-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Practical, functional English for real daily situations — at the supermarket, the airport, the bank, the
-   doctor, at work and with new friends. English for Real Life, Not Exams English in Everyday Life is designed
-   for learners who need to use English outside the classroom immediately — whether they are travelling, living
-   abroad, or working in an English-speaking environment. Each unit centres on a real situation you will actually
-   face. Situations Covered The book covers: meeting people and making small talk, shopping at a supermarket and
-   in stores, eating out and ordering takeaway, visiting the doctor and pharmacy, dealing with banks and post
-   offices, using public transport, renting accommodation, making phone calls and appointments, handling
-   emergencies, attending social gatherings, job interviews and first days at work, and communicating with
-   neighbours and community. For each situat...
-
---------------------------------------------------------------------------------
-17. Black Book of English Vocabulary
+1. Black Book of English Vocabulary
    book-id: black-book-of-english-vocabulary
    category: english-learning-books, vocabulary-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -259,429 +19,7 @@ Total: 124 books
    antonyms, an example sentence showing natural...
 
 --------------------------------------------------------------------------------
-18. Improve Your Written English
-   book-id: improve-your-written-english
-   category: english-learning-books, grammar-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A friendly, jargon-free guide to mastering grammar, punctuation, spelling and style for confident, clear
-   English writing. Writing English With Confidence Improve Your Written English is a practical guide for anyone
-   who has to write in English — students submitting assignments, professionals writing emails and reports, or
-   anyone who simply wants to communicate more clearly on paper. The book covers the essentials of grammar,
-   punctuation, spelling and style in a friendly, accessible way. What You Will Learn Grammar chapters cover
-   sentence structure, subject-verb agreement, tense consistency, pronoun reference, parallel construction and
-   the most common errors that weaken writing. Punctuation chapters explain commas, semicolons, colons,
-   apostrophes, quotation marks, hyphens and dashes with clear rules and plenty of examples. The spelling section
-   addresses common confusions (their/there/th...
-
---------------------------------------------------------------------------------
-19. Best English Grammar Book — Learn English Grammar
-   book-id: best-english-grammar-book
-   category: english-learning-books, grammar-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A comprehensive, learner-friendly English grammar course covering all major topics from tenses and articles to
-   conditionals and reported speech. Complete Grammar From Basics to Advanced This grammar book provides a
-   complete course in English grammar, starting from the fundamentals and building to advanced structures. It is
-   designed to be learner-friendly, with each topic introduced through simple rules, natural examples and graded
-   practice. Topics Covered The book works through: parts of speech (nouns, pronouns, adjectives, adverbs, verbs,
-   prepositions, conjunctions), all twelve English tenses with timelines and usage rules, articles (a, an, the)
-   and when to use no article, modal verbs and their meanings, passive voice, conditionals (zero through third
-   plus mixed), reported speech, relative clauses, gerunds and infinitives, comparatives and superlatives,
-   question formation, and common...
-
---------------------------------------------------------------------------------
-20. Why Has Nobody Told Me This Before?
-   book-id: why-has-nobody-told-me-this-before
-   category: self-grooming-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Clinical psychologist Dr Julie Smith shares the most useful therapeutic tools for managing everyday emotional
-   challenges like low mood, anxiety, self-doubt and motivation. Therapy Tools You Can Use Today Why Has Nobody
-   Told Me This Before? by Dr Julie Smith draws on her years of experience as a clinical psychologist to share
-   the most useful tools and techniques she gives her patients. The book addresses the everyday emotional
-   challenges most people face: low mood, anxiety, self-doubt, grief, lack of motivation, stress and difficulty
-   building confidence. What the Book Covers The book is divided into sections covering: understanding and
-   managing low mood, building emotional resilience, handling anxiety and fear, dealing with grief and loss,
-   developing genuine self-confidence, finding and sustaining motivation, building meaningful relationships, and
-   managing stress. Each chapter explains...
-
---------------------------------------------------------------------------------
-21. The Power of Your Subconscious Mind
-   book-id: the-power-of-your-subconscious-mind
-   category: self-grooming-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Dr Joseph Murphy's classic guide to using belief, visualisation, affirmation and the power of the subconscious
-   mind to change habits and achieve goals. A Self-Help Classic First published in 1963, The Power of Your
-   Subconscious Mind by Dr Joseph Murphy has sold millions of copies worldwide and remains one of the most
-   influential self-help books ever written. Murphy's central thesis is that the subconscious mind is a powerful
-   force that shapes our experiences, and that by consciously directing it through belief, repetition and mental
-   imagery, we can transform our habits, health, relationships and achievements. Core Techniques The book
-   presents several techniques for communicating with the subconscious: positive affirmations repeated before
-   sleep, creative visualisation of desired outcomes, the 'mental movie' technique for rehearsing success, prayer
-   and meditation as tools for focused i...
-
---------------------------------------------------------------------------------
-22. Surrounded by Idiots
-   book-id: surrounded-by-idiots
-   category: self-grooming-books, business-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Thomas Erikson's international bestseller explaining the four types of human behaviour (Red, Yellow, Green,
-   Blue) and how to communicate effectively with each. Understanding Why People Behave Differently Surrounded by
-   Idiots by Thomas Erikson became an international bestseller by offering a simple, memorable framework for
-   understanding human behaviour. Based on the DISC model used in organisational psychology, the book categorises
-   people into four colour types — Red, Yellow, Green and Blue — each with distinct communication styles,
-   motivations, strengths and stress responses. The Four Colour Types Red types are dominant, driven and
-   results-oriented — they speak directly, decide quickly and can appear aggressive. Yellow types are
-   enthusiastic, social and optimistic — they love new ideas, talk a lot and can be disorganised. Green types are
-   calm, patient and reliable — they value harmony...
-
---------------------------------------------------------------------------------
-23. 301 Expressions pour parler comme les Français
-   book-id: 301-expressions-pour-parler-comme-les-francais
-   category: french-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   301 authentic French idiomatic expressions and colloquial phrases that will make your spoken French sound
-   natural and native-like. Beyond Textbook French 301 Expressions pour parler comme les Français collects 301 of
-   the most common idiomatic expressions used in everyday spoken French — the kind of phrases you hear on the
-   street, in films, among friends and at work, but rarely find in standard grammar textbooks. How Each
-   Expression Is Presented Every expression includes: the French phrase, a literal word-by-word translation
-   (which often reveals the humour or imagery behind the idiom), the actual meaning in context, an example
-   sentence or short dialogue showing natural usage, and notes on register — whether the expression is informal,
-   familiar, or appropriate in professional settings. Building Real Fluency The expressions are grouped
-   thematically: reactions and emotions, agreeing and d...
-
---------------------------------------------------------------------------------
-24. 366 jours pour mieux vous exprimer en français
-   book-id: 366-jours-pour-mieux-vous-exprimer-en-francais
-   category: french-learning-books, grammar-books
-   WHAT TO INCLUDE IN THIS PDF:
-   One expert tip per day on French grammar, vocabulary, style and common mistakes — a year-long path to more
-   elegant and accurate French. A Daily Dose of Better French 366 jours pour mieux vous exprimer en français
-   offers one focused language tip for every day of the year (including leap years). Each daily entry is short
-   enough to read in two minutes but provides a genuine insight that improves your written or spoken French. What
-   the Tips Cover Topics rotate through grammar pitfalls (agreement errors, subjunctive traps, tense confusion),
-   vocabulary nuances (false friends, near-synonyms with different connotations), style advice (avoiding heavy or
-   awkward phrasing), common mistakes made by native speakers and learners alike, and elegant alternatives to
-   overused expressions. How to Use It Read one tip each morning, try to apply it during the day, and review the
-   previous week's tips each S...
-
---------------------------------------------------------------------------------
-25. 1600 proverbes pour briller et s'amuser en société
-   book-id: 1600-proverbes-pour-briller
-   category: french-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A rich collection of 1,600 French proverbs, sayings and aphorisms drawn from centuries of French culture and
-   wisdom. The Richness of French Proverbs French culture has a deep tradition of proverbs and sayings, and using
-   them well marks you as someone with genuine command of the language. This collection brings together 1,600
-   proverbs from a wide range of historical, literary and regional sources. Each proverb is presented with its
-   meaning, the situations where it is used, and where relevant, an English equivalent or explanation for
-   learners. Proverbs are grouped by theme: life and death, love and friendship, work and money, food and drink,
-   wisdom and foolishness, patience and haste, truth and lies, and more. For Advanced Learners and Culture Lovers
-   Beyond language learning, the collection provides a window into French values, humour and worldview. Many
-   proverbs are centuries old and r...
-
---------------------------------------------------------------------------------
-26. Les 100 fautes de français les plus courantes — et comment les corriger
-   book-id: les-100-fautes-de-francais-les-plus-courantes
-   category: french-learning-books, grammar-books
-   WHAT TO INCLUDE IN THIS PDF:
-   The 100 most common errors in written and spoken French, clearly explained with the correct form, the rule
-   behind it, and practice examples. The Mistakes Everyone Makes Even fluent French speakers — including native
-   speakers — make certain recurring mistakes. This book identifies the 100 most common errors in French and
-   provides a clear, concise fix for each one. How Each Error Is Explained Every entry follows the same format:
-   the incorrect form shown clearly, the correct form alongside it, a simple explanation of the rule or logic
-   behind the correction, and one or two example sentences demonstrating correct usage. Errors cover spelling
-   (accents, doubled consonants, silent letters), grammar (agreement, tense, subjunctive), vocabulary (false
-   friends, near-synonyms), and style (redundancy, anglicisms, register mistakes). Efficient and Focused The book
-   is deliberately short and focused —...
-
---------------------------------------------------------------------------------
-27. Rick Steves' French, Italian & German Phrase Book
-   book-id: rick-steves-french-italian-german-phrase-book
-   category: french-learning-books, german-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Essential travel phrases in French, Italian and German from popular travel author Rick Steves — three
-   languages in one pocket-sized volume. Three Languages for European Travel Rick Steves' phrase book packs
-   essential travel phrases in French, Italian and German into one compact volume. Each language section covers
-   the same situations: arrival and transport, finding accommodation, ordering food and drink, shopping,
-   sightseeing, handling emergencies, numbers, time and basic conversation. Practical and Traveller-Tested Rick
-   Steves is known for practical, budget-minded European travel, and this phrase book reflects that approach.
-   Phrases focus on the situations independent travellers actually encounter: buying train tickets, asking for
-   directions, reading menus, checking into hotels, making small talk with locals, and dealing with problems.
-   Pronunciation guides use intuitive English phone...
-
---------------------------------------------------------------------------------
-28. Easy Learning French Conversation
-   book-id: easy-learning-french-conversation
-   category: french-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Collins' trusted guide to building everyday French conversation skills, with phrases organized by situation
-   and supported by grammar and culture notes. Collins' Trusted French Conversation Guide Easy Learning French
-   Conversation from Collins is a structured guide for learners who want to build practical spoken French for
-   everyday situations. It is part of the popular Collins Easy Learning series, known for clear presentation and
-   trustworthy content. Each chapter covers a different situation — introductions, socialising, shopping, eating
-   out, travel, accommodation, the telephone, health, and more. Within each chapter, you get key phrases you
-   need, grammar explanations showing how the phrases are constructed, pronunciation guidance, culture tips about
-   French customs and etiquette, and practice suggestions. Suitable for Beginners and Refreshers The book assumes
-   no prior French knowledge ...
-
---------------------------------------------------------------------------------
-29. Learn French In A Hurry
-   book-id: learn-french-in-a-hurry
-   category: french-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A fast-track introduction to French essentials for travellers and beginners who need to learn the basics
-   quickly before a trip or course. French Essentials in Minimum Time Learn French In A Hurry compresses the
-   essentials of French into a fast, practical short course designed for people who do not have months to study.
-   It covers pronunciation rules, basic grammar (enough to form sentences), survival vocabulary (greetings,
-   numbers, food, transport, shopping, emergencies), and the most useful conversational phrases. What You Will
-   Learn The book covers French pronunciation and reading rules, essential grammar including articles, gender,
-   basic verb conjugation in present and past tense, forming questions and negatives, numbers, telling time and
-   dates, and practical vocabulary for the most common travel and social situations. Ideal For Last-minute
-   travellers heading to France, Quebec or Fr...
-
---------------------------------------------------------------------------------
-30. Practice Makes Perfect — French Pronouns and Prepositions
-   book-id: practice-makes-perfect-french-pronouns-prepositions
-   category: french-learning-books, grammar-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Dedicated practice on two of the trickiest areas of French grammar — pronouns (y, en, le, la, les, lui, leur,
-   dont, etc.) and prepositions (à, de, en, dans, pour, par, etc.). Mastering French Pronouns and Prepositions
-   French pronouns and prepositions are notoriously confusing for learners. The pronoun system alone includes
-   subject, direct object, indirect object, reflexive, relative, demonstrative and possessive pronouns — plus the
-   tricky 'y' and 'en' that have no direct English equivalents. Prepositions like à, de, en, dans, pour, par and
-   sur overlap in meaning and follow rules that feel arbitrary. Focused Explanation and Practice This workbook
-   from the Practice Makes Perfect series gives these two problem areas the dedicated attention they need. Clear
-   explanations cover each pronoun type and preposition systematically, showing when and why each is used. Graded
-   exercises progress fro...
-
---------------------------------------------------------------------------------
-31. Apprendre à traduire
-   book-id: apprendre-a-traduire
-   category: french-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A guide to the craft of translation between French and other languages, covering analysis techniques, style
-   transfer, common pitfalls and revision methods. Learning the Craft of Translation Apprendre à traduire is a
-   practical guide for students and professionals learning to translate between French and other languages. It
-   moves beyond word-for-word translation to teach the analytical skills, cultural awareness and stylistic
-   sensitivity that produce genuinely good translations. Core Skills Covered The book covers text analysis
-   (understanding the source text's purpose, audience, register and style before translating), translation
-   strategies (equivalence, transposition, modulation, adaptation), handling culture-specific references, dealing
-   with faux amis (false cognates), maintaining register and tone, and revision techniques for polishing a
-   finished translation. A Bridge to Professional...
-
---------------------------------------------------------------------------------
-32. L'étude pratique de la langue française
-   book-id: letude-pratique-de-la-langue-francaise
-   category: french-learning-books, grammar-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A classic French schoolbook covering grammar, spelling, vocabulary, comprehension and writing for
-   intermediate-level French study. A Practical French Language Course L'étude pratique de la langue française is
-   a structured French course originally designed for school students at the collège level (classes de 3e et 4e).
-   It provides thorough coverage of grammar, spelling, vocabulary, reading comprehension and written expression.
-   What the Book Covers Grammar sections cover verb conjugation across all tenses and moods, agreement rules,
-   sentence construction, relative clauses, the subjunctive, direct and indirect speech, and common syntactic
-   patterns. Spelling sections address French orthographic rules, accents, homophone distinctions and commonly
-   misspelled words. Vocabulary is built through thematic reading texts and exercises. Useful for Learners of
-   French While designed for native Frenc...
-
---------------------------------------------------------------------------------
-33. Goethe-Zertifikat C2 — Großes Deutsches Sprachdiplom, Modellsatz
-   book-id: goethe-zertifikat-c2-grosses-deutsches-sprachdiplom
-   category: german-learning-books, deutsch-books
-   WHAT TO INCLUDE IN THIS PDF:
-   The official model exam for the highest Goethe-Institut certificate, showing exact task types, timing and
-   assessment criteria for the C2 level. The Highest German Language Certificate The Goethe-Zertifikat C2 —
-   Großes Deutsches Sprachdiplom is the most advanced German language examination offered by the Goethe-Institut.
-   It certifies near-native proficiency and is recognized internationally by universities and employers. This
-   model exam set (Modellsatz) shows candidates exactly what to expect on exam day. Exam Structure The exam
-   consists of four modules: Reading (80 minutes — complex academic and literary texts with multiple task types),
-   Listening (approximately 35 minutes — lectures, discussions, radio reports), Writing (80 minutes — essay
-   writing and text transformation tasks), and Speaking (approximately 15 minutes — presentation, discussion and
-   argument). The model set contains com...
-
---------------------------------------------------------------------------------
-34. Goethe-Zertifikat C1 Übungssatz 01 — Kandidatenblätter, Prüferblätter
-   book-id: goethe-zertifikat-c1-ubungssatz-01
-   category: german-learning-books, deutsch-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Official practice set for the Goethe-Zertifikat C1 advanced German exam, including complete candidate papers
-   and examiner marking sheets. Official C1 Exam Practice This Übungssatz (practice set) mirrors the real
-   Goethe-Zertifikat C1 exam in format, length and difficulty. It provides a complete simulated exam experience
-   for advanced German learners aiming at C1 certification. Contents The set includes Kandidatenblätter
-   (candidate papers) for all four modules — Reading, Listening, Writing and Speaking — exactly as they would
-   appear on exam day. Prüferblätter (examiner sheets) contain answer keys, listening transcripts, writing
-   assessment rubrics and speaking evaluation criteria. How to Use It Work through each module under timed
-   conditions to simulate the real exam experience. After completing each section, check your answers against the
-   key and review the examiner criteria to understan...
-
---------------------------------------------------------------------------------
-35. Goethe-Zertifikat B2 — Prüfungsziele, Testbeschreibung
-   book-id: goethe-zertifikat-b2-prufungsziele-testbeschreibung
-   category: german-learning-books, deutsch-books
-   WHAT TO INCLUDE IN THIS PDF:
-   The official handbook describing the goals, structure, task types and assessment criteria of the
-   Goethe-Zertifikat B2 examination in detail. Understanding the B2 Exam Inside Out Prüfungsziele,
-   Testbeschreibung is the official handbook from the Goethe-Institut that describes exactly what is tested at B2
-   level, how each module is structured, what types of tasks appear, and how performance is assessed. It is
-   primarily intended for teachers, course designers and exam preparation specialists. Detailed Module
-   Descriptions For each exam module (Reading, Listening, Writing, Speaking), the handbook describes the targeted
-   competences in terms of the Common European Framework of Reference, the specific task types used and the
-   skills each task tests, sample tasks with model answers and commentary, and detailed scoring rubrics showing
-   how marks are allocated. Essential for Serious Preparation Whil...
-
---------------------------------------------------------------------------------
-36. Goethe-Zertifikat B2 Übungssatz 03 — Kandidaten- und Prüferblätter
-   book-id: goethe-zertifikat-b2-ubungssatz-03
-   category: german-learning-books, deutsch-books
-   WHAT TO INCLUDE IN THIS PDF:
-   The third official practice set for the Goethe-Zertifikat B2, providing a complete simulated exam with all
-   four modules and marking criteria. Full B2 Exam Simulation Übungssatz 03 is the third official practice set
-   released by the Goethe-Institut for the B2 exam. It contains a complete exam simulation with Reading,
-   Listening, Writing and Speaking papers in the exact format of the real exam. What Is Included Candidate papers
-   for all modules, a Listening audio script, answer keys for Reading and Listening, Writing assessment rubrics
-   with sample responses at different grade levels, and Speaking evaluation criteria with descriptions of what
-   constitutes pass and fail performance. Why Multiple Practice Sets Matter Since the Goethe-Institut releases
-   only a limited number of official practice sets, each one is valuable. Practising with Übungssatz 03 after
-   working through sets 01 and 02 gives ...
-
---------------------------------------------------------------------------------
-37. Goethe-Zertifikat B1 — Deutschprüfung für Jugendliche und Erwachsene
-   book-id: goethe-zertifikat-b1-deutschprufung
-   category: german-learning-books, deutsch-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Official preparation material for the modular B1 German exam, covering structure, strategies and practice for
-   both teenagers and adults. The Gateway B1 Certificate The Goethe-Zertifikat B1 is one of the most widely taken
-   German exams in the world. It certifies independent use of German and is required for German citizenship
-   applications and many university preparatory programmes. This book introduces the exam and provides thorough
-   preparation for both teenage and adult candidates. Modular Exam Structure The B1 exam is modular: candidates
-   can take Reading, Listening, Writing and Speaking as separate modules and combine passes over time. The book
-   explains this modular system, describes each module's task types in detail, provides study strategies specific
-   to each module, and includes a complete sample exam with answer key. Practical Preparation Tips Beyond
-   practice tasks, the book offer...
-
---------------------------------------------------------------------------------
-38. Goethe-Zertifikat B1 Übungssatz Erwachsene — Kandidaten- und Prüferblätter
-   book-id: goethe-zertifikat-b1-ubungssatz-erwachsene
-   category: german-learning-books, deutsch-books
-   WHAT TO INCLUDE IN THIS PDF:
-   The adult-focused official practice set for the B1 German exam with complete candidate and examiner materials.
-   Adult B1 Practice Material This practice set provides adults preparing for the Goethe-Zertifikat B1 with a
-   complete simulated exam. Topics and texts are chosen for adult audiences, covering themes like work, everyday
-   life, media, travel and social issues rather than school-focused content. Complete Exam Simulation The set
-   includes all four modules in their exact exam format, with the same number of tasks, the same time limits, and
-   the same difficulty level as the real exam. Examiner materials include full answer keys, audio transcripts,
-   writing rubrics and speaking assessment criteria. Final-Stage Preparation Ideally used in the final weeks
-   before the exam, after completing a B1 course. Working through the full set under timed conditions gives
-   candidates confidence, reveals r...
-
---------------------------------------------------------------------------------
-39. Goethe-Zertifikat A2 — Fit in Deutsch 2 für Jugendliche
-   book-id: goethe-zertifikat-a2-fit-in-deutsch-2-jugendliche
-   category: german-learning-books, deutsch-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Teen-friendly preparation material for the A2 Fit in Deutsch 2 exam, with age-appropriate texts, topics and a
-   complete practice test. German for Teenagers at A2 Fit in Deutsch 2 is the Goethe-Institut's A2 exam designed
-   specifically for young learners aged 10–16. This preparation book uses age-appropriate topics, texts and
-   images that appeal to teenagers — school, friends, hobbies, sports, music, family and social media. Exam
-   Format and Practice The book walks through each exam module: Reading (texts about teenage life with
-   comprehension tasks), Listening (dialogues and announcements relevant to young people), Writing (short
-   messages, emails and notes), and Speaking (introducing yourself, asking and answering questions, making
-   requests). A complete practice test allows students to simulate the full exam experience. For Schools and Home
-   Study Widely used in schools teaching German as a...
-
---------------------------------------------------------------------------------
-40. Goethe-Zertifikat A2 — Fit in Deutsch 2
-   book-id: goethe-zertifikat-a2-fit-in-deutsch-2
-   category: german-learning-books, deutsch-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Standard preparation book for the A2 Fit in Deutsch 2 exam, suitable for both school-age and adult learners at
-   the elementary level. A2 Exam Preparation This book offers a clear introduction to the A2 Fit in Deutsch 2
-   exam and provides the materials needed to prepare for it. It covers the exam structure, the types of tasks in
-   each module, useful strategies for approaching each task type, and includes a complete practice test with
-   model answers. Suitable for All A2 Learners While the Fit in Deutsch series is primarily designed for younger
-   learners, this general edition works for adults at A2 level as well. It provides an accessible starting point
-   for anyone aiming to certify their elementary German skills. Building Toward B1 Successfully passing A2
-   demonstrates that you can handle simple everyday communication in German. The book also notes what lies ahead
-   at B1 level, helping learners...
-
---------------------------------------------------------------------------------
-41. Goethe-Zertifikat A1 — Start Deutsch 1, Prüfungsziele, Testbeschreibung
-   book-id: goethe-zertifikat-a1-prufungsziele
-   category: german-learning-books, deutsch-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Official handbook detailing the goals, structure and assessment of the A1 Start Deutsch 1 beginner
-   examination. Understanding the A1 Exam This handbook describes the goals, structure and assessment criteria of
-   the Goethe-Zertifikat A1 — Start Deutsch 1, the entry-level German examination. It is aimed at teachers,
-   course planners and self-directed candidates who want to understand exactly what is expected at the A1 level.
-   What A1 Means At A1, candidates can understand and use familiar everyday expressions and very basic phrases
-   aimed at satisfying concrete needs. They can introduce themselves and others, ask and answer personal
-   questions, and interact in a simple way provided the other person speaks slowly and clearly. The handbook
-   defines these abilities precisely for each exam module. For Teachers and Course Designers The detailed task
-   descriptions and assessment criteria help teache...
-
---------------------------------------------------------------------------------
-42. Goethe-Zertifikat A1 — Fit in Deutsch 1 Übungssatz 01
-   book-id: goethe-zertifikat-a1-fit-in-deutsch-1-ubungssatz-01
-   category: german-learning-books, deutsch-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Complete practice exam for the A1 Fit in Deutsch 1 youth exam, with candidate sheets, examiner sheets and
-   audio scripts. First Steps in German Certification Fit in Deutsch 1 is the Goethe-Institut's A1 exam for young
-   learners (aged 10–16). This practice set (Übungssatz 01) provides a complete simulated exam so young students
-   can experience the format before exam day. What Is Included The set contains candidate sheets for Reading,
-   Listening, Writing and Speaking modules in the exact exam format, plus examiner sheets with answer keys, audio
-   transcripts and assessment criteria for the Speaking module. Reducing Exam Anxiety For young learners
-   especially, familiarity with the exam format significantly reduces anxiety and improves performance. Working
-   through this practice set — ideally under timed conditions — helps students understand what each task requires
-   and builds confidence that the...
-
---------------------------------------------------------------------------------
-43. Briefe schreiben und Bilder beschreiben A2 & B1
-   book-id: briefe-schreiben-und-bilder-beschreiben
-   category: german-learning-books, deutsch-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Targeted practice for two key German exam writing tasks: letter writing and picture description, with model
-   texts, useful phrases and many practice prompts. Two Essential Exam Writing Skills Letter writing and picture
-   description appear repeatedly in A2 and B1 German exams. This workbook gives both tasks the focused practice
-   they deserve, moving beyond generic advice to provide specific techniques, model texts and ready-to-use
-   phrases. Letter Writing Section The letter writing section covers formal and informal letters, including
-   understanding the task prompt, greeting and closing formulas, structuring the body of the letter, common
-   phrases for requests, complaints, thanks, apologies and information, and model letters at A2 and B1 level with
-   annotations explaining why each part works. Picture Description Section The picture description section
-   teaches a systematic approach: describing...
-
---------------------------------------------------------------------------------
-44. Wörterbuch der Lebensmittel / Dictionary of Foods
-   book-id: worterbuch-der-lebensmittel
-   category: german-learning-books, deutsch-books, vocabulary-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A comprehensive bilingual German–English dictionary covering food terminology, ingredients, dishes, cooking
-   methods and food industry terms. Food Vocabulary Across Two Languages Wörterbuch der Lebensmittel is a
-   specialised bilingual dictionary listing food-related terms in German and English. It goes far beyond a simple
-   word list, covering ingredients and raw materials, prepared dishes and recipes, cooking methods and
-   techniques, food labelling and packaging terms, nutritional vocabulary, and food industry and agricultural
-   terminology. For Professionals and Learners The dictionary is used by professionals working in catering, food
-   manufacturing, agriculture, nutrition, food science, translation and international trade. For language
-   learners, it provides a comprehensive resource for one of the most practical vocabulary areas — food is
-   something everyone talks about every day. Thorough ...
-
---------------------------------------------------------------------------------
-45. Deutsch Intensiv — Wortschatz C1
-   book-id: deutsch-intensiv-wortschatz-c1
-   category: german-learning-books, deutsch-books, vocabulary-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Intensive vocabulary training for advanced German learners at C1 level, with thematic word sets, collocations,
-   idiomatic expressions and productive exercises. Advanced German Vocabulary Training Deutsch Intensiv
-   Wortschatz C1 from Klett is a focused vocabulary workbook for learners at the advanced level. It builds the
-   sophisticated vocabulary needed for academic study, professional communication and C1 exam success in German.
-   Thematic Organization Vocabulary is organized into themes reflecting the topics that appear at C1 level:
-   society and politics, work and career, education and science, environment and sustainability, media and
-   technology, culture and the arts, health and medicine, and interpersonal relationships. Within each theme,
-   learners encounter not just individual words but collocations, idiomatic expressions, formal and informal
-   register variants, and academic vocabulary. A...
-
---------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------
-47. Kinderleichte Grammatik — Die vier Fälle
+2. Kinderleichte Grammatik — Die vier Fälle
    book-id: kinderleichte-grammatik-die-vier-falle
    category: german-learning-books, kids-learning-books, deutsch-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -696,7 +34,7 @@ Total: 124 books
    While designed for German school children...
 
 --------------------------------------------------------------------------------
-48. 40+ Grammatiklisten
+3. 40+ Grammatiklisten
    book-id: 40-grammatiklisten
    category: german-learning-books, deutsch-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -711,7 +49,7 @@ Total: 124 books
    Tutors and Self-Le...
 
 --------------------------------------------------------------------------------
-49. Grammatik Konversation 1 — Arbeitsblätter
+4. Grammatik Konversation 1 — Arbeitsblätter
    book-id: grammatik-konversation-1-arbeitsblatter
    category: german-learning-books, deutsch-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -726,7 +64,7 @@ Total: 124 books
    in Class Worksheets are photocopiable, ...
 
 --------------------------------------------------------------------------------
-50. Deutsche Grammatik (de Gruyter Lexikon)
+5. Deutsche Grammatik (de Gruyter Lexikon)
    book-id: deutsche-grammatik-de-gruyter-lexikon
    category: german-learning-books, deutsch-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -741,22 +79,7 @@ Total: 124 books
    are organized alphabetically ...
 
 --------------------------------------------------------------------------------
-51. Learn Dutch In 7 Days — The Ultimate Crash Course
-   book-id: learn-dutch-in-7-days
-   category: german-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A seven-day crash course covering the essentials of Dutch — pronunciation, basic grammar, survival vocabulary
-   and simple conversation patterns. Dutch Basics in One Week Learn Dutch In 7 Days condenses the essentials of
-   the Dutch language into a seven-day crash course. Each day focuses on a core area: Day 1 covers pronunciation
-   and the alphabet, Day 2 introduces greetings and basic phrases, Day 3 tackles essential grammar (articles,
-   pronouns, basic verb conjugation), Day 4 builds survival vocabulary (numbers, food, transport), Day 5 covers
-   asking questions and giving directions, Day 6 practises simple conversations, and Day 7 reviews everything
-   with practice dialogues. Realistic Expectations The book is honest about what seven days of study can achieve:
-   you will not become fluent, but you will be able to handle basic greetings, order food, ask for directions,
-   understand simple signs an...
-
---------------------------------------------------------------------------------
-52. The Teacher's Grammar Book — 2nd Edition
+6. The Teacher's Grammar Book — 2nd Edition
    book-id: teachers-grammar-book-james-williams
    category: english-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -771,22 +94,7 @@ Total: 124 books
    traditions analyse the same phenomen...
 
 --------------------------------------------------------------------------------
-53. Learn German FAST — 48 Hours to Learning German
-   book-id: learn-german-fast-48-hours
-   category: german-learning-books, deutsch-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A two-day crash course in essential German covering pronunciation, key grammar, survival vocabulary, travel
-   phrases and basic conversation. German Fundamentals in 48 Hours Learn German FAST provides a concentrated
-   foundation in German over 48 hours of focused study. It covers pronunciation rules (German is largely phonetic
-   once you learn the rules), essential grammar (articles, gender, basic verb conjugation, word order, cases at a
-   basic level), survival vocabulary (greetings, numbers, food, transport, shopping, emergencies), and useful
-   travel phrases for common situations. Structured for Quick Learning Content is organized for efficiency: each
-   section builds on the previous one, vocabulary is limited to the highest-frequency words, grammar explanations
-   focus on patterns rather than exceptions, and practice dialogues bring everything together in realistic
-   scenarios. Not Fluency — But ...
-
---------------------------------------------------------------------------------
-54. So geht's zu B2 — Übungsbuch
+7. So geht's zu B2 — Übungsbuch
    book-id: so-gehts-zu-b2
    category: german-learning-books, deutsch-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -801,22 +109,7 @@ Total: 124 books
    Vocabulary and Grammar at B2 I...
 
 --------------------------------------------------------------------------------
-55. Decoding Digital Leadership
-   book-id: decoding-digital-leadership
-   category: business-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A guide to leading teams and organisations effectively in the age of digital transformation, covering culture,
-   communication, decision-making and people development. Leadership for the Digital Age Decoding Digital
-   Leadership examines how leadership must evolve in response to digital transformation. It argues that
-   traditional command-and-control leadership models are inadequate for organisations dealing with rapid
-   technological change, distributed teams, data-driven decision-making and constant disruption. Key Topics The
-   book covers: building a digital-first culture that embraces experimentation and learning from failure, leading
-   distributed and remote teams effectively, making decisions in environments of uncertainty and rapid change,
-   developing digital literacy across all levels of an organisation, attracting and retaining talent in
-   competitive technology markets, and managing the hu...
-
---------------------------------------------------------------------------------
-56. Public Leadership
+8. Public Leadership
    book-id: public-leadership
    category: business-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -831,7 +124,7 @@ Total: 124 books
    accountability and transparency in public ser...
 
 --------------------------------------------------------------------------------
-57. 101 Conversations in Mexican Spanish
+9. 101 Conversations in Mexican Spanish
    book-id: 101-conversations-in-mexican-spanish
    category: spanish-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -846,7 +139,7 @@ Total: 124 books
    Comprehension Gap Many Spanish learners find t...
 
 --------------------------------------------------------------------------------
-58. Collins Easy Learning — Complete Spanish Grammar + Verbs + Vocabulary
+10. Collins Easy Learning — Complete Spanish Grammar + Verbs + Vocabulary
    book-id: collins-easy-learning-complete-spanish
    category: spanish-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -861,97 +154,7 @@ Total: 124 books
    section provides full conjugation tables for...
 
 --------------------------------------------------------------------------------
-59. Learn How to Speak Spanish in 30 Days
-   book-id: learn-how-to-speak-spanish-in-30-days
-   category: spanish-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A structured 30-day plan taking absolute beginners from zero to basic Spanish conversation through daily
-   vocabulary, grammar and speaking activities. A Month to Basic Spanish Learn How to Speak Spanish in 30 Days
-   provides a structured, day-by-day learning plan for absolute beginners. Each of the 30 days introduces new
-   vocabulary, one grammar concept and a practical speaking activity, building gradually from simple greetings to
-   basic conversations. Daily Lesson Structure Each day follows the same pattern: learn 15–20 new words related
-   to a daily theme, study one grammar point with clear examples, practise with exercises and a short dialogue,
-   and review vocabulary from previous days. Themes progress logically: greetings, numbers, food, family, daily
-   routines, shopping, travel, work, health and social situations. Realistic and Achievable The book is designed
-   for learners who can commit 3...
-
---------------------------------------------------------------------------------
-60. Spanish Language 3-in-1 Bundle — Spanish for Beginners
-   book-id: spanish-language-3-in-1-bundle
-   category: spanish-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   Three popular Spanish-for-beginners books combined into one comprehensive volume covering pronunciation,
-   grammar, vocabulary and survival phrases. Complete Beginner Spanish Kit This three-in-one bundle compiles
-   three complementary Spanish books into a single volume. Together, they provide a comprehensive starting kit
-   for absolute beginners: one book covers pronunciation and basic grammar, another builds essential vocabulary
-   by topic, and the third provides survival phrases for travel and everyday situations. What You Get The grammar
-   book explains Spanish pronunciation rules, gender and articles, basic verb conjugation (present, past,
-   future), forming questions and negatives, and common sentence patterns. The vocabulary book organises 2,000+
-   essential words by theme. The phrase book provides ready-to-use expressions for greetings, shopping,
-   restaurants, hotels, transport, emergencies a...
-
---------------------------------------------------------------------------------
-61. Aprende inglés de una vez por todas en 10 pasos
-   book-id: aprende-ingles-de-una-vez-por-todas
-   category: english-learning-books, spanish-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A ten-step plan written in Spanish for Spanish speakers who have studied English for years without reaching
-   fluency, addressing the real obstacles to progress. Finally Master English — For Spanish Speakers Aprende
-   inglés de una vez por todas is written specifically for Spanish speakers who have studied English for years —
-   maybe decades — without reaching genuine fluency. The author identifies the common traps that keep
-   Spanish-speaking learners stuck and presents a clear ten-step plan to break through. The Ten Steps Each step
-   addresses a specific obstacle: pronunciation patterns that Spanish speakers struggle with, grammar structures
-   that differ fundamentally from Spanish, the vocabulary gap between classroom English and real English, the
-   fear of speaking, the habit of translating from Spanish instead of thinking in English, ineffective study
-   methods, and the lack of a consistent dail...
-
---------------------------------------------------------------------------------
-62. Aprender inglés — Los tiempos verbales
-   book-id: aprender-ingles-los-tiempos-verbales
-   category: english-learning-books, spanish-learning-books, grammar-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A focused grammar guide helping Spanish speakers master the English tense system by comparing it directly with
-   Spanish verb structures. English Tenses Explained for Spanish Speakers The English tense system is a major
-   source of confusion for Spanish speakers. Why does English have present simple AND present continuous when
-   Spanish often uses one form? When do you use present perfect versus simple past? What is the difference
-   between 'will' and 'going to'? This book answers these questions by comparing English structures directly with
-   their Spanish equivalents. Contrastive Approach For each English tense, the book shows the equivalent Spanish
-   structure, explains where the two languages match and where they differ, highlights the specific errors
-   Spanish speakers typically make, and provides exercises with detailed answer explanations. This contrastive
-   approach is far more efficient than...
-
---------------------------------------------------------------------------------
-63. Curso Completo De Inglés
-   book-id: curso-completo-de-ingles
-   category: english-learning-books, spanish-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A complete, structured English course written entirely in Spanish, taking learners from beginner through
-   upper-intermediate with grammar, vocabulary and skills practice. A Full English Course in Spanish Curso
-   Completo De Inglés is a comprehensive English course written entirely in Spanish, designed for Spanish
-   speakers studying independently. It takes learners from absolute beginner through to upper-intermediate level
-   with a structured sequence of lessons covering grammar, vocabulary, reading, listening and speaking. Course
-   Structure The course progresses systematically: early lessons cover the alphabet, pronunciation, greetings,
-   numbers, basic vocabulary and present tense. Intermediate lessons introduce all past and future tenses,
-   modals, conditionals, passive voice and more complex vocabulary. Upper-intermediate lessons tackle phrasal
-   verbs, idioms, advanced grammar and academic voc...
-
---------------------------------------------------------------------------------
-64. 500 frases en inglés realmente útiles
-   book-id: 500-frases-en-ingles-realmente-utiles
-   category: english-learning-books, spanish-learning-books
-   WHAT TO INCLUDE IN THIS PDF:
-   500 genuinely useful English phrases with Spanish translations, organized by everyday situations for immediate
-   practical use. Phrases You Will Actually Use 500 frases en inglés realmente útiles lives up to its name —
-   every phrase was selected for genuine, frequent usefulness in daily English communication. No obscure literary
-   expressions, no phrases you will never need — just the 500 most practical expressions for real life. Organized
-   by Situation Phrases are grouped by the situations where you need them: workplace and meetings, travel and
-   airports, restaurants and ordering food, shopping, making phone calls, socialising and small talk, expressing
-   opinions, asking for help, handling problems and complaints, health and emergencies, and everyday interaction
-   with neighbours, colleagues and strangers. Bilingual and Ready to Use Each phrase appears in English with its
-   Spanish translation, ...
-
---------------------------------------------------------------------------------
-65. Dígalo Correctamente en Inglés
+11. Dígalo Correctamente en Inglés
    book-id: digalo-correctamente-en-ingles
    category: english-learning-books, spanish-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -966,7 +169,7 @@ Total: 124 books
    error, the book shows the inc...
 
 --------------------------------------------------------------------------------
-66. Gramática Inglesa (Francisco Sánchez Benedito)
+12. Gramática Inglesa (Francisco Sánchez Benedito)
    book-id: gramatica-inglesa-sanchez-benedito
    category: english-learning-books, spanish-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -981,7 +184,7 @@ Total: 124 books
    prepositions, conjunctions and sentence structure. Written for S...
 
 --------------------------------------------------------------------------------
-67. Phrasal Verb Fun
+13. Phrasal Verb Fun
    book-id: phrasal-verb-fun
    category: kids-learning-books, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -996,7 +199,7 @@ Total: 124 books
    children aged 8–12 learning Engl...
 
 --------------------------------------------------------------------------------
-68. Grammar Practice Grades 3-4
+14. Grammar Practice Grades 3-4
    book-id: grammar-practice-grades-3-4
    category: kids-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1011,7 +214,7 @@ Total: 124 books
    making them ideal for daily homework, morning...
 
 --------------------------------------------------------------------------------
-69. My English Book One
+15. My English Book One
    book-id: my-english-book-one
    category: kids-learning-books, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1026,7 +229,7 @@ Total: 124 books
    successful. For Schools...
 
 --------------------------------------------------------------------------------
-70. Fairyland Pupil's Book 1
+16. Fairyland Pupil's Book 1
    book-id: fairyland-pupil-book-1
    category: kids-learning-books, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1041,7 +244,7 @@ Total: 124 books
    Teaching Package The course inc...
 
 --------------------------------------------------------------------------------
-71. Comprehension Student Book for 4 Year
+17. Comprehension Student Book for 4 Year
    book-id: comprehension-student-book-4-year
    category: kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1056,7 +259,7 @@ Total: 124 books
    demands they will face when they start scho...
 
 --------------------------------------------------------------------------------
-72. The Complete Book of Alphabet
+18. The Complete Book of Alphabet
    book-id: complete-book-of-alphabet
    category: kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1071,7 +274,7 @@ Total: 124 books
    Foundation for Reading Letter kn...
 
 --------------------------------------------------------------------------------
-73. One Story a Day
+19. One Story a Day
    book-id: one-story-a-day
    category: kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1086,7 +289,7 @@ Total: 124 books
    are appropriate for children ro...
 
 --------------------------------------------------------------------------------
-74. Initial Sounds Picture Cards
+20. Initial Sounds Picture Cards
    book-id: initial-sounds-picture-cards
    category: kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1101,7 +304,7 @@ Total: 124 books
    daily in phonics lessons, learning cent...
 
 --------------------------------------------------------------------------------
-75. Easy English with Games and Activities 2
+21. Easy English with Games and Activities 2
    book-id: easy-english-with-games-and-activities-2
    category: kids-learning-books, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1116,7 +319,7 @@ Total: 124 books
    Suitable for classroom use as supplementary ma...
 
 --------------------------------------------------------------------------------
-76. Easy English with Games and Activities 1
+22. Easy English with Games and Activities 1
    book-id: easy-english-with-games-and-activities-1
    category: kids-learning-books, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1131,7 +334,7 @@ Total: 124 books
    beginning — an attitude that supports long-ter...
 
 --------------------------------------------------------------------------------
-77. My First Grammar 3
+23. My First Grammar 3
    book-id: my-first-grammar-3
    category: kids-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1146,7 +349,7 @@ Total: 124 books
    English Course My First Grammar 3 works...
 
 --------------------------------------------------------------------------------
-78. All in One Reading Passages
+24. All in One Reading Passages
    book-id: all-in-one-reading-passages
    category: kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1161,7 +364,7 @@ Total: 124 books
    children. The diverse topics keep inte...
 
 --------------------------------------------------------------------------------
-79. Just for Kids — Grammar
+25. Just for Kids — Grammar
    book-id: just-for-kids-grammar
    category: kids-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1176,7 +379,7 @@ Total: 124 books
    for homework, summer review or homeschoo...
 
 --------------------------------------------------------------------------------
-80. Alphabet Activities
+26. Alphabet Activities
    book-id: alphabet-activities
    category: kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1191,7 +394,7 @@ Total: 124 books
    activities to mat...
 
 --------------------------------------------------------------------------------
-81. Beginning Sounds
+27. Beginning Sounds
    book-id: beginning-sounds
    category: kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1206,7 +409,7 @@ Total: 124 books
    letters, and sorting pictures by...
 
 --------------------------------------------------------------------------------
-82. Mindfulness Exercises For Kids
+28. Mindfulness Exercises For Kids
    book-id: mindfulness-exercises-for-kids
    category: kids-learning-books, self-grooming-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1221,7 +424,7 @@ Total: 124 books
    designed to be enjoyable rather than clin...
 
 --------------------------------------------------------------------------------
-83. Kid Confidence
+29. Kid Confidence
    book-id: kid-confidence
    category: kids-learning-books, self-grooming-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1236,7 +439,7 @@ Total: 124 books
    Practical Each chapter combines resear...
 
 --------------------------------------------------------------------------------
-84. Junior Maker
+30. Junior Maker
    book-id: junior-maker
    category: kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1251,7 +454,7 @@ Total: 124 books
    extensions, and safety notes where relevant. Develop...
 
 --------------------------------------------------------------------------------
-85. How to Talk So Kids Will Listen & Listen So Kids Will Talk
+31. How to Talk So Kids Will Listen & Listen So Kids Will Talk
    book-id: how-to-talk-so-kids-will-listen
    category: kids-learning-books, self-grooming-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1266,7 +469,7 @@ Total: 124 books
    expectations, offering restitution), encouragin...
 
 --------------------------------------------------------------------------------
-86. How To Talk So Kids Can Learn
+32. How To Talk So Kids Can Learn
    book-id: how-to-talk-so-kids-can-learn
    category: kids-learning-books, self-grooming-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1281,7 +484,7 @@ Total: 124 books
    and Teachers Written for both parents and...
 
 --------------------------------------------------------------------------------
-87. Green Eggs and Ham
+33. Green Eggs and Ham
    book-id: green-eggs-and-ham
    category: kids-learning-books, literature-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1296,7 +499,7 @@ Total: 124 books
    humorous story teaches an important lesson: try new...
 
 --------------------------------------------------------------------------------
-88. Goldilocks and the Three Bears
+34. Goldilocks and the Three Bears
    book-id: goldilocks-and-the-three-bears
    category: kids-learning-books, literature-books, stories-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1311,7 +514,7 @@ Total: 124 books
    This edition retells the traditional sto...
 
 --------------------------------------------------------------------------------
-89. 25 Wacky Wonderful Stories That Boost Vocabulary
+35. 25 Wacky Wonderful Stories That Boost Vocabulary
    book-id: 25-wacky-wonderful-stories
    category: kids-learning-books, vocabulary-books, stories-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1326,7 +529,7 @@ Total: 124 books
    Upper-Elementary Students Aimed at c...
 
 --------------------------------------------------------------------------------
-90. 150 Totally Terrific Writing Prompts (Grade 2-4)
+36. 150 Totally Terrific Writing Prompts (Grade 2-4)
    book-id: 150-totally-terrific-writing-prompts
    category: kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1341,7 +544,7 @@ Total: 124 books
    important factor in developing wri...
 
 --------------------------------------------------------------------------------
-91. Goethe-Zertifikat B1 — Wortschatz (Deutschprüfung)
+37. Goethe-Zertifikat B1 — Wortschatz (Deutschprüfung)
    book-id: goethe-zertifikat-b1-wortschatz
    category: german-learning-books, deutsch-books, vocabulary-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1356,7 +559,7 @@ Total: 124 books
    Essential for Exam Preparatio...
 
 --------------------------------------------------------------------------------
-92. IELTS Academic Practice Tests Guide
+38. IELTS Academic Practice Tests Guide
    book-id: ielts-academic-practice-tests-guide
    category: ielts-preparation, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1370,7 +573,7 @@ Total: 124 books
    bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-93. IELTS Writing Task 1 and 2 Complete Guide
+39. IELTS Writing Task 1 and 2 Complete Guide
    book-id: ielts-writing-task-1-and-2-guide
    category: ielts-preparation
    WHAT TO INCLUDE IN THIS PDF:
@@ -1382,7 +585,7 @@ Total: 124 books
    obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-94. IELTS Speaking Practice Question Bank
+40. IELTS Speaking Practice Question Bank
    book-id: ielts-speaking-practice-question-bank
    category: ielts-preparation
    WHAT TO INCLUDE IN THIS PDF:
@@ -1394,7 +597,7 @@ Total: 124 books
    obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-95. IELTS Vocabulary Builder 3000 Words
+41. IELTS Vocabulary Builder 3000 Words
    book-id: ielts-vocabulary-builder-3000-words
    category: ielts-preparation, vocabulary-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1406,7 +609,7 @@ Total: 124 books
    official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-96. IELTS Listening Practice Guide
+42. IELTS Listening Practice Guide
    book-id: ielts-listening-practice-guide
    category: ielts-preparation
    WHAT TO INCLUDE IN THIS PDF:
@@ -1418,7 +621,7 @@ Total: 124 books
    bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-97. CSS English Essay Writing Guide
+43. CSS English Essay Writing Guide
    book-id: css-english-essay-writing-guide
    category: css-pms-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1430,7 +633,7 @@ Total: 124 books
    materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-98. CSS Current Affairs Preparation
+44. CSS Current Affairs Preparation
    book-id: css-current-affairs-preparation
    category: css-pms-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1442,7 +645,7 @@ Total: 124 books
    materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-99. CSS General Knowledge Guide
+45. CSS General Knowledge Guide
    book-id: css-general-knowledge-guide
    category: css-pms-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1454,7 +657,7 @@ Total: 124 books
    complete preparation.
 
 --------------------------------------------------------------------------------
-100. PMS Punjab Exam Preparation
+46. PMS Punjab Exam Preparation
    book-id: pms-punjab-exam-preparation
    category: css-pms-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1466,7 +669,7 @@ Total: 124 books
    complete preparation.
 
 --------------------------------------------------------------------------------
-101. CSS English Precis Writing Guide
+47. CSS English Precis Writing Guide
    book-id: css-english-precis-writing-guide
    category: css-pms-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1478,7 +681,7 @@ Total: 124 books
    bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-102. Matric English Grammar Complete
+48. Matric English Grammar Complete
    book-id: matric-english-grammar-complete
    category: matric-fsc-notes, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1490,7 +693,7 @@ Total: 124 books
    complete preparation.
 
 --------------------------------------------------------------------------------
-103. FSc Physics Short Questions
+49. FSc Physics Short Questions
    book-id: fsc-physics-short-questions
    category: matric-fsc-notes
    WHAT TO INCLUDE IN THIS PDF:
@@ -1501,7 +704,7 @@ Total: 124 books
    study, then obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-104. Matric Biology Notes Guide
+50. Matric Biology Notes Guide
    book-id: matric-biology-notes-guide
    category: matric-fsc-notes, kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1512,7 +715,7 @@ Total: 124 books
    obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-105. FSc Chemistry Important Questions
+51. FSc Chemistry Important Questions
    book-id: fsc-chemistry-important-questions
    category: matric-fsc-notes
    WHAT TO INCLUDE IN THIS PDF:
@@ -1523,7 +726,7 @@ Total: 124 books
    official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-106. Matric Mathematics Solved Guide
+52. Matric Mathematics Solved Guide
    book-id: matric-mathematics-solved-guide
    category: matric-fsc-notes
    WHAT TO INCLUDE IN THIS PDF:
@@ -1534,7 +737,7 @@ Total: 124 books
    obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-107. The Sealed Nectar — Prophet Biography
+53. The Sealed Nectar — Prophet Biography
    book-id: the-sealed-nectar-prophet-biography
    category: islamic-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1546,7 +749,7 @@ Total: 124 books
    obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-108. Islam The Natural Way
+54. Islam The Natural Way
    book-id: islam-the-natural-way
    category: islamic-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1557,7 +760,7 @@ Total: 124 books
    then obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-109. Arabic for Beginners Guide
+55. Arabic for Beginners Guide
    book-id: arabic-for-beginners-guide
    category: islamic-books, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1568,7 +771,7 @@ Total: 124 books
    obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-110. Islamic History Timeline
+56. Islamic History Timeline
    book-id: islamic-history-timeline
    category: islamic-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1580,7 +783,7 @@ Total: 124 books
    preparation.
 
 --------------------------------------------------------------------------------
-111. Quran Translation Guide English
+57. Quran Translation Guide English
    book-id: quran-translation-guide-english
    category: islamic-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1591,7 +794,7 @@ Total: 124 books
    official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-112. Python Programming Beginner Guide
+58. Python Programming Beginner Guide
    book-id: python-programming-beginner-guide
    category: programming-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1602,7 +805,7 @@ Total: 124 books
    study, then obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-113. HTML CSS Web Design Basics
+59. HTML CSS Web Design Basics
    book-id: html-css-web-design-basics
    category: programming-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1613,7 +816,7 @@ Total: 124 books
    official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-114. JavaScript Fundamentals Guide
+60. JavaScript Fundamentals Guide
    book-id: javascript-fundamentals-guide
    category: programming-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1624,7 +827,7 @@ Total: 124 books
    exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-115. Git Version Control Guide
+61. Git Version Control Guide
    book-id: git-version-control-guide
    category: programming-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1635,7 +838,7 @@ Total: 124 books
    publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-116. SQL Database Beginner Guide
+62. SQL Database Beginner Guide
    book-id: sql-database-beginner-guide
    category: programming-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1646,7 +849,7 @@ Total: 124 books
    bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-117. O Level English Language Guide
+63. O Level English Language Guide
    book-id: o-level-english-language-guide
    category: o-level-a-level, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1657,7 +860,7 @@ Total: 124 books
    publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-118. A Level Biology Study Guide
+64. A Level Biology Study Guide
    book-id: a-level-biology-study-guide
    category: o-level-a-level
    WHAT TO INCLUDE IN THIS PDF:
@@ -1668,7 +871,7 @@ Total: 124 books
    bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-119. O Level Mathematics Guide
+65. O Level Mathematics Guide
    book-id: o-level-mathematics-guide
    category: o-level-a-level
    WHAT TO INCLUDE IN THIS PDF:
@@ -1679,7 +882,7 @@ Total: 124 books
    bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-120. Cambridge IGCSE Preparation
+66. Cambridge IGCSE Preparation
    book-id: cambridge-igcse-preparation
    category: o-level-a-level
    WHAT TO INCLUDE IN THIS PDF:
@@ -1690,7 +893,7 @@ Total: 124 books
    publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-121. A Level Psychology Notes
+67. A Level Psychology Notes
    book-id: a-level-psychology-notes
    category: o-level-a-level
    WHAT TO INCLUDE IN THIS PDF:
@@ -1701,7 +904,7 @@ Total: 124 books
    bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-122. Acres of Diamonds
+68. Acres of Diamonds
    book-id: acres-of-diamonds
    category: self-development-books, self-grooming-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1712,7 +915,7 @@ Total: 124 books
    obtain official materials from trusted publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-123. The Science of Getting Rich
+69. The Science of Getting Rich
    book-id: the-science-of-getting-rich
    category: self-development-books
    WHAT TO INCLUDE IN THIS PDF:
@@ -1723,7 +926,7 @@ Total: 124 books
    publishers and exam bodies for complete preparation.
 
 --------------------------------------------------------------------------------
-124. Self Reliance — Ralph Emerson
+70. Self Reliance — Ralph Emerson
    book-id: self-reliance-ralph-emerson
    category: self-development-books, literature-books
    WHAT TO INCLUDE IN THIS PDF:
