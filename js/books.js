@@ -1232,6 +1232,7 @@ const BOOKS = [
   },
   {
     "id": "kinderleichte-grammatik-die-vier-falle",
+    "author": "Mubashir Mehdi",
     "title": "Kinderleichte Grammatik — Die vier Fälle",
     "categories": [
       "german-learning-books",
@@ -1240,7 +1241,10 @@ const BOOKS = [
       "grammar-books"
     ],
     "cover": "grammar",
-    "excerpt": "A child-friendly and visual explanation of the four German grammatical cases (Nominativ, Akkusativ, Dativ, Genitiv) with colourful exercises.",
+    "pdf": "downloads/kinderleichte-grammatik-die-vier-falle.pdf",
+    "pdfDirect": true,
+    "pageCount": 28,
+    "excerpt": "Original LifeWithBooks guide — A child-friendly and visual explanation of the four German grammatical cases (Nominativ, Akkusativ, Dativ, Genitiv) with colourful exercises.",
     "description": [
       "## The Four Cases Made Simple",
       "The German case system — Nominativ, Akkusativ, Dativ and Genitiv — is one of the most challenging aspects of German grammar for both children and adult learners. Kinderleichte Grammatik simplifies each case with colourful diagrams, memorable rules, question techniques (Wer? Wen? Wem? Wessen?) and plenty of practice exercises.",
@@ -1249,8 +1253,8 @@ const BOOKS = [
       "## For Children and Beginning Adult Learners",
       "While designed for German school children, this book has become popular with adult learners of German who appreciate its clear, visual approach to a topic that traditional grammar books often make unnecessarily complicated."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
     "coverImage": "covers/kinderleichte-grammatik-die-vier-falle.svg"
   },
   {
@@ -1276,6 +1280,7 @@ const BOOKS = [
   },
   {
     "id": "grammatik-konversation-1-arbeitsblatter",
+    "author": "Mubashir Mehdi",
     "title": "Grammatik Konversation 1 — Arbeitsblätter",
     "categories": [
       "german-learning-books",
@@ -1283,7 +1288,10 @@ const BOOKS = [
       "grammar-books"
     ],
     "cover": "grammar",
-    "excerpt": "Photocopiable worksheets that combine German grammar practice with conversation, turning structure drills into communicative pair and group activities.",
+    "pdf": "downloads/grammatik-konversation-1-arbeitsblatter.pdf",
+    "pdfDirect": true,
+    "pageCount": 32,
+    "excerpt": "Original LifeWithBooks guide — Photocopiable worksheets that combine German grammar practice with conversation, turning structure drills into communicative pair and group activities.",
     "description": [
       "## Grammar That Gets You Talking",
       "Grammatik Konversation 1 solves a common teaching problem: grammar practice that is boring and disconnected from real communication. Each worksheet introduces a grammar structure and immediately puts it to work in pair and group conversation tasks where learners must use the structure to exchange real information.",
@@ -1292,11 +1300,13 @@ const BOOKS = [
       "## Ready to Use in Class",
       "Worksheets are photocopiable, clearly laid out and require minimal preparation. Instructions for teachers are included. A favourite resource of many German teachers who want their grammar practice to be communicative, engaging and productive."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/grammatik-konversation-1-arbeitsblatter.jpg"
   },
   {
     "id": "deutsche-grammatik-de-gruyter-lexikon",
+    "author": "Mubashir Mehdi",
     "title": "Deutsche Grammatik (de Gruyter Lexikon)",
     "categories": [
       "german-learning-books",
@@ -1304,7 +1314,10 @@ const BOOKS = [
       "grammar-books"
     ],
     "cover": "grammar",
-    "excerpt": "A thorough, linguistically precise reference grammar of German from the academic publisher de Gruyter, aimed at students, teachers and translators.",
+    "pdf": "downloads/deutsche-grammatik-de-gruyter-lexikon.pdf",
+    "pdfDirect": true,
+    "pageCount": 29,
+    "excerpt": "Original LifeWithBooks guide — A thorough, linguistically precise reference grammar of German from the academic publisher de Gruyter, aimed at students, teachers and translators.",
     "description": [
       "## An Authoritative German Grammar Reference",
       "Deutsche Grammatik from de Gruyter Lexikon is a comprehensive reference work describing the grammar of the German language with academic precision. Published by one of the most respected names in German-language academic publishing, it provides thorough coverage of morphology, syntax and word formation.",
@@ -1313,8 +1326,9 @@ const BOOKS = [
       "## For Serious Students of German",
       "This is not a learner grammar — it is a reference grammar for university students of German linguistics, German teachers who want deep understanding of the rules they teach, translators working with complex German texts, and advanced learners at C1–C2 level who want authoritative answers to difficult grammar questions."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/deutsche-grammatik-de-gruyter-lexikon.jpg"
   },
   {
     "id": "learn-dutch-in-7-days",
@@ -1342,13 +1356,17 @@ const BOOKS = [
   },
   {
     "id": "teachers-grammar-book-james-williams",
+    "author": "Mubashir Mehdi",
     "title": "The Teacher's Grammar Book — 2nd Edition",
     "categories": [
       "english-learning-books",
       "grammar-books"
     ],
     "cover": "grammar",
-    "excerpt": "James D. Williams' comprehensive introduction to English grammar for language teachers, blending traditional grammar with modern linguistic insights.",
+    "pdf": "downloads/teachers-grammar-book-james-williams.pdf",
+    "pdfDirect": true,
+    "pageCount": 22,
+    "excerpt": "Original LifeWithBooks guide — James D. Williams' comprehensive introduction to English grammar for language teachers, blending traditional grammar with modern linguistic insights.",
     "description": [
       "## Grammar Knowledge for Teachers",
       "The Teacher's Grammar Book by James D. Williams is designed for current and future language teachers who need a strong working knowledge of English grammar. It goes beyond simple rule memorisation to develop genuine understanding of how English grammar works — the kind of understanding that allows teachers to explain rules clearly, answer unexpected questions confidently, and help students develop grammar intuitions.",
@@ -1357,8 +1375,9 @@ const BOOKS = [
       "## Practical Teaching Focus",
       "Throughout, the book connects grammar knowledge to classroom application: how to explain grammar points effectively, how to design activities that develop grammatical competence, common student errors and their sources, and the relationship between grammar instruction and writing development. Discussion questions and activities at the end of each chapter make it suitable for teacher training courses."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/teachers-grammar-book-james-williams.jpg"
   },
   {
     "id": "learn-german-fast-48-hours",
@@ -1387,13 +1406,17 @@ const BOOKS = [
   },
   {
     "id": "so-gehts-zu-b2",
+    "author": "Mubashir Mehdi",
     "title": "So geht's zu B2 — Übungsbuch",
     "categories": [
       "german-learning-books",
       "deutsch-books"
     ],
     "cover": "german",
-    "excerpt": "A structured workbook that takes German learners step by step from B1 to B2 level with practice for reading, listening, writing and speaking.",
+    "pdf": "downloads/so-gehts-zu-b2.pdf",
+    "pdfDirect": true,
+    "pageCount": 30,
+    "excerpt": "Original LifeWithBooks guide — A structured workbook that takes German learners step by step from B1 to B2 level with practice for reading, listening, writing and speaking.",
     "description": [
       "## The Bridge from B1 to B2",
       "So geht's zu B2 is a comprehensive workbook designed to take learners from B1 to B2 level systematically. It combines language development (vocabulary, grammar, skills) with exam preparation, aligning its content with the demands of the Goethe-Zertifikat B2 and similar B2 examinations.",
@@ -1402,8 +1425,9 @@ const BOOKS = [
       "## Vocabulary and Grammar at B2",
       "Integrated vocabulary sections build the word range expected at B2 — approximately 4,000–5,000 words. Grammar focus areas include complex sentence structures, the subjunctive (Konjunktiv II), passive variations, participle constructions and academic connectors. Can be used alone or with a teacher."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/so-gehts-zu-b2.jpg"
   },
   {
     "id": "decoding-digital-leadership",
@@ -1431,12 +1455,16 @@ const BOOKS = [
   },
   {
     "id": "public-leadership",
+    "author": "Mubashir Mehdi",
     "title": "Public Leadership",
     "categories": [
       "business-books"
     ],
     "cover": "business",
-    "excerpt": "A comprehensive exploration of leadership theory and practice in the public sector, government agencies and non-profit organisations.",
+    "pdf": "downloads/public-leadership.pdf",
+    "pdfDirect": true,
+    "pageCount": 10,
+    "excerpt": "Original LifeWithBooks guide — A comprehensive exploration of leadership theory and practice in the public sector, government agencies and non-profit organisations.",
     "description": [
       "## Leading in the Public Sector",
       "Public Leadership provides a thorough exploration of what it takes to lead effectively in the public sector — in government agencies, public services, non-profit organisations and international institutions. Public sector leadership faces unique challenges: political accountability, limited resources, complex stakeholder environments, bureaucratic structures and the need to serve the public interest.",
@@ -1445,17 +1473,22 @@ const BOOKS = [
       "## Academic and Practical",
       "Drawing on academic research and real-world case studies, the book serves both students of public administration and practising public sector leaders. Recommended reading for policymakers, civil servants, community leaders and anyone leading organisations where the mission is public benefit rather than private profit."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/public-leadership.jpg"
   },
   {
     "id": "101-conversations-in-mexican-spanish",
+    "author": "Mubashir Mehdi",
     "title": "101 Conversations in Mexican Spanish",
     "categories": [
       "spanish-learning-books"
     ],
     "cover": "spanish",
-    "excerpt": "101 short, natural conversations in everyday Mexican Spanish featuring common slang, contractions and cultural references to build real comprehension.",
+    "pdf": "downloads/101-conversations-in-mexican-spanish.pdf",
+    "pdfDirect": true,
+    "pageCount": 30,
+    "excerpt": "Original LifeWithBooks guide — 101 short, natural conversations in everyday Mexican Spanish featuring common slang, contractions and cultural references to build real comprehension.",
     "description": [
       "## Real Mexican Spanish, Not Textbook Spanish",
       "101 Conversations in Mexican Spanish gives intermediate learners something most textbooks cannot: natural, realistic dialogues written the way Mexicans actually speak. Each conversation uses real slang, common contractions, regional expressions and the rhythm of everyday Mexican speech.",
@@ -1464,18 +1497,23 @@ const BOOKS = [
       "## Bridging the Comprehension Gap",
       "Many Spanish learners find that after studying textbook Spanish, they struggle to understand native speakers in real life. This book specifically targets that gap. By exposing you to the informal, fast-paced Spanish of Mexico through reading, it trains your brain to process natural speech patterns and prepares you for real conversations."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/101-conversations-in-mexican-spanish.jpg"
   },
   {
     "id": "collins-easy-learning-complete-spanish",
+    "author": "Mubashir Mehdi",
     "title": "Collins Easy Learning — Complete Spanish Grammar + Verbs + Vocabulary",
     "categories": [
       "spanish-learning-books",
       "grammar-books"
     ],
     "cover": "spanish",
-    "excerpt": "Collins' three-in-one Spanish reference combining comprehensive grammar, complete verb tables and thematic vocabulary in a single volume.",
+    "pdf": "downloads/collins-easy-learning-complete-spanish.pdf",
+    "pdfDirect": true,
+    "pageCount": 31,
+    "excerpt": "Original LifeWithBooks guide — Collins' three-in-one Spanish reference combining comprehensive grammar, complete verb tables and thematic vocabulary in a single volume.",
     "description": [
       "## Three Essential References in One",
       "This Collins compilation brings together three essential Spanish references: a complete grammar, a comprehensive verb guide and a thematic vocabulary. Having all three in a single volume means learners always have the answer at hand, whether the question is about grammar rules, verb conjugations or vocabulary.",
@@ -1484,8 +1522,9 @@ const BOOKS = [
       "## Verbs and Vocabulary Sections",
       "The verb section provides full conjugation tables for the most common Spanish verbs in all tenses, plus a list of irregular verbs with their patterns. The vocabulary section organises over 4,000 essential words by topic — home, family, food, travel, work, health, technology and more — making it easy to build vocabulary systematically."
     ],
-    "access": "summary",
-    "license": "reference"
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/collins-easy-learning-complete-spanish.jpg"
   },
   {
     "id": "learn-how-to-speak-spanish-in-30-days",
@@ -5930,12 +5969,16 @@ const BOOKS = [
   },
   {
     "id": "o-level-mathematics-guide",
+    "author": "Mubashir Mehdi",
     "title": "O Level Mathematics Guide",
     "categories": [
       "o-level-a-level"
     ],
     "cover": "kids",
-    "excerpt": "O Level Math topic checklist — algebra, geometry, trigonometry and statistics revision.",
+    "pdf": "downloads/o-level-mathematics-guide.pdf",
+    "pdfDirect": true,
+    "pageCount": 58,
+    "excerpt": "Original LifeWithBooks guide — O Level Math topic checklist — algebra, geometry, trigonometry and statistics revision.",
     "description": [
       "## About This Guide",
       "Breaks the syllabus into weekly revision blocks with calculator and non-calculator paper tips.",
@@ -5944,18 +5987,23 @@ const BOOKS = [
       "## How to Use This Resource",
       "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/o-level-mathematics-guide.jpg",
     "officialUrl": "https://www.cambridgeinternational.org/"
   },
   {
     "id": "cambridge-igcse-preparation",
+    "author": "Mubashir Mehdi",
     "title": "Cambridge IGCSE Preparation",
     "categories": [
       "o-level-a-level"
     ],
     "cover": "english",
-    "excerpt": "IGCSE study planning — subject selection, revision timetables and resource strategy.",
+    "pdf": "downloads/cambridge-igcse-preparation.pdf",
+    "pdfDirect": true,
+    "pageCount": 17,
+    "excerpt": "Original LifeWithBooks guide — IGCSE study planning — subject selection, revision timetables and resource strategy.",
     "description": [
       "## About This Guide",
       "Helps students balance multiple IGCSE subjects, use past papers effectively and manage stress during the exam season.",
@@ -5964,18 +6012,23 @@ const BOOKS = [
       "## How to Use This Resource",
       "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/cambridge-igcse-preparation.jpg",
     "officialUrl": "https://www.cambridgeinternational.org/"
   },
   {
     "id": "a-level-psychology-notes",
+    "author": "Mubashir Mehdi",
     "title": "A Level Psychology Notes",
     "categories": [
       "o-level-a-level"
     ],
     "cover": "self",
-    "excerpt": "A Level Psychology core studies overview — research methods, approaches and evaluation frameworks.",
+    "pdf": "downloads/a-level-psychology-notes.pdf",
+    "pdfDirect": true,
+    "pageCount": 14,
+    "excerpt": "Original LifeWithBooks guide — A Level Psychology core studies overview — research methods, approaches and evaluation frameworks.",
     "description": [
       "## About This Guide",
       "Summarises key studies, ethics and how to write evaluation paragraphs that earn AO marks.",
@@ -5984,19 +6037,24 @@ const BOOKS = [
       "## How to Use This Resource",
       "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/a-level-psychology-notes.jpg",
     "officialUrl": "https://www.cambridgeinternational.org/"
   },
   {
     "id": "acres-of-diamonds",
+    "author": "Mubashir Mehdi",
     "title": "Acres of Diamonds",
     "categories": [
       "self-development-books",
       "self-grooming-books"
     ],
     "cover": "self",
-    "excerpt": "Russell Conwell's classic lecture on finding opportunity where you already are — public-domain wisdom.",
+    "pdf": "downloads/acres-of-diamonds.pdf",
+    "pdfDirect": true,
+    "pageCount": 10,
+    "excerpt": "Original LifeWithBooks guide — Russell Conwell's classic lecture on finding opportunity where you already are — public-domain wisdom.",
     "description": [
       "## About This Guide",
       "Argues that wealth and success often lie in your own community and talents, not distant places. A motivational cornerstone of American self-help.",
@@ -6005,18 +6063,23 @@ const BOOKS = [
       "## How to Use This Resource",
       "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/acres-of-diamonds.jpg",
     "officialUrl": ""
   },
   {
     "id": "the-science-of-getting-rich",
+    "author": "Mubashir Mehdi",
     "title": "The Science of Getting Rich",
     "categories": [
       "self-development-books"
     ],
     "cover": "self",
-    "excerpt": "Wallace Wattles' 1910 prosperity classic — mindset, gratitude and purposeful action.",
+    "pdf": "downloads/the-science-of-getting-rich.pdf",
+    "pdfDirect": true,
+    "pageCount": 10,
+    "excerpt": "Original LifeWithBooks guide — Wallace Wattles' 1910 prosperity classic — mindset, gratitude and purposeful action.",
     "description": [
       "## About This Guide",
       "Presents a philosophy of creative thinking, efficient action and gratitude as foundations for financial and personal growth.",
@@ -6025,19 +6088,24 @@ const BOOKS = [
       "## How to Use This Resource",
       "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/the-science-of-getting-rich.jpg",
     "officialUrl": ""
   },
   {
     "id": "self-reliance-ralph-emerson",
+    "author": "Mubashir Mehdi",
     "title": "Self Reliance — Ralph Emerson",
     "categories": [
       "self-development-books",
       "literature-books"
     ],
     "cover": "self",
-    "excerpt": "Emerson's essential essay on independent thought, trust and nonconformity.",
+    "pdf": "downloads/self-reliance-ralph-emerson.pdf",
+    "pdfDirect": true,
+    "pageCount": 10,
+    "excerpt": "Original LifeWithBooks guide — Emerson's essential essay on independent thought, trust and nonconformity.",
     "description": [
       "## About This Guide",
       "A foundational American essay urging readers to trust inner conviction over social conformity — concise and quotable.",
@@ -6046,8 +6114,9 @@ const BOOKS = [
       "## How to Use This Resource",
       "Use this LifeWithBooks overview to plan your study, then obtain official materials from trusted publishers and exam bodies for complete preparation."
     ],
-    "access": "summary",
-    "license": "reference",
+    "access": "download",
+    "license": "original",
+    "coverImage": "covers-img/self-reliance-ralph-emerson.jpg",
     "officialUrl": ""
   }
 ];

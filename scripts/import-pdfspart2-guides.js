@@ -31,14 +31,58 @@ function listPart2Pdfs() {
   return fs.readdirSync(PART2).filter((f) => /\.pdf$/i.test(f));
 }
 
+/** Gemini / manual saves that do not match book-id — map filename → book id */
+const PDF_FILENAME_ALIASES = {
+  '101_Conversations_Mexican_Spanish.pdf': '101-conversations-in-mexican-spanish',
+  'Collins_Spanish_Guide.pdf': 'collins-easy-learning-complete-spanish',
+  'deutsche_grammatik_degruyter.pdf': 'deutsche-grammatik-de-gruyter-lexikon',
+  'grammatik_konversation_1.pdf': 'grammatik-konversation-1-arbeitsblatter',
+  'kinderleichte_grammatik_xxl.pdf': 'kinderleichte-grammatik-die-vier-falle',
+  'Public_Leadership_Book.pdf': 'public-leadership',
+  'So_gehts_zu_B2_Uebungsbuch.pdf': 'so-gehts-zu-b2',
+  'teachers_grammar_book_manual.pdf': 'teachers-grammar-book-james-williams',
+  'o_level_mathematics_guide.pdf': 'o-level-mathematics-guide',
+  'cambridge_igcse_comprehensive_preparation_guide.pdf': 'cambridge-igcse-preparation',
+  'a_level_psychology_comprehensive_notes.pdf': 'a-level-psychology-notes',
+  'acres_of_diamonds_comprehensive_guide.pdf': 'acres-of-diamonds',
+  'the_science_of_getting_rich_study_guide.pdf': 'the-science-of-getting-rich',
+  'self_reliance_comprehensive_study_guide.pdf': 'self-reliance-ralph-emerson',
+  '1500_Vocabulary_Words_by_Mubashir_Mehdi.pdf': '1500-vocabulary-words-for-speaking-english'
+};
+
+function pdfBookId(filename) {
+  if (PDF_FILENAME_ALIASES[filename]) return PDF_FILENAME_ALIASES[filename];
+  const base = filename.replace(/\.pdf$/i, '').replace(/^pdfs_pdfspart2_/i, '');
+  return base;
+}
+
 function pdfBaseName(filename) {
-  return filename.replace(/\.pdf$/i, '').replace(/^pdfs_pdfspart2_/i, '');
+  return pdfBookId(filename);
 }
 
 function findSourcePdf(bookId, files) {
   const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
   const target = norm(bookId);
-  return files.find((f) => norm(pdfBaseName(f)) === target);
+  return files.find((f) => norm(pdfBookId(f)) === target);
+}
+
+function renameAliasedPdfs() {
+  const renamed = [];
+  for (const f of listPart2Pdfs()) {
+    const bookId = PDF_FILENAME_ALIASES[f];
+    if (!bookId) continue;
+    const to = bookId + '.pdf';
+    const from = path.join(PART2, f);
+    const dest = path.join(PART2, to);
+    if (fs.existsSync(dest) && path.resolve(from) !== path.resolve(dest)) {
+      console.warn('Skip rename — target exists:', to);
+      continue;
+    }
+    fs.renameSync(from, dest);
+    renamed.push({ from: f, to });
+    console.log('Renamed', f, '→', to);
+  }
+  return renamed;
 }
 
 function renamePrefixedPdfs() {
@@ -60,11 +104,10 @@ function renamePrefixedPdfs() {
 }
 
 function allImportableIds(files, books) {
+  const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
   const ids = [];
   for (const f of files) {
-    const base = pdfBaseName(f);
-    const norm = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
-    const book = books.find((b) => norm(b.id) === norm(base));
+    const book = books.find((b) => norm(b.id) === norm(pdfBookId(f)));
     if (book) ids.push(book.id);
   }
   return [...new Set(ids)];
@@ -185,6 +228,9 @@ function patchBookBlock(src, bookId, pageCount, setCover) {
 (async function main() {
   if (process.argv.includes('--rename-prefix')) {
     renamePrefixedPdfs();
+  }
+  if (process.argv.includes('--rename-aliases')) {
+    renameAliasedPdfs();
   }
 
   let ids = process.argv.slice(2).filter((a) => !a.startsWith('--'));
