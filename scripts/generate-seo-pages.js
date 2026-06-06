@@ -63,16 +63,36 @@ const CATEGORY_SEO = {
     heading: 'Free Vocabulary Ebooks'
   },
   'english-learning-books': {
-    pageTitle: 'English Learning Books (Free PDF) | LifeWithBooks',
-    metaDescription: 'Free English learning books and PDF guides on LifeWithBooks.',
-    intro: 'English learning books available to browse for free — courses, grammar, conversation practice and study guides.',
-    heading: 'English Learning Books'
+    pageTitle: 'English Learning Books PDF Free Download | LifeWithBooks',
+    metaDescription: 'English learning books PDF — free grammar, conversation, vocabulary and course guides. Free english books pdf download at lifewithbooks.co.',
+    intro: 'Browse english learning books PDF guides on LifeWithBooks — grammar, conversation practice, vocabulary and course overviews. Start your free english books pdf download today with no signup.',
+    heading: 'English Learning Books PDF'
   },
   'self-development-books': {
     pageTitle: 'Free Self Development Books PDF | LifeWithBooks',
-    metaDescription: 'Free self development books PDF — classic motivation, Stoicism, prosperity and personal growth titles on LifeWithBooks.',
-    intro: 'Build better habits with free self development books on LifeWithBooks — public-domain classics like As a Man Thinketh, The Art of War, Meditations and modern study guides for lifelong growth.',
+    metaDescription: 'Free self development books PDF and free business books PDF — motivation, leadership, prosperity and personal growth titles on LifeWithBooks.',
+    intro: 'Build better habits with free self development books and free business books PDF on LifeWithBooks — public-domain classics like As a Man Thinketh, Meditations, Scientific Advertising and modern study guides for lifelong growth.',
     heading: 'Self Development Books'
+  },
+  'business-books': {
+    pageTitle: 'Free Business Books PDF | Leadership & Management | LifeWithBooks',
+    metaDescription: 'Free business books PDF — leadership, management, marketing classics and study guides. Download a free business book overview on LifeWithBooks.',
+    intro: 'Looking for a free business book? Browse free business books PDF guides on LifeWithBooks — leadership, strategy, advertising and personal effectiveness classics you can read online before buying official editions.',
+    heading: 'Free Business Books PDF'
+  },
+  'german-learning-books': {
+    pageTitle: 'German Learning Books PDF | Deutsch Intensiv Wortschatz | LifeWithBooks',
+    metaDescription: 'German learning books PDF — Goethe exam guides, Deutsch Intensiv Wortschatz, grammar and vocabulary for A1–C1 learners on LifeWithBooks.',
+    intro: 'Learn German with free German learning books on LifeWithBooks — Goethe-Zertifikat preparation, Deutsch Intensiv Wortschatz vocabulary guides, grammar references and conversation practice for every level from A1 to C2.',
+    heading: 'German Learning Books',
+    extraIntro: '<p style="text-align:center;max-width:760px;margin:0 auto 30px;">Popular resources include <a href="../book/deutsch-intensiv-wortschatz-c1.html">Deutsch Intensiv Wortschatz C1</a>, Goethe B1 vocabulary, grammar lists and letter-writing practice — all browsable free on LifeWithBooks.</p>'
+  },
+  'deutsch-books': {
+    pageTitle: 'Deutsch Books PDF | German Language Learning | LifeWithBooks',
+    metaDescription: 'Deutsch books PDF — German grammar, Wortschatz and Goethe exam resources. Browse Deutsch Intensiv Wortschatz and more on LifeWithBooks.',
+    intro: 'Browse Deutsch books for German learners — grammar workbooks, Deutsch Intensiv Wortschatz vocabulary, Goethe exam practice sets and primary-school quizzes. Find structured overviews for every CEFR level.',
+    heading: 'Deutsch Books',
+    extraIntro: '<p style="text-align:center;max-width:760px;margin:0 auto 30px;">Advanced learners often search for <strong>Deutsch Intensiv Wortschatz</strong> — see our <a href="../book/deutsch-intensiv-wortschatz-c1.html">C1 vocabulary guide</a> plus Goethe B1/B2 Wortschatz and grammar references in this category.</p>'
   },
   'o-level-a-level': {
     pageTitle: 'Free O Level A Level Study Materials PDF | LifeWithBooks',
@@ -81,6 +101,56 @@ const CATEGORY_SEO = {
     heading: 'O Level & A Level'
   }
 };
+
+const BOOK_SEO = {
+  '30-topics-for-english-conversation': {
+    pageTitle: '30 Topics for English Conversation PDF | Free Download | LifeWithBooks',
+    h1: '30 Topics for English Conversation - Free PDF Guide',
+    metaDescription: 'Download 30 Topics for English Conversation PDF completely free. Perfect for IELTS speaking practice and everyday conversation. No signup at lifewithbooks.co',
+    extraHtml: '<p>Looking for a <strong>30 topics for English conversation PDF</strong>? You can download this LifeWithBooks guide instantly — no signup required. The <strong>30 topics for English conversation PDF</strong> covers everyday themes with vocabulary and sample answers for confident speaking.</p><p>Whether you need conversation practice for class, tutoring, or self-study, this free <strong>30 topics for English conversation PDF</strong> gives you ready-made discussion prompts you can use today.</p>',
+    faq: [
+      { q: 'Is 30 Topics for English Conversation available as PDF?', a: 'Yes — download the 30 Topics for English Conversation PDF free at lifewithbooks.co with one click. No signup needed.' },
+      { q: 'Is this book good for IELTS speaking?', a: 'Yes — the guide covers common IELTS speaking topics with questions, vocabulary and sample answers ideal for band 6+ practice.' }
+    ]
+  },
+  'ielts-vocabulary-builder-3000-words': {
+    pageTitle: 'IELTS 3000 Words PDF | Free Vocabulary Guide | LifeWithBooks',
+    h1: 'IELTS 3000 Words PDF — Vocabulary Builder Guide',
+    metaDescription: 'Download our IELTS 3000 words PDF study guide free. Thematic vocabulary for Academic IELTS Writing and Speaking — band 6.5+ word lists on LifeWithBooks.',
+    extraHtml: '<p>Searching for an <strong>IELTS 3000 words PDF</strong>? This LifeWithBooks vocabulary builder groups essential Academic Word List themes with collocations and review tips. Use this <strong>IELTS 3000 words PDF</strong> overview to plan systematic vocabulary growth for your exam.</p>'
+  },
+  'deutsch-intensiv-wortschatz-c1': {
+    pageTitle: 'Deutsch Intensiv Wortschatz C1 | German Vocabulary Guide | LifeWithBooks',
+    h1: 'Deutsch Intensiv Wortschatz — Advanced German C1 Vocabulary',
+    metaDescription: 'Deutsch Intensiv Wortschatz C1 vocabulary guide — intensive German word training for advanced learners, collocations and exam themes on LifeWithBooks.',
+    extraHtml: '<p><strong>Deutsch Intensiv Wortschatz</strong> is one of the most searched German vocabulary resources for C1 learners. This LifeWithBooks overview explains how thematic word sets, collocations and productive exercises in <strong>Deutsch Intensiv Wortschatz</strong> support advanced German study and Goethe C1 exam preparation.</p>'
+  }
+};
+
+function getBookSeo(book) {
+  return BOOK_SEO[book.id] || {};
+}
+
+function renderFaqHtml(faq) {
+  if (!faq || !faq.length) return '';
+  const items = faq.map(item =>
+    `<details class="faq-item"><summary>${esc(item.q)}</summary><p>${esc(item.a)}</p></details>`
+  ).join('\n      ');
+  return `<section class="book-faq"><h2>Frequently Asked Questions</h2>\n      ${items}\n    </section>`;
+}
+
+function renderFaqSchema(faq) {
+  if (!faq || !faq.length) return '';
+  return `<script type="application/ld+json">${JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map(item => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a }
+    }))
+  })}</script>`;
+}
 
 function escJson(s) {
   return JSON.stringify(s);
@@ -159,6 +229,10 @@ function fullGuideBannerHtml(book, p) {
 function renderBookPage(book, depth) {
   const p = depth === 0 ? '' : '../';
   const url = ORIGIN + '/book/' + encodeURIComponent(book.id) + '.html';
+  const seo = getBookSeo(book);
+  const pageTitle = seo.pageTitle || bookMetaTitle(book);
+  const metaDesc = seo.metaDescription || bookMetaDesc(book);
+  const h1 = seo.h1 || book.title;
   const primaryCat = book.categories[0] || 'literature-books';
   const catObj = CATEGORIES.find(c => c.slug === primaryCat);
   const catLabel = catObj ? catObj.label : 'Books';
@@ -171,13 +245,16 @@ function renderBookPage(book, depth) {
     if (line.indexOf('## ') === 0) return '<h2>' + esc(line.slice(3)) + '</h2>';
     return '<p>' + esc(line) + '</p>';
   }).join('\n      ');
+  const extraSeoHtml = seo.extraHtml || '';
+  const faqHtml = renderFaqHtml(seo.faq);
+  const faqSchema = renderFaqSchema(seo.faq);
   const extra = '<p>LifeWithBooks published this page on ' + today + '. Last updated ' + today + '.</p>';
   const jsonLd = `<script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'Book',
     name: book.title,
     author: { '@type': 'Person', name: author },
-    description: bookMetaDesc(book),
+    description: metaDesc,
     inLanguage: 'en',
     url: url,
     datePublished: today,
@@ -193,7 +270,7 @@ function renderBookPage(book, depth) {
       { '@type': 'ListItem', position: 2, name: catLabel, item: catUrl },
       { '@type': 'ListItem', position: 3, name: book.title, item: url }
     ]
-  })}</script>`;
+  })}</script>${faqSchema}`;
 
   const downloadNote = book.license === 'original'
     ? 'Original LifeWithBooks guide — free PDF you can keep and share.'
@@ -222,8 +299,8 @@ function renderBookPage(book, depth) {
   ).join('\n          ');
 
   return renderHead({
-    title: bookMetaTitle(book),
-    description: bookMetaDesc(book),
+    title: pageTitle,
+    description: metaDesc,
     canonical: url,
     ogType: 'book',
     image: ORIGIN + '/og/books/' + book.id + '.webp',
@@ -234,12 +311,13 @@ function renderBookPage(book, depth) {
   <main class="book-single" id="book-detail">
     <div class="breadcrumb"><a href="${p}index.html">Home</a> &raquo; <a href="${p}category/${primaryCat}.html">${esc(catLabel)}</a> &raquo; <span>${esc(book.title)}</span></div>
     ${cover}
-    <h1>${esc(book.title)}</h1>
+    <h1>${esc(h1)}</h1>
     <div class="meta"><span class="tag">${esc(author)}</span>${originalBadge}${pageTag}<span class="tag">${downloadable ? 'Free PDF Download' : 'Study Guide'}</span></div>
     ${leadHtml}
     ${fullGuideBannerHtml(book, p)}
-    <article class="article">${descHtml}${extra}</article>
+    <article class="article">${extraSeoHtml}${descHtml}${extra}</article>
     ${download}
+    ${faqHtml}
     <div class="related-posts"><h3>You Might Also Like</h3><ul>${relatedHtml}</ul></div>
   </main>
   <div id="site-footer-host"></div>
@@ -282,6 +360,7 @@ function renderCategoryPage(slug, depth) {
   const title = seo ? seo.pageTitle : cat.label + ' | LifeWithBooks';
   const desc = seo ? seo.metaDescription : 'Browse ' + cat.label + ' on LifeWithBooks.';
   const intro = seo ? seo.intro : 'Browse free books in ' + cat.label + ' on LifeWithBooks.';
+  const extraIntro = seo && seo.extraIntro ? seo.extraIntro : '';
   const heading = seo ? seo.heading : cat.label;
   const items = sortCategoryBooks(BOOKS.filter(b => b.categories.includes(slug)));
   const cards = items.map(b => categoryBookCard(b, p)).join('\n      ');
@@ -300,6 +379,7 @@ function renderCategoryPage(slug, depth) {
   <section class="section">
     <div class="section-title"><h1>${esc(heading)}</h1></div>
     <p style="text-align:center;max-width:760px;margin:0 auto 30px;">${esc(intro)}</p>
+    ${extraIntro}
     <div class="book-grid" id="category-grid">${cards || '<p style="text-align:center;">Books coming soon.</p>'}</div>
   </section>
   <div id="category-articles"></div>

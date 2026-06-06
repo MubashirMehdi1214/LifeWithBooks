@@ -6,7 +6,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 1. LONGMAN PHOTO DICTIONARY OF AMERICAN ENGLISH
    book-id: longman-photo-dictionary-american-english
-   save-as: pdfs/pdfspart2/longman-photo-dictionary-american-english.pdf
    category: english-learning-books, vocabulary-books
    WHAT TO INCLUDE IN THIS PDF:
    Over 2,500 American English words taught through vivid, real-life photographs organized into thematic chapters
@@ -22,7 +21,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 2. English Unlimited
    book-id: english-unlimited
-   save-as: pdfs/pdfspart2/english-unlimited.pdf
    category: english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    A six-level communicative English course from Cambridge designed for real-world international communication at
@@ -38,7 +36,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 3. Preposition Focus on Building Mastery
    book-id: preposition-focus-on-building-mastery
-   save-as: pdfs/pdfspart2/preposition-focus-on-building-mastery.pdf
    category: english-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    A focused workbook that systematically teaches English prepositions through clear rules, hundreds of examples
@@ -54,7 +51,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 4. Technical English
    book-id: technical-english
-   save-as: pdfs/pdfspart2/technical-english.pdf
    category: english-learning-books, business-books
    WHAT TO INCLUDE IN THIS PDF:
    A multi-level course building the specialised English vocabulary and communication skills needed in
@@ -70,7 +66,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 5. English for Meetings — Phrases, Expressions and One Case to Be Fluent in Meetings
    book-id: english-for-meetings-phrases-expressions
-   save-as: pdfs/pdfspart2/english-for-meetings-phrases-expressions.pdf
    category: english-learning-books, business-books
    WHAT TO INCLUDE IN THIS PDF:
    A practical phrase book containing ready-to-use expressions for every stage of an English-language business
@@ -86,7 +81,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 6. McGraw-Hill Conversational American English
    book-id: mcgraw-hill-conversational-american-english
-   save-as: pdfs/pdfspart2/mcgraw-hill-conversational-american-english.pdf
    category: english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    Over 3,000 idiomatic expressions and conversational patterns used in everyday American English, organized by
@@ -102,7 +96,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 7. English Vocabulary in Use — Upper Intermediate
    book-id: english-vocabulary-in-use-upper-intermediate
-   save-as: pdfs/pdfspart2/english-vocabulary-in-use-upper-intermediate.pdf
    category: english-learning-books, vocabulary-books
    WHAT TO INCLUDE IN THIS PDF:
    100 two-page units of upper-intermediate vocabulary from Cambridge, with clear explanations on the left and
@@ -118,7 +111,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 8. Practical English Usage
    book-id: practical-english-usage
-   save-as: pdfs/pdfspart2/practical-english-usage.pdf
    category: english-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    Michael Swan's authoritative A–Z reference covering over 600 points of English grammar, vocabulary and usage
@@ -134,7 +126,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 9. Spoken English Conversation Practice
    book-id: spoken-english-conversation-practice
-   save-as: pdfs/pdfspart2/spoken-english-conversation-practice.pdf
    category: english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    Structured daily conversation material for learners who can read and write English but struggle to speak
@@ -150,7 +141,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 10. English Phonetics and Phonology — An Introduction
    book-id: english-phonetics-and-phonology
-   save-as: pdfs/pdfspart2/english-phonetics-and-phonology.pdf
    category: english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    A clear academic introduction to the sound system of English: vowels, consonants, stress, rhythm, intonation
@@ -166,7 +156,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 11. Talk English — The Secret to Speak English
    book-id: talk-english-secret-to-speak-english
-   save-as: pdfs/pdfspart2/talk-english-secret-to-speak-english.pdf
    category: english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    A motivational and practical method for shy or stuck learners who want to finally break through and start
@@ -182,7 +171,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 12. How to Get Really Good at English
    book-id: how-to-get-really-good-at-english
-   save-as: pdfs/pdfspart2/how-to-get-really-good-at-english.pdf
    category: english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    A no-nonsense guide to effective English study habits, input choices and practice routines for learners who
@@ -198,7 +186,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 13. Learn How to Speak English Fluently — English Speaking Mastery in 7 Easy Steps
    book-id: learn-how-to-speak-english-fluently-7-easy-steps
-   save-as: pdfs/pdfspart2/learn-how-to-speak-english-fluently-7-easy-steps.pdf
    category: english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    A seven-step method that takes intermediate English learners from hesitant speech to fluent, confident
@@ -214,7 +201,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 14. Macmillan English Grammar in Context — Intermediate (1)
    book-id: macmillan-english-grammar-in-context-intermediate-1
-   save-as: pdfs/pdfspart2/macmillan-english-grammar-in-context-intermediate-1.pdf
    category: english-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    Intermediate English grammar taught through engaging real-world contexts including science, history, nature
@@ -230,7 +216,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 15. Fundamentals of English Grammar — Workbook
    book-id: fundamentals-of-english-grammar-workbook
-   save-as: pdfs/pdfspart2/fundamentals-of-english-grammar-workbook.pdf
    category: english-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    The companion workbook to Betty Azar's classic grammar series, providing extensive independent practice on all
@@ -246,7 +231,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 16. English in Everyday Life
    book-id: english-in-everyday-life
-   save-as: pdfs/pdfspart2/english-in-everyday-life.pdf
    category: english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    Practical, functional English for real daily situations — at the supermarket, the airport, the bank, the
@@ -262,7 +246,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 17. Black Book of English Vocabulary
    book-id: black-book-of-english-vocabulary
-   save-as: pdfs/pdfspart2/black-book-of-english-vocabulary.pdf
    category: english-learning-books, vocabulary-books
    WHAT TO INCLUDE IN THIS PDF:
    A high-yield vocabulary guide targeting the most frequently tested words in competitive English exams, with
@@ -278,7 +261,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 18. Improve Your Written English
    book-id: improve-your-written-english
-   save-as: pdfs/pdfspart2/improve-your-written-english.pdf
    category: english-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    A friendly, jargon-free guide to mastering grammar, punctuation, spelling and style for confident, clear
@@ -294,7 +276,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 19. Best English Grammar Book — Learn English Grammar
    book-id: best-english-grammar-book
-   save-as: pdfs/pdfspart2/best-english-grammar-book.pdf
    category: english-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    A comprehensive, learner-friendly English grammar course covering all major topics from tenses and articles to
@@ -310,7 +291,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 20. Why Has Nobody Told Me This Before?
    book-id: why-has-nobody-told-me-this-before
-   save-as: pdfs/pdfspart2/why-has-nobody-told-me-this-before.pdf
    category: self-grooming-books
    WHAT TO INCLUDE IN THIS PDF:
    Clinical psychologist Dr Julie Smith shares the most useful therapeutic tools for managing everyday emotional
@@ -326,7 +306,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 21. The Power of Your Subconscious Mind
    book-id: the-power-of-your-subconscious-mind
-   save-as: pdfs/pdfspart2/the-power-of-your-subconscious-mind.pdf
    category: self-grooming-books
    WHAT TO INCLUDE IN THIS PDF:
    Dr Joseph Murphy's classic guide to using belief, visualisation, affirmation and the power of the subconscious
@@ -342,7 +321,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 22. Surrounded by Idiots
    book-id: surrounded-by-idiots
-   save-as: pdfs/pdfspart2/surrounded-by-idiots.pdf
    category: self-grooming-books, business-books
    WHAT TO INCLUDE IN THIS PDF:
    Thomas Erikson's international bestseller explaining the four types of human behaviour (Red, Yellow, Green,
@@ -358,7 +336,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 23. 301 Expressions pour parler comme les Français
    book-id: 301-expressions-pour-parler-comme-les-francais
-   save-as: pdfs/pdfspart2/301-expressions-pour-parler-comme-les-francais.pdf
    category: french-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    301 authentic French idiomatic expressions and colloquial phrases that will make your spoken French sound
@@ -374,7 +351,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 24. 366 jours pour mieux vous exprimer en français
    book-id: 366-jours-pour-mieux-vous-exprimer-en-francais
-   save-as: pdfs/pdfspart2/366-jours-pour-mieux-vous-exprimer-en-francais.pdf
    category: french-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    One expert tip per day on French grammar, vocabulary, style and common mistakes — a year-long path to more
@@ -390,7 +366,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 25. 1600 proverbes pour briller et s'amuser en société
    book-id: 1600-proverbes-pour-briller
-   save-as: pdfs/pdfspart2/1600-proverbes-pour-briller.pdf
    category: french-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    A rich collection of 1,600 French proverbs, sayings and aphorisms drawn from centuries of French culture and
@@ -406,7 +381,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 26. Les 100 fautes de français les plus courantes — et comment les corriger
    book-id: les-100-fautes-de-francais-les-plus-courantes
-   save-as: pdfs/pdfspart2/les-100-fautes-de-francais-les-plus-courantes.pdf
    category: french-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    The 100 most common errors in written and spoken French, clearly explained with the correct form, the rule
@@ -422,7 +396,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 27. Rick Steves' French, Italian & German Phrase Book
    book-id: rick-steves-french-italian-german-phrase-book
-   save-as: pdfs/pdfspart2/rick-steves-french-italian-german-phrase-book.pdf
    category: french-learning-books, german-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    Essential travel phrases in French, Italian and German from popular travel author Rick Steves — three
@@ -438,7 +411,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 28. Easy Learning French Conversation
    book-id: easy-learning-french-conversation
-   save-as: pdfs/pdfspart2/easy-learning-french-conversation.pdf
    category: french-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    Collins' trusted guide to building everyday French conversation skills, with phrases organized by situation
@@ -454,7 +426,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 29. Learn French In A Hurry
    book-id: learn-french-in-a-hurry
-   save-as: pdfs/pdfspart2/learn-french-in-a-hurry.pdf
    category: french-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    A fast-track introduction to French essentials for travellers and beginners who need to learn the basics
@@ -470,7 +441,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 30. Practice Makes Perfect — French Pronouns and Prepositions
    book-id: practice-makes-perfect-french-pronouns-prepositions
-   save-as: pdfs/pdfspart2/practice-makes-perfect-french-pronouns-prepositions.pdf
    category: french-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    Dedicated practice on two of the trickiest areas of French grammar — pronouns (y, en, le, la, les, lui, leur,
@@ -486,7 +456,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 31. Apprendre à traduire
    book-id: apprendre-a-traduire
-   save-as: pdfs/pdfspart2/apprendre-a-traduire.pdf
    category: french-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    A guide to the craft of translation between French and other languages, covering analysis techniques, style
@@ -502,7 +471,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 32. L'étude pratique de la langue française
    book-id: letude-pratique-de-la-langue-francaise
-   save-as: pdfs/pdfspart2/letude-pratique-de-la-langue-francaise.pdf
    category: french-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    A classic French schoolbook covering grammar, spelling, vocabulary, comprehension and writing for
@@ -518,7 +486,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 33. Goethe-Zertifikat C2 — Großes Deutsches Sprachdiplom, Modellsatz
    book-id: goethe-zertifikat-c2-grosses-deutsches-sprachdiplom
-   save-as: pdfs/pdfspart2/goethe-zertifikat-c2-grosses-deutsches-sprachdiplom.pdf
    category: german-learning-books, deutsch-books
    WHAT TO INCLUDE IN THIS PDF:
    The official model exam for the highest Goethe-Institut certificate, showing exact task types, timing and
@@ -534,7 +501,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 34. Goethe-Zertifikat C1 Übungssatz 01 — Kandidatenblätter, Prüferblätter
    book-id: goethe-zertifikat-c1-ubungssatz-01
-   save-as: pdfs/pdfspart2/goethe-zertifikat-c1-ubungssatz-01.pdf
    category: german-learning-books, deutsch-books
    WHAT TO INCLUDE IN THIS PDF:
    Official practice set for the Goethe-Zertifikat C1 advanced German exam, including complete candidate papers
@@ -550,7 +516,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 35. Goethe-Zertifikat B2 — Prüfungsziele, Testbeschreibung
    book-id: goethe-zertifikat-b2-prufungsziele-testbeschreibung
-   save-as: pdfs/pdfspart2/goethe-zertifikat-b2-prufungsziele-testbeschreibung.pdf
    category: german-learning-books, deutsch-books
    WHAT TO INCLUDE IN THIS PDF:
    The official handbook describing the goals, structure, task types and assessment criteria of the
@@ -566,7 +531,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 36. Goethe-Zertifikat B2 Übungssatz 03 — Kandidaten- und Prüferblätter
    book-id: goethe-zertifikat-b2-ubungssatz-03
-   save-as: pdfs/pdfspart2/goethe-zertifikat-b2-ubungssatz-03.pdf
    category: german-learning-books, deutsch-books
    WHAT TO INCLUDE IN THIS PDF:
    The third official practice set for the Goethe-Zertifikat B2, providing a complete simulated exam with all
@@ -582,7 +546,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 37. Goethe-Zertifikat B1 — Deutschprüfung für Jugendliche und Erwachsene
    book-id: goethe-zertifikat-b1-deutschprufung
-   save-as: pdfs/pdfspart2/goethe-zertifikat-b1-deutschprufung.pdf
    category: german-learning-books, deutsch-books
    WHAT TO INCLUDE IN THIS PDF:
    Official preparation material for the modular B1 German exam, covering structure, strategies and practice for
@@ -598,7 +561,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 38. Goethe-Zertifikat B1 Übungssatz Erwachsene — Kandidaten- und Prüferblätter
    book-id: goethe-zertifikat-b1-ubungssatz-erwachsene
-   save-as: pdfs/pdfspart2/goethe-zertifikat-b1-ubungssatz-erwachsene.pdf
    category: german-learning-books, deutsch-books
    WHAT TO INCLUDE IN THIS PDF:
    The adult-focused official practice set for the B1 German exam with complete candidate and examiner materials.
@@ -614,7 +576,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 39. Goethe-Zertifikat A2 — Fit in Deutsch 2 für Jugendliche
    book-id: goethe-zertifikat-a2-fit-in-deutsch-2-jugendliche
-   save-as: pdfs/pdfspart2/goethe-zertifikat-a2-fit-in-deutsch-2-jugendliche.pdf
    category: german-learning-books, deutsch-books
    WHAT TO INCLUDE IN THIS PDF:
    Teen-friendly preparation material for the A2 Fit in Deutsch 2 exam, with age-appropriate texts, topics and a
@@ -630,7 +591,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 40. Goethe-Zertifikat A2 — Fit in Deutsch 2
    book-id: goethe-zertifikat-a2-fit-in-deutsch-2
-   save-as: pdfs/pdfspart2/goethe-zertifikat-a2-fit-in-deutsch-2.pdf
    category: german-learning-books, deutsch-books
    WHAT TO INCLUDE IN THIS PDF:
    Standard preparation book for the A2 Fit in Deutsch 2 exam, suitable for both school-age and adult learners at
@@ -646,7 +606,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 41. Goethe-Zertifikat A1 — Start Deutsch 1, Prüfungsziele, Testbeschreibung
    book-id: goethe-zertifikat-a1-prufungsziele
-   save-as: pdfs/pdfspart2/goethe-zertifikat-a1-prufungsziele.pdf
    category: german-learning-books, deutsch-books
    WHAT TO INCLUDE IN THIS PDF:
    Official handbook detailing the goals, structure and assessment of the A1 Start Deutsch 1 beginner
@@ -662,7 +621,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 42. Goethe-Zertifikat A1 — Fit in Deutsch 1 Übungssatz 01
    book-id: goethe-zertifikat-a1-fit-in-deutsch-1-ubungssatz-01
-   save-as: pdfs/pdfspart2/goethe-zertifikat-a1-fit-in-deutsch-1-ubungssatz-01.pdf
    category: german-learning-books, deutsch-books
    WHAT TO INCLUDE IN THIS PDF:
    Complete practice exam for the A1 Fit in Deutsch 1 youth exam, with candidate sheets, examiner sheets and
@@ -678,7 +636,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 43. Briefe schreiben und Bilder beschreiben A2 & B1
    book-id: briefe-schreiben-und-bilder-beschreiben
-   save-as: pdfs/pdfspart2/briefe-schreiben-und-bilder-beschreiben.pdf
    category: german-learning-books, deutsch-books
    WHAT TO INCLUDE IN THIS PDF:
    Targeted practice for two key German exam writing tasks: letter writing and picture description, with model
@@ -694,7 +651,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 44. Wörterbuch der Lebensmittel / Dictionary of Foods
    book-id: worterbuch-der-lebensmittel
-   save-as: pdfs/pdfspart2/worterbuch-der-lebensmittel.pdf
    category: german-learning-books, deutsch-books, vocabulary-books
    WHAT TO INCLUDE IN THIS PDF:
    A comprehensive bilingual German–English dictionary covering food terminology, ingredients, dishes, cooking
@@ -710,7 +666,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 45. Deutsch Intensiv — Wortschatz C1
    book-id: deutsch-intensiv-wortschatz-c1
-   save-as: pdfs/pdfspart2/deutsch-intensiv-wortschatz-c1.pdf
    category: german-learning-books, deutsch-books, vocabulary-books
    WHAT TO INCLUDE IN THIS PDF:
    Intensive vocabulary training for advanced German learners at C1 level, with thematic word sets, collocations,
@@ -724,25 +679,10 @@ Total: 124 books
    register variants, and academic vocabulary. A...
 
 --------------------------------------------------------------------------------
-46. Deutsch-Quiz 1. und 2. Klasse
-   book-id: deutsch-quiz-1-und-2-klasse
-   save-as: pdfs/pdfspart2/deutsch-quiz-1-und-2-klasse.pdf
-   category: german-learning-books, kids-learning-books, deutsch-books
-   WHAT TO INCLUDE IN THIS PDF:
-   A colourful quiz book introducing primary school children to basic German vocabulary, grammar and spelling
-   through games and puzzles. Learning German Through Play Deutsch-Quiz 1. und 2. Klasse makes learning German
-   fun for children in their first and second years of school. Instead of traditional exercises, it uses quizzes,
-   puzzles, matching games and colourful illustrations to teach and reinforce basic vocabulary, simple grammar
-   and early spelling skills. Age-Appropriate Content Quizzes cover the vocabulary and language skills taught in
-   the first two school years: alphabet and letter sounds, common nouns (animals, family, food, colours, body
-   parts, clothing), simple verbs and adjectives, basic sentence patterns, and spelling of common words. The
-   difficulty level is carefully matched to what children at this age can handle. For Home and Classroom Parents
-   can use it for playful revisio...
 
 --------------------------------------------------------------------------------
 47. Kinderleichte Grammatik — Die vier Fälle
    book-id: kinderleichte-grammatik-die-vier-falle
-   save-as: pdfs/pdfspart2/kinderleichte-grammatik-die-vier-falle.pdf
    category: german-learning-books, kids-learning-books, deutsch-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    A child-friendly and visual explanation of the four German grammatical cases (Nominativ, Akkusativ, Dativ,
@@ -758,7 +698,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 48. 40+ Grammatiklisten
    book-id: 40-grammatiklisten
-   save-as: pdfs/pdfspart2/40-grammatiklisten.pdf
    category: german-learning-books, deutsch-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    Over 40 quick-reference grammar lists summarising essential German rules — verb conjugations, prepositions,
@@ -774,7 +713,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 49. Grammatik Konversation 1 — Arbeitsblätter
    book-id: grammatik-konversation-1-arbeitsblatter
-   save-as: pdfs/pdfspart2/grammatik-konversation-1-arbeitsblatter.pdf
    category: german-learning-books, deutsch-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    Photocopiable worksheets that combine German grammar practice with conversation, turning structure drills into
@@ -790,7 +728,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 50. Deutsche Grammatik (de Gruyter Lexikon)
    book-id: deutsche-grammatik-de-gruyter-lexikon
-   save-as: pdfs/pdfspart2/deutsche-grammatik-de-gruyter-lexikon.pdf
    category: german-learning-books, deutsch-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    A thorough, linguistically precise reference grammar of German from the academic publisher de Gruyter, aimed
@@ -806,7 +743,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 51. Learn Dutch In 7 Days — The Ultimate Crash Course
    book-id: learn-dutch-in-7-days
-   save-as: pdfs/pdfspart2/learn-dutch-in-7-days.pdf
    category: german-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    A seven-day crash course covering the essentials of Dutch — pronunciation, basic grammar, survival vocabulary
@@ -822,7 +758,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 52. The Teacher's Grammar Book — 2nd Edition
    book-id: teachers-grammar-book-james-williams
-   save-as: pdfs/pdfspart2/teachers-grammar-book-james-williams.pdf
    category: english-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    James D. Williams' comprehensive introduction to English grammar for language teachers, blending traditional
@@ -838,7 +773,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 53. Learn German FAST — 48 Hours to Learning German
    book-id: learn-german-fast-48-hours
-   save-as: pdfs/pdfspart2/learn-german-fast-48-hours.pdf
    category: german-learning-books, deutsch-books
    WHAT TO INCLUDE IN THIS PDF:
    A two-day crash course in essential German covering pronunciation, key grammar, survival vocabulary, travel
@@ -854,7 +788,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 54. So geht's zu B2 — Übungsbuch
    book-id: so-gehts-zu-b2
-   save-as: pdfs/pdfspart2/so-gehts-zu-b2.pdf
    category: german-learning-books, deutsch-books
    WHAT TO INCLUDE IN THIS PDF:
    A structured workbook that takes German learners step by step from B1 to B2 level with practice for reading,
@@ -870,7 +803,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 55. Decoding Digital Leadership
    book-id: decoding-digital-leadership
-   save-as: pdfs/pdfspart2/decoding-digital-leadership.pdf
    category: business-books
    WHAT TO INCLUDE IN THIS PDF:
    A guide to leading teams and organisations effectively in the age of digital transformation, covering culture,
@@ -886,7 +818,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 56. Public Leadership
    book-id: public-leadership
-   save-as: pdfs/pdfspart2/public-leadership.pdf
    category: business-books
    WHAT TO INCLUDE IN THIS PDF:
    A comprehensive exploration of leadership theory and practice in the public sector, government agencies and
@@ -902,7 +833,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 57. 101 Conversations in Mexican Spanish
    book-id: 101-conversations-in-mexican-spanish
-   save-as: pdfs/pdfspart2/101-conversations-in-mexican-spanish.pdf
    category: spanish-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    101 short, natural conversations in everyday Mexican Spanish featuring common slang, contractions and cultural
@@ -918,7 +848,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 58. Collins Easy Learning — Complete Spanish Grammar + Verbs + Vocabulary
    book-id: collins-easy-learning-complete-spanish
-   save-as: pdfs/pdfspart2/collins-easy-learning-complete-spanish.pdf
    category: spanish-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    Collins' three-in-one Spanish reference combining comprehensive grammar, complete verb tables and thematic
@@ -934,7 +863,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 59. Learn How to Speak Spanish in 30 Days
    book-id: learn-how-to-speak-spanish-in-30-days
-   save-as: pdfs/pdfspart2/learn-how-to-speak-spanish-in-30-days.pdf
    category: spanish-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    A structured 30-day plan taking absolute beginners from zero to basic Spanish conversation through daily
@@ -950,7 +878,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 60. Spanish Language 3-in-1 Bundle — Spanish for Beginners
    book-id: spanish-language-3-in-1-bundle
-   save-as: pdfs/pdfspart2/spanish-language-3-in-1-bundle.pdf
    category: spanish-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    Three popular Spanish-for-beginners books combined into one comprehensive volume covering pronunciation,
@@ -966,7 +893,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 61. Aprende inglés de una vez por todas en 10 pasos
    book-id: aprende-ingles-de-una-vez-por-todas
-   save-as: pdfs/pdfspart2/aprende-ingles-de-una-vez-por-todas.pdf
    category: english-learning-books, spanish-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    A ten-step plan written in Spanish for Spanish speakers who have studied English for years without reaching
@@ -982,7 +908,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 62. Aprender inglés — Los tiempos verbales
    book-id: aprender-ingles-los-tiempos-verbales
-   save-as: pdfs/pdfspart2/aprender-ingles-los-tiempos-verbales.pdf
    category: english-learning-books, spanish-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    A focused grammar guide helping Spanish speakers master the English tense system by comparing it directly with
@@ -998,7 +923,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 63. Curso Completo De Inglés
    book-id: curso-completo-de-ingles
-   save-as: pdfs/pdfspart2/curso-completo-de-ingles.pdf
    category: english-learning-books, spanish-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    A complete, structured English course written entirely in Spanish, taking learners from beginner through
@@ -1014,7 +938,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 64. 500 frases en inglés realmente útiles
    book-id: 500-frases-en-ingles-realmente-utiles
-   save-as: pdfs/pdfspart2/500-frases-en-ingles-realmente-utiles.pdf
    category: english-learning-books, spanish-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    500 genuinely useful English phrases with Spanish translations, organized by everyday situations for immediate
@@ -1030,7 +953,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 65. Dígalo Correctamente en Inglés
    book-id: digalo-correctamente-en-ingles
-   save-as: pdfs/pdfspart2/digalo-correctamente-en-ingles.pdf
    category: english-learning-books, spanish-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    A targeted guide for Spanish speakers focusing on the specific English errors caused by interference from
@@ -1046,7 +968,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 66. Gramática Inglesa (Francisco Sánchez Benedito)
    book-id: gramatica-inglesa-sanchez-benedito
-   save-as: pdfs/pdfspart2/gramatica-inglesa-sanchez-benedito.pdf
    category: english-learning-books, spanish-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    One of the most widely used Spanish-language reference grammars of English, providing comprehensive coverage
@@ -1062,7 +983,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 67. Phrasal Verb Fun
    book-id: phrasal-verb-fun
-   save-as: pdfs/pdfspart2/phrasal-verb-fun.pdf
    category: kids-learning-books, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    A playful activity book introducing children to common English phrasal verbs through cartoons, stories, games
@@ -1078,7 +998,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 68. Grammar Practice Grades 3-4
    book-id: grammar-practice-grades-3-4
-   save-as: pdfs/pdfspart2/grammar-practice-grades-3-4.pdf
    category: kids-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    Age-appropriate grammar exercises for children in grades 3 and 4, covering parts of speech, sentence
@@ -1094,7 +1013,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 69. My English Book One
    book-id: my-english-book-one
-   save-as: pdfs/pdfspart2/my-english-book-one.pdf
    category: kids-learning-books, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    A first English coursebook for young learners aged 5–7, introducing the alphabet, basic vocabulary and simple
@@ -1110,7 +1028,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 70. Fairyland Pupil's Book 1
    book-id: fairyland-pupil-book-1
-   save-as: pdfs/pdfspart2/fairyland-pupil-book-1.pdf
    category: kids-learning-books, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    The first level of the popular Fairyland English series for very young learners, using fairy-tale characters,
@@ -1126,7 +1043,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 71. Comprehension Student Book for 4 Year
    book-id: comprehension-student-book-4-year
-   save-as: pdfs/pdfspart2/comprehension-student-book-4-year.pdf
    category: kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    Early reading comprehension activities for four-year-olds, building listening skills, vocabulary and the
@@ -1142,7 +1058,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 72. The Complete Book of Alphabet
    book-id: complete-book-of-alphabet
-   save-as: pdfs/pdfspart2/complete-book-of-alphabet.pdf
    category: kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    A comprehensive alphabet workbook teaching letter recognition, letter formation, phonics and early writing
@@ -1158,7 +1073,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 73. One Story a Day
    book-id: one-story-a-day
-   save-as: pdfs/pdfspart2/one-story-a-day.pdf
    category: kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    A collection providing one short, illustrated story for every day of the year, covering diverse themes and
@@ -1174,7 +1088,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 74. Initial Sounds Picture Cards
    book-id: initial-sounds-picture-cards
-   save-as: pdfs/pdfspart2/initial-sounds-picture-cards.pdf
    category: kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    Printable, colourful picture cards linking each letter of the alphabet to its initial sound — versatile tools
@@ -1190,7 +1103,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 75. Easy English with Games and Activities 2
    book-id: easy-english-with-games-and-activities-2
-   save-as: pdfs/pdfspart2/easy-english-with-games-and-activities-2.pdf
    category: kids-learning-books, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    Level-two English vocabulary and grammar practice through engaging games, puzzles and activities for young
@@ -1206,7 +1118,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 76. Easy English with Games and Activities 1
    book-id: easy-english-with-games-and-activities-1
-   save-as: pdfs/pdfspart2/easy-english-with-games-and-activities-1.pdf
    category: kids-learning-books, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    First-level English practice through games, puzzles, colouring and simple speaking activities for absolute
@@ -1222,7 +1133,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 77. My First Grammar 3
    book-id: my-first-grammar-3
-   save-as: pdfs/pdfspart2/my-first-grammar-3.pdf
    category: kids-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    Friendly, age-appropriate grammar practice for children at the upper-elementary level, covering tenses,
@@ -1238,7 +1148,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 78. All in One Reading Passages
    book-id: all-in-one-reading-passages
-   save-as: pdfs/pdfspart2/all-in-one-reading-passages.pdf
    category: kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    A diverse collection of short reading passages on many topics — science, history, nature, sports, art — each
@@ -1254,7 +1163,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 79. Just for Kids — Grammar
    book-id: just-for-kids-grammar
-   save-as: pdfs/pdfspart2/just-for-kids-grammar.pdf
    category: kids-learning-books, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    A grammar workbook designed entirely with young learners in mind — simple explanations, familiar examples,
@@ -1270,7 +1178,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 80. Alphabet Activities
    book-id: alphabet-activities
-   save-as: pdfs/pdfspart2/alphabet-activities.pdf
    category: kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    Hands-on alphabet activities for pre-school and early primary children — tracing, colouring, matching, sorting
@@ -1286,7 +1193,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 81. Beginning Sounds
    book-id: beginning-sounds
-   save-as: pdfs/pdfspart2/beginning-sounds.pdf
    category: kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    Phonics worksheets focused on identifying and writing the beginning sounds of common words — a foundation for
@@ -1302,7 +1208,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 82. Mindfulness Exercises For Kids
    book-id: mindfulness-exercises-for-kids
-   save-as: pdfs/pdfspart2/mindfulness-exercises-for-kids.pdf
    category: kids-learning-books, self-grooming-books
    WHAT TO INCLUDE IN THIS PDF:
    Simple, age-appropriate mindfulness exercises helping children focus, relax, manage emotions and build
@@ -1318,7 +1223,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 83. Kid Confidence
    book-id: kid-confidence
-   save-as: pdfs/pdfspart2/kid-confidence.pdf
    category: kids-learning-books, self-grooming-books
    WHAT TO INCLUDE IN THIS PDF:
    A psychology-based parenting guide helping children develop genuine self-esteem, make friends, build
@@ -1334,7 +1238,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 84. Junior Maker
    book-id: junior-maker
-   save-as: pdfs/pdfspart2/junior-maker.pdf
    category: kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    Hands-on maker projects for children aged 8–12, covering crafts, electronics, simple coding, recycling and
@@ -1350,7 +1253,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 85. How to Talk So Kids Will Listen & Listen So Kids Will Talk
    book-id: how-to-talk-so-kids-will-listen
-   save-as: pdfs/pdfspart2/how-to-talk-so-kids-will-listen.pdf
    category: kids-learning-books, self-grooming-books
    WHAT TO INCLUDE IN THIS PDF:
    The bestselling parenting classic by Adele Faber and Elaine Mazlish, teaching concrete communication skills
@@ -1366,7 +1268,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 86. How To Talk So Kids Can Learn
    book-id: how-to-talk-so-kids-can-learn
-   save-as: pdfs/pdfspart2/how-to-talk-so-kids-can-learn.pdf
    category: kids-learning-books, self-grooming-books
    WHAT TO INCLUDE IN THIS PDF:
    Applying the proven Faber/Mazlish communication framework to schools and homework — helping adults bring out
@@ -1382,7 +1283,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 87. Green Eggs and Ham
    book-id: green-eggs-and-ham
-   save-as: pdfs/pdfspart2/green-eggs-and-ham.pdf
    category: kids-learning-books, literature-books
    WHAT TO INCLUDE IN THIS PDF:
    Dr. Seuss's beloved, rhyming early reader about trying new things — written with only 50 different words and
@@ -1398,7 +1298,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 88. Goldilocks and the Three Bears
    book-id: goldilocks-and-the-three-bears
-   save-as: pdfs/pdfspart2/goldilocks-and-the-three-bears.pdf
    category: kids-learning-books, literature-books, stories-books
    WHAT TO INCLUDE IN THIS PDF:
    The classic fairy tale of a curious girl and a bear family, retold in clear language with friendly
@@ -1414,7 +1313,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 89. 25 Wacky Wonderful Stories That Boost Vocabulary
    book-id: 25-wacky-wonderful-stories
-   save-as: pdfs/pdfspart2/25-wacky-wonderful-stories.pdf
    category: kids-learning-books, vocabulary-books, stories-books
    WHAT TO INCLUDE IN THIS PDF:
    Twenty-five funny, engaging stories for upper-elementary students, each designed to teach specific vocabulary
@@ -1430,7 +1328,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 90. 150 Totally Terrific Writing Prompts (Grade 2-4)
    book-id: 150-totally-terrific-writing-prompts
-   save-as: pdfs/pdfspart2/150-totally-terrific-writing-prompts.pdf
    category: kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    150 creative and varied writing prompts for students in grades 2–4, covering narrative, opinion, descriptive
@@ -1446,7 +1343,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 91. Goethe-Zertifikat B1 — Wortschatz (Deutschprüfung)
    book-id: goethe-zertifikat-b1-wortschatz
-   save-as: pdfs/pdfspart2/goethe-zertifikat-b1-wortschatz.pdf
    category: german-learning-books, deutsch-books, vocabulary-books
    WHAT TO INCLUDE IN THIS PDF:
    Official themed vocabulary lists for the B1 German exam, with the key words and expressions candidates need to
@@ -1462,7 +1358,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 92. IELTS Academic Practice Tests Guide
    book-id: ielts-academic-practice-tests-guide
-   save-as: pdfs/pdfspart2/ielts-academic-practice-tests-guide.pdf
    category: ielts-preparation, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    Original LifeWithBooks guide to IELTS Academic format, scoring bands, and how to prepare with practice tests
@@ -1477,7 +1372,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 93. IELTS Writing Task 1 and 2 Complete Guide
    book-id: ielts-writing-task-1-and-2-guide
-   save-as: pdfs/pdfspart2/ielts-writing-task-1-and-2-guide.pdf
    category: ielts-preparation
    WHAT TO INCLUDE IN THIS PDF:
    Task-by-task IELTS Writing strategies for Academic Task 1 graphs and Task 2 essays — structure, vocabulary and
@@ -1490,7 +1384,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 94. IELTS Speaking Practice Question Bank
    book-id: ielts-speaking-practice-question-bank
-   save-as: pdfs/pdfspart2/ielts-speaking-practice-question-bank.pdf
    category: ielts-preparation
    WHAT TO INCLUDE IN THIS PDF:
    Topic-based IELTS Speaking Part 1, 2 and 3 practice themes with sample follow-up questions and fluency tips.
@@ -1503,7 +1396,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 95. IELTS Vocabulary Builder 3000 Words
    book-id: ielts-vocabulary-builder-3000-words
-   save-as: pdfs/pdfspart2/ielts-vocabulary-builder-3000-words.pdf
    category: ielts-preparation, vocabulary-books
    WHAT TO INCLUDE IN THIS PDF:
    Thematic IELTS vocabulary framework covering academic word lists, collocations and topic-based study methods.
@@ -1516,7 +1408,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 96. IELTS Listening Practice Guide
    book-id: ielts-listening-practice-guide
-   save-as: pdfs/pdfspart2/ielts-listening-practice-guide.pdf
    category: ielts-preparation
    WHAT TO INCLUDE IN THIS PDF:
    How to train for IELTS Listening accents, distractors, spelling and section-by-section timing. About This
@@ -1529,7 +1420,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 97. CSS English Essay Writing Guide
    book-id: css-english-essay-writing-guide
-   save-as: pdfs/pdfspart2/css-english-essay-writing-guide.pdf
    category: css-pms-books
    WHAT TO INCLUDE IN THIS PDF:
    Essay planning, outlines and argument structure for CSS English Paper — tailored for Pakistani competitive
@@ -1542,7 +1432,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 98. CSS Current Affairs Preparation
    book-id: css-current-affairs-preparation
-   save-as: pdfs/pdfspart2/css-current-affairs-preparation.pdf
    category: css-pms-books
    WHAT TO INCLUDE IN THIS PDF:
    How to build a CSS Current Affairs notebook — sources, themes and answer-writing for Pakistan and world
@@ -1555,7 +1444,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 99. CSS General Knowledge Guide
    book-id: css-general-knowledge-guide
-   save-as: pdfs/pdfspart2/css-general-knowledge-guide.pdf
    category: css-pms-books
    WHAT TO INCLUDE IN THIS PDF:
    Structured CSS GK topics — history, geography, science and Pakistan studies revision framework. About This
@@ -1568,7 +1456,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 100. PMS Punjab Exam Preparation
    book-id: pms-punjab-exam-preparation
-   save-as: pdfs/pdfspart2/pms-punjab-exam-preparation.pdf
    category: css-pms-books
    WHAT TO INCLUDE IN THIS PDF:
    Overview of PMS Punjab exam stages, subjects and study planning for provincial management service candidates.
@@ -1581,7 +1468,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 101. CSS English Precis Writing Guide
    book-id: css-english-precis-writing-guide
-   save-as: pdfs/pdfspart2/css-english-precis-writing-guide.pdf
    category: css-pms-books
    WHAT TO INCLUDE IN THIS PDF:
    Precis and comprehension techniques for CSS — title writing, compression ratios and clarity. About This Guide
@@ -1594,7 +1480,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 102. Matric English Grammar Complete
    book-id: matric-english-grammar-complete
-   save-as: pdfs/pdfspart2/matric-english-grammar-complete.pdf
    category: matric-fsc-notes, grammar-books
    WHAT TO INCLUDE IN THIS PDF:
    Matric English grammar topics — tenses, voice, narration, prepositions and essay basics for Pakistani boards.
@@ -1607,7 +1492,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 103. FSc Physics Short Questions
    book-id: fsc-physics-short-questions
-   save-as: pdfs/pdfspart2/fsc-physics-short-questions.pdf
    category: matric-fsc-notes
    WHAT TO INCLUDE IN THIS PDF:
    FSc Part 1 and 2 Physics short-question revision themes — definitions, laws and numerical tips. About This
@@ -1619,7 +1503,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 104. Matric Biology Notes Guide
    book-id: matric-biology-notes-guide
-   save-as: pdfs/pdfspart2/matric-biology-notes-guide.pdf
    category: matric-fsc-notes, kids-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    Matric Biology study framework — cell biology, human systems and diagram-based revision. About This Guide
@@ -1631,7 +1514,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 105. FSc Chemistry Important Questions
    book-id: fsc-chemistry-important-questions
-   save-as: pdfs/pdfspart2/fsc-chemistry-important-questions.pdf
    category: matric-fsc-notes
    WHAT TO INCLUDE IN THIS PDF:
    High-frequency FSc Chemistry questions — organic, inorganic and physical chemistry revision. About This Guide
@@ -1643,7 +1525,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 106. Matric Mathematics Solved Guide
    book-id: matric-mathematics-solved-guide
-   save-as: pdfs/pdfspart2/matric-mathematics-solved-guide.pdf
    category: matric-fsc-notes
    WHAT TO INCLUDE IN THIS PDF:
    Matric Math exam preparation — algebra, geometry and word-problem strategies with worked examples. About This
@@ -1655,7 +1536,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 107. The Sealed Nectar — Prophet Biography
    book-id: the-sealed-nectar-prophet-biography
-   save-as: pdfs/pdfspart2/the-sealed-nectar-prophet-biography.pdf
    category: islamic-books
    WHAT TO INCLUDE IN THIS PDF:
    Overview of the Sealed Nectar (Ar-Raheeq Al-Makhtum) — the life of Prophet Muhammad (PBUH) for English
@@ -1668,7 +1548,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 108. Islam The Natural Way
    book-id: islam-the-natural-way
-   save-as: pdfs/pdfspart2/islam-the-natural-way.pdf
    category: islamic-books
    WHAT TO INCLUDE IN THIS PDF:
    Introduction to core Islamic beliefs, worship and character — study guide and reading overview. About This
@@ -1680,7 +1559,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 109. Arabic for Beginners Guide
    book-id: arabic-for-beginners-guide
-   save-as: pdfs/pdfspart2/arabic-for-beginners-guide.pdf
    category: islamic-books, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    Modern Standard Arabic basics for Quran and daily phrases — alphabet, grammar and study plan. About This Guide
@@ -1692,7 +1570,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 110. Islamic History Timeline
    book-id: islamic-history-timeline
-   save-as: pdfs/pdfspart2/islamic-history-timeline.pdf
    category: islamic-books
    WHAT TO INCLUDE IN THIS PDF:
    Major events in Islamic history from the Prophetic era to the modern period — revision timeline. About This
@@ -1705,7 +1582,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 111. Quran Translation Guide English
    book-id: quran-translation-guide-english
-   save-as: pdfs/pdfspart2/quran-translation-guide-english.pdf
    category: islamic-books
    WHAT TO INCLUDE IN THIS PDF:
    How to choose and study an English Quran translation — tafsir basics and respectful reading. About This Guide
@@ -1717,7 +1593,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 112. Python Programming Beginner Guide
    book-id: python-programming-beginner-guide
-   save-as: pdfs/pdfspart2/python-programming-beginner-guide.pdf
    category: programming-books
    WHAT TO INCLUDE IN THIS PDF:
    Learn Python from zero — variables, loops, functions and projects with links to official documentation. About
@@ -1729,7 +1604,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 113. HTML CSS Web Design Basics
    book-id: html-css-web-design-basics
-   save-as: pdfs/pdfspart2/html-css-web-design-basics.pdf
    category: programming-books
    WHAT TO INCLUDE IN THIS PDF:
    Build your first website with HTML5 semantics and modern CSS layout — flexbox, grids and responsive design.
@@ -1741,7 +1615,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 114. JavaScript Fundamentals Guide
    book-id: javascript-fundamentals-guide
-   save-as: pdfs/pdfspart2/javascript-fundamentals-guide.pdf
    category: programming-books
    WHAT TO INCLUDE IN THIS PDF:
    JavaScript basics for the web — DOM, events, fetch API and beginner project ideas. About This Guide Explains
@@ -1753,7 +1626,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 115. Git Version Control Guide
    book-id: git-version-control-guide
-   save-as: pdfs/pdfspart2/git-version-control-guide.pdf
    category: programming-books
    WHAT TO INCLUDE IN THIS PDF:
    Git and GitHub essentials — commits, branches, pull requests and collaboration workflow. About This Guide
@@ -1765,7 +1637,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 116. SQL Database Beginner Guide
    book-id: sql-database-beginner-guide
-   save-as: pdfs/pdfspart2/sql-database-beginner-guide.pdf
    category: programming-books
    WHAT TO INCLUDE IN THIS PDF:
    SQL SELECT, JOIN, INSERT and database design basics for analysts and developers. About This Guide Introduces
@@ -1777,7 +1648,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 117. O Level English Language Guide
    book-id: o-level-english-language-guide
-   save-as: pdfs/pdfspart2/o-level-english-language-guide.pdf
    category: o-level-a-level, english-learning-books
    WHAT TO INCLUDE IN THIS PDF:
    Cambridge O Level English Language skills — reading, writing, summary and directed writing. About This Guide
@@ -1789,7 +1659,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 118. A Level Biology Study Guide
    book-id: a-level-biology-study-guide
-   save-as: pdfs/pdfspart2/a-level-biology-study-guide.pdf
    category: o-level-a-level
    WHAT TO INCLUDE IN THIS PDF:
    A Level Biology revision framework — cells, genetics, ecology and exam technique. About This Guide Organises
@@ -1801,7 +1670,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 119. O Level Mathematics Guide
    book-id: o-level-mathematics-guide
-   save-as: pdfs/pdfspart2/o-level-mathematics-guide.pdf
    category: o-level-a-level
    WHAT TO INCLUDE IN THIS PDF:
    O Level Math topic checklist — algebra, geometry, trigonometry and statistics revision. About This Guide
@@ -1813,7 +1681,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 120. Cambridge IGCSE Preparation
    book-id: cambridge-igcse-preparation
-   save-as: pdfs/pdfspart2/cambridge-igcse-preparation.pdf
    category: o-level-a-level
    WHAT TO INCLUDE IN THIS PDF:
    IGCSE study planning — subject selection, revision timetables and resource strategy. About This Guide Helps
@@ -1825,7 +1692,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 121. A Level Psychology Notes
    book-id: a-level-psychology-notes
-   save-as: pdfs/pdfspart2/a-level-psychology-notes.pdf
    category: o-level-a-level
    WHAT TO INCLUDE IN THIS PDF:
    A Level Psychology core studies overview — research methods, approaches and evaluation frameworks. About This
@@ -1837,7 +1703,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 122. Acres of Diamonds
    book-id: acres-of-diamonds
-   save-as: pdfs/pdfspart2/acres-of-diamonds.pdf
    category: self-development-books, self-grooming-books
    WHAT TO INCLUDE IN THIS PDF:
    Russell Conwell's classic lecture on finding opportunity where you already are — public-domain wisdom. About
@@ -1849,7 +1714,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 123. The Science of Getting Rich
    book-id: the-science-of-getting-rich
-   save-as: pdfs/pdfspart2/the-science-of-getting-rich.pdf
    category: self-development-books
    WHAT TO INCLUDE IN THIS PDF:
    Wallace Wattles' 1910 prosperity classic — mindset, gratitude and purposeful action. About This Guide Presents
@@ -1861,7 +1725,6 @@ Total: 124 books
 --------------------------------------------------------------------------------
 124. Self Reliance — Ralph Emerson
    book-id: self-reliance-ralph-emerson
-   save-as: pdfs/pdfspart2/self-reliance-ralph-emerson.pdf
    category: self-development-books, literature-books
    WHAT TO INCLUDE IN THIS PDF:
    Emerson's essential essay on independent thought, trust and nonconformity. About This Guide A foundational

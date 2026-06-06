@@ -53,7 +53,6 @@ missing.forEach((book, i) => {
   lines.push('--------------------------------------------------------------------------------');
   lines.push((i + 1) + '. ' + book.title);
   lines.push('   book-id: ' + book.id);
-  lines.push('   save-as: pdfs/pdfspart2/' + book.id + '.pdf');
   if (book.categories && book.categories.length) {
     lines.push('   category: ' + book.categories.join(', '));
   }

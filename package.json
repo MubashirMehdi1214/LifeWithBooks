@@ -12,6 +12,7 @@
     "expand-thin-pdfs": "node scripts/expand-thin-guide-pdfs.js",
     "migrate-drive-covers": "node scripts/migrate-drive-covers-to-local.js",
     "restore-drive-covers": "node scripts/restore-drive-thumbnails-local.js",
+    "pinterest-pins": "node scripts/generate-pinterest-pins.js",
     "build-pdfs": "node scripts/build-pdfs.js",
     "build-health-pdfs": "node scripts/build-health-pdfs.js",
     "build-ielts-content": "node scripts/build-ielts-guide-content.js",
