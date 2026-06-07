@@ -59,10 +59,7 @@ Away from books, Sarah is a committed advocate for public library funding, an en
       "the-importance-of-being-earnest"
     ],
 
-    social: {
-      twitter: "https://twitter.com/sarahmitchell_lwb",
-      linkedin: "https://linkedin.com/in/sarah-mitchell-lwb"
-    }
+    social: {}
   },
 
   /* ─────────────────────────────────────────────────────────────────────────
@@ -119,10 +116,7 @@ He is a qualified CELTA and DELTA trainer, holds a Proficiency-level certificate
       "easy-learning-french-conversation"
     ],
 
-    social: {
-      twitter: "https://twitter.com/jamesparker_lwb",
-      linkedin: "https://linkedin.com/in/james-parker-lwb"
-    }
+    social: {}
   },
 
   /* ─────────────────────────────────────────────────────────────────────────
@@ -184,10 +178,64 @@ He reads every morning before the rest of the house is awake, keeps a detailed r
       "self-reliance-ralph-emerson"
     ],
 
-    social: {
-      twitter: "https://twitter.com/mubashirmehdi_lwb",
-      linkedin: "https://linkedin.com/in/mubashir-mehdi-lwb"
-    }
+    social: {}
+  },
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     MARIA CHEN — Educational Content Editor
+  ───────────────────────────────────────────────────────────────────────── */
+  {
+    id: "maria-chen",
+    name: "Maria Chen",
+    title: "Educational Content Editor",
+    bio: `Maria Chen leads educational content at LifeWithBooks — the articles, study guides and parent resources that help students, teachers and families use free books effectively. She trained in Education at the University of Toronto and spent six years designing literacy programmes for primary schools in Canada and Hong Kong before moving into digital learning content. That classroom background shapes her writing: she assumes readers are busy, skeptical of fluff, and need steps they can try the same evening.
+
+At LifeWithBooks, Maria focuses on kids' learning, student study skills, parent guides and introductory educational topics — from choosing the right fables for young readers to building a fifteen-minute English practice routine that survives exam season. She tests every method she recommends with real families and students before publishing, and she is direct when a trendy technique does not hold up.
+
+Maria believes free public-domain books are an underused superpower for education. Aesop, Grimm, Andersen and the great children's classics cost nothing yet teach vocabulary, moral reasoning and narrative structure better than many paid apps. Her guides show parents and teachers how to pair those classics with modern study habits — PDF annotation, read-aloud practice, spaced review — without turning reading into homework battles.
+
+She collaborates with Sarah Mitchell on literature guides for teens and with James Parker on bridging grammar resources into daily practice. When she is not editing, Maria volunteers with library reading programmes and maintains a chaotic shelf of picture books she claims are "strictly for professional research."`,
+
+    expertise: [
+      "Kids and family reading",
+      "Primary literacy",
+      "Study skills for students",
+      "Parent education guides",
+      "Educational PDF workflows",
+      "Classic children's literature",
+      "English practice routines",
+      "Programming literacy for beginners",
+      "Digital learning design",
+      "Classroom-to-home learning"
+    ],
+
+    articleIds: [
+      "best-free-kids-learning-books-pdf-parents",
+      "aesops-fables-complete-guide-kids-parents",
+      "grimms-fairy-tales-complete-guide-parents",
+      "how-to-read-pdfs-effectively-for-study",
+      "english-daily-15-minute-routine",
+      "best-free-books-for-students",
+      "essential-english-grammar-self-study",
+      "improve-english-by-reading-aloud",
+      "building-a-free-digital-library",
+      "learn-python-free-pdf-books-beginners-2026"
+    ],
+
+    recommendedBookIds: [
+      "aesops-fables",
+      "grimms-fairy-tales",
+      "goldilocks-and-the-three-bears",
+      "green-eggs-and-ham",
+      "one-story-a-day",
+      "alphabet-activities",
+      "just-for-kids-grammar",
+      "fairyland-pupil-book-1",
+      "learn-how-to-speak-english-fluently-7-easy-steps",
+      "python-programming-beginner-guide"
+    ],
+
+    social: {}
   }
 
 ];

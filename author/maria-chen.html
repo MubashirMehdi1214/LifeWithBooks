@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria Chen | Educational Content Editor | LifeWithBooks</title>
+  <meta name="description" content="Maria Chen leads educational content at LifeWithBooks — the articles, study guides and parent resources that help students, teachers and families use free ...">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://www.lifewithbooks.co/author/maria-chen.html">
+  <link rel="alternate" hreflang="en" href="https://www.lifewithbooks.co/author/maria-chen.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.lifewithbooks.co/author/maria-chen.html">
+  <link rel="alternate" type="application/rss+xml" title="LifeWithBooks Articles" href="../feed.xml">
+  <link rel="sitemap" type="application/xml" href="../sitemap.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"></noscript>
+  
+  <style>/* Critical above-the-fold CSS (~4kb) — header, nav, hero, book grid shell */
+:root{--contrast:#172021;--contrast-3:#666;--contrast-4:#a3a791;--base:#faf0e2;--base-2:#fff;--accent:#1E565C;--accent-hover:#2a747c;--shadow:0 2px 14px rgba(23,32,33,.08);--shadow-hover:0 8px 24px rgba(23,32,33,.15);--radius:6px;--max-width:1200px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#fff;color:var(--contrast-3);font-family:Nunito,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+img{max-width:100%;display:block;height:auto}
+h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
+.site-header{background:#fff;border-bottom:1px solid #eee;text-align:center;padding:24px 20px 0;position:relative;z-index:20}
+.site-header .site-logo{display:inline-flex;align-items:center;gap:12px;margin-bottom:14px}
+.site-header .logo-mark{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#2a747c);display:grid;place-items:center;color:#fff;font-weight:800;font-size:26px;box-shadow:var(--shadow)}
+.site-header .logo-text{text-align:left;line-height:1.1}
+.site-header .logo-text strong{display:block;color:var(--contrast);font-size:22px;font-weight:800}
+.main-nav{background:var(--accent);position:sticky;top:0;z-index:100}
+.main-nav .nav-inner{max-width:var(--max-width);margin:0 auto;display:flex;align-items:center;justify-content:center;padding:0 20px;position:relative}
+.main-nav ul{display:flex;list-style:none;gap:0;align-items:center}
+.main-nav ul li a{display:block;color:#fff;padding:14px 18px;font-weight:600;font-size:15px}
+.menu-toggle{display:none;background:none;border:none;color:#fff;font-size:24px;cursor:pointer;padding:12px}
+.hero{background:linear-gradient(135deg,var(--base) 0%,#fff 60%);padding:80px 20px;text-align:center}
+.hero h1{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:16px;color:var(--contrast)}
+.hero p{max-width:680px;margin:0 auto 28px;font-size:17px;color:var(--contrast-3)}
+.hero .search-box{display:flex;max-width:560px;margin:0 auto;background:#fff;border-radius:100px;padding:6px 6px 6px 24px;box-shadow:var(--shadow-hover)}
+.hero .search-box input{flex:1;border:none;outline:none;font-size:16px;font-family:inherit;background:transparent;padding:12px 0}
+.hero .search-box button{background:var(--accent);color:#fff;border:none;border-radius:100px;padding:12px 28px;font-weight:700;font-size:15px;cursor:pointer;min-height:44px}
+.section{padding:60px 20px;max-width:var(--max-width);margin:0 auto}
+.section-title{text-align:center;margin-bottom:36px}
+.section-title h1,.section-title h2,.section-title a{font-size:clamp(1.4rem,3vw,1.9rem);color:var(--contrast)}
+.book-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 20px}
+.book-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.book-card a.thumb{display:block;position:relative;background:linear-gradient(135deg,#f6e9d0,#fff);padding:26px 18px;aspect-ratio:3/4;overflow:hidden}
+.book-card .cover{position:absolute;inset:26px 18px;display:flex;align-items:center;justify-content:center}
+.book-card .cover .cover-image,.book-card .cover picture img{width:72%;max-width:170px;height:auto;aspect-ratio:2/3;object-fit:contain;border-radius:4px 8px 8px 4px;background:#f5f5f5}
+.book-single{max-width:860px;margin:0 auto;padding:60px 20px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:14px 28px;border-radius:100px;font-weight:700;font-size:15px;min-height:44px;line-height:1.2}
+@media(max-width:768px){.menu-toggle{display:block}.main-nav ul{display:none}.book-grid{grid-template-columns:repeat(2,1fr);gap:20px 12px}.book-card a.thumb{padding:14px 10px;aspect-ratio:auto;min-height:220px}.book-card .cover{inset:14px 10px}.book-card .cover .cover-image,.book-card .cover picture img{width:100%;max-width:none;transform:none;object-fit:contain;box-shadow:0 4px 14px rgba(23,32,33,.18)}.hero{padding:60px 20px}}
+</style>
+  <link rel="preload" href="../css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="../css/style.min.css"></noscript>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Maria Chen | Educational Content Editor | LifeWithBooks">
+  <meta property="og:description" content="Maria Chen leads educational content at LifeWithBooks — the articles, study guides and parent resources that help students, teachers and families use free ...">
+  <meta property="og:url" content="https://www.lifewithbooks.co/author/maria-chen.html">
+  <meta property="og:site_name" content="LifeWithBooks">
+  <meta property="og:image" content="https://www.lifewithbooks.co/og-home.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Maria Chen | Educational Content Editor | LifeWithBooks">
+  <meta name="twitter:description" content="Maria Chen leads educational content at LifeWithBooks — the articles, study guides and parent resources that help students, teachers and families use free ...">
+  <meta name="twitter:image" content="https://www.lifewithbooks.co/og-home.png">
+  <meta name="pinterest-rich-pin" content="true">
+  
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V3781QPP7K"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-V3781QPP7K');</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","name":"Maria Chen","url":"https://www.lifewithbooks.co/author/maria-chen.html","description":"Maria Chen leads educational content at LifeWithBooks — the articles, study guides and parent resources that help students, teachers and families use free ...","mainEntity":{"@type":"Person","name":"Maria Chen","jobTitle":"Educational Content Editor","description":"Maria Chen leads educational content at LifeWithBooks — the articles, study guides and parent resources that help students, teachers and families use free books effectively. She trained in Education at the University of Toronto and spent six years designing literacy programmes for primary schools in"}}</script>
+</head>
+<body data-page="author" data-author-id="maria-chen" data-seo-static="true" data-path-depth="1" id="top">
+  <div id="site-header-host"></div>
+  <main class="book-single author-page">
+    <div class="breadcrumb"><a href="../index.html">Home</a> &raquo; <a href="../about.html">About</a> &raquo; <span>Maria Chen</span></div>
+    <div class="author-profile">
+      <img class="author-avatar" src="../covers/author-maria-chen.svg" alt="Maria Chen" width="160" height="160" loading="eager">
+      <h1>Maria Chen</h1>
+      <p class="author-title">Educational Content Editor</p>
+      
+    </div>
+    <article class="article"><h2>About Maria</h2><p>Maria Chen leads educational content at LifeWithBooks — the articles, study guides and parent resources that help students, teachers and families use free books effectively. She trained in Education at the University of Toronto and spent six years designing literacy programmes for primary schools in Canada and Hong Kong before moving into digital learning content. That classroom background shapes her writing: she assumes readers are busy, skeptical of fluff, and need steps they can try the same evening.
+
+At LifeWithBooks, Maria focuses on kids' learning, student study skills, parent guides and introductory educational topics — from choosing the right fables for young readers to building a fifteen-minute English practice routine that survives exam season. She tests every method she recommends with real families and students before publishing, and she is direct when a trendy technique does not hold up.
+
+Maria believes free public-domain books are an underused superpower for education. Aesop, Grimm, Andersen and the great children's classics cost nothing yet teach vocabulary, moral reasoning and narrative structure better than many paid apps. Her guides show parents and teachers how to pair those classics with modern study habits — PDF annotation, read-aloud practice, spaced review — without turning reading into homework battles.
+
+She collaborates with Sarah Mitchell on literature guides for teens and with James Parker on bridging grammar resources into daily practice. When she is not editing, Maria volunteers with library reading programmes and maintains a chaotic shelf of picture books she claims are &quot;strictly for professional research.&quot;</p></article>
+    <section class="author-articles"><h2>Articles by Maria Chen</h2><ul><li><a href="../articles/best-free-kids-learning-books-pdf-parents.html">Best Free Kids Learning Books PDF for Parents</a></li><li><a href="../articles/aesops-fables-complete-guide-kids-parents.html">Aesop's Fables Complete Guide for Kids and Parents</a></li><li><a href="../articles/grimms-fairy-tales-complete-guide-parents.html">Grimm's Fairy Tales Complete Guide for Parents</a></li><li><a href="../articles/how-to-read-pdfs-effectively-for-study.html">How to Read PDFs Effectively for Study and Self-Learning</a></li><li><a href="../articles/english-daily-15-minute-routine.html">A Daily 15-Minute English Routine That Actually Fits Your Life</a></li><li><a href="../articles/best-free-books-for-students.html">The Best Free Books for Students: Classics That Still Teach</a></li><li><a href="../articles/essential-english-grammar-self-study.html">Essential English Grammar for Self-Study Learners</a></li><li><a href="../articles/improve-english-by-reading-aloud.html">Improve Your English Pronunciation by Reading Aloud</a></li><li><a href="../articles/building-a-free-digital-library.html">Building a Free Digital Library at Home</a></li><li><a href="../articles/learn-python-free-pdf-books-beginners-2026.html">Learn Python Free PDF Books for Beginners 2026</a></li></ul></section>
+    <section class="author-books"><h2>Recommended Books</h2><ul><li><a href="../book/aesops-fables.html">Aesop's Fables</a></li><li><a href="../book/grimms-fairy-tales.html">Grimms' Fairy Tales</a></li><li><a href="../book/goldilocks-and-the-three-bears.html">Goldilocks and the Three Bears</a></li><li><a href="../book/green-eggs-and-ham.html">Green Eggs and Ham</a></li><li><a href="../book/one-story-a-day.html">One Story a Day</a></li><li><a href="../book/alphabet-activities.html">Alphabet Activities</a></li><li><a href="../book/just-for-kids-grammar.html">Just for Kids — Grammar</a></li><li><a href="../book/fairyland-pupil-book-1.html">Fairyland Pupil's Book 1</a></li><li><a href="../book/learn-how-to-speak-english-fluently-7-easy-steps.html">Learn How to Speak English Fluently — English Speaking Mastery in 7 Easy Steps</a></li><li><a href="../book/python-programming-beginner-guide.html">Python Programming Beginner Guide</a></li></ul></section>
+  </main>
+  <div id="site-footer-host"></div>
+
+  <script src="../js/books.min.js" defer></script>
+  <script src="../js/articles-bundle.min.js" defer></script>
+  <script src="../js/main.min.js" defer></script>
+</body>
+</html>

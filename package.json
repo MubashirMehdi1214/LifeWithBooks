@@ -32,7 +32,8 @@
     "perf-build": "node scripts/build-perf.js",
     "patch-html": "node scripts/patch-root-html.js",
     "seo-pages": "node scripts/generate-seo-pages.js",
-    "seo-build": "npm run add-seo-books && npm run seo-articles && npm run perf-build && npm run seo-pages && npm run patch-html && npm run seo",
+    "patch-listings": "node scripts/patch-listing-pages.js",
+    "seo-build": "npm run add-seo-books && npm run seo-articles && npm run perf-build && npm run seo-pages && npm run patch-html && npm run patch-listings && npm run seo",
     "indexnow": "node scripts/push-indexnow.js",
     "seo": "npm run sitemap && npm run feed"
   },

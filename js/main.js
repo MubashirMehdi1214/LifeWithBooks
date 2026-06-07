@@ -1577,9 +1577,11 @@ function initArticles() {
   if (typeof ARTICLES === 'undefined') return;
   const el = $('#articles-grid');
   if (el) {
-    const sorted = ARTICLES.slice().sort(function(a, b) {
-      return (b.date || '').localeCompare(a.date || '');
-    });
+    const sorted = ARTICLES.slice()
+      .filter(function(a) { return !/^free-.+-pdf-guide$/.test(a.id); })
+      .sort(function(a, b) {
+        return (b.date || '').localeCompare(a.date || '');
+      });
     el.innerHTML = sorted.map(articleCardHTML).join('');
   }
   setShareMeta({
