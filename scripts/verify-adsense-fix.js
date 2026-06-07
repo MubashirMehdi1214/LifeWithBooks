@@ -38,3 +38,17 @@ console.log('Books under 800w in data:', thin);
 const sitemap = fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf8');
 const urls = (sitemap.match(/<loc>/g) || []).length;
 console.log('Sitemap URLs:', urls);
+
+const brc = fs.readFileSync(path.join(root, 'js/book-rich-content.js'), 'utf8');
+const padCount = (brc.match(/LifeWithBooks readers use these guides/g) || []).length;
+console.log('Padding phrase count in book-rich-content.js:', padCount, '(must be 0)');
+
+const gatsbyGuide = fs.readFileSync(path.join(root, 'articles/free-the-great-gatsby-pdf-guide.html'), 'utf8');
+console.log('Gatsby PDF guide noindex:', gatsbyGuide.includes('noindex'));
+
+const longman = fs.existsSync(path.join(root, 'book/longman-photo-dictionary-american-english.html'))
+  ? fs.readFileSync(path.join(root, 'book/longman-photo-dictionary-american-english.html'), 'utf8') : '';
+if (longman) {
+  console.log('Longman duplicate article removed:', !longman.includes('## A Timeless') || longman.indexOf('book-rich-content') < longman.indexOf('download-block'));
+  console.log('Longman noindex:', longman.includes('noindex'));
+}

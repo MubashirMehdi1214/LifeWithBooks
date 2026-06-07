@@ -63,11 +63,13 @@ CATEGORIES.forEach((c) => {
 });
 
 BOOKS.forEach((b) => {
+  if ((b.access === 'summary' || b.license === 'reference') && !b.pdfDirect) return;
   const pr = b.access === 'download' ? '0.75' : '0.65';
   add('/book/' + encodeURIComponent(b.id) + '.html', 'weekly', pr);
 });
 
 ARTICLES.forEach((a) => {
+  if (/^free-.+-pdf-guide$/.test(a.id)) return;
   add('/articles/' + encodeURIComponent(a.id) + '.html', 'monthly', '0.70');
 });
 
@@ -113,7 +115,8 @@ const imageXml =
 
 fs.writeFileSync(path.join(root, 'sitemap-images.xml'), imageXml, 'utf8');
 
-const recentArticles = ARTICLES.slice().sort((a, b) => (b.date || '').localeCompare(a.date || '')).slice(0, 100);
+const recentArticles = ARTICLES.filter(a => !/^free-.+-pdf-guide$/.test(a.id))
+  .slice().sort((a, b) => (b.date || '').localeCompare(a.date || '')).slice(0, 100);
 const newsParts = recentArticles.map(a => {
   const loc = ORIGIN + '/articles/' + encodeURIComponent(a.id) + '.html';
   return (

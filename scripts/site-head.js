@@ -36,7 +36,7 @@ function renderHead(opts, depth) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${esc(opts.title)}</title>
   <meta name="description" content="${esc(opts.description)}">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="robots" content="${esc(opts.robots || 'index, follow, max-image-preview:large')}">
   <link rel="canonical" href="${esc(canonical)}">
   <link rel="alternate" hreflang="en" href="${esc(canonical)}">
   <link rel="alternate" hreflang="x-default" href="${esc(canonical)}">

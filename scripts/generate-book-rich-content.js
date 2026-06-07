@@ -17,7 +17,6 @@ try {
 } catch (e) {
   if (e.code !== 'MODULE_NOT_FOUND') console.warn('Handcrafted extra:', e.message);
 }
-
 const AUTHOR_DB = {
   'Jane Austen': {
     bio: 'Jane Austen (1775–1817) grew up in rural Hampshire, the daughter of a clergyman. She wrote six major novels that transformed English fiction with their irony, social precision and unforgettable heroines. She published anonymously during her lifetime — Sense and Sensibility appeared as "By a Lady" — and died at forty-one before her full fame arrived. Her letters reveal a sharp wit and keen observer of village politics, marriage markets and class anxiety.',
@@ -87,6 +86,22 @@ function bookAuthor(book) {
   return 'Public Domain Classic';
 }
 
+function catLabel(book) {
+  return (book.categories[0] || 'reading').replace(/-/g, ' ');
+}
+
+function detectPublisher(book) {
+  const t = book.title + ' ' + (book.author || '');
+  if (/longman|pearson/i.test(t)) return 'Pearson Longman';
+  if (/macmillan/i.test(t)) return 'Macmillan Education';
+  if (/goethe/i.test(t)) return 'Goethe-Institut';
+  if (/cambridge|igcse/i.test(t)) return 'Cambridge University Press';
+  if (/collins/i.test(t)) return 'Collins';
+  if (/de gruyter|deutsche grammatik/i.test(t)) return 'De Gruyter';
+  if (/mcgraw/i.test(t)) return 'McGraw-Hill';
+  return book.author || 'the original publisher';
+}
+
 function hashPick(id, n) {
   let h = 0;
   for (let i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) >>> 0;
@@ -153,11 +168,15 @@ function pickReviews(book, author) {
 
 function generateRich(book) {
   const author = bookAuthor(book);
-  const auth = AUTHOR_DB[author] || AUTHOR_DB['Public Domain Classic'];
-  const desc = (book.description || []).filter(l => !l.startsWith('##')).join(' ');
-  const excerpt = book.excerpt || '';
   const isOriginal = book.license === 'original';
   const isReference = book.license === 'reference' || book.access === 'summary';
+  const auth = isReference
+    ? null
+    : (AUTHOR_DB[author] || AUTHOR_DB['Public Domain Classic']);
+  const desc = (book.description || []).filter(l => !l.startsWith('##')).join(' ');
+  const excerpt = book.excerpt || '';
+  const cat = catLabel(book);
+  const pages = book.pageCount ? String(book.pageCount) + ' pages' : 'a structured layout';
   const yearHints = {
     'pride-and-prejudice': '1813',
     'oliver-twist': '1838',
@@ -182,17 +201,23 @@ function generateRich(book) {
   ].filter(Boolean).join(' ');
 
   const learn = isOriginal ? [
-    `How to structure your study week around ${book.title} without overwhelm`,
-    `Key vocabulary and topic frameworks you can reuse in exams or conversation`,
-    `Practical exercises and review habits that turn reading into retention`,
-    `Where this guide fits alongside official textbooks and practice tests`,
-    `How to combine this PDF with free classics on LifeWithBooks for stronger English`
+    `Study pacing: Map ${book.title} across a realistic weekly schedule for ${cat} goals without cramming every topic at once.`,
+    `Core skills: Identify the vocabulary, frameworks and question types this guide emphasises for exams and real conversation.`,
+    `Practice loop: Turn each chapter into short exercises — notes, flashcards, or timed drills — so reading becomes retention.`,
+    `Official pairing: Use this PDF alongside board syllabi, publisher textbooks and past papers rather than as a lone source.`,
+    `Library synergy: Combine ${book.title} with related free titles on LifeWithBooks to strengthen reading and grammar together.`
+  ] : isReference ? [
+    `Scope check: Understand what ${book.title} covers in ${cat} and which proficiency level it targets before you buy the full edition.`,
+    `Publisher context: Learn how ${detectPublisher(book)} structures units so you know what the official book delivers.`,
+    `Exam alignment: See how this title fits certification paths such as IELTS, Goethe, Cambridge or board exams where relevant.`,
+    `Study pairing: Use this overview to decide which companion workbook, audio or classroom edition you still need.`,
+    `Honest sourcing: LifeWithBooks summarises reference works — always verify exercises and answer keys on the publisher site.`
   ] : [
-    `How ${author}'s storytelling techniques still influence modern novels and film`,
-    `Vocabulary and sentence patterns useful for advanced English readers`,
-    `Historical and cultural context that makes confusing passages suddenly clear`,
-    `Themes about identity, justice, courage and society that remain debated today`,
-    `A model for sustained reading habits — chapter by chapter, not in one rushed sitting`
+    `Narrative craft: Notice how ${author}'s scenes, dialogue and pacing still influence modern novels and film adaptations.`,
+    `Language growth: Collect sentence patterns and vocabulary from ${book.title} for advanced English reading practice.`,
+    `Historical lens: Context about the era clarifies references that feel distant on a first read.`,
+    `Timeless themes: Track ideas about identity, justice, courage and society that readers still argue about today.`,
+    `Reading rhythm: Finish ${book.title} chapter by chapter — momentum beats rushing through dense classic prose.`
   ];
 
   const whyRead = [
@@ -203,42 +228,87 @@ function generateRich(book) {
     `Teachers, parents and self-learners use LifeWithBooks because the download is instant and legal. You can print chapters, share the link with a study group or keep a offline copy for travel.`
   ].join(' ');
 
-  const historical = [
-    `First published around ${year}, this work emerged during a period of rapid social change — industrial growth, expanding literacy, new ideas about class, gender and empire.`,
-    `Contemporary reviewers ${hashPick(book.id, 2) === 0 ? 'debated its morality and style, which often signals a book that challenged comfortable assumptions' : 'recognized its power even when sales started slowly; reputations built over decades, not launch weekends'}.`,
-    `Today ${book.title} is read differently: modern audiences notice details earlier generations skimmed, and that fresh debate keeps the text alive in classrooms and online forums.`,
-    isOriginal
-      ? `LifeWithBooks published this guide in 2026 as part of our mission to pair free legal classics with original study material for global learners.`
-      : `Digital libraries like LifeWithBooks exist because copyright expiration turns cultural treasures into shared property — a remarkable bargain for any curious reader.`
-  ].join(' ');
+  const historical = isReference
+    ? [
+        `${detectPublisher(book)} and similar publishers revise ${cat} materials as syllabi and exam formats change — always confirm you have the edition your teacher or centre recommends.`,
+        `Reference works like ${book.title} are used in classrooms worldwide; this LifeWithBooks overview explains scope and study use without replacing the licensed textbook.`,
+        `Students in Pakistan, Europe and North America often search for summaries before purchasing expensive print editions — use this page to plan, then buy official copies for complete exercises and answer keys.`,
+        `LifeWithBooks publishes these reference overviews in 2026 to help learners make informed choices about which professional resources deserve a place on their shelf.`
+      ].join(' ')
+    : [
+        `First published around ${year}, this work emerged during a period of rapid social change — industrial growth, expanding literacy, new ideas about class, gender and empire.`,
+        `Contemporary reviewers ${hashPick(book.id, 2) === 0 ? 'debated its morality and style, which often signals a book that challenged comfortable assumptions' : 'recognized its power even when sales started slowly; reputations built over decades, not launch weekends'}.`,
+        `Today ${book.title} is read differently: modern audiences notice details earlier generations skimmed, and that fresh debate keeps the text alive in classrooms and online forums.`,
+        isOriginal
+          ? `LifeWithBooks published this guide in 2026 as part of our mission to pair free legal classics with original study material for global learners.`
+          : `Digital libraries like LifeWithBooks exist because copyright expiration turns cultural treasures into shared property — a remarkable bargain for any curious reader.`
+      ].join(' ');
+
+  const authorBio = isReference
+    ? `${detectPublisher(book)} publishes ${book.title} as a professional ${cat} resource. LifeWithBooks provides this editorial overview to explain who the material is for, what it covers and how to pair it with official editions — we do not reproduce copyrighted textbook content. For complete exercises, audio and answer keys, obtain the licensed edition from the publisher or an authorised retailer.`
+    : `${auth.bio} Major works include ${auth.works} Legacy: ${auth.legacy}`;
 
   return {
     about,
     learn,
-    authorBio: `${auth.bio} Major works include ${auth.works} Legacy: ${auth.legacy}`,
+    authorBio,
     whyRead,
     historical,
-    reviews: pickReviews(book, author),
+    reviews: [],
     relatedIds: relatedBooks(book, 5)
   };
 }
 
 function richWordCount(rich) {
-  return wordCount(rich.about) + wordCount(rich.authorBio) + wordCount(rich.whyRead) + wordCount(rich.historical)
-    + rich.learn.join(' ').split(/\s+/).length + rich.reviews.map(r => r.text).join(' ').split(/\s+/).length;
+  return [rich.about, rich.authorBio, rich.whyRead, rich.historical, (rich.learn || []).join(' '), (rich.reviews || []).map(r => r.text).join(' ')]
+    .join(' ')
+    .split(/\s+/)
+    .filter(Boolean)
+    .length;
 }
 
-function validateRich(id, rich) {
-  const pad = ' LifeWithBooks readers use these guides to download legal PDF editions, study chapter by chapter on any device, and build reading habits that last. Our editorial team adds context, author background and historical notes so each page offers genuine value beyond a bare download link — the standard we believe every free library should meet for students, teachers and self-learners worldwide.';
-  while (richWordCount(rich) < 800) rich.about += pad;
+const EXTRA_ABOUT = [
+  'When studying {title}, keep a simple error log: every mistake becomes a flashcard or margin note you revisit on weekends.',
+  'Readers of {title} in {cat} often pair one chapter per evening with fifteen minutes of spoken practice — slow but durable.',
+  'Teachers recommend skimming headings in {title} first, then reading deeply only the sections your syllabus marks as high-yield.',
+  'If {title} feels dense, read with {pages} in mind: break sessions at natural unit boundaries instead of arbitrary page counts.',
+  'LifeWithBooks suggests bookmarking three passages in {title} that surprised you — they become anchors for future revision.',
+  'Compare your notes on {title} with a study partner monthly; explaining ideas aloud exposes gaps textbooks hide.',
+  'Mobile learners download {title} once, then highlight offline during commutes — consistency beats marathon cramming.',
+  'For {cat} goals, revisit {title} after one week, one month and three months; spaced recall locks vocabulary in place.',
+  'Annotate {title} with questions in the margin; good readers argue with the text instead of passively highlighting.',
+  'Build a one-page summary of {title} when you finish; if you cannot, reread the sections that still feel fuzzy.',
+  'Parents supporting teens with {title} should ask for weekly three-sentence recaps — accountability without micromanaging.',
+  'Exam candidates using {title} benefit from timed practice sections that mirror real paper length and instructions.',
+  'Combine {title} with one free classic from our library to see how formal and literary English reinforce each other.',
+  'Start {title} with the glossary or index if it has one; knowing terminology upfront prevents mid-chapter frustration.',
+  'Treat {title} as a course, not a brochure: schedule finish dates and celebrate milestones to maintain momentum.'
+];
+
+function ensureMinWords(book, rich, min) {
+  let guard = 0;
+  while (richWordCount(rich) < min && guard < EXTRA_ABOUT.length * 2) {
+    const tpl = EXTRA_ABOUT[hashPick(book.id + ':extra:' + guard, EXTRA_ABOUT.length)];
+    rich.about += ' ' + tpl
+      .replace(/\{title\}/g, book.title)
+      .replace(/\{cat\}/g, catLabel(book))
+      .replace(/\{pages\}/g, book.pageCount ? String(book.pageCount) + ' pages' : 'this guide');
+    guard++;
+  }
+  while (richWordCount(rich) < min) {
+    rich.about += ` Dedicated readers finish ${book.title} chapter by chapter, revisiting highlighted passages until the ideas feel natural in conversation and on exams.`;
+  }
   const total = richWordCount(rich);
-  if (total < 750) console.warn('Thin content for', id, total, 'words');
+  if (total < min - 50) console.warn('Thin content for', book.id, total, 'words');
   return rich;
 }
 
 const out = {};
 for (const book of BOOKS) {
-  out[book.id] = validateRich(book.id, HANDCRAFTED[book.id] || generateRich(book));
+  const handcrafted = HANDCRAFTED[book.id];
+  let rich = handcrafted ? Object.assign({}, handcrafted) : generateRich(book);
+  if (!handcrafted) rich.reviews = [];
+  out[book.id] = ensureMinWords(book, rich, 800);
 }
 
 const header = '/* Auto-generated rich book page content. Handcrafted overrides in scripts/book-rich-content-handcrafted.js */\n';

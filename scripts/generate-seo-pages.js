@@ -281,10 +281,24 @@ function bookAuthor(book) {
 }
 
 function bookMetaTitle(book) {
-  const dl = book.access === 'download';
-  return dl
-    ? book.title + ' Free PDF | Download Classic Novel | LifeWithBooks'
-    : book.title + ' | Free Study Guide PDF | LifeWithBooks';
+  const isRef = book.license === 'reference' || book.access === 'summary';
+  const isClassic = book.license === 'public-domain';
+  if (isRef) return book.title + ' | Reference Study Overview | LifeWithBooks';
+  if (book.access === 'download' && isClassic) return book.title + ' Free PDF | Classic Novel | LifeWithBooks';
+  if (book.access === 'download') return book.title + ' Free PDF | Study Guide | LifeWithBooks';
+  return book.title + ' | LifeWithBooks';
+}
+
+function isSummaryOnlyBook(book) {
+  return (book.access === 'summary' || book.license === 'reference') && !book.pdfDirect;
+}
+
+function isPdfGuideArticle(a) {
+  return /^free-.+-pdf-guide$/.test(a.id);
+}
+
+function pdfGuideBookSlug(articleId) {
+  return articleId.replace(/^free-/, '').replace(/-pdf-guide$/, '');
 }
 
 function bookMetaDesc(book) {
@@ -447,6 +461,8 @@ function renderBookPage(book, depth) {
     : '';
 
   const relatedBlock = renderRelatedBooks(book, p, seo);
+  const skipDescArticle = !!getBookRich(book);
+  const introArticleHtml = skipDescArticle ? '' : descHtml;
 
   return renderHead({
     title: pageTitle,
@@ -454,7 +470,8 @@ function renderBookPage(book, depth) {
     canonical: url,
     ogType: 'book',
     image: ORIGIN + '/og/books/' + book.id + '.webp',
-    jsonLd
+    jsonLd,
+    robots: isSummaryOnlyBook(book) ? 'noindex, follow' : undefined
   }, depth) + `
 <body data-page="book" data-book-id="${esc(book.id)}" data-seo-static="true" data-path-depth="1" id="top">
   <div id="site-header-host"></div>
@@ -465,7 +482,7 @@ function renderBookPage(book, depth) {
     <div class="meta"><span class="tag">${esc(author)}</span>${originalBadge}${pageTag}<span class="tag">${downloadable ? 'Free PDF Download' : 'Study Guide'}</span></div>
     ${leadHtml}
     ${fullGuideBannerHtml(book, p)}
-    <article class="article">${extraSeoHtml}${descHtml}</article>
+    <article class="article">${extraSeoHtml}${introArticleHtml}</article>
     ${download}
     ${richHtml}
     ${faqHtml}
@@ -619,7 +636,20 @@ function renderArticlePage(a, depth) {
     image: ORIGIN + '/og-articles.webp'
   })}</script>${faqSchema}`;
 
-  return renderHead({ title, description: desc, canonical: url, ogType: 'article', image: ORIGIN + '/og-articles.webp', jsonLd }, depth) + `
+  const pdfGuide = isPdfGuideArticle(a);
+  const guideCanonical = pdfGuide
+    ? ORIGIN + '/book/' + encodeURIComponent(pdfGuideBookSlug(a.id)) + '.html'
+    : url;
+
+  return renderHead({
+    title,
+    description: desc,
+    canonical: guideCanonical,
+    ogType: 'article',
+    image: ORIGIN + '/og-articles.webp',
+    jsonLd,
+    robots: pdfGuide ? 'noindex, follow' : undefined
+  }, depth) + `
 <body data-page="article" data-article-id="${esc(a.id)}" data-seo-static="true" data-path-depth="1" id="top">
   <div id="site-header-host"></div>
   <main class="book-single">
