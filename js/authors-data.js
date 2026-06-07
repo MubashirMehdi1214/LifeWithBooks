@@ -43,7 +43,15 @@ Away from books, Sarah is a committed advocate for public library funding, an en
       "how-to-build-a-daily-reading-habit",
       "complete-history-of-english-literature",
       "jules-verne-predicted-the-future",
-      "charles-dickens-social-justice"
+      "charles-dickens-social-justice",
+      "fiction-versus-nonfiction-balanced-reading",
+      "treasure-island-review-adventure-lovers",
+      "frankenstein-review-beyond-the-movies",
+      "great-expectations-book-review",
+      "how-to-read-difficult-books",
+      "pride-and-prejudice-book-review",
+      "jane-eyre-review-modern-readers",
+      "sherlock-holmes-reading-guide"
     ],
 
     recommendedBookIds: [
@@ -100,7 +108,13 @@ He is a qualified CELTA and DELTA trainer, holds a Proficiency-level certificate
       "learn-a-language-with-free-books",
       "learn-german-through-reading-guide",
       "how-to-use-free-pdf-books-pass-exams",
-      "ielts-band-score-complete-guide"
+      "ielts-band-score-complete-guide",
+      "learn-french-with-free-books",
+      "spanish-reading-plan-for-beginners",
+      "build-english-vocabulary-through-reading",
+      "sq3r-method-for-better-reading",
+      "english-beginners-first-30-days",
+      "deep-reading-vs-skimming"
     ],
 
     recommendedBookIds: [
@@ -162,7 +176,12 @@ He reads every morning before the rest of the house is awake, keeps a detailed r
       "how-to-download-public-domain-books-legally-2026",
       "free-islamic-books-pdf-download-complete-list",
       "o-level-a-level-free-study-materials-guide",
-      "best-free-kids-learning-books-pdf-parents"
+      "best-free-kids-learning-books-pdf-parents",
+      "where-to-find-free-books-legally",
+      "best-classic-novels-english-learners-free-pdf",
+      "fsc-notes-free-pdf-download-subject-guide",
+      "best-free-arabic-learning-books-beginners",
+      "best-programming-books-beginners-free-pdf-2026"
     ],
 
     recommendedBookIds: [
@@ -219,7 +238,13 @@ She collaborates with Sarah Mitchell on literature guides for teens and with Jam
       "essential-english-grammar-self-study",
       "improve-english-by-reading-aloud",
       "building-a-free-digital-library",
-      "learn-python-free-pdf-books-beginners-2026"
+      "learn-python-free-pdf-books-beginners-2026",
+      "how-to-read-pdfs-effectively-for-study",
+      "english-daily-15-minute-routine",
+      "essential-english-grammar-self-study",
+      "improve-english-by-reading-aloud",
+      "best-free-books-for-students",
+      "building-a-free-digital-library"
     ],
 
     recommendedBookIds: [

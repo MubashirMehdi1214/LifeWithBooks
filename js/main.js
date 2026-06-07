@@ -1616,7 +1616,7 @@ function initArticleDetail() {
     wrap.innerHTML = '<p style="text-align:center;padding:40px 0;">Sorry, this article could not be found. <a href="articles.html">Browse all articles</a>.</p>';
     return;
   }
-  const url = isStatic ? getArticlePageUrl(a.id) : SITE_ORIGIN + '/article.html?id=' + encodeURIComponent(a.id);
+  const url = getArticlePageUrl(a.id);
   const desc = (a.excerpt || '').slice(0, 320);
   setShareMeta({ title: a.title + ' | LifeWithBooks', description: desc, url: url, image: SITE_ORIGIN + '/og-articles.webp' });
   setMeta('meta[property="og:type"]', 'content', 'article');

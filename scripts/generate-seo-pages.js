@@ -585,16 +585,54 @@ function getArticleSeo(article) {
 const AUTHOR_PAGE_SLUGS = {
   'Sarah Mitchell': 'sarah-mitchell',
   'James Parker': 'james-parker',
-  'Mubashir Mehdi': 'mubashir-mehdi'
+  'Mubashir Mehdi': 'mubashir-mehdi',
+  'Maria Chen': 'maria-chen'
 };
 
-function renderArticleAuthorTag(authorName, depth) {
+const ARTICLE_AUTHOR_BY_ID = {};
+AUTHORS.forEach(function(author) {
+  (author.articleIds || []).forEach(function(id) {
+    if (!ARTICLE_AUTHOR_BY_ID[id]) ARTICLE_AUTHOR_BY_ID[id] = author;
+  });
+});
+
+const EDITORIAL_TEAM_FALLBACK = {
+  'fiction-versus-nonfiction-balanced-reading': 'sarah-mitchell',
+  'treasure-island-review-adventure-lovers': 'sarah-mitchell',
+  'frankenstein-review-beyond-the-movies': 'sarah-mitchell',
+  'great-expectations-book-review': 'sarah-mitchell',
+  'how-to-read-difficult-books': 'sarah-mitchell',
+  'learn-french-with-free-books': 'james-parker',
+  'spanish-reading-plan-for-beginners': 'james-parker',
+  'build-english-vocabulary-through-reading': 'james-parker',
+  'where-to-find-free-books-legally': 'mubashir-mehdi',
+  'how-to-read-pdfs-effectively-for-study': 'maria-chen',
+  'english-daily-15-minute-routine': 'maria-chen',
+  'essential-english-grammar-self-study': 'maria-chen',
+  'improve-english-by-reading-aloud': 'maria-chen',
+  'best-free-books-for-students': 'maria-chen',
+  'building-a-free-digital-library': 'maria-chen',
+  'pride-and-prejudice-book-review': 'sarah-mitchell',
+  'jane-eyre-review-modern-readers': 'sarah-mitchell',
+  'sherlock-holmes-reading-guide': 'sarah-mitchell',
+  'what-is-public-domain-and-why-it-matters': 'mubashir-mehdi'
+};
+
+function resolveArticleAuthor(a) {
+  const mapped = ARTICLE_AUTHOR_BY_ID[a.id];
+  if (mapped) return { name: mapped.name, slug: mapped.id };
+  const slug = AUTHOR_PAGE_SLUGS[a.author] || EDITORIAL_TEAM_FALLBACK[a.id];
+  if (slug) {
+    const author = AUTHORS.find(x => x.id === slug);
+    return { name: author ? author.name : a.author, slug: slug };
+  }
+  return { name: 'Mubashir Mehdi', slug: 'mubashir-mehdi' };
+}
+
+function renderArticleAuthorTag(a, depth) {
   const p = depth === 0 ? '' : '../';
-  const name = authorName || 'Mubashir Mehdi';
-  const slug = AUTHOR_PAGE_SLUGS[name];
-  return slug
-    ? '<a href="' + p + 'author/' + slug + '.html">' + esc(name) + '</a>'
-    : esc(name);
+  const { name, slug } = resolveArticleAuthor(a);
+  return '<a href="' + p + 'author/' + slug + '.html">' + esc(name) + '</a>';
 }
 
 function renderArticlePage(a, depth) {
@@ -630,7 +668,7 @@ function renderArticlePage(a, depth) {
     description: desc,
     datePublished: a.date,
     dateModified: modified,
-    author: { '@type': 'Person', name: a.author || 'Mubashir Mehdi' },
+    author: { '@type': 'Person', name: resolveArticleAuthor(a).name },
     publisher: { '@type': 'Organization', name: 'LifeWithBooks', url: ORIGIN + '/' },
     mainEntityOfPage: url,
     image: ORIGIN + '/og-articles.webp'
@@ -656,7 +694,7 @@ function renderArticlePage(a, depth) {
     <div id="article-detail">
       <div class="breadcrumb"><a href="${p}index.html">Home</a> &raquo; <a href="${p}articles.html">Articles</a> &raquo; <span>${esc(a.title)}</span></div>
       <h1>${esc(a.title)}${updatedBadge}</h1>
-      <div class="meta"><span class="tag">${esc(a.date)}</span><span class="tag">Last updated: ${esc(modified.slice(0, 7))}</span><span class="tag">${renderArticleAuthorTag(a.author, depth)}</span></div>
+      <div class="meta"><span class="tag">${esc(a.date)}</span><span class="tag">Last updated: ${esc(modified.slice(0, 7))}</span><span class="tag">${renderArticleAuthorTag(a, depth)}</span></div>
       ${shareLinks}
       <article class="article">${extraSeoHtml}${body}</article>
       ${faqHtml}
