@@ -1960,3 +1960,18 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
   .hero-home__cta .btn { width: 100%; text-align: center; }
 }
 
+/* Rich book pages — AdSense content upgrade */
+.book-rich-content h2 { margin-top: 2rem; }
+.reader-review { margin: 1.25rem 0; padding: 1rem 1.25rem; background: var(--base, #faf0e2); border-left: 4px solid var(--accent, #1E565C); border-radius: var(--radius, 6px); }
+.reader-review cite { display: block; margin-top: 0.5rem; font-size: 0.9rem; color: var(--contrast-3, #666); font-style: normal; }
+.category-intro p { line-height: 1.8; margin-bottom: 1rem; }
+.category-featured-articles, .category-reading-guide { max-width: 820px; margin: 0 auto 2rem; }
+.category-featured-articles ul, .category-reading-guide p { line-height: 1.75; }
+.home-about-grid h3 { margin: 1.5rem 0 0.75rem; color: var(--contrast, #172021); }
+.home-about-grid p { margin-bottom: 1rem; line-height: 1.8; }
+.author-page .author-profile { text-align: center; margin-bottom: 2rem; }
+.author-avatar { border-radius: 50%; margin: 0 auto 1rem; display: block; box-shadow: var(--shadow, 0 2px 14px rgba(23,32,33,.08)); }
+.author-title { font-size: 1.1rem; color: var(--accent, #1E565C); font-weight: 600; }
+.author-articles ul, .author-books ul { list-style: none; padding: 0; }
+.author-articles li, .author-books li { margin: 0.5rem 0; }
+

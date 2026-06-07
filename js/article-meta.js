@@ -2,9 +2,9 @@
 const ARTICLE_META = {
   "how-to-build-a-daily-reading-habit": {
     "title": "How to Build a Daily Reading Habit That Actually Sticks",
-    "excerpt": "Most reading goals fail because they are too big and too vague. Here is a calm, practical system for reading every single day - even on busy days.",
+    "excerpt": "A practical reading habit system — anchors, streaks, book choice and recovery after missed days.",
     "date": "2026-01-12",
-    "author": "LifeWithBooks Editorial Team"
+    "author": "Sarah Mitchell"
   },
   "what-is-public-domain-and-why-it-matters": {
     "title": "What Is the Public Domain, and Why Should Readers Care?",
@@ -13,16 +13,16 @@ const ARTICLE_META = {
     "author": "LifeWithBooks Editorial Team"
   },
   "learn-a-language-with-free-books": {
-    "title": "How to Learn a Language Using Free Books and Smart Habits",
-    "excerpt": "You do not need an expensive course to make real progress. Here is how to combine free books with proven study habits to learn faster.",
+    "title": "Best Free Books for Learning English: A Practical 2026 Guide",
+    "excerpt": "The best free English learning books and how to use them — grammar, vocabulary, conversation and reading paths.",
     "date": "2026-02-03",
-    "author": "LifeWithBooks Editorial Team"
+    "author": "James Parker"
   },
   "best-free-classic-novels-to-start-with": {
     "title": "10 Free Classic Novels That Are Perfect for Starting Out",
-    "excerpt": "Classics can feel intimidating, but many are fast, fun and easy to love. Here are ten free public-domain novels that make a brilliant starting point.",
+    "excerpt": "Why classic literature still matters in 2026 — and ten free novels that prove it.",
     "date": "2026-02-15",
-    "author": "LifeWithBooks Editorial Team"
+    "author": "Sarah Mitchell"
   },
   "how-to-read-pdfs-effectively-for-study": {
     "title": "How to Read PDFs Effectively for Study and Self-Learning",
@@ -91,10 +91,10 @@ const ARTICLE_META = {
     "author": "LifeWithBooks Editorial Team"
   },
   "sq3r-method-for-better-reading": {
-    "title": "The SQ3R Method: Read Books More Deeply and Remember More",
-    "excerpt": "Survey, Question, Read, Recite, Review — SQ3R turns passive page-turning into active learning. Here is how to apply it to any book on your shelf.",
-    "date": "2026-05-13",
-    "author": "LifeWithBooks Editorial Team"
+    "title": "The SQ3R Method: How to Read Textbooks and Remember What You Read",
+    "excerpt": "SQ3R explained with examples — and how to use it to memorize study material for exams.",
+    "date": "2026-03-01",
+    "author": "James Parker"
   },
   "how-to-read-difficult-books": {
     "title": "How to Read Difficult Books Without Giving Up",
@@ -103,16 +103,16 @@ const ARTICLE_META = {
     "author": "LifeWithBooks Editorial Team"
   },
   "deep-reading-vs-skimming": {
-    "title": "Deep Reading vs Skimming: When to Use Each",
-    "excerpt": "Skimming is not cheating, and deep reading is not always necessary. Learn when to move fast, when to slow down, and how to combine both without guilt.",
-    "date": "2026-05-17",
-    "author": "LifeWithBooks Editorial Team"
+    "title": "Deep Reading vs Skimming: When to Use Each — Plus Speed Reading Tips",
+    "excerpt": "Choose deep reading or skimming deliberately, plus evidence-based speed techniques for study.",
+    "date": "2026-01-25",
+    "author": "Sarah Mitchell"
   },
   "english-beginners-first-30-days": {
-    "title": "Your First 30 Days of English: A Beginner's Roadmap",
-    "excerpt": "Starting English can feel overwhelming. This four-week plan focuses on small daily wins, free books, and habits that build real confidence without expensive cou",
-    "date": "2026-05-19",
-    "author": "LifeWithBooks Editorial Team"
+    "title": "English Learning Complete Guide: Your First 90 Days",
+    "excerpt": "A ninety-day English learning plan using free books — weeks 1–12 schedules for beginners.",
+    "date": "2026-02-10",
+    "author": "James Parker"
   },
   "essential-english-grammar-self-study": {
     "title": "Essential English Grammar for Self-Study Learners",
@@ -578,19 +578,19 @@ const ARTICLE_META = {
   },
   "how-to-prepare-for-ielts-using-free-pdf-books": {
     "title": "How to Prepare for IELTS Using Free PDF Books",
-    "excerpt": "IELTS preparation free PDF books and guides — build a study plan with LifeWithBooks reference resources for Academic Listening, Reading, Writing and Speaking.",
+    "excerpt": "A realistic IELTS study plan using free LifeWithBooks PDF guides plus official practice tests — for band 6 to 7.5.",
     "date": "2026-05-01",
-    "author": "Mubashir Mehdi"
+    "author": "James Parker"
   },
   "complete-css-exam-preparation-guide-pakistan": {
     "title": "Complete CSS Exam Preparation Guide for Pakistani Students",
-    "excerpt": "CSS exam preparation guide for Pakistan — English essay, precis, current affairs, GK and study planning with free LifeWithBooks PDF resources.",
+    "excerpt": "CSS Pakistan preparation with free PDF guides — English essay, precis, current affairs and study planning.",
     "date": "2026-05-02",
     "author": "Mubashir Mehdi"
   },
   "best-free-books-for-matric-students-pakistan": {
     "title": "Best Free Books for Matric Students in Pakistan",
-    "excerpt": "Matric books free PDF guides for Pakistani board students — English, Math, Biology and exam revision on LifeWithBooks.",
+    "excerpt": "Free matric study guides — English, Math, Biology and exam strategy for Pakistani boards.",
     "date": "2026-05-03",
     "author": "Mubashir Mehdi"
   },
@@ -619,9 +619,9 @@ const ARTICLE_META = {
     "author": "Mubashir Mehdi"
   },
   "free-self-development-books-pdf-changed-lives": {
-    "title": "Free Self Development Books PDF That Changed Millions of Lives",
-    "excerpt": "Self development books free PDF classics — As a Man Thinketh, The Art of War, Emerson and prosperity literature on LifeWithBooks.",
-    "date": "2026-05-08",
+    "title": "Free Self Development Books That Changed Lives — And How to Read Them",
+    "excerpt": "Public-domain self-help classics and how to apply them without falling into toxic positivity.",
+    "date": "2026-05-10",
     "author": "Mubashir Mehdi"
   },
   "public-domain-books-complete-guide-download": {
@@ -695,5 +695,35 @@ const ARTICLE_META = {
     "excerpt": "Study free PDF books effectively for Matric, FSc, CSS, IELTS and O Level exams — strategies on LifeWithBooks.",
     "date": "2026-05-20",
     "author": "Mubashir Mehdi"
+  },
+  "complete-history-of-english-literature": {
+    "title": "The Complete History of English Literature: From Anglo-Saxon to the Digital Age",
+    "excerpt": "From Beowulf to digital libraries — a readable history of English literature with key works, dates and movements.",
+    "date": "2026-06-07",
+    "author": "Sarah Mitchell"
+  },
+  "jules-verne-predicted-the-future": {
+    "title": "Jules Verne: The Man Who Predicted the Future (With Proof)",
+    "excerpt": "Jules Verne's novels anticipated submarines, space travel and news satellites — with documented proof from the texts themselves.",
+    "date": "2026-06-07",
+    "author": "Sarah Mitchell"
+  },
+  "how-to-download-public-domain-books-legally-2026": {
+    "title": "How to Download and Read Public Domain Books Legally: Complete 2026 Guide",
+    "excerpt": "What public domain means, how copyright expires, where to download safely, and how to verify a book is legal in 2026.",
+    "date": "2026-06-07",
+    "author": "Mubashir Mehdi"
+  },
+  "ielts-band-score-complete-guide": {
+    "title": "IELTS Band Score Complete Guide: What Each Score Means and How to Achieve It",
+    "excerpt": "Exact IELTS band descriptors, university requirements, visa thresholds and realistic improvement timelines.",
+    "date": "2026-06-07",
+    "author": "James Parker"
+  },
+  "charles-dickens-social-justice": {
+    "title": "Charles Dickens and Social Justice: How Victorian Novels Changed Laws and Society",
+    "excerpt": "How Dickens's fiction influenced child labour law, public health reform and modern ideas of social responsibility.",
+    "date": "2026-06-07",
+    "author": "Sarah Mitchell"
   }
 };

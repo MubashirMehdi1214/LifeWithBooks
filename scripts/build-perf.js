@@ -81,10 +81,11 @@ function minifyAssets() {
   execSync('npx esbuild js/main.js --minify --outfile=js/main.min.js', { cwd: root, stdio: 'inherit' });
   execSync('npx esbuild js/books.js --minify --outfile=js/books.min.js', { cwd: root, stdio: 'inherit' });
 
-  const articleParts = ['articles-more-1.js', 'articles-more-2.js', 'articles-more-3.js', 'articles-more-4.js', 'articles-more-5.js', 'articles-more-6.js', 'articles.js'];
+  const articleParts = ['articles-more-1.js', 'articles-more-2.js', 'articles-more-3.js', 'articles-more-4.js', 'articles-more-5.js', 'articles-more-6.js', 'articles-more-7.js', 'articles-adsense-rewrites.js', 'articles.js'];
   let bundle = '';
   for (const f of articleParts) {
-    bundle += fs.readFileSync(path.join(root, 'js', f), 'utf8') + '\n';
+    const fp = path.join(root, 'js', f);
+    if (fs.existsSync(fp)) bundle += fs.readFileSync(fp, 'utf8') + '\n';
   }
   const tmp = path.join(root, 'js', '_articles_bundle_tmp.js');
   fs.writeFileSync(tmp, bundle, 'utf8');

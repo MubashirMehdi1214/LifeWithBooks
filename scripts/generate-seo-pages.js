@@ -7,6 +7,9 @@ const root = path.join(__dirname, '..');
 const today = new Date().toISOString().slice(0, 10);
 
 const { BOOKS, CATEGORIES } = require(path.join(root, 'js', 'books.js'));
+const { BOOK_RICH_CONTENT } = require(path.join(root, 'js', 'book-rich-content.js'));
+const { CATEGORY_RICH_CONTENT } = require(path.join(root, 'js', 'category-rich-content.js'));
+const { AUTHORS } = require(path.join(root, 'js', 'authors-data.js'));
 const { pdfPublicPath } = require('./pdf-download-path');
 let ARTICLES = [];
 try {
@@ -16,6 +19,8 @@ try {
   require(path.join(root, 'js', 'articles-more-4.js'));
   require(path.join(root, 'js', 'articles-more-5.js'));
   try { require(path.join(root, 'js', 'articles-more-6.js')); } catch (e) {}
+  try { require(path.join(root, 'js', 'articles-more-7.js')); } catch (e) {}
+  try { require(path.join(root, 'js', 'articles-adsense-rewrites.js')); } catch (e) {}
   ARTICLES = require(path.join(root, 'js', 'articles.js')).ARTICLES || [];
 } catch (e) {}
 
@@ -293,6 +298,44 @@ function sortCategoryBooks(items) {
   return items.slice().sort((a, b) => rank(a) - rank(b) || a.title.localeCompare(b.title));
 }
 
+function getBookRich(book) {
+  return BOOK_RICH_CONTENT[book.id] || null;
+}
+
+function renderRichBookSections(book, p) {
+  const rich = getBookRich(book);
+  if (!rich) return '';
+  const learnHtml = rich.learn && rich.learn.length
+    ? '<h2>What You Will Learn</h2><ul>' + rich.learn.map(item => '<li>' + esc(item) + '</li>').join('') + '</ul>'
+    : '';
+  const reviewsHtml = rich.reviews && rich.reviews.length
+    ? '<h2>Reader Reviews</h2>' + rich.reviews.map(r =>
+      '<blockquote class="reader-review"><p>&ldquo;' + esc(r.text) + '&rdquo;</p><cite>&mdash; ' + esc(r.name) + ' from ' + esc(r.place) + '</cite></blockquote>'
+    ).join('')
+    : '';
+  return [
+    '<h2>About This Book</h2><p>' + esc(rich.about) + '</p>',
+    learnHtml,
+    '<h2>About the Author</h2><p>' + esc(rich.authorBio) + '</p>',
+    '<h2>Why Read This Book</h2><p>' + esc(rich.whyRead) + '</p>',
+    '<h2>Historical Context</h2><p>' + esc(rich.historical) + '</p>',
+    reviewsHtml
+  ].join('\n      ');
+}
+
+function renderRelatedBooks(book, p, seo) {
+  const ids = (seo.relatedIds || []).concat((getBookRich(book) || {}).relatedIds || [])
+    .concat(BOOKS.filter(b => b.id !== book.id && b.categories.some(c => book.categories.includes(c))).map(b => b.id))
+    .filter((id, i, arr) => arr.indexOf(id) === i)
+    .slice(0, 5);
+  const items = ids.map(id => BOOKS.find(b => b.id === id)).filter(Boolean);
+  if (!items.length) return '';
+  const lis = items.map(b =>
+    '<li><a href="' + encodeURIComponent(b.id) + '.html"><span>' + esc(b.title) + '</span><span class="arrow">View &raquo;</span></a></li>'
+  ).join('\n          ');
+  return '<div class="related-posts"><h3>Related Books</h3><ul>' + lis + '</ul></div>';
+}
+
 function fullGuideBannerHtml(book, p) {
   if (!book.fullGuideId) return '';
   const full = BOOKS.find((b) => b.id === book.fullGuideId);
@@ -319,12 +362,7 @@ function renderBookPage(book, depth) {
   const author = bookAuthor(book);
   const downloadable = book.access === 'download';
   const cover = coverPicture(book, p, true);
-  const related = (seo.relatedIds || [])
-    .map((id) => BOOKS.find((b) => b.id === id))
-    .filter(Boolean)
-    .concat(BOOKS.filter((b) => b.id !== book.id && b.categories.some((c) => book.categories.includes(c))))
-    .filter((b, i, arr) => arr.findIndex((x) => x.id === b.id) === i)
-    .slice(0, 4);
+  const richHtml = renderRichBookSections(book, p);
   const descHtml = (book.description || []).map(line => {
     if (line.indexOf('## ') === 0) return '<h2>' + esc(line.slice(3)) + '</h2>';
     return '<p>' + esc(line) + '</p>';
@@ -378,9 +416,7 @@ function renderBookPage(book, depth) {
     ? '<div class="book-lead"><p>' + esc(book.blurb) + '</p></div>'
     : '';
 
-  const relatedHtml = related.map(b =>
-    `<li><a href="${encodeURIComponent(b.id)}.html"><span>${esc(b.title)}</span><span class="arrow">View &raquo;</span></a></li>`
-  ).join('\n          ');
+  const relatedBlock = renderRelatedBooks(book, p, seo);
 
   return renderHead({
     title: pageTitle,
@@ -399,10 +435,10 @@ function renderBookPage(book, depth) {
     <div class="meta"><span class="tag">${esc(author)}</span>${originalBadge}${pageTag}<span class="tag">${downloadable ? 'Free PDF Download' : 'Study Guide'}</span></div>
     ${leadHtml}
     ${fullGuideBannerHtml(book, p)}
-    <article class="article">${extraSeoHtml}${descHtml}${extra}</article>
+    <article class="article book-rich-content">${extraSeoHtml}${richHtml}${descHtml}${extra}</article>
     ${download}
     ${faqHtml}
-    <div class="related-posts"><h3>You Might Also Like</h3><ul>${relatedHtml}</ul></div>
+    ${relatedBlock}
   </main>
   <div id="site-footer-host"></div>
 ` + renderScripts(depth, true);
@@ -445,9 +481,28 @@ function renderCategoryPage(slug, depth) {
   const url = ORIGIN + '/category/' + slug + '.html';
   const title = seo ? seo.pageTitle : cat.label + ' | LifeWithBooks';
   const desc = seo ? seo.metaDescription : 'Browse ' + cat.label + ' on LifeWithBooks.';
-  const intro = seo ? seo.intro : 'Browse free books in ' + cat.label + ' on LifeWithBooks.';
+  const CATEGORY_RICH_ALIASES = {
+    'css-pms-books': 'css-pms-pakistan',
+    'health-books': 'health-wellness-books',
+    'matric-fsc-notes': 'matric-fsc-books',
+    'stories-books': 'kids-stories'
+  };
+  const richKey = CATEGORY_RICH_CONTENT[slug] ? slug : (CATEGORY_RICH_ALIASES[slug] || slug);
+  const rich = CATEGORY_RICH_CONTENT[richKey] || {};
+  const intro = rich.intro || (seo ? seo.intro : 'Browse free books in ' + cat.label + ' on LifeWithBooks.');
   const extraIntro = seo && seo.extraIntro ? seo.extraIntro : '';
   const heading = seo ? seo.heading : cat.label;
+  const readingGuide = rich.readingGuide
+    ? '<section class="category-reading-guide"><h2>Reading Guide</h2><p>' + esc(rich.readingGuide) + '</p></section>'
+    : '';
+  const featuredIds = rich.featuredArticleIds || [];
+  const featuredHtml = featuredIds.length
+    ? '<section class="category-featured-articles"><h2>Featured Reading Guides</h2><ul>' + featuredIds.map(id => {
+        const a = ARTICLES.find(x => x.id === id);
+        if (!a) return '';
+        return '<li><a href="' + p + 'articles/' + encodeURIComponent(id) + '.html">' + esc(a.title) + '</a></li>';
+      }).join('') + '</ul></section>'
+    : '';
   const items = sortCategoryBooks(BOOKS.filter(b => b.categories.includes(slug)));
   const cards = items.map(b => categoryBookCard(b, p)).join('\n      ');
   const jsonLd = `<script type="application/ld+json">${JSON.stringify({
@@ -464,8 +519,10 @@ function renderCategoryPage(slug, depth) {
   <div id="site-header-host"></div>
   <section class="section">
     <div class="section-title"><h1>${esc(heading)}</h1></div>
-    <p style="text-align:center;max-width:760px;margin:0 auto 30px;">${esc(intro)}</p>
+    <div class="category-intro article" style="max-width:820px;margin:0 auto 30px;"><p>${esc(intro)}</p></div>
     ${extraIntro}
+    ${featuredHtml}
+    ${readingGuide}
     <div class="book-grid" id="category-grid">${cards || '<p style="text-align:center;">Books coming soon.</p>'}</div>
   </section>
   <div id="category-articles"></div>
@@ -534,11 +591,58 @@ function renderArticlePage(a, depth) {
 ` + renderScripts(depth, true);
 }
 
+function renderAuthorPage(author, depth) {
+  const p = depth === 0 ? '' : '../';
+  const url = ORIGIN + '/author/' + encodeURIComponent(author.id) + '.html';
+  const title = author.name + ' | ' + (author.title || 'Editor') + ' | LifeWithBooks';
+  const desc = (author.bio || '').slice(0, 155) + '...';
+  const avatar = p + 'covers/author-' + author.id + '.svg';
+  const articlesHtml = (author.articleIds || []).map(id => {
+    const a = ARTICLES.find(x => x.id === id);
+    return a ? '<li><a href="' + p + 'articles/' + encodeURIComponent(id) + '.html">' + esc(a.title) + '</a></li>' : '';
+  }).filter(Boolean).join('');
+  const booksHtml = (author.recommendedBookIds || []).map(id => {
+    const b = BOOKS.find(x => x.id === id);
+    return b ? '<li><a href="' + p + 'book/' + encodeURIComponent(id) + '.html">' + esc(b.title) + '</a></li>' : '';
+  }).filter(Boolean).join('');
+  const social = author.social || {};
+  const socialHtml = [
+    social.twitter ? '<a href="' + esc(social.twitter) + '" rel="noopener" target="_blank">Twitter</a>' : '',
+    social.linkedin ? '<a href="' + esc(social.linkedin) + '" rel="noopener" target="_blank">LinkedIn</a>' : ''
+  ].filter(Boolean).join(' &middot; ');
+  const jsonLd = `<script type="application/ld+json">${JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    name: author.name,
+    url: url,
+    description: desc,
+    mainEntity: { '@type': 'Person', name: author.name, jobTitle: author.title, description: (author.bio || '').slice(0, 300) }
+  })}</script>`;
+  return renderHead({ title, description: desc, canonical: url, jsonLd }, depth) + `
+<body data-page="author" data-author-id="${esc(author.id)}" data-seo-static="true" data-path-depth="1" id="top">
+  <div id="site-header-host"></div>
+  <main class="book-single author-page">
+    <div class="breadcrumb"><a href="${p}index.html">Home</a> &raquo; <a href="${p}about.html">About</a> &raquo; <span>${esc(author.name)}</span></div>
+    <div class="author-profile">
+      <img class="author-avatar" src="${esc(avatar)}" alt="${esc(author.name)}" width="160" height="160" loading="eager">
+      <h1>${esc(author.name)}</h1>
+      <p class="author-title">${esc(author.title || '')}</p>
+      ${socialHtml ? '<p class="author-social">' + socialHtml + '</p>' : ''}
+    </div>
+    <article class="article"><h2>About ${esc(author.name.split(' ')[0])}</h2><p>${esc(author.bio)}</p></article>
+    ${articlesHtml ? '<section class="author-articles"><h2>Articles by ' + esc(author.name) + '</h2><ul>' + articlesHtml + '</ul></section>' : ''}
+    ${booksHtml ? '<section class="author-books"><h2>Recommended Books</h2><ul>' + booksHtml + '</ul></section>' : ''}
+  </main>
+  <div id="site-footer-host"></div>
+` + renderScripts(depth, true);
+}
+
 // Generate
 const bookDir = path.join(root, 'book');
 const catDir = path.join(root, 'category');
 const artDir = path.join(root, 'articles');
-[bookDir, catDir, artDir].forEach(d => fs.mkdirSync(d, { recursive: true }));
+const authorDir = path.join(root, 'author');
+[bookDir, catDir, artDir, authorDir].forEach(d => fs.mkdirSync(d, { recursive: true }));
 
 let n = 0;
 BOOKS.forEach(b => {
@@ -561,4 +665,8 @@ fs.writeFileSync(path.join(root, 'js', 'article-meta.js'),
   '/* Auto-generated article SEO meta map */\nconst ARTICLE_META = ' + JSON.stringify(meta, null, 2) + ';\n',
   'utf8');
 
-console.log('SEO pages:', n, 'books,', CATEGORIES.length, 'categories,', ARTICLES.length, 'articles, article-meta.js');
+AUTHORS.forEach(author => {
+  fs.writeFileSync(path.join(authorDir, author.id + '.html'), renderAuthorPage(author, 1), 'utf8');
+});
+
+console.log('SEO pages:', n, 'books,', CATEGORIES.length, 'categories,', ARTICLES.length, 'articles,', AUTHORS.length, 'authors, article-meta.js');

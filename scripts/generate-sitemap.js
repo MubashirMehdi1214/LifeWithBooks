@@ -14,8 +14,11 @@ try {
   require(path.join(root, 'js', 'articles-more-4.js'));
   require(path.join(root, 'js', 'articles-more-5.js'));
   try { require(path.join(root, 'js', 'articles-more-6.js')); } catch (e) {}
+  try { require(path.join(root, 'js', 'articles-more-7.js')); } catch (e) {}
+  try { require(path.join(root, 'js', 'articles-adsense-rewrites.js')); } catch (e) {}
   ARTICLES = require(path.join(root, 'js', 'articles.js')).ARTICLES || [];
 } catch (e) {}
+const { AUTHORS } = require(path.join(root, 'js', 'authors-data.js'));
 
 const today = new Date().toISOString().slice(0, 10);
 
@@ -66,6 +69,10 @@ BOOKS.forEach((b) => {
 
 ARTICLES.forEach((a) => {
   add('/articles/' + encodeURIComponent(a.id) + '.html', 'monthly', '0.70');
+});
+
+AUTHORS.forEach((author) => {
+  add('/author/' + encodeURIComponent(author.id) + '.html', 'monthly', '0.65');
 });
 
 const xml =
