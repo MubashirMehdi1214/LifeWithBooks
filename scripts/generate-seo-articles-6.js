@@ -2,8 +2,16 @@
 const fs = require('fs');
 const path = require('path');
 
+const { BOOKS } = require(path.join(__dirname, '..', 'js', 'books.js'));
+
 function book(id, title) {
-  return `Browse our [${title}](/book/${id}.html) guide on LifeWithBooks for a structured overview and study tips.`;
+  const b = BOOKS.find(x => x.id === id);
+  const excerpt = (b && b.excerpt) ? b.excerpt.replace(/\s+/g, ' ').trim() : '';
+  const pages = b && b.pageCount ? ` (${b.pageCount} pages)` : '';
+  const detail = excerpt
+    ? excerpt
+    : `a free reference summary with chapter notes, download links and reading guidance for ${title}`;
+  return `Our [${title}](/book/${id}.html) page on LifeWithBooks offers ${detail}. Open the book page for the full editorial overview${pages}, then download the legal PDF directly — no signup required.`;
 }
 
 function faq(items) {

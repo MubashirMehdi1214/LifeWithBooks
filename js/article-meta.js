@@ -1,8 +1,8 @@
 /* Auto-generated article SEO meta map */
 const ARTICLE_META = {
   "how-to-build-a-daily-reading-habit": {
-    "title": "How to Build a Daily Reading Habit That Actually Sticks",
-    "excerpt": "A practical reading habit system — anchors, streaks, book choice and recovery after missed days.",
+    "title": "How to Build a Daily Reading Habit That Actually Sticks: A Science-Based Guide",
+    "excerpt": "Most reading goals fail within weeks — not because of willpower but because of poor design. Here is a science-backed system for reading every day, even on your ",
     "date": "2026-01-12",
     "author": "Sarah Mitchell"
   },
@@ -14,13 +14,13 @@ const ARTICLE_META = {
   },
   "learn-a-language-with-free-books": {
     "title": "Best Free Books for Learning English: A Practical 2026 Guide",
-    "excerpt": "The best free English learning books and how to use them — grammar, vocabulary, conversation and reading paths.",
+    "excerpt": "The best free books for learning English in 2026 — grammar guides, vocabulary builders, graded readers and classic literature — chosen for real language acquisi",
     "date": "2026-02-03",
     "author": "James Parker"
   },
   "best-free-classic-novels-to-start-with": {
-    "title": "10 Free Classic Novels That Are Perfect for Starting Out",
-    "excerpt": "Why classic literature still matters in 2026 — and ten free novels that prove it.",
+    "title": "Why Classic Novels Matter and the Best Free Ones to Start With in 2026",
+    "excerpt": "Classic novels are not difficult dusty relics — they are the books that taught literature itself how to work. Here is why they still matter, and the best free o",
     "date": "2026-02-15",
     "author": "Sarah Mitchell"
   },
@@ -91,9 +91,9 @@ const ARTICLE_META = {
     "author": "LifeWithBooks Editorial Team"
   },
   "sq3r-method-for-better-reading": {
-    "title": "The SQ3R Method: How to Read Textbooks and Remember What You Read",
-    "excerpt": "SQ3R explained with examples — and how to use it to memorize study material for exams.",
-    "date": "2026-03-01",
+    "title": "The SQ3R Method for Better Reading and Memorisation: A Complete Guide",
+    "excerpt": "SQ3R is the most evidence-supported active reading technique for study and memorisation. Here is how to apply it to any non-fiction book, textbook or article fo",
+    "date": "2026-05-13",
     "author": "James Parker"
   },
   "how-to-read-difficult-books": {
@@ -103,15 +103,15 @@ const ARTICLE_META = {
     "author": "LifeWithBooks Editorial Team"
   },
   "deep-reading-vs-skimming": {
-    "title": "Deep Reading vs Skimming: When to Use Each — Plus Speed Reading Tips",
-    "excerpt": "Choose deep reading or skimming deliberately, plus evidence-based speed techniques for study.",
-    "date": "2026-01-25",
+    "title": "Deep Reading vs Skimming vs Speed Reading: Which to Use and When",
+    "excerpt": "Most readers use only one mode for everything — and it is costing them time or comprehension. Learn when to skim, when to speed read, and when only deep reading",
+    "date": "2026-05-17",
     "author": "Sarah Mitchell"
   },
   "english-beginners-first-30-days": {
     "title": "English Learning Complete Guide: Your First 90 Days",
-    "excerpt": "A ninety-day English learning plan using free books — weeks 1–12 schedules for beginners.",
-    "date": "2026-02-10",
+    "excerpt": "A complete 90-day roadmap for English beginners — what to learn first, how to practise daily, which free resources to use, and how to move from zero to confiden",
+    "date": "2026-05-19",
     "author": "James Parker"
   },
   "essential-english-grammar-self-study": {
@@ -577,20 +577,20 @@ const ARTICLE_META = {
     "author": "LifeWithBooks Editorial Team"
   },
   "how-to-prepare-for-ielts-using-free-pdf-books": {
-    "title": "How to Prepare for IELTS Using Free PDF Books",
-    "excerpt": "A realistic IELTS study plan using free LifeWithBooks PDF guides plus official practice tests — for band 6 to 7.5.",
+    "title": "How to Prepare for IELTS Using Free PDF Books: A Complete Study Plan",
+    "excerpt": "A complete IELTS preparation guide using free PDF resources — build a structured study plan for all four modules, understand the band system, and maximise your ",
     "date": "2026-05-01",
     "author": "James Parker"
   },
   "complete-css-exam-preparation-guide-pakistan": {
-    "title": "Complete CSS Exam Preparation Guide for Pakistani Students",
-    "excerpt": "CSS Pakistan preparation with free PDF guides — English essay, precis, current affairs and study planning.",
+    "title": "Complete CSS Exam Preparation Guide for Pakistani Students: Strategy, Timeline and Resources",
+    "excerpt": "A complete, realistic guide to CSS exam preparation for Pakistan — how to plan 12 months, which subjects to prioritise, how to write English essays that score, ",
     "date": "2026-05-02",
     "author": "Mubashir Mehdi"
   },
   "best-free-books-for-matric-students-pakistan": {
-    "title": "Best Free Books for Matric Students in Pakistan",
-    "excerpt": "Free matric study guides — English, Math, Biology and exam strategy for Pakistani boards.",
+    "title": "Best Free Books and Study Guides for Matric Students in Pakistan: A Complete Subject Guide",
+    "excerpt": "A complete guide for Pakistani Matric students — which free study resources genuinely help, how to plan revision across all subjects, and how to prepare for boa",
     "date": "2026-05-03",
     "author": "Mubashir Mehdi"
   },
@@ -619,9 +619,9 @@ const ARTICLE_META = {
     "author": "Mubashir Mehdi"
   },
   "free-self-development-books-pdf-changed-lives": {
-    "title": "Free Self Development Books That Changed Lives — And How to Read Them",
-    "excerpt": "Public-domain self-help classics and how to apply them without falling into toxic positivity.",
-    "date": "2026-05-10",
+    "title": "Free Self-Development Books That Have Genuinely Changed Lives: A Curated Reading List",
+    "excerpt": "Not all self-development books are equal — these are the ones backed by evidence, praised by readers across cultures, and available free. With an honest look at",
+    "date": "2026-05-08",
     "author": "Mubashir Mehdi"
   },
   "public-domain-books-complete-guide-download": {
@@ -697,32 +697,32 @@ const ARTICLE_META = {
     "author": "Mubashir Mehdi"
   },
   "complete-history-of-english-literature": {
-    "title": "The Complete History of English Literature: From Anglo-Saxon to the Digital Age",
-    "excerpt": "From Beowulf to digital libraries — a readable history of English literature with key works, dates and movements.",
+    "title": "The Complete History of English Literature: From Beowulf to the Modern Novel",
+    "excerpt": "A sweeping journey through 1,500 years of English literature — from Anglo-Saxon epic poetry to contemporary fiction — with every major period, movement and auth",
     "date": "2026-06-07",
     "author": "Sarah Mitchell"
   },
   "jules-verne-predicted-the-future": {
-    "title": "Jules Verne: The Man Who Predicted the Future (With Proof)",
-    "excerpt": "Jules Verne's novels anticipated submarines, space travel and news satellites — with documented proof from the texts themselves.",
+    "title": "How Jules Verne Predicted the Future: His Most Astonishing Prophecies",
+    "excerpt": "Jules Verne wrote about submarines, space travel, video calls and the internet long before they existed. Discover how a 19th-century novelist saw the future wit",
     "date": "2026-06-07",
     "author": "Sarah Mitchell"
   },
   "how-to-download-public-domain-books-legally-2026": {
-    "title": "How to Download and Read Public Domain Books Legally: Complete 2026 Guide",
-    "excerpt": "What public domain means, how copyright expires, where to download safely, and how to verify a book is legal in 2026.",
+    "title": "How to Download Public Domain Books Legally in 2026: The Complete Guide",
+    "excerpt": "Over one million books are freely and legally downloadable in 2026 — here is how to find them, which sites to trust, how to read on any device, and how to build",
     "date": "2026-06-07",
     "author": "Mubashir Mehdi"
   },
   "ielts-band-score-complete-guide": {
-    "title": "IELTS Band Score Complete Guide: What Each Score Means and How to Achieve It",
-    "excerpt": "Exact IELTS band descriptors, university requirements, visa thresholds and realistic improvement timelines.",
+    "title": "IELTS Band Score Complete Guide: What Every Band Means and How to Reach Your Target in 2026",
+    "excerpt": "The IELTS nine-band system explained clearly — what band 6 versus band 7 means for your future, how your overall score is calculated, and a proven approach to m",
     "date": "2026-06-07",
     "author": "James Parker"
   },
   "charles-dickens-social-justice": {
-    "title": "Charles Dickens and Social Justice: How Victorian Novels Changed Laws and Society",
-    "excerpt": "How Dickens's fiction influenced child labour law, public health reform and modern ideas of social responsibility.",
+    "title": "Charles Dickens and Social Justice: How His Novels Changed Victorian England",
+    "excerpt": "From Oliver Twist's workhouse to Bleak House's Chancery courts, Dickens used fiction as a weapon against poverty, child labour and institutional corruption — an",
     "date": "2026-06-07",
     "author": "Sarah Mitchell"
   }

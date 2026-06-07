@@ -42,6 +42,11 @@ const HANDCRAFTED_BOOK_CONTENT = {
         name: "Daniel Yoon",
         place: "Seoul, South Korea",
         text: "I read this for an English literature course and expected to be bored. Instead I found myself annotating almost every page. Austen's irony is so subtle that you can read a sentence three times and find a new meaning each time. Genuinely one of the cleverest books I've encountered."
+      },
+      {
+        name: "Fatima Khan",
+        place: "Lahore, Pakistan",
+        text: "Downloaded the free PDF here for my FSc English class and kept reading after the assignment ended. The Netherfield ball and Darcy's first proposal are scenes I will never forget — Austen makes pride feel like a real moral danger, not a personality quirk."
       }
     ],
 

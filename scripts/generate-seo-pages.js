@@ -302,25 +302,55 @@ function getBookRich(book) {
   return BOOK_RICH_CONTENT[book.id] || null;
 }
 
+function formatLearnItem(item) {
+  const colon = item.indexOf(':');
+  if (colon > 0 && colon < 80) {
+    return '<li><strong>' + esc(item.slice(0, colon).trim()) + ':</strong> ' + esc(item.slice(colon + 1).trim()) + '</li>';
+  }
+  return '<li>' + esc(item) + '</li>';
+}
+
+function resolveRichAuthorName(book, rich) {
+  if (book.author) return book.author;
+  const bio = rich && rich.authorBio ? String(rich.authorBio) : '';
+  const was = bio.match(/^([A-Z][A-Za-z.'\u00C0-\u024F\s-]+?)\s+was\s/);
+  if (was) return was[1].trim();
+  const paren = bio.match(/^([A-Z][A-Za-z.'\s-]+?)\s*\(\d/);
+  if (paren) return paren[1].trim();
+  return bookAuthor(book);
+}
+
 function renderRichBookSections(book, p) {
   const rich = getBookRich(book);
   if (!rich) return '';
+  const author = resolveRichAuthorName(book, rich);
+  const title = book.title;
+  let aboutText = String(rich.about || '');
+  let aboutParts = aboutText.split(/\n\n+/).filter(Boolean);
+  if (aboutParts.length === 1 && aboutText.split(/\s+/).filter(Boolean).length > 120) {
+    const sentences = aboutText.match(/[^.!?]+[.!?]+/g) || [aboutText];
+    const mid = Math.ceil(sentences.length / 2);
+    aboutParts = [sentences.slice(0, mid).join(' ').trim(), sentences.slice(mid).join(' ').trim()].filter(Boolean);
+  }
+  const aboutHtml = aboutParts.map(para => '<p>' + esc(para) + '</p>').join('\n      ');
   const learnHtml = rich.learn && rich.learn.length
-    ? '<h2>What You Will Learn</h2><ul>' + rich.learn.map(item => '<li>' + esc(item) + '</li>').join('') + '</ul>'
+    ? '<section class="book-section"><h2>What You Will Discover</h2><ul>' + rich.learn.map(formatLearnItem).join('') + '</ul></section>'
     : '';
-  const reviewsHtml = rich.reviews && rich.reviews.length
-    ? '<h2>Reader Reviews</h2>' + rich.reviews.map(r =>
-      '<blockquote class="reader-review"><p>&ldquo;' + esc(r.text) + '&rdquo;</p><cite>&mdash; ' + esc(r.name) + ' from ' + esc(r.place) + '</cite></blockquote>'
-    ).join('')
+  const starRatings = ['★★★★★', '★★★★★', '★★★★☆', '★★★★★'];
+  const reviews = (rich.reviews || []).slice(0, 4);
+  const reviewsHtml = reviews.length
+    ? '<section class="book-section book-reviews"><h2>What Readers Say</h2>' + reviews.map((r, i) =>
+      '<div class="review"><div class="stars">' + starRatings[i % starRatings.length] + '</div><p>&ldquo;' + esc(r.text) + '&rdquo;</p><cite>&mdash; ' + esc(r.name) + ', ' + esc(r.place) + '</cite></div>'
+    ).join('') + '</section>'
     : '';
-  return [
-    '<h2>About This Book</h2><p>' + esc(rich.about) + '</p>',
+  return '<div class="book-rich-content">' + [
+    '<section class="book-section"><h2>About ' + esc(title) + '</h2>' + aboutHtml + '</section>',
     learnHtml,
-    '<h2>About the Author</h2><p>' + esc(rich.authorBio) + '</p>',
-    '<h2>Why Read This Book</h2><p>' + esc(rich.whyRead) + '</p>',
-    '<h2>Historical Context</h2><p>' + esc(rich.historical) + '</p>',
+    '<section class="book-section"><h2>About ' + esc(author) + '</h2><p>' + esc(rich.authorBio) + '</p></section>',
+    '<section class="book-section"><h2>Why Read This Book in 2026</h2><p>' + esc(rich.whyRead) + '</p></section>',
+    '<section class="book-section"><h2>Historical Context</h2><p>' + esc(rich.historical) + '</p></section>',
     reviewsHtml
-  ].join('\n      ');
+  ].filter(Boolean).join('\n      ') + '</div>';
 }
 
 function renderRelatedBooks(book, p, seo) {
@@ -435,8 +465,9 @@ function renderBookPage(book, depth) {
     <div class="meta"><span class="tag">${esc(author)}</span>${originalBadge}${pageTag}<span class="tag">${downloadable ? 'Free PDF Download' : 'Study Guide'}</span></div>
     ${leadHtml}
     ${fullGuideBannerHtml(book, p)}
-    <article class="article book-rich-content">${extraSeoHtml}${richHtml}${descHtml}${extra}</article>
+    <article class="article">${extraSeoHtml}${descHtml}</article>
     ${download}
+    ${richHtml}
     ${faqHtml}
     ${relatedBlock}
   </main>
@@ -534,6 +565,21 @@ function getArticleSeo(article) {
   return ARTICLE_SEO[article.id] || {};
 }
 
+const AUTHOR_PAGE_SLUGS = {
+  'Sarah Mitchell': 'sarah-mitchell',
+  'James Parker': 'james-parker',
+  'Mubashir Mehdi': 'mubashir-mehdi'
+};
+
+function renderArticleAuthorTag(authorName, depth) {
+  const p = depth === 0 ? '' : '../';
+  const name = authorName || 'Mubashir Mehdi';
+  const slug = AUTHOR_PAGE_SLUGS[name];
+  return slug
+    ? '<a href="' + p + 'author/' + slug + '.html">' + esc(name) + '</a>'
+    : esc(name);
+}
+
 function renderArticlePage(a, depth) {
   const p = depth === 0 ? '' : '../';
   const url = ORIGIN + '/articles/' + encodeURIComponent(a.id) + '.html';
@@ -580,7 +626,7 @@ function renderArticlePage(a, depth) {
     <div id="article-detail">
       <div class="breadcrumb"><a href="${p}index.html">Home</a> &raquo; <a href="${p}articles.html">Articles</a> &raquo; <span>${esc(a.title)}</span></div>
       <h1>${esc(a.title)}${updatedBadge}</h1>
-      <div class="meta"><span class="tag">${esc(a.date)}</span><span class="tag">Last updated: ${esc(modified.slice(0, 7))}</span><span class="tag">${esc(a.author || 'Mubashir Mehdi')}</span></div>
+      <div class="meta"><span class="tag">${esc(a.date)}</span><span class="tag">Last updated: ${esc(modified.slice(0, 7))}</span><span class="tag">${renderArticleAuthorTag(a.author, depth)}</span></div>
       ${shareLinks}
       <article class="article">${extraSeoHtml}${body}</article>
       ${faqHtml}

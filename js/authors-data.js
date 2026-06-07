@@ -40,7 +40,10 @@ Away from books, Sarah is a committed advocate for public library funding, an en
       "best-free-classic-novels-to-start-with",
       "what-is-public-domain-and-why-it-matters",
       "sherlock-holmes-reading-guide",
-      "how-to-build-a-daily-reading-habit"
+      "how-to-build-a-daily-reading-habit",
+      "complete-history-of-english-literature",
+      "jules-verne-predicted-the-future",
+      "charles-dickens-social-justice"
     ],
 
     recommendedBookIds: [
@@ -99,7 +102,8 @@ He is a qualified CELTA and DELTA trainer, holds a Proficiency-level certificate
       "best-free-english-grammar-books-pakistani-students",
       "learn-a-language-with-free-books",
       "learn-german-through-reading-guide",
-      "how-to-use-free-pdf-books-pass-exams"
+      "how-to-use-free-pdf-books-pass-exams",
+      "ielts-band-score-complete-guide"
     ],
 
     recommendedBookIds: [
@@ -161,6 +165,7 @@ He reads every morning before the rest of the house is awake, keeps a detailed r
       "best-free-books-for-matric-students-pakistan",
       "public-domain-books-complete-guide-download",
       "how-to-download-free-books-legally-guide-2026",
+      "how-to-download-public-domain-books-legally-2026",
       "free-islamic-books-pdf-download-complete-list",
       "o-level-a-level-free-study-materials-guide",
       "best-free-kids-learning-books-pdf-parents"

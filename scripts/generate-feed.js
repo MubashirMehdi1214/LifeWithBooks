@@ -13,6 +13,8 @@ try {
   require(path.join(root, 'js', 'articles-more-4.js'));
   require(path.join(root, 'js', 'articles-more-5.js'));
   try { require(path.join(root, 'js', 'articles-more-6.js')); } catch (e) {}
+  try { require(path.join(root, 'js', 'articles-more-7.js')); } catch (e) {}
+  try { require(path.join(root, 'js', 'articles-adsense-rewrites.js')); } catch (e) {}
   ARTICLES = require(path.join(root, 'js', 'articles.js')).ARTICLES || [];
 } catch (e) {
   console.error('Could not load articles:', e.message);
@@ -36,7 +38,11 @@ function toRfc822(dateStr) {
   }
 }
 
-const sorted = ARTICLES.slice().sort((a, b) => (b.date || '').localeCompare(a.date || '')).slice(0, 20);
+const byDate = (a, b) => (b.date || '').localeCompare(a.date || '');
+const isBookPdfGuide = (a) => /^free-.+-pdf-guide$/.test(a.id);
+const editorial = ARTICLES.filter(a => !isBookPdfGuide(a)).sort(byDate);
+const guides = ARTICLES.filter(isBookPdfGuide).sort(byDate);
+const sorted = editorial.slice(0, 12).concat(guides.slice(0, 8));
 const lastBuild = sorted.length ? sorted[0].date : new Date().toISOString().slice(0, 10);
 
 const items = sorted.map((a) => {
@@ -68,4 +74,4 @@ const xml =
   '</rss>\n';
 
 fs.writeFileSync(path.join(root, 'feed.xml'), xml, 'utf8');
-console.log('Feed written:', sorted.length, 'articles (latest 20)');
+console.log('Feed written:', sorted.length, 'articles (12 editorial + 8 book guides)');

@@ -679,7 +679,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-06-07</news:publication_date>
-      <news:title>The Complete History of English Literature: From Anglo-Saxon to the Digital Age</news:title>
+      <news:title>The Complete History of English Literature: From Beowulf to the Modern Novel</news:title>
     </news:news>
   </url>
   <url>
@@ -690,7 +690,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-06-07</news:publication_date>
-      <news:title>Jules Verne: The Man Who Predicted the Future (With Proof)</news:title>
+      <news:title>How Jules Verne Predicted the Future: His Most Astonishing Prophecies</news:title>
     </news:news>
   </url>
   <url>
@@ -701,7 +701,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-06-07</news:publication_date>
-      <news:title>How to Download and Read Public Domain Books Legally: Complete 2026 Guide</news:title>
+      <news:title>How to Download Public Domain Books Legally in 2026: The Complete Guide</news:title>
     </news:news>
   </url>
   <url>
@@ -712,7 +712,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-06-07</news:publication_date>
-      <news:title>IELTS Band Score Complete Guide: What Each Score Means and How to Achieve It</news:title>
+      <news:title>IELTS Band Score Complete Guide: What Every Band Means and How to Reach Your Target in 2026</news:title>
     </news:news>
   </url>
   <url>
@@ -723,7 +723,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-06-07</news:publication_date>
-      <news:title>Charles Dickens and Social Justice: How Victorian Novels Changed Laws and Society</news:title>
+      <news:title>Charles Dickens and Social Justice: How His Novels Changed Victorian England</news:title>
     </news:news>
   </url>
   <url>
@@ -914,6 +914,17 @@
     </news:news>
   </url>
   <url>
+    <loc>https://www.lifewithbooks.co/articles/english-beginners-first-30-days.html</loc>
+    <news:news xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+      <news:publication>
+        <news:name>LifeWithBooks</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-19</news:publication_date>
+      <news:title>English Learning Complete Guide: Your First 90 Days</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.lifewithbooks.co/articles/best-programming-books-beginners-free-pdf-2026.html</loc>
     <news:news xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
       <news:publication>
@@ -933,6 +944,17 @@
       </news:publication>
       <news:publication_date>2026-05-18</news:publication_date>
       <news:title>Grimm's Fairy Tales Complete Guide for Parents</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.lifewithbooks.co/articles/deep-reading-vs-skimming.html</loc>
+    <news:news xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+      <news:publication>
+        <news:name>LifeWithBooks</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-17</news:publication_date>
+      <news:title>Deep Reading vs Skimming vs Speed Reading: Which to Use and When</news:title>
     </news:news>
   </url>
   <url>
@@ -991,6 +1013,17 @@
     </news:news>
   </url>
   <url>
+    <loc>https://www.lifewithbooks.co/articles/sq3r-method-for-better-reading.html</loc>
+    <news:news xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+      <news:publication>
+        <news:name>LifeWithBooks</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-13</news:publication_date>
+      <news:title>The SQ3R Method for Better Reading and Memorisation: A Complete Guide</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.lifewithbooks.co/articles/best-classic-novels-english-learners-free-pdf.html</loc>
     <news:news xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
       <news:publication>
@@ -1021,17 +1054,6 @@
       </news:publication>
       <news:publication_date>2026-05-11</news:publication_date>
       <news:title>How to Download Free Books Legally — Complete Guide 2026</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.lifewithbooks.co/articles/free-self-development-books-pdf-changed-lives.html</loc>
-    <news:news xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-      <news:publication>
-        <news:name>LifeWithBooks</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-10</news:publication_date>
-      <news:title>Free Self Development Books That Changed Lives — And How to Read Them</news:title>
     </news:news>
   </url>
   <url>
@@ -1068,36 +1090,14 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.lifewithbooks.co/articles/o-level-a-level-free-study-materials-guide.html</loc>
+    <loc>https://www.lifewithbooks.co/articles/free-self-development-books-pdf-changed-lives.html</loc>
     <news:news xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
       <news:publication>
         <news:name>LifeWithBooks</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-05-07</news:publication_date>
-      <news:title>O Level and A Level Free Study Materials Complete Guide</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.lifewithbooks.co/articles/best-free-kids-learning-books-pdf-parents.html</loc>
-    <news:news xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-      <news:publication>
-        <news:name>LifeWithBooks</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-06</news:publication_date>
-      <news:title>Best Free Kids Learning Books PDF for Parents</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.lifewithbooks.co/articles/learn-python-free-pdf-books-beginners-2026.html</loc>
-    <news:news xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-      <news:publication>
-        <news:name>LifeWithBooks</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-05-05</news:publication_date>
-      <news:title>Learn Python Free PDF Books for Beginners 2026</news:title>
+      <news:publication_date>2026-05-08</news:publication_date>
+      <news:title>Free Self-Development Books That Have Genuinely Changed Lives: A Curated Reading List</news:title>
     </news:news>
   </url>
 </urlset>
