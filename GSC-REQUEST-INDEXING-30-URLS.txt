@@ -1,0 +1,81 @@
+LifeWithBooks — 30 priority URLs for Google Search Console "Request indexing"
+================================================================================
+Site: https://www.lifewithbooks.co
+
+How to use:
+1. Open Google Search Console → URL Inspection (top search bar)
+2. Paste each full URL below, one at a time
+3. Click "Request indexing" after the test completes
+4. Do 5–10 per day (Google limits how many you can request)
+
+Last updated: 2026-06-07 (after Phase B/C/D content fixes)
+
+--- CORE SITE PAGES (5) ---
+
+https://www.lifewithbooks.co/
+https://www.lifewithbooks.co/articles.html
+https://www.lifewithbooks.co/all-books.html
+https://www.lifewithbooks.co/about.html
+https://www.lifewithbooks.co/contact.html
+
+NOTE: Do NOT use URL Inspection for sitemap.xml — see instructions at bottom of this file.
+
+--- AUTHOR PAGES — E-E-A-T (4) ---
+
+https://www.lifewithbooks.co/author/sarah-mitchell.html
+https://www.lifewithbooks.co/author/james-parker.html
+https://www.lifewithbooks.co/author/maria-chen.html
+https://www.lifewithbooks.co/author/mubashir-mehdi.html
+
+--- TOP HANDCRAFTED CLASSIC BOOK PAGES (8) ---
+
+https://www.lifewithbooks.co/book/pride-and-prejudice.html
+https://www.lifewithbooks.co/book/jane-eyre.html
+https://www.lifewithbooks.co/book/dracula.html
+https://www.lifewithbooks.co/book/the-adventures-of-sherlock-holmes.html
+https://www.lifewithbooks.co/book/treasure-island.html
+https://www.lifewithbooks.co/book/great-expectations.html
+https://www.lifewithbooks.co/book/twenty-thousand-leagues-under-the-sea.html
+https://www.lifewithbooks.co/book/frankenstein.html
+
+--- ORIGINAL STUDY GUIDE BOOK PAGES (3) ---
+
+https://www.lifewithbooks.co/book/ielts-complete-preparation-guide.html
+https://www.lifewithbooks.co/book/css-general-knowledge-guide.html
+https://www.lifewithbooks.co/book/as-a-man-thinketh.html
+
+--- DEEP EDITORIAL ARTICLES (7) ---
+
+https://www.lifewithbooks.co/articles/complete-history-of-english-literature.html
+https://www.lifewithbooks.co/articles/how-to-build-a-daily-reading-habit.html
+https://www.lifewithbooks.co/articles/how-to-prepare-for-ielts-using-free-pdf-books.html
+https://www.lifewithbooks.co/articles/complete-css-exam-preparation-guide-pakistan.html
+https://www.lifewithbooks.co/articles/charles-dickens-social-justice.html
+https://www.lifewithbooks.co/articles/jules-verne-predicted-the-future.html
+https://www.lifewithbooks.co/articles/ielts-band-score-complete-guide.html
+
+--- CATEGORY PAGES (3) ---
+
+https://www.lifewithbooks.co/category/ielts-preparation.html
+https://www.lifewithbooks.co/category/literature-books.html
+https://www.lifewithbooks.co/category/english-learning-books.html
+
+================================================================================
+TOTAL: 30 URLs
+
+After requesting indexing, wait 3–4 weeks before re-applying to AdSense.
+Check GSC → Sitemaps: "Discovered pages" should drop toward ~272 (not 387).
+
+--- SITEMAP (different tool — NOT URL Inspection) ---
+
+sitemap.xml is NOT a page Google indexes in search results. It is a machine-readable
+list of URLs for crawlers. "Request indexing" in URL Inspection only works for
+HTML pages (articles, books, about, etc.).
+
+To refresh your sitemap in Google:
+1. GSC left menu → Indexing → Sitemaps (not URL Inspection)
+2. Your sitemap should already show: https://www.lifewithbooks.co/sitemap.xml
+3. Google re-reads it automatically every few days
+4. Optional: remove and re-submit the same URL if "Last read" stays stuck on Jun 3
+
+"URL is not on Google" for sitemap.xml is NORMAL — sitemaps are not search results.

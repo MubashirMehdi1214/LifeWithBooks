@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+  (function() {
+    var params = new URLSearchParams(window.location.search);
+    var id = params.get('id');
+    if (id) {
+      window.location.replace('/book/' + id + '.html');
+    }
+  })();
+  </script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-V3781QPP7K"></script>
   <script>

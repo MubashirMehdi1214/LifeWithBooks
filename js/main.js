@@ -674,12 +674,12 @@ function injectFooter() {
         <div>
           <h4>Categories</h4>
           <ul>
-            <li><a href="category.html?cat=english-learning-books">English Learning</a></li>
-            <li><a href="category.html?cat=french-learning-books">French Learning</a></li>
-            <li><a href="category.html?cat=german-learning-books">German Learning</a></li>
-            <li><a href="category.html?cat=spanish-learning-books">Spanish Learning</a></li>
-            <li><a href="category.html?cat=deutsch-books">Deutsch Learning</a></li>
-            <li><a href="category.html?cat=kids-learning-books">Kids Learning</a></li>
+            <li><a href="category/english-learning-books.html">English Learning</a></li>
+            <li><a href="category/french-learning-books.html">French Learning</a></li>
+            <li><a href="category/german-learning-books.html">German Learning</a></li>
+            <li><a href="category/spanish-learning-books.html">Spanish Learning</a></li>
+            <li><a href="category/deutsch-books.html">Deutsch Learning</a></li>
+            <li><a href="category/kids-learning-books.html">Kids Learning</a></li>
           </ul>
         </div>
         <div class="contact-info">
@@ -1509,7 +1509,7 @@ function initBookDetail() {
   wrap.innerHTML = `
     <div class="breadcrumb">
       <a href="index.html">Home</a> &raquo;
-      <a href="category.html?cat=${primaryCat}">${catObj ? escapeHtml(catObj.label) : 'Books'}</a> &raquo;
+      <a href="${getCategoryPagePath(primaryCat)}">${catObj ? escapeHtml(catObj.label) : 'Books'}</a> &raquo;
       <span>${escapeHtml(book.title)}</span>
     </div>
 

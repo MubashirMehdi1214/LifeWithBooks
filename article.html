@@ -27,13 +27,11 @@
   <meta name="twitter:description" content="Original reading guides from LifeWithBooks.">
   <meta name="twitter:image" content="https://www.lifewithbooks.co/og-home.webp">
   <script>
-  (function(){
-    var m=/[?&]id=([^&]+)/.exec(location.search);
-    if(!m)return;
-    var id=decodeURIComponent(m[1]);
-    var dest='articles/'+encodeURIComponent(id)+'.html';
-    if(location.pathname.replace(/\\/g,'/').endsWith('article.html')){
-      location.replace(dest);
+  (function() {
+    var params = new URLSearchParams(window.location.search);
+    var id = params.get('id');
+    if (id) {
+      window.location.replace('/articles/' + id + '.html');
     }
   })();
   </script>
