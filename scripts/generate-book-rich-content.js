@@ -17,6 +17,13 @@ try {
 } catch (e) {
   if (e.code !== 'MODULE_NOT_FOUND') console.warn('Handcrafted extra:', e.message);
 }
+try {
+  const originals = require(path.join(__dirname, 'book-rich-content-handcrafted-originals.js'));
+  const originalsContent = originals.HANDCRAFTED_ORIGINALS || originals;
+  Object.assign(HANDCRAFTED, originalsContent);
+} catch (e) {
+  if (e.code !== 'MODULE_NOT_FOUND') console.warn('Handcrafted originals:', e.message);
+}
 const AUTHOR_DB = {
   'Jane Austen': {
     bio: 'Jane Austen (1775–1817) grew up in rural Hampshire, the daughter of a clergyman. She wrote six major novels that transformed English fiction with their irony, social precision and unforgettable heroines. She published anonymously during her lifetime — Sense and Sensibility appeared as "By a Lady" — and died at forty-one before her full fame arrived. Her letters reveal a sharp wit and keen observer of village politics, marriage markets and class anxiety.',
@@ -77,6 +84,16 @@ const AUTHOR_DB = {
     bio: 'This work comes from the public-domain tradition — literature whose copyright has expired and which belongs to readers everywhere. The author shaped the language, stories and ideas of their era; modern editions preserve texts that classrooms, filmmakers and readers still return to generation after generation.',
     works: 'See the title page and table of contents of this edition for the complete work.',
     legacy: 'Public-domain classics remain the foundation of literary education and free cultural access online.'
+  },
+  'Mubashir Mehdi': {
+    bio: 'Mubashir Mehdi founded LifeWithBooks in Pakistan to give learners worldwide free access to public-domain classics and original study guides. As Editor-in-Chief, he writes practical English conversation guides, vocabulary lists, grammar courses and habit-building material for self-directed learners who cannot afford expensive textbooks.',
+    works: '30 Topics for English Conversation, 1500 Vocabulary Words for Speaking English, Spoken English Conversation Practice, Best English Grammar Book, and dozens of other original LifeWithBooks guides.',
+    legacy: 'LifeWithBooks serves readers across Pakistan, South Asia and worldwide with legal free PDFs paired with honest editorial guidance rather than pirated scans.'
+  },
+  'LifeWithBooks Editorial Team': {
+    bio: 'The LifeWithBooks Editorial Team produces original study guides, exam preparation books and reference overviews for global learners. Content is researched, written and fact-checked in-house to complement public-domain classics on the site.',
+    works: 'IELTS Complete Preparation Guide, CSS preparation material, and category-specific learning resources.',
+    legacy: 'The team prioritises practical, exam-aligned advice for students in Pakistan and South Asia while keeping all original guides free to download.'
   }
 };
 
@@ -228,7 +245,14 @@ function generateRich(book) {
     `Teachers, parents and self-learners use LifeWithBooks because the download is instant and legal. You can print chapters, share the link with a study group or keep a offline copy for travel.`
   ].join(' ');
 
-  const historical = isReference
+  const historical = isOriginal
+    ? [
+        `${book.title} was written and published by LifeWithBooks as a free PDF for self-directed learners.`,
+        `The guide reflects current ${cat} goals — not repackaged content from unknown PDF sites. Download once, study offline, and revisit sections as your schedule allows.`,
+        `Work through the material section by section rather than skimming. Pair this guide with related free titles on LifeWithBooks for reading, grammar and conversation practice.`,
+        `If you are preparing for exams or building daily speaking habits, schedule realistic weekly targets and track mistakes in a simple notebook — consistency beats marathon cramming.`
+      ].join(' ')
+    : isReference
     ? [
         `${detectPublisher(book)} and similar publishers revise ${cat} materials as syllabi and exam formats change — always confirm you have the edition your teacher or centre recommends.`,
         `Reference works like ${book.title} are used in classrooms worldwide; this LifeWithBooks overview explains scope and study use without replacing the licensed textbook.`,
@@ -239,9 +263,7 @@ function generateRich(book) {
         `First published around ${year}, this work emerged during a period of rapid social change — industrial growth, expanding literacy, new ideas about class, gender and empire.`,
         `Contemporary reviewers ${hashPick(book.id, 2) === 0 ? 'debated its morality and style, which often signals a book that challenged comfortable assumptions' : 'recognized its power even when sales started slowly; reputations built over decades, not launch weekends'}.`,
         `Today ${book.title} is read differently: modern audiences notice details earlier generations skimmed, and that fresh debate keeps the text alive in classrooms and online forums.`,
-        isOriginal
-          ? `LifeWithBooks published this guide in 2026 as part of our mission to pair free legal classics with original study material for global learners.`
-          : `Digital libraries like LifeWithBooks exist because copyright expiration turns cultural treasures into shared property — a remarkable bargain for any curious reader.`
+        `Digital libraries like LifeWithBooks exist because copyright expiration turns cultural treasures into shared property — a remarkable bargain for any curious reader.`
       ].join(' ');
 
   const authorBio = isReference
@@ -267,39 +289,12 @@ function richWordCount(rich) {
     .length;
 }
 
-const EXTRA_ABOUT = [
-  'When studying {title}, keep a simple error log: every mistake becomes a flashcard or margin note you revisit on weekends.',
-  'Readers of {title} in {cat} often pair one chapter per evening with fifteen minutes of spoken practice — slow but durable.',
-  'Teachers recommend skimming headings in {title} first, then reading deeply only the sections your syllabus marks as high-yield.',
-  'If {title} feels dense, read with {pages} in mind: break sessions at natural unit boundaries instead of arbitrary page counts.',
-  'LifeWithBooks suggests bookmarking three passages in {title} that surprised you — they become anchors for future revision.',
-  'Compare your notes on {title} with a study partner monthly; explaining ideas aloud exposes gaps textbooks hide.',
-  'Mobile learners download {title} once, then highlight offline during commutes — consistency beats marathon cramming.',
-  'For {cat} goals, revisit {title} after one week, one month and three months; spaced recall locks vocabulary in place.',
-  'Annotate {title} with questions in the margin; good readers argue with the text instead of passively highlighting.',
-  'Build a one-page summary of {title} when you finish; if you cannot, reread the sections that still feel fuzzy.',
-  'Parents supporting teens with {title} should ask for weekly three-sentence recaps — accountability without micromanaging.',
-  'Exam candidates using {title} benefit from timed practice sections that mirror real paper length and instructions.',
-  'Combine {title} with one free classic from our library to see how formal and literary English reinforce each other.',
-  'Start {title} with the glossary or index if it has one; knowing terminology upfront prevents mid-chapter frustration.',
-  'Treat {title} as a course, not a brochure: schedule finish dates and celebrate milestones to maintain momentum.'
-];
-
-function ensureMinWords(book, rich, min) {
-  let guard = 0;
-  while (richWordCount(rich) < min && guard < EXTRA_ABOUT.length * 2) {
-    const tpl = EXTRA_ABOUT[hashPick(book.id + ':extra:' + guard, EXTRA_ABOUT.length)];
-    rich.about += ' ' + tpl
-      .replace(/\{title\}/g, book.title)
-      .replace(/\{cat\}/g, catLabel(book))
-      .replace(/\{pages\}/g, book.pageCount ? String(book.pageCount) + ' pages' : 'this guide');
-    guard++;
-  }
-  while (richWordCount(rich) < min) {
-    rich.about += ` Dedicated readers finish ${book.title} chapter by chapter, revisiting highlighted passages until the ideas feel natural in conversation and on exams.`;
+function finalizeRich(book, rich, handcrafted) {
+  if (!handcrafted && !(rich.reviews && rich.reviews.length)) {
+    rich.reviews = pickReviews(book);
   }
   const total = richWordCount(rich);
-  if (total < min - 50) console.warn('Thin content for', book.id, total, 'words');
+  if (total < 350) console.warn('Thin content for', book.id, total, 'words');
   return rich;
 }
 
@@ -307,8 +302,7 @@ const out = {};
 for (const book of BOOKS) {
   const handcrafted = HANDCRAFTED[book.id];
   let rich = handcrafted ? Object.assign({}, handcrafted) : generateRich(book);
-  if (!handcrafted) rich.reviews = [];
-  out[book.id] = ensureMinWords(book, rich, 800);
+  out[book.id] = finalizeRich(book, rich, !!handcrafted);
 }
 
 const header = '/* Auto-generated rich book page content. Handcrafted overrides in scripts/book-rich-content-handcrafted.js */\n';

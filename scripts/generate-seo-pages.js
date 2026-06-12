@@ -358,12 +358,19 @@ function renderRichBookSections(book, p) {
       '<div class="review"><div class="stars">' + starRatings[i % starRatings.length] + '</div><p>&ldquo;' + esc(r.text) + '&rdquo;</p><cite>&mdash; ' + esc(r.name) + ', ' + esc(r.place) + '</cite></div>'
     ).join('') + '</section>'
     : '';
+  let contextHeading = 'Historical Context';
+  if (book.license === 'original') contextHeading = 'How to Use This Guide';
+  else if (book.license === 'reference' || book.access === 'summary') contextHeading = 'Publisher & Study Notes';
+  const contextHtml = rich.historical
+    ? '<section class="book-section"><h2>' + esc(contextHeading) + '</h2><p>' + esc(rich.historical) + '</p></section>'
+    : '';
+  const whyHeading = book.license === 'original' ? 'Why Download This Guide' : 'Why Read This Book in 2026';
   return '<div class="book-rich-content">' + [
     '<section class="book-section"><h2>About ' + esc(title) + '</h2>' + aboutHtml + '</section>',
     learnHtml,
     '<section class="book-section"><h2>About ' + esc(author) + '</h2><p>' + esc(rich.authorBio) + '</p></section>',
-    '<section class="book-section"><h2>Why Read This Book in 2026</h2><p>' + esc(rich.whyRead) + '</p></section>',
-    '<section class="book-section"><h2>Historical Context</h2><p>' + esc(rich.historical) + '</p></section>',
+    '<section class="book-section"><h2>' + esc(whyHeading) + '</h2><p>' + esc(rich.whyRead) + '</p></section>',
+    contextHtml,
     reviewsHtml
   ].filter(Boolean).join('\n      ') + '</div>';
 }
