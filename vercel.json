@@ -11,6 +11,86 @@
       "permanent": true
     },
     {
+      "source": "/book/about.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/book/contact.html",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/book/all-books.html",
+      "destination": "/all-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/book/articles.html",
+      "destination": "/articles.html",
+      "permanent": true
+    },
+    {
+      "source": "/book/privacy-policy.html",
+      "destination": "/privacy-policy.html",
+      "permanent": true
+    },
+    {
+      "source": "/book/terms.html",
+      "destination": "/terms.html",
+      "permanent": true
+    },
+    {
+      "source": "/book/dmca.html",
+      "destination": "/dmca.html",
+      "permanent": true
+    },
+    {
+      "source": "/book/disclaimer.html",
+      "destination": "/disclaimer.html",
+      "permanent": true
+    },
+    {
+      "source": "/book/cookie-policy.html",
+      "destination": "/cookie-policy.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/about.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/contact.html",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/all-books.html",
+      "destination": "/all-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/about.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/contact.html",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/author/about.html",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/author/contact.html",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
       "source": "/book.html",
       "has": [
         {

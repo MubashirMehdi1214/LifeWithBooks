@@ -15,6 +15,12 @@ function getCategoryPageUrl(slug) {
 function pagePrefix() {
   return document.body && document.body.dataset.pathDepth === '1' ? '../' : '';
 }
+/** Root-level pages linked from book/, articles/, category/, author/ subfolders. */
+function rootHref(relativePath) {
+  if (!relativePath) return relativePath;
+  if (/^https?:\/\//i.test(relativePath) || relativePath.charAt(0) === '/') return relativePath;
+  return pagePrefix() + relativePath.replace(/^\.\//, '');
+}
 /** Prefix relative asset paths (covers/, covers-img/) for pages in subfolders. */
 function resolveAssetPath(path) {
   if (!path) return path;
@@ -634,12 +640,12 @@ function injectHeader() {
         <ul>
           <li${isHome ? ' class="active"' : ''}><a href="/">Home</a></li>
           <li class="has-dropdown${isAll ? ' active' : ''}">
-            <a href="all-books.html">All Books</a>
+            <a href="${rootHref('all-books.html')}">All Books</a>
             <ul>${buildCategoryDropdown()}</ul>
           </li>
-          <li${isArticles ? ' class="active"' : ''}><a href="articles.html">Articles</a></li>
-          <li${isAbout ? ' class="active"' : ''}><a href="about.html">About Us</a></li>
-          <li${isContact ? ' class="active"' : ''}><a href="contact.html">Contact</a></li>
+          <li${isArticles ? ' class="active"' : ''}><a href="${rootHref('articles.html')}">Articles</a></li>
+          <li${isAbout ? ' class="active"' : ''}><a href="${rootHref('about.html')}">About Us</a></li>
+          <li${isContact ? ' class="active"' : ''}><a href="${rootHref('contact.html')}">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -674,12 +680,12 @@ function injectFooter() {
         <div>
           <h4>Categories</h4>
           <ul>
-            <li><a href="category/english-learning-books.html">English Learning</a></li>
-            <li><a href="category/french-learning-books.html">French Learning</a></li>
-            <li><a href="category/german-learning-books.html">German Learning</a></li>
-            <li><a href="category/spanish-learning-books.html">Spanish Learning</a></li>
-            <li><a href="category/deutsch-books.html">Deutsch Learning</a></li>
-            <li><a href="category/kids-learning-books.html">Kids Learning</a></li>
+            <li><a href="${rootHref('category/english-learning-books.html')}">English Learning</a></li>
+            <li><a href="${rootHref('category/french-learning-books.html')}">French Learning</a></li>
+            <li><a href="${rootHref('category/german-learning-books.html')}">German Learning</a></li>
+            <li><a href="${rootHref('category/spanish-learning-books.html')}">Spanish Learning</a></li>
+            <li><a href="${rootHref('category/deutsch-books.html')}">Deutsch Learning</a></li>
+            <li><a href="${rootHref('category/kids-learning-books.html')}">Kids Learning</a></li>
           </ul>
         </div>
         <div class="contact-info">
@@ -693,24 +699,24 @@ function injectFooter() {
         <div>
           <h4>Policies</h4>
           <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="articles.html">Articles</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms &amp; Conditions</a></li>
-            <li><a href="dmca.html">DMCA / Copyright</a></li>
-            <li><a href="disclaimer.html">Disclaimer</a></li>
-            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+            <li><a href="${rootHref('about.html')}">About Us</a></li>
+            <li><a href="${rootHref('articles.html')}">Articles</a></li>
+            <li><a href="${rootHref('contact.html')}">Contact</a></li>
+            <li><a href="${rootHref('privacy-policy.html')}">Privacy Policy</a></li>
+            <li><a href="${rootHref('terms.html')}">Terms &amp; Conditions</a></li>
+            <li><a href="${rootHref('dmca.html')}">DMCA / Copyright</a></li>
+            <li><a href="${rootHref('disclaimer.html')}">Disclaimer</a></li>
+            <li><a href="${rootHref('cookie-policy.html')}">Cookie Policy</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
         &copy; ${new Date().getFullYear()} LifeWithBooks &middot; All Rights Reserved &middot;
-        <a href="privacy-policy.html" style="color:inherit;">Privacy</a> &middot;
-        <a href="terms.html" style="color:inherit;">Terms</a> &middot;
-        <a href="dmca.html" style="color:inherit;">DMCA</a> &middot;
-        <a href="disclaimer.html" style="color:inherit;">Disclaimer</a> &middot;
-        <a href="cookie-policy.html" style="color:inherit;">Cookies</a>
+        <a href="${rootHref('privacy-policy.html')}" style="color:inherit;">Privacy</a> &middot;
+        <a href="${rootHref('terms.html')}" style="color:inherit;">Terms</a> &middot;
+        <a href="${rootHref('dmca.html')}" style="color:inherit;">DMCA</a> &middot;
+        <a href="${rootHref('disclaimer.html')}" style="color:inherit;">Disclaimer</a> &middot;
+        <a href="${rootHref('cookie-policy.html')}" style="color:inherit;">Cookies</a>
       </div>
     </footer>
     <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</a>
@@ -1356,7 +1362,7 @@ function initCategory() {
         <div class="related-posts" style="max-width:760px;margin:0 auto;">
           <h3>Related Reading Guides</h3>
           <ul>${links}</ul>
-          <p style="margin-top:16px;"><a href="articles.html">View all articles &raquo;</a></p>
+          <p style="margin-top:16px;"><a href="${rootHref('articles.html')}">View all articles &raquo;</a></p>
         </div>
       </section>`;
   }
@@ -1370,7 +1376,7 @@ function initBookDetail() {
   const book = BOOKS.find(b => b.id === id);
   const wrap = $('#book-detail');
   if (!book) {
-    if (wrap) wrap.innerHTML = '<p style="text-align:center;padding:40px 0;">Sorry, this book could not be found. <a href="all-books.html">Browse all books</a>.</p>';
+    if (wrap) wrap.innerHTML = '<p style="text-align:center;padding:40px 0;">Sorry, this book could not be found. <a href="' + rootHref('all-books.html') + '">Browse all books</a>.</p>';
     return;
   }
   initBookDetailCoverEnhance(book);
@@ -1509,7 +1515,7 @@ function initBookDetail() {
 
   wrap.innerHTML = `
     <div class="breadcrumb">
-      <a href="index.html">Home</a> &raquo;
+      <a href="${rootHref('index.html')}">Home</a> &raquo;
       <a href="${getCategoryPagePath(primaryCat)}">${catObj ? escapeHtml(catObj.label) : 'Books'}</a> &raquo;
       <span>${escapeHtml(book.title)}</span>
     </div>
@@ -1543,7 +1549,7 @@ function initBookDetail() {
 
     <div class="copyright-block">
       <h3 style="color:var(--contrast);margin-bottom:10px;font-size:18px;">Copyright Claim</h3>
-      <p>If this website has shared your copyrighted book or your personal information, please <a href="contact.html"><strong>contact us</strong></a>. You will receive an answer within 3 working days. A big thank you for your understanding.</p>
+      <p>If this website has shared your copyrighted book or your personal information, please <a href="${rootHref('contact.html')}"><strong>contact us</strong></a>. You will receive an answer within 3 working days. A big thank you for your understanding.</p>
     </div>
 
     <div class="related-posts">
@@ -1614,7 +1620,7 @@ function initArticleDetail() {
   const wrap = $('#article-detail');
   if (!wrap) return;
   if (!a) {
-    wrap.innerHTML = '<p style="text-align:center;padding:40px 0;">Sorry, this article could not be found. <a href="articles.html">Browse all articles</a>.</p>';
+    wrap.innerHTML = '<p style="text-align:center;padding:40px 0;">Sorry, this article could not be found. <a href="' + rootHref('articles.html') + '">Browse all articles</a>.</p>';
     return;
   }
   const url = getArticlePageUrl(a.id);
@@ -1691,8 +1697,8 @@ function initArticleDetail() {
 
   wrap.innerHTML = `
     <div class="breadcrumb">
-      <a href="index.html">Home</a> &raquo;
-      <a href="articles.html">Articles</a> &raquo;
+      <a href="${rootHref('index.html')}">Home</a> &raquo;
+      <a href="${rootHref('articles.html')}">Articles</a> &raquo;
       <span>${escapeHtml(a.title)}</span>
     </div>
     <h1>${escapeHtml(a.title)}${updatedLabel}</h1>
@@ -1701,7 +1707,7 @@ function initArticleDetail() {
     <article class="article">${body}</article>
     <div class="download-block">
       <p style="margin-bottom:14px;">Enjoyed this guide? Explore our free library of public-domain classics, vocabulary ebooks and language learning books.</p>
-      <a class="btn" href="all-books.html">Browse Free PDF Books</a>
+      <a class="btn" href="${rootHref('all-books.html')}">Browse Free PDF Books</a>
       ${catObj ? `<a class="btn outline" style="margin-left:10px;" href="${getCategoryPagePath(catSlug)}">${escapeHtml(catObj.label)}</a>` : ''}
     </div>
     ${booksHTML}
@@ -1760,7 +1766,7 @@ function injectCookieBanner() {
   bar.setAttribute('role', 'dialog');
   bar.setAttribute('aria-label', 'Cookie consent');
   bar.innerHTML =
-    '<p>We use cookies to keep this library free, understand how it is used, and (in future) show relevant ads. See our <a href="cookie-policy.html">Cookie Policy</a>.</p>' +
+    '<p>We use cookies to keep this library free, understand how it is used, and (in future) show relevant ads. See our <a href="' + rootHref('cookie-policy.html') + '">Cookie Policy</a>.</p>' +
     '<div class="cookie-actions">' +
       '<button type="button" class="cookie-btn decline" id="cookieDecline">Decline</button>' +
       '<button type="button" class="cookie-btn accept" id="cookieAccept">Accept</button>' +
