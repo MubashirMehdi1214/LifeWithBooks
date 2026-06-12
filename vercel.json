@@ -69,8 +69,23 @@
       "permanent": true
     },
     {
-      "source": "/books/:path(.*)",
-      "destination": "/book/:path",
+      "source": "/books/:slug.html",
+      "destination": "/book/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/:slug",
+      "destination": "/book/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/book/deutsche-grammatik-die-gruyter-lexikon.html",
+      "destination": "/book/deutsche-grammatik-de-gruyter-lexikon.html",
+      "permanent": true
+    },
+    {
+      "source": "/book/little-sounds-picture-cards.html",
+      "destination": "/book/initial-sounds-picture-cards.html",
       "permanent": true
     },
     {
@@ -78,6 +93,12 @@
       "destination": "/book/so-gehts-zu-b2.html",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    { "source": "/book/:slug", "destination": "/book/:slug.html" },
+    { "source": "/category/:slug", "destination": "/category/:slug.html" },
+    { "source": "/author/:slug", "destination": "/author/:slug.html" },
+    { "source": "/articles/:slug", "destination": "/articles/:slug.html" }
   ],
   "headers": [
     {

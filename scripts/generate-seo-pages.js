@@ -446,7 +446,7 @@ function renderBookPage(book, depth) {
     : p + 'download.html?id=' + encodeURIComponent(book.id);
   const downloadBtn = book.pdfDirect && book.pdf
     ? `<a class="btn" href="${esc(pdfHref)}" download="${esc(book.id)}.pdf">&#8595; Download Free PDF</a>`
-    : `<a class="btn" href="${esc(pdfHref)}">&#8595; Download Free PDF</a>`;
+    : `<a class="btn" href="${esc(pdfHref)}" rel="nofollow">&#8595; Download Free PDF</a>`;
   const download = downloadable
     ? `<div class="download-block"><p>${downloadNote}</p>${downloadBtn}<p class="download-meta">${book.pageCount ? esc(String(book.pageCount)) + '-page PDF' : 'PDF'} &middot; Instant download</p></div>`
     : `<div class="download-block summary-block"><p>Reference overview — see official sources for the full work where applicable.</p></div>`;
