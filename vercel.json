@@ -12,19 +12,49 @@
     },
     {
       "source": "/book.html",
-      "has": [{ "type": "query", "key": "id", "value": "(?<id>[^&]+)" }],
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<id>[^&]+)"
+        }
+      ],
       "destination": "/book/:id.html",
       "permanent": true
     },
     {
+      "source": "/book.html",
+      "missing": [{ "type": "query", "key": "id" }],
+      "destination": "/all-books.html",
+      "permanent": true
+    },
+    {
       "source": "/article.html",
-      "has": [{ "type": "query", "key": "id", "value": "(?<id>[^&]+)" }],
+      "has": [
+        {
+          "type": "query",
+          "key": "id",
+          "value": "(?<id>[^&]+)"
+        }
+      ],
       "destination": "/articles/:id.html",
       "permanent": true
     },
     {
+      "source": "/article.html",
+      "missing": [{ "type": "query", "key": "id" }],
+      "destination": "/articles.html",
+      "permanent": true
+    },
+    {
       "source": "/category.html",
-      "has": [{ "type": "query", "key": "cat", "value": "(?<cat>[^&]+)" }],
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "(?<cat>[^&]+)"
+        }
+      ],
       "destination": "/category/:cat.html",
       "permanent": true
     },
@@ -69,6 +99,256 @@
       "permanent": true
     },
     {
+      "source": "/books/10-books-for-english-conversation",
+      "destination": "/book/30-topics-for-english-conversation.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/10-books-for-english-conversation.html",
+      "destination": "/book/30-topics-for-english-conversation.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/best-vocabulary-books-for-speaking-english",
+      "destination": "/book/1500-vocabulary-words-for-speaking-english.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/best-vocabulary-books-for-speaking-english.html",
+      "destination": "/book/1500-vocabulary-words-for-speaking-english.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/best-english-grammar-books-for-beginners",
+      "destination": "/book/best-english-grammar-book.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/best-english-grammar-books-for-beginners.html",
+      "destination": "/book/best-english-grammar-book.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/best-novels-to-read-for-beginners",
+      "destination": "/articles/best-free-classic-novels-to-start-with.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/best-novels-to-read-for-beginners.html",
+      "destination": "/articles/best-free-classic-novels-to-start-with.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/best-self-help-books-for-students",
+      "destination": "/articles/best-free-books-for-students.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/best-self-help-books-for-students.html",
+      "destination": "/articles/best-free-books-for-students.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/topics-for-english-conversation-pdf",
+      "destination": "/book/30-topics-for-english-conversation.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/topics-for-english-conversation-pdf.html",
+      "destination": "/book/30-topics-for-english-conversation.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/30-topics-for-english-conversation",
+      "destination": "/book/30-topics-for-english-conversation.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/30-topics-for-english-conversation.html",
+      "destination": "/book/30-topics-for-english-conversation.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/english-conversation-practice-pdf",
+      "destination": "/book/spoken-english-conversation-practice.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/english-conversation-practice-pdf.html",
+      "destination": "/book/spoken-english-conversation-practice.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/spoken-english-conversation-practice",
+      "destination": "/book/spoken-english-conversation-practice.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/spoken-english-conversation-practice.html",
+      "destination": "/book/spoken-english-conversation-practice.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/easy-english-1-pdf",
+      "destination": "/book/easy-english-with-games-and-activities-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/easy-english-1-pdf.html",
+      "destination": "/book/easy-english-with-games-and-activities-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/easy-english-with-games-and-activities-1",
+      "destination": "/book/easy-english-with-games-and-activities-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/easy-english-with-games-and-activities-1.html",
+      "destination": "/book/easy-english-with-games-and-activities-1.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/how-to-prepare-for-ielts-with-books",
+      "destination": "/articles/how-to-prepare-for-ielts-using-free-pdf-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/how-to-prepare-for-ielts-with-books.html",
+      "destination": "/articles/how-to-prepare-for-ielts-using-free-pdf-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/how-to-prepare-for-ielts",
+      "destination": "/articles/how-to-prepare-for-ielts-using-free-pdf-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/how-to-prepare-for-ielts.html",
+      "destination": "/articles/how-to-prepare-for-ielts-using-free-pdf-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/ielts-preparation-books",
+      "destination": "/articles/how-to-prepare-for-ielts-using-free-pdf-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/ielts-preparation-books.html",
+      "destination": "/articles/how-to-prepare-for-ielts-using-free-pdf-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/1500-vocabulary-words-for-speaking-english",
+      "destination": "/book/1500-vocabulary-words-for-speaking-english.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/1500-vocabulary-words-for-speaking-english.html",
+      "destination": "/book/1500-vocabulary-words-for-speaking-english.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/english-learning-books-pdf",
+      "destination": "/category/english-learning-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/english-learning-books-pdf.html",
+      "destination": "/category/english-learning-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/english-learning-books",
+      "destination": "/category/english-learning-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/english-learning-books.html",
+      "destination": "/category/english-learning-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/free-business-book",
+      "destination": "/category/business-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/free-business-book.html",
+      "destination": "/category/business-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/atomic-habits",
+      "destination": "/book/as-a-man-thinketh.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/atomic-habits.html",
+      "destination": "/book/as-a-man-thinketh.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/psychology-of-money",
+      "destination": "/category/self-development-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/psychology-of-money.html",
+      "destination": "/category/self-development-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/50000-leagues-under-the-sea-epub",
+      "destination": "/book/twenty-thousand-leagues-under-the-sea.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/50000-leagues-under-the-sea-epub.html",
+      "destination": "/book/twenty-thousand-leagues-under-the-sea.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/20000-leagues-under-the-sea",
+      "destination": "/book/twenty-thousand-leagues-under-the-sea.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/20000-leagues-under-the-sea.html",
+      "destination": "/book/twenty-thousand-leagues-under-the-sea.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/pride-and-prejudice",
+      "destination": "/book/pride-and-prejudice.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/pride-and-prejudice.html",
+      "destination": "/book/pride-and-prejudice.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/ielts-complete-preparation-guide",
+      "destination": "/book/ielts-complete-preparation-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/ielts-complete-preparation-guide.html",
+      "destination": "/book/ielts-complete-preparation-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/best-english-grammar-book",
+      "destination": "/book/best-english-grammar-book.html",
+      "permanent": true
+    },
+    {
+      "source": "/books/best-english-grammar-book.html",
+      "destination": "/book/best-english-grammar-book.html",
+      "permanent": true
+    },
+    {
       "source": "/books/:slug.html",
       "destination": "/book/:slug.html",
       "permanent": true
@@ -95,31 +375,61 @@
     }
   ],
   "rewrites": [
-    { "source": "/book/:slug", "destination": "/book/:slug.html" },
-    { "source": "/category/:slug", "destination": "/category/:slug.html" },
-    { "source": "/author/:slug", "destination": "/author/:slug.html" },
-    { "source": "/articles/:slug", "destination": "/articles/:slug.html" }
+    {
+      "source": "/book/:slug",
+      "destination": "/book/:slug.html"
+    },
+    {
+      "source": "/category/:slug",
+      "destination": "/category/:slug.html"
+    },
+    {
+      "source": "/author/:slug",
+      "destination": "/author/:slug.html"
+    },
+    {
+      "source": "/articles/:slug",
+      "destination": "/articles/:slug.html"
+    }
   ],
   "headers": [
     {
       "source": "/ads.txt",
       "headers": [
-        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600" }
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
       ]
     },
     {
       "source": "/downloads/(.*)\\.pdf",
       "headers": [
-        { "key": "Content-Type", "value": "application/pdf" },
-        { "key": "Cache-Control", "value": "public, max-age=86400" }
+        {
+          "key": "Content-Type",
+          "value": "application/pdf"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
       ]
     },
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     }
   ]

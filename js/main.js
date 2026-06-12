@@ -847,27 +847,28 @@ const CATEGORY_PILL_MAP = {
 };
 
 const TRENDING_BOOK_IDS = [
-  'pride-and-prejudice',
-  'the-adventures-of-sherlock-holmes',
-  'alices-adventures-in-wonderland',
-  'aesops-fables',
-  'as-a-man-thinketh',
-  'best-english-grammar-book'
+  '30-topics-for-english-conversation',
+  '1500-vocabulary-words-for-speaking-english',
+  'best-english-grammar-book',
+  'spoken-english-conversation-practice',
+  'ielts-complete-preparation-guide',
+  'pride-and-prejudice'
 ];
 
 const TRENDING_CARD_THEME = {
-  'pride-and-prejudice': 'red',
-  'the-adventures-of-sherlock-holmes': 'red',
-  'alices-adventures-in-wonderland': 'yellow',
-  'aesops-fables': 'yellow',
-  'as-a-man-thinketh': 'orange',
-  'best-english-grammar-book': 'blue'
+  '30-topics-for-english-conversation': 'blue',
+  '1500-vocabulary-words-for-speaking-english': 'blue',
+  'best-english-grammar-book': 'blue',
+  'spoken-english-conversation-practice': 'blue',
+  'ielts-complete-preparation-guide': 'orange',
+  'pride-and-prejudice': 'red'
 };
 
 const FEATURED_ARTICLE_IDS = [
-  'best-free-classic-novels-to-start-with',
+  'how-to-prepare-for-ielts-using-free-pdf-books',
+  'best-free-english-grammar-books-pakistani-students',
   'learn-a-language-with-free-books',
-  'how-to-build-a-daily-reading-habit'
+  'best-free-classic-novels-to-start-with'
 ];
 
 function categoryLabelForBook(book) {

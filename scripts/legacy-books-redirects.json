@@ -1,0 +1,30 @@
+{
+  "comment": "Old /books/ URLs from previous site structure -> live pages (GSC traffic recovery)",
+  "redirects": [
+    { "from": "/books/10-books-for-english-conversation", "to": "/book/30-topics-for-english-conversation.html" },
+    { "from": "/books/best-vocabulary-books-for-speaking-english", "to": "/book/1500-vocabulary-words-for-speaking-english.html" },
+    { "from": "/books/best-english-grammar-books-for-beginners", "to": "/book/best-english-grammar-book.html" },
+    { "from": "/books/best-novels-to-read-for-beginners", "to": "/articles/best-free-classic-novels-to-start-with.html" },
+    { "from": "/books/best-self-help-books-for-students", "to": "/articles/best-free-books-for-students.html" },
+    { "from": "/books/topics-for-english-conversation-pdf", "to": "/book/30-topics-for-english-conversation.html" },
+    { "from": "/books/30-topics-for-english-conversation", "to": "/book/30-topics-for-english-conversation.html" },
+    { "from": "/books/english-conversation-practice-pdf", "to": "/book/spoken-english-conversation-practice.html" },
+    { "from": "/books/spoken-english-conversation-practice", "to": "/book/spoken-english-conversation-practice.html" },
+    { "from": "/books/easy-english-1-pdf", "to": "/book/easy-english-with-games-and-activities-1.html" },
+    { "from": "/books/easy-english-with-games-and-activities-1", "to": "/book/easy-english-with-games-and-activities-1.html" },
+    { "from": "/books/how-to-prepare-for-ielts-with-books", "to": "/articles/how-to-prepare-for-ielts-using-free-pdf-books.html" },
+    { "from": "/books/how-to-prepare-for-ielts", "to": "/articles/how-to-prepare-for-ielts-using-free-pdf-books.html" },
+    { "from": "/books/ielts-preparation-books", "to": "/articles/how-to-prepare-for-ielts-using-free-pdf-books.html" },
+    { "from": "/books/1500-vocabulary-words-for-speaking-english", "to": "/book/1500-vocabulary-words-for-speaking-english.html" },
+    { "from": "/books/english-learning-books-pdf", "to": "/category/english-learning-books.html" },
+    { "from": "/books/english-learning-books", "to": "/category/english-learning-books.html" },
+    { "from": "/books/free-business-book", "to": "/category/business-books.html" },
+    { "from": "/books/atomic-habits", "to": "/book/as-a-man-thinketh.html" },
+    { "from": "/books/psychology-of-money", "to": "/category/self-development-books.html" },
+    { "from": "/books/50000-leagues-under-the-sea-epub", "to": "/book/twenty-thousand-leagues-under-the-sea.html" },
+    { "from": "/books/20000-leagues-under-the-sea", "to": "/book/twenty-thousand-leagues-under-the-sea.html" },
+    { "from": "/books/pride-and-prejudice", "to": "/book/pride-and-prejudice.html" },
+    { "from": "/books/ielts-complete-preparation-guide", "to": "/book/ielts-complete-preparation-guide.html" },
+    { "from": "/books/best-english-grammar-book", "to": "/book/best-english-grammar-book.html" }
+  ]
+}
