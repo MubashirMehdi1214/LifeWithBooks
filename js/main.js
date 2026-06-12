@@ -865,10 +865,10 @@ const TRENDING_CARD_THEME = {
 };
 
 const FEATURED_ARTICLE_IDS = [
+  'fifa-world-cup-2026-complete-guide',
+  'learn-spanish-fifa-world-cup-2026',
   'how-to-prepare-for-ielts-using-free-pdf-books',
-  'best-free-english-grammar-books-pakistani-students',
-  'learn-a-language-with-free-books',
-  'best-free-classic-novels-to-start-with'
+  'best-free-english-grammar-books-pakistani-students'
 ];
 
 function categoryLabelForBook(book) {

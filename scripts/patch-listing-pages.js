@@ -15,6 +15,7 @@ try {
   require(path.join(root, 'js', 'articles-more-5.js'));
   try { require(path.join(root, 'js', 'articles-more-6.js')); } catch (e) {}
   try { require(path.join(root, 'js', 'articles-more-7.js')); } catch (e) {}
+  try { require(path.join(root, 'js', 'articles-more-8.js')); } catch (e) {}
   try { require(path.join(root, 'js', 'articles-adsense-rewrites.js')); } catch (e) {}
   ARTICLES = require(path.join(root, 'js', 'articles.js')).ARTICLES || [];
 } catch (e) {

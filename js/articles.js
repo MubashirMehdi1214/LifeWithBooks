@@ -197,6 +197,7 @@ function mergeArticles() {
   var more5 = typeof ARTICLES_MORE_5 !== 'undefined' ? ARTICLES_MORE_5 : [];
   var more6 = typeof ARTICLES_MORE_6 !== 'undefined' ? ARTICLES_MORE_6 : [];
   var more7 = typeof ARTICLES_MORE_7 !== 'undefined' ? ARTICLES_MORE_7 : [];
+  var more8 = typeof ARTICLES_MORE_8 !== 'undefined' ? ARTICLES_MORE_8 : [];
   var rewrites = typeof ARTICLES_ADSENSE_REWRITES !== 'undefined' ? ARTICLES_ADSENSE_REWRITES : [];
   if (!more1.length && !more2.length && !more3.length && !more4.length && !more5.length && !more6.length && typeof module !== 'undefined') {
     try {
@@ -207,10 +208,11 @@ function mergeArticles() {
       more5 = require('./articles-more-5.js').ARTICLES_MORE_5 || [];
       more6 = require('./articles-more-6.js').ARTICLES_MORE_6 || [];
       try { more7 = require('./articles-more-7.js').ARTICLES_MORE_7 || []; } catch (e) {}
+      try { more8 = require('./articles-more-8.js').ARTICLES_MORE_8 || []; } catch (e) {}
       try { rewrites = require('./articles-adsense-rewrites.js').ARTICLES_ADSENSE_REWRITES || []; } catch (e) {}
     } catch (e) { /* browser bundle */ }
   }
-  var merged = ARTICLES_CORE.concat(more1, more2, more3, more4, more5, more6, more7);
+  var merged = ARTICLES_CORE.concat(more1, more2, more3, more4, more5, more6, more7, more8);
   if (rewrites.length) {
     var rewriteMap = {};
     rewrites.forEach(function(r) { rewriteMap[r.id] = r; });

@@ -51,7 +51,9 @@ Away from books, Sarah is a committed advocate for public library funding, an en
       "how-to-read-difficult-books",
       "pride-and-prejudice-book-review",
       "jane-eyre-review-modern-readers",
-      "sherlock-holmes-reading-guide"
+      "sherlock-holmes-reading-guide",
+      "best-football-books-fifa-world-cup-2026",
+      "books-about-usa-canada-mexico-fifa-2026"
     ],
 
     recommendedBookIds: [
@@ -114,7 +116,9 @@ He is a qualified CELTA and DELTA trainer, holds a Proficiency-level certificate
       "build-english-vocabulary-through-reading",
       "sq3r-method-for-better-reading",
       "english-beginners-first-30-days",
-      "deep-reading-vs-skimming"
+      "deep-reading-vs-skimming",
+      "learn-spanish-fifa-world-cup-2026",
+      "fifa-world-cup-2026-complete-guide"
     ],
 
     recommendedBookIds: [

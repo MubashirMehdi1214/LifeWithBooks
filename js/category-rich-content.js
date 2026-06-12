@@ -367,6 +367,7 @@ For spoken Spanish, exposure to multiple regional accents from early in your lea
 Build a deliberate vocabulary tracking system alongside any course book. Spanish vocabulary compounds quickly — once you know the verb form paradigms, learning new verbs is primarily a vocabulary exercise. Keep a running list of verbs encountered in each chapter, with their common collocations, and review weekly. Aim to add at least ten new verbs per week from your reading, beyond those explicitly taught in your course book. This additional vocabulary acquisition, maintained consistently, produces exponential growth in reading comprehension within six months.`,
 
     featuredArticleIds: [
+      "learn-spanish-fifa-world-cup-2026",
       "learn-a-language-with-free-books",
       "how-to-download-free-books-legally-guide-2026",
       "how-to-build-a-daily-reading-habit"

@@ -1,0 +1,595 @@
+/* Generate FIFA World Cup 2026 articles (HTML + articles-more-8.js). */
+const fs = require('fs');
+const path = require('path');
+
+const root = path.join(__dirname, '..');
+const PUBLISH = '2026-06-01';
+const SITE = 'https://www.lifewithbooks.co';
+
+const CRITICAL_CSS = `/* Critical above-the-fold CSS (~4kb) — header, nav, hero, book grid shell */
+:root{--contrast:#172021;--contrast-3:#666;--contrast-4:#a3a791;--base:#faf0e2;--base-2:#fff;--accent:#1E565C;--accent-hover:#2a747c;--shadow:0 2px 14px rgba(23,32,33,.08);--shadow-hover:0 8px 24px rgba(23,32,33,.15);--radius:6px;--max-width:1200px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#fff;color:var(--contrast-3);font-family:Nunito,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+img{max-width:100%;display:block;height:auto}
+h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
+.site-header{background:#fff;border-bottom:1px solid #eee;text-align:center;padding:24px 20px 0;position:relative;z-index:20}
+.site-header .site-logo{display:inline-flex;align-items:center;gap:12px;margin-bottom:14px}
+.site-header .site-logo .logo-mark{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#2a747c);display:grid;place-items:center;color:#fff;font-weight:800;font-size:26px;box-shadow:var(--shadow)}
+.site-header .logo-text{text-align:left;line-height:1.1}
+.site-header .logo-text strong{display:block;color:var(--contrast);font-size:22px;font-weight:800}
+.main-nav{background:var(--accent);position:sticky;top:0;z-index:100}
+.main-nav .nav-inner{max-width:var(--max-width);margin:0 auto;display:flex;align-items:center;justify-content:center;padding:0 20px;position:relative}
+.main-nav ul{display:flex;list-style:none;gap:0;align-items:center}
+.main-nav ul li a{display:block;color:#fff;padding:14px 18px;font-weight:600;font-size:15px}
+.menu-toggle{display:none;background:none;border:none;color:#fff;font-size:24px;cursor:pointer;padding:12px}
+.hero{background:linear-gradient(135deg,var(--base) 0%,#fff 60%);padding:80px 20px;text-align:center}
+.hero h1{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:16px;color:var(--contrast)}
+.hero p{max-width:680px;margin:0 auto 28px;font-size:17px;color:var(--contrast-3)}
+.hero .search-box{display:flex;max-width:560px;margin:0 auto;background:#fff;border-radius:100px;padding:6px 6px 6px 24px;box-shadow:var(--shadow-hover)}
+.hero .search-box input{flex:1;border:none;outline:none;font-size:16px;font-family:inherit;background:transparent;padding:12px 0}
+.hero .search-box button{background:var(--accent);color:#fff;border:none;border-radius:100px;padding:12px 28px;font-weight:700;font-size:15px;cursor:pointer;min-height:44px}
+.section{padding:60px 20px;max-width:var(--max-width);margin:0 auto}
+.section-title{text-align:center;margin-bottom:36px}
+.section-title h1,.section-title h2,.section-title a{font-size:clamp(1.4rem,3vw,1.9rem);color:var(--contrast)}
+.book-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 20px}
+.book-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.book-card a.thumb{display:block;position:relative;background:linear-gradient(135deg,#f6e9d0,#fff);padding:26px 18px;aspect-ratio:3/4;overflow:hidden}
+.book-card .cover{position:absolute;inset:26px 18px;display:flex;align-items:center;justify-content:center}
+.book-card .cover .cover-image,.book-card .cover picture img{width:72%;max-width:170px;height:auto;aspect-ratio:2/3;object-fit:contain;border-radius:4px 8px 8px 4px;background:#f5f5f5}
+.book-single{max-width:860px;margin:0 auto;padding:60px 20px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:14px 28px;border-radius:100px;font-weight:700;font-size:15px;min-height:44px;line-height:1.2}
+@media(max-width:768px){.menu-toggle{display:block}.main-nav ul{display:none}.book-grid{grid-template-columns:repeat(2,1fr);gap:20px 12px}.book-card a.thumb{padding:14px 10px;aspect-ratio:auto;min-height:220px}.book-card .cover{inset:14px 10px}.book-card .cover .cover-image,.book-card .cover picture img{width:100%;max-width:none;transform:none;object-fit:contain;box-shadow:0 4px 14px rgba(23,32,33,.18)}.hero{padding:60px 20px}}`;
+
+function authorSlug(name) {
+  return name.toLowerCase().replace(/\s+/g, '-');
+}
+
+function mdToHtml(text) {
+  return text
+    .replace(/^## (.+)$/gm, '</p><h2>$1</h2><p>')
+    .replace(/^### (.+)$/gm, '</p><h3>$1</h3><p>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+    .replace(/^- (.+)$/gm, '</p><p>- $1')
+    .replace(/\n\n/g, '</p><p>')
+    .replace(/^<\/p>/, '');
+}
+
+function buildHtml(article) {
+  const url = SITE + '/articles/' + article.id + '.html';
+  const authorPath = '../author/' + authorSlug(article.author) + '.html';
+  const shareTitle = encodeURIComponent(article.h1);
+  const shareUrl = encodeURIComponent(url);
+  const bodyHtml = mdToHtml(article.bodyMd);
+  const faqHtml = (article.faq || []).map(function(q) {
+    return '<details class="faq-item"><summary>' + q.q + '</summary><p>' + q.a + '</p></details>';
+  }).join('\n      ');
+  const faqSchema = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: (article.faq || []).map(function(q) {
+      return { '@type': 'Question', name: q.q, acceptedAnswer: { '@type': 'Answer', text: q.a } };
+    })
+  });
+  const articleSchema = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: article.h1,
+    description: article.metaDesc,
+    datePublished: PUBLISH,
+    dateModified: PUBLISH,
+    author: { '@type': 'Person', name: article.author },
+    publisher: { '@type': 'Organization', name: 'LifeWithBooks', url: SITE + '/' },
+    mainEntityOfPage: url,
+    image: SITE + '/og-articles.webp'
+  });
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${article.pageTitle}</title>
+  <meta name="description" content="${article.metaDesc}">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="${url}">
+  <link rel="alternate" hreflang="en" href="${url}">
+  <link rel="alternate" hreflang="x-default" href="${url}">
+  <link rel="alternate" type="application/rss+xml" title="LifeWithBooks Articles" href="../feed.xml">
+  <link rel="sitemap" type="application/xml" href="../sitemap.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"></noscript>
+  <style>${CRITICAL_CSS}</style>
+  <link rel="preload" href="../css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="../css/style.min.css"></noscript>
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="${article.ogTitle}">
+  <meta property="og:description" content="${article.metaDesc}">
+  <meta property="og:url" content="${url}">
+  <meta property="og:site_name" content="LifeWithBooks">
+  <meta property="og:image" content="${SITE}/og-articles.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${article.ogTitle}">
+  <meta name="twitter:description" content="${article.metaDesc}">
+  <meta name="twitter:image" content="${SITE}/og-articles.png">
+  <meta name="pinterest-rich-pin" content="true">
+  <meta property="article:author" content="${article.author}">
+  <meta property="article:publisher" content="https://www.facebook.com/lifewithbooks">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V3781QPP7K"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-V3781QPP7K');</script>
+  <script type="application/ld+json">${articleSchema}</script>${article.faq ? '<script type="application/ld+json">' + faqSchema + '</script>' : ''}
+</head>
+<body data-page="article" data-article-id="${article.id}" data-seo-static="true" data-path-depth="1" id="top">
+  <div id="site-header-host"></div>
+  <main class="book-single">
+    <div id="article-detail">
+      <div class="breadcrumb"><a href="../index.html">Home</a> &raquo; <a href="../articles.html">Articles</a> &raquo; <span>${article.h1}</span></div>
+      <h1>${article.h1}</h1>
+      <div class="meta"><span class="tag">${PUBLISH}</span><span class="tag">Last updated: 2026-06</span><span class="tag"><a href="${authorPath}">${article.author}</a></span></div>
+    <div class="share-buttons">
+      <a class="share-wa" href="https://wa.me/?text=${shareTitle}%20${shareUrl}" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="share-fb" href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}" target="_blank" rel="noopener">Facebook</a>
+      <a class="share-tw" href="https://twitter.com/intent/tweet?text=${shareTitle}&amp;url=${shareUrl}" target="_blank" rel="noopener">X / Twitter</a>
+      <button type="button" class="share-copy" data-copy="${url}">Copy link</button>
+    </div>
+      <article class="article"><p>${bodyHtml}</p></article>
+      ${article.faq ? '<section class="book-faq"><h2>Frequently Asked Questions</h2>\n      ' + faqHtml + '\n    </section>' : ''}
+    </div>
+  </main>
+  <div id="site-footer-host"></div>
+  <script>document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){navigator.clipboard.writeText(b.dataset.copy);b.textContent='Copied!';setTimeout(function(){b.textContent='Copy link';},2000);});});</script>
+  <script src="../js/books.min.js" defer></script>
+  <script src="../js/articles-bundle.min.js" defer></script>
+  <script src="../js/main.min.js" defer></script>
+</body>
+</html>`;
+}
+
+function bodyToJsArray(md) {
+  return md.split(/\n\n+/).map(function(p) {
+    return p.replace(/^## /, '## ').replace(/^### /, '### ').trim();
+  }).filter(Boolean);
+}
+
+const ARTICLES = [
+  {
+    id: 'learn-spanish-fifa-world-cup-2026',
+    title: 'Learn Spanish for FIFA World Cup 2026: Essential Football Phrases',
+    h1: 'Learn Spanish for FIFA World Cup 2026: Essential Football Phrases',
+    pageTitle: 'Learn Spanish for FIFA World Cup 2026 | 50 Football Phrases | LifeWithBooks',
+    ogTitle: 'Learn Spanish for FIFA World Cup 2026: Essential Football Phrases | LifeWithBooks',
+    metaDesc: '50 essential Spanish football phrases for FIFA World Cup 2026 — stadium vocabulary, chants, Mexican Spanish and free PDF conversation guides on LifeWithBooks.',
+    author: 'James Parker',
+    cover: 'spanish',
+    excerpt: 'Master 50 Spanish football phrases for FIFA World Cup 2026 — stadium vocabulary, Mexican chants, commentary terms and free PDF conversation guides.',
+    bodyMd: `The **FIFA World Cup 2026** will be the first tournament hosted across three countries — the United States, Canada and Mexico — with Spanish spoken by millions of fans in stadiums from Mexico City to Los Angeles. Whether you are travelling to a match, watching with Spanish-speaking friends, or simply want to understand commentary without subtitles, a focused set of **football Spanish phrases** transforms the experience from passive viewing to genuine participation.
+
+This guide is not a full Spanish course. It is a **match-day phrasebook**: fifty high-frequency terms used in stadiums, sports bars and living rooms during the world's biggest football festival. Pair it with our free PDF conversation guides and you can move from "¿Qué pasó?" to debating offside calls in Spanish within a week of focused practice.
+
+For a structured long-term plan, see our [90-day Spanish reading plan for beginners](../articles/spanish-reading-plan-for-beginners.html). For tournament facts and host cities, read the [FIFA World Cup 2026 complete guide](../articles/fifa-world-cup-2026-complete-guide.html).
+
+## Why Spanish Matters at World Cup 2026
+
+Mexico is a co-host nation with a passionate football culture stretching back to the 1970 and 1986 tournaments. Spanish is the primary language in Mexican stadiums, and it is widely spoken across the southern and western United States — home to several host cities including Los Angeles, Houston, Dallas and Miami. Even in Canada, Spanish-speaking communities will gather in bars and fan zones throughout June and July 2026.
+
+Learning even fifty phrases does three things: you understand chants and commentary faster, you connect with local fans more warmly, and you reinforce vocabulary you already know from general Spanish study. Football language is repetitive — the same verbs, emotions and tactical terms appear in every match — which makes it ideal for language learners who want quick wins.
+
+## 50 Essential Spanish Football Phrases
+
+The table below groups phrases by situation. Pronunciation follows standard Latin American Spanish unless noted. Practice each phrase aloud; football vocabulary is almost always spoken, rarely written.
+
+**Match basics:** *el partido* (the match), *el marcador* (the scoreboard), *el resultado* (the result), *empate* (draw), *victoria* (win), *derrota* (loss), *tiempo extra* (extra time), *penales* (penalty shootout), *el silbato* (the whistle), *el árbitro* (the referee).
+
+**On the pitch:** *el balón / la pelota* (the ball), *el campo* (the pitch), *la portería / el arco* (the goal), *el corner / córner* (corner kick), *tiro libre* (free kick), *fuera de juego* (offside), *tarjeta amarilla* (yellow card), *tarjeta roja* (red card), *falta* (foul), *mano* (handball).
+
+**Players and positions:** *el portero / arquero* (goalkeeper), *defensa* (defender), *mediocampista* (midfielder), *delantero* (forward), *capitán* (captain), *suplente* (substitute), *el banquillo* (the bench), *el entrenador / mister* (the coach).
+
+**Actions:** *¡Gol!* (Goal!), *disparar / tirar* (to shoot), *pasar* (to pass), *regatear* (to dribble), *atacar* (to attack), *defender* (to defend), *marcar* (to score), *parar* (to save), *expulsar* (to send off), *cambiar* (to substitute).
+
+**Fan language:** *¡Vamos! / ¡Dale!* (Come on!), *¡Ánimo!* (Keep going!), *¡Qué golazo!* (What a great goal!), *¡Qué barbaridad!* (Unbelievable!), *¡Eso es falta!* (That's a foul!), *¡Robo!* (We were robbed! — informal complaint), *¡Olé olé olé!* (Victory chant), *la afición* (the fans), *el estadio* (the stadium), *la grada / las gradas* (the stands).
+
+**Commentary and TV:** *en vivo* (live), *repetición* (replay), *análisis* (analysis), *formación* (line-up), *posesión* (possession), *contraataque* (counter-attack), *presión alta* (high press), *remontada* (comeback).
+
+## Stadium and Chanting Section
+
+Mexican fan culture is famous for coordinated chants (*porras*). The most universal is **"Cielito lindo"** sung before Mexican national team matches — learn the chorus "Ay, ay, ay, ay, canta y no llores" and you will blend in instantly. Another common chant is **"¡Mex-i-co! ¡Mex-i-co!"** clapped in rhythm.
+
+In Argentina-influenced fan groups you may hear **"Olé olé olé, olé olé olé, olé olé"** after goals. In Spain, **"¡A por ellos, oé!"** (Let's go get them!) appears frequently. You do not need perfect accent — enthusiasm matters more than pronunciation in a fan zone.
+
+Useful stadium sentences: *¿Dónde está mi asiento?* (Where is my seat?), *¿Cuánto falta para que empiece?* (How long until kick-off?), *¿A qué hora es el segundo tiempo?* (What time is the second half?), *¡Qué ambiente!* (What an atmosphere!), *¿Quién va ganando?* (Who is winning?).
+
+## Mexican Spanish vs Castilian Spanish at the Cup
+
+World Cup 2026 will expose you to both Latin American and European Spanish accents. Key differences for football: Mexicans say *arquero* for goalkeeper; Spaniards often say *portero*. Mexicans use *córner*; Spaniards may say *saque de esquina*. *Chuta* (Portugal-influenced) appears in some Latin American commentary for "shoot." Context usually clarifies meaning.
+
+If you are visiting Mexico specifically, our [101 Conversations in Mexican Spanish](../book/101-conversations-in-mexican-spanish.html) PDF covers realistic dialogue patterns beyond football — ordering food, taxis and small talk. For a broader starter course, try [Learn How to Speak Spanish in 30 Days](../book/learn-how-to-speak-spanish-in-30-days.html) or the [Spanish Language 3-in-1 Bundle](../book/spanish-language-3-in-1-bundle.html).
+
+## How to Practice Before Kick-Off
+
+**Week 1:** Learn the 20 nouns (partido, gol, árbitro, etc.). Write them on flashcards with English on the back.
+
+**Week 2:** Add action verbs and fan chants. Watch a Spanish-language highlight clip on YouTube and shout *¡Gol!* at the right moment.
+
+**Week 3:** Practice full sentences with a friend or language app. Debate a controversial penalty using *¡Eso es falta!* and *¡No, está bien!*
+
+**Week 4:** Read one chapter of a Spanish conversation PDF daily. Connect football vocabulary to everyday grammar you already know.
+
+## More FIFA 2026 Reading on LifeWithBooks
+
+- [FIFA World Cup 2026: Complete Guide](../articles/fifa-world-cup-2026-complete-guide.html) — dates, format, host cities
+- [Explore Host Countries Through Free Books](../articles/books-about-usa-canada-mexico-fifa-2026.html) — USA, Canada, Mexico reading list
+- [10 Best Football Books for the Tournament](../articles/best-football-books-fifa-world-cup-2026.html) — reading list for fans
+- [Spanish Learning Books category](../category/spanish-learning-books.html) — all free PDF guides
+
+## Disclaimer
+
+LifeWithBooks is not affiliated with FIFA or any national football association. Spanish phrases here are for language learning and fan enjoyment. Broadcast rights vary by country — check FIFA.com and your local rights holder for official viewing information.
+
+## References
+
+- FIFA World Cup 2026 — https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/canadamexicousa2026
+- LifeWithBooks Spanish Learning — https://www.lifewithbooks.co/category/spanish-learning-books.html`,
+    faq: [
+      { q: 'How many Spanish phrases do I need for World Cup 2026?', a: 'Fifty core football phrases cover most stadium and TV situations. Combine them with a free conversation PDF from LifeWithBooks for general Spanish structure.' },
+      { q: 'Is Mexican Spanish different from Spanish in Spain for football?', a: 'Vocabulary differs slightly — arquero vs portero, córner vs saque de esquina — but context makes meaning clear. Both are widely understood.' },
+      { q: 'Where can I download free Spanish learning PDFs?', a: 'LifeWithBooks hosts free Spanish conversation and course PDFs including 101 Conversations in Mexican Spanish and Learn How to Speak Spanish in 30 Days — no signup required.' }
+    ]
+  },
+  {
+    id: 'fifa-world-cup-2026-complete-guide',
+    title: 'FIFA World Cup 2026: Complete Guide to Teams, Schedule and Host Cities',
+    h1: 'FIFA World Cup 2026: Complete Guide to Teams, Schedule and Host Cities',
+    pageTitle: 'FIFA World Cup 2026 Complete Guide | Schedule, Host Cities | LifeWithBooks',
+    ogTitle: 'FIFA World Cup 2026: Complete Guide to Teams, Schedule and Host Cities | LifeWithBooks',
+    metaDesc: 'FIFA World Cup 2026 complete guide — 48 teams, 104 matches, USA Canada Mexico host cities, tournament dates and format. Verified facts from FIFA.com.',
+    author: 'James Parker',
+    cover: 'general',
+    excerpt: 'Everything you need to know about FIFA World Cup 2026 — 48 teams, 104 matches, host cities across USA, Canada and Mexico, dates and the expanded tournament format.',
+    bodyMd: `The **FIFA World Cup 2026** will be the largest football tournament ever staged: **48 national teams**, **104 matches**, and **16 host cities** across three nations — the United States, Canada and Mexico. For six weeks from June to July 2026, the world's attention will turn to North America. This guide collects verified facts from [FIFA.com](https://www.fifa.com) and explains the new format, key dates, host cities and how to combine tournament excitement with reading and language learning on LifeWithBooks.
+
+**Important:** Group-stage draw details change as qualification completes. This guide explains the **48-team format** and links to FIFA for live group tables rather than publishing unofficial group lists that may become outdated.
+
+## Key Dates and Milestones
+
+- **Tournament dates:** 11 June – 19 July 2026 (verify on FIFA.com for any schedule updates)
+- **Opening match:** Mexico vs South Africa at Estadio Azteca, Mexico City (subject to FIFA confirmation)
+- **Final:** 19 July 2026 at MetLife Stadium, East Rutherford, New Jersey, USA
+- **Teams:** 48 (expanded from 32 at Qatar 2022)
+- **Matches:** 104 total
+- **Host nations:** United States (11 cities), Mexico (3 cities), Canada (2 cities)
+
+Qualification runs through 2025 and early 2026 across six continental confederations (UEFA, CONMEBOL, CONCACAF, CAF, AFC, OFC). FIFA publishes the official match schedule and ticket information at fifa.com — always check there before booking travel.
+
+## How the 48-Team Format Works
+
+The 2026 expansion is the biggest rule change since the 32-team format introduced in 1998. Here is the structure FIFA has confirmed:
+
+**Group stage:** 48 teams divided into **12 groups of 4 teams** (Groups A through L). Each team plays three group matches. The top two teams from each group advance (24 teams), plus the **eight best third-placed teams** (32 teams total into the knockout round).
+
+**Knockout stage:** 32 teams enter a single-elimination bracket from the round of 32 through to the final. There is no third-place play-off in some recent formats — verify FIFA's published bracket rules for 2026.
+
+**More football, more opportunities:** Smaller football nations gain more slots. CONCACAF, as host confederation, receives automatic berths for USA, Canada and Mexico plus additional qualifying places. UEFA still sends the largest contingent. The format rewards consistency across three group games rather than a single must-win opener.
+
+For the **official group draw and live standings**, bookmark [FIFA World Cup 2026](https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/canadamexicousa2026) — we deliberately avoid printing detailed group tables here because unofficial draws circulate online and damage SEO trust when wrong.
+
+## Host Cities: United States
+
+The USA hosts the majority of matches across eleven cities:
+
+- **Atlanta** — Mercedes-Benz Stadium
+- **Boston** — Gillette Stadium (Foxborough)
+- **Dallas** — AT&T Stadium (Arlington)
+- **Houston** — NRG Stadium
+- **Kansas City** — Arrowhead Stadium
+- **Los Angeles** — SoFi Stadium (Inglewood)
+- **Miami** — Hard Rock Stadium (Miami Gardens)
+- **New York / New Jersey** — MetLife Stadium (East Rutherford) — **Final venue**
+- **Philadelphia** — Lincoln Financial Field
+- **San Francisco Bay Area** — Levi's Stadium (Santa Clara)
+- **Seattle** — Lumen Field
+
+Each city offers distinct culture, food and side-trip opportunities. If you are planning travel, allow buffer days — North American distances are vast and flights between host cities can be expensive during peak tournament weeks.
+
+## Host Cities: Mexico
+
+Mexico hosts three cities, including the historic **Estadio Azteca** in Mexico City — the only stadium to have hosted two World Cup finals (1970 and 1986):
+
+- **Mexico City** — Estadio Azteca (opening match venue)
+- **Guadalajara** — Estadio Akron
+- **Monterrey** — Estadio BBVA
+
+Spanish is essential for navigating Mexican host cities. Our [Learn Spanish for FIFA World Cup 2026](../articles/learn-spanish-fifa-world-cup-2026.html) guide covers 50 football phrases, and our [Explore Host Countries Through Free Books](../articles/books-about-usa-canada-mexico-fifa-2026.html) article links free PDFs about Mexican culture and language.
+
+## Host Cities: Canada
+
+Canada hosts two cities — its first time as a World Cup co-host:
+
+- **Toronto** — BMO Field
+- **Vancouver** — BC Place
+
+Canada's official languages are English and French. Our [Learn French in a Hurry](../book/learn-french-in-a-hurry.html) PDF is a practical starter if you plan time in Montreal or Quebec during side trips.
+
+## What Makes 2026 Unique
+
+**Three-nation hosting** requires unprecedented logistics — different visa rules, currencies (USD, CAD, MXN) and climates from Miami heat to Seattle rain. Fans following multiple teams may cross borders twice in one week.
+
+**Record scale** means more stories, more upsets and more commercial attention. It also means crowded airports, inflated hotel prices and sold-out fan zones. Book accommodation early in host cities.
+
+**Cultural crossover** — football passion meets North American sports culture. NFL-scale stadiums will hold football matches with adapted pitch dimensions. Expect elaborate half-time shows and entertainment typical of US mega-events.
+
+## Watching From Home: Broadcast Notes
+
+Television and streaming rights are sold separately in each country. FIFA lists official broadcast partners on its website. LifeWithBooks does not stream matches. If you are searching "how to watch World Cup 2026," check FIFA.com and your national rights holder — never rely on unofficial pirate streams that carry malware and legal risk.
+
+## Combine Football With Free Reading
+
+The tournament is an excuse to read as well as watch. LifeWithBooks offers:
+
+- [10 Best Football Books to Read During the Cup](../articles/best-football-books-fifa-world-cup-2026.html) — curated reading list (buy or borrow — not pirated PDFs)
+- [Learn Spanish for FIFA 2026](../articles/learn-spanish-fifa-world-cup-2026.html) — 50 match-day phrases
+- [Free books about USA, Canada and Mexico](../articles/books-about-usa-canada-mexico-fifa-2026.html) — public-domain classics
+- [Spanish learning PDFs](../category/spanish-learning-books.html) — free downloads
+- [30 Topics for English Conversation](../book/30-topics-for-english-conversation.html) — discuss matches in English with friends abroad
+
+## Travel and Fan Tips
+
+**Visas:** US, Canadian and Mexican entry requirements differ by nationality. Check official government sites months before travel.
+
+**Tickets:** Purchase only through FIFA's official ticket portal. Secondary market scams peak during World Cups.
+
+**Weather:** June–July ranges from humid 35°C in Houston to mild 20°C in Vancouver. Pack layers for air-conditioned stadiums.
+
+**Time zones:** Matches span Eastern, Central, Mountain and Pacific times in North America — use a world-clock app if following from abroad.
+
+## Frequently Asked Questions
+
+### How many teams are in World Cup 2026?
+
+Forty-eight teams — expanded from thirty-two. They play 104 matches across twelve groups of four before the knockout stage.
+
+### Where is the World Cup 2026 final?
+
+MetLife Stadium in East Rutherford, New Jersey, USA, on 19 July 2026 (subject to FIFA schedule confirmation).
+
+### Which cities host World Cup 2026 matches?
+
+Sixteen cities total: eleven in the USA, three in Mexico and two in Canada. See the host city sections above for stadium names.
+
+### Where can I find the official group draw?
+
+Only at FIFA.com. Avoid unofficial group tables on random blogs — they are often wrong and update frequently as qualification finishes.
+
+## Disclaimer
+
+LifeWithBooks is an independent free book library. We are not affiliated with FIFA, US Soccer, Canada Soccer or the Mexican Football Federation. Dates, venues and schedules should be verified on [FIFA.com](https://www.fifa.com) before making travel or ticket decisions.
+
+## References
+
+- FIFA World Cup 2026 Official — https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/canadamexicousa2026
+- FIFA Media Hub — https://www.fifa.com/media
+- LifeWithBooks FIFA Spanish Guide — https://www.lifewithbooks.co/articles/learn-spanish-fifa-world-cup-2026.html`,
+    faq: [
+      { q: 'When does FIFA World Cup 2026 start?', a: 'The tournament runs from 11 June to 19 July 2026 across USA, Canada and Mexico. Verify the exact opening match on FIFA.com.' },
+      { q: 'How many teams qualify for World Cup 2026?', a: 'Forty-eight teams — the largest World Cup ever. Twelve groups of four feed into a 32-team knockout round.' },
+      { q: 'Where can I watch World Cup 2026 matches?', a: 'Broadcast rights vary by country. Check FIFA.com and your local official rights holder — LifeWithBooks does not stream matches.' }
+    ]
+  },
+  {
+    id: 'books-about-usa-canada-mexico-fifa-2026',
+    title: 'Explore FIFA 2026 Host Countries Through Free Books: USA, Canada and Mexico',
+    h1: 'Explore FIFA 2026 Host Countries Through Free Books: USA, Canada and Mexico',
+    pageTitle: 'Free Books About USA, Canada & Mexico | FIFA 2026 | LifeWithBooks',
+    ogTitle: 'Explore FIFA 2026 Host Countries Through Free Books | LifeWithBooks',
+    metaDesc: 'Explore USA, Canada and Mexico through free PDF books for FIFA World Cup 2026 — public-domain classics, Spanish guides and French learning on LifeWithBooks.',
+    author: 'Sarah Mitchell',
+    cover: 'literature',
+    excerpt: 'Discover the USA, Canada and Mexico through free public-domain books and language PDFs — a reading guide for FIFA World Cup 2026 host countries on LifeWithBooks.',
+    bodyMd: `The **FIFA World Cup 2026** invites the world to explore three nations at once. You could fly between sixteen host cities — or you could begin the journey from your sofa with **free books** that reveal how Americans, Canadians and Mexicans think, speak and tell stories about themselves. LifeWithBooks hosts public-domain classics and original language guides you can download legally, without signup.
+
+This article links **only to books we actually host**. Every title below is a free PDF on this site. For tournament schedules and stadium facts, see our [FIFA World Cup 2026 complete guide](../articles/fifa-world-cup-2026-complete-guide.html). For match-day Spanish, see [50 football phrases for the Cup](../articles/learn-spanish-fifa-world-cup-2026.html).
+
+## Why Read Before You Travel
+
+Stadiums show you a country's sport. Books show you its inner life — the arguments, humour, landscapes and moral questions that shape a culture. Reading *Huckleberry Finn* before visiting the Mississippi basin, or *Don Quixote* before Madrid-side conversations about honour and madness, gives you reference points that tour guides skip.
+
+Public-domain books are especially valuable for budget travellers: they cost nothing, work offline on any phone and never expire. The titles below are chosen for **host-country relevance**, not because they mention football.
+
+## United States: Three Free Classics
+
+### Common Sense by Thomas Paine
+
+[Common Sense](../book/common-sense.html) is the pamphlet that helped spark American independence in 1776. Paine wrote in plain, urgent English — "These are the times that try men's souls" — arguing why colonies should break from Britain. It remains one of the clearest examples of political writing persuading ordinary readers. Download the free PDF and read it in an afternoon; you will understand American rhetoric about freedom and self-determination that still echoes in political speech today.
+
+### The Wealth of Nations (Abridged Selection)
+
+Adam Smith's [Wealth of Nations abridged selection](../book/wealth-of-nations-abridged-selection.html) introduces the economic ideas that shaped American capitalism — division of labour, free markets, the invisible hand. You do not need an economics degree: this abridged LifeWithBooks edition focuses on readable chapters. It explains why American cities grew as commercial hubs and why World Cup host cities compete fiercely for tourism revenue.
+
+### Adventures of Huckleberry Finn by Mark Twain
+
+[Adventures of Huckleberry Finn](../book/adventures-of-huckleberry-finn.html) is the great American novel of the Mississippi River — humour, racism, friendship and escape. Twain captures vernacular American speech that still influences how people talk in the South and Midwest, including several US host regions. It is controversial and essential: read it critically and you will hear America arguing with itself.
+
+## Mexico: Language, Conversation and Don Quixote
+
+Mexico's World Cup role goes beyond sport — it is a cultural bridge between North America and Latin America. Start with language, then literature.
+
+### Spanish Learning PDFs
+
+Our [Spanish learning books category](../category/spanish-learning-books.html) includes conversation guides perfect before travelling to Mexico City, Guadalajara or Monterrey:
+
+- [101 Conversations in Mexican Spanish](../book/101-conversations-in-mexican-spanish.html) — realistic dialogues in Mexican accent and vocabulary
+- [Learn How to Speak Spanish in 30 Days](../book/learn-how-to-speak-spanish-in-30-days.html) — structured beginner course
+- [Spanish Language 3-in-1 Bundle](../book/spanish-language-3-in-1-bundle.html) — combined grammar, vocabulary and practice
+
+Pair these with our [Learn Spanish for FIFA World Cup 2026](../articles/learn-spanish-fifa-world-cup-2026.html) article for football-specific vocabulary.
+
+### Don Quixote by Miguel de Cervantes
+
+[Don Quixote](../book/don-quixote.html) is the founding novel of modern fiction — a gentleman who reads too many romances and sets out to revive chivalry. Spanish-speaking fans quote Quixote without realising it: tilting at windmills, impossible dreams, noble absurdity. The book connects Mexico to the wider Spanish literary world. The LifeWithBooks PDF is a public-domain translation you can read before hearing Spanish commentary weave literary references into everyday speech.
+
+For a structured Spanish reading path beyond the tournament, see [Spanish reading plan for beginners](../articles/spanish-reading-plan-for-beginners.html).
+
+## Canada: English, French and Cultural Context
+
+Canada hosts Toronto and Vancouver — bilingual, multicultural cities where French matters almost as much as English in national life.
+
+### Learn French in a Hurry
+
+[Learn French in a Hurry](../book/learn-french-in-a-hurry.html) is a practical starter for travellers who may side-trip to Montreal or Quebec during World Cup travel. Canadian French differs slightly from Parisian French, but core grammar and vocabulary transfer. Even twenty pages before your flight helps you read signs, order food and greet fans in French-speaking neighbourhoods.
+
+Browse our full [French learning books category](../category/french-learning-books.html) for additional free PDFs including conversation guides and grammar practice.
+
+Canada's literary identity is less represented in public-domain English classics on our site than the US — but French learning opens Francophone Canadian culture, and English classics above apply to anglophone Canadian readers who share British literary heritage.
+
+## Building a Host-Country Reading List
+
+**Two weeks before travel:** One US classic (*Common Sense* or *Huck Finn*) plus one Spanish conversation PDF.
+
+**One week before Mexico matches:** [101 Conversations in Mexican Spanish](../book/101-conversations-in-mexican-spanish.html) and the [FIFA Spanish phrase guide](../articles/learn-spanish-fifa-world-cup-2026.html).
+
+**Canada side trip:** [Learn French in a Hurry](../book/learn-french-in-a-hurry.html) and a chapter of *Wealth of Nations* for economic context on hosting costs.
+
+**During the tournament:** Short sessions between matches — public-domain books work well on phones in stadium queues.
+
+## More FIFA 2026 Guides
+
+- [FIFA World Cup 2026 Complete Guide](../articles/fifa-world-cup-2026-complete-guide.html)
+- [10 Best Football Books for the Tournament](../articles/best-football-books-fifa-world-cup-2026.html)
+- [Learn Spanish for FIFA 2026](../articles/learn-spanish-fifa-world-cup-2026.html)
+
+## Disclaimer
+
+LifeWithBooks is not affiliated with FIFA or any national tourism board. Book links above point to free PDFs hosted on this site. Travel, visa and ticket information should be confirmed through official government and FIFA channels.
+
+## References
+
+- FIFA World Cup 2026 — https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/canadamexicousa2026
+- Project Gutenberg — https://www.gutenberg.org/
+- LifeWithBooks All Books — https://www.lifewithbooks.co/all-books.html`,
+    faq: [
+      { q: 'Are these books really free PDF downloads?', a: 'Yes — every book linked in this article is hosted free on LifeWithBooks as a legal public-domain or original guide PDF. No signup required.' },
+      { q: 'Which book should I read before visiting Mexico for World Cup 2026?', a: 'Start with 101 Conversations in Mexican Spanish for practical dialogue, then Don Quixote for cultural depth. Add our FIFA Spanish phrase guide for match day.' },
+      { q: 'Does LifeWithBooks have Canadian literature?', a: 'Our French learning PDFs help with Francophone Canada. For English classics shared with anglophone Canadian culture, try our US public-domain titles like Huckleberry Finn.' }
+    ]
+  },
+  {
+    id: 'best-football-books-fifa-world-cup-2026',
+    title: '10 Best Football Books to Read During FIFA World Cup 2026',
+    h1: '10 Best Football Books to Read During FIFA World Cup 2026',
+    pageTitle: '10 Best Football Books for FIFA World Cup 2026 | Reading List | LifeWithBooks',
+    ogTitle: '10 Best Football Books to Read During FIFA World Cup 2026 | LifeWithBooks',
+    metaDesc: 'Ten essential football books for FIFA World Cup 2026 — honest reading list with summaries. Plus free PDFs on LifeWithBooks for Spanish and English conversation.',
+    author: 'Sarah Mitchell',
+    cover: 'literature',
+    excerpt: 'Ten essential football books to read during FIFA World Cup 2026 — honest recommendations to buy or borrow, plus free PDF conversation guides on LifeWithBooks.',
+    bodyMd: `Every World Cup creates a reading moment — fans want history, tactics, memoir and the emotional logic of the game. This is an **honest reading list**: ten outstanding football books worth buying or borrowing from your library. **LifeWithBooks does not host PDFs of these commercial titles.** We summarise each book so you can choose wisely, then point you to **free PDFs we actually offer** for language and conversation while you watch the tournament.
+
+For Spanish stadium phrases, see [Learn Spanish for FIFA World Cup 2026](../articles/learn-spanish-fifa-world-cup-2026.html). For host-country classics, see [Explore USA, Canada and Mexico Through Free Books](../articles/books-about-usa-canada-mexico-fifa-2026.html). For schedules and cities, read the [complete 2026 guide](../articles/fifa-world-cup-2026-complete-guide.html).
+
+## 1. Fever Pitch by Nick Hornby
+
+Hornby's memoir of Arsenal obsession defined football fandom as literary subject. It is funny, embarrassing and true — about how club loyalty shapes identity more than reason should allow. Read it if you support a club that breaks your heart annually. **Get it:** bookshops, libraries, ebook stores — not on LifeWithBooks.
+
+## 2. Inverting the Pyramid by Jonathan Wilson
+
+The definitive history of football tactics — from WM formation to false nines. Wilson explains why formations changed, not just what they look like on a whiteboard. During World Cup 2026 you will hear pundits reference "inverted fullbacks" and "half-spaces" — this book teaches you what they mean. Dense but rewarding; read one chapter per rest day between matches.
+
+## 3. Soccernomics by Simon Kuper and Stefan Szymanski
+
+Applies economic and statistical thinking to football — why small countries produce stars, why certain clubs overpay, whether managers matter. Perfect for fans who argue with data. The World Cup's expanded 48-team format makes Soccernomics' chapters on national-team performance especially relevant.
+
+## 4. The Ball Is Round by David Goldblatt
+
+A global history of football — politics, colonialism, class and culture on every continent. Goldblatt connects the sport to wars, dictatorships and liberation movements. If you want context beyond highlight reels, this is the single best big-picture book. Long but worth pacing across the group stage.
+
+## 5. Brilliant Orange by David Winner
+
+Dutch football philosophy — Total Football, Cruyff, Van Gaal — told with cultural depth. Even if the Netherlands' 2026 campaign varies, understanding Dutch ideas helps you decode modern pressing and positional play used by many finalists.
+
+## 6. I Am the Secret Footballer (Anonymous)
+
+Insider account of Premier League dressing rooms — money, agents, fear and banter. Salacious in places but revealing about professional psychology. Read cautiously as anonymous journalism, but enjoy the voice.
+
+## 7. The Damned Utd by David Peace
+
+Novel about Brian Clough's disastrous 44-day Leeds United tenure — fiction that feels like documentary. Peace's rhythmic prose captures managerial ego and institutional sabotage. For fans who love club politics more than tactics.
+
+## 8. Futebol: The Brazilian Way of Life by Alex Bellos
+
+Brazil's relationship with football as national mythology. Bellos travels cities and favelas explaining why the game matters socially, not just athletically. Essential before watching Brazil or any South American team whose style reflects cultural identity.
+
+## 9. How Football Explains the World by Franklin Foer
+
+Short essays linking football to globalisation, nationalism and corruption. Accessible entry to football writing if you lack time for Goldblatt's volume. Good airport read between host cities.
+
+## 10. The Game by Neville Cardus
+
+Classic cricket-writing sensibility applied to football reportage from another era. Cardus proves football prose can be elegant, not just shouty. A palate cleanser between modern tactical tomes — reminds you the game is art as well as science.
+
+## Free PDFs on LifeWithBooks While You Watch the Cup
+
+We **do not** offer the ten books above as downloads. We **do** offer free PDFs that pair perfectly with World Cup 2026 — especially if you are hosting international friends or learning Spanish for Mexico host cities:
+
+- [30 Topics for English Conversation](../book/30-topics-for-english-conversation.html) — discuss matches, travel and culture in English
+- [Spoken English Conversation Practice](../book/spoken-english-conversation-practice.html) — dialogue drills for everyday talk
+- [Spanish Learning Books category](../category/spanish-learning-books.html) — free guides including Mexican Spanish conversation
+- [101 Conversations in Mexican Spanish](../book/101-conversations-in-mexican-spanish.html) — ideal before Mexico City matches
+- [Learn Spanish for FIFA 2026](../articles/learn-spanish-fifa-world-cup-2026.html) — 50 football phrases
+
+## How to Use This List During the Tournament
+
+**Group stage (June):** Pick one tactical book (*Inverting the Pyramid*) and read the chapter matching whatever formation dominates headlines.
+
+**Knockout rounds (July):** Switch to emotional memoir (*Fever Pitch*) or global history (*The Ball Is Round*) when stakes rise.
+
+**Travel days:** Short essays (*How Football Explains the World*) fit flights between US host cities.
+
+**Language days:** Replace reading with Spanish PDF practice before Mexico fixtures.
+
+## Disclaimer
+
+LifeWithBooks is not affiliated with FIFA, publishers or authors listed above. Books 1–10 are **recommendations only** — purchase from bookshops, libraries or legitimate ebook platforms. Only links in the "Free PDFs on LifeWithBooks" section point to downloads we host.
+
+## References
+
+- FIFA World Cup 2026 — https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/canadamexicousa2026
+- LifeWithBooks Spanish Category — https://www.lifewithbooks.co/category/spanish-learning-books.html
+- LifeWithBooks English Conversation — https://www.lifewithbooks.co/book/30-topics-for-english-conversation.html`,
+    faq: [
+      { q: 'Can I download Fever Pitch or Soccernomics free on LifeWithBooks?', a: 'No — those are commercial books we recommend buying or borrowing. LifeWithBooks only hosts free PDFs we have legal rights to share, listed in our Free PDFs section.' },
+      { q: 'What free books should I read during World Cup 2026?', a: 'Try 30 Topics for English Conversation, Spoken English Conversation Practice, and our Spanish learning PDFs — all free downloads on LifeWithBooks.' },
+      { q: 'What is the best football book for beginners?', a: 'How Football Explains the World is short and accessible. For deeper history, choose The Ball Is Round or Fever Pitch for personal memoir.' }
+    ]
+  }
+];
+
+// Write HTML files
+ARTICLES.forEach(function(a) {
+  const out = path.join(root, 'articles', a.id + '.html');
+  fs.writeFileSync(out, buildHtml(a), 'utf8');
+  console.log('Wrote', out);
+});
+
+// Write articles-more-8.js
+const jsEntries = ARTICLES.map(function(a) {
+  return {
+    id: a.id,
+    title: a.title,
+    date: PUBLISH,
+    author: a.author,
+    cover: a.cover,
+    excerpt: a.excerpt,
+    body: bodyToJsArray(a.bodyMd)
+  };
+});
+
+const jsContent = '/* FIFA World Cup 2026 — four editorial articles (batch 8). */\nconst ARTICLES_MORE_8 = ' +
+  JSON.stringify(jsEntries, null, 2) + ';\n\nif (typeof module !== "undefined") { module.exports = { ARTICLES_MORE_8 }; }\n';
+
+fs.writeFileSync(path.join(root, 'js', 'articles-more-8.js'), jsContent, 'utf8');
+console.log('Wrote js/articles-more-8.js');
+console.log('Done —', ARTICLES.length, 'FIFA articles generated.');

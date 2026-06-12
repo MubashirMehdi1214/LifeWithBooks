@@ -725,5 +725,29 @@ const ARTICLE_META = {
     "excerpt": "From Oliver Twist's workhouse to Bleak House's Chancery courts, Dickens used fiction as a weapon against poverty, child labour and institutional corruption — an",
     "date": "2026-06-07",
     "author": "Sarah Mitchell"
+  },
+  "learn-spanish-fifa-world-cup-2026": {
+    "title": "Learn Spanish for FIFA World Cup 2026: Essential Football Phrases",
+    "excerpt": "Master 50 Spanish football phrases for FIFA World Cup 2026 — stadium vocabulary, Mexican chants, commentary terms and free PDF conversation guides.",
+    "date": "2026-06-01",
+    "author": "James Parker"
+  },
+  "fifa-world-cup-2026-complete-guide": {
+    "title": "FIFA World Cup 2026: Complete Guide to Teams, Schedule and Host Cities",
+    "excerpt": "Everything you need to know about FIFA World Cup 2026 — 48 teams, 104 matches, host cities across USA, Canada and Mexico, dates and the expanded tournament format.",
+    "date": "2026-06-01",
+    "author": "James Parker"
+  },
+  "books-about-usa-canada-mexico-fifa-2026": {
+    "title": "Explore FIFA 2026 Host Countries Through Free Books: USA, Canada and Mexico",
+    "excerpt": "Discover the USA, Canada and Mexico through free public-domain books and language PDFs — a reading guide for FIFA World Cup 2026 host countries on LifeWithBooks.",
+    "date": "2026-06-01",
+    "author": "Sarah Mitchell"
+  },
+  "best-football-books-fifa-world-cup-2026": {
+    "title": "10 Best Football Books to Read During FIFA World Cup 2026",
+    "excerpt": "Ten essential football books to read during FIFA World Cup 2026 — honest recommendations to buy or borrow, plus free PDF conversation guides on LifeWithBooks.",
+    "date": "2026-06-01",
+    "author": "Sarah Mitchell"
   }
 };

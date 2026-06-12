@@ -1983,3 +1983,65 @@ h1, h2, h3, h4, h5, h6 { color: var(--contrast); font-weight: 700; line-height: 
 .author-articles ul, .author-books ul { list-style: none; padding: 0; }
 .author-articles li, .author-books li { margin: 0.5rem 0; }
 
+/* FIFA World Cup 2026 homepage banner */
+.fifa-banner {
+  background: linear-gradient(135deg, var(--primary-dark, #0d3b2e) 0%, var(--accent, #1E565C) 100%);
+  color: #fff;
+  padding: 36px 20px;
+  border-bottom: 3px solid var(--accent-green, #16a34a);
+}
+.fifa-banner__inner {
+  max-width: var(--max-width, 1200px);
+  margin: 0 auto;
+}
+.fifa-banner__eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #a7f3d0;
+  margin-bottom: 8px;
+}
+.fifa-banner__title {
+  font-family: 'Nunito', sans-serif;
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+.fifa-banner__text {
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 640px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.fifa-banner__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.fifa-banner__links .btn-outline-light {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  color: #fff;
+  background: transparent;
+}
+.fifa-banner__links .btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+.fifa-banner__all {
+  color: #a7f3d0;
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 4px;
+}
+.fifa-banner__all:hover { color: #fff; }
+@media (max-width: 768px) {
+  .fifa-banner { padding: 28px 16px; }
+  .fifa-banner__links { flex-direction: column; align-items: stretch; }
+  .fifa-banner__links .btn { width: 100%; text-align: center; }
+  .fifa-banner__all { margin-left: 0; text-align: center; }
+}
+

@@ -223,6 +223,21 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
     </div>
   </section>
 
+  <section class="fifa-banner" id="fifa-banner" data-expires="2026-07-20" aria-label="FIFA World Cup 2026">
+    <div class="fifa-banner__inner">
+      <div class="fifa-banner__content">
+        <p class="fifa-banner__eyebrow">June – July 2026</p>
+        <h2 class="fifa-banner__title">FIFA World Cup 2026 — Read &amp; Learn With Free PDFs</h2>
+        <p class="fifa-banner__text">Host cities across USA, Canada and Mexico. Match-day Spanish phrases, tournament guide and free books about the host countries.</p>
+        <div class="fifa-banner__links">
+          <a class="btn btn-primary" href="articles/fifa-world-cup-2026-complete-guide.html">Complete Guide</a>
+          <a class="btn btn-outline-light" href="articles/learn-spanish-fifa-world-cup-2026.html">Learn Spanish</a>
+          <a class="fifa-banner__all" href="articles.html">All FIFA articles &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="stats-bar" id="stats-bar" aria-label="Library statistics">
     <div class="stats-bar__inner">
       <div class="stat-item">
@@ -418,6 +433,14 @@ h1,h2,h3{color:var(--contrast);font-weight:700;line-height:1.25}
 
   <div id="site-footer-host"></div>
 
+  <script>
+  (function(){
+    var b=document.getElementById('fifa-banner');
+    if(!b)return;
+    var exp=b.getAttribute('data-expires');
+    if(exp&&new Date()>new Date(exp+'T23:59:59'))b.style.display='none';
+  })();
+  </script>
   <script src="js/books.min.js" defer></script>
   <script src="js/articles-bundle.min.js" defer></script>
   <script src="js/main.min.js" defer></script>
