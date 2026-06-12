@@ -50,8 +50,22 @@ function urlEntry(loc, changefreq, priority) {
 const parts = [];
 const seen = new Set();
 
+function pagePath(loc) {
+  if (loc === '/') return path.join(root, 'index.html');
+  const rel = loc.replace(/^\//, '');
+  return path.join(root, rel);
+}
+
+function isIndexablePage(loc) {
+  const fp = pagePath(loc);
+  if (!fs.existsSync(fp)) return false;
+  const html = fs.readFileSync(fp, 'utf8');
+  return !/noindex/i.test(html);
+}
+
 function add(loc, cf, pr) {
   if (seen.has(loc)) return;
+  if (!isIndexablePage(loc)) return;
   seen.add(loc);
   parts.push(urlEntry(loc, cf, pr));
 }

@@ -297,7 +297,7 @@ const ARTICLES_MORE_7 = [
       "- Project Gutenberg: Charles Dickens — https://www.gutenberg.org/ebooks/author/37",
       "- The Dickens Society — https://www.dickenssociety.org/",
       "- The Victorian Web: Dickens Social Criticism — https://victorianweb.org/authors/dickens/index.html",
-      "- LifeWithBooks Classic Novels — https://www.lifewithbooks.co/category/classic-novels.html"
+      "- LifeWithBooks Classic Novels — https://www.lifewithbooks.co/category/novels.html"
     ]
   }
 ];

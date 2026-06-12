@@ -139,7 +139,7 @@ const ARTICLES_ADSENSE_REWRITES = [
       "- Paul Nation, Victoria University: Vocabulary Research — https://www.victoria.ac.nz/lals/about/staff/paul-nation",
       "- Project Gutenberg — https://www.gutenberg.org/",
       "- Standard Ebooks — https://standardebooks.org/",
-      "- LifeWithBooks English Learning — https://www.lifewithbooks.co/category/english-learning.html"
+      "- LifeWithBooks English Learning — https://www.lifewithbooks.co/category/english-learning-books.html"
     ]
   },
   {
@@ -225,7 +225,7 @@ const ARTICLES_ADSENSE_REWRITES = [
       "- Project Gutenberg — https://www.gutenberg.org/",
       "- Standard Ebooks — https://standardebooks.org/",
       "- Keith Oatley and Maja Djikic, Writing as Thinking, Review of General Psychology — https://doi.org/10.1037/1089-2680.12.1.9",
-      "- LifeWithBooks Classic Novels — https://www.lifewithbooks.co/category/classic-novels.html"
+      "- LifeWithBooks Classic Novels — https://www.lifewithbooks.co/category/novels.html"
     ]
   },
   {
@@ -361,7 +361,7 @@ const ARTICLES_ADSENSE_REWRITES = [
       "- Project Gutenberg: As a Man Thinketh — https://www.gutenberg.org/ebooks/4507",
       "- Project Gutenberg: Meditations by Marcus Aurelius — https://www.gutenberg.org/ebooks/2680",
       "- Project Gutenberg: The Art of War — https://www.gutenberg.org/ebooks/132",
-      "- LifeWithBooks Self-Development Books — https://www.lifewithbooks.co/category/self-development.html"
+      "- LifeWithBooks Self-Development Books — https://www.lifewithbooks.co/category/self-development-books.html"
     ]
   },
   {
@@ -407,7 +407,7 @@ const ARTICLES_ADSENSE_REWRITES = [
       "- BBC Learning English — https://www.bbc.co.uk/learningenglish",
       "- Open Library — https://openlibrary.org/",
       "- Cambridge English: CEFR Level Descriptions — https://www.cambridgeenglish.org/exams-and-tests/cefr/",
-      "- LifeWithBooks English Learning — https://www.lifewithbooks.co/category/english-learning.html"
+      "- LifeWithBooks English Learning — https://www.lifewithbooks.co/category/english-learning-books.html"
     ]
   },
   {

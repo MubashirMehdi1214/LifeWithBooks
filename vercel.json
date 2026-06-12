@@ -17,9 +17,35 @@
       "permanent": true
     },
     {
+      "source": "/article.html",
+      "has": [{ "type": "query", "key": "id", "value": "(?<id>[^&]+)" }],
+      "destination": "/articles/:id.html",
+      "permanent": true
+    },
+    {
       "source": "/category.html",
       "has": [{ "type": "query", "key": "cat", "value": "(?<cat>[^&]+)" }],
       "destination": "/category/:cat.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/classic-novels.html",
+      "destination": "/category/novels.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/self-development.html",
+      "destination": "/category/self-development-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/english-learning.html",
+      "destination": "/category/english-learning-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/how-to-prepare-for-ielts.html",
+      "destination": "/articles/how-to-prepare-for-ielts-using-free-pdf-books.html",
       "permanent": true
     },
     {

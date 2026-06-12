@@ -1,10 +1,18 @@
 User-agent: *
 Allow: /
+Allow: /book/
+Allow: /articles/
+Allow: /category/
+Allow: /author/
+Allow: /article.html
+Allow: /all-books.html
+Allow: /articles.html
+Allow: /index.html
+
 Disallow: /download.html
 Disallow: /admin/
 Disallow: /*.json$
+Disallow: /node_modules/
+Disallow: /scripts/
 
 Sitemap: https://www.lifewithbooks.co/sitemap.xml
-Sitemap: https://www.lifewithbooks.co/sitemap-images.xml
-Sitemap: https://www.lifewithbooks.co/sitemap-news.xml
-Sitemap: https://www.lifewithbooks.co/feed.xml
