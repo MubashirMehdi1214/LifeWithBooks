@@ -1,36 +1,47 @@
 # Request indexing in Google Search Console (URL Inspection → Request indexing)
 # One URL per inspection — do NOT submit sitemap.xml here.
+# Work top to bottom. GSC allows ~10–15 requests per day — do one batch daily.
 
+# --- BATCH 1: Hub pages (GA landing-page spike drivers — do these first) ---
 https://www.lifewithbooks.co/
-https://www.lifewithbooks.co/all-books.html
 https://www.lifewithbooks.co/articles.html
-https://www.lifewithbooks.co/about.html
+https://www.lifewithbooks.co/all-books.html
+
+# --- BATCH 2: FIFA World Cup 2026 (time-sensitive — tournament Jun–Jul 2026) ---
+https://www.lifewithbooks.co/articles/fifa-world-cup-2026-complete-guide.html
+https://www.lifewithbooks.co/articles/learn-spanish-fifa-world-cup-2026.html
+https://www.lifewithbooks.co/articles/best-football-books-fifa-world-cup-2026.html
+https://www.lifewithbooks.co/articles/books-about-usa-canada-mexico-fifa-2026.html
+
+# --- BATCH 3: Top English-learning books (GSC + GA traffic) ---
+https://www.lifewithbooks.co/book/30-topics-for-english-conversation.html
+https://www.lifewithbooks.co/book/1500-vocabulary-words-for-speaking-english.html
+https://www.lifewithbooks.co/book/spoken-english-conversation-practice.html
+https://www.lifewithbooks.co/book/best-english-grammar-book.html
+https://www.lifewithbooks.co/book/ielts-complete-preparation-guide.html
+
+# --- BATCH 4: High-value articles (discovered / not yet indexed) ---
+https://www.lifewithbooks.co/articles/how-to-prepare-for-ielts-using-free-pdf-books.html
+https://www.lifewithbooks.co/articles/how-to-download-free-books-legally-guide-2026.html
+https://www.lifewithbooks.co/articles/how-to-download-public-domain-books-legally-2026.html
+https://www.lifewithbooks.co/articles/best-programming-books-beginners-free-pdf-2026.html
+https://www.lifewithbooks.co/articles/best-free-kids-learning-books-pdf-parents.html
+https://www.lifewithbooks.co/articles/ielts-band-score-complete-guide.html
+
+# --- BATCH 5: Category hubs ---
+https://www.lifewithbooks.co/category/english-learning-books.html
+https://www.lifewithbooks.co/category/ielts-preparation.html
+https://www.lifewithbooks.co/category/literature-books.html
+https://www.lifewithbooks.co/category/spanish-learning-books.html
+
+# --- BATCH 6: Classic books + authors (steady long-tail) ---
 https://www.lifewithbooks.co/book/pride-and-prejudice.html
 https://www.lifewithbooks.co/book/dracula.html
 https://www.lifewithbooks.co/book/frankenstein.html
 https://www.lifewithbooks.co/book/alices-adventures-in-wonderland.html
-https://www.lifewithbooks.co/book/as-a-man-thinketh.html
-https://www.lifewithbooks.co/book/the-adventures-of-sherlock-holmes.html
-https://www.lifewithbooks.co/book/grimms-fairy-tales.html
-https://www.lifewithbooks.co/book/aesops-fables.html
 https://www.lifewithbooks.co/book/treasure-island.html
-https://www.lifewithbooks.co/book/the-jungle-book.html
 https://www.lifewithbooks.co/book/jane-eyre.html
-https://www.lifewithbooks.co/book/great-expectations.html
-https://www.lifewithbooks.co/book/moby-dick.html
-https://www.lifewithbooks.co/book/robinson-crusoe.html
-https://www.lifewithbooks.co/book/gullivers-travels.html
-https://www.lifewithbooks.co/book/the-war-of-the-worlds.html
-https://www.lifewithbooks.co/book/ielts-complete-preparation-guide.html
 https://www.lifewithbooks.co/book/css-pms-english-essay-guide.html
-https://www.lifewithbooks.co/book/30-topics-for-english-conversation.html
-https://www.lifewithbooks.co/book/1500-vocabulary-words-for-speaking-english.html
-https://www.lifewithbooks.co/articles/complete-history-of-english-literature.html
-https://www.lifewithbooks.co/articles/jules-verne-predicted-the-future.html
-https://www.lifewithbooks.co/articles/ielts-band-score-complete-guide.html
-https://www.lifewithbooks.co/articles/how-to-prepare-for-ielts-using-free-pdf-books.html
-https://www.lifewithbooks.co/author/sarah-mitchell.html
 https://www.lifewithbooks.co/author/mubashir-mehdi.html
-https://www.lifewithbooks.co/category/literature-books.html
-https://www.lifewithbooks.co/category/english-learning-books.html
-https://www.lifewithbooks.co/category/ielts-preparation.html
+https://www.lifewithbooks.co/author/sarah-mitchell.html
+https://www.lifewithbooks.co/about.html
