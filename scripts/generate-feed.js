@@ -41,9 +41,7 @@ function toRfc822(dateStr) {
 
 const byDate = (a, b) => (b.date || '').localeCompare(a.date || '');
 const isBookPdfGuide = (a) => /^free-.+-pdf-guide$/.test(a.id);
-const editorial = ARTICLES.filter(a => !isBookPdfGuide(a)).sort(byDate);
-const guides = ARTICLES.filter(isBookPdfGuide).sort(byDate);
-const sorted = editorial.slice(0, 12).concat(guides.slice(0, 8));
+const sorted = ARTICLES.filter(a => !isBookPdfGuide(a)).sort(byDate).slice(0, 20);
 const lastBuild = sorted.length ? sorted[0].date : new Date().toISOString().slice(0, 10);
 
 const items = sorted.map((a) => {
@@ -75,4 +73,4 @@ const xml =
   '</rss>\n';
 
 fs.writeFileSync(path.join(root, 'feed.xml'), xml, 'utf8');
-console.log('Feed written:', sorted.length, 'articles (12 editorial + 8 book guides)');
+console.log('Feed written:', sorted.length, 'editorial articles (PDF guides excluded — noindex)');
