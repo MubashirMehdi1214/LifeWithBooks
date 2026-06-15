@@ -1257,7 +1257,6 @@ function categoryGridSelector() {
 function initCategory() {
   if (document.body.dataset.page !== 'category') return;
   const slug = document.body.dataset.cat || getParam('cat') || 'english-learning-books';
-  const isStatic = document.body.dataset.seoStatic === 'true';
   const gridSel = categoryGridSelector();
   const cat = CATEGORIES.find(c => c.slug === slug);
   const seo = getCategorySeo(slug);
@@ -1276,7 +1275,7 @@ function initCategory() {
     ? seo.pageTitle
     : label + ' | LifeWithBooks - Free PDF Ebook Library';
   const metaDesc = seo ? seo.metaDescription : intro;
-  const pageUrl = isStatic ? getCategoryPageUrl(slug) : SITE_ORIGIN + '/category.html?cat=' + encodeURIComponent(slug);
+  const pageUrl = getCategoryPageUrl(slug);
   setShareMeta({
     title: pageTitle,
     description: metaDesc,
@@ -1286,7 +1285,7 @@ function initCategory() {
 
   let items = BOOKS.filter(b => b.categories.includes(slug));
   const rawQ = getSearchQuery();
-  applySearchQuerySeo('/category.html?cat=' + encodeURIComponent(slug), rawQ);
+  applySearchQuerySeo('/category/' + encodeURIComponent(slug) + '.html', rawQ);
   const q = rawQ.toLowerCase();
   if (q) {
     items = items.filter(b =>
@@ -1320,13 +1319,7 @@ function initCategory() {
   searchForm && searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const val = searchInput.value.trim();
-    if (isStatic) {
-      window.location.href = getCategoryPagePath(slug) + (val ? '?q=' + encodeURIComponent(val) : '');
-    } else {
-      const params = new URLSearchParams({ cat: slug });
-      if (val) params.set('q', val);
-      window.location.href = 'category.html?' + params.toString();
-    }
+    window.location.href = getCategoryPagePath(slug) + (val ? '?q=' + encodeURIComponent(val) : '');
   });
 
   injectJsonLd('jsonld-breadcrumbs', {

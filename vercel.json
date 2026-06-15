@@ -11,6 +11,509 @@
       "permanent": true
     },
     {
+      "source": "/book/category.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "(?<cat>[^&]+)"
+        }
+      ],
+      "destination": "/category/:cat.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/all-books.html",
+      "destination": "/all-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/articles.html",
+      "destination": "/articles.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/privacy-policy.html",
+      "destination": "/privacy-policy.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/terms.html",
+      "destination": "/terms.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/dmca.html",
+      "destination": "/dmca.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/disclaimer.html",
+      "destination": "/disclaimer.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/cookie-policy.html",
+      "destination": "/cookie-policy.html",
+      "permanent": true
+    },
+    {
+      "source": "/category/category.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "(?<cat>[^&]+)"
+        }
+      ],
+      "destination": "/category/:cat.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/articles.html",
+      "destination": "/articles.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/privacy-policy.html",
+      "destination": "/privacy-policy.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/terms.html",
+      "destination": "/terms.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/dmca.html",
+      "destination": "/dmca.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/disclaimer.html",
+      "destination": "/disclaimer.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/cookie-policy.html",
+      "destination": "/cookie-policy.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/category.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "(?<cat>[^&]+)"
+        }
+      ],
+      "destination": "/category/:cat.html",
+      "permanent": true
+    },
+    {
+      "source": "/author/all-books.html",
+      "destination": "/all-books.html",
+      "permanent": true
+    },
+    {
+      "source": "/author/articles.html",
+      "destination": "/articles.html",
+      "permanent": true
+    },
+    {
+      "source": "/author/privacy-policy.html",
+      "destination": "/privacy-policy.html",
+      "permanent": true
+    },
+    {
+      "source": "/author/terms.html",
+      "destination": "/terms.html",
+      "permanent": true
+    },
+    {
+      "source": "/author/dmca.html",
+      "destination": "/dmca.html",
+      "permanent": true
+    },
+    {
+      "source": "/author/disclaimer.html",
+      "destination": "/disclaimer.html",
+      "permanent": true
+    },
+    {
+      "source": "/author/cookie-policy.html",
+      "destination": "/cookie-policy.html",
+      "permanent": true
+    },
+    {
+      "source": "/author/category.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "cat",
+          "value": "(?<cat>[^&]+)"
+        }
+      ],
+      "destination": "/category/:cat.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/",
+      "destination": "/articles.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-dracula-pdf-guide.html",
+      "destination": "/book/dracula.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-picture-of-dorian-gray-pdf-guide.html",
+      "destination": "/book/the-picture-of-dorian-gray.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-little-women-pdf-guide.html",
+      "destination": "/book/little-women.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-a-tale-of-two-cities-pdf-guide.html",
+      "destination": "/book/a-tale-of-two-cities.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-adventures-of-tom-sawyer-pdf-guide.html",
+      "destination": "/book/the-adventures-of-tom-sawyer.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-adventures-of-huckleberry-finn-pdf-guide.html",
+      "destination": "/book/adventures-of-huckleberry-finn.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-around-the-world-in-eighty-days-pdf-guide.html",
+      "destination": "/book/around-the-world-in-eighty-days.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-call-of-the-wild-pdf-guide.html",
+      "destination": "/book/the-call-of-the-wild.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-alices-adventures-in-wonderland-pdf-guide.html",
+      "destination": "/book/alices-adventures-in-wonderland.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-time-machine-pdf-guide.html",
+      "destination": "/book/the-time-machine.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-wuthering-heights-pdf-guide.html",
+      "destination": "/book/wuthering-heights.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-moby-dick-pdf-guide.html",
+      "destination": "/book/moby-dick.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-scarlet-letter-pdf-guide.html",
+      "destination": "/book/the-scarlet-letter.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-adventures-of-sherlock-holmes-pdf-guide.html",
+      "destination": "/book/the-adventures-of-sherlock-holmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-strange-case-of-dr-jekyll-and-mr-hyde-pdf-guide.html",
+      "destination": "/book/the-strange-case-of-dr-jekyll-and-mr-hyde.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-emma-pdf-guide.html",
+      "destination": "/book/emma.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-sense-and-sensibility-pdf-guide.html",
+      "destination": "/book/sense-and-sensibility.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-persuasion-pdf-guide.html",
+      "destination": "/book/persuasion.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-northanger-abbey-pdf-guide.html",
+      "destination": "/book/northanger-abbey.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-oliver-twist-pdf-guide.html",
+      "destination": "/book/oliver-twist.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-a-christmas-carol-pdf-guide.html",
+      "destination": "/book/a-christmas-carol.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-silas-marner-pdf-guide.html",
+      "destination": "/book/silas-marner.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-far-from-the-madding-crowd-pdf-guide.html",
+      "destination": "/book/far-from-the-madding-crowd.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-twenty-thousand-leagues-under-the-sea-pdf-guide.html",
+      "destination": "/book/twenty-thousand-leagues-under-the-sea.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-mysterious-island-pdf-guide.html",
+      "destination": "/book/the-mysterious-island.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-hound-of-the-baskervilles-pdf-guide.html",
+      "destination": "/book/the-hound-of-the-baskervilles.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-a-study-in-scarlet-pdf-guide.html",
+      "destination": "/book/a-study-in-scarlet.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-invisible-man-pdf-guide.html",
+      "destination": "/book/the-invisible-man.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-island-of-doctor-moreau-pdf-guide.html",
+      "destination": "/book/the-island-of-doctor-moreau.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-ivanhoe-pdf-guide.html",
+      "destination": "/book/ivanhoe.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-three-musketeers-pdf-guide.html",
+      "destination": "/book/the-three-musketeers.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-man-in-the-iron-mask-pdf-guide.html",
+      "destination": "/book/the-man-in-the-iron-mask.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-crime-and-punishment-pdf-guide.html",
+      "destination": "/book/crime-and-punishment.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-metamorphosis-pdf-guide.html",
+      "destination": "/book/the-metamorphosis.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-candide-pdf-guide.html",
+      "destination": "/book/candide.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-meditations-pdf-guide.html",
+      "destination": "/book/meditations.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-walden-pdf-guide.html",
+      "destination": "/book/walden.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-narrative-of-the-life-of-frederick-douglass-pdf-guide.html",
+      "destination": "/book/narrative-of-the-life-of-frederick-douglass.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-importance-of-being-earnest-pdf-guide.html",
+      "destination": "/book/the-importance-of-being-earnest.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-wind-in-the-willows-pdf-guide.html",
+      "destination": "/book/the-wind-in-the-willows.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-black-beauty-pdf-guide.html",
+      "destination": "/book/black-beauty.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-happy-prince-and-other-tales-pdf-guide.html",
+      "destination": "/book/the-happy-prince-and-other-tales.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-great-gatsby-pdf-guide.html",
+      "destination": "/book/the-great-gatsby.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-jungle-pdf-guide.html",
+      "destination": "/book/the-jungle.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-common-sense-pdf-guide.html",
+      "destination": "/book/common-sense.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-les-miserables-pdf-guide.html",
+      "destination": "/book/les-miserables.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-don-quixote-pdf-guide.html",
+      "destination": "/book/don-quixote.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-war-and-peace-pdf-guide.html",
+      "destination": "/book/war-and-peace.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-anne-of-avonlea-pdf-guide.html",
+      "destination": "/book/anne-of-avonlea.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-anne-of-the-island-pdf-guide.html",
+      "destination": "/book/anne-of-the-island.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-sign-of-the-four-pdf-guide.html",
+      "destination": "/book/the-sign-of-the-four.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-valley-of-fear-pdf-guide.html",
+      "destination": "/book/the-valley-of-fear.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-return-of-sherlock-holmes-pdf-guide.html",
+      "destination": "/book/the-return-of-sherlock-holmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-memoirs-of-sherlock-holmes-pdf-guide.html",
+      "destination": "/book/the-memoirs-of-sherlock-holmes.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-his-last-bow-pdf-guide.html",
+      "destination": "/book/his-last-bow.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-hunchback-of-notre-dame-pdf-guide.html",
+      "destination": "/book/the-hunchback-of-notre-dame.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-anna-karenina-pdf-guide.html",
+      "destination": "/book/anna-karenina.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-brothers-karamazov-pdf-guide.html",
+      "destination": "/book/the-brothers-karamazov.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-odyssey-pdf-guide.html",
+      "destination": "/book/the-odyssey.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-paradise-lost-pdf-guide.html",
+      "destination": "/book/paradise-lost.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-last-of-the-mohicans-pdf-guide.html",
+      "destination": "/book/the-last-of-the-mohicans.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-kidnapped-pdf-guide.html",
+      "destination": "/book/kidnapped.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-prince-and-the-pauper-pdf-guide.html",
+      "destination": "/book/the-prince-and-the-pauper.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-heidi-pdf-guide.html",
+      "destination": "/book/heidi.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-adventures-of-pinocchio-pdf-guide.html",
+      "destination": "/book/the-adventures-of-pinocchio.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-idiot-pdf-guide.html",
+      "destination": "/book/the-idiot.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-mayor-of-casterbridge-pdf-guide.html",
+      "destination": "/book/the-mayor-of-casterbridge.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-house-of-the-seven-gables-pdf-guide.html",
+      "destination": "/book/the-house-of-the-seven-gables.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-turn-of-the-screw-pdf-guide.html",
+      "destination": "/book/the-turn-of-the-screw.html",
+      "permanent": true
+    },
+    {
+      "source": "/articles/free-the-awakening-pdf-guide.html",
+      "destination": "/book/the-awakening.html",
+      "permanent": true
+    },
+    {
       "source": "/book/about.html",
       "destination": "/about.html",
       "permanent": true
@@ -104,7 +607,12 @@
     },
     {
       "source": "/book.html",
-      "missing": [{ "type": "query", "key": "id" }],
+      "missing": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ],
       "destination": "/all-books.html",
       "permanent": true
     },
@@ -122,7 +630,12 @@
     },
     {
       "source": "/article.html",
-      "missing": [{ "type": "query", "key": "id" }],
+      "missing": [
+        {
+          "type": "query",
+          "key": "id"
+        }
+      ],
       "destination": "/articles.html",
       "permanent": true
     },
