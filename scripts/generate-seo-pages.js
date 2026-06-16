@@ -70,9 +70,16 @@ const CATEGORY_SEO = {
   },
   'english-learning-books': {
     pageTitle: 'English Learning Books PDF Free Download | LifeWithBooks',
-    metaDescription: 'English learning books PDF — free grammar, conversation, vocabulary and course guides. Free english books pdf download at lifewithbooks.co.',
+    metaDescription: 'English learning books PDF free — grammar, conversation, vocabulary and IELTS guides. Download english learning books at lifewithbooks.co with no signup.',
     intro: 'Browse english learning books PDF guides on LifeWithBooks — grammar, conversation practice, vocabulary and course overviews. Start your free english books pdf download today with no signup.',
-    heading: 'English Learning Books PDF'
+    heading: 'English Learning Books PDF',
+    extraIntro: '<p style="text-align:center;max-width:760px;margin:0 auto 30px;">Most-downloaded: <a href="../book/30-topics-for-english-conversation.html">30 Topics for English Conversation PDF</a>, <a href="../book/spoken-english-conversation-practice.html">English Conversation Practice PDF</a>, <a href="../book/1500-vocabulary-words-for-speaking-english.html">1500 Vocabulary Words PDF</a>, <a href="../book/ielts-complete-preparation-guide.html">IELTS Preparation Guide</a> and <a href="../articles/how-to-prepare-for-ielts-using-free-pdf-books.html">how to prepare for IELTS with books</a>.</p>'
+  },
+  'self-grooming-books': {
+    pageTitle: 'Self Grooming Books PDF Free Download | LifeWithBooks',
+    metaDescription: 'Self grooming books PDF free — personal presentation, confidence, etiquette and communication guides. Download free self grooming books at lifewithbooks.co.',
+    intro: 'Browse free self grooming books PDF on LifeWithBooks — personal presentation, confidence, etiquette, communication and everyday self-care guides you can download instantly.',
+    heading: 'Self Grooming Books PDF'
   },
   'self-development-books': {
     pageTitle: 'Free Self Development Books PDF | LifeWithBooks',
@@ -81,8 +88,8 @@ const CATEGORY_SEO = {
     heading: 'Self Development Books'
   },
   'business-books': {
-    pageTitle: 'Free Business Books PDF | Leadership & Management | LifeWithBooks',
-    metaDescription: 'Free business books PDF — leadership, management, marketing classics and study guides. Download a free business book overview on LifeWithBooks.',
+    pageTitle: 'Free Business Books PDF Download | LifeWithBooks',
+    metaDescription: 'Free business book PDF — leadership, management, marketing classics and study guides. Browse and download free business books at lifewithbooks.co.',
     intro: 'Looking for a free business book? Browse free business books PDF guides on LifeWithBooks — leadership, strategy, advertising and personal effectiveness classics you can read online before buying official editions.',
     heading: 'Free Business Books PDF'
   },
@@ -189,18 +196,51 @@ const BOOK_SEO = {
     h1: 'Deutsch Intensiv Wortschatz C1 — Kostenloses PDF',
     metaDescription: 'Deutsch Intensiv Wortschatz C1 PDF kostenlos — intensive German vocabulary for Goethe C1. Free PDF download on LifeWithBooks.',
     extraHtml: '<p><strong>Deutsch Intensiv Wortschatz</strong> is one of the most searched German vocabulary resources for C1 learners. Download the free PDF with thematic word sets, collocations and productive exercises for Goethe C1 exam preparation.</p>'
+  },
+  'spoken-english-conversation-practice': {
+    pageTitle: 'English Conversation Practice PDF | Free Download | LifeWithBooks',
+    h1: 'Spoken English Conversation Practice — Free PDF',
+    metaDescription: 'English conversation practice PDF free — daily speaking exercises for learners who read well but need fluency. Download instantly, no signup.',
+    extraHtml: '<p>Searching for <strong>english conversation practice PDF</strong> material? This LifeWithBooks guide delivers structured daily prompts, sample dialogues and confidence-building exercises for real-world speaking.</p>',
+    relatedIds: ['30-topics-for-english-conversation', '1500-vocabulary-words-for-speaking-english', 'ielts-complete-preparation-guide'],
+    faq: [
+      { q: 'Is this english conversation practice PDF free?', a: 'Yes — download Spoken English Conversation Practice free at lifewithbooks.co with one click. No signup required.' },
+      { q: 'Who is this guide for?', a: 'Learners who can read and write English but struggle to speak fluently — ideal alongside our 30 Topics for English Conversation PDF.' }
+    ]
+  },
+  'great-expectations': {
+    pageTitle: 'Great Expectations PDF Free Download | Charles Dickens | LifeWithBooks',
+    h1: 'Great Expectations — Free PDF by Charles Dickens',
+    metaDescription: 'Download Great Expectations PDF free — Charles Dickens\'s classic coming-of-age novel about Pip, Miss Havisham and Magwitch. Public-domain edition.',
+    extraHtml: '<p>Searching for <strong>Great Expectations PDF</strong>? Download Dickens\'s masterpiece free — the story of Pip\'s rise, guilt and redemption in a complete public-domain edition.</p>',
+    relatedIds: ['a-tale-of-two-cities', 'oliver-twist', 'a-christmas-carol'],
+    faq: [
+      { q: 'Is Great Expectations available as a free PDF?', a: 'Yes — download the complete Charles Dickens novel free at lifewithbooks.co. No signup required.' },
+      { q: 'What is Great Expectations about?', a: 'The orphan Pip receives a mysterious fortune and learns hard lessons about class, loyalty and what it means to be a gentleman.' }
+    ]
   }
 };
 
 const ARTICLE_SEO = {
   'how-to-prepare-for-ielts-using-free-pdf-books': {
-    pageTitle: 'How to Prepare for IELTS Using Free PDF Books | LifeWithBooks',
-    metaDescription: 'How to prepare for IELTS with books — free IELTS PDF guides, 3000 words vocabulary and 8-week study plan. Download free at lifewithbooks.co.',
-    extraHtml: '<p>Wondering <strong>how to prepare for IELTS with books</strong> on a budget? This guide shows you how to combine free <strong>IELTS PDF</strong> resources with official practice tests for band 7+ results.</p>',
+    pageTitle: 'How to Prepare for IELTS With Books (Free PDF Guide) | LifeWithBooks',
+    metaDescription: 'How to prepare for IELTS with books — free PDF guides, IELTS 3000 words vocabulary, 8-week study plan and book recommendations. No signup.',
+    extraHtml: '<p>Wondering <strong>how to prepare for IELTS with books</strong> on a budget? This guide shows you which free <strong>IELTS PDF</strong> resources to start with — including our <a href="../book/ielts-complete-preparation-guide.html">IELTS Complete Preparation Guide</a> and <a href="../book/ielts-vocabulary-builder-3000-words.html">IELTS 3000 Words PDF</a> — plus how to combine them with official practice tests for band 7+ results.</p>',
     faq: [
-      { q: 'Where can I find IELTS 3000 words PDF?', a: 'Download our free IELTS vocabulary guide with 3000 essential words at lifewithbooks.co/book/ielts-vocabulary-builder-3000-words.html — or get the full IELTS Complete Preparation Guide with vocabulary built in.' },
+      { q: 'How to prepare for IELTS with books?', a: 'Start with a structured free guide like our IELTS Complete Preparation Guide, add the IELTS 3000 Words vocabulary builder, then complete official Cambridge practice tests under timed conditions before booking your exam.' },
+      { q: 'Where can I find IELTS 3000 words PDF?', a: 'Download our free IELTS vocabulary guide at lifewithbooks.co/book/ielts-vocabulary-builder-3000-words.html — or get the full IELTS Complete Preparation Guide with vocabulary built in.' },
       { q: 'Can I pass IELTS with only free PDF books?', a: 'Free guides help you plan and understand the test, but you should also complete official practice tests under timed conditions before booking your exam.' }
     ]
+  },
+  'frankenstein-review-beyond-the-movies': {
+    pageTitle: 'Frankenstein Book Review | Mary Shelley | LifeWithBooks',
+    metaDescription: 'Frankenstein book review — Mary Shelley\'s original novel beyond the movies. Plot, themes and free PDF download on LifeWithBooks.',
+    extraHtml: '<p>Looking for a thoughtful <strong>Frankenstein book review</strong>? This guide goes beyond Hollywood — exploring Victor Frankenstein, the Creature, and why Shelley\'s 1818 novel still unsettles readers. <a href="../book/frankenstein.html">Download Frankenstein PDF free</a>.</p>'
+  },
+  'great-expectations-book-review': {
+    pageTitle: 'Great Expectations Book Review | Charles Dickens | LifeWithBooks',
+    metaDescription: 'Great Expectations book review — Pip\'s coming-of-age story, themes and why Dickens\'s classic still matters. Plus free PDF download.',
+    extraHtml: '<p>This <strong>Great Expectations book review</strong> covers Dickens\'s portrait of ambition, class and redemption — and links to the <a href="../book/great-expectations.html">free Great Expectations PDF</a> on LifeWithBooks.</p>'
   }
 };
 

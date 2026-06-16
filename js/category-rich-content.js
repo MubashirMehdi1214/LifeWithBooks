@@ -29,9 +29,9 @@ Advanced learners should read authentic English — novels, long-form essays, qu
 Regardless of level, consistency outperforms intensity. Thirty focused minutes every day beats a four-hour session on Sunday. Download a book to your phone so it is always with you, and protect your daily reading slot against interruptions. Combine reading with listening whenever possible — the books in this category work especially well alongside podcasts or YouTube channels in English, creating the immersive environment that accelerates retention.`,
 
     featuredArticleIds: [
+      "how-to-prepare-for-ielts-using-free-pdf-books",
       "how-to-improve-english-speaking-using-books",
-      "best-free-english-grammar-books-pakistani-students",
-      "how-to-build-a-daily-reading-habit"
+      "best-free-english-grammar-books-pakistani-students"
     ]
   },
 
