@@ -11,6 +11,11 @@ const ROOT_PAGES = [
   'privacy-policy.html', 'terms.html', 'dmca.html', 'disclaimer.html', 'cookie-policy.html'
 ];
 const PREFIXES = ['/book', '/category', '/articles', '/author'];
+const CATEGORY_ALIASES = [
+  ['classic-novels', 'novels'],
+  ['english-learning', 'english-learning-books'],
+  ['self-development', 'self-development-books']
+];
 
 function redirectKey(r) {
   return r.source + '|' + JSON.stringify(r.has || null);
@@ -28,7 +33,10 @@ function add(r) {
 
 for (const prefix of PREFIXES) {
   for (const page of ROOT_PAGES) {
-    add({ source: prefix + '/' + page, destination: '/' + page, permanent: true });
+    const dest = '/' + page;
+    add({ source: prefix + '/' + page, destination: dest, permanent: true });
+    const bare = page.replace(/\.html$/, '');
+    add({ source: prefix + '/' + bare, destination: dest, permanent: true });
   }
   add({
     source: prefix + '/category.html',
@@ -36,6 +44,12 @@ for (const prefix of PREFIXES) {
     destination: '/category/:cat.html',
     permanent: true
   });
+}
+
+for (const [from, to] of CATEGORY_ALIASES) {
+  const dest = '/category/' + to + '.html';
+  add({ source: '/category/' + from, destination: dest, permanent: true });
+  add({ source: '/category/' + from + '.html', destination: dest, permanent: true });
 }
 
 add({
@@ -46,6 +60,14 @@ add({
 });
 
 add({ source: '/articles/', destination: '/articles.html', permanent: true });
+
+const gsc404Path = path.join(__dirname, 'gsc-404-redirects.json');
+if (fs.existsSync(gsc404Path)) {
+  const gsc404 = JSON.parse(fs.readFileSync(gsc404Path, 'utf8'));
+  (gsc404.redirects || []).forEach((row) => {
+    add({ source: row.from, destination: row.to, permanent: true });
+  });
+}
 
 let ARTICLES = [];
 try {
@@ -63,7 +85,7 @@ try {
   console.warn('Could not load articles for PDF guide redirects:', e.message);
 }
 
-ARTICLES.filter(a => /^free-.+-pdf-guide$/.test(a.id)).forEach(a => {
+ARTICLES.filter((a) => /^free-.+-pdf-guide$/.test(a.id)).forEach((a) => {
   const bookSlug = a.id.replace(/^free-/, '').replace(/-pdf-guide$/, '');
   add({
     source: '/articles/' + a.id + '.html',
@@ -73,7 +95,7 @@ ARTICLES.filter(a => /^free-.+-pdf-guide$/.test(a.id)).forEach(a => {
 });
 
 const kept = vercel.redirects || [];
-const insertAt = Math.max(0, kept.findIndex(r => r.source === '/index.html') + 1);
+const insertAt = Math.max(0, kept.findIndex((r) => r.source === '/index.html') + 1);
 kept.splice(insertAt, 0, ...added);
 vercel.redirects = kept;
 

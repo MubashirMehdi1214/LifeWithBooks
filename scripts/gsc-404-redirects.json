@@ -1,0 +1,23 @@
+{
+  "comment": "Known GSC 404 URLs -> live pages (traffic recovery + legacy slugs)",
+  "redirects": [
+    { "from": "/book/easy-english-in-hospital.html", "to": "/book/english-in-everyday-life.html" },
+    { "from": "/books/easy-english-in-hospital", "to": "/book/english-in-everyday-life.html" },
+    { "from": "/books/easy-english-in-hospital.html", "to": "/book/english-in-everyday-life.html" },
+    { "from": "/book/business-english-verbs.html", "to": "/book/english-for-meetings-phrases-expressions.html" },
+    { "from": "/books/business-english-verbs", "to": "/book/english-for-meetings-phrases-expressions.html" },
+    { "from": "/books/business-english-verbs.html", "to": "/book/english-for-meetings-phrases-expressions.html" },
+    { "from": "/book/ielts-5000-words-pdf.html", "to": "/book/ielts-vocabulary-builder-3000-words.html" },
+    { "from": "/books/ielts-5000-words-pdf", "to": "/book/ielts-vocabulary-builder-3000-words.html" },
+    { "from": "/books/ielts-5000-words-pdf.html", "to": "/book/ielts-vocabulary-builder-3000-words.html" },
+    { "from": "/articles/how-to-prepare-for-ielts.html", "to": "/articles/how-to-prepare-for-ielts-using-free-pdf-books.html" },
+    { "from": "/category/ielts-books.html", "to": "/category/ielts-preparation.html" },
+    { "from": "/category/ielts-books", "to": "/category/ielts-preparation.html" },
+    { "from": "/category/literature.html", "to": "/category/literature-books.html" },
+    { "from": "/category/literature", "to": "/category/literature-books.html" },
+    { "from": "/category/kids-books.html", "to": "/category/kids-learning-books.html" },
+    { "from": "/category/kids-books", "to": "/category/kids-learning-books.html" },
+    { "from": "/category/german-books.html", "to": "/category/german-learning-books.html" },
+    { "from": "/category/german-books", "to": "/category/german-learning-books.html" }
+  ]
+}
