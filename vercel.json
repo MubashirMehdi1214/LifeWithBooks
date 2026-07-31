@@ -882,7 +882,7 @@
           "value": "(?<id>[^&]+)"
         }
       ],
-      "destination": "/book/:id.html?",
+      "destination": "/book/:id.html?id=",
       "permanent": true
     },
     {
@@ -905,7 +905,7 @@
           "value": "(?<id>[^&]+)"
         }
       ],
-      "destination": "/articles/:id.html?",
+      "destination": "/articles/:id.html?id=",
       "permanent": true
     },
     {
@@ -928,7 +928,7 @@
           "value": "(?<cat>[^&]+)"
         }
       ],
-      "destination": "/category/:cat.html",
+      "destination": "/category/:cat.html?cat=",
       "permanent": true
     },
     {
