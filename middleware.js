@@ -2,7 +2,7 @@
 const ADS_TXT = 'google.com, pub-5913415234423873, DIRECT, f08c47fec0942fa0\n';
 
 const STRIP_ID_PATH =
-  /^\/(book|articles|category|author)\/[^/]+\.html$/;
+  /^\/(book|articles|category|author)\/[A-Za-z0-9_-]+\.html$/;
 
 export default function middleware(request) {
   const url = new URL(request.url);
@@ -19,8 +19,8 @@ export default function middleware(request) {
 
   // /book/little-women.html?id=little-women → /book/little-women.html
   if (url.searchParams.has('id') && STRIP_ID_PATH.test(url.pathname)) {
-    url.search = '';
-    return Response.redirect(url.toString(), 301);
+    const clean = url.origin + url.pathname;
+    return Response.redirect(clean, 301);
   }
 
   return;

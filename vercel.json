@@ -1247,30 +1247,6 @@
       "permanent": true
     },
     {
-      "source": "/book/:slug.html",
-      "has": [{ "type": "query", "key": "id" }],
-      "destination": "/book/:slug.html?",
-      "permanent": true
-    },
-    {
-      "source": "/articles/:slug.html",
-      "has": [{ "type": "query", "key": "id" }],
-      "destination": "/articles/:slug.html?",
-      "permanent": true
-    },
-    {
-      "source": "/category/:slug.html",
-      "has": [{ "type": "query", "key": "id" }],
-      "destination": "/category/:slug.html?",
-      "permanent": true
-    },
-    {
-      "source": "/author/:slug.html",
-      "has": [{ "type": "query", "key": "id" }],
-      "destination": "/author/:slug.html?",
-      "permanent": true
-    },
-    {
       "source": "/book/:slug([\\w-]+)",
       "destination": "/book/:slug.html",
       "permanent": true
