@@ -108,7 +108,11 @@ function bookCoverUrl(book) {
   return ORIGIN + '/og/books/' + book.id + '.webp';
 }
 
-const imageParts = BOOKS.filter(b => b.access === 'download' || b.coverImage).slice(0, 500).map(b => {
+const imageParts = BOOKS.filter((b) => {
+  if ((b.access === 'summary' || b.license === 'reference') && !b.pdfDirect) return false;
+  if (!(b.access === 'download' || b.coverImage)) return false;
+  return isIndexablePage('/book/' + encodeURIComponent(b.id) + '.html');
+}).slice(0, 500).map((b) => {
   const page = ORIGIN + '/book/' + encodeURIComponent(b.id) + '.html';
   const img = bookCoverUrl(b);
   return (
