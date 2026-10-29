@@ -291,18 +291,6 @@
       "permanent": true
     },
     {
-      "source": "/book/category.html",
-      "has": [
-        {
-          "type": "query",
-          "key": "cat",
-          "value": "(?<cat>[^&]+)"
-        }
-      ],
-      "destination": "/category/:cat.html",
-      "permanent": true
-    },
-    {
       "source": "/category/all-books.html",
       "destination": "/all-books.html",
       "permanent": true
@@ -338,18 +326,6 @@
       "permanent": true
     },
     {
-      "source": "/category/category.html",
-      "has": [
-        {
-          "type": "query",
-          "key": "cat",
-          "value": "(?<cat>[^&]+)"
-        }
-      ],
-      "destination": "/category/:cat.html",
-      "permanent": true
-    },
-    {
       "source": "/articles/articles.html",
       "destination": "/articles.html",
       "permanent": true
@@ -377,18 +353,6 @@
     {
       "source": "/articles/cookie-policy.html",
       "destination": "/cookie-policy.html",
-      "permanent": true
-    },
-    {
-      "source": "/articles/category.html",
-      "has": [
-        {
-          "type": "query",
-          "key": "cat",
-          "value": "(?<cat>[^&]+)"
-        }
-      ],
-      "destination": "/category/:cat.html",
       "permanent": true
     },
     {
@@ -424,18 +388,6 @@
     {
       "source": "/author/cookie-policy.html",
       "destination": "/cookie-policy.html",
-      "permanent": true
-    },
-    {
-      "source": "/author/category.html",
-      "has": [
-        {
-          "type": "query",
-          "key": "cat",
-          "value": "(?<cat>[^&]+)"
-        }
-      ],
-      "destination": "/category/:cat.html",
       "permanent": true
     },
     {
@@ -871,75 +823,6 @@
     {
       "source": "/author/contact.html",
       "destination": "/contact.html",
-      "permanent": true
-    },
-    {
-      "source": "/book.html",
-      "has": [
-        {
-          "type": "query",
-          "key": "id",
-          "value": "(?<id>[^&]+)"
-        }
-      ],
-      "destination": "/book/:id.html",
-      "permanent": true
-    },
-    {
-      "source": "/book.html",
-      "missing": [
-        {
-          "type": "query",
-          "key": "id"
-        }
-      ],
-      "destination": "/all-books.html",
-      "permanent": true
-    },
-    {
-      "source": "/article.html",
-      "has": [
-        {
-          "type": "query",
-          "key": "id",
-          "value": "(?<id>[^&]+)"
-        }
-      ],
-      "destination": "/articles/:id.html",
-      "permanent": true
-    },
-    {
-      "source": "/article.html",
-      "missing": [
-        {
-          "type": "query",
-          "key": "id"
-        }
-      ],
-      "destination": "/articles.html",
-      "permanent": true
-    },
-    {
-      "source": "/category.html",
-      "has": [
-        {
-          "type": "query",
-          "key": "cat",
-          "value": "(?<cat>[^&]+)"
-        }
-      ],
-      "destination": "/category/:cat.html",
-      "permanent": true
-    },
-    {
-      "source": "/category.html",
-      "missing": [
-        {
-          "type": "query",
-          "key": "cat"
-        }
-      ],
-      "destination": "/all-books.html",
       "permanent": true
     },
     {
