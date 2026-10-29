@@ -20,6 +20,20 @@ function safeSlug(value) {
   return value && /^[A-Za-z0-9_-]+$/.test(value) ? value : null;
 }
 
+/** Old OpenSearch / schema junk Google still lists as referring URLs. */
+function isJunkSearchQuery(q) {
+  if (!q) return true;
+  const lower = q.toLowerCase();
+  return (
+    lower.includes('search_term_string') ||
+    lower.includes('search_form_string') ||
+    lower.includes('{') ||
+    lower.includes('}') ||
+    lower.includes('[') ||
+    lower.includes(']')
+  );
+}
+
 export default function middleware(request) {
   const url = new URL(request.url);
   const { pathname, searchParams } = url;
@@ -32,6 +46,15 @@ export default function middleware(request) {
         'Cache-Control': 'public, max-age=3600'
       }
     });
+  }
+
+  // Junk template search URLs → clean listing (fixes GSC ?q=[search_term_string])
+  if (
+    (pathname === '/all-books.html' || CLEAN_CONTENT_PATH.test(pathname)) &&
+    searchParams.has('q') &&
+    isJunkSearchQuery(searchParams.get('q'))
+  ) {
+    return redirect(url, pathname);
   }
 
   // Old shells → clean static URLs (strip query in one hop)
@@ -70,6 +93,7 @@ export default function middleware(request) {
 export const config = {
   matcher: [
     '/ads.txt',
+    '/all-books.html',
     '/book.html',
     '/article.html',
     '/category.html',
