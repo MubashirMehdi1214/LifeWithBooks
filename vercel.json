@@ -882,7 +882,7 @@
           "value": "(?<id>[^&]+)"
         }
       ],
-      "destination": "/book/:id.html?",
+      "destination": "/book/:id.html",
       "permanent": true
     },
     {
@@ -905,7 +905,7 @@
           "value": "(?<id>[^&]+)"
         }
       ],
-      "destination": "/articles/:id.html?",
+      "destination": "/articles/:id.html",
       "permanent": true
     },
     {
@@ -928,7 +928,18 @@
           "value": "(?<cat>[^&]+)"
         }
       ],
-      "destination": "/category/:cat.html?",
+      "destination": "/category/:cat.html",
+      "permanent": true
+    },
+    {
+      "source": "/category.html",
+      "missing": [
+        {
+          "type": "query",
+          "key": "cat"
+        }
+      ],
+      "destination": "/all-books.html",
       "permanent": true
     },
     {
@@ -1292,6 +1303,19 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=86400"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/feed.xml",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
         }
       ]
     },

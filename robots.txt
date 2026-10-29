@@ -10,6 +10,7 @@ Allow: /articles.html
 Allow: /index.html
 
 Disallow: /download.html
+Disallow: /downloads/
 Disallow: /admin/
 Disallow: /*.json$
 Disallow: /node_modules/

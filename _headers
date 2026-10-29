@@ -34,5 +34,12 @@
 /404.html
   Cache-Control: public, max-age=3600
 
+/downloads/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: public, max-age=86400
+
+/feed.xml
+  X-Robots-Tag: noindex, follow
+
 /
   Cache-Control: public, max-age=3600
