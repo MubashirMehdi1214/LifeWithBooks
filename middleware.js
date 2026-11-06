@@ -34,18 +34,27 @@ function isJunkSearchQuery(q) {
   );
 }
 
+function adsTxtResponse() {
+  return new Response(ADS_TXT, {
+    status: 200,
+    headers: {
+      'Content-Type': 'text/plain; charset=utf-8',
+      'Cache-Control': 'public, max-age=3600'
+    }
+  });
+}
+
 export default function middleware(request) {
   const url = new URL(request.url);
   const { pathname, searchParams } = url;
 
+  // AdSense crawls the bare domain and treats a redirect as "Not found".
   if (pathname === '/ads.txt') {
-    return new Response(ADS_TXT, {
-      status: 200,
-      headers: {
-        'Content-Type': 'text/plain; charset=utf-8',
-        'Cache-Control': 'public, max-age=3600'
-      }
-    });
+    return adsTxtResponse();
+  }
+
+  if (url.hostname === 'lifewithbooks.co') {
+    return Response.redirect('https://www.lifewithbooks.co' + pathname + url.search, 308);
   }
 
   // Junk template search URLs → clean listing (fixes GSC ?q=[search_term_string])
@@ -91,15 +100,5 @@ export default function middleware(request) {
 }
 
 export const config = {
-  matcher: [
-    '/ads.txt',
-    '/all-books.html',
-    '/book.html',
-    '/article.html',
-    '/category.html',
-    '/book/:path*',
-    '/articles/:path*',
-    '/category/:path*',
-    '/author/:path*'
-  ]
+  matcher: ['/((?!_next/).*)']
 };
