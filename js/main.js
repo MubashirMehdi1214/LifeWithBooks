@@ -852,6 +852,51 @@ const CATEGORY_PILL_MAP = {
   'english-learning-books': 'cat-pill-blue'
 };
 
+const EDITORIAL_BOOK_IDS = {
+  'pride-and-prejudice': 1,
+  'the-adventures-of-sherlock-holmes': 1,
+  'oliver-twist': 1,
+  'dracula': 1,
+  'alices-adventures-in-wonderland': 1,
+  'aesops-fables': 1,
+  'as-a-man-thinketh': 1,
+  'the-art-of-war': 1,
+  'treasure-island': 1,
+  'jane-eyre': 1,
+  'frankenstein': 1,
+  'the-jungle-book': 1,
+  'great-expectations': 1,
+  'a-christmas-carol': 1,
+  'moby-dick': 1,
+  'the-adventures-of-tom-sawyer': 1,
+  'grimms-fairy-tales': 1,
+  'the-wonderful-wizard-of-oz': 1,
+  'the-scarlet-letter': 1,
+  'wuthering-heights': 1,
+  'don-quixote': 1,
+  'robinson-crusoe': 1,
+  'gullivers-travels': 1,
+  'the-count-of-monte-cristo': 1,
+  'les-miserables': 1,
+  'the-three-musketeers': 1,
+  'war-and-peace': 1,
+  'anna-karenina': 1,
+  '30-topics-for-english-conversation': 1,
+  'spoken-english-conversation-practice': 1,
+  '1500-vocabulary-words-for-speaking-english': 1,
+  'best-english-grammar-book': 1,
+  'ielts-complete-preparation-guide': 1,
+  'learn-how-to-speak-spanish-in-30-days': 1,
+  '101-conversations-in-mexican-spanish': 1,
+  'how-to-get-really-good-at-english': 1,
+  'talk-english-secret-to-speak-english': 1
+};
+
+function isEditorialBook(book) {
+  if (!book || !EDITORIAL_BOOK_IDS[book.id]) return false;
+  return !((book.access === 'summary' || book.license === 'reference') && !book.pdfDirect);
+}
+
 const TRENDING_BOOK_IDS = [
   '30-topics-for-english-conversation',
   '1500-vocabulary-words-for-speaking-english',
@@ -1175,9 +1220,9 @@ function initAllBooks() {
   const rawQ = getSearchQuery();
   applySearchQuerySeo('/all-books.html', rawQ);
   const q = rawQ.toLowerCase();
-  let list = BOOKS.slice();
+  let list = BOOKS.filter(isEditorialBook);
   if (q) {
-    list = list.filter(b => b.title.toLowerCase().includes(q) || (b.excerpt || '').toLowerCase().includes(q));
+    list = BOOKS.filter(b => b.title.toLowerCase().includes(q) || (b.excerpt || '').toLowerCase().includes(q));
     const qEl = $('#current-query');
     if (qEl) qEl.textContent = ' matching "' + q + '"';
     const input = $('#searchInput');
@@ -1186,7 +1231,7 @@ function initAllBooks() {
   renderBookGrid('#all-books-grid', list);
 
   const pakistanBooks = BOOKS.filter(function(b) {
-    return (b.categories || []).some(function(c) { return PAKISTAN_STUDY_CATEGORIES.includes(c); });
+    return isEditorialBook(b) && (b.categories || []).some(function(c) { return PAKISTAN_STUDY_CATEGORIES.includes(c); });
   });
   renderBookGrid('#pakistan-study-grid', pakistanBooks);
 
@@ -1283,7 +1328,7 @@ function initCategory() {
     image: getCategoryShareImage(slug)
   });
 
-  let items = BOOKS.filter(b => b.categories.includes(slug));
+  let items = BOOKS.filter(b => b.categories.includes(slug) && isEditorialBook(b));
   const rawQ = getSearchQuery();
   applySearchQuerySeo('/category/' + encodeURIComponent(slug) + '.html', rawQ);
   const q = rawQ.toLowerCase();
@@ -1302,7 +1347,7 @@ function initCategory() {
   const searchForm = $('#catSearchForm');
   const searchInput = $('#catSearchInput');
   function filterCategoryBooks(query) {
-    let filtered = BOOKS.filter(b => b.categories.includes(slug));
+    let filtered = BOOKS.filter(b => b.categories.includes(slug) && (query || isEditorialBook(b)));
     if (query) {
       filtered = filtered.filter(b =>
         b.title.toLowerCase().includes(query) ||

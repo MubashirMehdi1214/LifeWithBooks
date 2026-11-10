@@ -65,6 +65,7 @@ function renderHead(opts, depth) {
   <link rel="icon" type="image/svg+xml" href="${p}favicon.svg">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-V3781QPP7K"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-V3781QPP7K');</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5913415234423873" crossorigin="anonymous"></script>
   ${opts.jsonLd || ''}
 </head>`;
 }

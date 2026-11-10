@@ -7,6 +7,7 @@ const root = path.join(__dirname, '..');
 const today = new Date().toISOString().slice(0, 10);
 
 const { BOOKS, CATEGORIES } = require(path.join(root, 'js', 'books.js'));
+const { isEditorialBook } = require('./quality-books.js');
 const { BOOK_RICH_CONTENT } = require(path.join(root, 'js', 'book-rich-content.js'));
 const { CATEGORY_RICH_CONTENT } = require(path.join(root, 'js', 'category-rich-content.js'));
 const { AUTHORS } = require(path.join(root, 'js', 'authors-data.js'));
@@ -415,10 +416,15 @@ function renderRichBookSections(book, p) {
   ].filter(Boolean).join('\n      ') + '</div>';
 }
 
+function renderCatalogNote(book, p) {
+  const excerpt = book.excerpt || (book.title + ' is listed in the LifeWithBooks catalog.');
+  return '<div class="book-rich-content"><section class="book-section"><h2>About this title</h2><p>' + esc(excerpt) + '</p><p>This page is a short catalog note. Our long-form reading guides and original study books are written separately, so this title is not part of the main editorial library.</p><p><a href="' + p + 'articles.html">Read our articles</a> &middot; <a href="' + p + 'all-books.html">Browse the editorial library</a></p></section></div>';
+}
+
 function renderRelatedBooks(book, p, seo) {
   const ids = (seo.relatedIds || []).concat((getBookRich(book) || {}).relatedIds || [])
-    .concat(BOOKS.filter(b => b.id !== book.id && b.categories.some(c => book.categories.includes(c))).map(b => b.id))
-    .filter((id, i, arr) => arr.indexOf(id) === i)
+    .concat(BOOKS.filter(b => b.id !== book.id && isEditorialBook(b) && b.categories.some(c => book.categories.includes(c))).map(b => b.id))
+    .filter((id, i, arr) => arr.indexOf(id) === i && isEditorialBook(BOOKS.find(b => b.id === id)))
     .slice(0, 5);
   const items = ids.map(id => BOOKS.find(b => b.id === id)).filter(Boolean);
   if (!items.length) return '';
@@ -454,7 +460,8 @@ function renderBookPage(book, depth) {
   const author = bookAuthor(book);
   const downloadable = book.access === 'download';
   const cover = coverPicture(book, p, true);
-  const richHtml = renderRichBookSections(book, p);
+  const editorial = isEditorialBook(book);
+  const richHtml = editorial ? renderRichBookSections(book, p) : renderCatalogNote(book, p);
   const descHtml = (book.description || []).map(line => {
     if (line.indexOf('## ') === 0) return '<h2>' + esc(line.slice(3)) + '</h2>';
     return '<p>' + esc(line) + '</p>';
@@ -509,7 +516,7 @@ function renderBookPage(book, depth) {
     : '';
 
   const relatedBlock = renderRelatedBooks(book, p, seo);
-  const skipDescArticle = !!getBookRich(book);
+  const skipDescArticle = editorial && !!getBookRich(book);
   const introArticleHtml = skipDescArticle ? '' : descHtml;
 
   return renderHead({
@@ -519,7 +526,7 @@ function renderBookPage(book, depth) {
     ogType: 'book',
     image: ORIGIN + '/og/books/' + book.id + '.webp',
     jsonLd,
-    robots: isSummaryOnlyBook(book) ? 'noindex, follow' : undefined
+    robots: editorial ? undefined : 'noindex, follow'
   }, depth) + `
 <body data-page="book" data-book-id="${esc(book.id)}" data-seo-static="true" data-path-depth="1" id="top">
   <div id="site-header-host"></div>
@@ -599,7 +606,7 @@ function renderCategoryPage(slug, depth) {
         return '<li><a href="' + p + 'articles/' + encodeURIComponent(id) + '.html">' + esc(a.title) + '</a></li>';
       }).join('') + '</ul></section>'
     : '';
-  const items = sortCategoryBooks(BOOKS.filter(b => b.categories.includes(slug)));
+  const items = sortCategoryBooks(BOOKS.filter(b => b.categories.includes(slug) && isEditorialBook(b)));
   const cards = items.map(b => categoryBookCard(b, p)).join('\n      ');
   const jsonLd = `<script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org',
