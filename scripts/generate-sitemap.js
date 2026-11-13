@@ -27,7 +27,6 @@ const staticPages = [
   ['/', 'daily', '1.00'],
   ['/all-books.html', 'daily', '0.90'],
   ['/articles.html', 'weekly', '0.80'],
-  ['/feed.xml', 'weekly', '0.50'],
   ['/about.html', 'monthly', '0.70'],
   ['/contact.html', 'monthly', '0.70'],
   ['/privacy-policy.html', 'yearly', '0.50'],

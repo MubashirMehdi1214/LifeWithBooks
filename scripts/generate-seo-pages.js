@@ -617,7 +617,7 @@ function renderCategoryPage(slug, depth) {
     hasPart: items.slice(0, 20).map(b => ({ '@type': 'Book', name: b.title, url: ORIGIN + '/book/' + b.id + '.html' }))
   })}</script>`;
 
-  return renderHead({ title, description: desc, canonical: url, image: ORIGIN + '/og/categories/' + slug + '.webp', jsonLd }, depth) + `
+  return renderHead({ title, description: desc, canonical: url, image: ORIGIN + '/og/categories/' + slug + '.webp', jsonLd, robots: items.length ? undefined : 'noindex, follow' }, depth) + `
 <body data-page="category" data-cat="${esc(slug)}" data-seo-static="true" data-path-depth="1" id="top">
   <div id="site-header-host"></div>
   <section class="section">
